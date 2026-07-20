@@ -84,10 +84,6 @@ custom_presets.json
 custom_subtypes.json
 custom_tags.json
 
-# Game-derived data dumps (place your own copies locally; not redistributed)
-data/*
-!data/.gitkeep
-
 # Temp / smoke tests
 _smoke_test.py
 _audit_tmp.py
