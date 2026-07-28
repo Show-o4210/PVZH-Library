@@ -63,10 +63,9 @@
 ```text
 作者：休切尔（Show-o4210）
 许可：CC BY-NC-SA 4.0
+官方仓库：https://github.com/Show-o4210/PVZH-Library
 主页：https://github.com/Show-o4210
 ```
-
-> 仓库正式发布到 GitHub 后，请将 [许可与使用条款.md](许可与使用条款.md) 中的「官方仓库」链接改成实际上线地址。
 
 ## 支持作者
 
