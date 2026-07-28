@@ -1,0 +1,612 @@
+【增益属性】
+, 
+									{
+										"$type": "PvZCards.Engine.Components.BuffEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+										"$data": {
+											"AttackAmount": 攻击量,
+											"HealthAmount": 生命量,
+											"BuffDuration": "持续时间"
+										}
+									}
+
+
+
+【翻倍攻击】
+, 
+									{
+										"$type": "PvZCards.Engine.Components.TargetAttackMultiplier, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+										"$data": {
+											"Divider": 倍数
+										}
+									}
+
+
+
+【翻倍血量】
+, 
+									{
+										"$type": "PvZCards.Engine.Components.TargetHealthMultiplier, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+										"$data": {
+											"Divider": 倍数
+										}
+									}
+
+
+
+【增益技能】 {特殊值：多为0，锦囊免疫为1和2[ 1免疫植物锦囊，2免疫僵尸锦囊 ] }
+, 
+									{
+										"$type": "PvZCards.Engine.Components.GrantAbilityEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+										"$data": {
+											"GrantableAbilityType": "技能",
+											"Duration": "持续时间",
+											"AbilityValue": 特殊值
+										}
+									}
+
+Frenzy  狂热
+Deadly  致命
+Strikethrough   穿透
+Teamup  组队
+Armor   装甲
+overshoot  先攻
+Unhurtable 无敌
+untrickable   锦囊免疫
+Truestrike   必中
+MultiplyDamage    翻倍
+
+
+
+【增减花费】
+,
+                                    {
+                                        "$type": "PvZCards.Engine.Components.ModifySunCostEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                        "$data": {
+                                            "SunCostAmount": 花费数量,
+                                            "BuffDuration": "持续时间"
+                                        }
+                                    }
+
+
+
+
+
+【抽卡指定卡牌】
+, 
+									{
+										"$type": "PvZCards.Engine.Components.DrawCardFromSubsetEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+										"$data": {
+											"SubsetQuery": {
+												"$type": "PvZCards.Engine.Queries.CardGuidQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+												"$data": {
+													"Guid": 卡牌的编号
+												}
+											},
+											"DrawAmount": 抽卡的数量
+										}
+									}
+{
+                                        "$type": "PvZCards.Engine.Components.DrawCardFromSubsetEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                        "$data": {
+                                            "DrawAmount": 1,
+                                            "SubsetQuery": {
+                                                "$type": "PvZCards.Engine.Queries.HasComponentQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                                "$data": {
+                                                    "ComponentType": "PvZCards.Engine.Components.Zombies, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                                                }
+                                            }
+                                        }
+                                    }
+
+
+【抽召唤标签卡牌】
+, 
+									{
+										"$type": "PvZCards.Engine.Components.DrawCardFromSubsetEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+										"$data": {
+											"SubsetQuery": {
+												"$type": "PvZCards.Engine.Queries.SubsetQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+												"$data": {
+													"Subset": "标签"
+												}
+											},
+											"DrawAmount": 召唤的数量
+										}
+									}
+
+
+
+【抽卡】
+, 
+									{
+										"$type": "PvZCards.Engine.Components.DrawCardEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+										"$data": {
+											"DrawAmount": 抽卡数量
+										}
+									}
+
+
+
+【治疗】
+, 
+									{
+										"$type": "PvZCards.Engine.Components.HealEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+										"$data": {
+											"HealAmount": 治疗量
+										}
+									}
+
+
+
+【造成伤害】
+, 
+									{
+										"$type": "PvZCards.Engine.Components.DamageEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+										"$data": {
+											"DamageAmount": 伤害量
+										}
+									}
+
+
+
+摧毁秒杀
+, 
+									{
+										"$type": "PvZCards.Engine.Components.DestroyCardEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+										"$data": {}
+									}
+
+
+
+
+【弹射】
+, 
+									{
+										"$type": "PvZCards.Engine.Components.ReturnToHandFromPlayEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+										"$data": {}
+									}
+
+
+
+
+【阳光】
+, 
+									{
+										"$type": "PvZCards.Engine.Components.GainSunEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+										"$data": {
+											"Amount": 阳光数,
+											"Duration": "持续时间",
+											"ActivationTime": "执行时间"
+										}
+									}
+
+
+
+
+
+【召唤标签卡】
+, 
+									{
+										"$type": "PvZCards.Engine.Components.DrawCardFromSubsetEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+										"$data": {
+											"SubsetQuery": {
+												"$type": "PvZCards.Engine.Queries.CompositeAllQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+												"$data": {
+													"queries": [{
+															"$type": "PvZCards.Engine.Queries.NotQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+															"$data": {
+																"Query": {
+																	"$type": "PvZCards.Engine.Queries.HasComponentQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+																	"$data": {
+																		"ComponentType": "PvZCards.Engine.Components.Superpower, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+																	}
+																}
+															}
+														}, {
+															"$type": "PvZCards.Engine.Queries.HasComponentQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+															"$data": {
+																"ComponentType": "PvZCards.Engine.Components.阵营, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+															}
+														}, {
+															"$type": "PvZCards.Engine.Queries.SubsetQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+															"$data": {
+																"Subset": "标签"
+															}
+														}
+													]
+												}
+											},
+											"DrawAmount": 1
+										}
+									}
+
+
+
+
+【召唤随机卡】
+, 
+									{
+										"$type": "PvZCards.Engine.Components.DrawCardFromSubsetEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+										"$data": {
+											"SubsetQuery": {
+												"$type": "PvZCards.Engine.Queries.CompositeAllQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+												"$data": {
+													"queries": [{
+															"$type": "PvZCards.Engine.Queries.HasComponentQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+															"$data": {
+																"ComponentType": "PvZCards.Engine.Components.Zombies, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+															}
+														}, {
+															"$type": "PvZCards.Engine.Queries.NotQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+															"$data": {
+																"Query": {
+																	"$type": "PvZCards.Engine.Queries.HasComponentQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+																	"$data": {
+																		"ComponentType": "PvZCards.Engine.Components.Superpower, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+																	}
+																}
+															}
+														}
+													]
+												}
+											},
+											"DrawAmount": 卡牌数
+										}
+									}
+
+
+
+
+
+【抽取锦囊】
+, 
+									{
+										"$type": "PvZCards.Engine.Components.DrawCardFromSubsetEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+										"$data": {
+											"SubsetQuery": {
+												"$type": "PvZCards.Engine.Queries.CompositeAllQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+												"$data": {
+													"queries": [{
+															"$type": "PvZCards.Engine.Queries.TrickQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+															"$data": {}
+														}, {
+															"$type": "PvZCards.Engine.Queries.HasComponentQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+															"$data": {
+																"ComponentType": "PvZCards.Engine.Components.阵营, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+															}
+														}, {
+															"$type": "PvZCards.Engine.Queries.NotQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+															"$data": {
+																"Query": {
+																	"$type": "PvZCards.Engine.Queries.HasComponentQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+																	"$data": {
+																		"ComponentType": "PvZCards.Engine.Components.Superpower, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+																	}
+																}
+															}
+														}
+													]
+												}
+											},
+											"DrawAmount": 卡数
+										}
+									}
+
+
+
+
+
+
+【抽取环境】
+, 
+									{
+										"$type": "PvZCards.Engine.Components.DrawCardFromSubsetEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+										"$data": {
+											"SubsetQuery": {
+												"$type": "PvZCards.Engine.Queries.CompositeAllQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+												"$data": {
+													"queries": [{
+															"$type": "PvZCards.Engine.Queries.NotQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+															"$data": {
+																"Query": {
+																	"$type": "PvZCards.Engine.Queries.HasComponentQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+																	"$data": {
+																		"ComponentType": "PvZCards.Engine.Components.Superpower, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+																	}
+																}
+															}
+														}, {
+															"$type": "PvZCards.Engine.Queries.HasComponentQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+															"$data": {
+																"ComponentType": "PvZCards.Engine.Components.Environment, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+															}
+														}, {
+															"$type": "PvZCards.Engine.Queries.HasComponentQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+															"$data": {
+																"ComponentType": "PvZCards.Engine.Components.阵营, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+															}
+														}
+													]
+												}
+											},
+											"DrawAmount": 卡数
+										}
+									}
+
+
+
+
+
+
+【超能力】
+, 
+									{
+										"$type": "PvZCards.Engine.Components.DrawCardFromSubsetEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+										"$data": {
+											"SubsetQuery": {
+												"$type": "PvZCards.Engine.Queries.CompositeAllQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+												"$data": {
+													"queries": [{
+															"$type": "PvZCards.Engine.Queries.HasComponentQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+															"$data": {
+																"ComponentType": "PvZCards.Engine.Components.Superpower, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+															}
+														}, {
+															"$type": "PvZCards.Engine.Queries.HasComponentQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+															"$data": {
+																"ComponentType": "PvZCards.Engine.Components.Zombies, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+															}
+														}
+													]
+												}
+											},
+											"DrawAmount": 卡数
+										}
+									}
+
+
+
+
+
+
+【召唤标签实体】
+, 
+									{
+										"$type": "PvZCards.Engine.Components.CreateCardFromSubsetEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+										"$data": {
+											"ForceFaceDown": false,
+											"SubsetQuery": {
+												"$type": "PvZCards.Engine.Queries.CompositeAllQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+												"$data": {
+													"queries": [{
+															"$type": "PvZCards.Engine.Queries.SubtypeQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+															"$data": {
+																"Subtype": 标签
+															}
+														}, {
+															"$type": "PvZCards.Engine.Queries.FighterQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+															"$data": {}
+														}, {
+															"$type": "PvZCards.Engine.Queries.NotQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+															"$data": {
+																"Query": {
+																	"$type": "PvZCards.Engine.Queries.HasComponentQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+																	"$data": {
+																		"ComponentType": "PvZCards.Engine.Components.Superpower, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+																	}
+																}
+															}
+														}
+													]
+												}
+											}
+										}
+									}
+
+
+
+
+
+
+【额外攻击】
+, 
+									{
+										"$type": "PvZCards.Engine.Components.ExtraAttackEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+										"$data": {}
+									}
+
+
+
+
+
+
+【攻击倍数】
+, 
+									{
+										"$type": "PvZCards.Engine.Components.GrantAbilityEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+										"$data": {
+											"GrantableAbilityType": "MultiplyDamage",
+											"Duration": "持续时间",
+											"AbilityValue": 倍数
+										}
+									}
+
+
+
+【召唤实体guid】
+, 
+									{
+										"$type": "PvZCards.Engine.Components.CreateCardEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+										"$data": {
+											"CardGuid": 卡牌编号,
+											"ForceFaceDown": false
+										}
+									}
+
+
+
+
+【花费变化】
+, 
+									{
+                                        "$type": "PvZCards.Engine.Components.ModifySunCostEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                        "$data": {
+                                            "SunCostAmount": 数量,
+                                            "BuffDuration": "持续时间"
+                                        }
+                                    }
+
+
+
+
+
+【变身】
+, 
+									{
+										"$type": "PvZCards.Engine.Components.TransformWithCreationSource, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+										"$data": {
+											"SourceGuid": -1
+										}
+									}, {
+										"$type": "PvZCards.Engine.Components.PrimaryTargetFilter, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+										"$data": {
+											"SelectionType": "All",
+											"NumTargets": 0,
+											"TargetScopeType": "All",
+											"TargetScopeSortValue": "None",
+											"TargetScopeSortMethod": "None",
+											"AdditionalTargetType": "None",
+											"AdditionalTargetQuery": null,
+											"OnlyApplyEffectsOnAdditionalTargets": false,
+											"Query": {
+												"$type": "PvZCards.Engine.Queries.SelfQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+												"$data": {}
+											}
+										}
+									}, {
+										"$type": "PvZCards.Engine.Components.TransformIntoCardFromSubsetEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+										"$data": {
+											"SubsetQuery": {
+												"$type": "PvZCards.Engine.Queries.CompositeAllQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+												"$data": {
+													"queries": [{
+															"$type": "PvZCards.Engine.Queries.NotQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+															"$data": {
+																"Query": {
+																	"$type": "PvZCards.Engine.Queries.HasComponentQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+																	"$data": {
+																		"ComponentType": "PvZCards.Engine.Components.Superpower, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+																	}
+																}
+															}
+														}, {
+															"$type": "PvZCards.Engine.Queries.HasComponentQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+															"$data": {
+																"ComponentType": "PvZCards.Engine.Components.Zombies, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+															}
+														}, {
+															"$type": "PvZCards.Engine.Queries.FighterQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+															"$data": {}
+														}, {
+															"$type": "PvZCards.Engine.Queries.SunCostComparisonQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+															"$data": {
+																"ComparisonOperator": "Equal",
+																"SunCost": 3
+															}
+														}
+													]
+												}
+											}
+										}
+									}
+
+
+
+
+【冰冻】
+, 
+									{
+										"$type": "PvZCards.Engine.Components.SlowEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+										"$data": {}
+									}
+
+
+
+【洗牌】
+, 
+									{
+                                        "$type": "PvZCards.Engine.Components.CreateCardInDeckEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                        "$data": {
+                                            "CardGuid": 卡牌id,
+                                            "AmountToCreate": 数量,
+                                            "DeckPosition": "Random"
+                                        }
+                                    }
+
+
+【回到手牌】
+, 
+									{
+										"$type": "PvZCards.Engine.Components.ReturnToHandFromPlayEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+										"$data": {}
+									}
+
+
+
+【增加英雄的血量】
+, 
+									{
+										"$type": "PvZCards.Engine.Components.SetStatEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+										"$data": {
+											"StatType": "Health",
+											"Value": 血量值,
+											"ModifyOperation": "Add",
+											"StripNoncontinousModifiers": false
+										}
+									}
+
+
+【复制属性】
+, 
+									{
+                                        "$type": "PvZCards.Engine.Components.CopyStatsEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                        "$data": {}
+                                    }
+
+
+
+
+【召唤随机实体】
+, 
+									{
+										"$type": "PvZCards.Engine.Components.CreateCardFromSubsetEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+										"$data": {
+											"ForceFaceDown": false,
+											"SubsetQuery": {
+												"$type": "PvZCards.Engine.Queries.CompositeAllQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+												"$data": {
+													"queries": [{
+															"$type": "PvZCards.Engine.Queries.NotQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+															"$data": {
+																"Query": {
+																	"$type": "PvZCards.Engine.Queries.HasComponentQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+																	"$data": {
+																		"ComponentType": "PvZCards.Engine.Components.Superpower, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+																	}
+																}
+															}
+														}, {
+															"$type": "PvZCards.Engine.Queries.HasComponentQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+															"$data": {
+																"ComponentType": "PvZCards.Engine.Components.Zombies, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+															}
+														}, {
+															"$type": "PvZCards.Engine.Queries.FighterQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+															"$data": {}
+														}
+													]
+												}
+											}
+										}
+									}
+

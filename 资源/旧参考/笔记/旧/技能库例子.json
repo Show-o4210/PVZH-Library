@@ -1,0 +1,781 @@
+{
+  "queries": {
+    "QueryMultiplier": {
+      "full_type": "PvZCards.Engine.Components.QueryMultiplier, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {
+        "Query": {
+          "$type": "reference",
+          "$data": {
+            "queries": "[{'$type': 'reference', '$data': {'Query': '...'}}]"
+          }
+        },
+        "Divider": "int"
+      },
+      "examples": [
+        {
+          "Query": {
+            "$type": "...",
+            "$data": "..."
+          },
+          "Divider": 1
+        }
+      ]
+    },
+    "QueryEntityCondition": {
+      "full_type": "PvZCards.Engine.Components.QueryEntityCondition, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {
+        "Finder": {
+          "$type": "reference",
+          "$data": {}
+        },
+        "ConditionEvaluationType": "string",
+        "Query": {
+          "$type": "reference",
+          "$data": {
+            "queries": "[{'$type': 'reference', '$data': {'PlayerFactionType': '...', 'IsForTeamupCard': '...'}}]"
+          }
+        }
+      },
+      "examples": [
+        {
+          "Finder": {
+            "$type": "...",
+            "$data": "..."
+          },
+          "ConditionEvaluationType": "All",
+          "Query": {
+            "$type": "...",
+            "$data": "..."
+          }
+        },
+        {
+          "Finder": {
+            "$type": "...",
+            "$data": "..."
+          },
+          "ConditionEvaluationType": "Any",
+          "Query": {
+            "$type": "...",
+            "$data": "..."
+          }
+        }
+      ]
+    }
+  },
+  "effects": {
+    "DamageEffectDescriptor": {
+      "full_type": "PvZCards.Engine.Components.DamageEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {
+        "DamageAmount": "int"
+      },
+      "examples": [
+        {
+          "DamageAmount": 4
+        },
+        {
+          "DamageAmount": 1
+        },
+        {
+          "DamageAmount": 2
+        }
+      ]
+    },
+    "BuffEffectDescriptor": {
+      "full_type": "PvZCards.Engine.Components.BuffEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {
+        "AttackAmount": "int",
+        "HealthAmount": "int",
+        "BuffDuration": "string"
+      },
+      "examples": [
+        {
+          "AttackAmount": 1,
+          "HealthAmount": 1,
+          "BuffDuration": "Permanent"
+        },
+        {
+          "AttackAmount": 3,
+          "HealthAmount": 0,
+          "BuffDuration": "EndOfTurn"
+        },
+        {
+          "AttackAmount": 2,
+          "HealthAmount": 2,
+          "BuffDuration": "Permanent"
+        }
+      ]
+    },
+    "DestroyCardEffectDescriptor": {
+      "full_type": "PvZCards.Engine.Components.DestroyCardEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {},
+      "examples": []
+    },
+    "HealEffectDescriptor": {
+      "full_type": "PvZCards.Engine.Components.HealEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {
+        "HealAmount": "int"
+      },
+      "examples": [
+        {
+          "HealAmount": 4
+        },
+        {
+          "HealAmount": 6
+        },
+        {
+          "HealAmount": 1
+        }
+      ]
+    },
+    "AttackInLaneEffectDescriptor": {
+      "full_type": "PvZCards.Engine.Components.AttackInLaneEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {
+        "DamageAmount": "int"
+      },
+      "examples": [
+        {
+          "DamageAmount": 5
+        },
+        {
+          "DamageAmount": 6
+        },
+        {
+          "DamageAmount": 2
+        }
+      ]
+    },
+    "MoveCardToLanesEffectDescriptor": {
+      "full_type": "PvZCards.Engine.Components.MoveCardToLanesEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {},
+      "examples": []
+    },
+    "ExtraAttackEffectDescriptor": {
+      "full_type": "PvZCards.Engine.Components.ExtraAttackEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {},
+      "examples": []
+    },
+    "DrawCardEffectDescriptor": {
+      "full_type": "PvZCards.Engine.Components.DrawCardEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {
+        "DrawAmount": "int"
+      },
+      "examples": [
+        {
+          "DrawAmount": 2
+        },
+        {
+          "DrawAmount": 1
+        },
+        {
+          "DrawAmount": 5
+        }
+      ]
+    },
+    "DrawCardFromSubsetEffectDescriptor": {
+      "full_type": "PvZCards.Engine.Components.DrawCardFromSubsetEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {
+        "SubsetQuery": {
+          "$type": "reference",
+          "$data": {
+            "queries": "[{'$type': 'reference', '$data': {'Query': '...'}}]"
+          }
+        },
+        "DrawAmount": "int"
+      },
+      "examples": [
+        {
+          "SubsetQuery": {
+            "$type": "...",
+            "$data": "..."
+          },
+          "DrawAmount": 1
+        },
+        {
+          "SubsetQuery": {
+            "$type": "...",
+            "$data": "..."
+          },
+          "DrawAmount": 2
+        },
+        {
+          "SubsetQuery": {
+            "$type": "...",
+            "$data": "..."
+          },
+          "DrawAmount": 3
+        }
+      ]
+    },
+    "GrantAbilityEffectDescriptor": {
+      "full_type": "PvZCards.Engine.Components.GrantAbilityEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {
+        "GrantableAbilityType": "string",
+        "Duration": "string",
+        "AbilityValue": "int"
+      },
+      "examples": [
+        {
+          "GrantableAbilityType": "Unhurtable",
+          "Duration": "EndOfTurn",
+          "AbilityValue": 0
+        },
+        {
+          "GrantableAbilityType": "Teamup",
+          "Duration": "Permanent",
+          "AbilityValue": 0
+        },
+        {
+          "GrantableAbilityType": "Truestrike",
+          "Duration": "Permanent",
+          "AbilityValue": 0
+        }
+      ]
+    },
+    "GainSunEffectDescriptor": {
+      "full_type": "PvZCards.Engine.Components.GainSunEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {
+        "Amount": "int",
+        "Duration": "string",
+        "ActivationTime": "string"
+      },
+      "examples": [
+        {
+          "Amount": 1,
+          "Duration": "Permanent",
+          "ActivationTime": "NextTurn"
+        },
+        {
+          "Amount": -999999999,
+          "Duration": "EndOfTurn",
+          "ActivationTime": "Immediate"
+        },
+        {
+          "Amount": 1,
+          "Duration": "EndOfTurn",
+          "ActivationTime": "Immediate"
+        }
+      ]
+    },
+    "CreateCardEffectDescriptor": {
+      "full_type": "PvZCards.Engine.Components.CreateCardEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {
+        "CardGuid": "int",
+        "ForceFaceDown": "bool"
+      },
+      "examples": [
+        {
+          "CardGuid": 281,
+          "ForceFaceDown": false
+        },
+        {
+          "CardGuid": 77,
+          "ForceFaceDown": false
+        },
+        {
+          "CardGuid": 312,
+          "ForceFaceDown": false
+        }
+      ]
+    },
+    "TransformIntoCardFromSubsetEffectDescriptor": {
+      "full_type": "PvZCards.Engine.Components.TransformIntoCardFromSubsetEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {
+        "SubsetQuery": {
+          "$type": "reference",
+          "$data": {
+            "queries": "[{'$type': 'reference', '$data': {'ComponentType': '...'}}]"
+          }
+        }
+      },
+      "examples": [
+        {
+          "SubsetQuery": {
+            "$type": "...",
+            "$data": "..."
+          }
+        }
+      ]
+    },
+    "CreateCardFromSubsetEffectDescriptor": {
+      "full_type": "PvZCards.Engine.Components.CreateCardFromSubsetEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {
+        "ForceFaceDown": "bool",
+        "SubsetQuery": {
+          "$type": "reference",
+          "$data": {
+            "queries": "[{'$type': 'reference', '$data': {'ComponentType': '...'}}]"
+          }
+        }
+      },
+      "examples": [
+        {
+          "ForceFaceDown": false,
+          "SubsetQuery": {
+            "$type": "...",
+            "$data": "..."
+          }
+        },
+        {
+          "ForceFaceDown": true,
+          "SubsetQuery": {
+            "$type": "...",
+            "$data": "..."
+          }
+        }
+      ]
+    },
+    "ReturnToHandFromPlayEffectDescriptor": {
+      "full_type": "PvZCards.Engine.Components.ReturnToHandFromPlayEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {},
+      "examples": []
+    },
+    "SlowEffectDescriptor": {
+      "full_type": "PvZCards.Engine.Components.SlowEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {},
+      "examples": []
+    },
+    "ModifySunCostEffectDescriptor": {
+      "full_type": "PvZCards.Engine.Components.ModifySunCostEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {
+        "SunCostAmount": "int",
+        "BuffDuration": "string"
+      },
+      "examples": [
+        {
+          "SunCostAmount": -1,
+          "BuffDuration": "EndOfTurn"
+        },
+        {
+          "SunCostAmount": -1,
+          "BuffDuration": "Permanent"
+        },
+        {
+          "SunCostAmount": 0,
+          "BuffDuration": "Permanent"
+        }
+      ]
+    },
+    "ChargeBlockMeterEffectDescriptor": {
+      "full_type": "PvZCards.Engine.Components.ChargeBlockMeterEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {
+        "ChargeAmount": "int"
+      },
+      "examples": [
+        {
+          "ChargeAmount": -100
+        },
+        {
+          "ChargeAmount": 80
+        },
+        {
+          "ChargeAmount": 10
+        }
+      ]
+    },
+    "MixedUpGravediggerEffectDescriptor": {
+      "full_type": "PvZCards.Engine.Components.MixedUpGravediggerEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {},
+      "examples": []
+    },
+    "TurnIntoGravestoneEffectDescriptor": {
+      "full_type": "PvZCards.Engine.Components.TurnIntoGravestoneEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {},
+      "examples": []
+    },
+    "CreateCardInDeckEffectDescriptor": {
+      "full_type": "PvZCards.Engine.Components.CreateCardInDeckEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {
+        "CardGuid": "int",
+        "AmountToCreate": "int",
+        "DeckPosition": "string"
+      },
+      "examples": [
+        {
+          "CardGuid": 345,
+          "AmountToCreate": 5,
+          "DeckPosition": "Random"
+        },
+        {
+          "CardGuid": 345,
+          "AmountToCreate": 2,
+          "DeckPosition": "Random"
+        },
+        {
+          "CardGuid": 450,
+          "AmountToCreate": 2,
+          "DeckPosition": "Random"
+        }
+      ]
+    },
+    "GrantTriggeredAbilityEffectDescriptor": {
+      "full_type": "PvZCards.Engine.Effects.GrantTriggeredAbilityEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {
+        "AbilityGuid": "int",
+        "AbilityValueType": "string",
+        "AbilityValueAmount": "int"
+      },
+      "examples": [
+        {
+          "AbilityGuid": 562,
+          "AbilityValueType": "None",
+          "AbilityValueAmount": 0
+        },
+        {
+          "AbilityGuid": 564,
+          "AbilityValueType": "None",
+          "AbilityValueAmount": 0
+        },
+        {
+          "AbilityGuid": 564,
+          "AbilityValueType": "Damage",
+          "AbilityValueAmount": 3
+        }
+      ]
+    },
+    "SetStatEffectDescriptor": {
+      "full_type": "PvZCards.Engine.Components.SetStatEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {
+        "StatType": "string",
+        "Value": "int",
+        "ModifyOperation": "string",
+        "StripNoncontinousModifiers": "bool"
+      },
+      "examples": [
+        {
+          "StatType": "Attack",
+          "Value": 7,
+          "ModifyOperation": "Set",
+          "StripNoncontinousModifiers": true
+        },
+        {
+          "StatType": "Health",
+          "Value": 3,
+          "ModifyOperation": "Set",
+          "StripNoncontinousModifiers": true
+        },
+        {
+          "StatType": "Attack",
+          "Value": 4,
+          "ModifyOperation": "Set",
+          "StripNoncontinousModifiers": true
+        }
+      ]
+    },
+    "CopyStatsEffectDescriptor": {
+      "full_type": "PvZCards.Engine.Components.CopyStatsEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {},
+      "examples": []
+    },
+    "CopyCardEffectDescriptor": {
+      "full_type": "PvZCards.Engine.Components.CopyCardEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {
+        "GrantTeamup": "bool",
+        "ForceFaceDown": "bool",
+        "CreateInFront": "bool"
+      },
+      "examples": [
+        {
+          "GrantTeamup": true,
+          "ForceFaceDown": false,
+          "CreateInFront": true
+        }
+      ]
+    }
+  },
+  "triggers": {
+    "ShowTriggeredIcon": {
+      "full_type": "PvZCards.Engine.Components.ShowTriggeredIcon, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {
+        "abilities": "[int]"
+      },
+      "examples": [
+        {
+          "abilities": [
+            "..."
+          ]
+        },
+        {
+          "abilities": [
+            "...",
+            "..."
+          ]
+        }
+      ]
+    },
+    "DiscardFromPlayTrigger": {
+      "full_type": "PvZCards.Engine.Components.DiscardFromPlayTrigger, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {},
+      "examples": []
+    },
+    "PlayTrigger": {
+      "full_type": "PvZCards.Engine.Components.PlayTrigger, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {},
+      "examples": []
+    },
+    "DamageTrigger": {
+      "full_type": "PvZCards.Engine.Components.DamageTrigger, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {},
+      "examples": []
+    },
+    "MoveTrigger": {
+      "full_type": "PvZCards.Engine.Components.MoveTrigger, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {},
+      "examples": []
+    },
+    "TurnStartTrigger": {
+      "full_type": "PvZCards.Engine.Components.TurnStartTrigger, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {},
+      "examples": []
+    },
+    "GrantedTriggeredAbilities": {
+      "full_type": "PvZCards.Engine.Components.GrantedTriggeredAbilities, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {
+        "a": "[{'g': 'int', 'vt': 'int', 'va': 'int'}]"
+      },
+      "examples": [
+        {
+          "a": [
+            "..."
+          ]
+        }
+      ]
+    },
+    "ExtraAttackTrigger": {
+      "full_type": "PvZCards.Engine.Components.ExtraAttackTrigger, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {},
+      "examples": []
+    },
+    "BuffTrigger": {
+      "full_type": "PvZCards.Engine.Components.BuffTrigger, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {},
+      "examples": []
+    },
+    "DrawCardTrigger": {
+      "full_type": "PvZCards.Engine.Components.DrawCardTrigger, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {},
+      "examples": []
+    },
+    "SlowedTrigger": {
+      "full_type": "PvZCards.Engine.Components.SlowedTrigger, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {},
+      "examples": []
+    },
+    "HealTrigger": {
+      "full_type": "PvZCards.Engine.Components.HealTrigger, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {},
+      "examples": []
+    },
+    "CombatEndTrigger": {
+      "full_type": "PvZCards.Engine.Components.CombatEndTrigger, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {},
+      "examples": []
+    },
+    "EnterBoardTrigger": {
+      "full_type": "PvZCards.Engine.Components.EnterBoardTrigger, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {},
+      "examples": []
+    },
+    "RevealPhaseEndTrigger": {
+      "full_type": "PvZCards.Engine.Components.RevealPhaseEndTrigger, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {},
+      "examples": []
+    },
+    "RevealTrigger": {
+      "full_type": "PvZCards.Engine.Components.RevealTrigger, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {},
+      "examples": []
+    },
+    "GrantTriggeredAbilityEffectDescriptor": {
+      "full_type": "PvZCards.Engine.Effects.GrantTriggeredAbilityEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {
+        "AbilityGuid": "int",
+        "AbilityValueType": "string",
+        "AbilityValueAmount": "int"
+      },
+      "examples": [
+        {
+          "AbilityGuid": 562,
+          "AbilityValueType": "None",
+          "AbilityValueAmount": 0
+        },
+        {
+          "AbilityGuid": 564,
+          "AbilityValueType": "None",
+          "AbilityValueAmount": 0
+        },
+        {
+          "AbilityGuid": 564,
+          "AbilityValueType": "Damage",
+          "AbilityValueAmount": 3
+        }
+      ]
+    },
+    "LaneCombatStartTrigger": {
+      "full_type": "PvZCards.Engine.Components.LaneCombatStartTrigger, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {},
+      "examples": []
+    },
+    "LaneCombatEndTrigger": {
+      "full_type": "PvZCards.Engine.Components.LaneCombatEndTrigger, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {},
+      "examples": []
+    },
+    "DrawCardFromSubsetTrigger": {
+      "full_type": "PvZCards.Engine.Components.DrawCardFromSubsetTrigger, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {},
+      "examples": []
+    },
+    "DestroyCardTrigger": {
+      "full_type": "PvZCards.Engine.Components.DestroyCardTrigger, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {},
+      "examples": []
+    },
+    "SurprisePhaseStartTrigger": {
+      "full_type": "PvZCards.Engine.Components.SurprisePhaseStartTrigger, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {},
+      "examples": []
+    },
+    "ReturnToHandTrigger": {
+      "full_type": "PvZCards.Engine.Components.ReturnToHandTrigger, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {},
+      "examples": []
+    }
+  },
+  "special_components": {
+    "Aquatic": {
+      "full_type": "PvZCards.Engine.Components.Aquatic, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {
+        "Counters": {
+          "IsPersistent": "bool",
+          "Counters": "[{'SourceId': 'int', 'Duration': 'int', 'Value': 'int'}]"
+        }
+      },
+      "examples": [
+        {
+          "Counters": {
+            "IsPersistent": "...",
+            "Counters": "..."
+          }
+        }
+      ]
+    },
+    "Armor": {
+      "full_type": "PvZCards.Engine.Components.Armor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {
+        "ArmorAmount": {
+          "BaseValue": "int"
+        }
+      },
+      "examples": [
+        {
+          "ArmorAmount": {
+            "BaseValue": "..."
+          }
+        }
+      ]
+    },
+    "Frenzy": {
+      "full_type": "PvZCards.Engine.Components.Frenzy, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {
+        "Counters": {
+          "IsPersistent": "bool",
+          "Counters": "[{'SourceId': 'int', 'Duration': 'int', 'Value': 'int'}]"
+        }
+      },
+      "examples": [
+        {
+          "Counters": {
+            "IsPersistent": "...",
+            "Counters": "..."
+          }
+        }
+      ]
+    },
+    "Untrickable": {
+      "full_type": "PvZCards.Engine.Components.Untrickable, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {
+        "Counters": {
+          "IsPersistent": "bool",
+          "Counters": "[{'SourceId': 'int', 'Duration': 'int', 'Value': 'int'}]"
+        }
+      },
+      "examples": [
+        {
+          "Counters": {
+            "IsPersistent": "...",
+            "Counters": "..."
+          }
+        }
+      ]
+    },
+    "Teamup": {
+      "full_type": "PvZCards.Engine.Components.Teamup, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {
+        "Counters": {
+          "IsPersistent": "bool",
+          "Counters": "[{'SourceId': 'int', 'Duration': 'int', 'Value': 'int'}]"
+        }
+      },
+      "examples": [
+        {
+          "Counters": {
+            "IsPersistent": "...",
+            "Counters": "..."
+          }
+        }
+      ]
+    },
+    "Strikethrough": {
+      "full_type": "PvZCards.Engine.Components.Strikethrough, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {
+        "Counters": {
+          "IsPersistent": "bool",
+          "Counters": "[{'SourceId': 'int', 'Duration': 'int', 'Value': 'int'}]"
+        }
+      },
+      "examples": [
+        {
+          "Counters": {
+            "IsPersistent": "...",
+            "Counters": "..."
+          }
+        }
+      ]
+    },
+    "SplashDamage": {
+      "full_type": "PvZCards.Engine.Components.SplashDamage, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {
+        "DamageAmount": "int"
+      },
+      "examples": [
+        {
+          "DamageAmount": 4
+        },
+        {
+          "DamageAmount": 3
+        },
+        {
+          "DamageAmount": 1
+        }
+      ]
+    },
+    "Deadly": {
+      "full_type": "PvZCards.Engine.Components.Deadly, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "params": {
+        "Counters": {
+          "IsPersistent": "bool",
+          "Counters": "[{'SourceId': 'int', 'Duration': 'int', 'Value': 'int'}]"
+        }
+      },
+      "examples": [
+        {
+          "Counters": {
+            "IsPersistent": "...",
+            "Counters": "..."
+          }
+        }
+      ]
+    }
+  },
+  "composite_queries": {}
+}

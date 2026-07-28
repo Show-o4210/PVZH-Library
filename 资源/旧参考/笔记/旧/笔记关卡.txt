@@ -1,0 +1,258 @@
+我对僵尸200关进行批注，这样比较好看
+
+
+{
+    "Id": "PVE_Soft_Node_Zombie_200",		这是关卡的ID，用来定位的
+
+
+    "Name": null,				不用管这个
+
+
+    "Status": 0,				关卡状态，不用管
+
+
+    "MustPlayAllPlayableCards": false,		必须打光牌( true 或者 false )
+
+
+    "DisableSurprisePhase": false,		跳过锦囊阶段
+
+
+    "DelayHeroIntros": false,			让英雄之后再出场（类似新手教程第一关，需要做后续判定）
+
+
+    "HideSurpriseVisual": false,		锦囊阶段战争迷雾（大概就是特效之类的，false就是正常游戏对局，true则显示特效和音效什么的）
+
+
+    "DisableDynamicDifficulty": false,		禁用动态困难（类似人机印卡之类的操作就需要它）
+
+
+    "EloGainMultiplier": 1.0,			人机难度标准
+
+
+    "OpponentElo": 1700,			人机难度（500————简单  1000————普通 2000————困难）大概这样，越高越难
+
+
+    "EnableReadySetPlant": true,		播放植物卡动画
+
+
+    "SkipHeroSelect": false,			跳过英雄选择（要配合下文使用）
+
+
+【人机】
+    "OpponentConfig": {	
+        "Parameters": {
+            "Faction": 0,	阵营（0植物，1僵尸）
+
+            "MinimumDeckSize": 0,	卡牌最小值
+
+            "InitialCardsToDrawFromDeck": 4,	初始卡牌数
+
+            "InitialCardsToDrawFromSuperpowerPool": 1,	初始超能力数
+
+            "NumCardsToDrawPerTurn": 1,		每回合抽卡数
+
+            "InitialSunCount": 1,		初始费用
+
+            "ShuffleDeckAtStartOfGame": true,	是否洗牌
+
+            "ShuffleSuperpowerPoolAtStartOfGame": true,		是否洗牌超能力
+
+            "MulliganAtStartOfGame": true,	游戏开始换牌
+
+            "MaxHandSize": 10,		最大手牌数
+
+            "InitialHealth": 20,	生命值
+
+            "SuperBlockChance": 15,	超级格挡机会（不必管）
+
+            "DiesWhenDrawingOnEmpty": true,	打完牌死亡
+
+            "HasTimedTurns": false,		倒计时（人机关卡别加，游戏要崩溃）
+
+            "CreateAllCardsInDeck": false,	
+
+            "SuperBlockTable": {		护盾
+                "TableEntries": [
+                    {
+                        "RngWeight": 33,	护盾概率（总概率相加必须100，不可以出现浮点小数点）
+                        "ChargeAmount": 10
+                    },
+                    {
+                        "RngWeight": 34,
+                        "ChargeAmount": 20
+                    },
+                    {
+                        "RngWeight": 33,
+                        "ChargeAmount": 30
+                    }
+                ]
+            },
+            "BlockMeterMax": 80,		护盾触发值
+
+            "SuperBlockHealthThreshold": 2147483647		没必要改
+        },
+
+
+        "HeroSelection": 0,		英雄阵营（0植物，1僵尸）
+
+        "HeroId": "Citron",		英雄ID（配合笔记.txt使用更方便）
+
+        "DeckId": "Soft_PVE_Deck_Plant_Citron_020",	卡组
+
+        "SuperblockMultiplier": 0.0
+    },
+
+
+
+ 【玩家】（基本同上我不多做批注，不同的我会加上）
+    "PlayerConfig": {
+        "Parameters": {
+            "Faction": 1,
+            "MinimumDeckSize": 0,
+            "InitialCardsToDrawFromDeck": 4,
+            "InitialCardsToDrawFromSuperpowerPool": 1,
+            "NumCardsToDrawPerTurn": 1,
+            "InitialSunCount": 1,
+            "ShuffleDeckAtStartOfGame": true,
+            "ShuffleSuperpowerPoolAtStartOfGame": true,
+            "MulliganAtStartOfGame": true,
+            "MaxHandSize": 10,
+            "InitialHealth": 20,
+            "SuperBlockChance": 15,
+            "DiesWhenDrawingOnEmpty": true,
+            "HasTimedTurns": false,
+            "CreateAllCardsInDeck": false,
+            "SuperBlockTable": {
+                "TableEntries": [
+                    {
+                        "RngWeight": 33,
+                        "ChargeAmount": 10
+                    },
+                    {
+                        "RngWeight": 34,
+                        "ChargeAmount": 20
+                    },
+                    {
+                        "RngWeight": 33,
+                        "ChargeAmount": 30
+                    }
+                ]
+            },
+            "BlockMeterMax": 80,
+            "SuperBlockHealthThreshold": 2147483647
+        },
+        "HeroSelection": 1,
+
+        "HeroId": "CptBrainz",	如果你上文选择跳过英雄选择，那么这里就是你的英雄
+        "DeckId": "",		同上，为你的卡组
+
+        "SuperblockMultiplier": 0.0
+    },
+
+
+    "BoardConfig": {		战斗道路（ 0 高地； 1 平地； 2 水路）
+        "LaneEntries": [
+            {
+                "LaneType": 2,
+                "Cards": []	这个是增加线上的单位，填上对应的Guid，那么游戏开局就会出现了
+            },
+            {
+                "LaneType": 1,
+                "Cards": []
+            },
+            {
+                "LaneType": 1,
+                "Cards": []
+            },
+            {
+                "LaneType": 1,
+                "Cards": []
+            },
+            {
+                "LaneType": 0,
+                "Cards": []
+            }
+        ],
+        "BoardAbilities": [		关卡特殊效果，可以自制
+            362,
+            363,
+            394,
+            376
+        ],
+
+
+        "PlantsBoardName": "GrassKnuckles",		战斗场景地图
+        "ZombiesBoardName": "GrassKnuckles"
+    },
+
+
+    "PreGameConfig": {					关卡ID，定位用的
+        "Name": "Node_PVE_Soft_Node_Zombie_200:Name",
+        "Description": "Node_PVE_Soft_Node_Zombie_200:Description",
+        "Narrative": ""
+    },
+
+
+    "PostGameConfig": {		游戏配置
+        "RewardPackId": "",
+        "Narrative": "",
+        "RewardPackIds": []
+    },
+
+
+    "RepresentationConfig": {	关卡显示的头像地图之类的
+        "Type": 5,
+        "Id": "Citron",
+        "Guid": 103
+    },
+
+
+    "GameEvents": [		游戏事件（下面这俩个是蒋王对话框）
+        {
+            "TriggerConfig": {
+                "Type": 1,
+                "CardId": 280,
+                "TurnNumber": 0,
+                "RecordType": 7
+            },
+            "DismissConfig": {
+                "Type": 0,
+                "TimeToWait": 0.0
+            },
+            "ViewType": 2,
+            "X": 0.0,
+            "Y": 1.5,
+            "TextKey": "Node_PVE_Soft_Node_Zombie_200:7_MessageText",
+            "Delay": 0.0,
+
+            "MustTapThrough": true,	需要点击过剧情
+
+            "TelemetryEvent": 0,
+
+            "Narrator": 2,		修改这个改变说话的人（ 0 无 ， 1 戴夫 ， 2 僵王 ）
+
+            "$type": "PvZCards.Core.Data.MessageEventConfig"
+        },
+        {
+            "TriggerConfig": {
+                "Type": 1,
+                "CardId": 280,
+                "TurnNumber": 0,
+                "RecordType": 7
+            },
+            "DismissConfig": {
+                "Type": 0,
+                "TimeToWait": 0.0
+            },
+            "ViewType": 2,
+            "X": 0.0,
+            "Y": 1.5,
+            "TextKey": "Node_PVE_Soft_Node_Zombie_200:6_MessageText",
+            "Delay": 0.0,
+            "MustTapThrough": true,
+            "TelemetryEvent": 0,
+            "Narrator": 2,
+            "$type": "PvZCards.Core.Data.MessageEventConfig"
+        }
+    ]
+}

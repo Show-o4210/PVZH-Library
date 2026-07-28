@@ -1,0 +1,731 @@
+【前言】
+目前在翻修笔记内容，新加一些东西的说25.8.2
+
+
+
+
+
+【txt文本】
+<color=字体颜色>文本</color>    字体色
+<u>文本</u>                    横线字体
+<b>字体</b>                    加粗
+2147483647
+
+#FFD700	金色
+
+
+【阵营】
+Plants     植物
+Zombies    僵尸
+
+
+【地图】
+Citron 				太空站
+Professor 			大学
+GrassKnuckles 		沙滩
+
+BrainFreeze		急冻魔冰原
+Chomper			大嘴花园
+Citron 			橘子太空站
+CptBrainz		超市暗夜高楼
+Disco 			舞王迪斯科
+Gargantuar 		摔跤狂竞技场
+GrassKnuckles 	拳王菜沙滩
+Impfinity 		小鬼乐园
+Neptuna 		海妖野外自然
+NightCap 		暗夜菇忍者房
+Penelopea 		绿影侠高楼
+Professor 		教授大学
+Rose 			玫瑰城堡
+Scortchwood 	火树火山
+Spudow 			土豆仔沙地
+WallKnight 		坚果骑士城堡
+Witch 			女妖城堡
+ZMech 			Z机甲化工厂
+Cyborg 			锈铁垃圾场
+Sunflower 		耀斑花游戏厅
+
+
+【英雄名字】
+(僵尸)
+CptBrainz			超尸
+BrainFreeze			急冻魔
+Cyborg				锈铁侠
+Disco				霹雳舞王
+Gargantuar			摔跤狂
+HugeGigantacu		至尊大王
+Impfinity			无穷小子
+Neptuna				海妖
+Professor			僵点子教授
+Witch				不死女妖
+ZMech				Z机甲
+
+(植物)
+BetaCarrotina		贝塔胡萝卜蒂娜
+Chomper				霸王大嘴花
+Citron				香橼猎手
+Grass_Knuckles		拳王菜
+NightCap			暗夜菇
+Penelopea			绿影侠
+Rose				玫瑰
+Scortchwood			火爆队长
+Spudow				土豆仔
+Sunflower			耀斑花
+WallKnight			坚果骑士
+
+
+
+
+【卡牌类型】
+（植物）
+Base 					植物
+BasePlantOneTimeEffect	植物锦囊
+BasePlantEnvironment    植物环境
+
+（僵尸）
+BaseZombie				僵尸
+BaseZombieOneTimeEffect	僵尸锦囊
+BaseZombieEnvironment	僵尸环境
+
+
+
+
+【职业类型】
+Token     令牌
+
+Hearty    健壮
+Brainy    有脑
+Sneaky    狡猾
+Madcap    疯狂
+Hungry    猛兽
+
+Kabloom   爆花
+MegaGro   猛涨
+Smarty    聪明
+
+
+【rarity】稀有度
+"rarity": 0,	罕见
+"Value": "R1"
+
+"rarity": 1, 	稀有
+"Value": "R2"
+
+"rarity": 2,	超稀有
+"Value": "R3"
+
+"rarity": 3,	传说
+"Value": "R4"
+
+"rarity": 4,	基础卡
+"Value": "R0"
+
+"rarity": 5,	活动卡
+"Value": "Event"
+
+
+【持续时间】
+Permanent   一直
+EndOfTurn   回合结束
+NextFighter	下个单位
+
+
+
+
+【变量单词】
+add      增加
+GreaterOrEqual   大于或等于
+LessOrEqual     小于或等于
+Equal    等于
+
+
+
+
+【执行触发的选择】
+Manual   手动
+Random   随机
+All      全自动
+
+
+
+
+【筛选的目标】
+AdjacentLaneQuery   相邻的路线
+
+
+
+
+【触发的条件】
+PlayTrigger   打出
+CombatEndTrigger   回合结束
+TurnStartTrigger   回合开始
+LaneCombatStartTrigger   线路开始
+LaneCombatEndTrigger     线路结束
+DiscardFromPlayTrigger   死亡
+DamageTrigger    受伤
+DrawCardTrigger   抽卡触发
+SurprisePhaseStartTrigger	魔法回合开始
+
+
+
+
+
+【执行的时间】
+Immediate    	立刻执行
+NextTurn		下回合触发
+
+
+
+
+【触发目标】
+SelfQuery      检测自己
+WillTriggerOnDeathEffectsQuery   检测在死亡时触发
+
+
+
+
+【cn250的特殊短语】
+名字_Targeting,   手动选择
+名字_heraldFighter,   由xx召唤
+名字_heraldTrick,  由xx召唤
+名字_heraldFighter,   由什么创造
+名字_longDesc,介绍
+名字_name,名字
+名字_shortDesc,介绍
+名字_flavorText,收藏介绍
+_Targeting,效果
+
+
+
+[splashdamage=伤害]	溅射
+[Strikethrough]    	穿透
+[Truestrike]       	必中
+[Teamup]           	组队
+[bounce]           	弹射
+[conjures]         	召唤
+[armored=装甲值]		装甲
+[untrickable]		锦囊免疫
+
+
+
+【触发地点】
+HighgroundTerrain  高地
+WaterTerrain   水路
+GrassTerrain   草地
+
+
+
+
+【特殊状态】
+Frenzy  狂热
+Deadly  致命
+Strikethrough   穿透
+Teamup  组队
+Armor   装甲
+overshoot  先攻
+Unhurtable 无敌
+Untrickable   锦囊免疫
+Truestrike   必中
+MultiplyDamage    翻倍
+
+
+
+
+
+【是于否】
+false  否
+true   是
+
+
+
+
+【多技能连接】
+,
+                            {
+                                "components": [{
+
+
+
+
+【多判定连接】
+, {
+															"$type": "PvZCards.Engine.Queries.CompositeAllQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+															"$data": {
+																"queries": [{
+
+
+
+
+【无技能添加】
+, {
+					"$type": "PvZCards.Engine.Components.EffectEntitiesDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+					"$data": {
+						"entities": [{
+								"components": [{
+
+
+
+
+[动画]
+, {
+					"$type": "PvZCards.Engine.Components.ShowTriggeredIcon, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+					"$data": {
+						"abilities": [13]
+					}
+				}
+
+
+
+【职业】
+, {
+					"$type": "PvZCards.Engine.Components.Subtypes, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+					"$data": {
+						"subtypes": [数据]
+					}
+				}
+
+
+【攻击三线】
+, {
+					"$type": "PvZCards.Engine.Components.Multishot, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+					"$data": {}
+				}
+
+
+【攻击全线】
+,
+                {
+                    "$type": "PvZCards.Engine.Components.AttacksInAllLanes, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "$data": {}
+                }
+
+
+
+
+【溅射】
+, {
+					"$type": "PvZCards.Engine.Components.SplashDamage, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+					"$data": {
+						"DamageAmount": 伤害
+					}
+				}
+
+
+【两栖】
+, {
+					"$type": "PvZCards.Engine.Components.Aquatic, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+					"$data": {
+						"Counters": {
+							"IsPersistent": true,
+							"Counters": [{
+									"SourceId": -1,
+									"Duration": 0,
+									"Value": 0
+								}
+							]
+						}
+					}
+				}
+
+
+
+
+
+【组队】
+, {
+					"$type": "PvZCards.Engine.Components.Teamup, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+					"$data": {
+						"Counters": {
+							"IsPersistent": true,
+							"Counters": [{
+									"SourceId": -1,
+									"Duration": 0,
+									"Value": 0
+								}
+							]
+						}
+					}
+				}, {
+					"$type": "PvZCards.Engine.Components.CreateInFront, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+					"$data": {}
+				}
+
+
+
+
+【必中】
+, {
+					"$type": "PvZCards.Engine.Components.Truestrike, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+					"$data": {
+						"Counters": {
+							"IsPersistent": true,
+							"Counters": [{
+									"SourceId": -1,
+									"Duration": 0,
+									"Value": 0
+								}
+							]
+						}
+					}
+				}
+
+
+
+
+
+【穿透】
+, {
+					"$type": "PvZCards.Engine.Components.Strikethrough, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+					"$data": {
+						"Counters": {
+							"IsPersistent": true,
+							"Counters": [{
+									"SourceId": -1,
+									"Duration": 0,
+									"Value": 0
+								}
+							]
+						}
+					}
+				}
+
+
+
+
+
+【装甲】
+, {
+					"$type": "PvZCards.Engine.Components.Armor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+					"$data": {
+						"ArmorAmount": {
+							"BaseValue": 护甲值
+						}
+					}
+				}
+
+
+
+
+【锦囊免疫】
+, {
+					"$type": "PvZCards.Engine.Components.Untrickable, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+					"$data": {
+						"Counters": {
+							"IsPersistent": true,
+							"Counters": [{
+									"SourceId": -1,
+									"Duration": 0,
+									"Value": 1
+								}
+							]
+						}
+					}
+				}
+
+
+
+【血量攻击】
+, {
+					"$type": "PvZCards.Engine.Components.AttackOverride, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+					"$data": {
+						"Counters": {
+							"IsPersistent": true,
+							"Counters": [{
+									"SourceId": -1,
+									"Duration": 0,
+									"Value": 2
+								}
+							]
+						}
+					}
+				}
+
+
+
+
+
+
+
+【致命】
+				, {
+					"$type": "PvZCards.Engine.Components.Deadly, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+					"$data": {
+						"Counters": {
+							"IsPersistent": true,
+							"Counters": [{
+									"SourceId": -1,
+									"Duration": 0,
+									"Value": 0
+								}
+							]
+						}
+					}
+				}
+
+
+
+
+
+
+【墓碑】
+, {
+					"$type": "PvZCards.Engine.Components.PlaysFaceDown, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+					"$data": {}
+				}
+
+
+
+
+
+【双重攻击】
+, {
+					"$type": "PvZCards.Engine.Components.GrantedTriggeredAbilities, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+					"$data": {
+						"a": [{
+								"g": 562,
+								"vt": 0,
+								"va": 0
+							}
+						]
+					}
+				}
+
+
+
+
+【狂热】
+, {
+					"$type": "PvZCards.Engine.Components.Frenzy, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+					"$data": {
+						"Counters": {
+							"IsPersistent": true,
+							"Counters": [{
+									"SourceId": -1,
+									"Duration": 0,
+									"Value": 0
+								}
+							]
+						}
+					}
+				}
+
+【对话】
+关卡:5_MessageText,博士话
+关卡:6_MessageText,博士话先
+关卡:7_MessageText,边框话
+关卡:Description,
+关卡:Name,柔软僵尸多少
+
+
+【200Z对话框】
+{
+            "TriggerConfig": {
+                "Type": 1,
+                "CardId": 280,
+                "TurnNumber": 0,
+                "RecordType": 7
+            },
+            "DismissConfig": {
+                "Type": 0,
+                "TimeToWait": 0.0
+            },
+            "ViewType": 2,
+            "X": 0.0,
+            "Y": 1.5,
+            "TextKey": "Node_PVE_Soft_Node_Zombie_200:7_MessageText",
+            "Delay": 0.0,
+            "MustTapThrough": true,
+            "TelemetryEvent": 0,
+            "Narrator": 2,
+            "$type": "PvZCards.Core.Data.MessageEventConfig"
+        },
+        {
+            "TriggerConfig": {
+                "Type": 1,
+                "CardId": 280,
+                "TurnNumber": 0,
+                "RecordType": 7
+            },
+            "DismissConfig": {
+                "Type": 0,
+                "TimeToWait": 0.0
+            },
+            "ViewType": 2,
+            "X": 0.0,
+            "Y": 1.5,
+            "TextKey": "Node_PVE_Soft_Node_Zombie_200:6_MessageText",
+            "Delay": 0.0,
+            "MustTapThrough": true,
+            "TelemetryEvent": 0,
+            "Narrator": 2,
+            "$type": "PvZCards.Core.Data.MessageEventConfig"
+        }
+
+
+
+
+
+
+
+
+【职业】
+subtype_Peashooter,豌豆  0
+subtype_Berry,莓果  1
+subtype_Bean,豆子  2
+subtype_Flower,花朵  3
+subtype_Mushroom,蘑菇 4
+subtype_Nut,坚果  5
+subtype_Sports,运动员  6
+subtype_Science,科学家 7
+subtype_Dancing,跳舞  8
+subtype_Imp,小鬼 9
+subtype_Pet,宠物10
+subtype_Gargantuar,巨尸11
+subtype_Pirate,海盗 12
+subtype_Pinecone,松果 13
+subtype_Mustache,胡须  15
+subtype_Party,派对16
+subtype_Gourmet,美食家18
+subtype_History,历史 19
+subtype_Barrel,木桶 20
+subtype_Seed,种子  21
+subtype_Animal,动物   22
+subtype_Cactus,仙人掌 23
+subtype_Corn,玉米 24
+subtype_Dragon,巨龙 25
+subtype_Flytrap,捕蝇草 26
+subtype_Fruit,水果   27
+subtype_Leafy,绿叶 28
+subtype_Moss,苔藓  29
+subtype_Root,根茎 31
+subtype_Squash,窝瓜  32
+subtype_Tree,树木 33
+subtype_Clock,钟表 35
+subtype_Professional,职业  37
+subtype_Monster,怪物 39
+subtype_Banana,香蕉 40
+subtype_Mime,哑剧  41
+
+
+
+
+
+
+
+【关卡游戏事件】
+（解密给卡）（阵营 0 植物， 1 僵尸）
+
+	"GameEvents": [
+        {
+            "CardIds": [],
+            "PlayerFaction": 阵营,
+            "$type": "PvZCards.Core.Data.AddCardToTopOfDeckConfig"
+        }
+    ]
+}
+
+
+
+（将卡移到卡组最顶端，换句话说规定的回合必抽到这张卡）
+
+    "GameEvents": [
+        {
+            "TurnNumber": 回合数,
+            "CardGuid": 卡牌的guid,
+            "PlayerFaction": 阵营,
+            "$type": "PvZCards.Core.Data.MoveCardToTopOfDeckConfig"
+        },
+
+
+
+
+（对话框）
+	"GameEvents": [
+        {
+            "TriggerConfig": {
+                "Type": 1,
+                "CardId": 280,
+                "TurnNumber": 0,
+                "RecordType": 7
+            },
+            "DismissConfig": {
+                "Type": 0,
+                "TimeToWait": 0.0
+            },
+            "ViewType": 2,
+            "X": 0.0,
+            "Y": 1.5,
+            "TextKey": "关卡",
+            "Delay": 0.0,
+            "MustTapThrough": true,
+            "TelemetryEvent": 0,
+            "Narrator": 对话框人物,
+            "$type": "PvZCards.Core.Data.MessageEventConfig"
+        }
+
+
+【场景能力模板】
+    },
+    "1001": {
+        "entity": {
+            "components": [
+                {
+                    "$type": "PvZCards.Engine.Components.Card, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "$data": {
+                        "Guid": 1001
+                    }
+                },
+                {
+                    "$type": "PvZCards.Engine.Components.BoardAbility, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "$data": {}
+                },
+                {
+                    "$type": "PvZCards.Engine.Components.SunCost, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "$data": {
+                        "SunCostValue": {
+                            "BaseValue": 0
+                        }
+                    }
+                },
+                {
+                    "$type": "PvZCards.Engine.Components.Rarity, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "$data": {
+                        "Value": "R1"
+                    }
+                },
+                {
+                    "$type": "PvZCards.Engine.Components.EffectEntitiesDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "$data": {
+                        "entities": [
+                            {
+                                "components"
+        "prefabName": "BoardAbilityView",
+        "baseId": "BasePlantOneTimeEffect",
+        "color": "0",
+        "set": "Board",
+        "rarity": 0,
+        "setAndRarityKey": null,
+        "displayHealth": 0,
+        "displayAttack": 0,
+        "displaySunCost": 0,
+        "faction": "All",
+        "ignoreDeckLimit": false,
+        "isPower": false,
+        "isPrimaryPower": false,
+        "isFighter": false,
+        "isEnv": false,
+        "isAquatic": false,
+        "isTeamup": false,
+        "subtypes": [],
+        "tags": [],
+        "subtype_affinities": [],
+        "subtype_affinity_weights": [],
+        "tag_affinities": [],
+        "tag_affinity_weights": [],
+        "card_affinities": [],
+        "card_affinity_weights": [],
+        "usable": true,
+        "special_abilities": []
+    }
+
+

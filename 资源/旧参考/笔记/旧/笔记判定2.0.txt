@@ -1,0 +1,365 @@
+【此文本记录了pvzh中的一些常见判定】
+
+
+《判定条件集（嵌套判定）》
+【满足以下全部要求】
+{
+                                            "Query": {
+                                                "$type": "PvZCards.Engine.Queries.CompositeAllQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                                "$data": {
+                                                    "queries": [
+                                                    ]
+                                                }
+                                            }
+                                        }
+
+
+【满足下列任一要求】
+{
+                                            "Query": {
+                                                "$type": "PvZCards.Engine.Queries.CompositeAnyQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                                "$data": {
+                                                    "queries": [
+                                                    ]
+                                                }
+                                            }
+                                        }
+
+
+【不检测以下条件】
+,
+                                                        {
+                                                            "$type": "PvZCards.Engine.Queries.NotQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                                            "$data": {
+                                                                "Query": {
+                                                            }
+                                                        }
+
+【判定根】
+【触发对象判定】
+,
+                                    {
+                                        "$type": "PvZCards.Engine.Components.TriggerTargetFilter, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                        "$data": {
+                                            }
+                                        }
+                                    }
+
+【造成判定的判定，比如野玫瑰词条里的僵尸造成伤害】
+,
+                                    {
+                                        "$type": "PvZCards.Engine.Components.TriggerSourceFilter, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                        "$data": {
+                                        }
+                                    }
+
+
+【判定判定目标：比如说刺梨，damage加这个添上自己判定，那就是自己受伤判定】
+,
+                                    {
+                                        "$type": "PvZCards.Engine.Components.TriggerTargetFilter, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                        "$data": {
+                                        }
+                                    }
+
+
+【线路结束时触发】
+,
+                                    {
+                                        "$type": "PvZCards.Engine.Components.LaneCombatEndTrigger, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                        "$data": {}
+                                    }
+
+
+【变形仍然保留技能判定】
+,
+                                    {
+                                        "$type": "PvZCards.Engine.Components.PersistsAfterTransform, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                        "$data": {}
+                                    }
+
+
+
+
+
+
+《变量判定》
+
+【自己判定】
+,
+                                                        {
+                                                            "$type": "PvZCards.Engine.Queries.SelfQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                                            "$data": {}
+                                                        }
+
+
+
+
+【判断花费】
+, 
+									{
+										"$type": "PvZCards.Engine.Components.PlayerInfoCondition, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+										"$data": {
+											"Faction": "判断阵营",
+											"Query": {
+												"$type": "PvZCards.Engine.Queries.SunCounterComparisonQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+												"$data": {
+													"ComparisonOperator": "变量词语",
+													"SunCounterValue": 花费
+												}
+											}
+										}
+									}
+
+
+【判断花费
+,
+                                                        {
+                                                            "$type": "PvZCards.Engine.Components.SunGainedMultiplier, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                                            "$data": {
+                                                                "Faction": "阵营",
+                                                                "Divider": 最小公倍数
+                                                            }
+                                                        }
+
+
+
+【判断攻击力】
+, 
+														{
+															"$type": "PvZCards.Engine.Queries.AttackComparisonQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+															"$data": {
+																"ComparisonOperator": "变量关系",
+																"AttackValue": 数值
+															}
+														}
+
+
+
+【判断造成的伤害】
+, 
+														{
+                                                            "$type": "PvZCards.Engine.Queries.DamageTakenComparisonQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                                            "$data": {
+                                                                "ComparisonOperator": "变量单词",
+                                                                "DamageTakenValue": 伤害量
+                                                            }
+                                                        }
+
+
+
+【判断生命值】
+, 
+														{
+															"$type": "PvZCards.Engine.Queries.HealthComparisonQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+															"$data": {
+																"ComparisonOperator": "变量关系",
+																"HealthValue": 数值
+															}
+														}
+
+
+
+《卡牌判定》
+
+【检测卡牌职业】
+, 
+														{
+															"$type": "PvZCards.Engine.Queries.SubtypeQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+															"$data": {
+																"Subtype": 职业
+															}
+														}
+
+
+
+【检测标签】
+, 
+														{
+															"$type": "PvZCards.Engine.Queries.SubsetQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+															"$data": {
+																"Subset": "标签"
+															}
+														}
+
+
+
+【检测存活】
+,
+                                                        {
+                                                            "$type": "PvZCards.Engine.Queries.IsAliveQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                                            "$data": {}
+                                                        }
+
+
+【检测先前提到的卡牌】
+,
+                                    {
+                                        "$type": "PvZCards.Engine.Components.DestroyCardEffectDescriptor, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                        "$data": {}
+                                    }
+
+
+【效果触发判定，即将的判定，比如剑客僵尸加成的海盗僵尸】
+,
+                                    {
+                                        "$type": "PvZCards.Engine.Queries.WillTriggerEffectsQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                        "$data": {}
+                                    }
+
+
+【亡语，死亡判定触发】
+,
+                                                        {
+                                                            "$type": "PvZCards.Engine.Queries.WillTriggerOnDeathEffectsQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                                            "$data": {}
+                                                        }
+
+
+【锦囊卡判定】
+,
+                                                        {
+                                                            "$type": "PvZCards.Engine.Queries.TrickQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                                            "$data": {}
+                                                        }
+
+
+【在手牌中判定】
+,
+                                                        {
+                                                            "$type": "PvZCards.Engine.Queries.InHandQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                                            "$data": {}
+                                                        },
+
+
+【单位判定】
+,
+														{
+															"$type": "PvZCards.Engine.Queries.FighterQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+															"$data": {}
+														}
+
+
+【单位在场判定】
+,
+														{
+															"$type": "PvZCards.Engine.Queries.TargetableInPlayFighterQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+															"$data": {}
+														}
+
+
+
+【卡牌GUID判断】
+,
+                                                {
+                                                "$type": "PvZCards.Engine.Queries.CardGuidQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                                "$data": {
+                                                    "Guid": GUID
+                                                }
+
+
+【植物判定】
+,
+                                                        {
+                                                            "$type": "PvZCards.Engine.Queries.HasComponentQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                                            "$data": {
+                                                                "ComponentType": "PvZCards.Engine.Components.Plants, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                                                            }
+                                                        }
+
+
+【僵尸判定】
+,
+                                                        {
+                                                            "$type": "PvZCards.Engine.Queries.HasComponentQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                                            "$data": {
+                                                                "ComponentType": "PvZCards.Engine.Components.Zombies, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                                                            }
+                                                        }
+
+
+
+【环境判定】
+,
+                                                        {
+                                                            "$type": "PvZCards.Engine.Queries.HasComponentQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                                            "$data": {
+                                                                "ComponentType": "PvZCards.Engine.Components.Environment, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+                                                            }
+                                                        }
+
+
+《特殊对象判定》
+【英雄判定】（阵营填写Zombies 或者 Plants）
+{
+															"$type": "PvZCards.Engine.Queries.HasComponentQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+															"$data": {
+																"ComponentType": "PvZCards.Engine.Components.阵营, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+															}
+														}, {
+															"$type": "PvZCards.Engine.Queries.HasComponentQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+															"$data": {
+																"ComponentType": "PvZCards.Engine.Components.Player, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+															}
+														}
+
+
+
+【双英雄】
+,
+														{
+															"$type": "PvZCards.Engine.Queries.HasComponentQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+															"$data": {
+																"ComponentType": "PvZCards.Engine.Components.Player, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+															}
+														}
+
+
+【只触发一次】（放PrimaryTargetFilter上方）
+,
+                                    {
+                                        "$type": "PvZCards.Engine.Components.OncePerTurnCondition, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                        "$data": {}
+                                    },
+
+
+
+
+《线路判定》
+【相邻线判定】
+,
+                                                                    {
+                                                                        "$type": "PvZCards.Engine.Queries.AdjacentLaneQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                                                        "$data": {
+                                                                            "Side": "左右边",
+                                                                            "OriginEntityType": "Self"
+                                                                        }
+                                                                    }
+（Side可使用）
+Either = 0;
+ToTheLeft = 1;
+ToTheRight = 2;
+（OriginEntityType与Side可选删，下面同理）
+
+
+【在线路判定】
+,
+                                                        {
+                                                            "$type": "PvZCards.Engine.Queries.InAdjacentLaneQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                                            "$data": {
+                                                                "Side": "Either"
+                                                            }
+                                                        }
+
+
+【同线路判定】
+,
+                                                                    {
+                                                                        "$type": "PvZCards.Engine.Queries.InSameLaneQuery, EngineLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                                                        "$data": {
+                                                                            "OriginEntityType": "Self"
+                                                                        }
+                                                                    }
+
+
+
