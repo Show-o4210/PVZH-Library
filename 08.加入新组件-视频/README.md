@@ -13,6 +13,7 @@
 | **01** | [01. 视频播放原理与 Unity 模板生成](01.视频播放原理与Unity模板生成.md) | 详解 Unity `VideoPlayer` (Class 328) 组件工作原理，以及如何在 Unity Editor 中制作并导出干净的模板 Dump 文本。 |
 | **02** | [02. UABEA 组件注入与 PPtr 链路重绑](02.UABEA组件注入与PPtr链路重绑.md) | 结合 [2ceeb890a69397041ba1fd559056c358_1_patched](../2ceeb890a69397041ba1fd559056c358_1_patched) 解构，讲解 UABEA 中 `Create Asset` 新建组件、绑定 `m_GameObject` 与 `m_TargetMaterialRenderer` 及 MP4 URL 配置。 |
 | **03** | [03. 网格 FullRect 化与声音处理避坑指南](03.网格FullRect化与声音处理避坑指南.md) | 详解将 Sprite 网格替换为 Full Rect 矩形解决视频剪裁问题，以及**视频音频在 AB 包内无法成功发声的实战总结与 07 章节 Wwise 配合方案**。 |
+| **04** | [04. 英雄与普通卡牌视频挂载差异总结](04.英雄与普通卡牌视频挂载差异总结.md) | **英雄 vs 随从卡** 的 AB 分流、active 坑、外部贴图 Full Rect、安卓只认 H.264 mp4 等实战对照（坚果骑士 / 鳄梨）。 |
 
 ---
 
