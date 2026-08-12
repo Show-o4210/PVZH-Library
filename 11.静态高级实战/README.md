@@ -33,3 +33,5 @@ graph TD
 > [!TIP]
 > 🌐 **开源仓库**：[Show-o4210/pvzh-local-inventory-mod](https://github.com/Show-o4210/pvzh-local-inventory-mod)  
 > 本章节配套的全部开源 Python 补丁构建脚本、C 语言 Native 逻辑源码及配置模板，均存放于 GitHub 仓库以及工作区资源目录 **[pvzh-local-inventory-mod](../资源/pvzh-local-inventory-mod)** 中。
+>
+> 在库存 Merge 稳定之后，若需继续扩展战斗规则（例如 **Grant 赋甲 type=19**、装甲 UI、多 Hook 共洞），请接读 **[12. 静态高级实战 2](../12.静态高级实战2/README.md)**。
