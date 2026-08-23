@@ -31,6 +31,7 @@
 | [11. 静态高级实战](11.静态高级实战/README.md) | `libil2cpp.so` 静态 Patch 与本地卡库合并 |
 | [12. 静态高级实战 2](12.静态高级实战2/README.md) | Mod Base 能力扩展、Grant 赋甲与 UI 双轨 |
 | [13. 贴图资源拼接](13.贴图资源拼接/README.md) | Unity 2D 部件还原、idle 首帧拼接与批量 Python 脚本 |
+| [14. 动画资源提取](14.动画资源提取/README.md) | AnimationClip 离线还原、固定画布渲染、MP4/MOV 与批量提取 |
 | [资源](资源/) | 示例文件、索引、旧笔记及实战素材 |
 
 ## 适合谁
