@@ -32,6 +32,12 @@
 | [12. 静态高级实战 2](12.静态高级实战2/README.md) | Mod Base 能力扩展、Grant 赋甲与 UI 双轨 |
 | [13. 贴图资源拼接](13.贴图资源拼接/README.md) | Unity 2D 部件还原、idle 首帧拼接与批量 Python 脚本 |
 | [14. 动画资源提取](14.动画资源提取/README.md) | AnimationClip 离线还原、固定画布渲染、MP4/MOV 与批量提取 |
+| [15. 动态运行时初探](15.动态运行时初探/README.md) | Frida 动态插桩、IL2CPP 符号映射与双轨 Hook 基础 |
+| [16. 免 Root 移动端落地](16.免Root移动端落地/README.md) | Frida Gadget 嵌入、Smali 启动劫持与长期签名规范 |
+| [17. Unity 引擎动态交互](17.Unity引擎动态交互/README.md) | Unity 线程安全、UnitySynchronizationContext 调度实战 |
+| [18. 现代原生浮窗 UI 混合开发](18.现代原生浮窗UI混合开发/README.md) | 原生浮窗架构、防渲染转圈死锁与高版本滚动条避坑 |
+| [19. 良性 Mod 实战：离线卡组分享](19.良性Mod实战-离线卡组分享/README.md) | PVZH1 协议设计、卡牌合规校验与原生持久化实战 |
+| [20. 工程体验跃迁：资源门卫与教程跳过](20.工程体验跃迁-资源门卫与教程跳过/README.md) | Pre-Unity 资源门卫架构、2880个Bundle秒解与FTUE跳过 |
 | [资源](资源/) | 示例文件、索引、旧笔记及实战素材 |
 
 ## 适合谁
