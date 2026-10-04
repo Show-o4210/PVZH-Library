@@ -1,6 +1,6 @@
 # PVZH 图书馆
 
-> 一份面向《植物大战僵尸：英雄》（Plants vs. Zombies Heroes，PVZH）Mod 开发者的中文资料库。
+> 一份面向《植物大战僵尸：英雄》（Plants vs. Zombies Heroes，PVZH）Mod 开发者的中文资料库、工具与 Mod 项目入口。
 
 这里整理了 PVZH 的游戏数据、Unity AssetBundle、卡牌逻辑、本地化、贴图、动画、音频、关卡、底层静态 Patch 及 Mod Base 能力扩展等内容。资料以实际拆包、修改和调试经验为基础，希望帮助后来者少走弯路，也让散落在社区中的经验能够长期保存。
 
@@ -12,6 +12,26 @@
 
 > [!IMPORTANT]
 > 修改前请备份游戏原文件与存档。不同游戏版本、Unity 工具版本和设备环境可能存在差异，请尽量一次只改一处并及时验证。
+
+## 工具与 Mod
+
+| 项目 | 位置 | 用途 | 依赖 |
+| --- | --- | --- | --- |
+| PVZH Card Editor / 幻影引擎 | [tools/card-editor](tools/card-editor/README.md) | 卡牌 JSON、技能逻辑树与 AB 打包 | Python 3.10+、PySide6、UnityPy |
+| PVZH Level Editor | [tools/level-editor](tools/level-editor/README.md) | 关卡配置、剧情事件与 AB 打包 | Python 3.10+、PySide6、UnityPy |
+| PVZH Audio Tool | [tools/audio-tool](tools/audio-tool/README.md) | Wwise 音频解包、替换与回包 | Python、UnityPy；外部音频工具见项目说明 |
+| Local Inventory Mod | [mods/local-inventory](mods/local-inventory/README.md) | 本地卡库合并与 ARM64 静态补丁 | Python、Keystone；独立构建流程 |
+
+克隆一次即可获取所有项目；各项目保留自己的依赖、输入输出目录和入口。请先进入对应子目录，再按其 README 安装与运行，例如：
+
+```bash
+git clone https://github.com/Show-o4210/PVZH-Library.git
+cd PVZH-Library/tools/card-editor
+python -m pip install -r requirements.txt
+python main.py
+```
+
+关卡编辑器同样在 `tools/level-editor/` 内运行 `python main.py`；音频和本地卡库使用各自的流水线或构建脚本。建议按项目建立独立虚拟环境。原 00～20 章节和资源目录保持原路径，迁移来源与 Git 历史说明见 [MIGRATION.md](MIGRATION.md)。
 
 ## 内容导航
 
@@ -55,17 +75,20 @@
 
 ## 许可协议
 
-本仓库**原创文档与整理结构**采用  
+本仓库原资料库部分的**原创文档与整理结构**采用  
 [知识共享 署名—非商业性使用—相同方式共享 4.0 国际 (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans) 许可。
 
 | 文件 | 说明 |
 | --- | --- |
+| [LICENSES.md](LICENSES.md) | 多许可证目录边界；四个导入项目保留 MIT 许可与原作者声明 |
 | [LICENSE](LICENSE) | 正式许可声明（CC BY-NC-SA 4.0） |
 | [许可与使用条款.md](许可与使用条款.md) | **中文详细条款**（署名方式、非商业边界、禁止换皮与收款码顶替等） |
 
 **你可以**：学习自用、非商业转载与分享、在署名并采用相同许可的前提下修改后再发布。  
 **你必须**：保留作者署名（休切尔 / Show-o4210）、作品名「PVZH 图书馆」、官方仓库链接与许可声明。  
 **你不可以**：删除署名后整包换皮、冒充原作者、将本文档作为付费主体出售，或去掉来源后单独挂自己的收款码夺走署名成果。
+
+`tools/card-editor/`、`tools/level-editor/`、`tools/audio-tool/` 和 `mods/local-inventory/` 中的项目原创内容分别采用各目录内的 MIT 许可；上面的非商业与相同方式共享条件仅适用于资料库 CC 许可覆盖的内容。
 
 游戏官方资源、导出数据与第三方工具**不在**本许可授权范围内。完整约定以 [许可与使用条款.md](许可与使用条款.md) 为准。
 

@@ -1,0 +1,57 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*~
+.idea/
+.vscode/
+*.code-workspace
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Native / build junk
+*.o
+*.obj
+*.exe
+*.dll
+
+# === Never commit game IP or private binaries ===
+*.apk
+*.apks
+*.xapk
+*.idsig
+*.so
+*.a
+*.dll
+
+# Unity / dumps / large game data
+**/global-metadata.dat
+**/dump.cs
+**/script.json
+**/stringliteral.json
+**/libil2cpp.so*
+reference/
+apk/
+share/
+_tmp*/
+**/card_data_*
+!**/*.md
+!**/README.txt
+
+# Local secrets
+*.jks
+*.keystore
+*.p12
+*.pem
+*.pk8
+
+# Large archives
+*.zip
+*.7z
+*.rar

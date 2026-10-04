@@ -34,5 +34,5 @@
 ---
 
 > [!TIP]
-> 推荐结合 [PVZH-Card-Editor](https://github.com/Show-o4210/PVZH-Card-Editor) 一同阅读本章节。编辑器源码中的 [card_model.py](https://github.com/Show-o4210/PVZH-Card-Editor/blob/main/card_model.py) 和 [logic_library.py](https://github.com/Show-o4210/PVZH-Card-Editor/blob/main/logic_library.py) 是对底层 JSON 最直观的代码化整理。
+> 推荐结合 [PVZH-Card-Editor](https://github.com/Show-o4210/PVZH-Library/tree/main/tools/card-editor) 一同阅读本章节。编辑器源码中的 [card_model.py](https://github.com/Show-o4210/PVZH-Library/blob/main/tools/card-editor/card_model.py) 和 [logic_library.py](https://github.com/Show-o4210/PVZH-Library/blob/main/tools/card-editor/logic_library.py) 是对底层 JSON 最直观的代码化整理。
 

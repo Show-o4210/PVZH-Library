@@ -42,5 +42,5 @@ graph TD
 
 > [!TIP]
 > 🌐 **工程参考**：本章配套实现分散在工作区 `pvzh-mod-base/`（`scripts/build_and_patch.py`、`build_payload_grant_armor.py`、`build_payload_sprite_map.py` 等）。  
-> 库存主线开源仓库仍见 [Show-o4210/pvzh-local-inventory-mod](https://github.com/Show-o4210/pvzh-local-inventory-mod)。  
+> 库存主线开源仓库仍见 [Show-o4210/pvzh-local-inventory-mod](https://github.com/Show-o4210/PVZH-Library/tree/main/mods/local-inventory)。  
 > 所有 RVA / TypeInfo 槽位与具体游戏 so 版本绑定，跟版后必须重 dump 再锚。
