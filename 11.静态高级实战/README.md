@@ -4,7 +4,7 @@
 
 由于安卓模拟器（x86_64）通过 Houdini 转译层运行 ARM64 游戏时，动态调试工具（如 Frida）在枚举 Native 模块时极易失效崩溃，社区探索出了一套**无需 Frida、零运行期开销的全静态 ELF 汇编补丁（Static SO Patching）方案**。
 
-本章节详细拆解基于社区开源框架 **[pvzh-local-inventory-mod](https://github.com/Show-o4210/pvzh-local-inventory-mod)**（副本存于工作区 [资源/pvzh-local-inventory-mod](../资源/pvzh-local-inventory-mod)）的 `libil2cpp.so` 静态 Hook 原理、v3c 汇编代码洞注入、`inventory_extra.json` 内存合并机制以及自动化构建部署工作流。
+本章节详细拆解基于社区开源框架 **[pvzh-local-inventory-mod](https://github.com/Show-o4210/PVZH-Library/tree/main/mods/local-inventory)**（源码位于本仓库 [mods/local-inventory](../mods/local-inventory)）的 `libil2cpp.so` 静态 Hook 原理、v3c 汇编代码洞注入、`inventory_extra.json` 内存合并机制以及自动化构建部署工作流。
 
 ---
 
@@ -31,7 +31,7 @@ graph TD
 ---
 
 > [!TIP]
-> 🌐 **开源仓库**：[Show-o4210/pvzh-local-inventory-mod](https://github.com/Show-o4210/pvzh-local-inventory-mod)  
-> 本章节配套的全部开源 Python 补丁构建脚本、C 语言 Native 逻辑源码及配置模板，均存放于 GitHub 仓库以及工作区资源目录 **[pvzh-local-inventory-mod](../资源/pvzh-local-inventory-mod)** 中。
+> 🌐 **开源仓库**：[Show-o4210/pvzh-local-inventory-mod](https://github.com/Show-o4210/PVZH-Library/tree/main/mods/local-inventory)  
+> 本章节配套的全部开源 Python 补丁构建脚本、C 语言 Native 逻辑源码及配置模板，均存放于 本仓库目录 **[pvzh-local-inventory-mod](../mods/local-inventory)** 中。
 >
 > 在库存 Merge 稳定之后，若需继续扩展战斗规则（例如 **Grant 赋甲 type=19**、装甲 UI、多 Hook 共洞），请接读 **[12. 静态高级实战 2](../12.静态高级实战2/README.md)**。

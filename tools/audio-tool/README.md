@@ -1,5 +1,23 @@
 # Wwise 游戏音频替换工具
 
+本项目现位于 [PVZH-Library](../../README.md) 的 `tools/audio-tool/`，独立依赖与运行方式保留。
+
+从主仓库根目录进入本项目后，再执行下方安装和运行命令：
+
+```bash
+cd tools/audio-tool
+```
+
+**源码与完整包**：Git 源码树包含 Python 脚本与配置；下文所述 BAT、`zSound2wem.cmd`、FFmpeg 和 vgmstream 位于 [原完整 Windows 工具包](https://github.com/Show-o4210/PVZH-audio-tool/releases/tag/%E5%AE%8C%E6%95%B4)。下载后解压到本目录，并保留本仓库较新的 Python 脚本、配置与 README。归档旧仓库后，此下载入口仍保留。
+
+源码命令行入口（解包需自行准备 vgmstream，打包还需 FFmpeg、Wwise 和转换脚本）：
+
+```bash
+python -m pip install UnityPy
+python pipeline.py extract
+python pipeline.py build
+```
+
 一键化解包、试听、替换、回包 Unity 游戏 AB 包中的 Wwise 音频。  
 全程通过 **UnityPy** 读写 AB 包，**无需 UABEA**。
 

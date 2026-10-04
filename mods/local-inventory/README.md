@@ -1,5 +1,13 @@
 # PVZH Local Inventory Mod Base
 
+本项目现位于 [PVZH-Library](../../README.md) 的 `mods/local-inventory/`，独立依赖与运行方式保留。
+
+从主仓库根目录进入本项目后，再执行下方安装和运行命令：
+
+```bash
+cd mods/local-inventory
+```
+
 全静态方案：在**本地模式**下合并 `inventory_extra.json`，让社区自定义卡可拥有。  
 无需 Frida 常驻。
 
@@ -12,7 +20,7 @@
 
 ## 本仓库包含什么
 
-本目录（`github_ready/`）是**适合公开 GitHub 的源码与文档树**：
+本目录（`mods/local-inventory/`）是**适合公开 GitHub 的源码与文档树**：
 
 - 文档、脚本、模板、原生参考实现  
 - 补丁元数据（`PATCH_INFO`、payload 反汇编/字节）  

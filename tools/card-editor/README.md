@@ -1,5 +1,13 @@
 # PvZ Heroes Phantom Engine / 幻影引擎
 
+本项目现位于 [PVZH-Library](../../README.md) 的 `tools/card-editor/`，独立依赖与运行方式保留。
+
+从主仓库根目录进入本项目后，再执行下方安装和运行命令：
+
+```bash
+cd tools/card-editor
+```
+
 **Version:** 2.1  
 
 A desktop GUI tool for **Plants vs. Zombies Heroes** card modding: edit card JSON fields, build ability logic trees, manage multi-card projects (`.phantom`), and inject changes into Unity AssetBundles.

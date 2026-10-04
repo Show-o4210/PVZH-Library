@@ -1,5 +1,13 @@
 # PVZH 关卡自定义工具
 
+本项目现位于 [PVZH-Library](../../README.md) 的 `tools/level-editor/`，独立依赖与运行方式保留。
+
+从主仓库根目录进入本项目后，再执行下方安装和运行命令：
+
+```bash
+cd tools/level-editor
+```
+
 面向《植物大战僵尸英雄》(PVZH) 的关卡编辑器。支持可视化配置关卡参数、人机/玩家、战场分路、游戏事件，并与 Unity AssetBundle（`data_assets_*`）互相同步。
 
 ---
