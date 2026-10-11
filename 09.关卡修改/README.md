@@ -4,6 +4,8 @@
 
 本章节详细讲解 PVZH 关卡数据的存储机制、JSON 属性结构、剧情与解密发牌事件配置，以及基于社区工具 [PVZH-Level-Editor](https://github.com/Show-o4210/PVZH-Library/tree/main/tools/level-editor) 的可视化编辑与打包注入流程。
 
+> 版本核对（2026-10-11）：部分下述代码为结构示意，不能直接导入当前输入。已核对的InitialHealth、InitialSunCount、Narrator、TextKey和真实消息$type见 [Agent关卡指南](../agents/03-levels-and-localization.md)；可执行增量例子见 [独立基础示例](../agents/08-basic-mod-walkthrough.md)。
+
 ---
 
 ## 目录导航

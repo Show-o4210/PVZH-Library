@@ -2,6 +2,8 @@
 
 本章节深入解析《植物大战僵尸：英雄》（PVZH）核心数据包 `cards/card_data_X` 中保存的卡牌 JSON 数据结构、属性组件、技能逻辑树机制以及相关的开发维护指南。
 
+> 版本核对（2026-10-11）：以下人类教程和模板提供机制导航。实际导入前以用户原包完整类型、字段和枚举为准；例如本次原包是Teamup、Armor、Untrickable组件，不加Component后缀。Agent精确增量流程见 [基础示例](../agents/08-basic-mod-walkthrough.md)，完整类型串陷阱见 [06章](../agents/06-large-card-remix.md)。
+
 ---
 
 ## 目录导航
