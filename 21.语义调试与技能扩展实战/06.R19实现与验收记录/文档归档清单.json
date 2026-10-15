@@ -1,0 +1,886 @@
+{
+  "schema": 1,
+  "archived_on": "2026-10-15",
+  "source_project": "mod2-runtime",
+  "source_documents_preserved": true,
+  "documents": [
+    {
+      "source": "mod2-runtime/docs/card-data-and-history.md",
+      "source_sha256": "B666C7460D4ABD94901DCD6CA4D6EB3A5BA92AFF0C0C437A1A08DF87C4C8A960",
+      "destination": "21.语义调试与技能扩展实战/02.缓存契约与扩展规则/card-data-and-history.md",
+      "archived_sha256": "CF579E471CECC6FAF9219A0349F1D37191C7148EF937279BA62FE036E445DB09",
+      "changes": [
+        "archive-notice",
+        "portable-reference-links"
+      ]
+    },
+    {
+      "source": "mod2-runtime/docs/attack-rules.md",
+      "source_sha256": "D6F36482375630BB890E384A745C94684C83AC826BF2DDCD7E317007763F1BAA",
+      "destination": "21.语义调试与技能扩展实战/02.缓存契约与扩展规则/attack-rules.md",
+      "archived_sha256": "588F76F6063611C65E02160282DFC9383EC82B32E0FF02267E10AE25CD111DAF",
+      "changes": [
+        "archive-notice",
+        "portable-reference-links"
+      ]
+    },
+    {
+      "source": "mod2-runtime/docs/stat-damage-rules.md",
+      "source_sha256": "848BC39DD0CB0F8C226531639520034224F63DF0FDE33AB922480840BE99ABB9",
+      "destination": "21.语义调试与技能扩展实战/02.缓存契约与扩展规则/stat-damage-rules.md",
+      "archived_sha256": "F0D02E148A1CFF16070A614B967B1AB618A8C53A7D226CD61BA87CD3614F2FBA",
+      "changes": [
+        "archive-notice",
+        "portable-reference-links"
+      ]
+    },
+    {
+      "source": "mod2-runtime/docs/action-rules.md",
+      "source_sha256": "49893670E32793FCCD7A291A279D733A549B0A8BBD0499DFD71B0ACDDB673B39",
+      "destination": "21.语义调试与技能扩展实战/02.缓存契约与扩展规则/action-rules.md",
+      "archived_sha256": "9850364C273895F8DA4E6C3FCAC2399CD4168EC7E142E3C00A2C6DA05372BF42",
+      "changes": [
+        "archive-notice",
+        "portable-reference-links"
+      ]
+    },
+    {
+      "source": "mod2-runtime/docs/actions-native-semantics.md",
+      "source_sha256": "28FC34E2C5B19EB7586DE8EEF27C8DCF1BB1B339A5D062A5E90A88787B4F69A5",
+      "destination": "21.语义调试与技能扩展实战/02.缓存契约与扩展规则/actions-native-semantics.md",
+      "archived_sha256": "E4AF6F5B69F7AC5FBBC21154CE23C02D8C6BCC6776C46AC6CA865A381C570F30",
+      "changes": [
+        "archive-notice",
+        "portable-reference-links"
+      ]
+    },
+    {
+      "source": "mod2-runtime/docs/coffee-grave-preserve.md",
+      "source_sha256": "309FD86793765926D6850A2F28B111DD06E8F6C7049660CD06C1CF91F64C240E",
+      "destination": "21.语义调试与技能扩展实战/02.缓存契约与扩展规则/coffee-grave-preserve.md",
+      "archived_sha256": "21E2CABB0F959D3A7D091483FEE2E5DA920E73684FA652002C2F0A88393297AF",
+      "changes": [
+        "archive-notice",
+        "portable-reference-links"
+      ]
+    },
+    {
+      "source": "mod2-runtime/docs/umbrella-rules.md",
+      "source_sha256": "5FB82EDBBA1850506FADFC0DC854DB3E9AF75365692E81C7411F032673E99E24",
+      "destination": "21.语义调试与技能扩展实战/02.缓存契约与扩展规则/umbrella-rules.md",
+      "archived_sha256": "D164284DF295542B60DA3725851ED3E4AA87F3A794E7B425FB35018113CA4CB6",
+      "changes": [
+        "archive-notice",
+        "portable-reference-links"
+      ]
+    },
+    {
+      "source": "mod2-runtime/docs/il2cpp-reference-field-abi.md",
+      "source_sha256": "3CFE58EEE53782E85F657031AEDF49783970ADCD6DEA3B4A04EC08A6201BD79D",
+      "destination": "21.语义调试与技能扩展实战/03.托管内存与效果所有权/il2cpp-reference-field-abi.md",
+      "archived_sha256": "BBA5BC197D88B4D36834889CE73816A12D3E77F82AB80696D206BEE19B6A7606",
+      "changes": [
+        "archive-notice",
+        "portable-reference-links"
+      ]
+    },
+    {
+      "source": "mod2-runtime/docs/history-observation.md",
+      "source_sha256": "CD5A8FA21DEBCCE835426026EDAFFDBEBE4E9327402D9A6A7E7ED3D9A5CD01CF",
+      "destination": "21.语义调试与技能扩展实战/04.History与原版动画/history-observation.md",
+      "archived_sha256": "9F80D6AE8DF315FBE4974EC2C6B40AA9015167640033FB6A3B6BCF9775F80BFC",
+      "changes": [
+        "archive-notice",
+        "portable-reference-links"
+      ]
+    },
+    {
+      "source": "mod2-runtime/docs/reveal-animation-compatibility.md",
+      "source_sha256": "C6D0E15F51909EE19E61B077D1DE2E58614F5413E115978DD5F4FD7779805B7D",
+      "destination": "21.语义调试与技能扩展实战/04.History与原版动画/reveal-animation-compatibility.md",
+      "archived_sha256": "2B0F332267BE3D0443F04EB29BB50BAC4164B63D7D707C341CD773D5E618023B",
+      "changes": [
+        "archive-notice",
+        "portable-reference-links"
+      ]
+    },
+    {
+      "source": "mod2-runtime/docs/sun-animation-compatibility.md",
+      "source_sha256": "F51047CF92D87A0D9CBE7BFF9370DCC8379E30CA6852A83E3EA0B9B0D7262D38",
+      "destination": "21.语义调试与技能扩展实战/04.History与原版动画/sun-animation-compatibility.md",
+      "archived_sha256": "9F8FCD5DA209CE6498F48911DF6B95D7B01BC377088F1A24213453E6BE1FBE19",
+      "changes": [
+        "archive-notice",
+        "portable-reference-links"
+      ]
+    },
+    {
+      "source": "mod2-runtime/docs/terminal-attack-metadata.md",
+      "source_sha256": "9DEAB9DEF2040F7708352CD47EEA43341BCEDC26FCD1D3D5DF9361EDE76D0DE2",
+      "destination": "21.语义调试与技能扩展实战/04.History与原版动画/terminal-attack-metadata.md",
+      "archived_sha256": "B12961B0F6FF63EE4588B6E12435E5FA6091902970A38A33DC00833FB88D3927",
+      "changes": [
+        "archive-notice",
+        "portable-reference-links"
+      ]
+    },
+    {
+      "source": "mod2-runtime/docs/fixture-lifecycle-review.md",
+      "source_sha256": "7170F7FC45305D996275B4B8EA8E6A05D2766097CC498AC7B273D0C5C8456D73",
+      "destination": "21.语义调试与技能扩展实战/05.实测与建局边界/fixture-lifecycle-review.md",
+      "archived_sha256": "2EBDFEFA88211424564D604E19D384BD0B2EBC9B271FFCA11CBF1BAD55F185A4",
+      "changes": [
+        "archive-notice",
+        "portable-reference-links"
+      ]
+    },
+    {
+      "source": "mod2-runtime/docs/warm-fixture-followup.md",
+      "source_sha256": "8E5753E3BEB4FC3B724B6A7A42926ED5CDC9650D14D067A7A9D8D38014BE6CEA",
+      "destination": "21.语义调试与技能扩展实战/05.实测与建局边界/warm-fixture-followup.md",
+      "archived_sha256": "2EC10590B4AB65FA101ACDA64D14544660DCCA88D0F928367CBCC3D35753EDE2",
+      "changes": [
+        "archive-notice",
+        "portable-reference-links"
+      ]
+    },
+    {
+      "source": "mod2-runtime/docs/static-skill-risk-review.md",
+      "source_sha256": "AF16059ED201CFBF22E4A7FE42D7FDB97702F56F530A59C8CEB19939DB91BFBB",
+      "destination": "21.语义调试与技能扩展实战/05.实测与建局边界/static-skill-risk-review.md",
+      "archived_sha256": "9E935E20CBB449CCE11FC94B6AA7EC1352E837DF4F29EE1D5FF65CFCF08DCDB5",
+      "changes": [
+        "archive-notice",
+        "portable-reference-links"
+      ]
+    },
+    {
+      "source": "mod2-runtime/docs/static-test-coverage.md",
+      "source_sha256": "45F09A6ED31B011796B8658B633A634FDF5897ECB56BFA46EEB43FE6E2B2B29E",
+      "destination": "21.语义调试与技能扩展实战/05.实测与建局边界/static-test-coverage.md",
+      "archived_sha256": "9F72E75CC62EA1EE2AADE9417A973622041AE6095AE03EB7421EB7016705BE68",
+      "changes": [
+        "archive-notice",
+        "portable-reference-links"
+      ]
+    },
+    {
+      "source": "mod2-runtime/docs/static-acceptance.md",
+      "source_sha256": "FF04C34D7E96103712D95A4112E927AC4A18DAF715D9D8E8908626B2C79382BA",
+      "destination": "21.语义调试与技能扩展实战/05.实测与建局边界/static-acceptance.md",
+      "archived_sha256": "D31AAF2716C2EA5A3E3DC13871B89D932C631DB4FA63642F42144862AE979FEC",
+      "changes": [
+        "archive-notice",
+        "portable-reference-links"
+      ]
+    },
+    {
+      "source": "mod2-runtime/docs/01-work-log.md",
+      "source_sha256": "D0F1E7536B40A2834E44719517CED443CF6F78D6DAF0BF4BA4B6B00E6E06A295",
+      "destination": "21.语义调试与技能扩展实战/06.R19实现与验收记录/01-work-log.md",
+      "archived_sha256": "0E8A0B44B8E3513EF4A706758BCCAC498A17F6813BA535118CD1FA26D29B5DCE",
+      "changes": [
+        "archive-notice",
+        "portable-reference-links"
+      ]
+    },
+    {
+      "source": "mod2-runtime/docs/02-verification.md",
+      "source_sha256": "1086FA73BA515B8AD66983390142E3AE43DAA9E523A768F9E805DDC249108256",
+      "destination": "21.语义调试与技能扩展实战/06.R19实现与验收记录/02-verification.md",
+      "archived_sha256": "D94301306B0A0BC70BEEFB0A3029F7743A02ED067C9555AEAB9650AA8BF91FBC",
+      "changes": [
+        "archive-notice",
+        "portable-reference-links"
+      ]
+    },
+    {
+      "source": "mod2-runtime/docs/implementation-coverage.md",
+      "source_sha256": "CFEC0236CBF683B0A10FAD172216A08D970EB32996F4E30E3A3C3FF7B732C2C1",
+      "destination": "21.语义调试与技能扩展实战/06.R19实现与验收记录/implementation-coverage.md",
+      "archived_sha256": "3AD05383B11560D94B8A08A21BAABFD376388DAEC9535B4C2654FC4FA329B1E2",
+      "changes": [
+        "archive-notice",
+        "portable-reference-links"
+      ]
+    },
+    {
+      "source": "mod2-runtime/docs/resource-selector.md",
+      "source_sha256": "4E484D1F77FC65AF68B2CB128C47A710FDD23E7647065DA15EFDF2D466F52980",
+      "destination": "20.工程体验跃迁-资源门卫与教程跳过/05.必选资源切换实战/resource-selector.md",
+      "archived_sha256": "0E6F7F0830B62FF5E2D810D6092DBD769B69A541029D2171E8E6EF538D72B627",
+      "changes": [
+        "archive-notice",
+        "portable-reference-links"
+      ]
+    },
+    {
+      "source": "mod2-runtime/docs/gate-acceptance.md",
+      "source_sha256": "2ABC8EEA0FC8D469E777DA0704DB175D42BC5A0DEB005892D5A8AC6CE4866DA1",
+      "destination": "20.工程体验跃迁-资源门卫与教程跳过/05.必选资源切换实战/gate-acceptance.md",
+      "archived_sha256": "712BD9C45B413D5C927D446D921E24928A7CEE7358A2959D16BC18BDAD97D681",
+      "changes": [
+        "archive-notice",
+        "portable-reference-links"
+      ]
+    },
+    {
+      "source": "mod2-runtime/docs/packaging.md",
+      "source_sha256": "0C9F3F8E6A9E401332EE7479A0E752BCA40E8192CDB63B8F294A475010AEFC06",
+      "destination": "20.工程体验跃迁-资源门卫与教程跳过/05.必选资源切换实战/packaging.md",
+      "archived_sha256": "5FC38B29A1AB8940EE459DACB55B163FF87621DB3DA7C0A995A0229548B8574A",
+      "changes": [
+        "archive-notice",
+        "portable-reference-links"
+      ]
+    }
+  ],
+  "external_references": [
+    {
+      "id": "ref-e3ff6ff4c8ac",
+      "workspace_relative_path": "mod2/batch2.py",
+      "bytes": 34469,
+      "included_in_library": false,
+      "sha256": "DFB100D1747EDD3D8747BE8BC8149B9C5335C40298085D5EE59B88D54D9D4F54"
+    },
+    {
+      "id": "ref-932a07725d16",
+      "workspace_relative_path": "mod2/batch3.py",
+      "bytes": 11743,
+      "included_in_library": false,
+      "sha256": "4EE78927E3D7E5E580E8A95E7C0549630E3C537F052CDF23898339D0FD4F4180"
+    },
+    {
+      "id": "ref-437e9d51492c",
+      "workspace_relative_path": "mod2/build_mod.py",
+      "bytes": 17664,
+      "included_in_library": false,
+      "sha256": "C27D51CDB3DE5561BF402FA357B1F4706EBE331A88F0A61E88BAA4E8164A323E"
+    },
+    {
+      "id": "ref-766ae70120c3",
+      "workspace_relative_path": "mod2/request-batch2.txt",
+      "bytes": 5967,
+      "included_in_library": false,
+      "sha256": "9CC68705D21F89A1481FB4F1B499EA215D8972C2F206E97A3D57B7254C30DBDF"
+    },
+    {
+      "id": "ref-11138936eda2",
+      "workspace_relative_path": "mod2/request-batch3.txt",
+      "bytes": 1958,
+      "included_in_library": false,
+      "sha256": "96F6C862E7BF1837658F8DEDD474DF65F53CDD39241274FA82297DEC7184BA0D"
+    },
+    {
+      "id": "ref-a5715dae6952",
+      "workspace_relative_path": "mod2/request.txt",
+      "bytes": 1057,
+      "included_in_library": false,
+      "sha256": "0092911BC4B11FE1E8D397B148D91C1B919D18F3E441A37328D8BD3578806572"
+    },
+    {
+      "id": "ref-74d4c87cb7fa",
+      "workspace_relative_path": "mod2/verification/runtime-report.md",
+      "bytes": 1263,
+      "included_in_library": false,
+      "sha256": "890877236F7E152CA94C88A8543011A6ABA7754B38C07570F930EA2621847F86"
+    },
+    {
+      "id": "ref-d1582006e8f9",
+      "workspace_relative_path": "mod2/第三批制作结果.md",
+      "bytes": 4792,
+      "included_in_library": false,
+      "sha256": "DD6AC5CB8E8216B12D3C6B33693A582D6ED3539524661F289F314B83907E3AA4"
+    },
+    {
+      "id": "ref-d6281ddb2b37",
+      "workspace_relative_path": "mod2/第二批制作结果.md",
+      "bytes": 9711,
+      "included_in_library": false,
+      "sha256": "C03D758881D8ECBBFD28381843365176BB07F9628DB1B81A3CF853D61708ECB1"
+    },
+    {
+      "id": "ref-caa772cee70f",
+      "workspace_relative_path": "mod2/舍弃名单.md",
+      "bytes": 5108,
+      "included_in_library": false,
+      "sha256": "28A4D741AB8E75A900CCEE528216DB21486BCA5DE5204BC67EAFEDB5228A4A9B"
+    },
+    {
+      "id": "ref-7c9743561e3b",
+      "workspace_relative_path": "mod2-runtime/assets/mod2_profiles/extension-cards.json",
+      "bytes": 105921,
+      "included_in_library": false,
+      "sha256": "77F8F367B404DF88E37B67C0A6D57BC5B6FD951EE3B4F9F9E9EBAB4A368A8996"
+    },
+    {
+      "id": "ref-7e27af4d34ef",
+      "workspace_relative_path": "mod2-runtime/assets/mod2_profiles/manifest.json",
+      "bytes": 2213,
+      "included_in_library": false,
+      "sha256": "25F67356F0773F855DA12FC9C6D4A1A305364A707CEC42D5E7EAEABC4ABB1673"
+    },
+    {
+      "id": "ref-66664b5dc72d",
+      "workspace_relative_path": "mod2-runtime/assets/mod2_profiles/validation.json",
+      "bytes": 3114,
+      "included_in_library": false,
+      "sha256": "B883DF245A12758F1B90FC51166D032AFDC8B851DBA6D3C0A8F0A59A8F6DDB6A"
+    },
+    {
+      "id": "ref-7f95fabdaa33",
+      "workspace_relative_path": "mod2-runtime/dist/PVZH_1.67.8_mod2_skills_r19_11056_arm64.apk",
+      "bytes": 839166291,
+      "included_in_library": false,
+      "sha256_from_build_report": "C7E48E0AE694D9FBF1B9C0E59D7FD73311FB880A4B56DC13AC1656C4CC6652CF"
+    },
+    {
+      "id": "ref-107735f17fcd",
+      "workspace_relative_path": "mod2-runtime/dist/PVZH_1.67.8_mod2_skills_r19_11056_arm64.json",
+      "bytes": 14256,
+      "included_in_library": false,
+      "sha256": "E0A604FE75DD18BE2CCF85CEDCA5943C570883C7E5AC348DCE7F65E867D00825"
+    },
+    {
+      "id": "ref-db5574d2cfb6",
+      "workspace_relative_path": "mod2-runtime/dist/release-summary.json",
+      "bytes": 13123,
+      "included_in_library": false,
+      "sha256": "1345BDBECD2F1AD692A8AECC700CF873B210A5E61EDB5F2EF98D6114BE4AD2CF"
+    },
+    {
+      "id": "ref-9fdd5c10f6a9",
+      "workspace_relative_path": "mod2-runtime/evidence/r12-attacks/native-crash.txt",
+      "bytes": 9096,
+      "included_in_library": false,
+      "sha256": "80370F3242D1FE8277FAB6FF240B1B27408C80DFB0F5F17773B4512B7DEF2C57"
+    },
+    {
+      "id": "ref-a450f607f561",
+      "workspace_relative_path": "mod2-runtime/evidence/r12-mod2-warm/result.json",
+      "bytes": 40721,
+      "included_in_library": false,
+      "sha256": "4DBAF9F5773DBB4162A2DF34730BF23B092E487AB1507F08ED938A4C3A8D762E"
+    },
+    {
+      "id": "ref-e8e292040245",
+      "workspace_relative_path": "mod2-runtime/evidence/r12-original-warm/result.json",
+      "bytes": 52595,
+      "included_in_library": false,
+      "sha256": "3116DB2F3F5C0C00400525D35FC4A3686AE72E8EB1E816B35B161FD18E18D83E"
+    },
+    {
+      "id": "ref-99f2c9deb5d7",
+      "workspace_relative_path": "mod2-runtime/evidence/r14-actions-result.json",
+      "bytes": 37848,
+      "included_in_library": false,
+      "sha256": "80EDCE9B01CA7D3B7D9C38EF3737FEAB60F7AAF11A934B0EBA991DDD7E56FEC8"
+    },
+    {
+      "id": "ref-3172b0ddeb04",
+      "workspace_relative_path": "mod2-runtime/evidence/r14-attacks/commands.jsonl",
+      "bytes": 1563501,
+      "included_in_library": false,
+      "sha256": "3B629F5F4F5F581860B64F03634012B24DE34F80910D045A8B016A640CD37958"
+    },
+    {
+      "id": "ref-d6548fddf8d4",
+      "workspace_relative_path": "mod2-runtime/evidence/r14-attacks/result.json",
+      "bytes": 4563,
+      "included_in_library": false,
+      "sha256": "2C2FC5466B286432656DB18A4FF5C991D5A214ADDF9EF69D9D6792EEAF925302"
+    },
+    {
+      "id": "ref-cd33e9bfe10f",
+      "workspace_relative_path": "mod2-runtime/evidence/r14-reflection-phase-probe.json",
+      "bytes": 19728,
+      "included_in_library": false,
+      "sha256": "DD0CAC7A1122BA681C813AF10552274B0772E1E36AE11C1685DC324E9126414F"
+    },
+    {
+      "id": "ref-fa3960f3d6b5",
+      "workspace_relative_path": "mod2-runtime/evidence/r14-render-before-static-fixes/result.json",
+      "bytes": 69886,
+      "included_in_library": false,
+      "sha256": "A3B6AA3B786258E89B03664C7D76B7E725A728CC7DF84945F7F5AD91105CB9BF"
+    },
+    {
+      "id": "ref-dad8bf5aa2ad",
+      "workspace_relative_path": "mod2-runtime/evidence/r14-static-freeze-delay2/freeze.json",
+      "bytes": 1695,
+      "included_in_library": false,
+      "sha256": "0BFD487D3C4727BBF7EF81452D9593751EB329FF343C0DF1E464B4ECF8C4B2C6"
+    },
+    {
+      "id": "ref-d3b0a632e553",
+      "workspace_relative_path": "mod2-runtime/evidence/r14-static-freeze-delay2/result.json",
+      "bytes": 2308,
+      "included_in_library": false,
+      "sha256": "918C53D92B00883DBE2536EFA4E685E08276765923C8E91475BE1878832B5076"
+    },
+    {
+      "id": "ref-2e4797f2f1a5",
+      "workspace_relative_path": "mod2-runtime/evidence/r14-static-last-three/banana472.json",
+      "bytes": 8364,
+      "included_in_library": false,
+      "sha256": "FB4C8EE32157D37AFAE5BFDC8FB28BCB67EA1CA31E811FFEBF13A0A071442EEF"
+    },
+    {
+      "id": "ref-b91a94c72814",
+      "workspace_relative_path": "mod2-runtime/evidence/r14-static-last-three/copter286.json",
+      "bytes": 3029,
+      "included_in_library": false,
+      "sha256": "4AAE8042FA3F779B38E5C2EB8E69C7024ED9657D9D80D16C34DACCC51200A0EF"
+    },
+    {
+      "id": "ref-62ed861e2529",
+      "workspace_relative_path": "mod2-runtime/evidence/r14-static-last-three/result.json",
+      "bytes": 19349,
+      "included_in_library": false,
+      "sha256": "8583EC3D5DCAF44CD43F1A03092FE2F0018EC6884D5C1464BD70EDA124106093"
+    },
+    {
+      "id": "ref-f378ea527c5a",
+      "workspace_relative_path": "mod2-runtime/evidence/r14-static-rest/reflection.json",
+      "bytes": 3295,
+      "included_in_library": false,
+      "sha256": "9384B837188F6EBC68DFEDD1A97654E430BDD0D56AF3BCB24B449B884ED99F7A"
+    },
+    {
+      "id": "ref-8cb74c657ce5",
+      "workspace_relative_path": "mod2-runtime/evidence/r14-stats-final/result.json",
+      "bytes": 9712,
+      "included_in_library": false,
+      "sha256": "D839D108A858684F207BD72597C8B0CA2D6A973FB3BB5EC8EDE5141B6BB8501C"
+    },
+    {
+      "id": "ref-2aff858000a5",
+      "workspace_relative_path": "mod2-runtime/evidence/r15-grave-legal87/commands.jsonl",
+      "bytes": 215317,
+      "included_in_library": false,
+      "sha256": "08917B8A7E4A0DD556B8EAE9D22070F616D190780303067009A495C8F4D24F2E"
+    },
+    {
+      "id": "ref-ef5b275df261",
+      "workspace_relative_path": "mod2-runtime/evidence/r15-grave-legal87/grave.json",
+      "bytes": 3225,
+      "included_in_library": false,
+      "sha256": "28ACDBA52EB356F13560DFCD7EDAE2CCB99CFBA0E3072D465385C36DE630E7F9"
+    },
+    {
+      "id": "ref-e7cb45147bbe",
+      "workspace_relative_path": "mod2-runtime/evidence/r15-grave-legal87/result.json",
+      "bytes": 4077,
+      "included_in_library": false,
+      "sha256": "3F5BA0557BE201C5B76046A48D7586811F3FF7F5F032CBCD9802FDD23C5DFE08"
+    },
+    {
+      "id": "ref-09359dc4dd1e",
+      "workspace_relative_path": "mod2-runtime/evidence/r15-grave-trigger-trace/result.json",
+      "bytes": 20530,
+      "included_in_library": false,
+      "sha256": "74CF0C4B6B56A07706161AD9970D7EA8AE7126EF8E0C7406B48A3F409E6917C4"
+    },
+    {
+      "id": "ref-0dec8f120622",
+      "workspace_relative_path": "mod2-runtime/evidence/r15-static-fixes/coffee.json",
+      "bytes": 9021,
+      "included_in_library": false,
+      "sha256": "0954FB91A4522D33D17D8AD39930EB271D88BB5129A30D4627962B27C6942ED8"
+    },
+    {
+      "id": "ref-c7706118f305",
+      "workspace_relative_path": "mod2-runtime/evidence/r15-static97-547/commands.jsonl",
+      "bytes": 731607,
+      "included_in_library": false,
+      "sha256": "9EAEB232110B9C14F3D71A11640EA7FCAB48CEA28310DB66E2EB91E37B1CFA03"
+    },
+    {
+      "id": "ref-b3e8ca9ac5b6",
+      "workspace_relative_path": "mod2-runtime/evidence/r15-static97-547/diver547.json",
+      "bytes": 8949,
+      "included_in_library": false,
+      "sha256": "E9F6B9E9759EF753775A16424CBA9648F5A8B5E27C8C826156825232466AEC46"
+    },
+    {
+      "id": "ref-36124b640f28",
+      "workspace_relative_path": "mod2-runtime/evidence/r15-static97-547/redirect97.json",
+      "bytes": 9783,
+      "included_in_library": false,
+      "sha256": "F4F9EA33EC48391EC69B077D685C1C2A3D24A147DB2AD00DBE4746AD9AD50983"
+    },
+    {
+      "id": "ref-638768656c7f",
+      "workspace_relative_path": "mod2-runtime/evidence/r16-grave-response-group/result.json",
+      "bytes": 20607,
+      "included_in_library": false,
+      "sha256": "8A321BAE1F3A4B454740F93B292D6294E5D10ED746FACACB1D8C8E0781057BA3"
+    },
+    {
+      "id": "ref-9f607301bb64",
+      "workspace_relative_path": "mod2-runtime/evidence/r16-render-87-disabled-cold/result.json",
+      "bytes": 89638,
+      "included_in_library": false,
+      "sha256": "47BE2004EAFBCCC0B2131E0EE13EF573006E28A5CE9ECC69EC083E92A73B7322"
+    },
+    {
+      "id": "ref-b13ca6941d6b",
+      "workspace_relative_path": "mod2-runtime/evidence/r16-render-87-fallback-on/result.json",
+      "bytes": 106351,
+      "included_in_library": false,
+      "sha256": "A47C4CA00580942E10D55B79F904CF93686DC9FC57AFF859624EE59FB9242E8F"
+    },
+    {
+      "id": "ref-9f2b666a2425",
+      "workspace_relative_path": "mod2-runtime/evidence/r16-static-full/banana472.json",
+      "bytes": 8364,
+      "included_in_library": false,
+      "sha256": "FB4C8EE32157D37AFAE5BFDC8FB28BCB67EA1CA31E811FFEBF13A0A071442EEF"
+    },
+    {
+      "id": "ref-0b10c78290a3",
+      "workspace_relative_path": "mod2-runtime/evidence/r16-static-full/coffee.json",
+      "bytes": 2140,
+      "included_in_library": false,
+      "sha256": "765EC3B00D6F0929B213794EAC5B710623819DBD622D143A72C3B2D2F6DEF595"
+    },
+    {
+      "id": "ref-45d21dc8e34a",
+      "workspace_relative_path": "mod2-runtime/evidence/r16-static-full/commands.jsonl",
+      "bytes": 2233186,
+      "included_in_library": false,
+      "sha256": "8F7E5C2C1B536A8FCE8B49957861C317E68BCBE53A11D9D56E4825FCAF107A66"
+    },
+    {
+      "id": "ref-0df39721d958",
+      "workspace_relative_path": "mod2-runtime/evidence/r16-static-full/copter286.json",
+      "bytes": 3029,
+      "included_in_library": false,
+      "sha256": "0F5E8CB73D1C7F6DEEAC0DD355F7BECEF0266874B9B11D4532DA8B11A0E72A4E"
+    },
+    {
+      "id": "ref-489676be124f",
+      "workspace_relative_path": "mod2-runtime/evidence/r16-static-full/diver547.json",
+      "bytes": 11301,
+      "included_in_library": false,
+      "sha256": "5A13ADD6EDAECC944624126626BFC7DA772FD90E2CB29B4DD3EEE813FC50B113"
+    },
+    {
+      "id": "ref-17f759685989",
+      "workspace_relative_path": "mod2-runtime/evidence/r16-static-full/freeze.json",
+      "bytes": 1695,
+      "included_in_library": false,
+      "sha256": "0BFD487D3C4727BBF7EF81452D9593751EB329FF343C0DF1E464B4ECF8C4B2C6"
+    },
+    {
+      "id": "ref-cb6fec8bff9a",
+      "workspace_relative_path": "mod2-runtime/evidence/r16-static-full/grave.json",
+      "bytes": 3225,
+      "included_in_library": false,
+      "sha256": "5C6FAD8112D75720DFEAFA5A66078E713B9E334FE70F7611671BCB13BECFE4F8"
+    },
+    {
+      "id": "ref-108d6813b459",
+      "workspace_relative_path": "mod2-runtime/evidence/r16-static-full/redirect97.json",
+      "bytes": 9783,
+      "included_in_library": false,
+      "sha256": "F4F9EA33EC48391EC69B077D685C1C2A3D24A147DB2AD00DBE4746AD9AD50983"
+    },
+    {
+      "id": "ref-156ccfb40ede",
+      "workspace_relative_path": "mod2-runtime/evidence/r16-static-full/reflection.json",
+      "bytes": 3295,
+      "included_in_library": false,
+      "sha256": "9384B837188F6EBC68DFEDD1A97654E430BDD0D56AF3BCB24B449B884ED99F7A"
+    },
+    {
+      "id": "ref-cafe9d491e00",
+      "workspace_relative_path": "mod2-runtime/evidence/r16-static-full/result.json",
+      "bytes": 50346,
+      "included_in_library": false,
+      "sha256": "6DFD3EF6610CCAE814D89B7D6563A3B7309A4F98A08AFAF04DF9F3AE7DD22889"
+    },
+    {
+      "id": "ref-5072b7e91851",
+      "workspace_relative_path": "mod2-runtime/evidence/r17-render-actions/after-notify-error.json",
+      "bytes": 59137,
+      "included_in_library": false,
+      "sha256": "B58F587BA784202DF8188CCB5DC325C4F9EA55AA811ACC743C36BDCE8C2CCE78"
+    },
+    {
+      "id": "ref-f943c76eabaa",
+      "workspace_relative_path": "mod2-runtime/evidence/r17-render-actions/result.json",
+      "bytes": 160229,
+      "included_in_library": false,
+      "sha256": "B85FF047D92120E999782D934C819306EBCE61906BBBFDAAB5813BC8396A2645"
+    },
+    {
+      "id": "ref-8848769e6b44",
+      "workspace_relative_path": "mod2-runtime/evidence/r18-original-regression-result.json",
+      "bytes": 4482,
+      "included_in_library": false,
+      "sha256": "7DA41FFD74F2B9EE4C3ACD2035E486CB396561BE4EC54CF368F2239D2C218A5D"
+    },
+    {
+      "id": "ref-9523bd8649ae",
+      "workspace_relative_path": "mod2-runtime/evidence/r18-render-actions-final/result.json",
+      "bytes": 139005,
+      "included_in_library": false,
+      "sha256": "2CA9FF12431BD7BC9AF8FE4CAE01EA13E7A7A22E26131E32084562F541339E0B"
+    },
+    {
+      "id": "ref-968e3f334f71",
+      "workspace_relative_path": "mod2-runtime/evidence/r19-actions-final-result.json",
+      "bytes": 37681,
+      "included_in_library": false,
+      "sha256": "529AA722CEC180520C4796D1D0E07415CD9FC34587987348C495B87FB34B1E55"
+    },
+    {
+      "id": "ref-58cc13c6ce6d",
+      "workspace_relative_path": "mod2-runtime/evidence/r19-actions-interrupted-result.json",
+      "bytes": 653,
+      "included_in_library": false,
+      "sha256": "7E6A2C085FF683863EDF2C2DA7D7B24E025387E40482B8E0DE420194347A16A7"
+    },
+    {
+      "id": "ref-be0f894a25d8",
+      "workspace_relative_path": "mod2-runtime/evidence/r19-actions.jsonl",
+      "bytes": 2444,
+      "included_in_library": false,
+      "sha256": "25C9F2FA6D30706748C4505D456673D953CC567AE4AA6C49138F9856731CB5F5"
+    },
+    {
+      "id": "ref-087d9bf2cf78",
+      "workspace_relative_path": "mod2-runtime/evidence/r19-attacks/result.json",
+      "bytes": 4563,
+      "included_in_library": false,
+      "sha256": "2C2FC5466B286432656DB18A4FF5C991D5A214ADDF9EF69D9D6792EEAF925302"
+    },
+    {
+      "id": "ref-4ab36b0690a9",
+      "workspace_relative_path": "mod2-runtime/evidence/r19-host-source-freeze.json",
+      "bytes": 6800,
+      "included_in_library": false,
+      "sha256": "AA1D9E648B1CDA5D9327471D857A89B946D57DBDCFEF08B86F61E9B0381BED75"
+    },
+    {
+      "id": "ref-64fbbefb4214",
+      "workspace_relative_path": "mod2-runtime/evidence/r19-mod2-battle/result.json",
+      "bytes": 1425,
+      "included_in_library": false,
+      "sha256": "56324D0288386A6D28074DDD32A716F9C80DB457387472D5B2B74B51B52B1819"
+    },
+    {
+      "id": "ref-8fe05f7e69d0",
+      "workspace_relative_path": "mod2-runtime/evidence/r19-mod2-battle-audit/result.json",
+      "bytes": 9290,
+      "included_in_library": false,
+      "sha256": "983B814E253E9D32CAE192671C209869B131AAF132E070400214524DFDA618C1"
+    },
+    {
+      "id": "ref-1f6e8745f6e4",
+      "workspace_relative_path": "mod2-runtime/evidence/r19-mod2-battle-final/commands.jsonl",
+      "bytes": 313428,
+      "included_in_library": false,
+      "sha256": "D0CCE5CE80EB29CC45653B51D8B8D461F46452B11234782042C500FB05AF6215"
+    },
+    {
+      "id": "ref-898a6b792046",
+      "workspace_relative_path": "mod2-runtime/evidence/r19-mod2-battle-final/result.json",
+      "bytes": 1457,
+      "included_in_library": false,
+      "sha256": "1B002589062D82B9D9DFAB30928D23F2302B5E10B412729BFD89601DB1B051A6"
+    },
+    {
+      "id": "ref-a062986f539c",
+      "workspace_relative_path": "mod2-runtime/evidence/r19-original-isolation.json",
+      "bytes": 6813,
+      "included_in_library": false,
+      "sha256": "39BA72753508863E064BBF89F3AD217F75AEAC8BA12D46E74009FB28F6555527"
+    },
+    {
+      "id": "ref-a23302579545",
+      "workspace_relative_path": "mod2-runtime/evidence/r19-original-regression-result.json",
+      "bytes": 4482,
+      "included_in_library": false,
+      "sha256": "5DCF18A322711680CC2574702FCA76D61B91F1BEB3345C73DEA9933131C8B3D6"
+    },
+    {
+      "id": "ref-6c187082f9ad",
+      "workspace_relative_path": "mod2-runtime/evidence/r19-release-handoff/result.json",
+      "bytes": 16318,
+      "included_in_library": false,
+      "sha256": "53721547BDB71E4B898D458B8A681DE47DFD3D2CDC8692C5C057160C79941424"
+    },
+    {
+      "id": "ref-ef2c38fd047f",
+      "workspace_relative_path": "mod2-runtime/evidence/r19-render-actions/result.json",
+      "bytes": 140068,
+      "included_in_library": false,
+      "sha256": "2B541E727E69AC104F6365BCBE745817D2C7B33FB1D3429892E6FDFF7109222A"
+    },
+    {
+      "id": "ref-35c1bd65f430",
+      "workspace_relative_path": "mod2-runtime/evidence/r19-static/commands.jsonl",
+      "bytes": 1373990,
+      "included_in_library": false,
+      "sha256": "6095F634404CE173AA746CDC14D4E229889955315D6474B6719A4D3B3D739135"
+    },
+    {
+      "id": "ref-0602f9dd6fe6",
+      "workspace_relative_path": "mod2-runtime/evidence/r19-static/result.json",
+      "bytes": 50280,
+      "included_in_library": false,
+      "sha256": "6B1AD94AB084C34C5B7DD228616A7C509FF6E55C155FF5F6986AC95BB3CBA784"
+    },
+    {
+      "id": "ref-c20afe3dbf73",
+      "workspace_relative_path": "mod2-runtime/evidence/r19-static-cold-final/result.json",
+      "bytes": 50346,
+      "included_in_library": false,
+      "sha256": "B7835C6F56EDD0746D5B939E63930FF430781875AD163DC4281DDF1326B28ECD"
+    },
+    {
+      "id": "ref-c7316d38eff0",
+      "workspace_relative_path": "mod2-runtime/evidence/r19-stats/result.json",
+      "bytes": 9712,
+      "included_in_library": false,
+      "sha256": "D839D108A858684F207BD72597C8B0CA2D6A973FB3BB5EC8EDE5141B6BB8501C"
+    },
+    {
+      "id": "ref-f4dc6c721c73",
+      "workspace_relative_path": "mod2-runtime/evidence/r19-umbrella/result.json",
+      "bytes": 6562,
+      "included_in_library": false,
+      "sha256": "5E383C2E13F0E95E7E2AFB70D749FAC8B8E02EE763B5332A7714521B6CF8382F"
+    },
+    {
+      "id": "ref-ab90c34fdc90",
+      "workspace_relative_path": "mod2-runtime/evidence/r19-umbrella-interactions/result.json",
+      "bytes": 3474,
+      "included_in_library": false,
+      "sha256": "E5FC918812324236D6D3B9D36AC09239F5CC1A9369045AC10F9A122A72270BFB"
+    },
+    {
+      "id": "ref-0bdcdb0dad59",
+      "workspace_relative_path": "mod2-runtime/evidence/r5-actions-result.json",
+      "bytes": 94511,
+      "included_in_library": false,
+      "sha256": "9F3F11E2414A5697B010175CBECFF73E1A5E0AB3AEE584DEEB95D17C1F9490C1"
+    },
+    {
+      "id": "ref-875633a5877f",
+      "workspace_relative_path": "mod2-runtime/evidence/r5-attacks/result.json",
+      "bytes": 9888,
+      "included_in_library": false,
+      "sha256": "C4241AC48B4810D0AEBAA3280FB6EA8555DC5A4E2CA26C16AF07F19B9C5FB6E9"
+    },
+    {
+      "id": "ref-e838f3db9b6b",
+      "workspace_relative_path": "mod2-runtime/evidence/r5-stats/result.json",
+      "bytes": 6358,
+      "included_in_library": false,
+      "sha256": "AD32B656566EC3663F597C5729D3D6320930F83F0B8D935BB4CC64913A1E64CB"
+    },
+    {
+      "id": "ref-0ad5f50067bb",
+      "workspace_relative_path": "mod2-runtime/scripts/build_card_profiles.py",
+      "bytes": 22952,
+      "included_in_library": false,
+      "sha256": "DA65E1B9D1A2AD8F9B7862C72732F81BC6A78C7968171DDAB0E0100C4492666F"
+    },
+    {
+      "id": "ref-6a553385dbe9",
+      "workspace_relative_path": "mod2-runtime/scripts/cli.py",
+      "bytes": 1216,
+      "included_in_library": false,
+      "sha256": "54B022FD108864339D526065E6382A6445D9A404562952EF7AF9DB50E784A72A"
+    },
+    {
+      "id": "ref-196b3ff97d26",
+      "workspace_relative_path": "mod2-runtime/scripts/device.py",
+      "bytes": 1172,
+      "included_in_library": false,
+      "sha256": "02DF679E56DCE04B82C8C42C7690A678A3B7483E28B5780913934128CC15B04F"
+    },
+    {
+      "id": "ref-aadd3a215a63",
+      "workspace_relative_path": "mod2-runtime/scripts/run_battle.py",
+      "bytes": 4140,
+      "included_in_library": false,
+      "sha256": "65007A1CCF8CB148C5F3F7C00CFB7876FA6196649CF8D88858F21A0DE07EE4C5"
+    },
+    {
+      "id": "ref-4060610c8d79",
+      "workspace_relative_path": "mod2-runtime/scripts/session.py",
+      "bytes": 3048,
+      "included_in_library": false,
+      "sha256": "E572A3A15EA8A27D8067D1100463B7FCD6459E3F99778F627E8526986B72AA86"
+    },
+    {
+      "id": "ref-1543e5a98afc",
+      "workspace_relative_path": "mod2-runtime/scripts/test.py",
+      "bytes": 3280,
+      "included_in_library": false,
+      "sha256": "C0C28547F52850B37CFE952BA5A3C5EB9AD51A78D612B03452C9B9879A2127CB"
+    },
+    {
+      "id": "ref-8594f8358918",
+      "workspace_relative_path": "mod2-runtime/src/mod2-animation.js",
+      "bytes": 4844,
+      "included_in_library": false,
+      "sha256": "29F30A7D889EF8EA9B51BD1ACFFE714ECE881A9B1B3C6A99BFE4AD2EBC75ABA5"
+    },
+    {
+      "id": "ref-ed2bef2d1b14",
+      "workspace_relative_path": "mod2-runtime/src/mod2-attack.js",
+      "bytes": 21665,
+      "included_in_library": false,
+      "sha256": "E44E402B8DFC88481CB9F11B0387CDEF4B06AC21B87246AB9BD879D57BB612F8"
+    },
+    {
+      "id": "ref-31a4c8a4a5a3",
+      "workspace_relative_path": "mod2-runtime/src/mod2-contract.js",
+      "bytes": 523,
+      "included_in_library": false,
+      "sha256": "C3B9020587D7A0ECCB5350D7760597AC1FC2E4ECC11550AE105D0785AF3280CC"
+    },
+    {
+      "id": "ref-fe1f0a1936e9",
+      "workspace_relative_path": "mod2-runtime/src/mod2-history.js",
+      "bytes": 7853,
+      "included_in_library": false,
+      "sha256": "F61E52A4F53B36AE431D39D975FADF047320C235A5C11F482431E57CB1025C7C"
+    },
+    {
+      "id": "ref-7d4849100b43",
+      "workspace_relative_path": "mod2-runtime/src/mod2-skills.js",
+      "bytes": 9077,
+      "included_in_library": false,
+      "sha256": "0636C3C1790DF255A2EA6A3ABFCFCE37E8A4D3949D2A301D3E5A107F3BF6CB2B"
+    },
+    {
+      "id": "ref-d93510e94206",
+      "workspace_relative_path": "mod2-runtime/src/mod2-sun-animation.js",
+      "bytes": 8255,
+      "included_in_library": false,
+      "sha256": "83A57524D262A3464D6FF516854A338C89515C9C24F683481FBEFC8BC9CC11AC"
+    },
+    {
+      "id": "ref-8bb7ffd53202",
+      "workspace_relative_path": "mod2-runtime/src/runtime.js",
+      "bytes": 45472,
+      "included_in_library": false,
+      "sha256": "60D86C636237D8DFC01A7DD705B9094E5604D3EBCABDD425E7F3BF9E51F7FAA8"
+    },
+    {
+      "id": "ref-eb1f3898aae5",
+      "workspace_relative_path": "mod2-runtime/tests/verify_mod2_battle.py",
+      "bytes": 5153,
+      "included_in_library": false,
+      "sha256": "12913C82847FF51BEB966F744C80CC92F36C25DBF99A77B06611E7340E08359A"
+    }
+  ],
+  "device_access_during_archival": false,
+  "binaries_or_credentials_copied": false
+}

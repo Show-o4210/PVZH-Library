@@ -1,0 +1,1643 @@
+{
+  "schema": 1,
+  "kind": "extracted-evidence-index",
+  "source_reports_not_bundled": true,
+  "reports": [
+    {
+      "reference_id": "ref-a450f607f561",
+      "source": "mod2-runtime/evidence/r12-mod2-warm/result.json",
+      "source_sha256": "4DBAF9F5773DBB4162A2DF34730BF23B092E487AB1507F08ED938A4C3A8D762E",
+      "extraction": "selected-fields-not-original-report",
+      "result": "PASS"
+    },
+    {
+      "reference_id": "ref-e8e292040245",
+      "source": "mod2-runtime/evidence/r12-original-warm/result.json",
+      "source_sha256": "3116DB2F3F5C0C00400525D35FC4A3686AE72E8EB1E816B35B161FD18E18D83E",
+      "extraction": "selected-fields-not-original-report",
+      "result": "PASS"
+    },
+    {
+      "reference_id": "ref-99f2c9deb5d7",
+      "source": "mod2-runtime/evidence/r14-actions-result.json",
+      "source_sha256": "80EDCE9B01CA7D3B7D9C38EF3737FEAB60F7AAF11A934B0EBA991DDD7E56FEC8",
+      "extraction": "selected-fields-not-original-report",
+      "result": "PASS",
+      "checks": [
+        "reveal-87-legal-play-reveals-existing-grave-without-destroying-it",
+        "sun-106-two-legal-casts-register-two-independent-debts",
+        "sun-106-next-native-turn-deducts-six-once-and-consumes-jobs",
+        "sun-106-following-turn-restores-normal-resource-growth",
+        "sun-106-zero-floor-is-native-and-debt-does-not-roll-over",
+        "swap-202-legal-play-exchanges-injured-hero-and-buffed-hand-unit-current-hp",
+        "swap-1014-fixture-action-exchanges-two-damaged-targets-with-existing-health-buff"
+      ],
+      "cases": [
+        {
+          "case": "reveal",
+          "result": "PASS"
+        },
+        {
+          "case": "sun",
+          "result": "PASS"
+        },
+        {
+          "case": "swap",
+          "result": "PASS"
+        }
+      ]
+    },
+    {
+      "reference_id": "ref-d6548fddf8d4",
+      "source": "mod2-runtime/evidence/r14-attacks/result.json",
+      "source_sha256": "2C2FC5466B286432656DB18A4FF5C991D5A214ADDF9EF69D9D6792EEAF925302",
+      "extraction": "selected-fields-not-original-report",
+      "result": "PASS",
+      "cases": [
+        {
+          "case": "simultaneous",
+          "result": "PASS",
+          "checks": [
+            "native-1-1-combat-mutual-death-keeps-simultaneous-reply"
+          ]
+        },
+        {
+          "case": "ban600",
+          "result": "PASS",
+          "checks": [
+            "positive-attack-unit-cannot-extra-attack-hero",
+            "ordinary-damage-from-banned-unit-still-resolves"
+          ]
+        },
+        {
+          "case": "ban422",
+          "result": "PASS",
+          "checks": [
+            "positive-attack-unit-cannot-extra-attack-hero",
+            "ordinary-damage-from-banned-unit-still-resolves"
+          ]
+        },
+        {
+          "case": "ban588",
+          "result": "PASS",
+          "checks": [
+            "positive-attack-unit-cannot-extra-attack-hero",
+            "ordinary-damage-from-banned-unit-still-resolves"
+          ]
+        },
+        {
+          "case": "ban148",
+          "result": "PASS",
+          "checks": [
+            "positive-attack-unit-cannot-extra-attack-hero",
+            "ordinary-damage-from-banned-unit-still-resolves"
+          ]
+        },
+        {
+          "case": "lane139",
+          "result": "PASS",
+          "checks": [
+            "same-lane-attacker-cannot-hit-controller-or-hero",
+            "different-lane-control-retains-extra-attack"
+          ]
+        },
+        {
+          "case": "lane675",
+          "result": "PASS",
+          "checks": [
+            "same-lane-attacker-cannot-hit-controller-or-hero",
+            "different-lane-control-retains-extra-attack"
+          ]
+        },
+        {
+          "case": "wounded221",
+          "result": "PASS",
+          "checks": [
+            "health-buff-does-not-unlock-undamaged-newspaper",
+            "actual-positive-damage-unlocks-newspaper-attack"
+          ]
+        },
+        {
+          "case": "adjacent464",
+          "result": "PASS",
+          "checks": [
+            "one-extra-attack-damages-only-both-adjacent-plants-by-six"
+          ]
+        },
+        {
+          "case": "bounce658",
+          "result": "PASS",
+          "checks": [
+            "extra-attack-completes-then-returns-primal-pea-to-hand"
+          ]
+        },
+        {
+          "case": "front114-lethal",
+          "result": "PASS",
+          "checks": [
+            "front-plant-killed-by-pre-attack-damage-cannot-damage-hero"
+          ]
+        },
+        {
+          "case": "front114-survive",
+          "result": "PASS",
+          "checks": [
+            "front-plant-takes-pre-attack-damage-and-survivor-continues"
+          ]
+        },
+        {
+          "case": "hero253",
+          "result": "PASS",
+          "checks": [
+            "actual-attack-on-plant-hero-debuffs-dog-by-three-three-once"
+          ]
+        },
+        {
+          "case": "nonattack253",
+          "result": "PASS",
+          "checks": [
+            "ordinary-damage-to-plant-hero-does-not-trigger-dog-debuff"
+          ]
+        }
+      ]
+    },
+    {
+      "reference_id": "ref-cd33e9bfe10f",
+      "source": "mod2-runtime/evidence/r14-reflection-phase-probe.json",
+      "source_sha256": "DD0CAC7A1122BA681C813AF10552274B0772E1E36AE11C1685DC324E9126414F",
+      "extraction": "selected-fields-not-original-report"
+    },
+    {
+      "reference_id": "ref-fa3960f3d6b5",
+      "source": "mod2-runtime/evidence/r14-render-before-static-fixes/result.json",
+      "source_sha256": "A3B6AA3B786258E89B03664C7D76B7E725A728CC7DF84945F7F5AD91105CB9BF",
+      "extraction": "selected-fields-not-original-report",
+      "result": "FAIL",
+      "error": "TimeoutError: Original rendered animation queue did not clear within 15s: await-choice-or-player",
+      "unverified": [],
+      "checks": [
+        "real-rendered-fixture-starts-and-native-animation-queue-clears",
+        "ordinary-zombie-legal-play-enters-board-and-clears-animation",
+        "ordinary-plant-legal-play-enters-board-and-clears-animation"
+      ]
+    },
+    {
+      "reference_id": "ref-dad8bf5aa2ad",
+      "source": "mod2-runtime/evidence/r14-static-freeze-delay2/freeze.json",
+      "source_sha256": "0BFD487D3C4727BBF7EF81452D9593751EB329FF343C0DF1E464B4ECF8C4B2C6",
+      "extraction": "selected-fields-not-original-report",
+      "result": "PASS",
+      "unverified": [],
+      "checks": [
+        "winter-melon-legally-enters-and-freezes-itself-without-squash",
+        "melons-freeze-removes-existing-squash-and-melon-chain-converges"
+      ]
+    },
+    {
+      "reference_id": "ref-d3b0a632e553",
+      "source": "mod2-runtime/evidence/r14-static-freeze-delay2/result.json",
+      "source_sha256": "918C53D92B00883DBE2536EFA4E685E08276765923C8E91475BE1878832B5076",
+      "extraction": "selected-fields-not-original-report",
+      "result": "PASS",
+      "fixture_delay_seconds": 2.0,
+      "cases": [
+        {
+          "case": "freeze",
+          "result": "PASS",
+          "unverified": [],
+          "checks": [
+            "winter-melon-legally-enters-and-freezes-itself-without-squash",
+            "melons-freeze-removes-existing-squash-and-melon-chain-converges"
+          ]
+        }
+      ]
+    },
+    {
+      "reference_id": "ref-2e4797f2f1a5",
+      "source": "mod2-runtime/evidence/r14-static-last-three/banana472.json",
+      "source_sha256": "FB4C8EE32157D37AFAE5BFDC8FB28BCB67EA1CA31E811FFEBF13A0A071442EEF",
+      "extraction": "selected-fields-not-original-report",
+      "result": "PASS",
+      "unverified": [],
+      "checks": [
+        "banana-native-death-creates-exactly-one-real-self-copy-in-each-open-adjacent-land-lane",
+        "banana-edge-native-death-creates-one-neighbor-without-out-of-board-target",
+        "banana-occupied-neighbors-block-copy-placement-after-observed-parent-death",
+        "banana-native-death-keeps-both-original-occupants-unchanged",
+        "banana-open-water-is-excluded-even-when-every-land-neighbor-is-occupied",
+        "legal-banana-lane-combat-removes-known-parent-creates-live-copies-and-finishes-round"
+      ]
+    },
+    {
+      "reference_id": "ref-b91a94c72814",
+      "source": "mod2-runtime/evidence/r14-static-last-three/copter286.json",
+      "source_sha256": "4AAE8042FA3F779B38E5C2EB8E69C7024ED9657D9D80D16C34DACCC51200A0EF",
+      "extraction": "selected-fields-not-original-report",
+      "result": "PASS",
+      "unverified": [],
+      "checks": [
+        "legal-copter-trick-is-consumed-and-leaves-independent-original-copter-alive",
+        "post-trick-lane-accepts-another-real-native-unit-without-permanent-occupancy",
+        "one-identified-transient-copter-is-really-created-before-native-self-destruction"
+      ]
+    },
+    {
+      "reference_id": "ref-62ed861e2529",
+      "source": "mod2-runtime/evidence/r14-static-last-three/result.json",
+      "source_sha256": "8583EC3D5DCAF44CD43F1A03092FE2F0018EC6884D5C1464BD70EDA124106093",
+      "extraction": "selected-fields-not-original-report",
+      "result": "FAIL",
+      "fixture_delay_seconds": 2.0,
+      "cases": [
+        {
+          "case": "banana472",
+          "result": "PASS",
+          "unverified": [],
+          "checks": [
+            "banana-native-death-creates-exactly-one-real-self-copy-in-each-open-adjacent-land-lane",
+            "banana-edge-native-death-creates-one-neighbor-without-out-of-board-target",
+            "banana-occupied-neighbors-block-copy-placement-after-observed-parent-death",
+            "banana-native-death-keeps-both-original-occupants-unchanged",
+            "banana-open-water-is-excluded-even-when-every-land-neighbor-is-occupied",
+            "legal-banana-lane-combat-removes-known-parent-creates-live-copies-and-finishes-round"
+          ]
+        },
+        {
+          "case": "copter286",
+          "result": "PASS",
+          "unverified": [],
+          "checks": [
+            "legal-copter-trick-is-consumed-and-leaves-independent-original-copter-alive",
+            "post-trick-lane-accepts-another-real-native-unit-without-permanent-occupancy",
+            "one-identified-transient-copter-is-really-created-before-native-self-destruction"
+          ]
+        },
+        {
+          "case": "diver547",
+          "result": "FAIL",
+          "error": "AssertionError: {'id': 24, 'components': ['Card', 'Attack', 'Health', 'SunCost', 'Zombies', 'Rarity', 'Subtypes', 'Tags', 'PlaysFaceDown', 'EffectEntities', 'ShowTriggeredIcon', 'Owner', 'LaneCombatHistory', 'LethalDamageList', 'LaneElement', 'FaceDown'], 'guid': 547, 'attack': 3, 'health': 5, 'damage': 0, 'max_health': 5, 'cost': 3, 'owner': 5, 'lanes': [11]}",
+          "fatal": false,
+          "unverified": [],
+          "checks": [
+            "diver-receives-real-native-health-buff-while-still-in-hand"
+          ]
+        }
+      ]
+    },
+    {
+      "reference_id": "ref-f378ea527c5a",
+      "source": "mod2-runtime/evidence/r14-static-rest/reflection.json",
+      "source_sha256": "9384B837188F6EBC68DFEDD1A97654E430BDD0D56AF3BCB24B449B884ED99F7A",
+      "extraction": "selected-fields-not-original-report",
+      "result": "PASS",
+      "unverified": [],
+      "checks": [
+        "one-real-damage-exhausts-reflectors-eleven-health-through-finite-self-damage",
+        "one-real-damage-starts-finite-self-damage-chain-and-one-wall-nut",
+        "reflection-chain-does-not-damage-either-hero"
+      ]
+    },
+    {
+      "reference_id": "ref-8cb74c657ce5",
+      "source": "mod2-runtime/evidence/r14-stats-final/result.json",
+      "source_sha256": "D839D108A858684F207BD72597C8B0CA2D6A973FB3BB5EC8EDE5141B6BB8501C",
+      "extraction": "selected-fields-not-original-report",
+      "result": "PASS",
+      "limitations": [
+        "Headless logical verification; special animation/visible synchronization is separate",
+        "No AI speculative-model assertions",
+        "No raw BaseValue memory consumer assertions",
+        "No health-based AttackOverride assertions",
+        "No direct Health.TakeDamage bypass assertions",
+        "No delayed activation-time modifier injection",
+        "No superblock assertion in these unit-target cases"
+      ],
+      "cases": [
+        {
+          "case": "hand-set326",
+          "result": "PASS",
+          "checks": [
+            "hand-326-rejects-plus-five-attack-and-keeps-plus-four-health",
+            "hand-326-pure-positive-attack-stays-zero",
+            "hand-326-attack-set-five-stays-zero",
+            "hand-326-health-set-remains-native-and-independent",
+            "legally-played-326-keeps-tested-hand-stat-values",
+            "buffed-326-real-native-extra-attack-does-not-damage-hero",
+            "ordinary-347-still-gains-native-attack-and-health"
+          ]
+        },
+        {
+          "case": "continuous326",
+          "result": "PASS",
+          "checks": [
+            "native-red-plant-it-continuous-aura-adds-only-health-to-326",
+            "same-native-continuous-aura-still-buffs-ordinary-347-by-five-five",
+            "native-environment-replacement-removes-health-aura-with-no-late-attack-gain"
+          ]
+        },
+        {
+          "case": "bounce326",
+          "result": "PASS",
+          "checks": [
+            "native-bounce-reset-keeps-rule-and-new-hand-buff-remains-health-only"
+          ]
+        },
+        {
+          "case": "source518",
+          "result": "PASS",
+          "checks": [
+            "518-legally-played-from-hand-as-native-gravestone",
+            "unrevealed-518-does-not-change-zombie-damage",
+            "518-reveals-through-native-phase-progression",
+            "revealed-518-fixes-zombie-unit-damage-to-one",
+            "zombie-hero-source-is-classified-by-player-id",
+            "plant-source-damage-remains-seven",
+            "zero-damage-is-not-resurrected-by-fixed-damage-rule",
+            "native-destroy-marks-or-removes-target",
+            "native-destroy-actually-removes-target-from-lanes",
+            "destroying-518-restores-native-seven-damage"
+          ]
+        },
+        {
+          "case": "multiplier518",
+          "result": "PASS",
+          "checks": [
+            "518-legally-played-from-hand-as-native-gravestone",
+            "native-source-damage-multiplier-works-before-518-reveal",
+            "518-reveals-through-native-phase-progression",
+            "fixed-one-is-applied-after-native-damage-multiplication"
+          ]
+        },
+        {
+          "case": "defenses518",
+          "result": "PASS",
+          "checks": [
+            "518-legally-played-from-hand-as-native-gravestone",
+            "native-jugger-nut-armor-reduces-seven-to-six-before-rule",
+            "518-reveals-through-native-phase-progression",
+            "native-armor-reduces-fixed-one-to-zero",
+            "armor-and-normal-plant-damage-stay-native",
+            "native-damage-immunity-is-not-undone-by-fixed-one"
+          ]
+        },
+        {
+          "case": "min-health518",
+          "result": "PASS",
+          "checks": [
+            "518-legally-played-from-hand-as-native-gravestone",
+            "518-reveals-through-native-phase-progression",
+            "native-min-health-protection-has-live-fighter-source",
+            "fixed-one-can-reduce-min-health-unit-from-two-to-one",
+            "native-min-health-one-still-prevents-final-point"
+          ]
+        },
+        {
+          "case": "native-trick518",
+          "result": "PASS",
+          "checks": [
+            "518-legally-played-from-hand-as-native-gravestone",
+            "518-reveals-through-native-phase-progression",
+            "legally-played-native-bungee-plumber-damage-is-one"
+          ]
+        }
+      ]
+    },
+    {
+      "reference_id": "ref-ef5b275df261",
+      "source": "mod2-runtime/evidence/r15-grave-legal87/grave.json",
+      "source_sha256": "28ACDBA52EB356F13560DFCD7EDAE2CCB99CFBA0E3072D465385C36DE630E7F9",
+      "extraction": "selected-fields-not-original-report",
+      "result": "PASS",
+      "unverified": [],
+      "checks": [
+        "actual-gravedigger-entry-executes-once-and-hides-two-previously-known-zombies",
+        "legal-87-revealing-another-zombie-does-not-trigger-gravedigger",
+        "legal-87-self-reveal-executes-gravedigger-exactly-once-and-rehides-visible-peer"
+      ]
+    },
+    {
+      "reference_id": "ref-e7cb45147bbe",
+      "source": "mod2-runtime/evidence/r15-grave-legal87/result.json",
+      "source_sha256": "3F5BA0557BE201C5B76046A48D7586811F3FF7F5F032CBCD9802FDD23C5DFE08",
+      "extraction": "selected-fields-not-original-report",
+      "result": "PASS",
+      "fixture_delay_seconds": 2.0,
+      "cases": [
+        {
+          "case": "grave",
+          "result": "PASS",
+          "unverified": [],
+          "checks": [
+            "actual-gravedigger-entry-executes-once-and-hides-two-previously-known-zombies",
+            "legal-87-revealing-another-zombie-does-not-trigger-gravedigger",
+            "legal-87-self-reveal-executes-gravedigger-exactly-once-and-rehides-visible-peer"
+          ]
+        }
+      ]
+    },
+    {
+      "reference_id": "ref-09359dc4dd1e",
+      "source": "mod2-runtime/evidence/r15-grave-trigger-trace/result.json",
+      "source_sha256": "74CF0C4B6B56A07706161AD9970D7EA8AE7126EF8E0C7406B48A3F409E6917C4",
+      "extraction": "selected-fields-not-original-report"
+    },
+    {
+      "reference_id": "ref-0dec8f120622",
+      "source": "mod2-runtime/evidence/r15-static-fixes/coffee.json",
+      "source_sha256": "0954FB91A4522D33D17D8AD39930EB271D88BB5129A30D4627962B27C6942ED8",
+      "extraction": "selected-fields-not-original-report",
+      "result": "FAIL",
+      "error": "AssertionError: ",
+      "unverified": [],
+      "checks": [
+        "both-known-coffee-recipients-actually-gain-one-one-and-frenzy",
+        "later-legally-played-zombie-did-not-receive-previous-coffee-buff",
+        "one-real-recipient-is-bounced-to-hand-before-surprise",
+        "legal-smack-a-zombie-hides-known-coffee-recipient"
+      ]
+    },
+    {
+      "reference_id": "ref-b3e8ca9ac5b6",
+      "source": "mod2-runtime/evidence/r15-static97-547/diver547.json",
+      "source_sha256": "E9F6B9E9759EF753775A16424CBA9648F5A8B5E27C8C826156825232466AEC46",
+      "extraction": "selected-fields-not-original-report",
+      "result": "PARTIAL",
+      "unverified": [
+        "547 at original 2 HP: normal reveal and actual death completed, but native CardMoveRecord-before-DestroyCardRecord is not visible; movement-before-death remains unverified"
+      ],
+      "checks": [
+        "diver-receives-real-native-health-buff-while-still-in-hand",
+        "diver-legally-enters-as-original-gravestone-before-reveal",
+        "diver-reveals-through-normal-original-phase-actions",
+        "normal-highground-reveal-grants-aquatic-moves-to-selected-water-and-applies-exact-minus-two-two",
+        "diver-legally-enters-as-original-gravestone-before-reveal",
+        "diver-reveals-through-normal-original-phase-actions",
+        "diver-legally-enters-as-original-gravestone-before-reveal",
+        "diver-reveals-through-normal-original-phase-actions",
+        "all-water-lanes-occupied-prevents-diver-ability-after-actual-reveal-and-preserves-real-occupants"
+      ]
+    },
+    {
+      "reference_id": "ref-36124b640f28",
+      "source": "mod2-runtime/evidence/r15-static97-547/redirect97.json",
+      "source_sha256": "F4F9EA33EC48391EC69B077D685C1C2A3D24A147DB2AD00DBE4746AD9AD50983",
+      "extraction": "selected-fields-not-original-report",
+      "result": "PASS",
+      "unverified": [],
+      "checks": [
+        "legal-shroom-for-two-creates-one-real-dedicated-copy-with-unopposed-ambush",
+        "dedicated-copy-loses-ambush-attack-when-a-real-opponent-enters",
+        "parents-one-point-native-damage-is-redirected-once-to-known-copy",
+        "no-copy-branch-applies-real-damage-to-original-target-and-converges",
+        "parents-real-extra-attack-redirects-once-to-copy-without-enemy-or-hero-damage"
+      ]
+    },
+    {
+      "reference_id": "ref-638768656c7f",
+      "source": "mod2-runtime/evidence/r16-grave-response-group/result.json",
+      "source_sha256": "8A321BAE1F3A4B454740F93B292D6294E5D10ED746FACACB1D8C8E0781057BA3",
+      "extraction": "selected-fields-not-original-report"
+    },
+    {
+      "reference_id": "ref-9f607301bb64",
+      "source": "mod2-runtime/evidence/r16-render-87-disabled-cold/result.json",
+      "source_sha256": "47BE2004EAFBCCC0B2131E0EE13EF573006E28A5CE9ECC69EC083E92A73B7322",
+      "extraction": "selected-fields-not-original-report",
+      "result": "FAIL",
+      "error": "TimeoutError: Original rendered animation queue did not clear within 15s: await-choice-or-player",
+      "unverified": [],
+      "checks": [
+        "real-rendered-fixture-starts-and-native-animation-queue-clears",
+        "ordinary-zombie-legal-play-enters-board-and-clears-animation",
+        "ordinary-plant-legal-play-enters-board-and-clears-animation"
+      ]
+    },
+    {
+      "reference_id": "ref-b13ca6941d6b",
+      "source": "mod2-runtime/evidence/r16-render-87-fallback-on/result.json",
+      "source_sha256": "A47C4CA00580942E10D55B79F904CF93686DC9FC57AFF859624EE59FB9242E8F",
+      "extraction": "selected-fields-not-original-report",
+      "result": "PASS",
+      "unverified": [],
+      "checks": [
+        "real-rendered-fixture-starts-and-native-animation-queue-clears",
+        "ordinary-zombie-legal-play-enters-board-and-clears-animation",
+        "ordinary-plant-legal-play-enters-board-and-clears-animation",
+        "legal-reveal-87-reveals-existing-grave-and-clears-original-animation-queue",
+        "complete-rendered-round-advances-native-turn-and-animation-queue-clears"
+      ]
+    },
+    {
+      "reference_id": "ref-9f2b666a2425",
+      "source": "mod2-runtime/evidence/r16-static-full/banana472.json",
+      "source_sha256": "FB4C8EE32157D37AFAE5BFDC8FB28BCB67EA1CA31E811FFEBF13A0A071442EEF",
+      "extraction": "selected-fields-not-original-report",
+      "result": "PASS",
+      "unverified": [],
+      "checks": [
+        "banana-native-death-creates-exactly-one-real-self-copy-in-each-open-adjacent-land-lane",
+        "banana-edge-native-death-creates-one-neighbor-without-out-of-board-target",
+        "banana-occupied-neighbors-block-copy-placement-after-observed-parent-death",
+        "banana-native-death-keeps-both-original-occupants-unchanged",
+        "banana-open-water-is-excluded-even-when-every-land-neighbor-is-occupied",
+        "legal-banana-lane-combat-removes-known-parent-creates-live-copies-and-finishes-round"
+      ]
+    },
+    {
+      "reference_id": "ref-0b10c78290a3",
+      "source": "mod2-runtime/evidence/r16-static-full/coffee.json",
+      "source_sha256": "765EC3B00D6F0929B213794EAC5B710623819DBD622D143A72C3B2D2F6DEF595",
+      "extraction": "selected-fields-not-original-report",
+      "result": "PASS",
+      "unverified": [],
+      "checks": [
+        "both-known-coffee-recipients-actually-gain-one-one-and-frenzy",
+        "later-legally-played-zombie-did-not-receive-previous-coffee-buff",
+        "one-real-recipient-is-bounced-to-hand-before-surprise",
+        "legal-smack-a-zombie-hides-known-coffee-recipient",
+        "surprise-kills-known-on-board-recipients-and-preserves-late-zombie-and-hand"
+      ]
+    },
+    {
+      "reference_id": "ref-0df39721d958",
+      "source": "mod2-runtime/evidence/r16-static-full/copter286.json",
+      "source_sha256": "0F5E8CB73D1C7F6DEEAC0DD355F7BECEF0266874B9B11D4532DA8B11A0E72A4E",
+      "extraction": "selected-fields-not-original-report",
+      "result": "PASS",
+      "unverified": [],
+      "checks": [
+        "legal-copter-trick-is-consumed-and-leaves-independent-original-copter-alive",
+        "post-trick-lane-accepts-another-real-native-unit-without-permanent-occupancy",
+        "one-identified-transient-copter-is-really-created-before-native-self-destruction"
+      ]
+    },
+    {
+      "reference_id": "ref-489676be124f",
+      "source": "mod2-runtime/evidence/r16-static-full/diver547.json",
+      "source_sha256": "5A13ADD6EDAECC944624126626BFC7DA772FD90E2CB29B4DD3EEE813FC50B113",
+      "extraction": "selected-fields-not-original-report",
+      "result": "PASS",
+      "unverified": [],
+      "checks": [
+        "diver-receives-real-native-health-buff-while-still-in-hand",
+        "diver-legally-enters-as-original-gravestone-before-reveal",
+        "diver-reveals-through-normal-original-phase-actions",
+        "normal-highground-reveal-grants-aquatic-moves-to-selected-water-and-applies-exact-minus-two-two",
+        "diver-legally-enters-as-original-gravestone-before-reveal",
+        "diver-reveals-through-normal-original-phase-actions",
+        "original-two-health-diver-has-native-water-move-then-minus-two-two-then-actual-natural-discard",
+        "diver-legally-enters-as-original-gravestone-before-reveal",
+        "diver-reveals-through-normal-original-phase-actions",
+        "all-water-lanes-occupied-prevents-diver-ability-after-actual-reveal-and-preserves-real-occupants"
+      ]
+    },
+    {
+      "reference_id": "ref-17f759685989",
+      "source": "mod2-runtime/evidence/r16-static-full/freeze.json",
+      "source_sha256": "0BFD487D3C4727BBF7EF81452D9593751EB329FF343C0DF1E464B4ECF8C4B2C6",
+      "extraction": "selected-fields-not-original-report",
+      "result": "PASS",
+      "unverified": [],
+      "checks": [
+        "winter-melon-legally-enters-and-freezes-itself-without-squash",
+        "melons-freeze-removes-existing-squash-and-melon-chain-converges"
+      ]
+    },
+    {
+      "reference_id": "ref-cb6fec8bff9a",
+      "source": "mod2-runtime/evidence/r16-static-full/grave.json",
+      "source_sha256": "5C6FAD8112D75720DFEAFA5A66078E713B9E334FE70F7611671BCB13BECFE4F8",
+      "extraction": "selected-fields-not-original-report",
+      "result": "PASS",
+      "unverified": [],
+      "checks": [
+        "actual-gravedigger-entry-executes-once-and-hides-two-previously-known-zombies",
+        "legal-87-revealing-another-zombie-does-not-trigger-gravedigger",
+        "legal-87-self-reveal-executes-gravedigger-exactly-once-and-rehides-visible-peer"
+      ]
+    },
+    {
+      "reference_id": "ref-108d6813b459",
+      "source": "mod2-runtime/evidence/r16-static-full/redirect97.json",
+      "source_sha256": "F4F9EA33EC48391EC69B077D685C1C2A3D24A147DB2AD00DBE4746AD9AD50983",
+      "extraction": "selected-fields-not-original-report",
+      "result": "PASS",
+      "unverified": [],
+      "checks": [
+        "legal-shroom-for-two-creates-one-real-dedicated-copy-with-unopposed-ambush",
+        "dedicated-copy-loses-ambush-attack-when-a-real-opponent-enters",
+        "parents-one-point-native-damage-is-redirected-once-to-known-copy",
+        "no-copy-branch-applies-real-damage-to-original-target-and-converges",
+        "parents-real-extra-attack-redirects-once-to-copy-without-enemy-or-hero-damage"
+      ]
+    },
+    {
+      "reference_id": "ref-156ccfb40ede",
+      "source": "mod2-runtime/evidence/r16-static-full/reflection.json",
+      "source_sha256": "9384B837188F6EBC68DFEDD1A97654E430BDD0D56AF3BCB24B449B884ED99F7A",
+      "extraction": "selected-fields-not-original-report",
+      "result": "PASS",
+      "unverified": [],
+      "checks": [
+        "one-real-damage-exhausts-reflectors-eleven-health-through-finite-self-damage",
+        "one-real-damage-starts-finite-self-damage-chain-and-one-wall-nut",
+        "reflection-chain-does-not-damage-either-hero"
+      ]
+    },
+    {
+      "reference_id": "ref-cafe9d491e00",
+      "source": "mod2-runtime/evidence/r16-static-full/result.json",
+      "source_sha256": "6DFD3EF6610CCAE814D89B7D6563A3B7309A4F98A08AFAF04DF9F3AE7DD22889",
+      "extraction": "selected-fields-not-original-report",
+      "result": "PASS",
+      "fixture_delay_seconds": 2.0,
+      "cases": [
+        {
+          "case": "freeze",
+          "result": "PASS",
+          "unverified": [],
+          "checks": [
+            "winter-melon-legally-enters-and-freezes-itself-without-squash",
+            "melons-freeze-removes-existing-squash-and-melon-chain-converges"
+          ]
+        },
+        {
+          "case": "reflection",
+          "result": "PASS",
+          "unverified": [],
+          "checks": [
+            "one-real-damage-exhausts-reflectors-eleven-health-through-finite-self-damage",
+            "one-real-damage-starts-finite-self-damage-chain-and-one-wall-nut",
+            "reflection-chain-does-not-damage-either-hero"
+          ]
+        },
+        {
+          "case": "coffee",
+          "result": "PASS",
+          "unverified": [],
+          "checks": [
+            "both-known-coffee-recipients-actually-gain-one-one-and-frenzy",
+            "later-legally-played-zombie-did-not-receive-previous-coffee-buff",
+            "one-real-recipient-is-bounced-to-hand-before-surprise",
+            "legal-smack-a-zombie-hides-known-coffee-recipient",
+            "surprise-kills-known-on-board-recipients-and-preserves-late-zombie-and-hand"
+          ]
+        },
+        {
+          "case": "grave",
+          "result": "PASS",
+          "unverified": [],
+          "checks": [
+            "actual-gravedigger-entry-executes-once-and-hides-two-previously-known-zombies",
+            "legal-87-revealing-another-zombie-does-not-trigger-gravedigger",
+            "legal-87-self-reveal-executes-gravedigger-exactly-once-and-rehides-visible-peer"
+          ]
+        },
+        {
+          "case": "redirect97",
+          "result": "PASS",
+          "unverified": [],
+          "checks": [
+            "legal-shroom-for-two-creates-one-real-dedicated-copy-with-unopposed-ambush",
+            "dedicated-copy-loses-ambush-attack-when-a-real-opponent-enters",
+            "parents-one-point-native-damage-is-redirected-once-to-known-copy",
+            "no-copy-branch-applies-real-damage-to-original-target-and-converges",
+            "parents-real-extra-attack-redirects-once-to-copy-without-enemy-or-hero-damage"
+          ]
+        },
+        {
+          "case": "banana472",
+          "result": "PASS",
+          "unverified": [],
+          "checks": [
+            "banana-native-death-creates-exactly-one-real-self-copy-in-each-open-adjacent-land-lane",
+            "banana-edge-native-death-creates-one-neighbor-without-out-of-board-target",
+            "banana-occupied-neighbors-block-copy-placement-after-observed-parent-death",
+            "banana-native-death-keeps-both-original-occupants-unchanged",
+            "banana-open-water-is-excluded-even-when-every-land-neighbor-is-occupied",
+            "legal-banana-lane-combat-removes-known-parent-creates-live-copies-and-finishes-round"
+          ]
+        },
+        {
+          "case": "copter286",
+          "result": "PASS",
+          "unverified": [],
+          "checks": [
+            "legal-copter-trick-is-consumed-and-leaves-independent-original-copter-alive",
+            "post-trick-lane-accepts-another-real-native-unit-without-permanent-occupancy",
+            "one-identified-transient-copter-is-really-created-before-native-self-destruction"
+          ]
+        },
+        {
+          "case": "diver547",
+          "result": "PASS",
+          "unverified": [],
+          "checks": [
+            "diver-receives-real-native-health-buff-while-still-in-hand",
+            "diver-legally-enters-as-original-gravestone-before-reveal",
+            "diver-reveals-through-normal-original-phase-actions",
+            "normal-highground-reveal-grants-aquatic-moves-to-selected-water-and-applies-exact-minus-two-two",
+            "diver-legally-enters-as-original-gravestone-before-reveal",
+            "diver-reveals-through-normal-original-phase-actions",
+            "original-two-health-diver-has-native-water-move-then-minus-two-two-then-actual-natural-discard",
+            "diver-legally-enters-as-original-gravestone-before-reveal",
+            "diver-reveals-through-normal-original-phase-actions",
+            "all-water-lanes-occupied-prevents-diver-ability-after-actual-reveal-and-preserves-real-occupants"
+          ]
+        }
+      ]
+    },
+    {
+      "reference_id": "ref-5072b7e91851",
+      "source": "mod2-runtime/evidence/r17-render-actions/after-notify-error.json",
+      "source_sha256": "B58F587BA784202DF8188CCB5DC325C4F9EA55AA811ACC743C36BDCE8C2CCE78",
+      "extraction": "selected-fields-not-original-report"
+    },
+    {
+      "reference_id": "ref-f943c76eabaa",
+      "source": "mod2-runtime/evidence/r17-render-actions/result.json",
+      "source_sha256": "B85FF047D92120E999782D934C819306EBCE61906BBBFDAAB5813BC8396A2645",
+      "extraction": "selected-fields-not-original-report",
+      "result": "FAIL",
+      "error": "RuntimeError: Error: Error: PvZCards.Editor.ViewMapException: View not mapped to PvZCards.Game.CardView for entity 31\n  at PvZCards.Game.EntityViewMapper.GetViewObject[T] (System.Int32 entityId) [0x00000] in <00000000000000000000000000000000>:0 \n  at PvZCards.Game.VisualEffectEventAction.RetrieveFactoryAndCreateParticle (PvZCards.Game.AnimationEventData data) [0x00000] in <00000000000000000000000000000000>:0 \n  at PvZCards.Game.EventActionSequencedEffectAnimation.AddParticleEffectAnimation (PvZCards.Game.AnimationEventAction action, PvZCards.Game.AnimationEventData data) [0x00000] in <00000000000000000000000000000000>:0 \n  at PvZCards.Game.EventActionSequencedEffectAnimation.AddAnimationFromData (PvZCards.Game.AnimationEventAction action, PvZCards.Game.AnimationEventData data) [0x00000] in <00000000000000000000000000000000>:0 \n  at PvZCards.Game.VisualEffectEventAction.CreateAnimationForEvent (PvZCards.Game.AnimationEventData data) [0x00000] in <00000000000000000000000000000000>:0 \n  at PvZCards.Game.GainSunRecordProcessor.ProcessRecord (PvZCards.Engine.Records.GainSunRecord record) [0x00000] in <00000000000000000000000000000000>:0 \n  at PvZCards.Game.SignalRecordRouter.ProcessRecord (PvZCards.Engine.Record record) [0x00000] in <00000000000000000000000000000000>:0 \n  at PvZCards.Game.HistoryProcessor.ProcessRecord (PvZCards.Engine.Record record) [0x00000] in <00000000000000000000000000000000>:0 \n  at PvZCards.Game.HistoryProcessor.ProcessRecords (System.Collections.Generic.IList`1[T] records) [0x00000] in <00000000000000000000000000000000>:0 \n  at strange.extensions.command.impl.SignalCommandBinder.invokeCommand (System.Type cmd, strange.extensions.command.api.ICommandBinding binding, System.Object data, System.Int32 depth) [0x00000] in <00000000000000000000000000000000>:0 \n  at strange.extensions.command.impl.CommandBinder.ReactTo (System.Object trigger, System.Object data) [0x00000] in <00000000000000000000000000000000>:0 \n  at strange.extensions.signal.impl.BaseSignal.Dispatch (System.Object[] args) [0x00000] in <00000000000000000000000000000000>:0 ",
+      "unverified": [],
+      "checks": [
+        "real-rendered-fixture-starts-and-native-animation-queue-clears",
+        "ordinary-zombie-legal-play-enters-board-and-clears-animation",
+        "legal-current-health-swap-202-and-native-animation-queue-clear",
+        "ordinary-plant-legal-play-enters-board-and-clears-animation",
+        "legal-reveal-87-reveals-existing-grave-and-clears-original-animation-queue",
+        "legal-solar-storm-106-damage-and-delayed-debt-animation-clear"
+      ]
+    },
+    {
+      "reference_id": "ref-8848769e6b44",
+      "source": "mod2-runtime/evidence/r18-original-regression-result.json",
+      "source_sha256": "7DA41FFD74F2B9EE4C3ACD2035E486CB396561BE4EC54CF368F2239D2C218A5D",
+      "extraction": "selected-fields-not-original-report",
+      "result": "PASS",
+      "checks": [
+        "cold-start-command-controlled-fixture",
+        "query-live-card-definitions",
+        "unknown-guid-rejected-without-state-change",
+        "invalid-draw-count-rejected",
+        "invalid-player-rejected",
+        "invalid-lane-rejected",
+        "out-of-turn-play-rejected",
+        "out-of-turn-end-rejected",
+        "natural-draw-consumes-original-deck",
+        "specified-multiple-draws-preserve-existing-deck",
+        "give-specified-test-card",
+        "legal-play-removes-hand-card-and-pays-native-cost",
+        "imitater-transforms-through-native-trigger",
+        "native-summon-without-hand-or-resource-cost",
+        "occupied-summon-rejected-by-placement-rules",
+        "complete-original-combat-to-victory",
+        "post-game-mutation-rejected"
+      ],
+      "battle": {
+        "result": "PASS",
+        "total_actions": 36,
+        "winning_player": 0,
+        "losing_player": 5,
+        "final_game_over": true,
+        "blocking_effect": "PvZCards.Engine.Effects.LoseEffect"
+      }
+    },
+    {
+      "reference_id": "ref-9523bd8649ae",
+      "source": "mod2-runtime/evidence/r18-render-actions-final/result.json",
+      "source_sha256": "2CA9FF12431BD7BC9AF8FE4CAE01EA13E7A7A22E26131E32084562F541339E0B",
+      "extraction": "selected-fields-not-original-report",
+      "result": "PASS",
+      "unverified": [],
+      "checks": [
+        "real-rendered-fixture-starts-and-native-animation-queue-clears",
+        "ordinary-zombie-legal-play-enters-board-and-clears-animation",
+        "legal-current-health-swap-202-and-native-animation-queue-clear",
+        "ordinary-plant-legal-play-enters-board-and-clears-animation",
+        "legal-reveal-87-reveals-existing-grave-and-clears-original-animation-queue",
+        "legal-solar-storm-106-damage-and-delayed-debt-animation-clear",
+        "next-turn-solar-storm-native-resource-animation-clears-after-debt",
+        "complete-rendered-round-advances-native-turn-and-animation-queue-clears"
+      ]
+    },
+    {
+      "reference_id": "ref-968e3f334f71",
+      "source": "mod2-runtime/evidence/r19-actions-final-result.json",
+      "source_sha256": "529AA722CEC180520C4796D1D0E07415CD9FC34587987348C495B87FB34B1E55",
+      "extraction": "selected-fields-not-original-report",
+      "result": "PASS",
+      "checks": [
+        "reveal-87-legal-play-reveals-existing-grave-without-destroying-it",
+        "sun-106-two-legal-casts-register-two-independent-debts",
+        "sun-106-next-native-turn-deducts-six-once-and-consumes-jobs",
+        "sun-106-following-turn-restores-normal-resource-growth",
+        "sun-106-zero-floor-is-native-and-debt-does-not-roll-over",
+        "swap-202-legal-play-exchanges-injured-hero-and-buffed-hand-unit-current-hp",
+        "swap-1014-fixture-action-exchanges-two-damaged-targets-with-existing-health-buff"
+      ],
+      "cases": [
+        {
+          "case": "reveal",
+          "result": "PASS"
+        },
+        {
+          "case": "sun",
+          "result": "PASS"
+        },
+        {
+          "case": "swap",
+          "result": "PASS"
+        }
+      ]
+    },
+    {
+      "reference_id": "ref-58cc13c6ce6d",
+      "source": "mod2-runtime/evidence/r19-actions-interrupted-result.json",
+      "source_sha256": "7E6A2C085FF683863EDF2C2DA7D7B24E025387E40482B8E0DE420194347A16A7",
+      "extraction": "selected-fields-not-original-report",
+      "result": "FAIL",
+      "error": "Error: Error: access violation accessing 0x0",
+      "checks": []
+    },
+    {
+      "reference_id": "ref-087d9bf2cf78",
+      "source": "mod2-runtime/evidence/r19-attacks/result.json",
+      "source_sha256": "2C2FC5466B286432656DB18A4FF5C991D5A214ADDF9EF69D9D6792EEAF925302",
+      "extraction": "selected-fields-not-original-report",
+      "result": "PASS",
+      "cases": [
+        {
+          "case": "simultaneous",
+          "result": "PASS",
+          "checks": [
+            "native-1-1-combat-mutual-death-keeps-simultaneous-reply"
+          ]
+        },
+        {
+          "case": "ban600",
+          "result": "PASS",
+          "checks": [
+            "positive-attack-unit-cannot-extra-attack-hero",
+            "ordinary-damage-from-banned-unit-still-resolves"
+          ]
+        },
+        {
+          "case": "ban422",
+          "result": "PASS",
+          "checks": [
+            "positive-attack-unit-cannot-extra-attack-hero",
+            "ordinary-damage-from-banned-unit-still-resolves"
+          ]
+        },
+        {
+          "case": "ban588",
+          "result": "PASS",
+          "checks": [
+            "positive-attack-unit-cannot-extra-attack-hero",
+            "ordinary-damage-from-banned-unit-still-resolves"
+          ]
+        },
+        {
+          "case": "ban148",
+          "result": "PASS",
+          "checks": [
+            "positive-attack-unit-cannot-extra-attack-hero",
+            "ordinary-damage-from-banned-unit-still-resolves"
+          ]
+        },
+        {
+          "case": "lane139",
+          "result": "PASS",
+          "checks": [
+            "same-lane-attacker-cannot-hit-controller-or-hero",
+            "different-lane-control-retains-extra-attack"
+          ]
+        },
+        {
+          "case": "lane675",
+          "result": "PASS",
+          "checks": [
+            "same-lane-attacker-cannot-hit-controller-or-hero",
+            "different-lane-control-retains-extra-attack"
+          ]
+        },
+        {
+          "case": "wounded221",
+          "result": "PASS",
+          "checks": [
+            "health-buff-does-not-unlock-undamaged-newspaper",
+            "actual-positive-damage-unlocks-newspaper-attack"
+          ]
+        },
+        {
+          "case": "adjacent464",
+          "result": "PASS",
+          "checks": [
+            "one-extra-attack-damages-only-both-adjacent-plants-by-six"
+          ]
+        },
+        {
+          "case": "bounce658",
+          "result": "PASS",
+          "checks": [
+            "extra-attack-completes-then-returns-primal-pea-to-hand"
+          ]
+        },
+        {
+          "case": "front114-lethal",
+          "result": "PASS",
+          "checks": [
+            "front-plant-killed-by-pre-attack-damage-cannot-damage-hero"
+          ]
+        },
+        {
+          "case": "front114-survive",
+          "result": "PASS",
+          "checks": [
+            "front-plant-takes-pre-attack-damage-and-survivor-continues"
+          ]
+        },
+        {
+          "case": "hero253",
+          "result": "PASS",
+          "checks": [
+            "actual-attack-on-plant-hero-debuffs-dog-by-three-three-once"
+          ]
+        },
+        {
+          "case": "nonattack253",
+          "result": "PASS",
+          "checks": [
+            "ordinary-damage-to-plant-hero-does-not-trigger-dog-debuff"
+          ]
+        }
+      ]
+    },
+    {
+      "reference_id": "ref-4ab36b0690a9",
+      "source": "mod2-runtime/evidence/r19-host-source-freeze.json",
+      "source_sha256": "AA1D9E648B1CDA5D9327471D857A89B946D57DBDCFEF08B86F61E9B0381BED75",
+      "extraction": "selected-fields-not-original-report",
+      "result": "PASS"
+    },
+    {
+      "reference_id": "ref-64fbbefb4214",
+      "source": "mod2-runtime/evidence/r19-mod2-battle/result.json",
+      "source_sha256": "56324D0288386A6D28074DDD32A716F9C80DB457387472D5B2B74B51B52B1819",
+      "extraction": "selected-fields-not-original-report",
+      "result": "FAIL",
+      "error": "RuntimeError: Error: Error: access violation accessing 0x0"
+    },
+    {
+      "reference_id": "ref-8fe05f7e69d0",
+      "source": "mod2-runtime/evidence/r19-mod2-battle-audit/result.json",
+      "source_sha256": "983B814E253E9D32CAE192671C209869B131AAF132E070400214524DFDA618C1",
+      "extraction": "selected-fields-not-original-report",
+      "result": "PASS",
+      "limitations": [
+        "Final LoseEffect leaves one final attack after-marker unprocessed; this report does not claim terminal queue draining or lifecycle cleanup",
+        "Initial custom decks with601/202 cold-started unsuccessfully in r19-mod2-battle; their initialization path remains unverified"
+      ],
+      "total_actions": 23,
+      "umbrella_combat_selections": 2,
+      "winning_player": 5,
+      "losing_player": 0,
+      "game_over": true,
+      "terminal_attack_metadata": {
+        "pending_attacks": 1,
+        "pending_markers": 1,
+        "after_marker_processed": false,
+        "model_retains_metadata_until_reset": true
+      }
+    },
+    {
+      "reference_id": "ref-898a6b792046",
+      "source": "mod2-runtime/evidence/r19-mod2-battle-final/result.json",
+      "source_sha256": "1B002589062D82B9D9DFAB30928D23F2302B5E10B412729BFD89601DB1B051A6",
+      "extraction": "selected-fields-not-original-report",
+      "result": "FAIL",
+      "error": "AssertionError: "
+    },
+    {
+      "reference_id": "ref-a062986f539c",
+      "source": "mod2-runtime/evidence/r19-original-isolation.json",
+      "source_sha256": "39BA72753508863E064BBF89F3AD217F75AEAC8BA12D46E74009FB28F6555527",
+      "extraction": "selected-fields-not-original-report",
+      "result": "PASS"
+    },
+    {
+      "reference_id": "ref-a23302579545",
+      "source": "mod2-runtime/evidence/r19-original-regression-result.json",
+      "source_sha256": "5DCF18A322711680CC2574702FCA76D61B91F1BEB3345C73DEA9933131C8B3D6",
+      "extraction": "selected-fields-not-original-report",
+      "result": "PASS",
+      "checks": [
+        "cold-start-command-controlled-fixture",
+        "query-live-card-definitions",
+        "unknown-guid-rejected-without-state-change",
+        "invalid-draw-count-rejected",
+        "invalid-player-rejected",
+        "invalid-lane-rejected",
+        "out-of-turn-play-rejected",
+        "out-of-turn-end-rejected",
+        "natural-draw-consumes-original-deck",
+        "specified-multiple-draws-preserve-existing-deck",
+        "give-specified-test-card",
+        "legal-play-removes-hand-card-and-pays-native-cost",
+        "imitater-transforms-through-native-trigger",
+        "native-summon-without-hand-or-resource-cost",
+        "occupied-summon-rejected-by-placement-rules",
+        "complete-original-combat-to-victory",
+        "post-game-mutation-rejected"
+      ],
+      "battle": {
+        "result": "PASS",
+        "total_actions": 36,
+        "winning_player": 0,
+        "losing_player": 5,
+        "final_game_over": true,
+        "blocking_effect": "PvZCards.Engine.Effects.LoseEffect"
+      }
+    },
+    {
+      "reference_id": "ref-6c187082f9ad",
+      "source": "mod2-runtime/evidence/r19-release-handoff/result.json",
+      "source_sha256": "53721547BDB71E4B898D458B8A681DE47DFD3D2CDC8692C5C057160C79941424",
+      "extraction": "selected-fields-not-original-report",
+      "result": "PASS",
+      "final_ui": "mandatory-resource-gate-awaiting-user-choice",
+      "checks": [
+        "host-candidate-report-and-packaged-payloads-agree",
+        "device-root-hash-matches-exact-host-apk",
+        "initial-original-runtime-receipt-and-three-bundles-agree",
+        "normal-launch-two-enabled-choices-no-skip-before-unity",
+        "normal-gate-preserves-receipt-and-all-three-existing-bundles",
+        "back-stays-at-gate-without-unity-or-resource-changes",
+        "explicit-mod2-status-receipt-and-three-versioned-bundles-agree",
+        "final-normal-gate-awaits-user-and-preserves-last-verified-resources"
+      ]
+    },
+    {
+      "reference_id": "ref-ef2c38fd047f",
+      "source": "mod2-runtime/evidence/r19-render-actions/result.json",
+      "source_sha256": "2B541E727E69AC104F6365BCBE745817D2C7B33FB1D3429892E6FDFF7109222A",
+      "extraction": "selected-fields-not-original-report",
+      "result": "PASS",
+      "unverified": [],
+      "checks": [
+        "real-rendered-fixture-starts-and-native-animation-queue-clears",
+        "ordinary-zombie-legal-play-enters-board-and-clears-animation",
+        "legal-current-health-swap-202-and-native-animation-queue-clear",
+        "ordinary-plant-legal-play-enters-board-and-clears-animation",
+        "legal-reveal-87-reveals-existing-grave-and-clears-original-animation-queue",
+        "legal-solar-storm-106-damage-and-delayed-debt-animation-clear",
+        "next-turn-solar-storm-native-resource-animation-clears-after-debt",
+        "complete-rendered-round-advances-native-turn-and-animation-queue-clears"
+      ]
+    },
+    {
+      "reference_id": "ref-0602f9dd6fe6",
+      "source": "mod2-runtime/evidence/r19-static/result.json",
+      "source_sha256": "6B1AD94AB084C34C5B7DD228616A7C509FF6E55C155FF5F6986AC95BB3CBA784",
+      "extraction": "selected-fields-not-original-report",
+      "result": "FAIL",
+      "fixture_delay_seconds": 2.0,
+      "stopped_for_native_failure": true,
+      "cases": [
+        {
+          "case": "freeze",
+          "result": "PASS",
+          "unverified": [],
+          "checks": [
+            "winter-melon-legally-enters-and-freezes-itself-without-squash",
+            "melons-freeze-removes-existing-squash-and-melon-chain-converges"
+          ]
+        },
+        {
+          "case": "reflection",
+          "result": "PASS",
+          "unverified": [],
+          "checks": [
+            "one-real-damage-exhausts-reflectors-eleven-health-through-finite-self-damage",
+            "one-real-damage-starts-finite-self-damage-chain-and-one-wall-nut",
+            "reflection-chain-does-not-damage-either-hero"
+          ]
+        },
+        {
+          "case": "coffee",
+          "result": "PASS",
+          "unverified": [],
+          "checks": [
+            "both-known-coffee-recipients-actually-gain-one-one-and-frenzy",
+            "later-legally-played-zombie-did-not-receive-previous-coffee-buff",
+            "one-real-recipient-is-bounced-to-hand-before-surprise",
+            "legal-smack-a-zombie-hides-known-coffee-recipient",
+            "surprise-kills-known-on-board-recipients-and-preserves-late-zombie-and-hand"
+          ]
+        },
+        {
+          "case": "grave",
+          "result": "PASS",
+          "unverified": [],
+          "checks": [
+            "actual-gravedigger-entry-executes-once-and-hides-two-previously-known-zombies",
+            "legal-87-revealing-another-zombie-does-not-trigger-gravedigger",
+            "legal-87-self-reveal-executes-gravedigger-exactly-once-and-rehides-visible-peer"
+          ]
+        },
+        {
+          "case": "redirect97",
+          "result": "PASS",
+          "unverified": [],
+          "checks": [
+            "legal-shroom-for-two-creates-one-real-dedicated-copy-with-unopposed-ambush",
+            "dedicated-copy-loses-ambush-attack-when-a-real-opponent-enters",
+            "parents-one-point-native-damage-is-redirected-once-to-known-copy",
+            "no-copy-branch-applies-real-damage-to-original-target-and-converges",
+            "parents-real-extra-attack-redirects-once-to-copy-without-enemy-or-hero-damage"
+          ]
+        },
+        {
+          "case": "banana472",
+          "result": "FAIL",
+          "error": "RuntimeError: Error: Error: access violation accessing 0x0",
+          "fatal": true,
+          "unverified": [],
+          "checks": [
+            "banana-native-death-creates-exactly-one-real-self-copy-in-each-open-adjacent-land-lane",
+            "banana-edge-native-death-creates-one-neighbor-without-out-of-board-target"
+          ]
+        }
+      ]
+    },
+    {
+      "reference_id": "ref-c20afe3dbf73",
+      "source": "mod2-runtime/evidence/r19-static-cold-final/result.json",
+      "source_sha256": "B7835C6F56EDD0746D5B939E63930FF430781875AD163DC4281DDF1326B28ECD",
+      "extraction": "selected-fields-not-original-report",
+      "result": "PASS",
+      "fixture_delay_seconds": 5.0,
+      "cases": [
+        {
+          "case": "freeze",
+          "result": "PASS",
+          "unverified": [],
+          "checks": [
+            "winter-melon-legally-enters-and-freezes-itself-without-squash",
+            "melons-freeze-removes-existing-squash-and-melon-chain-converges"
+          ]
+        },
+        {
+          "case": "reflection",
+          "result": "PASS",
+          "unverified": [],
+          "checks": [
+            "one-real-damage-exhausts-reflectors-eleven-health-through-finite-self-damage",
+            "one-real-damage-starts-finite-self-damage-chain-and-one-wall-nut",
+            "reflection-chain-does-not-damage-either-hero"
+          ]
+        },
+        {
+          "case": "coffee",
+          "result": "PASS",
+          "unverified": [],
+          "checks": [
+            "both-known-coffee-recipients-actually-gain-one-one-and-frenzy",
+            "later-legally-played-zombie-did-not-receive-previous-coffee-buff",
+            "one-real-recipient-is-bounced-to-hand-before-surprise",
+            "legal-smack-a-zombie-hides-known-coffee-recipient",
+            "surprise-kills-known-on-board-recipients-and-preserves-late-zombie-and-hand"
+          ]
+        },
+        {
+          "case": "grave",
+          "result": "PASS",
+          "unverified": [],
+          "checks": [
+            "actual-gravedigger-entry-executes-once-and-hides-two-previously-known-zombies",
+            "legal-87-revealing-another-zombie-does-not-trigger-gravedigger",
+            "legal-87-self-reveal-executes-gravedigger-exactly-once-and-rehides-visible-peer"
+          ]
+        },
+        {
+          "case": "redirect97",
+          "result": "PASS",
+          "unverified": [],
+          "checks": [
+            "legal-shroom-for-two-creates-one-real-dedicated-copy-with-unopposed-ambush",
+            "dedicated-copy-loses-ambush-attack-when-a-real-opponent-enters",
+            "parents-one-point-native-damage-is-redirected-once-to-known-copy",
+            "no-copy-branch-applies-real-damage-to-original-target-and-converges",
+            "parents-real-extra-attack-redirects-once-to-copy-without-enemy-or-hero-damage"
+          ]
+        },
+        {
+          "case": "banana472",
+          "result": "PASS",
+          "unverified": [],
+          "checks": [
+            "banana-native-death-creates-exactly-one-real-self-copy-in-each-open-adjacent-land-lane",
+            "banana-edge-native-death-creates-one-neighbor-without-out-of-board-target",
+            "banana-occupied-neighbors-block-copy-placement-after-observed-parent-death",
+            "banana-native-death-keeps-both-original-occupants-unchanged",
+            "banana-open-water-is-excluded-even-when-every-land-neighbor-is-occupied",
+            "legal-banana-lane-combat-removes-known-parent-creates-live-copies-and-finishes-round"
+          ]
+        },
+        {
+          "case": "copter286",
+          "result": "PASS",
+          "unverified": [],
+          "checks": [
+            "legal-copter-trick-is-consumed-and-leaves-independent-original-copter-alive",
+            "post-trick-lane-accepts-another-real-native-unit-without-permanent-occupancy",
+            "one-identified-transient-copter-is-really-created-before-native-self-destruction"
+          ]
+        },
+        {
+          "case": "diver547",
+          "result": "PASS",
+          "unverified": [],
+          "checks": [
+            "diver-receives-real-native-health-buff-while-still-in-hand",
+            "diver-legally-enters-as-original-gravestone-before-reveal",
+            "diver-reveals-through-normal-original-phase-actions",
+            "normal-highground-reveal-grants-aquatic-moves-to-selected-water-and-applies-exact-minus-two-two",
+            "diver-legally-enters-as-original-gravestone-before-reveal",
+            "diver-reveals-through-normal-original-phase-actions",
+            "original-two-health-diver-has-native-water-move-then-minus-two-two-then-actual-natural-discard",
+            "diver-legally-enters-as-original-gravestone-before-reveal",
+            "diver-reveals-through-normal-original-phase-actions",
+            "all-water-lanes-occupied-prevents-diver-ability-after-actual-reveal-and-preserves-real-occupants"
+          ]
+        }
+      ]
+    },
+    {
+      "reference_id": "ref-c7316d38eff0",
+      "source": "mod2-runtime/evidence/r19-stats/result.json",
+      "source_sha256": "D839D108A858684F207BD72597C8B0CA2D6A973FB3BB5EC8EDE5141B6BB8501C",
+      "extraction": "selected-fields-not-original-report",
+      "result": "PASS",
+      "limitations": [
+        "Headless logical verification; special animation/visible synchronization is separate",
+        "No AI speculative-model assertions",
+        "No raw BaseValue memory consumer assertions",
+        "No health-based AttackOverride assertions",
+        "No direct Health.TakeDamage bypass assertions",
+        "No delayed activation-time modifier injection",
+        "No superblock assertion in these unit-target cases"
+      ],
+      "cases": [
+        {
+          "case": "hand-set326",
+          "result": "PASS",
+          "checks": [
+            "hand-326-rejects-plus-five-attack-and-keeps-plus-four-health",
+            "hand-326-pure-positive-attack-stays-zero",
+            "hand-326-attack-set-five-stays-zero",
+            "hand-326-health-set-remains-native-and-independent",
+            "legally-played-326-keeps-tested-hand-stat-values",
+            "buffed-326-real-native-extra-attack-does-not-damage-hero",
+            "ordinary-347-still-gains-native-attack-and-health"
+          ]
+        },
+        {
+          "case": "continuous326",
+          "result": "PASS",
+          "checks": [
+            "native-red-plant-it-continuous-aura-adds-only-health-to-326",
+            "same-native-continuous-aura-still-buffs-ordinary-347-by-five-five",
+            "native-environment-replacement-removes-health-aura-with-no-late-attack-gain"
+          ]
+        },
+        {
+          "case": "bounce326",
+          "result": "PASS",
+          "checks": [
+            "native-bounce-reset-keeps-rule-and-new-hand-buff-remains-health-only"
+          ]
+        },
+        {
+          "case": "source518",
+          "result": "PASS",
+          "checks": [
+            "518-legally-played-from-hand-as-native-gravestone",
+            "unrevealed-518-does-not-change-zombie-damage",
+            "518-reveals-through-native-phase-progression",
+            "revealed-518-fixes-zombie-unit-damage-to-one",
+            "zombie-hero-source-is-classified-by-player-id",
+            "plant-source-damage-remains-seven",
+            "zero-damage-is-not-resurrected-by-fixed-damage-rule",
+            "native-destroy-marks-or-removes-target",
+            "native-destroy-actually-removes-target-from-lanes",
+            "destroying-518-restores-native-seven-damage"
+          ]
+        },
+        {
+          "case": "multiplier518",
+          "result": "PASS",
+          "checks": [
+            "518-legally-played-from-hand-as-native-gravestone",
+            "native-source-damage-multiplier-works-before-518-reveal",
+            "518-reveals-through-native-phase-progression",
+            "fixed-one-is-applied-after-native-damage-multiplication"
+          ]
+        },
+        {
+          "case": "defenses518",
+          "result": "PASS",
+          "checks": [
+            "518-legally-played-from-hand-as-native-gravestone",
+            "native-jugger-nut-armor-reduces-seven-to-six-before-rule",
+            "518-reveals-through-native-phase-progression",
+            "native-armor-reduces-fixed-one-to-zero",
+            "armor-and-normal-plant-damage-stay-native",
+            "native-damage-immunity-is-not-undone-by-fixed-one"
+          ]
+        },
+        {
+          "case": "min-health518",
+          "result": "PASS",
+          "checks": [
+            "518-legally-played-from-hand-as-native-gravestone",
+            "518-reveals-through-native-phase-progression",
+            "native-min-health-protection-has-live-fighter-source",
+            "fixed-one-can-reduce-min-health-unit-from-two-to-one",
+            "native-min-health-one-still-prevents-final-point"
+          ]
+        },
+        {
+          "case": "native-trick518",
+          "result": "PASS",
+          "checks": [
+            "518-legally-played-from-hand-as-native-gravestone",
+            "518-reveals-through-native-phase-progression",
+            "legally-played-native-bungee-plumber-damage-is-one"
+          ]
+        }
+      ]
+    },
+    {
+      "reference_id": "ref-f4dc6c721c73",
+      "source": "mod2-runtime/evidence/r19-umbrella/result.json",
+      "source_sha256": "5E383C2E13F0E95E7E2AFB70D749FAC8B8E02EE763B5332A7714521B6CF8382F",
+      "extraction": "selected-fields-not-original-report",
+      "result": "PASS",
+      "fixture_delay_seconds": 2.0,
+      "cases": [
+        {
+          "case": "self",
+          "result": "PASS",
+          "checks": [
+            "no-adjacent-plant-keeps-original-damage-on-self-and-preserves-source-heroes"
+          ]
+        },
+        {
+          "case": "neighbor",
+          "result": "PASS",
+          "checks": [
+            "actual-native-rng-sampled-all-eligible-individuals-with-exact-per-packet-health",
+            "one-neighbor-and-self-both-actually-selected-without-changing-source-or-other-health"
+          ]
+        },
+        {
+          "case": "two_leaves",
+          "result": "PASS",
+          "checks": [
+            "actual-native-rng-sampled-all-eligible-individuals-with-exact-per-packet-health",
+            "two-adjacent-umbrella-leaves-make-one-choice-per-packet-with-no-repeated-self-loop"
+          ]
+        },
+        {
+          "case": "exclusions",
+          "result": "PASS",
+          "checks": [
+            "same-lane-plant-and-enemies-in-both-adjacent-lanes-are-not-candidates"
+          ]
+        },
+        {
+          "case": "individuals",
+          "result": "PASS",
+          "checks": [
+            "actual-native-rng-sampled-all-eligible-individuals-with-exact-per-packet-health",
+            "two-plants-in-each-neighbor-lane-are-four-individual-candidates-not-two-lanes"
+          ]
+        },
+        {
+          "case": "armor",
+          "result": "PASS",
+          "checks": [
+            "actual-native-rng-sampled-all-eligible-individuals-with-exact-per-packet-health",
+            "native-armor-one-removes-one-only-from-the-actually-selected-armored-recipient"
+          ]
+        },
+        {
+          "case": "immunity",
+          "result": "PASS",
+          "checks": [
+            "actual-native-rng-sampled-all-eligible-individuals-with-exact-per-packet-health",
+            "actually-selected-immune-recipient-retains-native-immunity-with-no-other-health-loss"
+          ]
+        },
+        {
+          "case": "zero",
+          "result": "PASS",
+          "checks": [
+            "after-real-positive-rule-trigger-zero-packets-do-not-create-extra-damage"
+          ]
+        },
+        {
+          "case": "fixed_one",
+          "result": "PASS",
+          "checks": [
+            "actual-native-rng-sampled-all-eligible-individuals-with-exact-per-packet-health",
+            "518-keeps-zombie-multiplied-seven-as-final-one-after-single-redirect-and-zero-stays-zero",
+            "actual-native-rng-sampled-all-eligible-individuals-with-exact-per-packet-health",
+            "518-fixed-one-is-not-remultiplied-and-native-recipient-armor-can-reduce-it-to-zero"
+          ]
+        }
+      ]
+    },
+    {
+      "reference_id": "ref-ab90c34fdc90",
+      "source": "mod2-runtime/evidence/r19-umbrella-interactions/result.json",
+      "source_sha256": "E5FC918812324236D6D3B9D36AC09239F5CC1A9369045AC10F9A122A72270BFB",
+      "extraction": "selected-fields-not-original-report",
+      "result": "PASS",
+      "fixture_delay_seconds": 2.0,
+      "cases": [
+        {
+          "case": "native97",
+          "result": "PASS",
+          "checks": [
+            "real97-source-native-redirect-copies-damage-once-after-one-umbrella-selection",
+            "native97-copy-keeps-original-source-and-multiplies-two-to-four-exactly-once"
+          ]
+        },
+        {
+          "case": "edges",
+          "result": "PASS",
+          "checks": [
+            "actual-native-rng-sampled-all-eligible-individuals-with-exact-per-packet-health",
+            "left-edge-has-only-self-and-existing-neighbor-no-wraparound-or-remote-recipient",
+            "actual-native-rng-sampled-all-eligible-individuals-with-exact-per-packet-health",
+            "right-edge-has-only-self-and-existing-neighbor-no-wraparound-or-remote-recipient"
+          ]
+        }
+      ]
+    },
+    {
+      "reference_id": "ref-0bdcdb0dad59",
+      "source": "mod2-runtime/evidence/r5-actions-result.json",
+      "source_sha256": "9F3F11E2414A5697B010175CBECFF73E1A5E0AB3AEE584DEEB95D17C1F9490C1",
+      "extraction": "selected-fields-not-original-report",
+      "result": "FAIL",
+      "checks": [
+        "reveal-87-legal-play-reveals-existing-grave-without-destroying-it",
+        "sun-106-two-legal-casts-register-two-independent-debts",
+        "sun-106-next-native-turn-deducts-six-once-and-consumes-jobs",
+        "sun-106-following-turn-restores-normal-resource-growth",
+        "sun-106-zero-floor-is-native-and-debt-does-not-roll-over",
+        "swap-202-legal-play-exchanges-injured-hero-and-buffed-hand-unit-current-hp"
+      ],
+      "cases": [
+        {
+          "case": "reveal",
+          "result": "PASS"
+        },
+        {
+          "case": "sun",
+          "result": "PASS"
+        },
+        {
+          "case": "swap",
+          "result": "FAIL",
+          "error": "({'id': 5, 'components': ['Player', 'Health', 'TurnCounter', 'Zombies', 'DeckAssociation', 'SuperpowerPoolAssociation', 'HandAssociation', 'DiscardPileAssociation', 'SunCounter', 'SuperBlocker', 'SuperBlockHistory', 'DiesWhenDrawingOnEmpyDeck', 'Hero'], 'health': 20, 'damage': 7, 'max_health': 27, 'turn': 0, 'deck_id': 6, 'hand_id': 8, 'resource_total': 50, 'resource_used': 0, 'resource_available': 50, 'block_meter': 10, 'block_max': 80}, {'id': 24, 'components': ['Card', 'Attack', 'Health', 'SunCost', 'Zombies', 'Rarity', 'Subtypes', 'Tags', 'Frenzy', 'EffectEntities', 'Owner', 'LaneCombatHistory', 'LethalDamageList', 'LaneElement'], 'guid': 202, 'attack': 6, 'health': 81, 'damage': 3, 'max_health': 84, 'cost': 7, 'owner': 5, 'lanes': [11]})"
+        }
+      ]
+    },
+    {
+      "reference_id": "ref-875633a5877f",
+      "source": "mod2-runtime/evidence/r5-attacks/result.json",
+      "source_sha256": "C4241AC48B4810D0AEBAA3280FB6EA8555DC5A4E2CA26C16AF07F19B9C5FB6E9",
+      "extraction": "selected-fields-not-original-report",
+      "result": "FAIL",
+      "cases": [
+        {
+          "case": "simultaneous",
+          "result": "PASS",
+          "checks": [
+            "native-1-1-combat-mutual-death-keeps-simultaneous-reply"
+          ]
+        },
+        {
+          "case": "ban600",
+          "result": "PASS",
+          "checks": [
+            "positive-attack-unit-cannot-extra-attack-hero",
+            "ordinary-damage-from-banned-unit-still-resolves"
+          ]
+        },
+        {
+          "case": "ban422",
+          "result": "PASS",
+          "checks": [
+            "positive-attack-unit-cannot-extra-attack-hero",
+            "ordinary-damage-from-banned-unit-still-resolves"
+          ]
+        },
+        {
+          "case": "ban588",
+          "result": "PASS",
+          "checks": [
+            "positive-attack-unit-cannot-extra-attack-hero",
+            "ordinary-damage-from-banned-unit-still-resolves"
+          ]
+        },
+        {
+          "case": "ban148",
+          "result": "PASS",
+          "checks": [
+            "positive-attack-unit-cannot-extra-attack-hero",
+            "ordinary-damage-from-banned-unit-still-resolves"
+          ]
+        },
+        {
+          "case": "lane139",
+          "result": "PASS",
+          "checks": [
+            "same-lane-attacker-cannot-hit-controller-or-hero",
+            "different-lane-control-retains-extra-attack"
+          ]
+        },
+        {
+          "case": "lane675",
+          "result": "PASS",
+          "checks": [
+            "same-lane-attacker-cannot-hit-controller-or-hero",
+            "different-lane-control-retains-extra-attack"
+          ]
+        },
+        {
+          "case": "wounded221",
+          "result": "PASS",
+          "checks": [
+            "health-buff-does-not-unlock-undamaged-newspaper",
+            "actual-positive-damage-unlocks-newspaper-attack"
+          ]
+        },
+        {
+          "case": "adjacent464",
+          "result": "PASS",
+          "checks": [
+            "one-extra-attack-damages-only-both-adjacent-plants-by-six"
+          ]
+        },
+        {
+          "case": "bounce658",
+          "result": "PASS",
+          "checks": [
+            "extra-attack-completes-then-returns-primal-pea-to-hand"
+          ]
+        },
+        {
+          "case": "front114-lethal",
+          "result": "FAIL",
+          "error": "AssertionError: ",
+          "checks": []
+        }
+      ]
+    },
+    {
+      "reference_id": "ref-e838f3db9b6b",
+      "source": "mod2-runtime/evidence/r5-stats/result.json",
+      "source_sha256": "AD32B656566EC3663F597C5729D3D6320930F83F0B8D935BB4CC64913A1E64CB",
+      "extraction": "selected-fields-not-original-report",
+      "result": "FAIL",
+      "limitations": [
+        "Headless logical verification; special animation/visible synchronization is separate",
+        "No AI speculative-model assertions",
+        "No raw BaseValue memory consumer assertions",
+        "No health-based AttackOverride assertions",
+        "No direct Health.TakeDamage bypass assertions",
+        "No delayed activation-time modifier injection",
+        "No superblock assertion in these unit-target cases"
+      ],
+      "cases": [
+        {
+          "case": "hand-set326",
+          "result": "FAIL",
+          "error": "RuntimeError: Error: Error: abort was called",
+          "checks": [
+            "hand-326-rejects-plus-five-attack-and-keeps-plus-four-health",
+            "hand-326-pure-positive-attack-stays-zero",
+            "hand-326-attack-set-five-stays-zero"
+          ]
+        }
+      ]
+    }
+  ]
+}

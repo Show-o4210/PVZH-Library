@@ -1,0 +1,96 @@
+{
+  "revision": "r19",
+  "at": "2026-10-14T23:32:47.550573+08:00",
+  "delivery_status": "Implemented; defined skill acceptance matrices passed; test-initialization limitation retained",
+  "apk_sha256": "C7E48E0AE694D9FBF1B9C0E59D7FD73311FB880A4B56DC13AC1656C4CC6652CF",
+  "script_sha256": "3CC23604419967C87E89186A260DFA039AD9286389BA468A71C3F9C410EFE32B",
+  "signature": "PASS",
+  "zipalign": "PASS",
+  "profile_revision": 4,
+  "original_definitions": 650,
+  "mod2_definitions": 656,
+  "changed_original_cards": 99,
+  "extension_cards": 17,
+  "extension_rules": 14,
+  "hidden_definitions_preserved": 5,
+  "changes_vs_mod2_v3": 19,
+  "unchanged_payload_count": 4817,
+  "floating_ui_enabled": false,
+  "v6_integrated": false,
+  "resource_profiles": {
+    "original": {
+      "label": "原版游戏",
+      "files": {
+        "card_data_1": {
+          "size": 133697,
+          "sha256": "e0682de0135a77bcd15c73072dc3221c0e25b1ac694ebc86bd7965e1d56d57b7",
+          "cache_relative": "cards/card_data_1",
+          "asset_path": "mod2_profiles/original/card_data_1",
+          "logical_name": "cards/card_data"
+        },
+        "data_assets_29": {
+          "size": 457360,
+          "sha256": "37fd5f5af67dda86664b76e9bfefe1878b281cf8a1af05afec7a4282bf7b3007",
+          "cache_relative": "data_assets_29",
+          "asset_path": "mod2_profiles/original/data_assets_29",
+          "logical_name": "data_assets"
+        },
+        "cn_8": {
+          "size": 243354,
+          "sha256": "d40408353ec001f84fc56b56dff6417e883048090d78a3cee712c11cefdd9aab",
+          "cache_relative": "loc/cn_8",
+          "asset_path": "mod2_profiles/original/cn_8",
+          "logical_name": "loc/cn"
+        }
+      }
+    },
+    "mod2": {
+      "label": "mod2 改版",
+      "files": {
+        "card_data_1": {
+          "size": 135330,
+          "sha256": "964b20aa9b4933e348d5fab93fc7f242236e2a2d6a294bcf53df9a87d13274c5",
+          "cache_relative": "cards/card_data_1",
+          "asset_path": "mod2_profiles/mod2/card_data_1",
+          "logical_name": "cards/card_data"
+        },
+        "data_assets_29": {
+          "size": 457360,
+          "sha256": "37fd5f5af67dda86664b76e9bfefe1878b281cf8a1af05afec7a4282bf7b3007",
+          "cache_relative": "data_assets_29",
+          "asset_path": "mod2_profiles/mod2/data_assets_29",
+          "logical_name": "data_assets"
+        },
+        "cn_8": {
+          "size": 245145,
+          "sha256": "9ec87683b88424f6407b7c7adcc69e4747ab4cfca7f01e3f360d5d29029f3733",
+          "cache_relative": "loc/cn_8",
+          "asset_path": "mod2_profiles/mod2/cn_8",
+          "logical_name": "loc/cn"
+        }
+      }
+    }
+  },
+  "resource_manifest_sha256": "25F67356F0773F855DA12FC9C6D4A1A305364A707CEC42D5E7EAEABC4ABB1673",
+  "umbrella_fixture_packets": 321,
+  "umbrella_zero_packets": 5,
+  "umbrella_native_positive_selections": 316,
+  "mod2_battle_actions": 23,
+  "mod2_battle_umbrella_selections": 2,
+  "original_battle_actions": 36,
+  "known_limitations": [
+    "调试建局有已记录的原生0x0异常：立即温重开、等2秒的连续温重开，以及一次含601/202的初始牌组冷建局均失败。等待和冷恢复不是生命周期根治；具体原生子调用未定因。",
+    "普通347/350初始牌组，再通过give加入601和202已完成整局。含601/202初始牌组初始化未计通过。",
+    "AI独立预测模型未扩展；99张改卡的所有复杂组合未穷举。",
+    "伞叶目标相关倍率和沉默控制者缺少严格可构造场景，保留未测；直接Health.TakeDamage绕开DamageEffect的路径未拦截。",
+    "终局LoseEffect停住最后攻击after-marker，保留1组scalar metadata至模型重置；不宣称终局队列排空或旧代held根已回收。",
+    "动画验收证明所测原版队列自然结束和回合继续；未作逐帧美术验收。本轮未新增音频、模型或专属动画。"
+  ],
+  "schema": 1,
+  "extracted_on": "2026-10-15",
+  "source_sha256": "1345BDBECD2F1AD692A8AECC700CF873B210A5E61EDB5F2EF98D6114BE4AD2CF",
+  "binary": "PVZH 1.67.8 ARM64",
+  "libil2cpp_sha256": "18178B2F35959BC3954378A9778CDDD67AAB8A7EF22579EA59D736521EEC8C91",
+  "current_device_state_verified_during_archival": false,
+  "user_feedback_on_2026_10_15": "用户表示游戏未闪退；未提供逐项技能或全部建局路径验收。"
+}

@@ -1,5 +1,7 @@
 # 05 · 小范围卡牌重写与能力边界
 
+> 本页是纯JSON第一版的历史记录；后续R19运行时已补部分原生配置无法准确表达的能力，见[10运行时技能工作流](10-runtime-skills-workflow.md)和[第21章覆盖表](../21.语义调试与技能扩展实战/06.R19实现与验收记录/implementation-coverage.md)。不要把新运行时能力或新验收回填为本版已经实现／实测。
+
 2026-10-10，独立工程 `mod2/` 第一版。基线仍是本目录 README 的三份原包哈希，UnityPy 1.25.0。本章保留七张聪明卡的历史案例；后续累计修改分别见06、07章，当前统计见[09章](09-maintenance-and-evidence.md)。第一版证据归档在交付工程的 `mod2/releases/v1-startup-confirmed/`，不能用当前verification报告替代旧版证据。
 
 ## 先确定映射，保存用户纠正

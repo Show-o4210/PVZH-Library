@@ -9,6 +9,7 @@
 - 第一次接触 PVZH Mod：从 [前言](前言.md) 和 [00. 游戏介绍](00.游戏介绍/README.md) 开始。
 - 准备实际修改资源：先阅读 [01. 工具链介绍](01.工具链介绍/README.md)。
 - 使用Agent执行基础改版：从 [Agent工作指南](agents/README.md) 与 [独立基础示例](agents/08-basic-mod-walkthrough.md) 开始，先核对用户原包，再读取本次任务需要的章节。
+- 使用语义接口验证卡牌或扩展原版无法表达的技能：阅读 [21.语义调试与技能扩展实战](21.语义调试与技能扩展实战/README.md)，Agent从 [运行时技能工作流](agents/10-runtime-skills-workflow.md) 与 [语义测试与证据](agents/11-semantic-testing-and-evidence.md) 进入。
 - 只想查某一类内容：直接通过下方目录进入对应章节。
 
 > [!IMPORTANT]
@@ -23,7 +24,7 @@
 | PVZH Audio Tool | [tools/audio-tool](tools/audio-tool/README.md) | Wwise 音频解包、替换与回包 | Python、UnityPy；外部音频工具见项目说明 |
 | Local Inventory Mod | [mods/local-inventory](mods/local-inventory/README.md) | 本地卡库合并与 ARM64 静态补丁 | Python、Keystone；独立构建流程 |
 
-克隆一次即可获取所有项目；各项目保留自己的依赖、输入输出目录和入口。请先进入对应子目录，再按其 README 安装与运行，例如：
+克隆一次即可获取上述四个项目；各项目保留自己的依赖、输入输出目录和入口。第21章是文档与检查摘要，不包含完整调试运行时或游戏APK。请先进入对应子目录，再按其 README 安装与运行，例如：
 
 ```bash
 git clone https://github.com/Show-o4210/PVZH-Library.git
@@ -32,7 +33,7 @@ python -m pip install -r requirements.txt
 python main.py
 ```
 
-关卡编辑器同样在 `tools/level-editor/` 内运行 `python main.py`；音频和本地卡库使用各自的流水线或构建脚本。建议按项目建立独立虚拟环境。原 00～20 章节和资源目录保持原路径，迁移来源与 Git 历史说明见 [MIGRATION.md](MIGRATION.md)。
+关卡编辑器同样在 `tools/level-editor/` 内运行 `python main.py`；音频和本地卡库使用各自的流水线或构建脚本。建议按项目建立独立虚拟环境。原00～20章节和资源目录保持原路径，新增第21章；迁移来源与Git历史说明见 [MIGRATION.md](MIGRATION.md)。
 
 ## 内容导航
 
@@ -58,9 +59,10 @@ python main.py
 | [17. Unity 引擎动态交互](17.Unity引擎动态交互/README.md) | Unity 线程安全、UnitySynchronizationContext 调度实战 |
 | [18. 现代原生浮窗 UI 混合开发](18.现代原生浮窗UI混合开发/README.md) | 原生浮窗架构、防渲染转圈死锁与高版本滚动条避坑 |
 | [19. 良性 Mod 实战：离线卡组分享](19.良性Mod实战-离线卡组分享/README.md) | PVZH1 协议设计、卡牌合规校验与原生持久化实战 |
-| [20. 工程体验跃迁：资源门卫与教程跳过](20.工程体验跃迁-资源门卫与教程跳过/README.md) | Pre-Unity 资源门卫架构、2880个Bundle秒解与FTUE跳过 |
+| [20. 工程体验跃迁：资源门卫与教程跳过](20.工程体验跃迁-资源门卫与教程跳过/README.md) | Pre-Unity资源门卫、全量资源与FTUE、原版／mod2必选切换及交付校验 |
+| [21. 语义调试与技能扩展实战](21.语义调试与技能扩展实战/README.md) | 无卡牌坐标操作的测试接口、缓存与Gadget合同、效果所有权、History／动画、R19验收与已知建局异常 |
 | [资源](资源/) | 示例文件、索引、旧笔记及实战素材 |
-| [Agent工作指南](agents/README.md) | 原包核对、能力移植、关卡与CN、回包校验、设备回退、实战案例与独立构建示例 |
+| [Agent工作指南](agents/README.md) | 基础制作、运行时技能工作流、语义测试、证据边界、设备回退与独立基础示例 |
 
 ## 适合谁
 

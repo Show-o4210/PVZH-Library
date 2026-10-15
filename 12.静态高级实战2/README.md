@@ -1,5 +1,7 @@
 # 12. 静态高级实战 2：Mod Base 能力扩展与 Grant 赋甲
 
+> 后续路线：[第21章](../21.语义调试与技能扩展实战/README.md)整理了用Gadget实现规则扩展、语义测试及History／动画兼容的R19实践。本章的19号赋甲是对应静态Base的约定，第21章1001–1014是另一套私有合同，不能当作原版通用枚举混用；两章地址与布局都须按各自二进制核对。
+
 [11. 静态高级实战](../11.静态高级实战/README.md) 解决了**拥有权**问题：在 `libil2cpp.so` 上做 v3c 静态补丁，于 `SetLocalPlayerInventory` 后合并 `inventory_extra.json`，让社区自定义卡可编组、可本地对战。
 
 本章是同一条技术主线的**第二阶段**：在库存 Merge 已稳定的 **Mod Base** 上，继续用全静态方式扩展**战斗规则能力**——让 `GrantAbilityEffectDescriptor` 能真正赋予 **装甲 (Armor)**，并接上 History / 图标展示链；同时汇总多 Hook 共洞、单卡上限破限、IL2CPP 禁区与可复用检查表。
