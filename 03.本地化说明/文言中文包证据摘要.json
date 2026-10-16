@@ -1,0 +1,252 @@
+{
+  "archive_date": "2026-10-16",
+  "case": "文言中文包：提取、全量翻译、名称与UI补译",
+  "scope": "仅本地化值；摘要不包含完整APK、Bundle、CSV或翻译工程。来源标识相对独立原工程，仅为证据标签，不是仓库依赖。",
+  "source_project_label": "mod4",
+  "input": {
+    "apk_label": "PVZH_1.67.8_base_b4_11056_arm64.apk",
+    "apk_sha256": "9af06d613c55644e1bbc9558f0108f0c61e0b37830da29525d5935c54fef97bc",
+    "bundles": {
+      "cn_8": {
+        "apk_member": "assets/AssetBundles/loc/cn",
+        "bytes": 243354,
+        "sha256": "d40408353ec001f84fc56b56dff6417e883048090d78a3cee712c11cefdd9aab"
+      },
+      "inline_text_tag": {
+        "apk_member": "assets/AssetBundles/fonts/inline_text_tag",
+        "bytes": 5225,
+        "sha256": "351a9466341da50dce0ae55dc4480c1dba4cbbe66cc735bf75c0df0bbe68ded6"
+      },
+      "card_data": {
+        "apk_member": "assets/AssetBundles/cards/card_data",
+        "bytes": 133697,
+        "sha256": "e0682de0135a77bcd15c73072dc3221c0e25b1ac694ebc86bd7965e1d56d57b7"
+      },
+      "data_assets": {
+        "apk_member": "assets/AssetBundles/data_assets",
+        "bytes": 457360,
+        "sha256": "37fd5f5af67dda86664b76e9bfefe1878b281cf8a1af05afec7a4282bf7b3007"
+      }
+    },
+    "textasset": {
+      "name": "LocalizedStrings",
+      "path_id": -2978648870419362077,
+      "sha256": "383e168d7033b61024e66b59b70384273d208536c6485a0c1ccd8311abfeb92a",
+      "has_utf8_bom": true
+    },
+    "inline_mapping_name": "HeroesInlineTextTagMapping",
+    "inline_mapping_path_id": -6860037740024006383
+  },
+  "tools": {
+    "python": "3.14.6",
+    "UnityPy": "1.25.0"
+  },
+  "extraction": {
+    "entry_count": 10783,
+    "csv_records": 43131,
+    "padding_records": 32348,
+    "roles": {
+      "card_flavortext": 582,
+      "card_longdesc": 624,
+      "card_name": 663,
+      "card_shortdesc": 624,
+      "ui_and_other": 4617,
+      "card_targeting": 59,
+      "shared_ability_name": 94,
+      "ability_tooltip": 120,
+      "deck_text": 251,
+      "level_text": 3104,
+      "shared_subtype_name": 45
+    },
+    "mapping_records": 208,
+    "unique_mapping_tags": 205,
+    "used_tag_bases": 102,
+    "square_occurrences": 1678,
+    "mapped_square_occurrences": 1674,
+    "unique_square_forms": 108,
+    "shared_term_entries": 259,
+    "duplicate_text_groups": 1015,
+    "duplicate_text_entries": 3417,
+    "layout_variant_groups": 15,
+    "repeated_phrase_candidates": 220,
+    "trigger_phrase_candidates": 36,
+    "name_groups": 757,
+    "card_families": 650,
+    "direct_asset_references": 14582,
+    "direct_asset_reference_kinds": {
+      "TextAsset": 14071,
+      "MonoBehaviour": 511
+    },
+    "unresolved_asset_references": 179,
+    "duplicate_mapping_tags": 3,
+    "conflicting_mapping_tags": 1,
+    "unresolved_square_occurrences": 4,
+    "baseline_diff_vs_historical": 3,
+    "baseline_diff_vs_library": 24,
+    "source_roundtrip": true,
+    "duplicate_localization_keys": 0,
+    "missing_mapping_localization_keys": 0,
+    "evidence_scope": "offline extraction; no runtime parser or UI/font validation"
+  },
+  "mapping_examples": [
+    {
+      "Tag": "armored",
+      "Text": "<sprite=25><style=ability><link=\"armored\" param={0}>|ability_armored|<nobr> </nobr>{0}</link></style>"
+    },
+    {
+      "Tag": "frenzy",
+      "Text": "<sprite=26><style=ability><link=\"frenzy\">|ability_frenzy|</link></style>"
+    },
+    {
+      "Tag": "overshoot",
+      "Text": "<sprite=60><style=ability><link=\"overshoot\" param={0}>|ability_overshoot|<nobr> </nobr>{0}</link></style>"
+    },
+    {
+      "Tag": "truestrike",
+      "Text": "<sprite=62><style=ability><link=\"truestrike\">|ability_truestrike|</link></style>"
+    },
+    {
+      "Tag": "aquatic",
+      "Text": "<style=ability><link=\"aquatic\">|ability_aquatic|</link></style>"
+    },
+    {
+      "Tag": "teamup",
+      "Text": "<style=ability><link=\"teamup\">|ability_teamup|</link></style>"
+    },
+    {
+      "Tag": "bounce",
+      "Text": "<style=ability><link=\"bounce\">|ability_bounce|</link></style>"
+    }
+  ],
+  "full_v1": {
+    "coverage": {
+      "entries": 10783,
+      "nonempty_entries": 9381,
+      "empty_values_preserved": 1402,
+      "units": 7369,
+      "changed_entries": 6333,
+      "missing_units": 0
+    },
+    "bundle": {
+      "input_sha256": "d40408353ec001f84fc56b56dff6417e883048090d78a3cee712c11cefdd9aab",
+      "output_sha256": "99f8eaad44daf8a00a8b20e8d086a22e17fec25b26389dc385f35965ff744f8f",
+      "bytes": 230563,
+      "changed_object_path_id": -2978648870419362077,
+      "non_target_objects_identical": true
+    },
+    "csv_sha256": "287d40d0d29276beeee1bb448758822c73d98e8a48c9fc3f76f8a81a5b739439",
+    "checks": {
+      "non_target_records_byte_identical": true,
+      "token_parameter_number_richtext_newline_checks": "PASS",
+      "shared_keys_exist": true
+    },
+    "lead_unit_revisions": 40,
+    "introduced_character_count": 166,
+    "build_time_runtime_rendering_verified": false,
+    "later_user_feedback": {
+      "game_test_reported": true,
+      "summary": "用户报告实际进游戏测试，反馈整体不错，同时指出卡名、英雄名和部分UI未改。",
+      "exhaustive_rendering_verified": false
+    }
+  },
+  "full_v2": {
+    "groups": {
+      "cards": {
+        "units": 615,
+        "renamed": 591,
+        "keys": 623
+      },
+      "heroes": {
+        "units": 22,
+        "renamed": 21,
+        "keys": 22
+      },
+      "ui": {
+        "units": 1125,
+        "renamed": 808,
+        "keys": 1741
+      }
+    },
+    "changed_keys_from_v1": 4326,
+    "reference_records": 3683,
+    "bundle": {
+      "input_sha256": "d40408353ec001f84fc56b56dff6417e883048090d78a3cee712c11cefdd9aab",
+      "output_sha256": "727f0e38449beaad69c584372837c873073e10efbcee874be95a3af1607b9498",
+      "bytes": 231579,
+      "changed_object_path_id": -2978648870419362077,
+      "non_target_objects_identical": true
+    },
+    "csv_sha256": "87ba91b5e23f04d923f53d92e6166140842b14d6ee4a379a2fbb1bf4121f8d8f",
+    "checks": {
+      "exact_job_coverage": true,
+      "no_name_collision": true,
+      "original_and_v1_tokens_numbers_newlines_keys_extra_columns_preserved": true,
+      "unchanged_raw_records_preserved": true,
+      "bundle_text_readback_equal": true
+    },
+    "introduced_characters_relative_to_v1": 64,
+    "later_user_feedback": {
+      "translation_accepted": true,
+      "summary": "用户认可本次效果并表示足矣；未提供第二版逐界面实机验收清单。",
+      "exhaustive_rendering_verified": false
+    },
+    "unresolved_display_sources": [
+      "RANK: NA",
+      "Round 4 / [roundtext]"
+    ]
+  },
+  "static_disambiguation": [
+    {
+      "unit_id": "u_993752d531b6c86d",
+      "localization_key": "9dd40a2b-0bf0-46a9-86af-ecdbcbd80e0d_longDesc",
+      "source": "打出：自己和相邻线上的植物获得[+2h]。",
+      "draft": "打出：本线及邻线植物得[+2h]。",
+      "question": "自己是否仅指单位自身，还是指本线的所有植物？",
+      "reference_bundle": "input/card_data",
+      "card_guid": "79",
+      "evidence": {
+        "trigger": "PlayTrigger",
+        "selection_type": "All",
+        "target_combination": "CompositeAnyQuery",
+        "branches": [
+          "Plants AND TargetableInPlayFighterQuery AND InAdjacentLaneQuery(Side=Either)",
+          "Plants AND TargetableInPlayFighterQuery AND InSameLaneQuery(OriginEntityType=Self)"
+        ],
+        "effect": "BuffEffectDescriptor(AttackAmount=0, HealthAmount=2, Permanent)"
+      },
+      "decision": "保留草稿。本线及邻线准确体现目标筛选，不缩成仅自身与邻线。",
+      "scope": "对照同一底座的静态配置消歧；未运行战斗测试，未修改卡牌数据。"
+    },
+    {
+      "unit_id": "u_40c8c286770cd428",
+      "localization_key": "Hot Date_shortDesc",
+      "source": "将一个僵尸转移到这条线上。被消灭：自己线上的一只僵尸造成3点伤害。",
+      "draft": "移一个僵尸至本线。被灭：本线一只僵尸造成3点伤害。",
+      "question": "原短文缺对字，僵尸是造成伤害者还是受伤者？",
+      "reference_bundle": "input/card_data",
+      "card_guid": "552",
+      "evidence": {
+        "trigger": "DiscardFromPlayTrigger AND WillTriggerOnDeathEffectsQuery",
+        "target_filter": "Manual; Zombies AND TargetableInPlayFighterQuery AND InSameLaneQuery(OriginEntityType=Self)",
+        "effect": "DamageEffectDescriptor(DamageAmount=3)",
+        "same_card_longdesc": "打出： 把一个僵尸转移到这条线上。\\n被消灭：对自己线上的一只僵尸造成3点伤害。"
+      },
+      "decision": "主审覆写为：移一个僵尸至本线。被灭：伤本线一只僵尸3点。依据同版配置及长文明确受伤对象，不改变技能。",
+      "scope": "静态配置与同卡长文交叉消歧；不修改卡牌数据，未执行战斗测试。"
+    }
+  ],
+  "source_report_sha256": {
+    "analysis/catalog-v2/provenance.json": "7fba2804193fb7c71b6c201b3859673086798c5327904ed3af73522afd3e1bb6",
+    "analysis/catalog-v2/summary.json": "44ee8e928619a2143d0eb764f28e0a4010b0e16997b019fa3b95af4d092164f1",
+    "out/full-v1/build-report.json": "ae8a6803ada946618cde3279460312edef5f103bf2b3b68b214e97a11be196d7",
+    "out/full-v2/build-report.json": "5ddb65f8b3d951ac365866883babd4e5f65344557219ccea2add4ceb555405ba",
+    "translation/full-v1/reviews/source-disambiguation.json": "db0615d0b688519ac1da121d5490a66fb3f125b75fd8f630f6d275ed7e3a12f5",
+    "translation/full-v2/reviews/accepted-review.json": "9e853529daaacf424c20cd04a87e99ab345dd2ac1fbd061f8955c6deb6c5687f"
+  },
+  "limits": [
+    "单元、键、引用次数和卡牌数量是不同统计口径。",
+    "全量规则语义、字体字形、全部UI排版未穷尽实测。",
+    "只保存当前同版映射的静态证据，未追踪解析器优先顺序或未知标签注入来源。",
+    "本文档归档不重新构建或部署游戏，也不把用户总体评价写成所有用例通过。"
+  ]
+}

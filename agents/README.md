@@ -8,7 +8,7 @@
 
 1. [01-bundles-and-scope.md](01-bundles-and-scope.md)：输入定位、UnityPy 读写、差异校验。
 2. [02-fighters-and-board-abilities.md](02-fighters-and-board-abilities.md)：冬青技能移植、双方阵营、三头花生式生命值覆盖。
-3. [03-levels-and-localization.md](03-levels-and-localization.md)：僵尸任务 200、真实对话结构、CSV 增量编辑。
+3. [03-levels-and-localization.md](03-levels-and-localization.md)：僵尸任务 200、真实对话结构、CSV 增量编辑；2026-10-16补充共享标记与全量翻译，完整流程见[第03章04](../03.本地化说明/04.复用引用与批量翻译工作流.md)。
 4. [04-device-verification.md](04-device-verification.md)：ADB 部署、回退和实测证据。
 5. [05-smarty-card-remix.md](05-smarty-card-remix.md)：七张聪明卡改版、冻结状态筛选、消灭来源、双重打击结构、无法精确表达的效果与启动验收。
 6. [06-large-card-remix.md](06-large-card-remix.md)：74项多职业追加、进化与友方伤害、授予定时自毁、召唤副本、路线附加目标、伤害重定向、延迟资源修正陷阱、版本备份与启动验收。
@@ -18,7 +18,7 @@
 10. [10-runtime-skills-workflow.md](10-runtime-skills-workflow.md)：JSON与Gadget实现层选择、私有规则契约、效果池与引用ABI、窄动画兼容。
 11. [11-semantic-testing-and-evidence.md](11-semantic-testing-and-evidence.md)：实际profile、无坐标出牌／抽卡／召唤、合法流程、原生异常停止、终局与验收分层。
 
-只做基础改版时不必通读高级章节。处理新技能或已有语义接口时先读10／11，再按链接查[第21章](../21.语义调试与技能扩展实战/README.md)；资源切换查[第20章05](../20.工程体验跃迁-资源门卫与教程跳过/05.必选资源切换实战/README.md)。本轮归档校验见[2026-10-15检查记录](verification-2026-10-15.md)。
+只做基础改版时不必通读高级章节。处理新技能或已有语义接口时先读10／11，再按链接查[第21章](../21.语义调试与技能扩展实战/README.md)；资源切换查[第20章05](../20.工程体验跃迁-资源门卫与教程跳过/05.必选资源切换实战/README.md)。运行时归档校验见[2026-10-15检查记录](verification-2026-10-15.md)，本地化经验归档见[2026-10-16检查记录](verification-2026-10-16.md)。
 
 ## 证据范围
 

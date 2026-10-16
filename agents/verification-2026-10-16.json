@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-16",
+  "scope": "localization documentation and filtered evidence only",
+  "result": "PASS",
+  "checks": {
+    "source_report_fingerprints_match": true,
+    "summary_counts_and_boundaries_consistent": true,
+    "same_version_mapping_examples_checked": true,
+    "git_diff_check": true,
+    "links": {
+      "markdown_files": 180,
+      "chapters": 22,
+      "missing_chapter_readmes": [],
+      "local_links_checked": 705,
+      "external_links_not_verified": 52,
+      "broken_local_links": [],
+      "result": "PASS"
+    }
+  },
+  "not_performed": [
+    "game rebuild",
+    "device deployment",
+    "new runtime or exhaustive font/layout testing",
+    "external website verification"
+  ],
+  "summary_sha256": "d34ee1fb8a0636a531837f879fea90d222e952e28e74a8a50275100d50d23fc9"
+}
