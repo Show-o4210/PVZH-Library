@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "status": "ready",
+  "base_guid": 326,
+  "name": "试作小豆丁",
+  "mode": "replace",
+  "stats": {"cost": 2, "attack": 3, "health": 4},
+  "keywords": [],
+  "abilities": [
+    {"trigger": "play", "target": "enemy_hero", "effects": [{"type": "damage", "amount": 3}]}
+  ]
+}

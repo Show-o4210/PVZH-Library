@@ -1,0 +1,381 @@
+{
+  "status": "PASS",
+  "revision": "r25_batch4_complete",
+  "apk_sha256": "aeb726a54ed0ec61383f9a95148be4e674d6e41c45a71bc300401ac542c90fc5",
+  "profile_revision": 10,
+  "extension_contract_version": 3,
+  "new_skill_checks": 13,
+  "regression_checks": 5,
+  "checks": [
+    {
+      "source": "r25-five-skills-retry1",
+      "checks": [
+        {
+          "name": "137: all three multishot packets resolve before exactly one self-destroy",
+          "details": null
+        },
+        {
+          "name": "137: no phantom after-action when zero power prevents an attack",
+          "details": null
+        },
+        {
+          "name": "137: attack with zero resolved damage still triggers self-destruction",
+          "details": null
+        },
+        {
+          "name": "137: normal lane combat also destroys self once after attack",
+          "details": null
+        },
+        {
+          "name": "490: native random pool covers both factions and self, chosen units actually leave",
+          "details": {
+            "attempts": 5
+          }
+        },
+        {
+          "name": "631: a real plant owned by plants appears in old lane before native legal movement",
+          "details": {
+            "created_guid": 411,
+            "movement": {
+              "time": "2026-10-18T07:43:33.697Z",
+              "kind": "mod2-attack-create-then-move",
+              "source": 64,
+              "original_lane": 13,
+              "candidates": [
+                12,
+                15
+              ],
+              "destination": 12
+            }
+          }
+        },
+        {
+          "name": "631: full zombie board does not force an illegal move",
+          "details": {
+            "time": "2026-10-18T07:43:37.262Z",
+            "kind": "mod2-attack-create-then-move",
+            "source": 70,
+            "original_lane": 13,
+            "candidates": [],
+            "destination": null
+          }
+        },
+        {
+          "name": "194: legal gravestone reveal prevents actual extra attacks this turn",
+          "details": null
+        },
+        {
+          "name": "194: native round boundary expires prohibition and next-turn attack resumes",
+          "details": null
+        },
+        {
+          "name": "194: native bounce/reset clears temporary identity state",
+          "details": null
+        }
+      ]
+    },
+    {
+      "source": "r25-nova-retry2",
+      "checks": [
+        {
+          "name": "491: nonlethal damage does nothing; lethal Garg damage selects exactly one branch; both observed",
+          "details": {
+            "attempts": 3
+          }
+        },
+        {
+          "name": "491: original explicit-destroy path triggers once with victim GUID",
+          "details": {
+            "time": "2026-10-18T07:44:30.896Z",
+            "kind": "mod2-attack-garg-kill-branch",
+            "source": 116,
+            "killed": 120,
+            "killed_guid": 10,
+            "branch": "random-zombie",
+            "targets": [
+              116
+            ]
+          }
+        },
+        {
+          "name": "491: kills by a non-Garg do not trigger",
+          "details": null
+        }
+      ]
+    },
+    {
+      "source": "r25-four-card-regression",
+      "checks": [
+        {
+          "name": "419 sets plant and zombie attack to zero after actual extra attacks; gains remain possible between attacks",
+          "details": null
+        },
+        {
+          "name": "130 bounces the selected plant and sets that same hand card to 0/0 with one target choice",
+          "details": null
+        },
+        {
+          "name": "633 bounces the grave and damages the same returned card by two; hero self-damage resolves",
+          "details": null
+        },
+        {
+          "name": "161 deals this-turn sunlight as lane attack damage and drains available sunlight",
+          "details": null
+        },
+        {
+          "name": "419 also sets both factions to zero after normal lane combat",
+          "details": null
+        }
+      ]
+    }
+  ],
+  "delivery_checks": [
+    {
+      "name": "host APK equals installed APK SHA256",
+      "detail": "aeb726a54ed0ec61383f9a95148be4e674d6e41c45a71bc300401ac542c90fc5"
+    },
+    {
+      "name": "normal launch requires mode choice; no Unity or cache rewrite before selection",
+      "detail": {
+        "profile_original": {
+          "index": "4",
+          "text": "原版游戏",
+          "resource-id": "",
+          "class": "android.widget.Button",
+          "package": "com.ea.gp.pvzheroes",
+          "content-desc": "profile_original",
+          "checkable": "false",
+          "checked": "false",
+          "clickable": "true",
+          "enabled": "true",
+          "focusable": "true",
+          "focused": "false",
+          "scrollable": "false",
+          "long-clickable": "false",
+          "password": "false",
+          "selected": "false",
+          "bounds": "[63,1331][1017,1483]",
+          "drawing-order": "5",
+          "hint": ""
+        },
+        "profile_mod2": {
+          "index": "5",
+          "text": "mod2 改版游戏",
+          "resource-id": "",
+          "class": "android.widget.Button",
+          "package": "com.ea.gp.pvzheroes",
+          "content-desc": "profile_mod2",
+          "checkable": "false",
+          "checked": "false",
+          "clickable": "true",
+          "enabled": "true",
+          "focusable": "true",
+          "focused": "false",
+          "scrollable": "false",
+          "long-clickable": "false",
+          "password": "false",
+          "selected": "false",
+          "bounds": "[63,1515][1017,1667]",
+          "drawing-order": "6",
+          "hint": ""
+        }
+      }
+    },
+    {
+      "name": "Back cannot bypass required mode selection",
+      "detail": null
+    },
+    {
+      "name": "same APK original profile verified and new rules disabled",
+      "detail": {
+        "schema": 1,
+        "profile": "original",
+        "manifest_sha256": "d57c5d18b85e55c179626ff5111e2a9a3ee4ddb72eea31529c6d72ebfb161b51",
+        "selected_at_ms": 1792309506762,
+        "transaction_id": "1792309506721-239e857194282",
+        "files": {
+          "card_data_1": {
+            "path": "cards/card_data_1",
+            "size": 133697,
+            "sha256": "e0682de0135a77bcd15c73072dc3221c0e25b1ac694ebc86bd7965e1d56d57b7"
+          },
+          "data_assets_29": {
+            "path": "data_assets_29",
+            "size": 457360,
+            "sha256": "37fd5f5af67dda86664b76e9bfefe1878b281cf8a1af05afec7a4282bf7b3007"
+          },
+          "cn_8": {
+            "path": "loc/cn_8",
+            "size": 243354,
+            "sha256": "d40408353ec001f84fc56b56dff6417e883048090d78a3cee712c11cefdd9aab"
+          }
+        }
+      }
+    },
+    {
+      "name": "original 137 remains alive after real attack; no custom attack frames or bans",
+      "detail": null
+    },
+    {
+      "name": "cold mod2 restored with all three cache hashes verified",
+      "detail": {
+        "schema": 1,
+        "profile": "mod2",
+        "manifest_sha256": "d57c5d18b85e55c179626ff5111e2a9a3ee4ddb72eea31529c6d72ebfb161b51",
+        "selected_at_ms": 1792309704740,
+        "transaction_id": "1792309704721-23a1670cfdbbe",
+        "files": {
+          "card_data_1": {
+            "path": "cards/card_data_1",
+            "size": 139174,
+            "sha256": "6b1bebce11f308ce9194cd7b5951edd649a7668414621a26ea4a4af02d586f37"
+          },
+          "data_assets_29": {
+            "path": "data_assets_29",
+            "size": 457360,
+            "sha256": "37fd5f5af67dda86664b76e9bfefe1878b281cf8a1af05afec7a4282bf7b3007"
+          },
+          "cn_8": {
+            "path": "loc/cn_8",
+            "size": 245037,
+            "sha256": "dad77b12115e8b6b8d28fc626c096bf8d955d155814a6798a279e80bc6ea198e"
+          }
+        }
+      }
+    }
+  ],
+  "attack": {
+    "installed": true,
+    "generated": 21,
+    "started": 21,
+    "completed": 21,
+    "prevented": 2,
+    "errors": 0,
+    "builder_calls": 23,
+    "builder_scoped": 23,
+    "builder_model_filtered": 0,
+    "builder_scope_unavailable": 0,
+    "builder_empty_list": 0,
+    "builder_rows_no_damage": 0,
+    "pending_attacks": 0,
+    "pending_markers": 0,
+    "wounded_unlocked": 0,
+    "turn_bans": 0,
+    "mode": "mod2"
+  },
+  "errors": 0,
+  "temporary_effect_roots": 0,
+  "sources": [
+    {
+      "path": "evidence/r24-five-skills/result.json",
+      "sha256": "09dc0c61893334130bb6a77232935c8c5819efbea1da54c7ccc1bbc54f755b20",
+      "status": "FAIL"
+    },
+    {
+      "path": "evidence/r25-five-skills/result.json",
+      "sha256": "d6294c1aab647f88611115256f58cb7c3c294fb0ad396aaaf6c5acfc9e270752",
+      "status": "FAIL"
+    },
+    {
+      "path": "evidence/r25-five-skills-retry1/result.json",
+      "sha256": "989e8ea0a3288deb06eb816763708210dfc65da71361fb2e5e872ba672e53a20",
+      "status": "FAIL"
+    },
+    {
+      "path": "evidence/r25-nova-retry2/result.json",
+      "sha256": "682f9437ef6d47c3736ec39d6b527fed6815ad71abff2875c7f25b5876e67ad5",
+      "status": "PASS"
+    },
+    {
+      "path": "evidence/r25-four-card-regression/result.json",
+      "sha256": "261aa06096c188d2a10c9697e315fbdc4e676bd15c53bb7f7d2c319cf8c89d17",
+      "status": "PASS"
+    },
+    {
+      "path": "evidence/r25-startup/result.json",
+      "sha256": "03632366c6f716b6b0af19ce30a5de65dc416d8e54b737eab65e1122a8a65c62",
+      "status": {
+        "variant": "pvzh-test-mode",
+        "base_revision": "mod2-r19",
+        "command_loop": "unity-execute-tasks-replacement",
+        "resource_profile": "mod2",
+        "features": [
+          "debug",
+          "embedded-resources-11056",
+          "skip-ftue",
+          "mod2-skills",
+          "profile-selector"
+        ],
+        "ui_enabled": false,
+        "api_version": 1,
+        "binary": "1.67.8-arm64",
+        "installed": true,
+        "bootError": null,
+        "pending": 0,
+        "events": 6,
+        "boot_warmup_remaining_ms": 0,
+        "temporary_effect_roots": 0,
+        "context_cache_generation": -1,
+        "generation": 0,
+        "operations": [
+          "app_ready",
+          "start_test",
+          "state",
+          "cards",
+          "card_info",
+          "legal_plays",
+          "give",
+          "draw",
+          "summon",
+          "play",
+          "select_target",
+          "end_phase",
+          "fixture_effect",
+          "mod2_status",
+          "mod2_history",
+          "mod2_trace",
+          "animation_status",
+          "animation_control",
+          "native_methods",
+          "events",
+          "ui_status",
+          "ui_open",
+          "ui_close",
+          "ui_action"
+        ]
+      }
+    },
+    {
+      "path": "evidence/r25-delivery/result.json",
+      "sha256": "4527b8deea6d8444afa99c692121ca94b2b727780333f8fcb5bbc4ce1b504b8f",
+      "status": "FAIL"
+    },
+    {
+      "path": "evidence/r25-delivery-resume1/result.json",
+      "sha256": "086db644301b42693b52cd17d6c0ca6a485ec4ed396a7306f8b2ac0aaece8c60",
+      "status": "PASS"
+    }
+  ],
+  "native_engine_changed": false,
+  "new_native_hook_sites": 0,
+  "final_ui": "normal mod2 main menu visually verified",
+  "account_cleared": false,
+  "limits": [
+    "76 cards not exhaustively tested",
+    "AI speculative model unchanged",
+    "headless skill checks do not verify special animation",
+    "History snapshots bounded to 300 and incomplete",
+    "existing warm-fixture lifecycle issue not fixed"
+  ],
+  "recovery": "R25 helper FAIL reports preserved; ten positive checks followed by three nova checks in the same generation, no APK change",
+  "apk_filename": "PVZH_1.67.8_mod2_r25_batch4_complete_11056_arm64.apk",
+  "payload_sha256": {
+    "assets/mod2_profiles/mod2/card_data_1": "6b1bebce11f308ce9194cd7b5951edd649a7668414621a26ea4a4af02d586f37",
+    "assets/mod2_profiles/mod2/cn_8": "dad77b12115e8b6b8d28fc626c096bf8d955d155814a6798a279e80bc6ea198e",
+    "assets/mod2_profiles/manifest.json": "d57c5d18b85e55c179626ff5111e2a9a3ee4ddb72eea31529c6d72ebfb161b51",
+    "lib/arm64-v8a/libpvzhgadget.script.so": "76575ebe0b87ac17d37d2a718e5c7453e38acdd2609da2f0992c076ae8b0e523"
+  },
+  "base_apk_sha256": "c7e48e0ae694d9fbf1b9c0e59d7fd73311fb880a4b56dc13ac1656c4cc6652cf",
+  "native_engine_sha256": "18178b2f35959bc3954378a9778cddd67aab8a7ef22579ea59d736521eec8c91",
+  "evidence_kind": "field-filtered documentation summary; raw commands and APK are not included"
+}

@@ -1,0 +1,78 @@
+{
+  "response": {
+    "plans": [
+      {
+        "case_id": "turn_zombie_draw",
+        "schema_version": 1,
+        "status": "ready",
+        "base_guid": 350,
+        "stats": {
+          "cost": 2,
+          "attack": 3,
+          "health": 4
+        },
+        "mode": "replace",
+        "keywords": [],
+        "abilities": [
+          {
+            "trigger": "turn_start",
+            "target": "own_hero",
+            "effects": [
+              {
+                "type": "draw",
+                "amount": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "case_id": "hurt_freeze",
+        "schema_version": 1,
+        "status": "ready",
+        "base_guid": 350,
+        "mode": "replace",
+        "keywords": [],
+        "abilities": [
+          {
+            "trigger": "self_damaged",
+            "target": "enemy_fighters",
+            "selection": "random",
+            "count": 1,
+            "effects": [
+              {
+                "type": "freeze"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "case_id": "attack_bounce_zero",
+        "schema_version": 1,
+        "status": "unsupported",
+        "reason": "工具当前未开放通用攻击后事件；即使攻击未造成伤害也需要触发，不能换成造成伤害后或本线战斗结束后来实现。"
+      },
+      {
+        "case_id": "no_history_target",
+        "schema_version": 1,
+        "status": "clarify",
+        "reason": "本次请求未提供目标卡名或GUID，且没有上一次上下文，无法唯一定位要改动的单位卡；请明确目标卡。"
+      }
+    ]
+  },
+  "meta": {
+    "model": "deepseek-flash",
+    "usage": {
+      "prompt_tokens": 3008,
+      "completion_tokens": 250,
+      "total_tokens": 3258,
+      "prompt_tokens_details": {
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 1600
+    },
+    "finish_reason": "stop"
+  }
+}

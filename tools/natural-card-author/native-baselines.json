@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "baselines": [
+    {
+      "game": "PVZH 1.67.8 ARM64 / 11056",
+      "canonical_cards_sha256": "fdae8a52a29be3ec62e4359fe8545c49e4460946f9115e60a5a25566ccde6926",
+      "card_count": 650,
+      "observed_type_count": 162,
+      "scope": "original card_data, no runtime extensions; compare canonical content rather than compression bytes"
+    }
+  ]
+}

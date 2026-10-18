@@ -1,0 +1,104 @@
+{
+  "response": {
+    "plans": [
+      {
+        "case_id": "manual_buff",
+        "schema_version": 1,
+        "status": "ready",
+        "base_guid": 326,
+        "mode": "replace",
+        "keywords": [],
+        "abilities": [
+          {
+            "trigger": "play",
+            "target": "other_own_fighters",
+            "selection": "manual",
+            "count": 1,
+            "effects": [
+              {
+                "type": "buff",
+                "attack": 2,
+                "health": 3,
+                "duration": "end_of_turn"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "case_id": "played_target",
+        "schema_version": 1,
+        "status": "ready",
+        "base_guid": 326,
+        "mode": "replace",
+        "keywords": [],
+        "abilities": [
+          {
+            "trigger": "own_fighter_played",
+            "target": "event_target",
+            "effects": [
+              {
+                "type": "buff",
+                "attack": 1,
+                "health": 1,
+                "duration": "permanent"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "case_id": "opponent_play",
+        "schema_version": 1,
+        "status": "ready",
+        "base_guid": 326,
+        "mode": "replace",
+        "keywords": [],
+        "abilities": [
+          {
+            "trigger": "enemy_fighter_played",
+            "target": "self",
+            "effects": [
+              {
+                "type": "destroy"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "case_id": "before_lane",
+        "schema_version": 1,
+        "status": "ready",
+        "base_guid": 326,
+        "mode": "replace",
+        "keywords": [],
+        "abilities": [
+          {
+            "trigger": "lane_combat_start",
+            "target": "self",
+            "effects": [
+              {
+                "type": "extra_attack"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "model": "deepseek-flash",
+    "usage": {
+      "prompt_tokens": 3023,
+      "completion_tokens": 267,
+      "total_tokens": 3290,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024
+      },
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 1999
+    },
+    "finish_reason": "stop"
+  }
+}

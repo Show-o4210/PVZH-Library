@@ -10,6 +10,7 @@
 - 准备实际修改资源：先阅读 [01. 工具链介绍](01.工具链介绍/README.md)。
 - 使用Agent执行基础改版：从 [Agent工作指南](agents/README.md) 与 [独立基础示例](agents/08-basic-mod-walkthrough.md) 开始，先核对用户原包，再读取本次任务需要的章节。
 - 使用语义接口验证卡牌或扩展原版无法表达的技能：阅读 [21.语义调试与技能扩展实战](21.语义调试与技能扩展实战/README.md)，Agent从 [运行时技能工作流](agents/10-runtime-skills-workflow.md) 与 [语义测试与证据](agents/11-semantic-testing-and-evidence.md) 进入。
+- 用中文和AI API制作纯原版能力卡牌：阅读[22.自然语言原版制卡](22.自然语言原版制卡/README.md)及[独立制作核心](tools/natural-card-author/README.md)，Agent从[13](agents/13-natural-language-native-cards.md)进入。
 - 只想查某一类内容：直接通过下方目录进入对应章节。
 
 > [!IMPORTANT]
@@ -23,8 +24,9 @@
 | PVZH Level Editor | [tools/level-editor](tools/level-editor/README.md) | 关卡配置、剧情事件与 AB 打包 | Python 3.10+、PySide6、UnityPy |
 | PVZH Audio Tool | [tools/audio-tool](tools/audio-tool/README.md) | Wwise 音频解包、替换与回包 | Python、UnityPy；外部音频工具见项目说明 |
 | Local Inventory Mod | [mods/local-inventory](mods/local-inventory/README.md) | 本地卡库合并与 ARM64 静态补丁 | Python、Keystone；独立构建流程 |
+| 自然语言原版制卡核心 | [tools/natural-card-author](tools/natural-card-author/README.md) | 中文→plan→原版组件／CN／Bundle；外部API与离线校验 | Python、UnityPy；联网生成时使用自己的DeepSeek API key |
 
-克隆一次即可获取上述四个项目；各项目保留自己的依赖、输入输出目录和入口。第21章是文档与检查摘要，不包含完整调试运行时或游戏APK。请先进入对应子目录，再按其 README 安装与运行，例如：
+克隆一次即可获取上述五个项目；各项目保留自己的依赖、输入输出目录和入口。第21章是文档与检查摘要，不包含完整调试运行时或游戏APK；第22章提供原版制作核心，仍需自己的原版数据。请先进入对应子目录，再按其 README 安装与运行，例如：
 
 ```bash
 git clone https://github.com/Show-o4210/PVZH-Library.git
@@ -60,7 +62,8 @@ python main.py
 | [18. 现代原生浮窗 UI 混合开发](18.现代原生浮窗UI混合开发/README.md) | 原生浮窗架构、防渲染转圈死锁与高版本滚动条避坑 |
 | [19. 良性 Mod 实战：离线卡组分享](19.良性Mod实战-离线卡组分享/README.md) | PVZH1 协议设计、卡牌合规校验与原生持久化实战 |
 | [20. 工程体验跃迁：资源门卫与教程跳过](20.工程体验跃迁-资源门卫与教程跳过/README.md) | Pre-Unity资源门卫、全量资源与FTUE、原版／mod2必选切换及交付校验 |
-| [21. 语义调试与技能扩展实战](21.语义调试与技能扩展实战/README.md) | 无卡牌坐标操作的测试接口、缓存与Gadget合同、效果所有权、History／动画、R19验收与已知建局异常 |
+| [21. 语义调试与技能扩展实战](21.语义调试与技能扩展实战/README.md) | 无坐标测试、缓存与Gadget合同、效果所有权、History／动画、R19验收、第四批组合动作与攻击后扩展 |
+| [22. 自然语言原版制卡](22.自然语言原版制卡/README.md) | 原版知识索引、AI计划合同、确定性编译、DeepSeek评测与后续UI／hook边界 |
 | [资源](资源/) | 示例文件、索引、旧笔记及实战素材 |
 | [Agent工作指南](agents/README.md) | 基础制作、运行时技能工作流、语义测试、证据边界、设备回退与独立基础示例 |
 

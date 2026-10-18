@@ -1,0 +1,95 @@
+{
+  "response": {
+    "plans": [
+      {
+        "case_id": "stats_keep",
+        "schema_version": 1,
+        "status": "ready",
+        "base_guid": 326,
+        "stats": {
+          "cost": 2,
+          "attack": 3,
+          "health": 4
+        },
+        "mode": "keep",
+        "reason": "仅修改费用、攻击和生命，保留原技能。"
+      },
+      {
+        "case_id": "keywords",
+        "schema_version": 1,
+        "status": "ready",
+        "base_guid": 326,
+        "stats": {
+          "cost": 1,
+          "attack": 2,
+          "health": 3
+        },
+        "mode": "replace",
+        "keywords": [
+          "aquatic",
+          "teamup"
+        ],
+        "abilities": [],
+        "reason": "替换旧技能，并将关键词设为两栖和组队。"
+      },
+      {
+        "case_id": "play_hero",
+        "schema_version": 1,
+        "status": "ready",
+        "base_guid": 326,
+        "mode": "replace",
+        "keywords": [],
+        "abilities": [
+          {
+            "trigger": "play",
+            "target": "zombie_hero",
+            "effects": [
+              {
+                "type": "damage",
+                "amount": 3
+              }
+            ]
+          }
+        ],
+        "reason": "替换旧技能，打出时对僵尸英雄造成3点伤害。"
+      },
+      {
+        "case_id": "random_enemy",
+        "schema_version": 1,
+        "status": "ready",
+        "base_guid": 350,
+        "mode": "replace",
+        "keywords": [],
+        "abilities": [
+          {
+            "trigger": "play",
+            "target": "enemy_fighters",
+            "selection": "random",
+            "count": 1,
+            "effects": [
+              {
+                "type": "damage",
+                "amount": 2
+              }
+            ]
+          }
+        ],
+        "reason": "替换旧技能，打出时随机对一株植物造成2点伤害。"
+      }
+    ]
+  },
+  "meta": {
+    "model": "deepseek-flash",
+    "usage": {
+      "prompt_tokens": 2757,
+      "completion_tokens": 293,
+      "total_tokens": 3050,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 2757
+    },
+    "finish_reason": "stop"
+  }
+}

@@ -1,0 +1,487 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PVZH native-only card plan v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "status"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "case_id": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "ready",
+        "unsupported",
+        "clarify"
+      ]
+    },
+    "reason": {
+      "type": "string"
+    },
+    "base_guid": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "source_guid": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "mode": {
+      "enum": [
+        "keep",
+        "replace",
+        "append",
+        "copy_native"
+      ]
+    },
+    "stats": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "cost": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "attack": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "health": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 100
+        }
+      }
+    },
+    "keywords": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "aquatic",
+          "teamup",
+          "deadly",
+          "frenzy",
+          "strikethrough",
+          "truestrike",
+          "untrickable",
+          "gravestone",
+          "double_strike"
+        ]
+      }
+    },
+    "armor": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 20
+    },
+    "abilities": {
+      "type": "array",
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "trigger",
+          "target",
+          "effects"
+        ],
+        "properties": {
+          "trigger": {
+            "enum": [
+              "play",
+              "turn_start",
+              "self_damaged",
+              "self_deals_damage",
+              "self_destroyed",
+              "own_fighter_played",
+              "other_own_fighter_played",
+              "enemy_fighter_played",
+              "own_draw",
+              "lane_combat_start",
+              "lane_combat_end",
+              "continuous"
+            ]
+          },
+          "target": {
+            "enum": [
+              "self",
+              "event_target",
+              "own_hero",
+              "enemy_hero",
+              "plant_hero",
+              "zombie_hero",
+              "own_fighters",
+              "enemy_fighters",
+              "all_fighters",
+              "other_own_fighters",
+              "lane_enemy_fighters",
+              "adjacent_enemy_fighters",
+              "self_and_adjacent_own",
+              "own_open_lanes",
+              "self_lane"
+            ]
+          },
+          "selection": {
+            "enum": [
+              "all",
+              "manual",
+              "random"
+            ]
+          },
+          "count": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5
+          },
+          "effects": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 8,
+            "items": {
+              "oneOf": [
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "type": {
+                      "const": "damage"
+                    },
+                    "amount": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 100
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "amount"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "type": {
+                      "const": "heal"
+                    },
+                    "amount": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 100
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "amount"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "type": {
+                      "const": "draw"
+                    },
+                    "amount": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 100
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "amount"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "type": {
+                      "const": "buff"
+                    },
+                    "attack": {
+                      "type": "integer",
+                      "minimum": -100,
+                      "maximum": 100
+                    },
+                    "duration": {
+                      "enum": [
+                        "permanent",
+                        "end_of_turn"
+                      ]
+                    },
+                    "health": {
+                      "type": "integer",
+                      "minimum": -100,
+                      "maximum": 100
+                    }
+                  },
+                  "required": [
+                    "type"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "type": {
+                      "const": "freeze"
+                    }
+                  },
+                  "required": [
+                    "type"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "type": {
+                      "const": "destroy"
+                    }
+                  },
+                  "required": [
+                    "type"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "type": {
+                      "const": "bounce"
+                    }
+                  },
+                  "required": [
+                    "type"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "type": {
+                      "const": "extra_attack"
+                    }
+                  },
+                  "required": [
+                    "type"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "type": {
+                      "const": "summon"
+                    },
+                    "card_guid": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 2147483647
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "card_guid"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "type": {
+                      "const": "conjure"
+                    },
+                    "card_guid": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 2147483647
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "card_guid"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "type": {
+                      "const": "transform"
+                    },
+                    "card_guid": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 2147483647
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "card_guid"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "type": {
+                      "const": "set_stat"
+                    },
+                    "value": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 100
+                    },
+                    "stat": {
+                      "enum": [
+                        "attack",
+                        "health",
+                        "cost"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "stat",
+                    "value"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "type": {
+                      "const": "gain_resource"
+                    },
+                    "duration": {
+                      "enum": [
+                        "permanent",
+                        "end_of_turn"
+                      ]
+                    },
+                    "amount": {
+                      "type": "integer",
+                      "minimum": -100,
+                      "maximum": 100
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "amount"
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "ready"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "base_guid",
+          "mode"
+        ]
+      },
+      "else": {
+        "required": [
+          "reason"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mode": {
+            "const": "copy_native"
+          }
+        },
+        "required": [
+          "mode"
+        ]
+      },
+      "then": {
+        "required": [
+          "source_guid"
+        ]
+      },
+      "else": {
+        "properties": {
+          "source_guid": false
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mode": {
+            "enum": [
+              "keep",
+              "copy_native"
+            ]
+          }
+        },
+        "required": [
+          "mode"
+        ]
+      },
+      "then": {
+        "properties": {
+          "abilities": {
+            "maxItems": 0
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mode": {
+            "enum": [
+              "keep",
+              "append",
+              "copy_native"
+            ]
+          }
+        },
+        "required": [
+          "mode"
+        ]
+      },
+      "then": {
+        "properties": {
+          "keywords": false,
+          "armor": false
+        }
+      }
+    }
+  ],
+  "$comment": "Reference existence, native baseline, allowed target/effect pairings, same faction and duplicate component rules are enforced by core.py."
+}

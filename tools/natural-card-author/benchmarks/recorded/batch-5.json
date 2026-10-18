@@ -1,0 +1,58 @@
+{
+  "response": {
+    "plans": [
+      {
+        "case_id": "copy_three_nut",
+        "schema_version": 1,
+        "status": "ready",
+        "base_guid": 326,
+        "stats": {},
+        "mode": "copy_native",
+        "source_guid": 597,
+        "reason": "使用原版三头花生的原生能力组件与关键词，保留小豆丁身份、身材、种族与美术。"
+      },
+      {
+        "case_id": "copy_nova",
+        "schema_version": 1,
+        "status": "ready",
+        "base_guid": 350,
+        "stats": {},
+        "mode": "copy_native",
+        "source_guid": 491,
+        "reason": "复制原版超新星巨尸的原生能力与词条，保留纸板机器人僵尸身份、身材、种族与美术。"
+      },
+      {
+        "case_id": "after_attack",
+        "schema_version": 1,
+        "status": "unsupported",
+        "base_guid": 326,
+        "stats": {},
+        "mode": "replace",
+        "reason": "通用攻击结算后触发（无论是否被格挡或造成伤害）属于未开放攻击事件；不能用受伤、造成伤害后或线战斗结束替代。"
+      },
+      {
+        "case_id": "random_redirect",
+        "schema_version": 1,
+        "status": "unsupported",
+        "base_guid": 326,
+        "stats": {},
+        "mode": "replace",
+        "reason": "伤害随机转移并限制只转移一次需要任意伤害转移/实时规则能力，当前工具不支持。"
+      }
+    ]
+  },
+  "meta": {
+    "model": "deepseek-flash",
+    "usage": {
+      "prompt_tokens": 2854,
+      "completion_tokens": 265,
+      "total_tokens": 3119,
+      "prompt_tokens_details": {
+        "cached_tokens": 1152
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 1702
+    },
+    "finish_reason": "stop"
+  }
+}

@@ -1,0 +1,1670 @@
+{
+  "status": "PASS",
+  "total": 415,
+  "passed": 415,
+  "runtime_gameplay_tested": false,
+  "kind": "exhaustive native usable fighter ability-package compile and exact package comparison",
+  "results": [
+    {
+      "guid": 1,
+      "status": "PASS"
+    },
+    {
+      "guid": 2,
+      "status": "PASS"
+    },
+    {
+      "guid": 3,
+      "status": "PASS"
+    },
+    {
+      "guid": 4,
+      "status": "PASS"
+    },
+    {
+      "guid": 5,
+      "status": "PASS"
+    },
+    {
+      "guid": 6,
+      "status": "PASS"
+    },
+    {
+      "guid": 7,
+      "status": "PASS"
+    },
+    {
+      "guid": 8,
+      "status": "PASS"
+    },
+    {
+      "guid": 9,
+      "status": "PASS"
+    },
+    {
+      "guid": 10,
+      "status": "PASS"
+    },
+    {
+      "guid": 18,
+      "status": "PASS"
+    },
+    {
+      "guid": 19,
+      "status": "PASS"
+    },
+    {
+      "guid": 20,
+      "status": "PASS"
+    },
+    {
+      "guid": 22,
+      "status": "PASS"
+    },
+    {
+      "guid": 23,
+      "status": "PASS"
+    },
+    {
+      "guid": 28,
+      "status": "PASS"
+    },
+    {
+      "guid": 29,
+      "status": "PASS"
+    },
+    {
+      "guid": 30,
+      "status": "PASS"
+    },
+    {
+      "guid": 31,
+      "status": "PASS"
+    },
+    {
+      "guid": 32,
+      "status": "PASS"
+    },
+    {
+      "guid": 33,
+      "status": "PASS"
+    },
+    {
+      "guid": 35,
+      "status": "PASS"
+    },
+    {
+      "guid": 39,
+      "status": "PASS"
+    },
+    {
+      "guid": 43,
+      "status": "PASS"
+    },
+    {
+      "guid": 45,
+      "status": "PASS"
+    },
+    {
+      "guid": 49,
+      "status": "PASS"
+    },
+    {
+      "guid": 50,
+      "status": "PASS"
+    },
+    {
+      "guid": 52,
+      "status": "PASS"
+    },
+    {
+      "guid": 53,
+      "status": "PASS"
+    },
+    {
+      "guid": 54,
+      "status": "PASS"
+    },
+    {
+      "guid": 58,
+      "status": "PASS"
+    },
+    {
+      "guid": 61,
+      "status": "PASS"
+    },
+    {
+      "guid": 62,
+      "status": "PASS"
+    },
+    {
+      "guid": 65,
+      "status": "PASS"
+    },
+    {
+      "guid": 66,
+      "status": "PASS"
+    },
+    {
+      "guid": 67,
+      "status": "PASS"
+    },
+    {
+      "guid": 71,
+      "status": "PASS"
+    },
+    {
+      "guid": 76,
+      "status": "PASS"
+    },
+    {
+      "guid": 77,
+      "status": "PASS"
+    },
+    {
+      "guid": 78,
+      "status": "PASS"
+    },
+    {
+      "guid": 79,
+      "status": "PASS"
+    },
+    {
+      "guid": 80,
+      "status": "PASS"
+    },
+    {
+      "guid": 81,
+      "status": "PASS"
+    },
+    {
+      "guid": 82,
+      "status": "PASS"
+    },
+    {
+      "guid": 83,
+      "status": "PASS"
+    },
+    {
+      "guid": 84,
+      "status": "PASS"
+    },
+    {
+      "guid": 88,
+      "status": "PASS"
+    },
+    {
+      "guid": 89,
+      "status": "PASS"
+    },
+    {
+      "guid": 90,
+      "status": "PASS"
+    },
+    {
+      "guid": 91,
+      "status": "PASS"
+    },
+    {
+      "guid": 92,
+      "status": "PASS"
+    },
+    {
+      "guid": 94,
+      "status": "PASS"
+    },
+    {
+      "guid": 97,
+      "status": "PASS"
+    },
+    {
+      "guid": 98,
+      "status": "PASS"
+    },
+    {
+      "guid": 99,
+      "status": "PASS"
+    },
+    {
+      "guid": 100,
+      "status": "PASS"
+    },
+    {
+      "guid": 103,
+      "status": "PASS"
+    },
+    {
+      "guid": 104,
+      "status": "PASS"
+    },
+    {
+      "guid": 105,
+      "status": "PASS"
+    },
+    {
+      "guid": 107,
+      "status": "PASS"
+    },
+    {
+      "guid": 108,
+      "status": "PASS"
+    },
+    {
+      "guid": 109,
+      "status": "PASS"
+    },
+    {
+      "guid": 110,
+      "status": "PASS"
+    },
+    {
+      "guid": 111,
+      "status": "PASS"
+    },
+    {
+      "guid": 113,
+      "status": "PASS"
+    },
+    {
+      "guid": 114,
+      "status": "PASS"
+    },
+    {
+      "guid": 115,
+      "status": "PASS"
+    },
+    {
+      "guid": 116,
+      "status": "PASS"
+    },
+    {
+      "guid": 117,
+      "status": "PASS"
+    },
+    {
+      "guid": 119,
+      "status": "PASS"
+    },
+    {
+      "guid": 120,
+      "status": "PASS"
+    },
+    {
+      "guid": 122,
+      "status": "PASS"
+    },
+    {
+      "guid": 123,
+      "status": "PASS"
+    },
+    {
+      "guid": 124,
+      "status": "PASS"
+    },
+    {
+      "guid": 125,
+      "status": "PASS"
+    },
+    {
+      "guid": 126,
+      "status": "PASS"
+    },
+    {
+      "guid": 127,
+      "status": "PASS"
+    },
+    {
+      "guid": 128,
+      "status": "PASS"
+    },
+    {
+      "guid": 130,
+      "status": "PASS"
+    },
+    {
+      "guid": 131,
+      "status": "PASS"
+    },
+    {
+      "guid": 132,
+      "status": "PASS"
+    },
+    {
+      "guid": 133,
+      "status": "PASS"
+    },
+    {
+      "guid": 134,
+      "status": "PASS"
+    },
+    {
+      "guid": 137,
+      "status": "PASS"
+    },
+    {
+      "guid": 138,
+      "status": "PASS"
+    },
+    {
+      "guid": 139,
+      "status": "PASS"
+    },
+    {
+      "guid": 141,
+      "status": "PASS"
+    },
+    {
+      "guid": 142,
+      "status": "PASS"
+    },
+    {
+      "guid": 143,
+      "status": "PASS"
+    },
+    {
+      "guid": 145,
+      "status": "PASS"
+    },
+    {
+      "guid": 147,
+      "status": "PASS"
+    },
+    {
+      "guid": 148,
+      "status": "PASS"
+    },
+    {
+      "guid": 149,
+      "status": "PASS"
+    },
+    {
+      "guid": 150,
+      "status": "PASS"
+    },
+    {
+      "guid": 151,
+      "status": "PASS"
+    },
+    {
+      "guid": 152,
+      "status": "PASS"
+    },
+    {
+      "guid": 153,
+      "status": "PASS"
+    },
+    {
+      "guid": 154,
+      "status": "PASS"
+    },
+    {
+      "guid": 156,
+      "status": "PASS"
+    },
+    {
+      "guid": 157,
+      "status": "PASS"
+    },
+    {
+      "guid": 158,
+      "status": "PASS"
+    },
+    {
+      "guid": 160,
+      "status": "PASS"
+    },
+    {
+      "guid": 161,
+      "status": "PASS"
+    },
+    {
+      "guid": 163,
+      "status": "PASS"
+    },
+    {
+      "guid": 164,
+      "status": "PASS"
+    },
+    {
+      "guid": 165,
+      "status": "PASS"
+    },
+    {
+      "guid": 166,
+      "status": "PASS"
+    },
+    {
+      "guid": 167,
+      "status": "PASS"
+    },
+    {
+      "guid": 168,
+      "status": "PASS"
+    },
+    {
+      "guid": 169,
+      "status": "PASS"
+    },
+    {
+      "guid": 170,
+      "status": "PASS"
+    },
+    {
+      "guid": 174,
+      "status": "PASS"
+    },
+    {
+      "guid": 175,
+      "status": "PASS"
+    },
+    {
+      "guid": 176,
+      "status": "PASS"
+    },
+    {
+      "guid": 178,
+      "status": "PASS"
+    },
+    {
+      "guid": 180,
+      "status": "PASS"
+    },
+    {
+      "guid": 181,
+      "status": "PASS"
+    },
+    {
+      "guid": 182,
+      "status": "PASS"
+    },
+    {
+      "guid": 186,
+      "status": "PASS"
+    },
+    {
+      "guid": 187,
+      "status": "PASS"
+    },
+    {
+      "guid": 190,
+      "status": "PASS"
+    },
+    {
+      "guid": 191,
+      "status": "PASS"
+    },
+    {
+      "guid": 193,
+      "status": "PASS"
+    },
+    {
+      "guid": 194,
+      "status": "PASS"
+    },
+    {
+      "guid": 195,
+      "status": "PASS"
+    },
+    {
+      "guid": 196,
+      "status": "PASS"
+    },
+    {
+      "guid": 198,
+      "status": "PASS"
+    },
+    {
+      "guid": 199,
+      "status": "PASS"
+    },
+    {
+      "guid": 200,
+      "status": "PASS"
+    },
+    {
+      "guid": 201,
+      "status": "PASS"
+    },
+    {
+      "guid": 202,
+      "status": "PASS"
+    },
+    {
+      "guid": 204,
+      "status": "PASS"
+    },
+    {
+      "guid": 205,
+      "status": "PASS"
+    },
+    {
+      "guid": 206,
+      "status": "PASS"
+    },
+    {
+      "guid": 207,
+      "status": "PASS"
+    },
+    {
+      "guid": 208,
+      "status": "PASS"
+    },
+    {
+      "guid": 209,
+      "status": "PASS"
+    },
+    {
+      "guid": 214,
+      "status": "PASS"
+    },
+    {
+      "guid": 215,
+      "status": "PASS"
+    },
+    {
+      "guid": 216,
+      "status": "PASS"
+    },
+    {
+      "guid": 218,
+      "status": "PASS"
+    },
+    {
+      "guid": 220,
+      "status": "PASS"
+    },
+    {
+      "guid": 221,
+      "status": "PASS"
+    },
+    {
+      "guid": 222,
+      "status": "PASS"
+    },
+    {
+      "guid": 223,
+      "status": "PASS"
+    },
+    {
+      "guid": 224,
+      "status": "PASS"
+    },
+    {
+      "guid": 225,
+      "status": "PASS"
+    },
+    {
+      "guid": 226,
+      "status": "PASS"
+    },
+    {
+      "guid": 227,
+      "status": "PASS"
+    },
+    {
+      "guid": 228,
+      "status": "PASS"
+    },
+    {
+      "guid": 230,
+      "status": "PASS"
+    },
+    {
+      "guid": 231,
+      "status": "PASS"
+    },
+    {
+      "guid": 234,
+      "status": "PASS"
+    },
+    {
+      "guid": 237,
+      "status": "PASS"
+    },
+    {
+      "guid": 238,
+      "status": "PASS"
+    },
+    {
+      "guid": 239,
+      "status": "PASS"
+    },
+    {
+      "guid": 241,
+      "status": "PASS"
+    },
+    {
+      "guid": 242,
+      "status": "PASS"
+    },
+    {
+      "guid": 243,
+      "status": "PASS"
+    },
+    {
+      "guid": 247,
+      "status": "PASS"
+    },
+    {
+      "guid": 248,
+      "status": "PASS"
+    },
+    {
+      "guid": 249,
+      "status": "PASS"
+    },
+    {
+      "guid": 250,
+      "status": "PASS"
+    },
+    {
+      "guid": 251,
+      "status": "PASS"
+    },
+    {
+      "guid": 252,
+      "status": "PASS"
+    },
+    {
+      "guid": 253,
+      "status": "PASS"
+    },
+    {
+      "guid": 255,
+      "status": "PASS"
+    },
+    {
+      "guid": 256,
+      "status": "PASS"
+    },
+    {
+      "guid": 257,
+      "status": "PASS"
+    },
+    {
+      "guid": 259,
+      "status": "PASS"
+    },
+    {
+      "guid": 270,
+      "status": "PASS"
+    },
+    {
+      "guid": 281,
+      "status": "PASS"
+    },
+    {
+      "guid": 282,
+      "status": "PASS"
+    },
+    {
+      "guid": 287,
+      "status": "PASS"
+    },
+    {
+      "guid": 290,
+      "status": "PASS"
+    },
+    {
+      "guid": 293,
+      "status": "PASS"
+    },
+    {
+      "guid": 294,
+      "status": "PASS"
+    },
+    {
+      "guid": 296,
+      "status": "PASS"
+    },
+    {
+      "guid": 297,
+      "status": "PASS"
+    },
+    {
+      "guid": 299,
+      "status": "PASS"
+    },
+    {
+      "guid": 304,
+      "status": "PASS"
+    },
+    {
+      "guid": 306,
+      "status": "PASS"
+    },
+    {
+      "guid": 307,
+      "status": "PASS"
+    },
+    {
+      "guid": 308,
+      "status": "PASS"
+    },
+    {
+      "guid": 309,
+      "status": "PASS"
+    },
+    {
+      "guid": 310,
+      "status": "PASS"
+    },
+    {
+      "guid": 312,
+      "status": "PASS"
+    },
+    {
+      "guid": 313,
+      "status": "PASS"
+    },
+    {
+      "guid": 314,
+      "status": "PASS"
+    },
+    {
+      "guid": 316,
+      "status": "PASS"
+    },
+    {
+      "guid": 317,
+      "status": "PASS"
+    },
+    {
+      "guid": 323,
+      "status": "PASS"
+    },
+    {
+      "guid": 324,
+      "status": "PASS"
+    },
+    {
+      "guid": 326,
+      "status": "PASS"
+    },
+    {
+      "guid": 327,
+      "status": "PASS"
+    },
+    {
+      "guid": 328,
+      "status": "PASS"
+    },
+    {
+      "guid": 331,
+      "status": "PASS"
+    },
+    {
+      "guid": 332,
+      "status": "PASS"
+    },
+    {
+      "guid": 335,
+      "status": "PASS"
+    },
+    {
+      "guid": 339,
+      "status": "PASS"
+    },
+    {
+      "guid": 342,
+      "status": "PASS"
+    },
+    {
+      "guid": 344,
+      "status": "PASS"
+    },
+    {
+      "guid": 345,
+      "status": "PASS"
+    },
+    {
+      "guid": 347,
+      "status": "PASS"
+    },
+    {
+      "guid": 348,
+      "status": "PASS"
+    },
+    {
+      "guid": 349,
+      "status": "PASS"
+    },
+    {
+      "guid": 350,
+      "status": "PASS"
+    },
+    {
+      "guid": 351,
+      "status": "PASS"
+    },
+    {
+      "guid": 352,
+      "status": "PASS"
+    },
+    {
+      "guid": 353,
+      "status": "PASS"
+    },
+    {
+      "guid": 402,
+      "status": "PASS"
+    },
+    {
+      "guid": 403,
+      "status": "PASS"
+    },
+    {
+      "guid": 405,
+      "status": "PASS"
+    },
+    {
+      "guid": 408,
+      "status": "PASS"
+    },
+    {
+      "guid": 409,
+      "status": "PASS"
+    },
+    {
+      "guid": 410,
+      "status": "PASS"
+    },
+    {
+      "guid": 411,
+      "status": "PASS"
+    },
+    {
+      "guid": 413,
+      "status": "PASS"
+    },
+    {
+      "guid": 414,
+      "status": "PASS"
+    },
+    {
+      "guid": 416,
+      "status": "PASS"
+    },
+    {
+      "guid": 418,
+      "status": "PASS"
+    },
+    {
+      "guid": 419,
+      "status": "PASS"
+    },
+    {
+      "guid": 421,
+      "status": "PASS"
+    },
+    {
+      "guid": 422,
+      "status": "PASS"
+    },
+    {
+      "guid": 423,
+      "status": "PASS"
+    },
+    {
+      "guid": 424,
+      "status": "PASS"
+    },
+    {
+      "guid": 425,
+      "status": "PASS"
+    },
+    {
+      "guid": 426,
+      "status": "PASS"
+    },
+    {
+      "guid": 427,
+      "status": "PASS"
+    },
+    {
+      "guid": 428,
+      "status": "PASS"
+    },
+    {
+      "guid": 429,
+      "status": "PASS"
+    },
+    {
+      "guid": 432,
+      "status": "PASS"
+    },
+    {
+      "guid": 434,
+      "status": "PASS"
+    },
+    {
+      "guid": 435,
+      "status": "PASS"
+    },
+    {
+      "guid": 436,
+      "status": "PASS"
+    },
+    {
+      "guid": 437,
+      "status": "PASS"
+    },
+    {
+      "guid": 438,
+      "status": "PASS"
+    },
+    {
+      "guid": 439,
+      "status": "PASS"
+    },
+    {
+      "guid": 440,
+      "status": "PASS"
+    },
+    {
+      "guid": 441,
+      "status": "PASS"
+    },
+    {
+      "guid": 444,
+      "status": "PASS"
+    },
+    {
+      "guid": 446,
+      "status": "PASS"
+    },
+    {
+      "guid": 447,
+      "status": "PASS"
+    },
+    {
+      "guid": 448,
+      "status": "PASS"
+    },
+    {
+      "guid": 449,
+      "status": "PASS"
+    },
+    {
+      "guid": 450,
+      "status": "PASS"
+    },
+    {
+      "guid": 451,
+      "status": "PASS"
+    },
+    {
+      "guid": 452,
+      "status": "PASS"
+    },
+    {
+      "guid": 453,
+      "status": "PASS"
+    },
+    {
+      "guid": 454,
+      "status": "PASS"
+    },
+    {
+      "guid": 455,
+      "status": "PASS"
+    },
+    {
+      "guid": 457,
+      "status": "PASS"
+    },
+    {
+      "guid": 458,
+      "status": "PASS"
+    },
+    {
+      "guid": 459,
+      "status": "PASS"
+    },
+    {
+      "guid": 461,
+      "status": "PASS"
+    },
+    {
+      "guid": 463,
+      "status": "PASS"
+    },
+    {
+      "guid": 464,
+      "status": "PASS"
+    },
+    {
+      "guid": 465,
+      "status": "PASS"
+    },
+    {
+      "guid": 466,
+      "status": "PASS"
+    },
+    {
+      "guid": 467,
+      "status": "PASS"
+    },
+    {
+      "guid": 468,
+      "status": "PASS"
+    },
+    {
+      "guid": 470,
+      "status": "PASS"
+    },
+    {
+      "guid": 471,
+      "status": "PASS"
+    },
+    {
+      "guid": 472,
+      "status": "PASS"
+    },
+    {
+      "guid": 473,
+      "status": "PASS"
+    },
+    {
+      "guid": 474,
+      "status": "PASS"
+    },
+    {
+      "guid": 475,
+      "status": "PASS"
+    },
+    {
+      "guid": 477,
+      "status": "PASS"
+    },
+    {
+      "guid": 479,
+      "status": "PASS"
+    },
+    {
+      "guid": 480,
+      "status": "PASS"
+    },
+    {
+      "guid": 481,
+      "status": "PASS"
+    },
+    {
+      "guid": 482,
+      "status": "PASS"
+    },
+    {
+      "guid": 485,
+      "status": "PASS"
+    },
+    {
+      "guid": 487,
+      "status": "PASS"
+    },
+    {
+      "guid": 488,
+      "status": "PASS"
+    },
+    {
+      "guid": 490,
+      "status": "PASS"
+    },
+    {
+      "guid": 491,
+      "status": "PASS"
+    },
+    {
+      "guid": 493,
+      "status": "PASS"
+    },
+    {
+      "guid": 494,
+      "status": "PASS"
+    },
+    {
+      "guid": 495,
+      "status": "PASS"
+    },
+    {
+      "guid": 497,
+      "status": "PASS"
+    },
+    {
+      "guid": 500,
+      "status": "PASS"
+    },
+    {
+      "guid": 501,
+      "status": "PASS"
+    },
+    {
+      "guid": 502,
+      "status": "PASS"
+    },
+    {
+      "guid": 504,
+      "status": "PASS"
+    },
+    {
+      "guid": 505,
+      "status": "PASS"
+    },
+    {
+      "guid": 506,
+      "status": "PASS"
+    },
+    {
+      "guid": 508,
+      "status": "PASS"
+    },
+    {
+      "guid": 510,
+      "status": "PASS"
+    },
+    {
+      "guid": 511,
+      "status": "PASS"
+    },
+    {
+      "guid": 513,
+      "status": "PASS"
+    },
+    {
+      "guid": 515,
+      "status": "PASS"
+    },
+    {
+      "guid": 516,
+      "status": "PASS"
+    },
+    {
+      "guid": 518,
+      "status": "PASS"
+    },
+    {
+      "guid": 519,
+      "status": "PASS"
+    },
+    {
+      "guid": 520,
+      "status": "PASS"
+    },
+    {
+      "guid": 521,
+      "status": "PASS"
+    },
+    {
+      "guid": 524,
+      "status": "PASS"
+    },
+    {
+      "guid": 525,
+      "status": "PASS"
+    },
+    {
+      "guid": 527,
+      "status": "PASS"
+    },
+    {
+      "guid": 528,
+      "status": "PASS"
+    },
+    {
+      "guid": 529,
+      "status": "PASS"
+    },
+    {
+      "guid": 532,
+      "status": "PASS"
+    },
+    {
+      "guid": 533,
+      "status": "PASS"
+    },
+    {
+      "guid": 534,
+      "status": "PASS"
+    },
+    {
+      "guid": 535,
+      "status": "PASS"
+    },
+    {
+      "guid": 536,
+      "status": "PASS"
+    },
+    {
+      "guid": 537,
+      "status": "PASS"
+    },
+    {
+      "guid": 538,
+      "status": "PASS"
+    },
+    {
+      "guid": 540,
+      "status": "PASS"
+    },
+    {
+      "guid": 542,
+      "status": "PASS"
+    },
+    {
+      "guid": 543,
+      "status": "PASS"
+    },
+    {
+      "guid": 544,
+      "status": "PASS"
+    },
+    {
+      "guid": 545,
+      "status": "PASS"
+    },
+    {
+      "guid": 546,
+      "status": "PASS"
+    },
+    {
+      "guid": 547,
+      "status": "PASS"
+    },
+    {
+      "guid": 548,
+      "status": "PASS"
+    },
+    {
+      "guid": 549,
+      "status": "PASS"
+    },
+    {
+      "guid": 550,
+      "status": "PASS"
+    },
+    {
+      "guid": 551,
+      "status": "PASS"
+    },
+    {
+      "guid": 552,
+      "status": "PASS"
+    },
+    {
+      "guid": 553,
+      "status": "PASS"
+    },
+    {
+      "guid": 555,
+      "status": "PASS"
+    },
+    {
+      "guid": 556,
+      "status": "PASS"
+    },
+    {
+      "guid": 557,
+      "status": "PASS"
+    },
+    {
+      "guid": 558,
+      "status": "PASS"
+    },
+    {
+      "guid": 560,
+      "status": "PASS"
+    },
+    {
+      "guid": 568,
+      "status": "PASS"
+    },
+    {
+      "guid": 573,
+      "status": "PASS"
+    },
+    {
+      "guid": 574,
+      "status": "PASS"
+    },
+    {
+      "guid": 577,
+      "status": "PASS"
+    },
+    {
+      "guid": 585,
+      "status": "PASS"
+    },
+    {
+      "guid": 587,
+      "status": "PASS"
+    },
+    {
+      "guid": 588,
+      "status": "PASS"
+    },
+    {
+      "guid": 589,
+      "status": "PASS"
+    },
+    {
+      "guid": 591,
+      "status": "PASS"
+    },
+    {
+      "guid": 594,
+      "status": "PASS"
+    },
+    {
+      "guid": 595,
+      "status": "PASS"
+    },
+    {
+      "guid": 597,
+      "status": "PASS"
+    },
+    {
+      "guid": 598,
+      "status": "PASS"
+    },
+    {
+      "guid": 599,
+      "status": "PASS"
+    },
+    {
+      "guid": 600,
+      "status": "PASS"
+    },
+    {
+      "guid": 601,
+      "status": "PASS"
+    },
+    {
+      "guid": 602,
+      "status": "PASS"
+    },
+    {
+      "guid": 603,
+      "status": "PASS"
+    },
+    {
+      "guid": 605,
+      "status": "PASS"
+    },
+    {
+      "guid": 606,
+      "status": "PASS"
+    },
+    {
+      "guid": 607,
+      "status": "PASS"
+    },
+    {
+      "guid": 608,
+      "status": "PASS"
+    },
+    {
+      "guid": 609,
+      "status": "PASS"
+    },
+    {
+      "guid": 610,
+      "status": "PASS"
+    },
+    {
+      "guid": 611,
+      "status": "PASS"
+    },
+    {
+      "guid": 612,
+      "status": "PASS"
+    },
+    {
+      "guid": 613,
+      "status": "PASS"
+    },
+    {
+      "guid": 614,
+      "status": "PASS"
+    },
+    {
+      "guid": 617,
+      "status": "PASS"
+    },
+    {
+      "guid": 618,
+      "status": "PASS"
+    },
+    {
+      "guid": 619,
+      "status": "PASS"
+    },
+    {
+      "guid": 620,
+      "status": "PASS"
+    },
+    {
+      "guid": 622,
+      "status": "PASS"
+    },
+    {
+      "guid": 623,
+      "status": "PASS"
+    },
+    {
+      "guid": 624,
+      "status": "PASS"
+    },
+    {
+      "guid": 625,
+      "status": "PASS"
+    },
+    {
+      "guid": 626,
+      "status": "PASS"
+    },
+    {
+      "guid": 627,
+      "status": "PASS"
+    },
+    {
+      "guid": 629,
+      "status": "PASS"
+    },
+    {
+      "guid": 630,
+      "status": "PASS"
+    },
+    {
+      "guid": 631,
+      "status": "PASS"
+    },
+    {
+      "guid": 632,
+      "status": "PASS"
+    },
+    {
+      "guid": 634,
+      "status": "PASS"
+    },
+    {
+      "guid": 635,
+      "status": "PASS"
+    },
+    {
+      "guid": 636,
+      "status": "PASS"
+    },
+    {
+      "guid": 637,
+      "status": "PASS"
+    },
+    {
+      "guid": 638,
+      "status": "PASS"
+    },
+    {
+      "guid": 639,
+      "status": "PASS"
+    },
+    {
+      "guid": 640,
+      "status": "PASS"
+    },
+    {
+      "guid": 642,
+      "status": "PASS"
+    },
+    {
+      "guid": 645,
+      "status": "PASS"
+    },
+    {
+      "guid": 646,
+      "status": "PASS"
+    },
+    {
+      "guid": 647,
+      "status": "PASS"
+    },
+    {
+      "guid": 648,
+      "status": "PASS"
+    },
+    {
+      "guid": 649,
+      "status": "PASS"
+    },
+    {
+      "guid": 650,
+      "status": "PASS"
+    },
+    {
+      "guid": 651,
+      "status": "PASS"
+    },
+    {
+      "guid": 653,
+      "status": "PASS"
+    },
+    {
+      "guid": 655,
+      "status": "PASS"
+    },
+    {
+      "guid": 656,
+      "status": "PASS"
+    },
+    {
+      "guid": 657,
+      "status": "PASS"
+    },
+    {
+      "guid": 658,
+      "status": "PASS"
+    },
+    {
+      "guid": 659,
+      "status": "PASS"
+    },
+    {
+      "guid": 660,
+      "status": "PASS"
+    },
+    {
+      "guid": 662,
+      "status": "PASS"
+    },
+    {
+      "guid": 664,
+      "status": "PASS"
+    },
+    {
+      "guid": 665,
+      "status": "PASS"
+    },
+    {
+      "guid": 666,
+      "status": "PASS"
+    },
+    {
+      "guid": 669,
+      "status": "PASS"
+    },
+    {
+      "guid": 670,
+      "status": "PASS"
+    },
+    {
+      "guid": 672,
+      "status": "PASS"
+    },
+    {
+      "guid": 673,
+      "status": "PASS"
+    },
+    {
+      "guid": 674,
+      "status": "PASS"
+    },
+    {
+      "guid": 675,
+      "status": "PASS"
+    },
+    {
+      "guid": 676,
+      "status": "PASS"
+    },
+    {
+      "guid": 678,
+      "status": "PASS"
+    },
+    {
+      "guid": 679,
+      "status": "PASS"
+    },
+    {
+      "guid": 680,
+      "status": "PASS"
+    },
+    {
+      "guid": 681,
+      "status": "PASS"
+    },
+    {
+      "guid": 682,
+      "status": "PASS"
+    },
+    {
+      "guid": 683,
+      "status": "PASS"
+    },
+    {
+      "guid": 684,
+      "status": "PASS"
+    },
+    {
+      "guid": 685,
+      "status": "PASS"
+    },
+    {
+      "guid": 686,
+      "status": "PASS"
+    },
+    {
+      "guid": 687,
+      "status": "PASS"
+    },
+    {
+      "guid": 688,
+      "status": "PASS"
+    },
+    {
+      "guid": 690,
+      "status": "PASS"
+    },
+    {
+      "guid": 691,
+      "status": "PASS"
+    }
+  ],
+  "selection": "isFighter=true AND usable=true; this is not a collection-availability claim"
+}

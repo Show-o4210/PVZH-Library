@@ -1,0 +1,101 @@
+{
+  "response": {
+    "plans": [
+      {
+        "case_id": "turn_buff",
+        "schema_version": 1,
+        "status": "ready",
+        "base_guid": 326,
+        "mode": "replace",
+        "keywords": [],
+        "abilities": [
+          {
+            "trigger": "turn_start",
+            "target": "self",
+            "effects": [
+              {
+                "type": "buff",
+                "attack": 1,
+                "health": 1,
+                "duration": "permanent"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "case_id": "damaged",
+        "schema_version": 1,
+        "status": "ready",
+        "base_guid": 326,
+        "mode": "replace",
+        "keywords": [],
+        "abilities": [
+          {
+            "trigger": "self_damaged",
+            "target": "enemy_hero",
+            "effects": [
+              {
+                "type": "damage",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "case_id": "death_draw",
+        "schema_version": 1,
+        "status": "ready",
+        "base_guid": 326,
+        "mode": "replace",
+        "keywords": [],
+        "abilities": [
+          {
+            "trigger": "self_destroyed",
+            "target": "own_hero",
+            "effects": [
+              {
+                "type": "draw",
+                "amount": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "case_id": "adjacent_freeze",
+        "schema_version": 1,
+        "status": "ready",
+        "base_guid": 326,
+        "mode": "replace",
+        "keywords": [],
+        "abilities": [
+          {
+            "trigger": "play",
+            "target": "adjacent_enemy_fighters",
+            "effects": [
+              {
+                "type": "freeze"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "model": "deepseek-flash",
+    "usage": {
+      "prompt_tokens": 2924,
+      "completion_tokens": 249,
+      "total_tokens": 3173,
+      "prompt_tokens_details": {
+        "cached_tokens": 1152
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 1772
+    },
+    "finish_reason": "stop"
+  }
+}

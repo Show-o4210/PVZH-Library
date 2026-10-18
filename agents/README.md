@@ -1,6 +1,6 @@
 # PVZH Agent 工作指南（按任务逐步扩展）
 
-本目录为执行任务的Agent提供最短资料路径、已核对字段和验证要求。基础覆盖属性、原版技能复用／重写、场景规则、单关、中文和回包部署；2026-10-15新增运行时技能契约与语义测试入口。基础示例仍自包含；高级指南依据R19案例，完整测试运行时不随库提供。
+本目录为执行任务的Agent提供最短资料路径、已核对字段和验证要求。基础覆盖属性、原版技能复用／重写、场景规则、单关、中文和回包部署；2026-10-15新增运行时技能契约与语义测试入口，2026-10-18追加第四批组合动作与期限状态。基础示例仍自包含；高级指南分别标明R19和独立R25案例，完整测试运行时不随库提供。
 
 ## 阅读顺序
 
@@ -17,6 +17,16 @@
 9. [09-maintenance-and-evidence.md](09-maintenance-and-evidence.md)：当前案例统计、资料优先级、维护与证据边界；[2026-10-11检查记录](verification-2026-10-11.md)。
 10. [10-runtime-skills-workflow.md](10-runtime-skills-workflow.md)：JSON与Gadget实现层选择、私有规则契约、效果池与引用ABI、窄动画兼容。
 11. [11-semantic-testing-and-evidence.md](11-semantic-testing-and-evidence.md)：实际profile、无坐标出牌／抽卡／召唤、合法流程、原生异常停止、终局与验收分层。
+12. [12-composed-actions-and-duration.md](12-composed-actions-and-duration.md)：第四批组合动作、单次手动目标、递归组件唯一性、攻击后、查询树所有权、期限状态与随机分支。
+13. [13-natural-language-native-cards.md](13-natural-language-native-cards.md)：纯原版自然语言制卡、AI API合同、受约束编译、澄清与拒绝、实际API评测、后续UI／hook边界。
+
+第四批归档入口及证据边界见[2026-10-18检查记录](verification-2026-10-18.md)。
+
+同日自然语言原版制卡是独立新任务，见[第22章](../22.自然语言原版制卡/README.md)与[专门检查记录](verification-2026-10-18-native-authoring.md)，不将API／离线成绩计入R25战斗成绩。
+
+随后获用户授权的六份API卡牌独立真机抽测见[设备检查记录](verification-2026-10-18-native-device.md)；使用纯原版B4和独立候选，未合并mod2。
+
+此次提交／推送前的单测与归档回放检查见[发布前检查](verification-2026-10-18-publication.md)，不将离线复查写成新战斗或新在线API结果。
 
 只做基础改版时不必通读高级章节。处理新技能或已有语义接口时先读10／11，再按链接查[第21章](../21.语义调试与技能扩展实战/README.md)；资源切换查[第20章05](../20.工程体验跃迁-资源门卫与教程跳过/05.必选资源切换实战/README.md)。运行时归档校验见[2026-10-15检查记录](verification-2026-10-15.md)，本地化经验归档见[2026-10-16检查记录](verification-2026-10-16.md)。
 

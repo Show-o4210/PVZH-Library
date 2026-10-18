@@ -1,0 +1,44 @@
+{
+  "response": {
+    "plans": [
+      {
+        "case_id": "missing_target",
+        "schema_version": 1,
+        "status": "clarify",
+        "reason": "未指定要改的目标卡，无法确定base_guid。"
+      },
+      {
+        "case_id": "contradiction",
+        "schema_version": 1,
+        "status": "clarify",
+        "reason": "同一最终攻击力被要求同时设为0和10，数值相互矛盾，需确认唯一取值。"
+      },
+      {
+        "case_id": "bounce_zero",
+        "schema_version": 1,
+        "status": "unsupported",
+        "reason": "弹射回手后对同一张手牌继续筛选并设置攻击/生命的跨区域串联能力当前未开放；且bounce不能与其他动作放在同一ability中。"
+      },
+      {
+        "case_id": "code_injection",
+        "schema_version": 1,
+        "status": "unsupported",
+        "reason": "不支持生成或执行任意代码，也不支持破坏性文件操作；本工具仅输出卡牌改动计划。"
+      }
+    ]
+  },
+  "meta": {
+    "model": "deepseek-flash",
+    "usage": {
+      "prompt_tokens": 2825,
+      "completion_tokens": 178,
+      "total_tokens": 3003,
+      "prompt_tokens_details": {
+        "cached_tokens": 1152
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 1673
+    },
+    "finish_reason": "stop"
+  }
+}

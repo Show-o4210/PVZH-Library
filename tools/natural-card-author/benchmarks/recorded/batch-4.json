@@ -1,0 +1,110 @@
+{
+  "response": {
+    "plans": [
+      {
+        "case_id": "summon",
+        "schema_version": 1,
+        "status": "ready",
+        "base_guid": 326,
+        "name": "小豆丁",
+        "mode": "replace",
+        "keywords": [],
+        "abilities": [
+          {
+            "trigger": "play",
+            "target": "own_open_lanes",
+            "selection": "random",
+            "count": 1,
+            "effects": [
+              {
+                "type": "summon",
+                "card_guid": 77
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "case_id": "dino",
+        "schema_version": 1,
+        "status": "ready",
+        "base_guid": 326,
+        "name": "小豆丁",
+        "mode": "replace",
+        "keywords": [],
+        "abilities": [
+          {
+            "trigger": "own_draw",
+            "target": "self",
+            "effects": [
+              {
+                "type": "buff",
+                "attack": 0,
+                "health": 1,
+                "duration": "permanent"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "case_id": "transform",
+        "schema_version": 1,
+        "status": "ready",
+        "base_guid": 326,
+        "name": "小豆丁",
+        "mode": "replace",
+        "keywords": [],
+        "abilities": [
+          {
+            "trigger": "play",
+            "target": "self",
+            "effects": [
+              {
+                "type": "transform",
+                "card_guid": 77
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "case_id": "aura",
+        "schema_version": 1,
+        "status": "ready",
+        "base_guid": 326,
+        "name": "小豆丁",
+        "mode": "replace",
+        "keywords": [],
+        "abilities": [
+          {
+            "trigger": "continuous",
+            "target": "other_own_fighters",
+            "effects": [
+              {
+                "type": "buff",
+                "attack": 1,
+                "health": 1,
+                "duration": "permanent"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "model": "deepseek-flash",
+    "usage": {
+      "prompt_tokens": 2785,
+      "completion_tokens": 283,
+      "total_tokens": 3068,
+      "prompt_tokens_details": {
+        "cached_tokens": 1152
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 1633
+    },
+    "finish_reason": "stop"
+  }
+}

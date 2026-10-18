@@ -1,0 +1,86 @@
+{
+  "response": {
+    "plans": [
+      {
+        "case_id": "zombie_three_power",
+        "schema_version": 1,
+        "status": "ready",
+        "base_guid": 350,
+        "mode": "replace",
+        "keywords": [],
+        "abilities": [
+          {
+            "trigger": "own_fighter_played",
+            "target": "event_target",
+            "effects": [
+              {
+                "type": "set_stat",
+                "stat": "attack",
+                "value": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "case_id": "lane_punch",
+        "schema_version": 1,
+        "status": "ready",
+        "base_guid": 326,
+        "mode": "replace",
+        "keywords": [],
+        "abilities": [
+          {
+            "trigger": "lane_combat_start",
+            "target": "self",
+            "effects": [
+              {
+                "type": "extra_attack"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "case_id": "attack_draw",
+        "schema_version": 1,
+        "status": "unsupported",
+        "reason": "当前没有通用攻击后触发（无论是否命中/被挡均触发）；造成伤害后不能替代攻击后，且只准用原版也不改变该事件缺失。"
+      },
+      {
+        "case_id": "damage_not_attack",
+        "schema_version": 1,
+        "status": "ready",
+        "base_guid": 350,
+        "mode": "replace",
+        "keywords": [],
+        "abilities": [
+          {
+            "trigger": "self_deals_damage",
+            "target": "enemy_fighters",
+            "selection": "random",
+            "effects": [
+              {
+                "type": "bounce"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "model": "deepseek-flash",
+    "usage": {
+      "prompt_tokens": 3096,
+      "completion_tokens": 254,
+      "total_tokens": 3350,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024
+      },
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 2072
+    },
+    "finish_reason": "stop"
+  }
+}

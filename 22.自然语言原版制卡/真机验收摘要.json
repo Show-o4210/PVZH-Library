@@ -1,0 +1,780 @@
+{
+  "status": "PASS_WITH_SCOPE_LIMITS",
+  "date": "2026-10-18",
+  "case_count": 6,
+  "assertions_passed": 25,
+  "api_calls_this_task": 0,
+  "compiler_sha256": "799cbfef480173e95a526bfb725ffac7f85c950ca907a409dca3e95c22015e09",
+  "runner_sha256": "08fda46bcfca1606f8964ef7e07e9e34cf2e7244afd249876b06c387f687ecba",
+  "test_apk_sha256": "9af06d613c55644e1bbc9558f0108f0c61e0b37830da29525d5935c54fef97bc",
+  "test_script_sha256": "22c661d757f20f897ffa0b9db77f7118173fe53659e8aba255eaaa80c57a95dc",
+  "test_runtime": "B4 only, debug controls plus FTUE skip; no mod2 skill extensions",
+  "private_skill_extensions_used": false,
+  "mod2_merged": false,
+  "separate_single_card_profiles": true,
+  "test_attempts_including_failed_assistant_check": 7,
+  "initialization_state_error_count": 14,
+  "recorded_initialization_errors": [
+    {
+      "evidence_name": "adjacent-freeze-r1",
+      "line": 121,
+      "op": "state",
+      "before_fixture_ready": true,
+      "managed_exception": "System.NullReferenceException",
+      "at_known_phase_getter": true
+    },
+    {
+      "evidence_name": "adjacent-freeze-r1",
+      "line": 122,
+      "op": "state",
+      "before_fixture_ready": true,
+      "managed_exception": "System.NullReferenceException",
+      "at_known_phase_getter": true
+    },
+    {
+      "evidence_name": "copy-three-nut-r1",
+      "line": 119,
+      "op": "state",
+      "before_fixture_ready": true,
+      "managed_exception": "System.NullReferenceException",
+      "at_known_phase_getter": true
+    },
+    {
+      "evidence_name": "copy-three-nut-r1",
+      "line": 120,
+      "op": "state",
+      "before_fixture_ready": true,
+      "managed_exception": "System.NullReferenceException",
+      "at_known_phase_getter": true
+    },
+    {
+      "evidence_name": "copy-three-nut-r2",
+      "line": 119,
+      "op": "state",
+      "before_fixture_ready": true,
+      "managed_exception": "System.NullReferenceException",
+      "at_known_phase_getter": true
+    },
+    {
+      "evidence_name": "copy-three-nut-r2",
+      "line": 120,
+      "op": "state",
+      "before_fixture_ready": true,
+      "managed_exception": "System.NullReferenceException",
+      "at_known_phase_getter": true
+    },
+    {
+      "evidence_name": "damage-not-attack-r1",
+      "line": 121,
+      "op": "state",
+      "before_fixture_ready": true,
+      "managed_exception": "System.NullReferenceException",
+      "at_known_phase_getter": true
+    },
+    {
+      "evidence_name": "damage-not-attack-r1",
+      "line": 122,
+      "op": "state",
+      "before_fixture_ready": true,
+      "managed_exception": "System.NullReferenceException",
+      "at_known_phase_getter": true
+    },
+    {
+      "evidence_name": "play-hero-r1",
+      "line": 120,
+      "op": "state",
+      "before_fixture_ready": true,
+      "managed_exception": "System.NullReferenceException",
+      "at_known_phase_getter": true
+    },
+    {
+      "evidence_name": "play-hero-r1",
+      "line": 121,
+      "op": "state",
+      "before_fixture_ready": true,
+      "managed_exception": "System.NullReferenceException",
+      "at_known_phase_getter": true
+    },
+    {
+      "evidence_name": "played-target-r1",
+      "line": 119,
+      "op": "state",
+      "before_fixture_ready": true,
+      "managed_exception": "System.NullReferenceException",
+      "at_known_phase_getter": true
+    },
+    {
+      "evidence_name": "played-target-r1",
+      "line": 120,
+      "op": "state",
+      "before_fixture_ready": true,
+      "managed_exception": "System.NullReferenceException",
+      "at_known_phase_getter": true
+    },
+    {
+      "evidence_name": "turn-zombie-draw-r1",
+      "line": 119,
+      "op": "state",
+      "before_fixture_ready": true,
+      "managed_exception": "System.NullReferenceException",
+      "at_known_phase_getter": true
+    },
+    {
+      "evidence_name": "turn-zombie-draw-r1",
+      "line": 120,
+      "op": "state",
+      "before_fixture_ready": true,
+      "managed_exception": "System.NullReferenceException",
+      "at_known_phase_getter": true
+    }
+  ],
+  "errors_after_fixture_ready": 0,
+  "device_model": "root Pixel 6 ARM64",
+  "touch_used": false,
+  "screenshots_used": false,
+  "settlement_tested": true,
+  "visual_animation_tested": false,
+  "ai_prediction_tested": false,
+  "results": [
+    {
+      "case_id": "play_hero",
+      "request": "小豆丁替换原技能：打出时对僵尸英雄造成3点伤害。",
+      "base_guid": 326,
+      "api_record": {
+        "record": "batch-1.json",
+        "record_sha256": "514f25449c3b60f2deabe697aa341444aba0c053b809d607b1cc6e1d706c3dad"
+      },
+      "plan_unchanged_from_api": true,
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "legal-play-pays-one-and-removes-card",
+          "detail": null
+        },
+        {
+          "name": "play-deals-exactly-three-to-zombie-hero",
+          "detail": {
+            "before": 97,
+            "after": 94
+          }
+        },
+        {
+          "name": "plant-hero-unchanged",
+          "detail": null
+        },
+        {
+          "name": "ordinary-plant-does-not-repeat-damage",
+          "detail": null
+        }
+      ],
+      "observations": [
+        {
+          "name": "direct-summon PlayTrigger behavior",
+          "value": {
+            "hero_damage": 0,
+            "source_id": 24
+          }
+        }
+      ],
+      "device_cache_sha256": {
+        "card_data_1": "f47d70a514c139023d891c6e80deb34ba01f3faaa554b0851a5ad0740dec62eb",
+        "cn_8": "510880992eb35dcfed121400a1720f85cc2e5ed2bb5f254e384a0dd1b7400a14",
+        "data_assets_29": "37fd5f5af67dda86664b76e9bfefe1878b281cf8a1af05afec7a4282bf7b3007"
+      },
+      "card_info": {
+        "guid": 326,
+        "name": "Weenie_Beanie",
+        "faction": 0,
+        "cost": 1,
+        "attack": 1,
+        "health": 1,
+        "fighter": true,
+        "environment": false,
+        "amphibious": false,
+        "power": false,
+        "teamup": false
+      },
+      "base_revision": "b4",
+      "pid": "3005",
+      "evidence_name": "play-hero-r1",
+      "result_sha256": "5f3ec24251ecc86f444c413a8d390bf2a52629b7be40a94a264f5a9cb36c2a0b",
+      "commands_sha256": "5a099ce03406d750de85a5aece261e74304f92497d19870757ea72e335aa363b",
+      "initial_state_sha256": "483be455ad87411d701862ca0cd77b70351b7d82b83e6707dd3845a8363454f5",
+      "final_state_sha256": "6e1a6ab5cb3fd7d4c615bd2971b19fcc403a295b8543bca7fc20eace930857ca",
+      "crash_buffer_records_present": false,
+      "process_alive_after": true
+    },
+    {
+      "case_id": "played_target",
+      "request": "小豆丁替换旧技能：当你打出任何植物时，刚打出的那株植物永久获得+1攻击和+1生命，包含自己。",
+      "base_guid": 326,
+      "api_record": {
+        "record": "batch-3.json",
+        "record_sha256": "9e9d6f13ea45594b56aa3bb83c7df6a08c17d28f21c98c48039b8d45e62c3035"
+      },
+      "plan_unchanged_from_api": true,
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "own-play-includes-source",
+          "detail": {
+            "id": 25,
+            "components": [
+              "Card",
+              "Attack",
+              "Health",
+              "SunCost",
+              "Plants",
+              "Rarity",
+              "Subtypes",
+              "Tags",
+              "EffectEntities",
+              "ShowTriggeredIcon",
+              "Owner",
+              "LaneCombatHistory",
+              "LethalDamageList",
+              "LaneElement"
+            ],
+            "guid": 326,
+            "attack": 2,
+            "health": 2,
+            "damage": 0,
+            "cost": 1,
+            "owner": 0,
+            "lanes": [
+              12
+            ]
+          }
+        },
+        {
+          "name": "old-plant-and-waiting-hand-not-buffed",
+          "detail": null
+        },
+        {
+          "name": "event-target-receives-permanent-plus-one-one",
+          "detail": {
+            "id": 27,
+            "components": [
+              "Card",
+              "Attack",
+              "Health",
+              "SunCost",
+              "Plants",
+              "Rarity",
+              "Subtypes",
+              "Tags",
+              "Owner",
+              "LaneCombatHistory",
+              "LethalDamageList",
+              "LaneElement"
+            ],
+            "guid": 347,
+            "attack": 2,
+            "health": 2,
+            "damage": 0,
+            "cost": 1,
+            "owner": 0,
+            "lanes": [
+              13
+            ]
+          }
+        },
+        {
+          "name": "controller-not-buffed-again",
+          "detail": null
+        }
+      ],
+      "observations": [
+        {
+          "name": "direct-summon observed by own-play trigger",
+          "value": {
+            "created_id": 28,
+            "attack": 1,
+            "health": 1
+          }
+        }
+      ],
+      "device_cache_sha256": {
+        "card_data_1": "71fbd43b11681109a3f949b51ab8abad8c4f7e8294ed63bf9787f5777b20f0ad",
+        "cn_8": "c5d021071655516d14c940063427b1f0e02831788d591b445c5e8a3735b20bb8",
+        "data_assets_29": "37fd5f5af67dda86664b76e9bfefe1878b281cf8a1af05afec7a4282bf7b3007"
+      },
+      "card_info": {
+        "guid": 326,
+        "name": "Weenie_Beanie",
+        "faction": 0,
+        "cost": 1,
+        "attack": 1,
+        "health": 1,
+        "fighter": true,
+        "environment": false,
+        "amphibious": false,
+        "power": false,
+        "teamup": false
+      },
+      "base_revision": "b4",
+      "pid": "4357",
+      "evidence_name": "played-target-r1",
+      "result_sha256": "f6a39def3ac701551473af0a017277dbe4b094c2bc3b6566bef5b775ca3cf3e9",
+      "commands_sha256": "75e10ae8833ae8140985d129a8b94a90d9fadc447607fcb61d39390d538cdffd",
+      "initial_state_sha256": "483be455ad87411d701862ca0cd77b70351b7d82b83e6707dd3845a8363454f5",
+      "final_state_sha256": "08d2d15c79ece7cf60237da970f4c961a7917e78b90f3c3530914a9ce65edf4d",
+      "crash_buffer_records_present": false,
+      "process_alive_after": true
+    },
+    {
+      "case_id": "adjacent_freeze",
+      "request": "小豆丁替换旧技能：打出时冻结左右相邻路线的所有僵尸，不包括自己线。",
+      "base_guid": 326,
+      "api_record": {
+        "record": "batch-2.json",
+        "record_sha256": "e1ed328d677d38b5a83e4d99d60c9779c64767b3340c9093b5210e977f2b0b3a"
+      },
+      "plan_unchanged_from_api": true,
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "both-adjacent-enemies-frozen",
+          "detail": null
+        },
+        {
+          "name": "same-lane-and-far-enemies-not-frozen",
+          "detail": null
+        },
+        {
+          "name": "adjacent-friendly-and-source-not-frozen",
+          "detail": null
+        }
+      ],
+      "observations": [
+        {
+          "name": "frozen-candidate-ids",
+          "value": {
+            "0": {
+              "id": 24,
+              "slowed": false
+            },
+            "1": {
+              "id": 25,
+              "slowed": true
+            },
+            "2": {
+              "id": 26,
+              "slowed": false
+            },
+            "3": {
+              "id": 27,
+              "slowed": true
+            }
+          }
+        }
+      ],
+      "device_cache_sha256": {
+        "card_data_1": "08139a8899297dc55001cbc1a51d0f23915ca7dbbb4908bad7d1e7a0364ca682",
+        "cn_8": "e2d356d5b97e9278890dc6b28a4e7421f3c5bf8c50252bff5d2b0c2689097e99",
+        "data_assets_29": "37fd5f5af67dda86664b76e9bfefe1878b281cf8a1af05afec7a4282bf7b3007"
+      },
+      "card_info": {
+        "guid": 326,
+        "name": "Weenie_Beanie",
+        "faction": 0,
+        "cost": 1,
+        "attack": 1,
+        "health": 1,
+        "fighter": true,
+        "environment": false,
+        "amphibious": false,
+        "power": false,
+        "teamup": false
+      },
+      "base_revision": "b4",
+      "pid": "5384",
+      "evidence_name": "adjacent-freeze-r1",
+      "result_sha256": "360d0464aa1973cf7241296f890eba06b280e451c1e0f75416dc04ec336f4b12",
+      "commands_sha256": "ba033349d02bd3dce810e27cad15d572617480cd6638766fcfcc529939ea73c6",
+      "initial_state_sha256": "483be455ad87411d701862ca0cd77b70351b7d82b83e6707dd3845a8363454f5",
+      "final_state_sha256": "93e34292e7783b3bc62a2ef95823eafcc372cd5ba91477204a7edc5f5fc24523",
+      "crash_buffer_records_present": false,
+      "process_alive_after": true
+    },
+    {
+      "case_id": "turn_zombie_draw",
+      "request": "纸板机器人僵尸改成二费三攻四血，原能力全部替换。每回合开始，僵尸玩家摸两张牌。",
+      "base_guid": 350,
+      "api_record": {
+        "record": "batch-8.json",
+        "record_sha256": "32b908dfe054da30100dacae4ec393744fca233d1ed24ff45ba0837e75ec2aea"
+      },
+      "plan_unchanged_from_api": true,
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "native-cost-stats-two-three-four",
+          "detail": null
+        },
+        {
+          "name": "turn-start-two-extra-plus-one-natural-draw",
+          "detail": {
+            "zombie_hand": 3,
+            "zombie_deck": 3,
+            "plant_hand": 1,
+            "plant_deck": 1
+          }
+        },
+        {
+          "name": "next-round-repeats-without-extra-duplication",
+          "detail": {
+            "zombie_hand": 3,
+            "zombie_deck": 3
+          }
+        }
+      ],
+      "observations": [],
+      "device_cache_sha256": {
+        "card_data_1": "78582664fc4af16a0f654f13c342be84f2be268b9975295ecdda8d1db039d402",
+        "cn_8": "d2f41247908b54c8a45d1fd4897d5dc34299e2f49999592d5cb64855dba1c3d1",
+        "data_assets_29": "37fd5f5af67dda86664b76e9bfefe1878b281cf8a1af05afec7a4282bf7b3007"
+      },
+      "card_info": {
+        "guid": 350,
+        "name": "Cardboard Robot Zombie",
+        "faction": 1,
+        "cost": 2,
+        "attack": 3,
+        "health": 4,
+        "fighter": true,
+        "environment": false,
+        "amphibious": false,
+        "power": false,
+        "teamup": false
+      },
+      "base_revision": "b4",
+      "pid": "6706",
+      "evidence_name": "turn-zombie-draw-r1",
+      "result_sha256": "69586e5b7b4a08c11879a18cca5c8dcafeb4f0e95f1c435af033ba6d49dae929",
+      "commands_sha256": "6750128e1f4e817ae60745205eda40d15b41d73eb63f4b13aa0a729a524ad645",
+      "initial_state_sha256": "483be455ad87411d701862ca0cd77b70351b7d82b83e6707dd3845a8363454f5",
+      "final_state_sha256": "9ba5bb125bf09aeed9eb26c96e30800b29cf7190e043c848587f5af1bc4a6808",
+      "crash_buffer_records_present": false,
+      "process_alive_after": true
+    },
+    {
+      "case_id": "damage_not_attack",
+      "request": "纸板机器人僵尸：替换旧能力。自己造成伤害后随机弹射一株植物；没造成伤害就不触发。",
+      "base_guid": 350,
+      "api_record": {
+        "record": "batch-7.json",
+        "record_sha256": "c4d0d292ef8d1695c7b9d755be99b554fb4657e3ddf5572c6699c88e48679773"
+      },
+      "plan_unchanged_from_api": true,
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "native-camel-precondition-preserves-one-attack",
+          "detail": {
+            "id": 26,
+            "components": [
+              "Card",
+              "Attack",
+              "Health",
+              "SunCost",
+              "Zombies",
+              "Rarity",
+              "Subtypes",
+              "Tags",
+              "EffectEntities",
+              "ShowTriggeredIcon",
+              "Owner",
+              "LaneCombatHistory",
+              "LethalDamageList",
+              "LaneElement"
+            ],
+            "guid": 350,
+            "attack": 1,
+            "health": 3,
+            "damage": 0,
+            "cost": 1,
+            "owner": 5,
+            "lanes": [
+              11
+            ]
+          }
+        },
+        {
+          "name": "zero-damage-against-armor-does-not-bounce",
+          "detail": {
+            "armor": {
+              "id": 24,
+              "components": [
+                "Card",
+                "Attack",
+                "Health",
+                "SunCost",
+                "Plants",
+                "Rarity",
+                "Subtypes",
+                "Tags",
+                "Armor",
+                "Truestrike",
+                "Teamup",
+                "Owner",
+                "LaneCombatHistory",
+                "LethalDamageList",
+                "LaneElement"
+              ],
+              "guid": 80,
+              "attack": 2,
+              "health": 3,
+              "damage": 0,
+              "cost": 3,
+              "owner": 0,
+              "lanes": [
+                11
+              ]
+            },
+            "source": {
+              "id": 26,
+              "components": [
+                "Card",
+                "Attack",
+                "Health",
+                "SunCost",
+                "Zombies",
+                "Rarity",
+                "Subtypes",
+                "Tags",
+                "EffectEntities",
+                "ShowTriggeredIcon",
+                "Owner",
+                "LaneCombatHistory",
+                "LethalDamageList",
+                "LaneElement"
+              ],
+              "guid": 350,
+              "attack": 1,
+              "health": 1,
+              "damage": 2,
+              "cost": 1,
+              "owner": 5,
+              "lanes": [
+                11
+              ]
+            }
+          }
+        },
+        {
+          "name": "receiving-damage-does-not-trigger-source-damage-ability",
+          "detail": null
+        },
+        {
+          "name": "positive-damage-bounces-exactly-one-candidate",
+          "detail": {
+            "candidates": [
+              24,
+              25
+            ],
+            "returned": [
+              25
+            ]
+          }
+        },
+        {
+          "name": "positive-source-dealt-one-to-plant-hero",
+          "detail": {
+            "before": 100,
+            "after": 99
+          }
+        },
+        {
+          "name": "returned-entity-really-in-hand-and-off-board",
+          "detail": null
+        }
+      ],
+      "observations": [],
+      "device_cache_sha256": {
+        "card_data_1": "995e62afedaec42209bcca9da3e3afbf2d17bbc9e442ce7ab136d8a933203dc9",
+        "cn_8": "c281185938df3812d9486dac66932538f02cb4669c7bc0d738f2ff60db46da8e",
+        "data_assets_29": "37fd5f5af67dda86664b76e9bfefe1878b281cf8a1af05afec7a4282bf7b3007"
+      },
+      "card_info": {
+        "guid": 350,
+        "name": "Cardboard Robot Zombie",
+        "faction": 1,
+        "cost": 1,
+        "attack": 1,
+        "health": 1,
+        "fighter": true,
+        "environment": false,
+        "amphibious": false,
+        "power": false,
+        "teamup": false
+      },
+      "base_revision": "b4",
+      "pid": "7634",
+      "evidence_name": "damage-not-attack-r1",
+      "result_sha256": "cd1491fc5ab866dee3d720fa1e4a88935dc8bb2801be9d1841c96a1368708c42",
+      "commands_sha256": "caa4b11d4154af9bc8ea034470ca7eb2ea9a88fdfe5942ceba5bde6bafc54b29",
+      "initial_state_sha256": "483be455ad87411d701862ca0cd77b70351b7d82b83e6707dd3845a8363454f5",
+      "final_state_sha256": "2bcb0c41c82fc5361f50c4a8b18a93ea26f6f80e09f4a9d91439c7c4a3cd8ad0",
+      "crash_buffer_records_present": false,
+      "process_alive_after": true
+    },
+    {
+      "case_id": "copy_three_nut",
+      "request": "把小豆丁的完整原版能力替换成原版三头花生的能力，包含其关键词，身材、种族、美术和卡名仍用小豆丁。",
+      "base_guid": 326,
+      "api_record": {
+        "record": "batch-5.json",
+        "record_sha256": "f4b6eca57a2824f46ab2dfb9a35c9b7c6b93321d749748b1c1e25352649ab425"
+      },
+      "plan_unchanged_from_api": true,
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "copy-keeps-base-stats-and-does-not-target-self",
+          "detail": null
+        },
+        {
+          "name": "preexisting-plant-not-retroactively-set",
+          "detail": null
+        },
+        {
+          "name": "copied-low-power-branch-sets-three",
+          "detail": null
+        },
+        {
+          "name": "copied-high-power-branch-sets-three",
+          "detail": {
+            "id": 29,
+            "components": [
+              "Card",
+              "Attack",
+              "Health",
+              "SunCost",
+              "Plants",
+              "Rarity",
+              "Subtypes",
+              "Tags",
+              "Owner",
+              "LaneCombatHistory",
+              "LethalDamageList",
+              "LaneElement"
+            ],
+            "guid": 7,
+            "attack": 3,
+            "health": 6,
+            "damage": 0,
+            "cost": 6,
+            "owner": 0,
+            "lanes": [
+              14
+            ]
+          }
+        },
+        {
+          "name": "copied-plant-trigger-does-not-set-zombie-power",
+          "detail": null
+        }
+      ],
+      "observations": [],
+      "device_cache_sha256": {
+        "card_data_1": "eeb998e4487f5890ab2a38b73b831f4a1a2a839d12f6c410ce7e6f1a42ba2484",
+        "cn_8": "22d670b71a025ce37376197442607941f7a6da474e488c2152e23daa9625aa67",
+        "data_assets_29": "37fd5f5af67dda86664b76e9bfefe1878b281cf8a1af05afec7a4282bf7b3007"
+      },
+      "card_info": {
+        "guid": 326,
+        "name": "Weenie_Beanie",
+        "faction": 0,
+        "cost": 1,
+        "attack": 1,
+        "health": 1,
+        "fighter": true,
+        "environment": false,
+        "amphibious": false,
+        "power": false,
+        "teamup": false
+      },
+      "base_revision": "b4",
+      "pid": "9396",
+      "evidence_name": "copy-three-nut-r2",
+      "result_sha256": "2e24d96486f29cfa2060411dc2bcbbf9d5aa72d38437e6176affb16b5f34bb73",
+      "commands_sha256": "04543f9938a5491631d50a960e82caf1db164515ff2a002884f4b415f44097fd",
+      "initial_state_sha256": "483be455ad87411d701862ca0cd77b70351b7d82b83e6707dd3845a8363454f5",
+      "final_state_sha256": "2fbdd52a6b0aac296cb4206c55fc71ce96d00d040bfff9eb13fdc432ad4de75c",
+      "crash_buffer_records_present": false,
+      "process_alive_after": true
+    }
+  ],
+  "restore": {
+    "status": "PASS",
+    "apk_sha256": "aeb726a54ed0ec61383f9a95148be4e674d6e41c45a71bc300401ac542c90fc5",
+    "caches": {
+      "card_data_1": "6b1bebce11f308ce9194cd7b5951edd649a7668414621a26ea4a4af02d586f37",
+      "cn_8": "dad77b12115e8b6b8d28fc626c096bf8d955d155814a6798a279e80bc6ea198e",
+      "data_assets_29": "37fd5f5af67dda86664b76e9bfefe1878b281cf8a1af05afec7a4282bf7b3007"
+    },
+    "receipt_unchanged": true,
+    "account_data_cleared": false,
+    "mod2_sources_modified": false
+  },
+  "final_resource_selector": {
+    "status": "PASS",
+    "screen": "mandatory resource selector, no profile selected",
+    "buttons": [
+      {
+        "id": "profile_original",
+        "text": "原版游戏",
+        "enabled": "true"
+      },
+      {
+        "id": "profile_mod2",
+        "text": "mod2 改版游戏",
+        "enabled": "true"
+      }
+    ],
+    "cache_unchanged_after_gate_start": {
+      "card_data_1": true,
+      "cn_8": true,
+      "data_assets_29": true
+    },
+    "ui_hierarchy_sha256": "3a7e4613c384691e656e7711b5d1570044f062fc35e895f6b95d0577fc83cd84"
+  },
+  "document_checks": {
+    "links": {
+      "markdown_files": 196,
+      "chapters": 23,
+      "missing_chapter_readmes": [],
+      "local_links_checked": 776,
+      "external_links_not_verified": 56,
+      "broken_local_links": [],
+      "result": "PASS"
+    },
+    "secret_pattern_scan": {
+      "files": 76,
+      "matching_files": 0
+    }
+  },
+  "backup_manifest_sha256": "28a08270122ec3963fbfc79792a833dbf0044b8d9e0814dc269b471913b7e183",
+  "failed_attempts": [
+    {
+      "evidence_name": "copy-three-nut-r1",
+      "status": "FAIL",
+      "result_sha256": "5753d716df91658780ffe94a154f2aea48853c3396ac34ff3e21e42c56c46e71",
+      "runner_before_fix_sha256": "1b3d08bab7bf04719eaa78ca4ac59a4a6424c9c3f44b98d341ea3f4dbfe2cf8a",
+      "reason": "Test assistant expected GUID81 health=5 but its original when-played nut buff made health=7; attack had correctly become3. R2 uses vanilla GUID7 instead, same API plan and bundles."
+    }
+  ],
+  "known_issues": [
+    {
+      "kind": "fixture readiness",
+      "description": "Early state polling returned managed NullReferenceException at GetPlayerFactionForPhase before first ready fixture snapshot; all preserved. Waiting for readable fixture succeeded; no native access violation or skill-stage command error observed."
+    },
+    {
+      "kind": "test launcher integration",
+      "description": "B4 optional resource page retained skip=false from mod2; after explicit candidate cache hash verification, launched original NimbleActivity for fixtures; no gameplay compiler change.",
+      "ui_hierarchy_sha256": "e51c23dd874734120582feae6bf9e62df0f31b0975b82b59e2b443a30b39ecc5"
+    }
+  ],
+  "evidence_scope": "Six actual archived API plans, each cold process; not all original combinations or all 32 API cases tested in gameplay."
+}
