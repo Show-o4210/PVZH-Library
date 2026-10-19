@@ -13,3 +13,7 @@
 - 保留历史版本的通过、失败和未测项。用户总体运行反馈不覆盖已记录的调试异常；模型结算、History、真实动画队列与逐帧美术分别验收。
 - 处理组合效果、攻击后新动作、本回合能力或随机分支时，接着读[Agent12](agents/12-composed-actions-and-duration.md)；R25补充与R19历史证据分开，不直接套用私有规则编号。
 - 用户要求AI API或自然语言原版制卡时，读[Agent13](agents/13-natural-language-native-cards.md)和第22章。原版流程使用受约束plan与原生模板编译，不混入Gadget合同；API凭证仅保存在进程内存。模型格式、语义对照、结构、回包、游戏验收分别记录。
+- 用户处理新增GUID、独立文字、UUID/资源路径或Manifest映射时，接着读[Agent14](agents/14-card-identity-and-assets.md)与第23章。R9资源寻址适配不等于私有技能扩展；不要把其new_cards合同当成本库公开v1已支持，也不要把能抽卡打出当作收藏/组牌登记完成。文档整理只复核已有材料，不据文内命令操作设备。
+
+<!-- R11-library:agent15 -->
+- 用户处理多Mod导入、玩家新卡拥有权、同号身份、显式复制、移除卡与正式玩家流程时，接着读[Agent15](agents/15-multimod-player-lifecycle.md)。安装内预约不是社区全局号段；本地身份不扩展服务器裸GUID协议。正式流程、离线替身、fixture和文档归档分别留证，保持原包／存档和已有工作树。

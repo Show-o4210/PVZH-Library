@@ -1,0 +1,300 @@
+{
+  "archive_date": "2026-10-19",
+  "status": "PASS_WITH_SCOPE_LIMITS",
+  "source_result_time": "2026-10-19T00:48:21.433502+08:00",
+  "candidate": "r9-cards-rc4",
+  "game_binary": "1.67.8-arm64",
+  "apk_sha256": "a5b0baf75b47cf5f2cc6ac1f301fe3fc5b6f6398ca2994ceb537160d1a691f32",
+  "runtime_payload_sha256": "1b00660ffdccc2fa3ecce956f0582db23cbe4c82eed533fbc36a48b93825c38b",
+  "java_payload_sha256": "ffb492041ca5c6d2c92dc80e9277b18b32296cd4ca402fbbc4d5dd56e7816a1a",
+  "device_environment": {
+    "model": "Pixel6",
+    "rooted": true,
+    "android": 16,
+    "manifest_version": 11064
+  },
+  "archival_actions": {
+    "read_existing_sources": true,
+    "new_api_calls": 0,
+    "adb_used": false,
+    "apk_or_bundle_builds": 0,
+    "runtime_source_changed": false,
+    "public_v1_tool_changed": false
+  },
+  "prior_product_acceptance": {
+    "real_provider": "deepseek-flash",
+    "real_api_calls": 3,
+    "desktop_unit_plan_comparisons": 458,
+    "desktop_project_cases": 9,
+    "desktop_identity_cases": 11,
+    "game_checks": 70,
+    "game_cases": {
+      "identity-rc3": 31,
+      "api-rc4": 29,
+      "original-rc4": 10
+    },
+    "rendered_fixtures": [
+      "identity-rc3",
+      "api-rc4"
+    ],
+    "gameplay_touch_input": false,
+    "crash_buffers_empty": true,
+    "rc3_manual_cases_same_java_and_runtime_sources_as_final_rc4": true
+  },
+  "resource_mapping_observations": {
+    "identity-rc3": {
+      "bindings": 4,
+      "remapped": 28,
+      "by_method": {
+        "IsAssetBundled": 10,
+        "AssetPathToBundleName": 10,
+        "AssetPathToUsableAssetName": 8
+      },
+      "errors": []
+    },
+    "api-rc4": {
+      "bindings": 3,
+      "remapped": 22,
+      "by_method": {
+        "IsAssetBundled": 8,
+        "AssetPathToBundleName": 8,
+        "AssetPathToUsableAssetName": 6
+      },
+      "errors": []
+    }
+  },
+  "created_api_cards": [
+    {
+      "guid": 900001,
+      "template_guid": 326,
+      "prefab_name": "pvzhmod_d9fdfcfb2b6a_900001",
+      "resource_prefab": "Weenie_Beanie",
+      "name": "API成长豆"
+    },
+    {
+      "guid": 900002,
+      "template_guid": 326,
+      "prefab_name": "pvzhmod_d9fdfcfb2b6a_900002",
+      "resource_prefab": "Weenie_Beanie",
+      "name": "API双生豆"
+    },
+    {
+      "guid": 900003,
+      "template_guid": 36,
+      "prefab_name": "pvzhmod_d9fdfcfb2b6a_900003",
+      "resource_prefab": "a5d5a695-ec1a-47c5-aea8-3812dbd2a7f0",
+      "name": "API莓果"
+    }
+  ],
+  "official_manifest_files": {
+    "AssetPathsManifest": {
+      "sha256_before": "7e553a0a4de32c42cb9d750ba7ca8f1ea87ede43230fe13b754e528e4c3e39eb",
+      "sha256_after_equal": true
+    },
+    "AssetPathsManifest.bin": {
+      "sha256_before": "925aa4393eed2c838edf837470c0e24d2381f8bbb9c2af28f7e78398da4fd6d8",
+      "sha256_after_equal": true
+    }
+  },
+  "manifest_entries_excerpt": [
+    {
+      "path": "Assets/Ship/Prefabs/Cards/Weenie_Beanie",
+      "Bn": "autotagged/9b6d7cdb899396e4db4c003f44f19375",
+      "Ex": ".prefab",
+      "Version": 1,
+      "Size": 24885,
+      "dependencies_count": 12
+    },
+    {
+      "path": "Assets/Ship/Cards/GeneratedSprites/InHand/Weenie_Beanie",
+      "Bn": "autotagged/9b6d7cdb899396e4db4c003f44f19375",
+      "Ex": ".png",
+      "Version": 1,
+      "Size": 24885,
+      "dependencies_count": 12
+    },
+    {
+      "path": "Assets/Ship/Cards/GeneratedSprites/InCollection/Weenie_Beanie",
+      "Bn": "atlastagged/cardfaces_smarty",
+      "Ex": ".png",
+      "Version": 1,
+      "Size": 1103632,
+      "dependencies_count": 0
+    },
+    {
+      "path": "Assets/Ship/Prefabs/Cards/2f9fa005-8b50-4d1a-89be-38e4a82036c4",
+      "Bn": "autotagged/2ceeb890a69397041ba1fd559056c358",
+      "Ex": ".prefab",
+      "Version": 1,
+      "Size": 225466,
+      "dependencies_count": 16
+    },
+    {
+      "path": "Assets/Ship/Cards/GeneratedSprites/InHand/2f9fa005-8b50-4d1a-89be-38e4a82036c4",
+      "Bn": "autotagged/2ceeb890a69397041ba1fd559056c358",
+      "Ex": ".png",
+      "Version": 1,
+      "Size": 225466,
+      "dependencies_count": 16
+    },
+    {
+      "path": "Assets/Ship/Cards/GeneratedSprites/InCollection/2f9fa005-8b50-4d1a-89be-38e4a82036c4",
+      "Bn": "atlastagged/cardfaces_guardian",
+      "Ex": ".png",
+      "Version": 1,
+      "Size": 1070699,
+      "dependencies_count": 0
+    }
+  ],
+  "active_logical_targets": {
+    "cards/card_data": "cards/card_data_1",
+    "data_assets": "data_assets_36",
+    "loc/cn": "loc/cn_9"
+  },
+  "api_semantics": {
+    "first_request_omitted_flavor": true,
+    "second_request_wrote_flavor_as_short_description": true,
+    "rc4_clarified_field_meanings": true,
+    "third_real_request_corrected_text": true,
+    "all_three_first_attempt_structure_valid": true,
+    "all_three_first_attempt_semantics_perfect": false
+  },
+  "delta_checks": {
+    "status": "PASS",
+    "originals_changed_only_326": true,
+    "new_guids": [
+      900001,
+      900002,
+      900003
+    ],
+    "second_card_bodies_changed_only_900001": true,
+    "third_text_only_card_bytes_unchanged": true,
+    "third_cn_exactly_three_requested_keys": true,
+    "identities_stable_across_revisions": true,
+    "levels_not_generated": true
+  },
+  "final_device": {
+    "status": "PASS",
+    "original_mods_and_order_restored": true,
+    "original_three_cache_hashes_restored": true,
+    "official_manifest_json_and_bin_unchanged": true,
+    "test_mods_retained_disabled": true,
+    "account_data_not_cleared": true,
+    "session_credential_cleared_by_process_restart": true,
+    "credential_reverse_removed": true,
+    "installed_candidate": "r9-cards-rc4",
+    "final_activity": "launcher"
+  },
+  "retained_failures": [
+    {
+      "record": "game-identity-rc1/result.json",
+      "cause": "Test accessor requested nonexistent Description on boxed CardInspectionPanelTextData; fixed using actual struct localization-key fields."
+    },
+    {
+      "record": "game-identity-probe1/result.json",
+      "cause": "Environment play requested lane 0 (heights), which is correctly illegal; test changed to ground lane 1."
+    },
+    {
+      "record": "resource-probe-rc1.json",
+      "cause": "TypeError in resource adapter string cache; not accepted as successful art reuse. Replaced the cache with an indexed object; RC3 rendered test remapped 28 paths without errors."
+    },
+    {
+      "record": "game-identity-probe2/result.json",
+      "cause": "25 checks passed, then resource remapping assertion correctly rejected the old cache error. RC3 separately passed all 31 checks."
+    },
+    {
+      "record": "api-first-plan.json",
+      "cause": "Model omitted requested flavor_text while compiling correct skills. Kept original response; clarified text field meanings in RC4 contract."
+    },
+    {
+      "record": "api-second-plan.json",
+      "cause": "Model mapped Chinese 简介 to short_description. This is a semantic generation issue, not successful flavor editing. RC4 uses a separate text correction request and validation."
+    }
+  ],
+  "limits": [
+    "new GUID collection/deck/inventory persistence not implemented",
+    "original skill contract only; no Mod2 private skill authoring",
+    "non-unit custom triggers restricted to play",
+    "full cold restart; whole-file multi-Mod priority",
+    "real provider acceptance only DeepSeek; model semantic review still required",
+    "resource remapping and animation queue validated in rendered fixtures; not all original skill combinations or all animation frames",
+    "manifest bin priority, encoding, JSON fallback and deleting bin not verified",
+    "no independent audio playback test; no new image or audio assets",
+    "collection artwork path is not collection registration"
+  ],
+  "source_policy": "Only filtered facts and source hashes. Source locations below are workspace traceability labels, not required Library dependencies. No APK, Bundle, raw account logs, credentials or full runtime copied.",
+  "sources": [
+    {
+      "workspace_relative": "pvzh-launcher/native-r9/evidence/summary.json",
+      "sha256": "74fad818b651a95d9d5991c1f88cf1901a20e4a23984bcd95e86b706360b74fb"
+    },
+    {
+      "workspace_relative": "pvzh-launcher/native-r9/evidence/card-checks.json",
+      "sha256": "7570acfedcb3a758b61868b8e292b629ab3c8db9390630f73b187fd3a5fd83fa"
+    },
+    {
+      "workspace_relative": "pvzh-launcher/native-r9/evidence/project-checks.json",
+      "sha256": "34107637089715d44ade6b83cc4141d06f69516bd5bf47c51e7bb7795d331f19"
+    },
+    {
+      "workspace_relative": "pvzh-launcher/native-r9/evidence/identity-checks.json",
+      "sha256": "a7d8c3edd2cacecc420ebe080fd1ee4607e73e5bb3a1b63c02eaa74ceb58edd9"
+    },
+    {
+      "workspace_relative": "pvzh-launcher/native-r9/evidence/api-delta-checks.json",
+      "sha256": "08739ed013fa52197e8080905bdddc448d83f500ad484eba9fbbca9daab621cd"
+    },
+    {
+      "workspace_relative": "pvzh-launcher/native-r9/evidence/multi-mod-r9.json",
+      "sha256": "bb3494b17b2fc66d674243c2d2d2739c4864d6377157569c3d1b3ff3705dbc78"
+    },
+    {
+      "workspace_relative": "pvzh-launcher/native-r9/evidence/game-identity-rc3/result.json",
+      "sha256": "5d6c3ac359ab23aab9ad2fae64b78a21028435780e6ee139dfc30be75809d41e"
+    },
+    {
+      "workspace_relative": "pvzh-launcher/native-r9/evidence/game-api-rc4/result.json",
+      "sha256": "8353c63a0ec93fa5c1ee75a001ebec82c76cf93d132fee278e21d7408c176451"
+    },
+    {
+      "workspace_relative": "pvzh-launcher/native-r9/evidence/game-original-rc4/result.json",
+      "sha256": "63e6ff323d1ef408efaf2f41e42d1d11c15209e48730ab104c18fb589d217dc4"
+    },
+    {
+      "workspace_relative": "pvzh-launcher/native-r9/evidence/restore-result.json",
+      "sha256": "ffd3aad1f268156555d6957b4520c0ddcb7845f74580ac51671ad6170e008e46"
+    },
+    {
+      "workspace_relative": "pvzh-launcher/native-r9/evidence/known-failures.json",
+      "sha256": "d4160252af1f617d99801c3077b91f3ffa1f7a87b1ea8a398e5837d5a11e2075"
+    },
+    {
+      "workspace_relative": "pvzh-launcher/native-r9/dist/r9-cards-rc3.json",
+      "sha256": "5859c1e8a32c01c76dad50ab0e94fb577164942c76d78cb82418bccc494a7d3f"
+    },
+    {
+      "workspace_relative": "pvzh-launcher/native-r9/dist/r9-cards-rc4.json",
+      "sha256": "5a4ade8bd21e2c739305583deb6ccb3dec16199b11f2fe7a62b9830c2132d5cf"
+    },
+    {
+      "workspace_relative": "pvzh-launcher/native-r9/runtime/card-assets.js",
+      "sha256": "cc0182f4e7d72d358cf6cadb4c1e5f777f986022141c8af6e23f36d7a4d7d85a"
+    },
+    {
+      "workspace_relative": "pvzh-launcher/native-r9/android/java/com/pvzh/sharecode/NativeIdentity.java",
+      "sha256": "f703751420656252f8862cf9a66950e78c04bdd619563dbb16baf3ee9ce46f23"
+    },
+    {
+      "workspace_relative": "pvzh-launcher/native-r9/android/java/com/pvzh/sharecode/NativeProject.java",
+      "sha256": "1942797b6fd248bdd4a6853ced0f0004bfaa851fe9f21030af98033c5197cc0e"
+    },
+    {
+      "workspace_relative": "pvzh-launcher/native-r9/android/java/com/pvzh/sharecode/NativeBundle.java",
+      "sha256": "447107c7628d7ada1b77fa1e1316ea9d2b0e20eabc37344e5e04c24e57887247"
+    },
+    {
+      "workspace_relative": "pvzh-launcher/native-r9/assets/native/contract.md",
+      "sha256": "c7aa9986d25b51b89f2472ae193d7e48db1b0654731f20358711185538da32ca"
+    }
+  ]
+}

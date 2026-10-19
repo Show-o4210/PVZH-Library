@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "date": "2026-10-19",
+  "scope": "Documentation and filtered evidence only",
+  "changed_files": [
+    "02.卡牌数据说明/01.基础属性与元数据.md",
+    "02.卡牌数据说明/05.手动修改最佳实践与新建卡牌指南.md",
+    "02.卡牌数据说明/README.md",
+    "03.本地化说明/02.键名规范与后缀索引.md",
+    "03.本地化说明/README.md",
+    "04.贴图简单修改/01.定位卡牌贴图AssetBundle.md",
+    "04.贴图简单修改/README.md",
+    "22.自然语言原版制卡/02.能力边界与后续接入.md",
+    "22.自然语言原版制卡/README.md",
+    "23.卡牌身份与资源映射/01.身份、文本与技能的关系.md",
+    "23.卡牌身份与资源映射/02.Manifest、Bundle与内部资产.md",
+    "23.卡牌身份与资源映射/03.新增GUID与资源复用流程.md",
+    "23.卡牌身份与资源映射/04.R9验收与失败边界.md",
+    "23.卡牌身份与资源映射/README.md",
+    "23.卡牌身份与资源映射/验收摘要.json",
+    "AGENTS.md",
+    "README.md",
+    "agents/09-maintenance-and-evidence.md",
+    "agents/13-natural-language-native-cards.md",
+    "agents/14-card-identity-and-assets.md",
+    "agents/README.md",
+    "agents/verification-2026-10-19-card-assets.json",
+    "agents/verification-2026-10-19-card-assets.md"
+  ],
+  "changed_file_count": 23,
+  "json_files_checked": [
+    "23.卡牌身份与资源映射/验收摘要.json",
+    "agents/verification-2026-10-19-card-assets.json"
+  ],
+  "json_fenced_examples_checked": 6,
+  "source_fingerprints_rechecked": 18,
+  "sensitive_key_pattern_matches": 0,
+  "git_diff_check": "PASS",
+  "local_links": {
+    "markdown_files": 204,
+    "chapters": 24,
+    "missing_chapter_readmes": [],
+    "local_links_checked": 823,
+    "external_links_not_verified": 56,
+    "broken_local_links": [],
+    "result": "PASS"
+  },
+  "api_calls_this_archival_task": 0,
+  "adb_used_this_archival_task": false,
+  "game_tests_rerun_this_archival_task": 0,
+  "public_v1_tool_changed": false,
+  "commit_or_push_performed": false
+}

@@ -11,6 +11,8 @@
 - 使用Agent执行基础改版：从 [Agent工作指南](agents/README.md) 与 [独立基础示例](agents/08-basic-mod-walkthrough.md) 开始，先核对用户原包，再读取本次任务需要的章节。
 - 使用语义接口验证卡牌或扩展原版无法表达的技能：阅读 [21.语义调试与技能扩展实战](21.语义调试与技能扩展实战/README.md)，Agent从 [运行时技能工作流](agents/10-runtime-skills-workflow.md) 与 [语义测试与证据](agents/11-semantic-testing-and-evidence.md) 进入。
 - 用中文和AI API制作纯原版能力卡牌：阅读[22.自然语言原版制卡](22.自然语言原版制卡/README.md)及[独立制作核心](tools/natural-card-author/README.md)，Agent从[13](agents/13-natural-language-native-cards.md)进入。
+- 理解新GUID、独立中文与原版美术复用：阅读[23.卡牌身份与资源映射](23.卡牌身份与资源映射/README.md)，Agent从[14](agents/14-card-identity-and-assets.md)进入；R9产品经验与公开工具v1分开。
+- 管理多Mod与玩家新卡生命周期：阅读[资源包映射与外国ZIP](20.工程体验跃迁-资源门卫与教程跳过/06.多Mod资源映射与外国ZIP实测.md)、[本地身份与服务器边界](23.卡牌身份与资源映射/05.本地新卡身份与服务器裸GUID边界.md)；Agent从[15](agents/15-multimod-player-lifecycle.md)进入，R9历史与后续产品证据分开。
 - 只想查某一类内容：直接通过下方目录进入对应章节。
 
 > [!IMPORTANT]
@@ -35,7 +37,7 @@ python -m pip install -r requirements.txt
 python main.py
 ```
 
-关卡编辑器同样在 `tools/level-editor/` 内运行 `python main.py`；音频和本地卡库使用各自的流水线或构建脚本。建议按项目建立独立虚拟环境。原00～20章节和资源目录保持原路径，新增第21章；迁移来源与Git历史说明见 [MIGRATION.md](MIGRATION.md)。
+关卡编辑器同样在 `tools/level-editor/` 内运行 `python main.py`；音频和本地卡库使用各自的流水线或构建脚本。建议按项目建立独立虚拟环境。原00～20章节和资源目录保持原路径，后续经验另在21～23章归档；迁移来源与Git历史说明见 [MIGRATION.md](MIGRATION.md)。
 
 ## 内容导航
 
@@ -64,6 +66,7 @@ python main.py
 | [20. 工程体验跃迁：资源门卫与教程跳过](20.工程体验跃迁-资源门卫与教程跳过/README.md) | Pre-Unity资源门卫、全量资源与FTUE、原版／mod2必选切换及交付校验 |
 | [21. 语义调试与技能扩展实战](21.语义调试与技能扩展实战/README.md) | 无坐标测试、缓存与Gadget合同、效果所有权、History／动画、R19验收、第四批组合动作与攻击后扩展 |
 | [22. 自然语言原版制卡](22.自然语言原版制卡/README.md) | 原版知识索引、AI计划合同、确定性编译、DeepSeek评测与后续UI／hook边界 |
+| [23. 卡牌身份与资源映射](23.卡牌身份与资源映射/README.md) | GUID／prefabName／中文Key、Manifest与Bundle内部资产、R9新卡复用原版资源、累计编辑与真机证据 |
 | [资源](资源/) | 示例文件、索引、旧笔记及实战素材 |
 | [Agent工作指南](agents/README.md) | 基础制作、运行时技能工作流、语义测试、证据边界、设备回退与独立基础示例 |
 

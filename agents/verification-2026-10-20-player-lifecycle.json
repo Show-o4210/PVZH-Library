@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "date": "2026-10-20",
+  "scope": "Offline prepared document validation, not new game acceptance",
+  "checks": {
+    "prepared_local_links_checked": 171,
+    "json_files_and_fences_checked": 1,
+    "credential_pattern_filenames": [],
+    "scope": "Prepared/changed documents only; no external web check or device rerun"
+  },
+  "candidate_sha256": "6cbc6f2011a3bf1f1eb2b0868a6dd9d02f89c8486ced87d3efe0c34e366e63f5",
+  "finalfacts_sha256": "151e2e99b29bacd3ba94ed7bdb3d2ee5c4a56067b1c5d9494ac1fdcd5113d5c9",
+  "pre_existing_file_count": 23,
+  "new_api_calls": 0,
+  "device_used_by_integration_tool": false,
+  "git_used_by_integration_tool": false,
+  "changed_files": [
+    "20.工程体验跃迁-资源门卫与教程跳过/05.必选资源切换实战/README.md",
+    "20.工程体验跃迁-资源门卫与教程跳过/06.多Mod资源映射与外国ZIP实测.md",
+    "20.工程体验跃迁-资源门卫与教程跳过/README.md",
+    "22.自然语言原版制卡/02.能力边界与后续接入.md",
+    "22.自然语言原版制卡/README.md",
+    "23.卡牌身份与资源映射/05.本地新卡身份与服务器裸GUID边界.md",
+    "23.卡牌身份与资源映射/README.md",
+    "23.卡牌身份与资源映射/玩家生命周期验收摘要.json",
+    "AGENTS.md",
+    "README.md",
+    "agents/09-maintenance-and-evidence.md",
+    "agents/13-natural-language-native-cards.md",
+    "agents/14-card-identity-and-assets.md",
+    "agents/15-multimod-player-lifecycle.md",
+    "agents/README.md",
+    "agents/verification-2026-10-20-player-lifecycle.json",
+    "agents/verification-2026-10-20-player-lifecycle.md"
+  ]
+}

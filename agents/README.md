@@ -19,6 +19,8 @@
 11. [11-semantic-testing-and-evidence.md](11-semantic-testing-and-evidence.md)：实际profile、无坐标出牌／抽卡／召唤、合法流程、原生异常停止、终局与验收分层。
 12. [12-composed-actions-and-duration.md](12-composed-actions-and-duration.md)：第四批组合动作、单次手动目标、递归组件唯一性、攻击后、查询树所有权、期限状态与随机分支。
 13. [13-natural-language-native-cards.md](13-natural-language-native-cards.md)：纯原版自然语言制卡、AI API合同、受约束编译、澄清与拒绝、实际API评测、后续UI／hook边界。
+14. [14-card-identity-and-assets.md](14-card-identity-and-assets.md)：数字GUID与prefab/text身份、Manifest与包内资产、R9原版资源复用、累计编辑、多Mod别名与证据边界。
+15. [15-multimod-player-lifecycle.md](15-multimod-player-lifecycle.md)：多Mod资源族、安装内新号预约、namespace／clone、同号过渡、正式玩家流程与服务器裸GUID边界。
 
 第四批归档入口及证据边界见[2026-10-18检查记录](verification-2026-10-18.md)。
 
@@ -27,6 +29,8 @@
 随后获用户授权的六份API卡牌独立真机抽测见[设备检查记录](verification-2026-10-18-native-device.md)；使用纯原版B4和独立候选，未合并mod2。
 
 此次提交／推送前的单测与归档回放检查见[发布前检查](verification-2026-10-18-publication.md)，不将离线复查写成新战斗或新在线API结果。
+
+2026-10-19资源关系与R9经验归档见[第23章](../23.卡牌身份与资源映射/README.md)及[归档检查](verification-2026-10-19-card-assets.md)。3次真实API、70项游戏检查来自此前产品验收；这次文档整理没有新API或设备操作。
 
 只做基础改版时不必通读高级章节。处理新技能或已有语义接口时先读10／11，再按链接查[第21章](../21.语义调试与技能扩展实战/README.md)；资源切换查[第20章05](../20.工程体验跃迁-资源门卫与教程跳过/05.必选资源切换实战/README.md)。运行时归档校验见[2026-10-15检查记录](verification-2026-10-15.md)，本地化经验归档见[2026-10-16检查记录](verification-2026-10-16.md)。
 

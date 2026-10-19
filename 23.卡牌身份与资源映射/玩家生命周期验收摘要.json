@@ -1,0 +1,307 @@
+{
+  "schema": 1,
+  "date": "2026-10-20",
+  "candidate": {
+    "revision": "r11-identity-rc5",
+    "sha256": "6cbc6f2011a3bf1f1eb2b0868a6dd9d02f89c8486ced87d3efe0c34e366e63f5",
+    "build_receipt": "pvzh-launcher/native-r11/dist/r11-identity-rc5.json"
+  },
+  "facts": [
+    {
+      "id": "cross_mod_identity_migration",
+      "label": "旧R10同号身份迁移",
+      "status": "PASS",
+      "summary": "旧R10保存A牌组后升级R11并切B，同号异身份的两种新卡引用精确移除；一副逻辑牌组40→32，原五副及元数据保持，本次库存字节未变。",
+      "sources": [
+        "pvzh-launcher/native-r11/evidence/r10-to-r11-identity-migration.json"
+      ]
+    },
+    {
+      "id": "legacy_clone_and_cn_identity",
+      "label": "旧式clone与CN身份保持",
+      "status": "PASS",
+      "summary": "显式clone继承namespace，同身份重复应用和复制后只改CN均无玩家文件清理，卡表SHA保持。",
+      "sources": [
+        "pvzh-launcher/native-r11/evidence/legacy-clone-identity-device.json"
+      ]
+    },
+    {
+      "id": "installation_guid_reservations",
+      "label": "安装内GUID预约",
+      "status": "PASS",
+      "summary": "两个项目与取消预览取得900004/900005/900006三个不同未提交预约，显式重用拒绝；最终恢复前后预约登记SHA一致。",
+      "sources": [
+        "pvzh-launcher/native-r11/evidence/guid-allocation-device.json",
+        "pvzh-launcher/native-r11/evidence/reservation-after-restore.json"
+      ]
+    },
+    {
+      "id": "offline_identity_and_player_file_transactions",
+      "label": "离线身份与存储故障检查",
+      "status": "PASS",
+      "summary": "分配34项、身份20例、真实Safety/Codec配桌面存储替身18例376断言通过。修前备份损坏/缺失仍提交的两项FAIL保留；不冒充Android断电测试。",
+      "sources": [
+        "pvzh-launcher/native-r11/evidence/guid-allocation-checks.json",
+        "pvzh-launcher/native-r11/evidence/card-identity-offline.json",
+        "pvzh-launcher/native-r11/evidence/identity-transactions-offline.json"
+      ]
+    },
+    {
+      "id": "installed_candidate_hash_and_startup",
+      "label": "最终候选安装与启动",
+      "status": "PASS",
+      "summary": "RC5实际安装SHA与发布APK一致，正式游戏和完整冷启动均通过，22 Java和62 runtime/vendor源文件与包一致。",
+      "sources": [
+        "pvzh-launcher/native-r11/evidence/release-audit-r11.json",
+        "pvzh-launcher/native-r11/evidence/cold-readback-rc5.json"
+      ]
+    },
+    {
+      "id": "collection_render_token_and_saved_ui_deck",
+      "label": "收藏、Token与原版牌组UI",
+      "status": "PASS",
+      "summary": "RC5原版收藏和组牌卡面正常；普通新卡各4，Token0且无普通列表项；原版Controller移除/重新加入910001并由原版View保存40张。导航/编辑由明确授权的原生signal/Controller辅助，不声称逐按钮手点建满40张。",
+      "sources": [
+        "pvzh-launcher/native-r11/evidence/collection-render-rc5.json",
+        "pvzh-launcher/native-r11/evidence/flow-ui-edit-rc5.json"
+      ]
+    },
+    {
+      "id": "formal_original_pve_node_and_saved_deck_selection",
+      "label": "正式PvE节点与保存牌组",
+      "status": "PASS",
+      "summary": "真实当前植物任务002、LocalPveGameContext、PveMode3、非fixture/非headless；原版Getter得到保存40张，实际初始牌库36+手牌4精确匹配。",
+      "sources": [
+        "pvzh-launcher/native-r11/evidence/formal-initial-rc5.json"
+      ]
+    },
+    {
+      "id": "natural_new_card_play_and_resolution",
+      "label": "新卡正常出牌与结算",
+      "status": "PASS",
+      "summary": "910001经ADB正常拖拽命中原版投放槽，原版PlayCardCommand打出高地；第一张被原版消灭，第4回合自然抽到另一张并正常出场实际攻击。未指定抽牌、注入伤害或解除fixture保护；早期坐标未命中记录保留。",
+      "sources": [
+        "pvzh-launcher/native-r11/evidence/formal-newcard-play-rc5.json",
+        "pvzh-launcher/native-r11/evidence/formal-after-turn1-rc5.json",
+        "pvzh-launcher/native-r11/evidence/formal-newcard-second-play-rc5.json"
+      ]
+    },
+    {
+      "id": "natural_game_over_recordwin_and_offline_reward_boundary",
+      "label": "自然胜负、进度与离线奖励边界",
+      "status": "PASS",
+      "summary": "原版自然结算won=true/conceded=false/was_pve=true/PveMode3；观察到自然RecordWin，任务002 wins0→1，当前003，正常继续返回地图。离线任务进度/结果页通过，未验证服务器奖励同步。",
+      "sources": [
+        "pvzh-launcher/native-r11/evidence/formal-after-second-attack-rc5.json",
+        "pvzh-launcher/native-r11/evidence/formal-return-rc5.json"
+      ]
+    },
+    {
+      "id": "full_cold_start_same_deck_and_progress",
+      "label": "完整冷启动后同牌组与进度",
+      "status": "PASS",
+      "summary": "全进程停止再启动后9项检查通过：同一副40张序列、两新卡各4、Token0、任务002 wins1和当前003保持；原五副牌组不变。",
+      "sources": [
+        "pvzh-launcher/native-r11/evidence/cold-readback-rc5.json"
+      ]
+    },
+    {
+      "id": "final_current_snapshot_restore",
+      "label": "本轮现场恢复",
+      "status": "PASS",
+      "summary": "21项恢复检查通过：223缓存、3官方清单、66账户/偏好字节权限SELinux；20变化恢复、46未变、0新增隔离；原Mod2实际加载与原全false勾选分别恢复，新增5项目禁用，网络复原、游戏停止、RC5保留；预约登记SHA一致。首轮只读tar引号失败保留，未在失败前改写账户/资源。",
+      "sources": [
+        "pvzh-launcher/native-r11/evidence/final-device-restore.json",
+        "pvzh-launcher/native-r11/evidence/reservation-after-restore.json"
+      ]
+    }
+  ],
+  "limitations": [
+    "本机持久预约不保证跨设备全局数值唯一；外部同号不自动重写或逐卡合并，实际整文件赢家决定生效卡表。",
+    "服务器裸GUID没有来源字段；本轮离线验收，未扩展官方同步/PvP协议，未验证服务器奖励到账。",
+    "无manifest的外国ZIP更换SHA且无稳定同源声明时保守视为新来源；同一legacy namespace/GUID/prefab内语义重用不能自动区分普通修改。",
+    "正式流程覆盖一副40张测试牌组、植物任务002及代表新卡，非所有英雄/技能/关卡/外国改版的穷举验收。Syndrome沿用R10的特定原包历史结果。",
+    "本轮未调用AI API；公开Python v1制卡合同未因Android产品更新而升级。",
+    "源码仅本地Git归档，不附游戏载荷/账号/密钥/签名；重建仍依赖外部原APK及SDK等。"
+  ],
+  "finalfacts_sha256": "151e2e99b29bacd3ba94ed7bdb3d2ee5c4a56067b1c5d9494ac1fdcd5113d5c9",
+  "historical_results_retested": false,
+  "pre_existing_library_files_preserved": 23,
+  "source_fingerprints": [
+    {
+      "path": "pvzh-launcher/native-r10/docs/PLAYER-CARDS.md",
+      "sha256": "c2474f1406521556ce43d56451529fc9846a2c71418756ff6e74023df8d763f3",
+      "bytes": 12367
+    },
+    {
+      "path": "pvzh-launcher/native-r10/docs/RELEASE-VALIDATION.md",
+      "sha256": "c3df5ed345002d12b7df8a5a242eb74c63903d1e20c40454b9ce24be1bac51e6",
+      "bytes": 10781
+    },
+    {
+      "path": "pvzh-launcher/native-r10/evidence/release-audit.json",
+      "sha256": "7fb8a3ee8500e9ed9f4292ee5180bc07c206f7a983b4cc027c6fd6217ec35082",
+      "bytes": 18093,
+      "source_status": "PASS"
+    },
+    {
+      "path": "pvzh-launcher/native-r10/experiments/syndrome-20261019/README.md",
+      "sha256": "5bf8ead06a76176326a363c2a5148529c5b727d9989fd89c09aee5e563a73806",
+      "bytes": 7152
+    },
+    {
+      "path": "pvzh-launcher/native-r10/experiments/syndrome-20261019/deployment-check.json",
+      "sha256": "7d9f6d9d8c70e565dec64e522e05316e135640de3a2a1af39afdfa4f9321cda1",
+      "bytes": 71548,
+      "source_status": "PASS"
+    },
+    {
+      "path": "pvzh-launcher/native-r10/experiments/syndrome-20261019/evidence/final-device-restore.json",
+      "sha256": "b0cf7c96c9870074f9e99d356dbdd19f38b59b6725b1c2c90f35bafb2cf4fd6e",
+      "bytes": 54288,
+      "source_status": "PASS"
+    },
+    {
+      "path": "pvzh-launcher/native-r10/experiments/syndrome-20261019/evidence/resource-render-1/result.json",
+      "sha256": "8913dd08b4ed0faeabd953adf99c3d20b353bb5ab4ab8d39e0d2a3e633cdb3b9",
+      "bytes": 4800,
+      "source_status": "PASS"
+    },
+    {
+      "path": "pvzh-launcher/native-r10/experiments/syndrome-20261019/log-findings.json",
+      "sha256": "61976cac6aac8c0124f930c4245cb3cfaa293a3722e0f11909015c505fdd6121",
+      "bytes": 753
+    },
+    {
+      "path": "pvzh-launcher/native-r11/android/java/com/pvzh/sharecode/NativeCardIdentityGuard.java",
+      "sha256": "6fb2e57186631f3ea490858da538b59823194543d132676f991c23398508d7b7",
+      "bytes": 3769
+    },
+    {
+      "path": "pvzh-launcher/native-r11/android/java/com/pvzh/sharecode/NativeGuidAllocator.java",
+      "sha256": "61b4f74cac652ea53edb75dce4811db6f179ff250d0021fcbcb3d699a144e50b",
+      "bytes": 7121
+    },
+    {
+      "path": "pvzh-launcher/native-r11/android/java/com/pvzh/sharecode/NativeIdentity.java",
+      "sha256": "d2221a844db7eca1cbf796443dd15f5d0dbcb207d3b1bba4abb83ab582091121",
+      "bytes": 3838
+    },
+    {
+      "path": "pvzh-launcher/native-r11/android/java/com/pvzh/sharecode/PlayerCardSafety.java",
+      "sha256": "9fa43be3c9929c702402a5adbd4880e700d7b034057c5c76cb55e04d95364f86",
+      "bytes": 6605
+    },
+    {
+      "path": "pvzh-launcher/native-r11/dist/r11-identity-rc5.json",
+      "sha256": "696b9eaf7932e45acf5072401d13f2b85e7e2d588baa6ff21d201ba77a95f0d0",
+      "bytes": 11848
+    },
+    {
+      "path": "pvzh-launcher/native-r11/evidence/card-identity-offline.json",
+      "sha256": "6fbf7d28c29bfa9cc4339054c2b8bc88071aa9a9e493581320f713abe61de646",
+      "bytes": 8962,
+      "source_status": "PASS"
+    },
+    {
+      "path": "pvzh-launcher/native-r11/evidence/cold-readback-rc5.json",
+      "sha256": "6d5bffdc99b74b895898aad7bb17be811f6633af0e0cefa4a18f8c710ab9bbed",
+      "bytes": 1072,
+      "source_status": "PASS"
+    },
+    {
+      "path": "pvzh-launcher/native-r11/evidence/collection-render-rc5.json",
+      "sha256": "67807f52151825765ce8c44cdfe5c030851d16fd078786468b1117218728a5a6",
+      "bytes": 4486
+    },
+    {
+      "path": "pvzh-launcher/native-r11/evidence/final-device-restore.json",
+      "sha256": "105a9685cffcaeca8a271e79dd6764e52068d8874e1f815bb0070f613a55c1af",
+      "bytes": 2544,
+      "source_status": "PASS"
+    },
+    {
+      "path": "pvzh-launcher/native-r11/evidence/flow-ui-edit-rc5.json",
+      "sha256": "ab94cda5d243ef55f6c9fa4e022791e08532030ff17cbabc83cf2671f9c39c8f",
+      "bytes": 8287
+    },
+    {
+      "path": "pvzh-launcher/native-r11/evidence/formal-after-second-attack-rc5.json",
+      "sha256": "ec954e0ebd80cb8820668c555275f77f1e1927a84bfcc3efa45ea6599514e58f",
+      "bytes": 31277
+    },
+    {
+      "path": "pvzh-launcher/native-r11/evidence/formal-after-turn1-rc5.json",
+      "sha256": "73ca951d220778992b93fa2aed81bd370625cbaab579138d6dcc017ad2f59c3a",
+      "bytes": 10783
+    },
+    {
+      "path": "pvzh-launcher/native-r11/evidence/formal-initial-rc5.json",
+      "sha256": "93f901f53d47c3edd84496081b801f81b4a4fdea9459ce3be3f43be0260be094",
+      "bytes": 6573
+    },
+    {
+      "path": "pvzh-launcher/native-r11/evidence/formal-newcard-play-rc5.json",
+      "sha256": "16bd4e326e6b1330ba1ae7e6c5a8832cca47be9b86dade1a62b5790f4fad70a5",
+      "bytes": 35299
+    },
+    {
+      "path": "pvzh-launcher/native-r11/evidence/formal-newcard-second-play-rc5.json",
+      "sha256": "f3de62885b629c4c9781a9409251659fdb59c6bc6cfcd16377a7b289d66ed57c",
+      "bytes": 12937
+    },
+    {
+      "path": "pvzh-launcher/native-r11/evidence/formal-return-rc5.json",
+      "sha256": "4ae9b4247487af62ec1a974038d80fc23d9645b49d64690ec40c25106787a10c",
+      "bytes": 31171
+    },
+    {
+      "path": "pvzh-launcher/native-r11/evidence/guid-allocation-checks.json",
+      "sha256": "c3c383b6a18a00428e0a132bd7ccfe58386a047030ef1f390f9cb01b7a24b4eb",
+      "bytes": 4086,
+      "source_status": "PASS"
+    },
+    {
+      "path": "pvzh-launcher/native-r11/evidence/guid-allocation-device.json",
+      "sha256": "bf43e44253ed21004c1c6b8b488b39acc4d4623759a909e20cacd2a3476e3ae0",
+      "bytes": 320,
+      "source_status": "PASS"
+    },
+    {
+      "path": "pvzh-launcher/native-r11/evidence/identity-transactions-offline.json",
+      "sha256": "085bac088b2a2e3619a5132b8d2bef3e580facd86f1273ff5b0b4e71188a80ab",
+      "bytes": 3723,
+      "source_status": "PASS"
+    },
+    {
+      "path": "pvzh-launcher/native-r11/evidence/legacy-clone-identity-device.json",
+      "sha256": "1a77e5678c89e5b438e8822bd2ff39b4ae37bf5ec2700cae41bb1cc43de1bed8",
+      "bytes": 256,
+      "source_status": "PASS"
+    },
+    {
+      "path": "pvzh-launcher/native-r11/evidence/r10-to-r11-identity-migration.json",
+      "sha256": "9bd0c2831109e04a4d930c1428fc81bd4847c1e7fa26c4941585f4f023074290",
+      "bytes": 725,
+      "source_status": "PASS"
+    },
+    {
+      "path": "pvzh-launcher/native-r11/evidence/release-audit-r11.json",
+      "sha256": "8dfe914a2e4053742fef19583717c9c0b727d046e59ebb326349e601e13a8ca3",
+      "bytes": 2323,
+      "source_status": "PASS"
+    },
+    {
+      "path": "pvzh-launcher/native-r11/evidence/reservation-after-restore.json",
+      "sha256": "4d223c6b46e22f485b36afc6a384146f3969d68162fe877ac9f530597b2cf8e0",
+      "bytes": 242,
+      "source_status": "PASS"
+    },
+    {
+      "path": "pvzh-launcher/native-r11/runtime/card-collection-assets.js",
+      "sha256": "0dbfd433784a8a6f77169cba5554cb8cc21cacf38940e99fe31424fa8eecf5d8",
+      "bytes": 7042
+    }
+  ],
+  "tool_scope": "Filtered documentation generation; no device/API/build/Git action; local Git publication is recorded separately."
+}
