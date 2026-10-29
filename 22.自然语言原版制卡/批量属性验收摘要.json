@@ -1,0 +1,420 @@
+{
+  "schema": 1,
+  "revision": "Android R23 batch RC4",
+  "date_local": "2026-10-24",
+  "archive_scope": "Documentation plus filtered offline, real-provider and original-engine receipts; historical Library/public Python v1 unchanged; no runtime service, raw sessions, credentials or game assets",
+  "status": "SCOPED_VALIDATION_WITH_KNOWN_LIMITS",
+  "offline_evidence": [
+    {
+      "source_workspace_relative": "pvzh-launcher/native-r23/evidence/r23-review-checks.json",
+      "receipt_sha256": "08e39f8fa4905e962fca2e69010600ab7ec268e685c297e1ef19278d70176548",
+      "status": "PASS",
+      "checks": 72,
+      "evidence_kind": "LOCAL_DATA_OR_PROTOCOL",
+      "device_calls": 0,
+      "real_ai_claim": false,
+      "runtime_pass_claim": false,
+      "stock_definitions": 650,
+      "matched_units": 415,
+      "changed_units": 414,
+      "zero_attack_units_checked": 37,
+      "summary_chars": 20773,
+      "full_local_facts_chars": 1828309,
+      "json_implementation": "desktop org.json20240303",
+      "revision": "RC2 initial offline snapshot"
+    },
+    {
+      "source_workspace_relative": "pvzh-launcher/native-r23/evidence/r23-review-android-checks.json",
+      "receipt_sha256": "5240cc690637b31c54546813571e8fc1f65a43537d4a3f4b7c2e303ec853446e",
+      "status": "PASS",
+      "checks": 72,
+      "evidence_kind": "LOCAL_DATA_OR_PROTOCOL",
+      "device_calls": 0,
+      "real_ai_claim": false,
+      "runtime_pass_claim": false,
+      "stock_definitions": 650,
+      "matched_units": 415,
+      "changed_units": 414,
+      "zero_attack_units_checked": 37,
+      "summary_chars": 20783,
+      "full_local_facts_chars": 1828400,
+      "json_implementation": "Android36.1 official JSON with annotation-only stubs",
+      "revision": "RC2 initial offline snapshot"
+    },
+    {
+      "source_workspace_relative": "pvzh-launcher/native-r23/evidence/batch-sandbox-checks.json",
+      "receipt_sha256": "b04f9f386dde7f33ca354c02c753090dcc51dcfd14130a0d61c59b6cf9fa1e8b",
+      "status": "PASS",
+      "checks": 1241,
+      "evidence_kind": "LOCAL_DATA_OR_PROTOCOL",
+      "device_calls": 0,
+      "real_ai_claim": false,
+      "runtime_pass_claim": false,
+      "changed_units": 414,
+      "summary_chars": 2843,
+      "json_implementation": "desktop org.json20240303",
+      "revision": "RC2 initial offline snapshot"
+    },
+    {
+      "source_workspace_relative": "pvzh-launcher/native-r23/evidence/batch-sandbox-android-checks.json",
+      "receipt_sha256": "8b0431b6fe2a64584e2f4d8ac2ebd1264ef4639906a6632e656109cbf9b41ecc",
+      "status": "PASS",
+      "checks": 1241,
+      "evidence_kind": "LOCAL_DATA_OR_PROTOCOL",
+      "device_calls": 0,
+      "real_ai_claim": false,
+      "runtime_pass_claim": false,
+      "changed_units": 414,
+      "summary_chars": 2844,
+      "json_implementation": "official Android36.1 JSON with annotation-only stubs",
+      "revision": "RC2 initial offline snapshot"
+    },
+    {
+      "source_workspace_relative": "pvzh-launcher/native-r23/evidence/r23-tool-integration-checks.json",
+      "receipt_sha256": "ca71d1ca83fd5f9cdb0531efffd43969e278358dd6ccb442226fdaf745343073",
+      "status": "PASS",
+      "checks": 32,
+      "evidence_kind": "LOCAL_DATA_OR_PROTOCOL",
+      "device_calls": 0,
+      "real_ai_claim": false,
+      "runtime_pass_claim": false,
+      "unit_count": 415,
+      "changed_count": 414,
+      "revision": "RC2 initial offline snapshot"
+    },
+    {
+      "source_workspace_relative": "pvzh-launcher/native-r23/evidence/r23-review-heap256-checks.json",
+      "receipt_sha256": "cf77737820cabc8c0d3d8260e8807daf539391a56c846e609847f808bc4ca6b2",
+      "revision": "RC3 low-memory correction",
+      "status": "PASS",
+      "checks": 73,
+      "heap_limit_mb": 256,
+      "evidence_kind": "LOCAL_BOUNDED_JVM_NOT_ART",
+      "runtime_pass_claim": false,
+      "real_ai_claim": false,
+      "summary_chars": 20773,
+      "full_local_facts_chars": 1497781
+    },
+    {
+      "source_workspace_relative": "pvzh-launcher/native-r23/evidence/r23-review-android-heap256-checks.json",
+      "receipt_sha256": "27177d7d04616533cab5d1f4f07acab8fc012ebd3272f4a2e55da9b2a5ab37f5",
+      "revision": "RC3 low-memory correction",
+      "status": "PASS",
+      "checks": 73,
+      "heap_limit_mb": 256,
+      "evidence_kind": "LOCAL_BOUNDED_JVM_NOT_ART",
+      "runtime_pass_claim": false,
+      "real_ai_claim": false,
+      "summary_chars": 20783,
+      "full_local_facts_chars": 1497872
+    },
+    {
+      "source_workspace_relative": "pvzh-launcher/native-r23/evidence/r23-review-android-memory-smoke-heap128-checks.json",
+      "receipt_sha256": "ecef09f39de592475cd105f181ed88b8b143d0e99f99773ff652a890e7981816",
+      "revision": "RC3 low-memory correction",
+      "status": "PASS",
+      "checks": 13,
+      "heap_limit_mb": 128,
+      "evidence_kind": "LOCAL_BOUNDED_JVM_NOT_ART",
+      "runtime_pass_claim": false,
+      "real_ai_claim": false,
+      "retained_unrelated_bytes": 33554432,
+      "replay_cycles": 4,
+      "summary_chars": 20783,
+      "full_local_facts_chars": 1497872
+    },
+    {
+      "source_workspace_relative": "pvzh-launcher/native-r23/evidence/batch-memory-android-128m-3f5882ed.json",
+      "receipt_sha256": "09197957f3ed9910905430cdf1c3ad8b97b44a861664d4844ac2056650e24423",
+      "revision": "RC3 low-memory correction",
+      "status": "PASS",
+      "checks": null,
+      "heap_limit_mb": 128,
+      "evidence_kind": "LOCAL_BOUNDED_JVM_NOT_ART",
+      "runtime_pass_claim": false,
+      "real_ai_claim": false,
+      "source_unchanged_after_facts": true,
+      "required_skill_reads": 0,
+      "source_changed_during_test": []
+    },
+    {
+      "source_workspace_relative": "pvzh-launcher/native-r23/evidence/quality-service-checks.json",
+      "receipt_sha256": "84fe433635f3dcb1b8d29d4ea93989745b37773ac6037de21724a41f732ba51c",
+      "revision": "Final RC4 source verification",
+      "status": "PASS",
+      "checks": 65,
+      "evidence_kind": "LOCAL_DATA_OR_PROTOCOL",
+      "real_ai_claim": false,
+      "runtime_pass_claim": false,
+      "localhost_scripted_http_requests": 81
+    },
+    {
+      "source_workspace_relative": "pvzh-launcher/native-r23/evidence/quality-service-android-checks.json",
+      "receipt_sha256": "e65830a1b5141491789419455c3ba88ef6dbdbb279000ec33e112021d1875754",
+      "revision": "Final RC4 source verification",
+      "status": "PASS",
+      "checks": 65,
+      "evidence_kind": "LOCAL_DATA_OR_PROTOCOL",
+      "real_ai_claim": false,
+      "runtime_pass_claim": false,
+      "localhost_scripted_http_requests": 81
+    },
+    {
+      "source_workspace_relative": "pvzh-launcher/native-r23/evidence/r23-tool-integration-checks.json",
+      "receipt_sha256": "fbee9614892be2566a6ffc1bf27df0a8fd6587b97a26672d53609fdfaa47b9f5",
+      "revision": "Final RC4 source verification",
+      "status": "PASS",
+      "checks": 32,
+      "evidence_kind": "LOCAL_DATA_OR_PROTOCOL",
+      "real_ai_claim": false,
+      "runtime_pass_claim": false,
+      "source_changed_during_test": []
+    }
+  ],
+  "observed_stock": {
+    "definitions": 650,
+    "selected_units": 415,
+    "plant_units": 212,
+    "zombie_units": 203,
+    "changed_units": 414,
+    "already_9_9_units": 1,
+    "zero_attack_components_materialized": 37,
+    "scope": "Only the pinned stock input; not universal custom-Mod classification"
+  },
+  "runtime_validation": {
+    "status": "SCOPED_PASS",
+    "revision": "r23-batch-rc4",
+    "candidate_origin": "unchanged real-AI plan, normally accepted and deployed",
+    "candidate_sha256": "c824bdd7f4ff7e95bc2d562acada865dd6ef583b60f4a6922b9f23b07c370b68",
+    "device": "Pixel 6",
+    "checks": 14,
+    "representative_guids": [
+      28,
+      326,
+      77
+    ],
+    "all_three_display_hand_board_stats": [
+      9,
+      9
+    ],
+    "guid77_real_attack_component": true,
+    "fresh_process": true,
+    "cold_pid": "24262",
+    "same_process_survived": true,
+    "crash_buffer_empty_for_this_scene": true,
+    "screenshots_used": false,
+    "touch_input_used": false,
+    "visual_animation_verified": false,
+    "warm_restart_cleanup_verified": false,
+    "all_415_cards_played": false,
+    "all_415_locally_checked": true,
+    "receipts": [
+      {
+        "source_workspace_relative": "pvzh-launcher/native-r23/evidence/game/rc4-api-unit99/result.json",
+        "receipt_sha256": "f89e4b3fbb0b34aa4921a9ca54d524c660ee4949c1e2fc606fe96e2eb5f97a85"
+      },
+      {
+        "source_workspace_relative": "pvzh-launcher/native-r23/evidence/game/rc4-api-unit99/survival.json",
+        "receipt_sha256": "6a411db8f841dd2841c8ded9c426ed6a355b8d71aa4385875b6d173ce385a080"
+      },
+      {
+        "source_workspace_relative": "pvzh-launcher/native-r23/evidence/game-launch-rc4-api-unit99.json",
+        "receipt_sha256": "ddedd933cf854ed13ecbed999906bc7e89c793939b8418099546410c07639cb6"
+      }
+    ],
+    "results_document_workspace_relative": "pvzh-launcher/native-r23/docs/RELEASE-VALIDATION.md"
+  },
+  "authority_boundaries": {
+    "stats_only_derived_from_actual_diff": true,
+    "all_target_stat_checks_local": true,
+    "skill_or_structure_requires_full_candidate_read": true,
+    "cn_only_requires_text_and_reference_review": true,
+    "sandbox_language": "pvzh-ops-v1",
+    "arbitrary_js_supported": false,
+    "preview_writes_mod": false,
+    "model_can_approve_mod": false,
+    "ledger_replay_basis": "actual compiler parent draft, not original request basis",
+    "public_python_v1_upgraded": false,
+    "runtime_hooks_published_in_library": false
+  },
+  "no_credentials_or_game_assets_embedded": true,
+  "initial_rc2_source_code_sha256": {
+    "NativeBatch.java": "c8b811ba06cb2c5d1724e443cfbdef00f3e6e66272b5c3a04c62ebe1d96c669c",
+    "NativeSandbox.java": "0debe1e65e901589d6ebf33a22568c2ae5455a7142f51f94849998e0942d364e",
+    "NativeCandidateFacts.java": "80dee4c2a1b0007c2497e03d684c3608092d625971db470782fb37ba4940bcc8",
+    "NativeQuality.java": "563d8ce077389f00db128e3c5e21e73f9676a5a11783d136b8e3587914115ff5",
+    "NativeChat.java": "668ee20e760d500247a0aff728ee2f8fece21dd2f4cd472e39eacd739a7a1891"
+  },
+  "rc3_source_code_sha256": {
+    "NativeBatch.java": "180e94db50b594e55db949f3835eb9f8e09bbf5b876f760f3f2b54135317d87f",
+    "NativeSandbox.java": "0debe1e65e901589d6ebf33a22568c2ae5455a7142f51f94849998e0942d364e",
+    "NativeCandidateFacts.java": "f7d53fb5e75cbe338c10af6c5d3d62e5384efc1315451b51c90a82d861da11b9",
+    "NativeQuality.java": "563d8ce077389f00db128e3c5e21e73f9676a5a11783d136b8e3587914115ff5",
+    "NativeChat.java": "941a77e5e6bf303ebf342130e5063c216e04e2ec5799407586f0c566b8f0c8a2"
+  },
+  "ai_validation": {
+    "status": "FINAL_SCOPED_PASS_WITH_PRIOR_FAILURE_PRESERVED",
+    "rc2_failure": {
+      "source_workspace_relative": "pvzh-launcher/native-r23/evidence/rc2-live-ai-memory-failure.json",
+      "receipt_sha256": "8313ead64eb180644b4902fc4ef50b2f3aaa14ed88847f0130d46a87d94e4ffa",
+      "status": "FAIL_PRESERVED",
+      "stage": "first live AI candidate review on RC2",
+      "error": "java.lang.OutOfMemoryError at NativeCandidateFacts.verifyBatchScope / NativeJson.copy",
+      "android_heap_limit_bytes": 268435456,
+      "provider_authoring_succeeded": true,
+      "candidate_compiled": true,
+      "proposal_published": false,
+      "gameplay_crash": false
+    },
+    "rc3_live_ai": "PASS_SCOPED",
+    "credentials_or_full_provider_transcripts_archived": false,
+    "final_revision": "r23-batch-rc4",
+    "final_provider_model": "deepseek-flash",
+    "real_provider": true,
+    "novice_request": "把所有单位都改成9/9。",
+    "plan_chars": 203,
+    "operation_count": 1,
+    "matched_units": 415,
+    "actual_changed_units": 414,
+    "preview_samples": 8,
+    "required_full_skill_reads": [],
+    "static_review_outcome": "reviewed_proposal",
+    "provider_usage": {
+      "input_tokens": 41217,
+      "output_tokens": 1411,
+      "total_tokens": 42628,
+      "request_count": 4,
+      "accounted_requests": 4,
+      "complete": true,
+      "available": true,
+      "input_complete": true,
+      "output_complete": true
+    },
+    "provider_usage_scope": "sum of independent intent, author tool turns and static reviewer; not one context occupancy",
+    "tool_calls": [
+      {
+        "name": "query_units",
+        "executed": true,
+        "returned_chars": 1623,
+        "error": null
+      },
+      {
+        "name": "run_sandbox",
+        "executed": true,
+        "returned_chars": 4057,
+        "error": null
+      }
+    ],
+    "saved_candidate_sha256": "c824bdd7f4ff7e95bc2d562acada865dd6ef583b60f4a6922b9f23b07c370b68",
+    "same_candidate_game_checked": true,
+    "followup_exception": {
+      "status": "PASS",
+      "card_guid": 10,
+      "card_name": "豌豆射手",
+      "before": "9/9",
+      "after": "10/10",
+      "other_cards_preserved": true,
+      "rejected_without_saving": true
+    },
+    "memory_case": {
+      "status": "PASS",
+      "original_messages": 30,
+      "raw_archive_chars": 90195,
+      "baseline_history_projection_chars": 40691,
+      "compacted_history_projection_chars": 16624,
+      "kept_recent_for_this_test": 4,
+      "ui_default_keep_recent": 8,
+      "actual_request_used_memory": true,
+      "raw_messages_retained": true,
+      "automatic_model_compaction": false
+    },
+    "manual_plan_substitution": false,
+    "fixture_assertion_correction": {
+      "status": "CORRECTED_TEST_ASSERTION_PRIOR_FAIL_RETAINED",
+      "wrong_expected_guid": 326,
+      "correct_actual_guid": 10,
+      "card_name": "豌豆射手",
+      "model_plan_changed": false,
+      "additional_api_retry_for_correction": false,
+      "source_note": "Expected GUID corrected from326 to10 using actual original card identity; no model plan/code changed, no API retry needed.",
+      "receipt": {
+        "source_workspace_relative": "pvzh-launcher/native-r23/evidence/live-ai/novice-result.json",
+        "receipt_sha256": "07cefc1db027920bb62b152c438aa76dbb22ae5aca7216a7ee11a4fd6812d200"
+      }
+    },
+    "summary_receipt": {
+      "source_workspace_relative": "pvzh-launcher/native-r23/evidence/live-ai-summary.json",
+      "receipt_sha256": "b9a7afef80511e2fd7d7527c0a484e6f778d5dd382b01c7226bf87c1f97d6387"
+    }
+  },
+  "known_local_test_limit": {
+    "source_workspace_relative": "pvzh-launcher/native-r23/evidence/r23-review-android-heap128-failure.json",
+    "receipt_sha256": "8786bc88ff245411c8f5eb0a3eabdff8d6241621b0e1d44570fca687e3f2c31b",
+    "status": "FAIL_PRESERVED",
+    "heap_limit_mb": 128,
+    "scope": "The broad 73-check fixture retains many complete adversarial card-table clones and exceeds128MiB; focused production read-back/replay passes128MiB, full suite passes256MiB",
+    "not_a_gameplay_claim": true
+  },
+  "runtime_validation_history": [
+    {
+      "status": "SCOPED_PASS_RC2",
+      "revision": "RC2",
+      "candidate_sha256": "e3283cff957a7930a652db7480b32864d4a31f97e028372b362889962e152d7a",
+      "device": "Pixel 6",
+      "checks": 14,
+      "representative_guids": [
+        28,
+        326,
+        77
+      ],
+      "all_three_display_hand_board_stats": [
+        9,
+        9
+      ],
+      "guid77_real_attack_component": true,
+      "fresh_process": true,
+      "same_process_survived": true,
+      "crash_buffer_empty_for_this_scene": true,
+      "headless": true,
+      "screenshots_used": false,
+      "touch_input_used": false,
+      "visual_animation_verified": false,
+      "warm_restart_cleanup_verified": false,
+      "all_415_cards_played": false,
+      "all_415_locally_checked": true,
+      "receipts": [
+        {
+          "source_workspace_relative": "pvzh-launcher/native-r23/evidence/game/rc2-unit99/result.json",
+          "receipt_sha256": "fee64ac0581c19817813624dee7d778ca23caed51cfdf556a6479dacb8976b76"
+        },
+        {
+          "source_workspace_relative": "pvzh-launcher/native-r23/evidence/game/rc2-unit99/survival.json",
+          "receipt_sha256": "ffbfcdfd17045d2bc2c79ba526d62fc18202e0cb86c094c1b0544f788ad99416"
+        },
+        {
+          "source_workspace_relative": "pvzh-launcher/native-r23/evidence/game-launch.json",
+          "receipt_sha256": "933626192b873e490548132b1778dfb5055fee7ee4a26b9786b3d61dffd2d257"
+        }
+      ],
+      "results_document_workspace_relative": "pvzh-launcher/native-r23/docs/RELEASE-VALIDATION.md"
+    }
+  ],
+  "final_build": {
+    "source_workspace_relative": "pvzh-launcher/native-r23/dist/r23-batch-rc4.json",
+    "receipt_sha256": "6f139d714cbd6f38dcac304983805088ad7478c721f556678344f2a3e17e1222",
+    "revision": "r23-batch-rc4",
+    "apk_sha256": "9b247fb396a880a76bf5c5d0d9b159faf5993d7be148a5c36c700a0b8e3c7fb5",
+    "signature": "PASS",
+    "zipalign": "PASS",
+    "apk_not_published_in_library": true
+  },
+  "final_rc4_source_code_sha256": {
+    "NativeBatch.java": "180e94db50b594e55db949f3835eb9f8e09bbf5b876f760f3f2b54135317d87f",
+    "NativeSandbox.java": "0debe1e65e901589d6ebf33a22568c2ae5455a7142f51f94849998e0942d364e",
+    "NativeCandidateFacts.java": "f7d53fb5e75cbe338c10af6c5d3d62e5384efc1315451b51c90a82d861da11b9",
+    "NativeQuality.java": "563d8ce077389f00db128e3c5e21e73f9676a5a11783d136b8e3587914115ff5",
+    "NativeChat.java": "941a77e5e6bf303ebf342130e5063c216e04e2ec5799407586f0c566b8f0c8a2",
+    "NativeWorkbench.java": "484a64cecf2a559e1f779ab20e50a6e0eae312a873d9dd22fcd36b1f582d16a9",
+    "NativeToolLoop.java": "9d0d73c039239794dd294c5fd4e9484e8e695001d2c0e845c6ac822bdcf86212"
+  }
+}

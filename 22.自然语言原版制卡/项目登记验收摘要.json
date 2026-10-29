@@ -1,0 +1,428 @@
+{
+  "schema": 1,
+  "recorded_on": "2026-10-21",
+  "product": "Android R15 project registry and Spore Workshop",
+  "status": "TARGETED_VALIDATION_PASS_WITH_REMAINING_COVERAGE",
+  "public_python_v1_changed": false,
+  "library_runtime_or_game_assets_included": false,
+  "current_apk": {
+    "revision": "r15-registry-rc2",
+    "sha256": "374fe02609cf255f879988df4a967f5177fd2a653ff14d4de7da090504e24c2b",
+    "game_runtime_changed": false,
+    "report_reference": "native-r15/dist/r15-registry-rc2.json",
+    "report_sha256": "56508df3dd080015280b2f7bc228500894e26491390bcef8f4930a486fac1f9a",
+    "device_verified": "PASS"
+  },
+  "source_freeze": {
+    "status": "PASS",
+    "build_inputs_unchanged": 45,
+    "host_scripts_changed_only": true,
+    "report_reference": "native-r15/evidence/final-source-freeze.json",
+    "report_sha256": "b77378258e8c921ad8bf48172581c57c3f1ae255569ccc71496b81ce4af903f2"
+  },
+  "authoring_registry": {
+    "canonical_path": "authoring/registry.json",
+    "derived_markdown_path": "authoring/README.md",
+    "context_key": "project.authoring_registry",
+    "model_registry_is_instruction": false,
+    "model_authored_pass_is_trusted": false,
+    "members_and_consumers_rebuilt_from": "actual_card_table",
+    "initial_saved_card_definitions": 653,
+    "initial_spore_members": [
+      900014,
+      900015,
+      900016
+    ],
+    "initial_spore_consumer_count": 5,
+    "initial_inventory_is_snapshot_not_constant": true,
+    "new_subtype_added": false,
+    "final_spore_members": [
+      900014,
+      900015,
+      900016
+    ],
+    "final_spore_consumer_count": 3
+  },
+  "external_api": {
+    "model": "deepseek-flash",
+    "production_android_client_used": true,
+    "initial_fresh_sessions": 7,
+    "initial_empty_history_sessions": 7,
+    "initial_request_attempt_values": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "initial_proposals": 6,
+    "initial_accepted": 5,
+    "initial_rejected": 1,
+    "initial_recall_proposals": 0,
+    "registry_only_rejection_did_not_save": true,
+    "registry_only_acceptance_saved": true,
+    "recall_covered": [
+      "tag role and actual members",
+      "three card names and stats",
+      "per-instance first-event design",
+      "untested state and boundaries"
+    ],
+    "recall_implies_model_permanent_memory": false,
+    "planter_feedback_requests_documented": 3,
+    "counts_scope": "Initial seven stages and three separate planter feedback requests; not a universal model benchmark",
+    "initial_stage_sources": {
+      "registry-rejected": {
+        "report_reference": "native-r15/evidence/spore-api/registry-rejected-summary.json",
+        "report_sha256": "370d88e95d2d9dfdfa573bb471b34f6df54e7371fcdcc7eb5c94bce4fa3ee4cd"
+      },
+      "registry": {
+        "report_reference": "native-r15/evidence/spore-api/registry-summary.json",
+        "report_sha256": "a766cdfbd6bb1aeaf418a74c776f05d773168c50916da119dfd15125c1870e6c"
+      },
+      "create": {
+        "report_reference": "native-r15/evidence/spore-api/create-summary.json",
+        "report_sha256": "31f882054b3378a49647458090c247f986926c44390d165d2213df9c055f3850"
+      },
+      "planter": {
+        "report_reference": "native-r15/evidence/spore-api/planter-summary.json",
+        "report_sha256": "eec16df5cec7cd5b1402ea8e7607e2aaf589ba009dcc9350067573e7e2c84193"
+      },
+      "observer": {
+        "report_reference": "native-r15/evidence/spore-api/observer-summary.json",
+        "report_sha256": "903f7bb6dce0370f256f4da25a94b833c7f96feb3f324106d12a9413837f2913"
+      },
+      "recycler": {
+        "report_reference": "native-r15/evidence/spore-api/recycler-summary.json",
+        "report_sha256": "472e9711986cabbfddee4d9b572c0878c5803e61fba6d55780cf21309da7ad35"
+      },
+      "recall": {
+        "report_reference": "native-r15/evidence/spore-api/recall-summary.json",
+        "report_sha256": "a3961fee6f1d42ae9cfbe2edd7882816aa56c83fe8e2c62b139891bf3ed0583f"
+      }
+    },
+    "plan_sources": {
+      "900014": {
+        "report_reference": "native-r15/evidence/spore-api/planter-feedback3-actual-plan.json",
+        "report_sha256": "cc31a9fdc72bcfcc49eb49d0546431f7010c3259ce1a9dd838714c0eeb822f8f"
+      },
+      "900015": {
+        "report_reference": "native-r15/evidence/spore-api/observer-actual-plan.json",
+        "report_sha256": "695ab666057b362d45091e76f54a37b1fa4b3cc44eef1df555eae7109f367fa4"
+      },
+      "900016": {
+        "report_reference": "native-r15/evidence/spore-api/recycler-actual-plan.json",
+        "report_sha256": "95e48da2872d94cafb3948343af894afdb725b9465f9bc52657a53d772b9ac49"
+      }
+    },
+    "final_fresh_recall": {
+      "request_state": "completed",
+      "proposals": 0,
+      "scope": "Saved persistent-cost decision, original temporary failure, per-instance limits and remaining untested coverage; project notes not treated as trusted PASS",
+      "report_reference": "native-r15/evidence/spore-api/recall-final-summary.json",
+      "report_sha256": "6a3e9888ebc8190fbac94213553d35bd613bf4dd85759c0c99446b7e9dd81faa"
+    },
+    "complete_workflow": {
+      "status": "PASS",
+      "scope": "Actual phone AI workflow, not standalone mocked compiler",
+      "new_sessions": 11,
+      "session_attempts": 12,
+      "proposals": 9,
+      "accepted_proposals": 8,
+      "rejected_proposals": 1,
+      "read_only_recalls": 2,
+      "provider_responses_including_preflight": 13,
+      "final_recall_has_persistent_cost": true,
+      "credentials_in_report": false,
+      "feedback3_attempts": 2,
+      "feedback3_format_repair_reason": "对话外壳只允许message和plan两个字段",
+      "initial_seven_attempt_one_not_generalized_to_entire_workflow": true,
+      "report_reference": "native-r15/evidence/api-workflow-summary.json",
+      "report_sha256": "0992f1d04a63a97d28d821662528a83cfdd1dc418e89c8969a29d7c770eb4394"
+    }
+  },
+  "cards": [
+    {
+      "guid": 900014,
+      "name": "孢子播种机",
+      "cost": 3,
+      "attack": 2,
+      "health": 4,
+      "current_design": "Conjure two random spore plant fighters; only results from this source receive persistent -1 cost",
+      "temporary_discount_implemented": false
+    },
+    {
+      "guid": 900015,
+      "name": "菌网观察者",
+      "cost": 2,
+      "attack": 1,
+      "health": 4,
+      "current_design": "First other own spore plant played each turn gains permanent +1/+1; per source instance"
+    },
+    {
+      "guid": 900016,
+      "name": "腐殖回收站",
+      "cost": 4,
+      "attack": 2,
+      "health": 6,
+      "current_design": "First other own spore plant destroyed each turn draws one; per source instance"
+    }
+  ],
+  "offline": {
+    "registry_contract": {
+      "status": "PASS",
+      "checks": 34,
+      "scope": "Desktop actual Java registry only; no API, ADB or gameplay",
+      "report_reference": "native-r15/evidence/registry-contract.json",
+      "report_sha256": "d9f022342ec709f5cadd6c101cc0cc8dfa2a071e97185221ae565f261aa8efda"
+    },
+    "registry_flow": {
+      "status": "PASS",
+      "checks": 17,
+      "scope": "NativeProject/NativeBundle/Workbench clone with filesystem stubs",
+      "report_reference": "native-r15/evidence/registry-flow.json",
+      "report_sha256": "26aa41f6387f3e39f613fa3ad870d0c1d93d413df3f11d8973a08545f6a99127"
+    },
+    "registry_pending": {
+      "status": "PASS",
+      "checks": 18,
+      "scope": "Production Workbench and actual bundles with isolated Android/Store filesystem; no UI/device/API claim",
+      "report_reference": "native-r15/evidence/registry-pending.json",
+      "report_sha256": "a5e6fc53c6232ef0c9a685e063ee7736f876d4f417a57cf785846f8f328ecf59"
+    },
+    "tag_node": {
+      "status": "PASS",
+      "checks": 38,
+      "scope": "Real Java graph/card compiler; no engine execution",
+      "report_reference": "native-r15/evidence/tag-node.json",
+      "report_sha256": "590084d66201c434641f46026e17c870a0dcb7f2e58b35f958fd3454f1b15036"
+    },
+    "host_atomic_io": {
+      "status": "PASS",
+      "checks": 3,
+      "scope": "Actual Windows file sharing lock; host evidence writer only",
+      "app_or_device_changed": false,
+      "report_reference": "native-r15/evidence/host-atomic-io.json",
+      "report_sha256": "edeb26b4b7407d63588416adf7e043b8b83239dc0f3ceb5446deb1419eca90bb"
+    }
+  },
+  "original_engine": {
+    "planter": {
+      "status": "PASS",
+      "checks": 25,
+      "all_checks_pass": true,
+      "candidate_zip_sha256": "474101b7c344f12effb3b801929318c801d5f76242143c4e5c66399f21dae5e4",
+      "skill_plans_manually_substituted": false,
+      "scope": "Persistent discount only; old/other-source hands, double source, capacity and next-turn persistence",
+      "report_reference": "native-r15/evidence/game-planter-final/result.json",
+      "report_sha256": "78bd1d35ddf98788c78759ade79243034c1b2f71b898ec76687789b1977a8fcd"
+    },
+    "observer": {
+      "status": "PASS",
+      "checks": 29,
+      "all_checks_pass": true,
+      "candidate_zip_sha256": "474101b7c344f12effb3b801929318c801d5f76242143c4e5c66399f21dae5e4",
+      "skill_plans_manually_substituted": false,
+      "scope": "Self/untagged/enemy event scope; target buff, second event, turn reset and double instances",
+      "report_reference": "native-r15/evidence/game-observer-final/result.json",
+      "report_sha256": "531a33244990c6f873a259295371d155f623c2565a4851070bfa439f8484c5ac"
+    },
+    "recycler": {
+      "status": "PASS",
+      "checks": 37,
+      "all_checks_pass": true,
+      "candidate_zip_sha256": "474101b7c344f12effb3b801929318c801d5f76242143c4e5c66399f21dae5e4",
+      "skill_plans_manually_substituted": false,
+      "scope": "Untagged/enemy/self/bounce scope; real deck draw, second death, reset and double instances",
+      "report_reference": "native-r15/evidence/game-recycler-api-first/result.json",
+      "report_sha256": "f334f3aa113620b50fc649b77208d22ffc8e55621f4cdd3c2ebe8f49e6076f76"
+    },
+    "single_scene_checks_total": 91,
+    "checks_are_distinct_skill_count": false,
+    "touch_input_used": false,
+    "screenshots_used": false,
+    "visual_animation_verified": false,
+    "full_natural_match_verified": false,
+    "integration": {
+      "status": "PASS",
+      "checks": 23,
+      "all_checks_pass": true,
+      "candidate_zip_sha256": "474101b7c344f12effb3b801929318c801d5f76242143c4e5c66399f21dae5e4",
+      "skill_plans_manually_substituted": false,
+      "scope": "Observer boosts recycler, planter generates tagged members, death draws, next-turn generated member triggers observer and recycler",
+      "report_reference": "native-r15/evidence/game-integration-final-retry/result.json",
+      "report_sha256": "f4f3e95b4acf7ba9fc18092313b89c371050778800390ccd6138f63791c93cdf",
+      "prepared_from": "game-integration-final",
+      "resumed_same_cold_prepared_process_before_any_fixture": true,
+      "warm_restart_cleanup_verified": false,
+      "historical_temporary_assertion_name_is_not_temporary_expiry_proof": true
+    },
+    "all_final_scene_checks_total": 114
+  },
+  "preserved_failures": {
+    "planter_initial": {
+      "status": "FRAMEWORK_ERROR",
+      "checks": 5,
+      "all_checks_pass": true,
+      "candidate_zip_sha256": "39410cf2f917666a5f5eb0cd6d8790f2cab2b8ad54a8e1bb50a35bca0abd229f",
+      "skill_plans_manually_substituted": false,
+      "scope": "Five preparation checks, legal play abort; no full process crash established",
+      "report_reference": "native-r15/evidence/game-planter-api-first/result.json",
+      "report_sha256": "342fe1f816c297f516c37eb96e451305389a6574387679d735bea19adf3e5728"
+    },
+    "planter_feedback1": {
+      "status": "SEMANTIC_FAIL",
+      "checks": 13,
+      "all_checks_pass": false,
+      "candidate_zip_sha256": "6233ef3e20393a1b90e504c23a6dcdd98b20926b842cfdf5b52bef50148f7408",
+      "skill_plans_manually_substituted": false,
+      "scope": "Other-source play re-triggered prior planter; event target Self filter missing",
+      "report_reference": "native-r15/evidence/game-planter-api-feedback1/result.json",
+      "report_sha256": "cbbc30edd8a1e59f61343d4ae9311a0e9db8a384c6536c9bbe6ab51cce903e63"
+    },
+    "planter_feedback2": {
+      "status": "SEMANTIC_FAIL",
+      "checks": 22,
+      "all_checks_pass": false,
+      "candidate_zip_sha256": "5a116d6f2dd5dcf8d1ce59891b68eee36219cffcdca3a36f6bf1e61dec804d3a",
+      "skill_plans_manually_substituted": false,
+      "scope": "21 checks passed, 22nd end-of-turn expiry assertion failed; original temporary requirement not met",
+      "report_reference": "native-r15/evidence/game-planter-api-feedback2/result.json",
+      "report_sha256": "9896526912b473c27f21ef3bd2919cb83afa768ff28a9c001c843ffad7f20512"
+    },
+    "observer_initial": {
+      "status": "FRAMEWORK_ERROR",
+      "checks": 11,
+      "all_checks_pass": true,
+      "candidate_zip_sha256": "5a116d6f2dd5dcf8d1ce59891b68eee36219cffcdca3a36f6bf1e61dec804d3a",
+      "skill_plans_manually_substituted": false,
+      "scope": "11 partial checks then framework death-preparation/placement error; not a skill semantic failure",
+      "report_reference": "native-r15/evidence/game-observer-api-first/result.json",
+      "report_sha256": "a2568fa683c820e9f26742ea74fe14c5db0a60803dc143f81fc4773e9ce74128"
+    },
+    "observer_retest": {
+      "status": "FRAMEWORK_ERROR",
+      "checks": 22,
+      "all_checks_pass": true,
+      "candidate_zip_sha256": "474101b7c344f12effb3b801929318c801d5f76242143c4e5c66399f21dae5e4",
+      "skill_plans_manually_substituted": false,
+      "scope": "22 checks then SuperblockPhaseBlockingEffect wait; legal end_phase_type11 fixed host interaction; native skill unchanged",
+      "report_reference": "native-r15/evidence/game-observer-retest/result.json",
+      "report_sha256": "96a9e27768273bf4374e70be01de80340a965eed2aacb7c529923f5cc7e5c177"
+    },
+    "integration_host_io": {
+      "status": "HOST_IO_FAILURE",
+      "checks": 1,
+      "all_checks_pass": true,
+      "candidate_zip_sha256": "474101b7c344f12effb3b801929318c801d5f76242143c4e5c66399f21dae5e4",
+      "skill_plans_manually_substituted": false,
+      "scope": "Windows WinError5 report replacement before start_test or skill action; HOST_IO_FAILURE, not game semantic failure",
+      "report_reference": "native-r15/evidence/game-integration-final/result.json",
+      "report_sha256": "0d1548e2b20b9e9382bab8d354fa7b7ce11eaedc8b851d75d31bbbe5c994f337",
+      "no_fixture_or_skill_action_started": true
+    }
+  },
+  "lessons": {
+    "self_entity_filter_is_not_self_play_event_filter": true,
+    "end_of_turn_buff_removal_clears_attack_health_not_suncost_in_observed_version": true,
+    "original_180_text_promises_temporary_cost_reduction": false,
+    "original_temporary_design_preserved_as_unimplemented_research": true,
+    "negative_health_alone_is_not_death_event_proof": true,
+    "death_stimulus": {
+      "method": "Damage99 preparation then legal original36 to enemy hero to invoke CheckDeath/discard",
+      "net_hand_change": 0,
+      "net_deck_change": 0,
+      "extra_enemy_hero_damage": 2,
+      "report_reference": "native-r15/evidence/death-stimulus-legal-action.json",
+      "report_sha256": "81541bc923378cb610eb5d09199aa018a7c8ea440ca61b08009a19873b2d7af4"
+    },
+    "observer_skill_modified_for_framework_retries": false
+  },
+  "distribution": {
+    "status": "PASS",
+    "mod_filename": "SporeWorkshop_R15.zip",
+    "zip_sha256": "e66ae05ae5d74279df20eeac5ad6915d969a806852f0a407337b813feccbc634",
+    "bytes": 430860,
+    "gameplay_card_sha256": {
+      "900014": "e000f1a061e6f13ebaa5dede47e797fe66b26f3a40ef143370338f87361d5634",
+      "900015": "b265b9587d3fea0ecf0358277df16c79dc5bff0fc782f165072f0b471742720e",
+      "900016": "69045e74f9614146cfabcacbc660651819a092f6f89c2e7197c228e759f47c38"
+    },
+    "same_three_gameplay_cards_as_tested_qa": true,
+    "original_cards_unchanged": 650,
+    "new_cards": [
+      900014,
+      900015,
+      900016
+    ],
+    "mapped_resources": [
+      "cards/card_data",
+      "loc/cn"
+    ],
+    "registry_json_and_md_exported": true,
+    "canonical_json_sha256": "28a7794b5523f846cd4e2d21298d1a78ff9a31ffb2f8815e0974063760b2a07c",
+    "derived_markdown_sha256": "ac8f3d718dd99ed8413eead734a1571c271c261e8b6b5570d13d8106e616adcc",
+    "qa_level_and_original_card_stimuli_absent": true,
+    "notes_and_cn_only_finalization": true,
+    "temporary_discount_implemented": false,
+    "current_discount_design": "Only cards generated by this source receive a persistent -1 cost modifier.",
+    "source_archive_managed_separately": true,
+    "mod_game_zip_not_embedded_in_source_archive": true,
+    "report_reference": "native-r15/dist/SporeWorkshop_R15.json",
+    "report_sha256": "6dc78889752c50990856bf17d9bb9396e3c178c371afc5966abe356149782b49"
+  },
+  "final_device_restore": {
+    "status": "PASS",
+    "checks": 24,
+    "apk_sha256": "374fe02609cf255f879988df4a967f5177fd2a653ff14d4de7da090504e24c2b",
+    "original_resource_files_verified": 2882,
+    "original_manifest_files_verified": 5,
+    "original_account_files_bytes_and_attributes_verified": 65,
+    "old_workbench_files_checked": 287,
+    "account_files_restored": 15,
+    "new_account_files_quarantined": 1,
+    "account_roots_cleared": false,
+    "workbench_rolled_back": false,
+    "original_mod_count": 3,
+    "old_mod_order_and_checkboxes_restored": true,
+    "original_loaded_selection_restored": true,
+    "completed_authoring_mod_retained_disabled": true,
+    "qa_mods_removed_from_list": 1,
+    "qa_archives_and_history_preserved": true,
+    "new_guid_reservations_retained": 3,
+    "old_drafts_and_conversations_byte_identical": true,
+    "preexisting_api_profiles_preserved": true,
+    "only_owned_session_profile_removed": true,
+    "network_restored": true,
+    "game_finally_stopped": true,
+    "extra_resource_overwrites_after_formal_apply": 0,
+    "extra_manifest_overwrites_after_formal_apply": 0,
+    "report_reference": "native-r15/evidence/final-device-restore.json",
+    "report_sha256": "6335cc3d87e5f5856574af54169c56e13bdecee9fdd73f8c166c50e9c50b3ce1"
+  },
+  "pending": [
+    "Original temporary hand-cost expiry research; current delivered design is persistent",
+    "Simultaneous death, silence, transform/control transfer and broader lifecycle",
+    "Full natural match, animation, all random seeds/modes and independent fresh-install ZIP import"
+  ],
+  "git_commit_or_push_performed": false,
+  "api_session_closed": {
+    "status": "PASS",
+    "session_relay_stopped": true,
+    "local_relay_port_closed": true,
+    "key_written_to_source_or_public_reports": false,
+    "report_reference": "native-r15/evidence/api-session-closed.json",
+    "report_sha256": "287ffce7b617dfc626164ba1e991b4f9336b7203675fbd294a98d035b0c82a5c"
+  },
+  "build_temp_cleanup": {
+    "status": "PASS",
+    "files_removed": 4,
+    "bytes_freed": 3356259230,
+    "scope": "Only four newly generated unsigned/aligned APK copies",
+    "backups_and_failed_reports_retained": true,
+    "delivery_apks_retained": true,
+    "report_reference": "native-r15/evidence/build-temp-cleanup.json",
+    "report_sha256": "95fd6e20209db873477f764bb4980d4fce2ff9a5cc1842ef7ac25c6cadcec39a"
+  }
+}

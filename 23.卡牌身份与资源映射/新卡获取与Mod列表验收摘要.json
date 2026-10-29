@@ -1,0 +1,1917 @@
+{
+  "schema": 2,
+  "status": "PASS",
+  "mode": "final",
+  "final_status": "PASS",
+  "revision": "r26-player-mods-rc3",
+  "series": "rc3",
+  "fixture_sha256": "042d4eb5b4774eac55a33739424ad06b754c4620a1a745e0c342e3106da25e8c",
+  "generated_at_utc": "2026-10-24T12:21:44.640322+00:00",
+  "privacy": "Only fixture GUID counts, bounded grant metrics, check names/pass and anonymous preservation results; no account/deck IDs, card lists, pointers or raw logs.",
+  "apk_sha256": "6db51ce22b78af415c1f35635c1820257d31c867cec268ccec8154b44c5c3e4d",
+  "build_receipt_source": "dist/r26-player-mods-rc3.json",
+  "layers": {
+    "ui": {
+      "status": "PASS",
+      "count": 39,
+      "source": "evidence/ui-device/final-summary.json",
+      "binding": "Frozen UI sources match final APK integrity review; later changes are runtime only",
+      "cases": [
+        {
+          "case": "settings",
+          "status": "PASS",
+          "count": 10,
+          "source": "evidence/ui-device/20261024T185600/settings-result.json",
+          "checks": [
+            {
+              "name": "configured-default-on-four",
+              "pass": true
+            },
+            {
+              "name": "toggle-default-checked",
+              "pass": true
+            },
+            {
+              "name": "real-toggle-saves-off",
+              "pass": true
+            },
+            {
+              "name": "zero-does-not-close-editor",
+              "pass": true
+            },
+            {
+              "name": "zero-does-not-change-setting",
+              "pass": true
+            },
+            {
+              "name": "high-does-not-close-editor",
+              "pass": true
+            },
+            {
+              "name": "valid-eight-closes-editor",
+              "pass": true
+            },
+            {
+              "name": "real-editor-saves-eight-and-keeps-off",
+              "pass": true
+            },
+            {
+              "name": "setting-survives-process-restart",
+              "pass": true
+            },
+            {
+              "name": "default-restored",
+              "pass": true
+            }
+          ]
+        },
+        {
+          "case": "mods",
+          "status": "PASS",
+          "count": 29,
+          "source": "evidence/ui-device/20261024T185857/mods-result.json",
+          "checks": [
+            {
+              "name": "row-cover-r26-autogrant-peas",
+              "pass": true
+            },
+            {
+              "name": "row-version-r26-autogrant-peas",
+              "pass": true
+            },
+            {
+              "name": "row-switch-r26-autogrant-peas",
+              "pass": true
+            },
+            {
+              "name": "row-cover-r26-autogrant-badcover",
+              "pass": true
+            },
+            {
+              "name": "row-version-r26-autogrant-badcover",
+              "pass": true
+            },
+            {
+              "name": "row-switch-r26-autogrant-badcover",
+              "pass": true
+            },
+            {
+              "name": "row-cover-personal",
+              "pass": true
+            },
+            {
+              "name": "row-version-personal",
+              "pass": true
+            },
+            {
+              "name": "row-switch-personal",
+              "pass": true
+            },
+            {
+              "name": "row-cover-mod2",
+              "pass": true
+            },
+            {
+              "name": "row-version-mod2",
+              "pass": true
+            },
+            {
+              "name": "row-switch-mod2",
+              "pass": true
+            },
+            {
+              "name": "row-cover-zip-6b28bbfb1775569d",
+              "pass": true
+            },
+            {
+              "name": "row-version-zip-6b28bbfb1775569d",
+              "pass": true
+            },
+            {
+              "name": "row-switch-zip-6b28bbfb1775569d",
+              "pass": true
+            },
+            {
+              "name": "row-cover-mod-e33bb60b",
+              "pass": true
+            },
+            {
+              "name": "row-version-mod-e33bb60b",
+              "pass": true
+            },
+            {
+              "name": "row-switch-mod-e33bb60b",
+              "pass": true
+            },
+            {
+              "name": "row-cover-mod-3f7efc84",
+              "pass": true
+            },
+            {
+              "name": "row-version-mod-3f7efc84",
+              "pass": true
+            },
+            {
+              "name": "row-switch-mod-3f7efc84",
+              "pass": true
+            },
+            {
+              "name": "phone-has-multiple-compact-rows",
+              "pass": true
+            },
+            {
+              "name": "no-drag-handles-in-browse-mode",
+              "pass": true
+            },
+            {
+              "name": "toggle-stays-on-list",
+              "pass": true
+            },
+            {
+              "name": "toggle-visually-changed",
+              "pass": true
+            },
+            {
+              "name": "toggle-persisted-only-target",
+              "pass": true
+            },
+            {
+              "name": "cover-opens-secondary-details",
+              "pass": true
+            },
+            {
+              "name": "sort-mode-exposes-handles",
+              "pass": true
+            },
+            {
+              "name": "real-long-press-drag-persists-order",
+              "pass": true
+            }
+          ]
+        }
+      ]
+    },
+    "host": {
+      "status": "PASS",
+      "count": 112,
+      "freeze_source": "evidence/auto-cards-freeze-rc3.json",
+      "cases": [
+        {
+          "status": "PASS",
+          "count": 31,
+          "source": "evidence/auto-cards-java-host.json",
+          "checks": [
+            {
+              "name": "missing file defaults true/4/revision1 without writing",
+              "pass": true
+            },
+            {
+              "name": "three-argument legacy policy default preserves four-copy grants",
+              "pass": true
+            },
+            {
+              "name": "save defaults creates bounded JSON at revision1",
+              "pass": true
+            },
+            {
+              "name": "save false8 increments once and repeat does not rewrite",
+              "pass": true
+            },
+            {
+              "name": "off frozen receipt still carries all GUID candidates and mode enabled",
+              "pass": true
+            },
+            {
+              "name": "current options and immutable launch receipt distinguish pending",
+              "pass": true
+            },
+            {
+              "name": "quantity boundary roundtrip 1",
+              "pass": true
+            },
+            {
+              "name": "quantity boundary roundtrip 8",
+              "pass": true
+            },
+            {
+              "name": "quantity boundary roundtrip 999",
+              "pass": true
+            },
+            {
+              "name": "out-of-range save rejected without mutation 0",
+              "pass": true
+            },
+            {
+              "name": "out-of-range save rejected without mutation -1",
+              "pass": true
+            },
+            {
+              "name": "out-of-range save rejected without mutation 1000",
+              "pass": true
+            },
+            {
+              "name": "out-of-range save rejected without mutation 2147483647",
+              "pass": true
+            },
+            {
+              "name": "original mode remains independent and cannot contain unregistered cards",
+              "pass": true
+            },
+            {
+              "name": "original mode status does not request restart merely because grants are ineffective",
+              "pass": true
+            },
+            {
+              "name": "old launch receipt missing preference fields defaults true4",
+              "pass": true
+            },
+            {
+              "name": "no launch receipt has explicit pending state",
+              "pass": true
+            },
+            {
+              "name": "corrupt/schema/type settings fail without overwriting 0",
+              "pass": true
+            },
+            {
+              "name": "corrupt/schema/type settings fail without overwriting 1",
+              "pass": true
+            },
+            {
+              "name": "corrupt/schema/type settings fail without overwriting 2",
+              "pass": true
+            },
+            {
+              "name": "corrupt/schema/type settings fail without overwriting 3",
+              "pass": true
+            },
+            {
+              "name": "corrupt/schema/type settings fail without overwriting 4",
+              "pass": true
+            },
+            {
+              "name": "corrupt/schema/type settings fail without overwriting 5",
+              "pass": true
+            },
+            {
+              "name": "corrupt/schema/type settings fail without overwriting 6",
+              "pass": true
+            },
+            {
+              "name": "corrupt/schema/type settings fail without overwriting 7",
+              "pass": true
+            },
+            {
+              "name": "corrupt/schema/type settings fail without overwriting 8",
+              "pass": true
+            },
+            {
+              "name": "oversize settings rejected and preserved",
+              "pass": true
+            },
+            {
+              "name": "settings revision cannot overflow",
+              "pass": true
+            },
+            {
+              "name": "policy rejects malformed options before player files",
+              "pass": true
+            },
+            {
+              "name": "policy still requires every original definition",
+              "pass": true
+            },
+            {
+              "name": "policy still requires exact GUID identity",
+              "pass": true
+            }
+          ]
+        },
+        {
+          "status": "PASS",
+          "count": 81,
+          "source": "evidence/auto-cards-js-host-rc3.json",
+          "checks": [
+            {
+              "name": "legacy receipt defaults remain true/4/revision1",
+              "pass": true
+            },
+            {
+              "name": "target 1 from 0 supplements and repeated force is idempotent",
+              "pass": true
+            },
+            {
+              "name": "target 1 from 2 supplements and repeated force is idempotent",
+              "pass": true
+            },
+            {
+              "name": "target 1 from 4 supplements and repeated force is idempotent",
+              "pass": true
+            },
+            {
+              "name": "target 1 from 6 supplements and repeated force is idempotent",
+              "pass": true
+            },
+            {
+              "name": "target 4 from 0 supplements and repeated force is idempotent",
+              "pass": true
+            },
+            {
+              "name": "target 4 from 2 supplements and repeated force is idempotent",
+              "pass": true
+            },
+            {
+              "name": "target 4 from 4 supplements and repeated force is idempotent",
+              "pass": true
+            },
+            {
+              "name": "target 4 from 6 supplements and repeated force is idempotent",
+              "pass": true
+            },
+            {
+              "name": "target 8 from 0 supplements and repeated force is idempotent",
+              "pass": true
+            },
+            {
+              "name": "target 8 from 2 supplements and repeated force is idempotent",
+              "pass": true
+            },
+            {
+              "name": "target 8 from 4 supplements and repeated force is idempotent",
+              "pass": true
+            },
+            {
+              "name": "target 8 from 6 supplements and repeated force is idempotent",
+              "pass": true
+            },
+            {
+              "name": "target 999 from 0 supplements and repeated force is idempotent",
+              "pass": true
+            },
+            {
+              "name": "target 999 from 2 supplements and repeated force is idempotent",
+              "pass": true
+            },
+            {
+              "name": "target 999 from 4 supplements and repeated force is idempotent",
+              "pass": true
+            },
+            {
+              "name": "target 999 from 6 supplements and repeated force is idempotent",
+              "pass": true
+            },
+            {
+              "name": "invalid configuration 18 fails closed",
+              "pass": true
+            },
+            {
+              "name": "invalid configuration 19 fails closed",
+              "pass": true
+            },
+            {
+              "name": "invalid configuration 20 fails closed",
+              "pass": true
+            },
+            {
+              "name": "invalid configuration 21 fails closed",
+              "pass": true
+            },
+            {
+              "name": "invalid configuration 22 fails closed",
+              "pass": true
+            },
+            {
+              "name": "invalid configuration 23 fails closed",
+              "pass": true
+            },
+            {
+              "name": "invalid configuration 24 fails closed",
+              "pass": true
+            },
+            {
+              "name": "invalid configuration 25 fails closed",
+              "pass": true
+            },
+            {
+              "name": "invalid configuration 26 fails closed",
+              "pass": true
+            },
+            {
+              "name": "invalid configuration 27 fails closed",
+              "pass": true
+            },
+            {
+              "name": "invalid configuration 28 fails closed",
+              "pass": true
+            },
+            {
+              "name": "invalid configuration 29 fails closed",
+              "pass": true
+            },
+            {
+              "name": "invalid configuration 30 fails closed",
+              "pass": true
+            },
+            {
+              "name": "off preserves candidate identity and valid set while preventing grants",
+              "pass": true
+            },
+            {
+              "name": "original mode cannot grant and retains candidate guard even when off",
+              "pass": true
+            },
+            {
+              "name": "no active custom definitions never alters original cards",
+              "pass": true
+            },
+            {
+              "name": "token excluded even if current native filter otherwise allows",
+              "pass": true
+            },
+            {
+              "name": "unusable excluded even if current native filter otherwise allows",
+              "pass": true
+            },
+            {
+              "name": "superpower excluded even if current native filter otherwise allows",
+              "pass": true
+            },
+            {
+              "name": "primary-power excluded even if current native filter otherwise allows",
+              "pass": true
+            },
+            {
+              "name": "original filter reject excluded even if current native filter otherwise allows",
+              "pass": true
+            },
+            {
+              "name": "missing definition excluded even if current native filter otherwise allows",
+              "pass": true
+            },
+            {
+              "name": "original safety and five existing hooks unchanged except one declared candidate-specific hook",
+              "pass": true
+            },
+            {
+              "name": "off still repairs removed and alias GUIDs without affecting valid originals",
+              "pass": true
+            },
+            {
+              "name": "bounded pure ownership helper validates bad counts",
+              "pass": true
+            },
+            {
+              "name": "status separates mode from the auto-grant toggle",
+              "pass": true
+            },
+            {
+              "name": "native save injects exact holder and local persister, marks dirty then executes and reads back",
+              "pass": true
+            },
+            {
+              "name": "failed context keeps pending and no lastMerge; zero-delta retry saves without adding again",
+              "pass": true
+            },
+            {
+              "name": "failed ioc keeps pending and no lastMerge; zero-delta retry saves without adding again",
+              "pass": true
+            },
+            {
+              "name": "failed execute keeps pending and no lastMerge; zero-delta retry saves without adding again",
+              "pass": true
+            },
+            {
+              "name": "failed readback keeps pending and no lastMerge; zero-delta retry saves without adding again",
+              "pass": true
+            },
+            {
+              "name": "failed load keeps pending and no lastMerge; zero-delta retry saves without adding again",
+              "pass": true
+            },
+            {
+              "name": "failed dirty keeps pending and no lastMerge; zero-delta retry saves without adding again",
+              "pass": true
+            },
+            {
+              "name": "failed add-after keeps pending and no lastMerge; zero-delta retry saves without adding again",
+              "pass": true
+            },
+            {
+              "name": "prior successful cached merge cannot swallow pending after a later forced delta/save failure",
+              "pass": true
+            },
+            {
+              "name": "native persister identity rejects delta/sync before dirty or command execution",
+              "pass": true
+            },
+            {
+              "name": "exact local holder guard rejects delta holder before additive mutation",
+              "pass": true
+            },
+            {
+              "name": "pending is discarded on inventory identity replacement and never writes an old object into new holder",
+              "pass": true
+            },
+            {
+              "name": "no delta and no pending neither marks dirty nor clears existing native dirty state",
+              "pass": true
+            },
+            {
+              "name": "simulated persisted eight then cold lower two preserves eight without another write",
+              "pass": true
+            },
+            {
+              "name": "multiple actual additions share one original command/save/readback batch",
+              "pass": true
+            },
+            {
+              "name": "readback temporary GC handles balance over repeated changed inventories; command pinned only once",
+              "pass": true
+            },
+            {
+              "name": "production merge does not report success/cache signature before original persistence completes",
+              "pass": true
+            },
+            {
+              "name": "single extra hook uses original attach wrapper, exact namespace/one-int signature/RVA/type",
+              "pass": true
+            },
+            {
+              "name": "active collectible candidate overrides only original Silver true and records actual hook hit",
+              "pass": true
+            },
+            {
+              "name": "Silver ownership hook preserves original result for Token",
+              "pass": true
+            },
+            {
+              "name": "Silver ownership hook preserves original result for unusable",
+              "pass": true
+            },
+            {
+              "name": "Silver ownership hook preserves original result for power",
+              "pass": true
+            },
+            {
+              "name": "Silver ownership hook preserves original result for primary power",
+              "pass": true
+            },
+            {
+              "name": "Silver ownership hook preserves original result for original deck rejection",
+              "pass": true
+            },
+            {
+              "name": "Silver ownership hook preserves original result for missing definition",
+              "pass": true
+            },
+            {
+              "name": "all original 650 and unknown/unloaded GUIDs keep original Silver return",
+              "pass": true
+            },
+            {
+              "name": "Silver hook rejects wrong receiver type and preserves original false without reporting a hit",
+              "pass": true
+            },
+            {
+              "name": "off-existing: ownership protection independent of auto grants; eight remain eight with no save/grants/dirty",
+              "pass": true
+            },
+            {
+              "name": "lower-two: native Silver fixup is narrowly exempt so existing eight never need regrant",
+              "pass": true
+            },
+            {
+              "name": "same inventory/dictionary native overwrite invalidates version cache and repairs only missing copies",
+              "pass": true
+            },
+            {
+              "name": "same inventory with replaced Cards dictionary invalidates pointer cache",
+              "pass": true
+            },
+            {
+              "name": "unrelated original dictionary updates trigger validation but no additive mutation or save",
+              "pass": true
+            },
+            {
+              "name": "stable large candidate cache performs O(1) version reads rather than per-card native count scans",
+              "pass": true
+            },
+            {
+              "name": "version FieldInfo layout-lookup rejects before mutation instead of assuming an offset",
+              "pass": true
+            },
+            {
+              "name": "version FieldInfo layout-offset rejects before mutation instead of assuming an offset",
+              "pass": true
+            },
+            {
+              "name": "version FieldInfo layout-type rejects before mutation instead of assuming an offset",
+              "pass": true
+            },
+            {
+              "name": "read-only diagnostics show captured/IoC identities and verified version without saving or dirty changes",
+              "pass": true
+            },
+            {
+              "name": "post-save signature stores final dictionary version rather than the pre-add version",
+              "pass": true
+            }
+          ]
+        }
+      ]
+    },
+    "integrity": {
+      "status": "PASS",
+      "count": 43,
+      "source": "evidence/release-integrity-r26-player-mods-rc3-independent.json",
+      "checks": [
+        {
+          "name": "receipt_location",
+          "pass": true
+        },
+        {
+          "name": "receipt_identity",
+          "pass": true
+        },
+        {
+          "name": "apk_location",
+          "pass": true
+        },
+        {
+          "name": "actual_apk_sha256",
+          "pass": true
+        },
+        {
+          "name": "frozen_r25_baseline",
+          "pass": true
+        },
+        {
+          "name": "fresh_original_release_signer",
+          "pass": true
+        },
+        {
+          "name": "fresh_zipalign",
+          "pass": true
+        },
+        {
+          "name": "source_provenance_identity",
+          "pass": true
+        },
+        {
+          "name": "all_frozen_original_inputs_unchanged",
+          "pass": true
+        },
+        {
+          "name": "java_source_delta_allowlist",
+          "pass": true
+        },
+        {
+          "name": "java_exact_reviewed_substitutions",
+          "pass": true
+        },
+        {
+          "name": "asset_source_delta_allowlist",
+          "pass": true
+        },
+        {
+          "name": "inherited_lib_sources_unchanged",
+          "pass": true
+        },
+        {
+          "name": "runtime_source_delta_scope",
+          "pass": true
+        },
+        {
+          "name": "new_player_card_policy_source_reviewed",
+          "pass": true
+        },
+        {
+          "name": "runtime_patch_spec_exactly_reviewed",
+          "pass": true
+        },
+        {
+          "name": "actual_merged_compile_inputs_match_receipt",
+          "pass": true
+        },
+        {
+          "name": "r26_overrides_selected_over_r13",
+          "pass": true
+        },
+        {
+          "name": "builder_matches_receipt",
+          "pass": true
+        },
+        {
+          "name": "receipt_replacement_payload_scope",
+          "pass": true
+        },
+        {
+          "name": "no_duplicate_apk_entries",
+          "pass": true
+        },
+        {
+          "name": "signature_entry_scope",
+          "pass": true
+        },
+        {
+          "name": "all_non_replaced_apk_payloads_byte_equal",
+          "pass": true
+        },
+        {
+          "name": "actual_replacement_payload_hashes",
+          "pass": true
+        },
+        {
+          "name": "all_packaged_assets_match_source",
+          "pass": true
+        },
+        {
+          "name": "bundled_pharaoh_music_and_registry_byte_equal_to_r25",
+          "pass": true
+        },
+        {
+          "name": "actual_apk_delta_only_classes9_and_player_card_script",
+          "pass": true
+        },
+        {
+          "name": "game_native_gadget_binary_and_other_hooks_byte_equal",
+          "pass": true
+        },
+        {
+          "name": "independent_runtime_patch_reversible_insertions",
+          "pass": true
+        },
+        {
+          "name": "approved_single_candidate_silver_fixup_hook",
+          "pass": true
+        },
+        {
+          "name": "patched_runtime_javascript_syntax",
+          "pass": true
+        },
+        {
+          "name": "all_26_gameplay_rules_and_registry_unchanged",
+          "pass": true
+        },
+        {
+          "name": "actual_dex_definitions_no_collision",
+          "pass": true
+        },
+        {
+          "name": "every_merged_source_top_level_class_in_classes9",
+          "pass": true
+        },
+        {
+          "name": "compiled_contact_integrity_pins",
+          "pass": true
+        },
+        {
+          "name": "compiled_sandbox_language_and_limits",
+          "pass": true
+        },
+        {
+          "name": "compiled_r26_version_and_unchanged_r25_music_boundaries",
+          "pass": true
+        },
+        {
+          "name": "compiled_new_card_defaults_and_bounds",
+          "pass": true
+        },
+        {
+          "name": "compiled_cover_byte_and_entry_bounds",
+          "pass": true
+        },
+        {
+          "name": "packaged_batch_sandbox_contract_available",
+          "pass": true
+        },
+        {
+          "name": "packaged_contract_matches_stat_policy",
+          "pass": true
+        },
+        {
+          "name": "build_attestations",
+          "pass": true
+        },
+        {
+          "name": "inputs_and_receipts_still_frozen",
+          "pass": true
+        }
+      ]
+    },
+    "negative_integrity": {
+      "status": "PASS",
+      "count": 22,
+      "source": "tests/evidence/release-runtime-negative-r26-rc3.json",
+      "checks": [
+        {
+          "name": "out_of_module_comment",
+          "pass": true
+        },
+        {
+          "name": "remove_token_filter",
+          "pass": true
+        },
+        {
+          "name": "change_legacy_quantity_helper",
+          "pass": true
+        },
+        {
+          "name": "disable_guid_cleanup",
+          "pass": true
+        },
+        {
+          "name": "insert_native_hook",
+          "pass": true
+        },
+        {
+          "name": "change_helper_source",
+          "pass": true
+        },
+        {
+          "name": "skip_original_native_save",
+          "pass": true
+        },
+        {
+          "name": "cache_swallows_pending_retry",
+          "pass": true
+        },
+        {
+          "name": "save_without_dirty_flag",
+          "pass": true
+        },
+        {
+          "name": "resolve_delta_persister",
+          "pass": true
+        },
+        {
+          "name": "retain_old_cache_on_new_delta",
+          "pass": true
+        },
+        {
+          "name": "silver_hook_ignores_original_false",
+          "pass": true
+        },
+        {
+          "name": "silver_hook_affects_non_candidates",
+          "pass": true
+        },
+        {
+          "name": "silver_hook_loses_exact_owner_type",
+          "pass": true
+        },
+        {
+          "name": "silver_hook_wrong_rva",
+          "pass": true
+        },
+        {
+          "name": "off_existing_protection_wrongly_disabled",
+          "pass": true
+        },
+        {
+          "name": "hardcoded_dictionary_version_offset",
+          "pass": true
+        },
+        {
+          "name": "diagnostic_recurses_mutating_getter",
+          "pass": true
+        },
+        {
+          "name": "second_guarded_attachment",
+          "pass": true
+        },
+        {
+          "name": "source_map_only_tamper",
+          "pass": true
+        },
+        {
+          "name": "rc1_without_persistence_not_approved_as_rc3",
+          "pass": true
+        },
+        {
+          "name": "rc2_without_silver_guard_not_approved_as_rc3",
+          "pass": true
+        }
+      ]
+    },
+    "auxiliary_host": {
+      "status": "PASS",
+      "count": 42,
+      "cover_zip": {
+        "status": "PASS",
+        "count": 25,
+        "source": "evidence/ui-host-20261024/report.json"
+      },
+      "restore_state": {
+        "status": "PASS",
+        "count": 17,
+        "source": "evidence/restore-state-host.json",
+        "checks": [
+          {
+            "name": "complete selective restore with synthetic 846/65/2887, fixture archive, defaults and second-device port isolation",
+            "pass": true
+          },
+          {
+            "name": "unknown workbench rejected before any restore/removal",
+            "pass": true
+          },
+          {
+            "name": "unknown resource rejected before any restore/removal",
+            "pass": true
+          },
+          {
+            "name": "unknown account rejected before any restore/removal",
+            "pass": true
+          },
+          {
+            "name": "old immutable ZIP drift rejected before any restore/removal",
+            "pass": true
+          },
+          {
+            "name": "unknown Mod rejected before any restore/removal",
+            "pass": true
+          },
+          {
+            "name": "registered extra changed rejected before any restore/removal",
+            "pass": true
+          },
+          {
+            "name": "final APK mismatch rejected before any restore/removal",
+            "pass": true
+          },
+          {
+            "name": "relative path rejection '../bad'",
+            "pass": true
+          },
+          {
+            "name": "relative path rejection '/absolute'",
+            "pass": true
+          },
+          {
+            "name": "relative path rejection 'bad\\\\path'",
+            "pass": true
+          },
+          {
+            "name": "relative path rejection 'bad:drive'",
+            "pass": true
+          },
+          {
+            "name": "relative path rejection 'empty//part'",
+            "pass": true
+          },
+          {
+            "name": "relative path rejection 'line\\nfeed'",
+            "pass": true
+          },
+          {
+            "name": "unknown extra requires explicit registration",
+            "pass": true
+          },
+          {
+            "name": "cleanup rejects bool schema, original Mod/file removal and resource path escape",
+            "pass": true
+          },
+          {
+            "name": "no device transport imported by tests",
+            "pass": true
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "status": "PASS",
+    "count": 136,
+    "independent_cold_processes": 7,
+    "cases": [
+      {
+        "case": "off",
+        "status": "PASS",
+        "source": "evidence/game/rc3-off/result.json",
+        "check_count": 13,
+        "checks": [
+          {
+            "name": "fresh-process",
+            "pass": true
+          },
+          {
+            "name": "launch-freezes-options",
+            "pass": true
+          },
+          {
+            "name": "candidate-table-exact",
+            "pass": true
+          },
+          {
+            "name": "exact-local-inventory-ready",
+            "pass": true
+          },
+          {
+            "name": "normal-card-owned-expected",
+            "pass": true
+          },
+          {
+            "name": "token-never-owned",
+            "pass": true
+          },
+          {
+            "name": "runtime-options-and-effective-mode",
+            "pass": true
+          },
+          {
+            "name": "no-player-card-runtime-errors",
+            "pass": true
+          },
+          {
+            "name": "one-scoped-silver-hook-registered",
+            "pass": true
+          },
+          {
+            "name": "collectible-visible-and-owned",
+            "pass": true
+          },
+          {
+            "name": "token-not-visible-not-allowed",
+            "pass": true
+          },
+          {
+            "name": "same-process-survived",
+            "pass": true
+          },
+          {
+            "name": "no-native-java-crash",
+            "pass": true
+          }
+        ],
+        "inventory": [
+          {
+            "guid": 926101,
+            "count": 0
+          },
+          {
+            "guid": 926102,
+            "count": 0
+          }
+        ],
+        "collection": [
+          {
+            "guid": 926101,
+            "owned": 0,
+            "visible": true,
+            "allowed": true
+          },
+          {
+            "guid": 926102,
+            "owned": 0,
+            "visible": false,
+            "allowed": false
+          }
+        ],
+        "grant": [],
+        "quantity": 4,
+        "auto_grant_enabled": false,
+        "effective_auto_grant": false,
+        "native_saves": 0,
+        "pending": null
+      },
+      {
+        "case": "four",
+        "status": "PASS",
+        "source": "evidence/game/rc3-four/result.json",
+        "check_count": 22,
+        "checks": [
+          {
+            "name": "fresh-process",
+            "pass": true
+          },
+          {
+            "name": "launch-freezes-options",
+            "pass": true
+          },
+          {
+            "name": "candidate-table-exact",
+            "pass": true
+          },
+          {
+            "name": "exact-local-inventory-ready",
+            "pass": true
+          },
+          {
+            "name": "normal-card-owned-expected",
+            "pass": true
+          },
+          {
+            "name": "token-never-owned",
+            "pass": true
+          },
+          {
+            "name": "runtime-options-and-effective-mode",
+            "pass": true
+          },
+          {
+            "name": "no-player-card-runtime-errors",
+            "pass": true
+          },
+          {
+            "name": "one-scoped-silver-hook-registered",
+            "pass": true
+          },
+          {
+            "name": "collectible-visible-and-owned",
+            "pass": true
+          },
+          {
+            "name": "token-not-visible-not-allowed",
+            "pass": true
+          },
+          {
+            "name": "original-card-counts-unchanged",
+            "pass": true
+          },
+          {
+            "name": "inventory-delta-file-unchanged",
+            "pass": true
+          },
+          {
+            "name": "top-up-target-reported",
+            "pass": true
+          },
+          {
+            "name": "token-explicitly-excluded",
+            "pass": true
+          },
+          {
+            "name": "native-inventory-save-fully-settled",
+            "pass": true
+          },
+          {
+            "name": "native-local-inventory-save-executed",
+            "pass": true
+          },
+          {
+            "name": "real-deck-validator-passes",
+            "pass": true
+          },
+          {
+            "name": "preparation-give-adds-one",
+            "pass": true
+          },
+          {
+            "name": "new-card-legally-plays",
+            "pass": true
+          },
+          {
+            "name": "same-process-survived",
+            "pass": true
+          },
+          {
+            "name": "no-native-java-crash",
+            "pass": true
+          }
+        ],
+        "inventory": [
+          {
+            "guid": 926101,
+            "count": 4
+          },
+          {
+            "guid": 926102,
+            "count": 0
+          }
+        ],
+        "collection": [
+          {
+            "guid": 926101,
+            "owned": 4,
+            "visible": true,
+            "allowed": true
+          },
+          {
+            "guid": 926102,
+            "owned": 0,
+            "visible": false,
+            "allowed": false
+          }
+        ],
+        "grant": [
+          {
+            "guid": 926101,
+            "before": 0,
+            "after": 4,
+            "quantity": 4,
+            "target_quantity": 4
+          }
+        ],
+        "quantity": 4,
+        "auto_grant_enabled": true,
+        "effective_auto_grant": true,
+        "native_saves": 1,
+        "pending": null
+      },
+      {
+        "case": "repeat",
+        "status": "PASS",
+        "source": "evidence/game/rc3-repeat/result.json",
+        "check_count": 21,
+        "checks": [
+          {
+            "name": "fresh-process",
+            "pass": true
+          },
+          {
+            "name": "launch-freezes-options",
+            "pass": true
+          },
+          {
+            "name": "candidate-table-exact",
+            "pass": true
+          },
+          {
+            "name": "exact-local-inventory-ready",
+            "pass": true
+          },
+          {
+            "name": "normal-card-owned-expected",
+            "pass": true
+          },
+          {
+            "name": "token-never-owned",
+            "pass": true
+          },
+          {
+            "name": "runtime-options-and-effective-mode",
+            "pass": true
+          },
+          {
+            "name": "no-player-card-runtime-errors",
+            "pass": true
+          },
+          {
+            "name": "one-scoped-silver-hook-registered",
+            "pass": true
+          },
+          {
+            "name": "collectible-visible-and-owned",
+            "pass": true
+          },
+          {
+            "name": "token-not-visible-not-allowed",
+            "pass": true
+          },
+          {
+            "name": "original-card-counts-unchanged",
+            "pass": true
+          },
+          {
+            "name": "inventory-delta-file-unchanged",
+            "pass": true
+          },
+          {
+            "name": "top-up-target-reported",
+            "pass": true
+          },
+          {
+            "name": "token-explicitly-excluded",
+            "pass": true
+          },
+          {
+            "name": "repeat-or-lower-does-not-add",
+            "pass": true
+          },
+          {
+            "name": "native-inventory-save-fully-settled",
+            "pass": true
+          },
+          {
+            "name": "zero-delta-needs-no-extra-save",
+            "pass": true
+          },
+          {
+            "name": "new-card-deck-persists-cold",
+            "pass": true
+          },
+          {
+            "name": "same-process-survived",
+            "pass": true
+          },
+          {
+            "name": "no-native-java-crash",
+            "pass": true
+          }
+        ],
+        "inventory": [
+          {
+            "guid": 926101,
+            "count": 4
+          },
+          {
+            "guid": 926102,
+            "count": 0
+          }
+        ],
+        "collection": [
+          {
+            "guid": 926101,
+            "owned": 4,
+            "visible": true,
+            "allowed": true
+          },
+          {
+            "guid": 926102,
+            "owned": 0,
+            "visible": false,
+            "allowed": false
+          }
+        ],
+        "grant": [
+          {
+            "guid": 926101,
+            "before": 4,
+            "after": 4,
+            "quantity": 0,
+            "target_quantity": 4
+          }
+        ],
+        "quantity": 4,
+        "auto_grant_enabled": true,
+        "effective_auto_grant": true,
+        "native_saves": 0,
+        "pending": null
+      },
+      {
+        "case": "eight",
+        "status": "PASS",
+        "source": "evidence/game/rc3-eight/result.json",
+        "check_count": 21,
+        "checks": [
+          {
+            "name": "fresh-process",
+            "pass": true
+          },
+          {
+            "name": "launch-freezes-options",
+            "pass": true
+          },
+          {
+            "name": "candidate-table-exact",
+            "pass": true
+          },
+          {
+            "name": "exact-local-inventory-ready",
+            "pass": true
+          },
+          {
+            "name": "normal-card-owned-expected",
+            "pass": true
+          },
+          {
+            "name": "token-never-owned",
+            "pass": true
+          },
+          {
+            "name": "runtime-options-and-effective-mode",
+            "pass": true
+          },
+          {
+            "name": "no-player-card-runtime-errors",
+            "pass": true
+          },
+          {
+            "name": "one-scoped-silver-hook-registered",
+            "pass": true
+          },
+          {
+            "name": "collectible-visible-and-owned",
+            "pass": true
+          },
+          {
+            "name": "token-not-visible-not-allowed",
+            "pass": true
+          },
+          {
+            "name": "original-card-counts-unchanged",
+            "pass": true
+          },
+          {
+            "name": "inventory-delta-file-unchanged",
+            "pass": true
+          },
+          {
+            "name": "top-up-target-reported",
+            "pass": true
+          },
+          {
+            "name": "token-explicitly-excluded",
+            "pass": true
+          },
+          {
+            "name": "native-inventory-save-fully-settled",
+            "pass": true
+          },
+          {
+            "name": "native-local-inventory-save-executed",
+            "pass": true
+          },
+          {
+            "name": "new-card-deck-persists-cold",
+            "pass": true
+          },
+          {
+            "name": "candidate-silver-fixup-protection-hit",
+            "pass": true
+          },
+          {
+            "name": "same-process-survived",
+            "pass": true
+          },
+          {
+            "name": "no-native-java-crash",
+            "pass": true
+          }
+        ],
+        "inventory": [
+          {
+            "guid": 926101,
+            "count": 8
+          },
+          {
+            "guid": 926102,
+            "count": 0
+          }
+        ],
+        "collection": [
+          {
+            "guid": 926101,
+            "owned": 8,
+            "visible": true,
+            "allowed": true
+          },
+          {
+            "guid": 926102,
+            "owned": 0,
+            "visible": false,
+            "allowed": false
+          }
+        ],
+        "grant": [
+          {
+            "guid": 926101,
+            "before": 4,
+            "after": 8,
+            "quantity": 4,
+            "target_quantity": 8
+          }
+        ],
+        "quantity": 8,
+        "auto_grant_enabled": true,
+        "effective_auto_grant": true,
+        "native_saves": 1,
+        "pending": null
+      },
+      {
+        "case": "lower",
+        "status": "PASS",
+        "source": "evidence/game/rc3-lower/result.json",
+        "check_count": 22,
+        "checks": [
+          {
+            "name": "fresh-process",
+            "pass": true
+          },
+          {
+            "name": "launch-freezes-options",
+            "pass": true
+          },
+          {
+            "name": "candidate-table-exact",
+            "pass": true
+          },
+          {
+            "name": "exact-local-inventory-ready",
+            "pass": true
+          },
+          {
+            "name": "normal-card-owned-expected",
+            "pass": true
+          },
+          {
+            "name": "token-never-owned",
+            "pass": true
+          },
+          {
+            "name": "runtime-options-and-effective-mode",
+            "pass": true
+          },
+          {
+            "name": "no-player-card-runtime-errors",
+            "pass": true
+          },
+          {
+            "name": "one-scoped-silver-hook-registered",
+            "pass": true
+          },
+          {
+            "name": "collectible-visible-and-owned",
+            "pass": true
+          },
+          {
+            "name": "token-not-visible-not-allowed",
+            "pass": true
+          },
+          {
+            "name": "original-card-counts-unchanged",
+            "pass": true
+          },
+          {
+            "name": "inventory-delta-file-unchanged",
+            "pass": true
+          },
+          {
+            "name": "top-up-target-reported",
+            "pass": true
+          },
+          {
+            "name": "token-explicitly-excluded",
+            "pass": true
+          },
+          {
+            "name": "repeat-or-lower-does-not-add",
+            "pass": true
+          },
+          {
+            "name": "native-inventory-save-fully-settled",
+            "pass": true
+          },
+          {
+            "name": "zero-delta-needs-no-extra-save",
+            "pass": true
+          },
+          {
+            "name": "new-card-deck-persists-cold",
+            "pass": true
+          },
+          {
+            "name": "candidate-silver-fixup-protection-hit",
+            "pass": true
+          },
+          {
+            "name": "same-process-survived",
+            "pass": true
+          },
+          {
+            "name": "no-native-java-crash",
+            "pass": true
+          }
+        ],
+        "inventory": [
+          {
+            "guid": 926101,
+            "count": 8
+          },
+          {
+            "guid": 926102,
+            "count": 0
+          }
+        ],
+        "collection": [
+          {
+            "guid": 926101,
+            "owned": 8,
+            "visible": true,
+            "allowed": true
+          },
+          {
+            "guid": 926102,
+            "owned": 0,
+            "visible": false,
+            "allowed": false
+          }
+        ],
+        "grant": [
+          {
+            "guid": 926101,
+            "before": 8,
+            "after": 8,
+            "quantity": 0,
+            "target_quantity": 2
+          }
+        ],
+        "quantity": 2,
+        "auto_grant_enabled": true,
+        "effective_auto_grant": true,
+        "native_saves": 0,
+        "pending": null
+      },
+      {
+        "case": "off_existing",
+        "status": "PASS",
+        "source": "evidence/game/rc3-off_existing/result.json",
+        "check_count": 18,
+        "checks": [
+          {
+            "name": "fresh-process",
+            "pass": true
+          },
+          {
+            "name": "launch-freezes-options",
+            "pass": true
+          },
+          {
+            "name": "candidate-table-exact",
+            "pass": true
+          },
+          {
+            "name": "exact-local-inventory-ready",
+            "pass": true
+          },
+          {
+            "name": "normal-card-owned-expected",
+            "pass": true
+          },
+          {
+            "name": "token-never-owned",
+            "pass": true
+          },
+          {
+            "name": "runtime-options-and-effective-mode",
+            "pass": true
+          },
+          {
+            "name": "no-player-card-runtime-errors",
+            "pass": true
+          },
+          {
+            "name": "one-scoped-silver-hook-registered",
+            "pass": true
+          },
+          {
+            "name": "collectible-visible-and-owned",
+            "pass": true
+          },
+          {
+            "name": "token-not-visible-not-allowed",
+            "pass": true
+          },
+          {
+            "name": "original-card-counts-unchanged",
+            "pass": true
+          },
+          {
+            "name": "inventory-delta-file-unchanged",
+            "pass": true
+          },
+          {
+            "name": "new-card-deck-persists-cold",
+            "pass": true
+          },
+          {
+            "name": "candidate-silver-fixup-protection-hit",
+            "pass": true
+          },
+          {
+            "name": "off-keeps-existing-without-grant-or-save",
+            "pass": true
+          },
+          {
+            "name": "same-process-survived",
+            "pass": true
+          },
+          {
+            "name": "no-native-java-crash",
+            "pass": true
+          }
+        ],
+        "inventory": [
+          {
+            "guid": 926101,
+            "count": 8
+          },
+          {
+            "guid": 926102,
+            "count": 0
+          }
+        ],
+        "collection": [
+          {
+            "guid": 926101,
+            "owned": 8,
+            "visible": true,
+            "allowed": true
+          },
+          {
+            "guid": 926102,
+            "owned": 0,
+            "visible": false,
+            "allowed": false
+          }
+        ],
+        "grant": [],
+        "quantity": 2,
+        "auto_grant_enabled": false,
+        "effective_auto_grant": false,
+        "native_saves": 0,
+        "pending": null
+      },
+      {
+        "case": "original",
+        "status": "PASS",
+        "source": "evidence/game/rc3-original/result.json",
+        "check_count": 19,
+        "checks": [
+          {
+            "name": "fresh-process",
+            "pass": true
+          },
+          {
+            "name": "launch-freezes-options",
+            "pass": true
+          },
+          {
+            "name": "candidate-table-exact",
+            "pass": true
+          },
+          {
+            "name": "exact-local-inventory-ready",
+            "pass": true
+          },
+          {
+            "name": "normal-card-owned-expected",
+            "pass": true
+          },
+          {
+            "name": "token-never-owned",
+            "pass": true
+          },
+          {
+            "name": "runtime-options-and-effective-mode",
+            "pass": true
+          },
+          {
+            "name": "no-player-card-runtime-errors",
+            "pass": true
+          },
+          {
+            "name": "one-scoped-silver-hook-registered",
+            "pass": true
+          },
+          {
+            "name": "original-card-counts-unchanged",
+            "pass": true
+          },
+          {
+            "name": "inventory-delta-file-unchanged",
+            "pass": true
+          },
+          {
+            "name": "original-mode-no-new-card-protection",
+            "pass": true
+          },
+          {
+            "name": "original-mode-clears-custom-inventory",
+            "pass": true
+          },
+          {
+            "name": "unloaded-new-card-removed-from-decks",
+            "pass": true
+          },
+          {
+            "name": "launch-reports-affected-deck",
+            "pass": true
+          },
+          {
+            "name": "all-original-decks-and-cards-kept",
+            "pass": true
+          },
+          {
+            "name": "removed-card-deck-retains-other-36",
+            "pass": true
+          },
+          {
+            "name": "same-process-survived",
+            "pass": true
+          },
+          {
+            "name": "no-native-java-crash",
+            "pass": true
+          }
+        ],
+        "inventory": [
+          {
+            "guid": 926101,
+            "count": 0
+          },
+          {
+            "guid": 926102,
+            "count": 0
+          }
+        ],
+        "collection": [],
+        "grant": [],
+        "quantity": 4,
+        "auto_grant_enabled": true,
+        "effective_auto_grant": false,
+        "native_saves": 0,
+        "pending": null
+      }
+    ],
+    "original_inventory_preserved": true,
+    "inventory_delta_unchanged": true,
+    "decks": {
+      "valid_saved_card_count": 40,
+      "custom_copies_in_saved_deck": 4,
+      "cold_saved_deck_preserved": true,
+      "original_decks_preserved": true,
+      "original_deck_count": 5,
+      "removed_card_deck_remaining": 36,
+      "custom_guids_remaining_in_original_decks": 0
+    }
+  },
+  "historical_failures": [
+    {
+      "source": "evidence/game/repeat/result.json",
+      "status": "SEMANTIC_FAIL",
+      "reason": "RC1 in-memory grant did not survive a cold process; later revisions use the reviewed original local save command.",
+      "checks": [
+        {
+          "name": "repeat-or-lower-does-not-add",
+          "pass": false
+        }
+      ]
+    },
+    {
+      "source": "evidence/game/rc2-eight/result.json",
+      "status": "SEMANTIC_FAIL",
+      "reason": "RC2 native Silver fixup generated a negative inventory Delta above four; RC3 scopes the original Silver classification exception to eligible custom Mod GUIDs.",
+      "checks": [
+        {
+          "name": "normal-card-owned-expected",
+          "pass": false
+        }
+      ]
+    }
+  ],
+  "primary_check_total": 352,
+  "restoration": {
+    "status": "PASS",
+    "source": "evidence/restored.json",
+    "check_count": 208,
+    "final_apk_bound": true,
+    "old_mods": 5,
+    "fixture_mods_archived": 2,
+    "original_library_bytes_restored": true,
+    "original_mod2_kept": true,
+    "account_roots_cleared": false,
+    "network": {
+      "status": "PASS",
+      "matches_before": true,
+      "before": {
+        "wifi_on": "1",
+        "mobile_data": "1"
+      },
+      "after": {
+        "wifi_on": "1",
+        "mobile_data": "1"
+      }
+    }
+  }
+}

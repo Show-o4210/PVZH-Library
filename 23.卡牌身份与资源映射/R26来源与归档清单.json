@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "date": "2026-10-24",
+  "source_workspace": "pvzh-launcher/native-r26",
+  "apk_sha256": "6db51ce22b78af415c1f35635c1820257d31c867cec268ccec8154b44c5c3e4d",
+  "copied_summary": {
+    "file": "新卡获取与Mod列表验收摘要.json",
+    "sha256": "12cbae126f76a1b8438930599d93e71925c05e83fd309275403f1eac40ab9b1b",
+    "source": "evidence/validation-summary.json"
+  },
+  "sources": {
+    "docs/RELEASE-VALIDATION.md": "ccb97af61a332aa8cd658c70992fbd152c08d2ebb4ae644c8f2f24c10ae85f71",
+    "evidence/auto-cards-freeze-rc3.json": "3209d72f8290c918c764cf3bd2f81ca5e34e217d9c65816f4af6f2fa16b8adea",
+    "evidence/release-integrity-r26-player-mods-rc3-independent.json": "cf2c63a95246b6e402df52c19609d3936bd1f76ea6d54a8606efdcc6ac0b0f9b",
+    "evidence/release-native-silver-fixup-review.json": "2c79ee89358d3a5bd56fba73b0225cb2163a51b378929726ed1cba6a035fd64c",
+    "scripts/summarize_validation.py": "17b9355eeb07aaad2e7a2d565b3903565bb27c370225932cfa0473ab60138995"
+  },
+  "scope": "Filtered public summary only; no APK, bundles, raw device logs, account data or credentials",
+  "library_documents": {
+    "06.可配置新卡获取与手机Mod列表.md": "0237af9407ad739e2c7286b7896855348751c3c980cf28c198d33a06f6c8ad38",
+    "新卡获取与Mod列表验收摘要.json": "12cbae126f76a1b8438930599d93e71925c05e83fd309275403f1eac40ab9b1b"
+  }
+}

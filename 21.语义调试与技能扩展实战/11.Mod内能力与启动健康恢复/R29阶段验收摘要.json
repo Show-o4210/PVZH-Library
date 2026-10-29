@@ -1,0 +1,463 @@
+{
+  "schema": 1,
+  "revision": "Android R29 RC2 historical continuity plus final RC4 scoped evidence",
+  "date_local": "2026-10-25",
+  "status": "SCOPED_RC4_EVIDENCE_FINAL_RECEIPT_AUTHORITATIVE",
+  "scope": "Actual RC4 AI/UI approval/readback and normal loading plus manual recovery; actual new-card play and exact next-turn settlement USER_SKIPPED. Historical RC2 continuity remains separately version-bound. Not an all-skills stable or official cloud-sync verdict.",
+  "frozen_baseline_apk_sha256": "3b3cfd4822ea3d990aa05633aed78609f4308361e854156c44ee2714cecd5ea0",
+  "host_evidence": [
+    {
+      "source_workspace_relative": "pvzh-launcher/native-r29/evidence/mod-capabilities-host.json",
+      "receipt_sha256": "cd6b5e541286147fdd6aa6b4d9a6a04d5a9717e1280b632f17412c9647fdf19d",
+      "status": "PASS",
+      "checks": 59,
+      "scenarios": null,
+      "assertions": null
+    },
+    {
+      "source_workspace_relative": "pvzh-launcher/native-r29/evidence/launch-health-js.json",
+      "receipt_sha256": "80da70e29c34672bac7ba1ad9d0f7b127785e78d2f3a7c0d34f702cd6afcd113",
+      "status": "PASS",
+      "checks": null,
+      "scenarios": 29,
+      "assertions": 56
+    },
+    {
+      "source_workspace_relative": "pvzh-launcher/native-r29/evidence/launch-health-java.json",
+      "receipt_sha256": "51d571402320b4eb6bba3da2ea01d0c2054791f2f347d6274293744faf68c734",
+      "status": "PASS",
+      "checks": 30,
+      "scenarios": null,
+      "assertions": null
+    },
+    {
+      "source_workspace_relative": "pvzh-launcher/native-r29/evidence/inventory-continuity-java.json",
+      "receipt_sha256": "f4a62ee4fa1bd7173becc3ffcbcb07eae35095464d3fb41d689a20684961ddb7",
+      "status": "PASS",
+      "checks": 31,
+      "scenarios": null,
+      "assertions": null
+    },
+    {
+      "source_workspace_relative": "pvzh-launcher/native-r29/evidence/inventory-continuity-js.json",
+      "receipt_sha256": "85d6c0d8df5295d961747d21d902467e2f704a6399eb91703bcf56c2c1229e60",
+      "status": "PASS",
+      "checks": 45,
+      "scenarios": null,
+      "assertions": null
+    },
+    {
+      "source_workspace_relative": "pvzh-launcher/native-r29/evidence/template-collection-host.json",
+      "receipt_sha256": "f26d3e3a9761062f02b41f98bf9d4e190e25f454a07343c2f82c3babbcc5398b",
+      "status": "PASS",
+      "checks": 687,
+      "scope": "Read-only metadata classification, positive template guidance and actual production compiler field rejection/token inheritance; no ADB/API/inventory edit/native collection/deck/gameplay verdict"
+    }
+  ],
+  "device_observation": {
+    "source_workspace_relative": "pvzh-launcher/native-r29/evidence/inventory/rc2-network-off-r2/result.json",
+    "receipt_sha256": "9293177b38473028b60ff89cc40f6b664a9949d853a8a3531fd80709de4f03c3",
+    "status": "OBSERVED_PENDING_DIRECT_HTTPS_PROOF",
+    "checks": null,
+    "scenarios": null,
+    "assertions": null,
+    "apk_sha256": "b5350bfaa325ba66ef5ad096f20dea54d2940b08ebfa66d409c9de1225c8dc5d",
+    "automatic_get_enabled": false,
+    "network": {
+      "default": "Active default network: 137",
+      "validated_internet": false
+    },
+    "before": 4,
+    "samples": [
+      {
+        "elapsed_ms": 100,
+        "disk_count": 4
+      },
+      {
+        "elapsed_ms": 44211,
+        "disk_count": 0
+      },
+      {
+        "elapsed_ms": 46381,
+        "disk_count": 4
+      }
+    ],
+    "after_native": 4,
+    "after_disk": 4,
+    "native_saves": 0,
+    "grants": [],
+    "inventory_sets": 3,
+    "errors": [],
+    "continuity": {
+      "schema": 1,
+      "configured": true,
+      "enabled": true,
+      "bootstrap_consumed": 1,
+      "bootstrap_restored_records": 1,
+      "bootstrap_saves": 1,
+      "sync_accepts": 0,
+      "sync_restored_records": 0,
+      "sync_preserved_saves_verified": 0,
+      "identity_changes": 1,
+      "skipped": 1,
+      "errors": [],
+      "last_skip": "sync-definitions-not-ready",
+      "pending_save": false,
+      "seeded_accounts": 1,
+      "tracked_sync_requests": 1,
+      "active_sync_depth": 0
+    },
+    "prelaunch_proof_counts": {
+      "prepared": true,
+      "enabled": true,
+      "accounts": 1,
+      "owned_candidate_records": 1,
+      "eligible_candidates": 1,
+      "skipped_accounts": 0
+    }
+  },
+  "unverified": [
+    "Actual official inventory Sync accept preservation branch",
+    "Automatic launcher reopening on Android37 remains FAIL/BAL_BLOCK; only explicit manual icon fallback PASS",
+    "Full skill/combination stability is not established; final card play and exact next-turn settlement USER_SKIPPED",
+    "Natural mission-number lookup is not complete: initial mission 1 request clarified after only three selected samples; actual NodeID supplied in follow-up",
+    "Final release status remains authoritative only in product final-candidate receipt"
+  ],
+  "privacy": "Excluded account IDs, private data paths, snapshot contents, transaction IDs, process IDs, tokens and full raw logs. Sources stay in product workspace; Library contains only this summary.",
+  "document_sources": [
+    {
+      "source_workspace_relative": "pvzh-launcher/native-r29/docs/MOD-RUNTIME-OPTIONS.md",
+      "sha256": "785f881d49f6385580eb89ae8cfc34eb6c473d473bd7eef6dcc40aedde0bc36f"
+    },
+    {
+      "source_workspace_relative": "pvzh-launcher/native-r29/docs/LAUNCH-HEALTH-AND-RECOVERY.md",
+      "sha256": "800fe0fbb5993aaba45f18cf988172bcf2f332ab34e96ff7e5c93cffb0c247d9"
+    },
+    {
+      "source_workspace_relative": "pvzh-launcher/native-r29/docs/INVENTORY-CONTINUITY.md",
+      "sha256": "48aaeac4b02029831ecbd3c6ad0dd3db68399e11b9d31c38ef9d913e5f6d37c7"
+    },
+    {
+      "source_workspace_relative": "pvzh-launcher/native-r29/docs/ACCEPTANCE-MATRIX.md",
+      "sha256": "7b8bce048e6a35d256a4659e84cfae8d4d491574faa6a92f9be77fbbe79ec791"
+    },
+    {
+      "source_workspace_relative": "pvzh-launcher/native-r29/docs/TEMPLATE-COLLECTION-GUIDANCE.md",
+      "sha256": "00ba788ebd99924637750c1bdd3681e511c896db2b5302c73dc612b7d7a78ff3"
+    }
+  ],
+  "native_template_observation": {
+    "source_workspace_relative": "pvzh-launcher/native-r29/evidence/rc2-native-template-eligibility.json",
+    "receipt_sha256": "8cd020dbb5e3091e0cdff27a8b750de31d6f9083f1c2f3d0257404775816248e",
+    "apk_sha256": "b5350bfaa325ba66ef5ad096f20dea54d2940b08ebfa66d409c9de1225c8dc5d",
+    "rows": [
+      {
+        "guid": 10,
+        "defined": true,
+        "allowed": true,
+        "set": "Silver",
+        "usable": true,
+        "is_power": false,
+        "is_primary_power": false,
+        "ignore_deck_limit": true,
+        "reason": "original_deck_filter_allowed"
+      },
+      {
+        "guid": 345,
+        "defined": true,
+        "allowed": false,
+        "set": "Token",
+        "usable": true,
+        "is_power": false,
+        "is_primary_power": false,
+        "ignore_deck_limit": false,
+        "reason": "token"
+      },
+      {
+        "guid": 653,
+        "defined": true,
+        "allowed": true,
+        "set": "Set4",
+        "usable": true,
+        "is_power": false,
+        "is_primary_power": false,
+        "ignore_deck_limit": false,
+        "reason": "original_deck_filter_allowed"
+      }
+    ],
+    "scope": "Three original native deck-filter observations only; no custom-card/player-flow or all-template claim."
+  },
+  "rc4_scoped_results": {
+    "apk_sha256": "42c084fce94bdbf8dae5b9ecc623502e02f23a7d63d016363d2175b80115ec62",
+    "ai_ui_workflow": [
+      {
+        "source_workspace_relative": "pvzh-launcher/native-r29/evidence/ai-workflow-rc4/card-result.json",
+        "receipt_sha256": "fb4a4d1b12a550bd758a11c7ebd75d0270103317605605cba7b9273dc640da73",
+        "status": "PASS",
+        "step": "card",
+        "direct_api": true,
+        "pc_relay_used": false,
+        "ui_send": true,
+        "ui_decision": true,
+        "decision": "accepted",
+        "source_before": "cee9043da670eccf69669638b3fce949e7234a097c1dfa7f3377ef593875d91d",
+        "saved_after": "fc0ad1502aba3af02258c82c9cda017d03780b68ab843720f722d9fdabdf18a2",
+        "runtime_validation": "PENDING"
+      },
+      {
+        "source_workspace_relative": "pvzh-launcher/native-r29/evidence/ai-workflow-rc4/refine-result.json",
+        "receipt_sha256": "d71d4ccab4c6008bd4c25f0053e4012f82644d28a714eb1b26f2a3cb7e2f3abd",
+        "status": "PASS",
+        "step": "refine",
+        "direct_api": true,
+        "pc_relay_used": false,
+        "ui_send": true,
+        "ui_decision": true,
+        "decision": "accepted",
+        "source_before": "fc0ad1502aba3af02258c82c9cda017d03780b68ab843720f722d9fdabdf18a2",
+        "saved_after": "4e7eeaca345bbd774351c3a96c8f54a937e6feb1a163029637373b52fddfe274",
+        "runtime_validation": "PENDING"
+      },
+      {
+        "source_workspace_relative": "pvzh-launcher/native-r29/evidence/ai-workflow-rc4/reject-result.json",
+        "receipt_sha256": "394dc0aae74bf3613e491964a6b56537f0dd425721272d4a3f49c6568d39e379",
+        "status": "PASS",
+        "step": "reject",
+        "direct_api": true,
+        "pc_relay_used": false,
+        "ui_send": true,
+        "ui_decision": true,
+        "decision": "rejected",
+        "source_before": "4e7eeaca345bbd774351c3a96c8f54a937e6feb1a163029637373b52fddfe274",
+        "saved_after": "4e7eeaca345bbd774351c3a96c8f54a937e6feb1a163029637373b52fddfe274",
+        "runtime_validation": "PENDING"
+      },
+      {
+        "source_workspace_relative": "pvzh-launcher/native-r29/evidence/ai-workflow-rc4/level-confirmed-result.json",
+        "receipt_sha256": "322a69d04ac078f7c9e3337036623ebe0d8566ceb081c6f92f6aa1b0e3e1b3f0",
+        "status": "PASS",
+        "step": "level-confirmed",
+        "direct_api": true,
+        "pc_relay_used": false,
+        "ui_send": true,
+        "ui_decision": true,
+        "decision": "accepted",
+        "source_before": "4e7eeaca345bbd774351c3a96c8f54a937e6feb1a163029637373b52fddfe274",
+        "saved_after": "52c1ae46a0aa96c496ed90a051d84ec665c8c07dcc39c21a3f344aa38bb8d572",
+        "runtime_validation": "PENDING"
+      }
+    ],
+    "level_clarification": {
+      "source_workspace_relative": "pvzh-launcher/native-r29/evidence/ai-workflow-rc4/level-clarification.json",
+      "receipt_sha256": "3ce7ed9736f8ee6f10391810017e08189f434e54df78f38eb1474714b8dde733",
+      "status": "NEEDS_CLARIFICATION",
+      "saved_mod_unchanged": true,
+      "reason": "Natural Plant mission 1 was not among three preselected level samples. Exact node ID from actual player progression will be supplied in a follow-up; no hand-authored patch."
+    },
+    "artifact_readback": [
+      {
+        "source_workspace_relative": "pvzh-launcher/native-r29/evidence/independent-ai-assets-card-rc4.json",
+        "receipt_sha256": "5d4aeb96c4924b37f7f93bcc0b9dc606aa7ec994bbffc7e5e05ec5a70a9c2c9b",
+        "status": "FAIL",
+        "zip_sha256": "fc0ad1502aba3af02258c82c9cda017d03780b68ab843720f722d9fdabdf18a2",
+        "scope": "actual saved AI Mod card/CN/level readback; no API invocation, ADB or native skill validation claimed",
+        "error": "effect-0-only-self-alive-enabled-trigger"
+      },
+      {
+        "source_workspace_relative": "pvzh-launcher/native-r29/evidence/independent-ai-assets-card-rc4-selfscope.json",
+        "receipt_sha256": "9f1fb6defaa067decbdf74b19f412877d67758c367b5eeec0472f5d016de3750",
+        "status": "PASS",
+        "zip_sha256": "fc0ad1502aba3af02258c82c9cda017d03780b68ab843720f722d9fdabdf18a2",
+        "scope": "actual saved AI Mod card/CN/level readback; no API invocation, ADB or native skill validation claimed",
+        "created_cards": [
+          {
+            "guid": 900002,
+            "name": "试炼豆芽",
+            "template_guid": 653,
+            "resource_prefab": "Typical Beanstalk",
+            "stats": {
+              "cost": 1,
+              "attack": 2,
+              "health": 3
+            }
+          }
+        ],
+        "runtime_validation": "NOT_TESTED"
+      },
+      {
+        "source_workspace_relative": "pvzh-launcher/native-r29/evidence/independent-ai-assets-refine-rc4.json",
+        "receipt_sha256": "786170d1b5850688e67b471c5cf62843277becd3e2ca0f9931cb4426c3a61618",
+        "status": "PASS",
+        "zip_sha256": "4e7eeaca345bbd774351c3a96c8f54a937e6feb1a163029637373b52fddfe274",
+        "scope": "actual saved AI Mod card/CN/level readback; no API invocation, ADB or native skill validation claimed",
+        "created_cards": [
+          {
+            "guid": 900002,
+            "name": "试炼豆芽",
+            "template_guid": 653,
+            "resource_prefab": "Typical Beanstalk",
+            "stats": {
+              "cost": 1,
+              "attack": 2,
+              "health": 4
+            }
+          }
+        ],
+        "runtime_validation": "NOT_TESTED"
+      },
+      {
+        "source_workspace_relative": "pvzh-launcher/native-r29/evidence/independent-ai-assets-level-rc4.json",
+        "receipt_sha256": "127186b5d685762f7d6b8d057d9ea50465e06c9b289b18f72916712149bf486f",
+        "status": "PASS",
+        "zip_sha256": "52c1ae46a0aa96c496ed90a051d84ec665c8c07dcc39c21a3f344aa38bb8d572",
+        "scope": "actual saved AI Mod card/CN/level readback; no API invocation, ADB or native skill validation claimed",
+        "created_cards": [
+          {
+            "guid": 900002,
+            "name": "试炼豆芽",
+            "template_guid": 653,
+            "resource_prefab": "Typical Beanstalk",
+            "stats": {
+              "cost": 1,
+              "attack": 2,
+              "health": 4
+            }
+          }
+        ],
+        "level": {
+          "id": "PVE_Soft_Node_Plant_001",
+          "changes": {
+            "OpponentConfig.Parameters.InitialHealth": 40,
+            "PlayerConfig.Parameters.InitialSunCount": 10,
+            "BoardConfig.BoardAbilities": [
+              356,
+              359
+            ]
+          },
+          "changed_textassets": [
+            "PVE_Soft_Node_Plant_001"
+          ],
+          "localized_description": "特殊挑战：僵尸英雄拥有40点生命；每个回合开始时，场上所有僵尸单位永久获得+1/+1，同时你的植物英雄受到1点伤害。你以10点阳光开局，好好利用这份先手。"
+        },
+        "runtime_validation": "NOT_TESTED"
+      },
+      {
+        "source_workspace_relative": "pvzh-launcher/native-r29/evidence/independent-ai-incremental-rc4.json",
+        "receipt_sha256": "ac305fea545657d6269877dcd9318b62aec7a79d680eb094d3c1fcfb57981078",
+        "status": "PASS",
+        "scope": "RC4 actual saved artifacts incremental/rejection; native collection/game settlement still pending"
+      },
+      {
+        "source_workspace_relative": "pvzh-launcher/native-r29/evidence/independent-ai-level-incremental-rc4.json",
+        "receipt_sha256": "b733b3079dac8ba25e303bd420ba4828014ef2f5084e6d33242c04b4ae9abb19",
+        "status": "PASS",
+        "scope": "actual saved level proposal cumulative diff only; native settlement pending"
+      }
+    ],
+    "new_card_acquisition": {
+      "source_workspace_relative": "pvzh-launcher/native-r29/evidence/rc4-new-card-acquisition.json",
+      "receipt_sha256": "04c7b7800e961973ed39086007c7043e91c5d1459cf167e9c2f0f12996516156",
+      "status": "PASS",
+      "guid": 900002,
+      "quantity": 4,
+      "native_allowed": {
+        "guid": 900002,
+        "defined": true,
+        "allowed": true,
+        "set": "Set4",
+        "usable": true,
+        "is_power": false,
+        "is_primary_power": false,
+        "prefab": "pvzhmod_218332b6e5df_900002",
+        "ignore_deck_limit": false,
+        "faction": 0,
+        "color": 2,
+        "reason": "original_deck_filter_allowed"
+      },
+      "automatic_grants": [
+        {
+          "guid": 900002,
+          "defined": true,
+          "allowed": true,
+          "set": "Set4",
+          "usable": true,
+          "is_power": false,
+          "is_primary_power": false,
+          "prefab": "pvzhmod_218332b6e5df_900002",
+          "ignore_deck_limit": false,
+          "faction": 0,
+          "color": 2,
+          "reason": "original_deck_filter_allowed",
+          "before": 4,
+          "after": 4,
+          "quantity": 0,
+          "target_quantity": 4
+        }
+      ],
+      "errors": [],
+      "normal_ui_mod_toggle_and_launch": true,
+      "show_launch_details": false,
+      "fixture_card_injection": false
+    },
+    "direct_network": {
+      "source_workspace_relative": "pvzh-launcher/native-r29/evidence/rc4-direct-network.json",
+      "receipt_sha256": "adc031e020fee16d57f18d53ef825c0889047892964136b2d686cd69db0cfa1b",
+      "status": "PASS_APPLICATION_DIRECT_HTTPS",
+      "default_network": "Active default network: 137",
+      "internet_capability": true,
+      "android_validated": false,
+      "partial_connectivity": true,
+      "actual_direct_phone_provider": "https://api.deepseek.com",
+      "pc_relay": false
+    },
+    "automatic_reopen": {
+      "source_workspace_relative": "pvzh-launcher/native-r29/evidence/qa-fault-recovery/rc4-card-assets-invalid-binding-r2/ui-recovery.json",
+      "receipt_sha256": "e879f50824c08bf1d39239becbbfdbef8c4fa38130b2b67c202edba79cd31a3b",
+      "status": "FAIL",
+      "actual_ui_button": "recovery_safe",
+      "actual_confirmation": "退出并重新打开"
+    },
+    "manual_recovery": {
+      "source_workspace_relative": "pvzh-launcher/native-r29/evidence/qa-fault-recovery/rc4-card-assets-invalid-binding-r2/manual-recovery.json",
+      "receipt_sha256": "359a0d055786607cf0c163c4ead820d6aa1d4ff1837a2016f22a352181dd3ec6",
+      "status": "PASS",
+      "method": "actual swipe to launcher app drawer and tap visible PvZ Heroes icon",
+      "home_visible": true,
+      "safe_mode_saved": true,
+      "player_and_workbench_files_byte_preserved": 41,
+      "automatic_reopen": "FAIL; Android policy denial retained separately"
+    },
+    "formal_initial": {
+      "source_workspace_relative": "pvzh-launcher/native-r29/evidence/formal-rc4/initial.json",
+      "receipt_sha256": "1cc4e950d47879d4785ff4d7233cf06a949986057f822c5edd3589937fc727b5",
+      "fixture": false,
+      "headless": false,
+      "formal_progression": true,
+      "node": {
+        "node_id": "PVE_Soft_Node_Plant_001",
+        "node_index": 0,
+        "progression_name": "Campaign_Plant_001",
+        "progression_id": 1,
+        "boss": false
+      },
+      "zombie_hero_health": 40,
+      "plant_initial_sun": 10,
+      "board_ability_guids": [
+        359,
+        356
+      ],
+      "normal_deck_count_confirmed_by_root": 40,
+      "sprite_and_inventory_confirmed_by_root": true
+    },
+    "unexecuted_final_settlement": {
+      "status": "USER_SKIPPED",
+      "source": "Root relayed latest user instruction to skip current match",
+      "cases": [
+        "Actual play of new card: zombie hero damage 3 and draw 1",
+        "Exact next-turn board-effect deltas"
+      ],
+      "not_a_pass": true
+    },
+    "retained_checker_failure": "Original card-rc4 checker required optional IsAlive/WillTriggerEffects guards. Original FAIL retained; selfscope report separately PASSes actual self-play scope and target truth table. No gameplay verdict."
+  }
+}

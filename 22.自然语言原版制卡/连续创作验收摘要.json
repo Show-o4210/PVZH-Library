@@ -1,0 +1,287 @@
+{
+  "schema": 1,
+  "revision": "Android R24 creation RC5",
+  "date_local": "2026-10-24",
+  "status": "SCOPED_HISTORY_API_MUSIC_AND_ORIGINAL_ISOLATION_PASS",
+  "archive_scope": "documentation and filtered evidence only; public Python v1 and historical R23 claims unchanged",
+  "version_history": {
+    "offline_evidence": [
+      {
+        "source_workspace_relative": "pvzh-launcher/native-r24/evidence/history-checks.json",
+        "receipt_sha256": "ddc5c49e51271d80708eb62ae89f28aeb80a07310a13ead22763206eea9db9e6",
+        "status": "PASS",
+        "checks": 48,
+        "evidence_kind": "LOCAL_DATA_OR_PROTOCOL",
+        "device_calls": 0,
+        "real_api_claim": false
+      },
+      {
+        "source_workspace_relative": "pvzh-launcher/native-r24/evidence/history-android-checks.json",
+        "receipt_sha256": "f2dc12fa61ec7ee93ff483b831258509ffc0b1501542bdb285b0a0992b59c557",
+        "status": "PASS",
+        "checks": 48,
+        "evidence_kind": "LOCAL_DATA_OR_PROTOCOL",
+        "device_calls": 0,
+        "real_api_claim": false
+      },
+      {
+        "source_workspace_relative": "pvzh-launcher/native-r24/evidence/history-focused-checks.json",
+        "receipt_sha256": "efddf7e73d1383766dcd988550fbf1f4ff7d185e91fabf35cc38e99a6bb97490",
+        "status": "PASS",
+        "checks": 7,
+        "evidence_kind": "LOCAL_DATA_OR_PROTOCOL",
+        "device_calls": 0,
+        "real_api_claim": false
+      },
+      {
+        "source_workspace_relative": "pvzh-launcher/native-r24/evidence/history-android-focused-checks.json",
+        "receipt_sha256": "d66ad83c95d4c757196c8add391155097b4841cde92de69b915ad237913c773e",
+        "status": "PASS",
+        "checks": 7,
+        "evidence_kind": "LOCAL_DATA_OR_PROTOCOL",
+        "device_calls": 0,
+        "real_api_claim": false
+      },
+      {
+        "source_workspace_relative": "pvzh-launcher/native-r24/evidence/history-store-checks.json",
+        "receipt_sha256": "5dd6bdc00336b1bea149c8ccea670a9c65daf36713576cffd536a9bc54d8639e",
+        "status": "PASS",
+        "checks": 24,
+        "evidence_kind": "LOCAL_DATA_OR_PROTOCOL",
+        "device_calls": 0,
+        "real_api_claim": false
+      }
+    ],
+    "whole_fixture_heap_mib": 512,
+    "focused_two_snapshot_heap_mib": 256,
+    "history_source_identity": "same Mod id and card namespace, actual archived ZIP and stable index fingerprint",
+    "selective_undo_basis": "verified original input ZIP, not imported ledger prose",
+    "permission": "normal awaiting proposal; user approval required before saving"
+  },
+  "device_history": {
+    "protocol": {
+      "source_workspace_relative": "pvzh-launcher/native-r24/evidence/device-history/result.json",
+      "receipt_sha256": "e0a8b7908ce2984e0d9f167063c13504b587d2618c53d353fdf366e54f509370",
+      "status": "PASS",
+      "checks": 25
+    },
+    "android_ui": {
+      "source_workspace_relative": "pvzh-launcher/native-r24/evidence/history-ui/result.json",
+      "receipt_sha256": "506f753f87e87b6ead999e9e74e7db55767bd1c9a2839793ee879b75a1b9084b",
+      "status": "PASS",
+      "checks": 5
+    },
+    "runtime_gameplay_claim": false
+  },
+  "selectors": {
+    "source_workspace_relative": "pvzh-launcher/native-r24/evidence/batch-filters-summary.json",
+    "receipt_sha256": "9d84d075be5cedea33772c43d055f28ae22bc5d3002d932b0148c1fbc64e7948",
+    "status": "PASS",
+    "checks": null,
+    "definitions": 650,
+    "units": 415,
+    "checks_each_json": 12453,
+    "old_core_checks_each_json": 1241,
+    "six_prior_golden_hashes_preserved": true,
+    "subtype_count": 34,
+    "metadata_rarity_mapping": {
+      "0": "R1",
+      "1": "R2",
+      "2": "R3",
+      "3": "R4",
+      "4": "R0",
+      "5": "Event"
+    },
+    "scope": "current unit metadata; no subtype/rarity mutation"
+  },
+  "novice_cases": {
+    "definitions": 30,
+    "definition_status": "NOT_30_API_RESULTS",
+    "machine_batch_definitions": 19,
+    "oracle_self_tests": {
+      "source_workspace_relative": "pvzh-launcher/native-r24/evidence/novice-oracle-self-checks.json",
+      "receipt_sha256": "973cdd982e7811f7d604553e0482ba562dfb066a05137911aae0394755ce7b4e",
+      "status": "PASS",
+      "checks": 20
+    },
+    "deterministic_native_cross_checks": {
+      "source_workspace_relative": "pvzh-launcher/native-r24/evidence/novice-local-oracle-checks.json",
+      "receipt_sha256": "d62de32dc4d92c5573ef69a8565d436c60e5ec37e33366d46bb4ff720e316a88",
+      "status": "PASS",
+      "checks": null
+    },
+    "runtime_gameplay_claim": false
+  },
+  "real_api": {
+    "source_workspace_relative": "pvzh-launcher/native-r24/evidence/novice-api/summary.json",
+    "receipt_sha256": "8265cb1c27341f91331c2c467bfdd772f0847a728674ccc7868f9d98cf9b931a",
+    "status": "PASS",
+    "checks": null,
+    "real_provider": true,
+    "model": "deepseek-flash",
+    "executed_cases": 8,
+    "cases": [
+      {
+        "case_id": "n01",
+        "prompt": "把所有单位都改成9/9。",
+        "status": "PASS",
+        "candidate_sha256": "c1d7b02a45b6417637225c026ef654024472b8221156a3cc8d8f1fa3b80f0c61",
+        "plan_chars": 201,
+        "preview_count": 8,
+        "saved_mod_unchanged": true,
+        "quality_outcome": "reviewed_proposal",
+        "target_count": 415,
+        "expected_changed_count": 414,
+        "actual_changed_count": 414,
+        "cn_validation": "PASS",
+        "http_requests": 4
+      },
+      {
+        "case_id": "n04",
+        "prompt": "给所有豌豆植物加2点血。",
+        "status": "PASS",
+        "candidate_sha256": "3ae967d96510aeafe38aa02f4c97ccc18be7eb04ee5d5f75e396f9752e120012",
+        "plan_chars": 253,
+        "preview_count": 21,
+        "saved_mod_unchanged": true,
+        "quality_outcome": "reviewed_proposal",
+        "target_count": 21,
+        "expected_changed_count": 21,
+        "actual_changed_count": 21,
+        "cn_validation": "PASS",
+        "http_requests": 12
+      },
+      {
+        "case_id": "n06",
+        "prompt": "所有小鬼僵尸便宜1费，最低0费。",
+        "status": "PASS",
+        "candidate_sha256": "0541a5c3e560afecfd0a123a60fe966e1a1ba28ca5f1003a3523d643e8447b55",
+        "plan_chars": 271,
+        "preview_count": 28,
+        "saved_mod_unchanged": true,
+        "quality_outcome": "reviewed_proposal",
+        "target_count": 29,
+        "expected_changed_count": 28,
+        "actual_changed_count": 28,
+        "cn_validation": "PASS",
+        "http_requests": 8
+      },
+      {
+        "case_id": "n07",
+        "prompt": "把所有传说植物的攻击力改成6。",
+        "status": "PASS",
+        "candidate_sha256": "053107722b49fd34b9801b85690aef6173859b75e1b868eb83a1898701bbd69f",
+        "plan_chars": 220,
+        "preview_count": 30,
+        "saved_mod_unchanged": true,
+        "quality_outcome": "reviewed_proposal",
+        "target_count": 34,
+        "expected_changed_count": 30,
+        "actual_changed_count": 30,
+        "cn_validation": "PASS",
+        "http_requests": 8
+      },
+      {
+        "case_id": "n10",
+        "prompt": "给2费及以下的僵尸都加1点血。",
+        "status": "PASS",
+        "candidate_sha256": "c62bb988de64e3f14a4e17220ccc9a67309ca0a5858d3141841bf2c5a42b75ba",
+        "plan_chars": 234,
+        "preview_count": 8,
+        "saved_mod_unchanged": true,
+        "quality_outcome": "reviewed_proposal",
+        "target_count": 81,
+        "expected_changed_count": 81,
+        "actual_changed_count": 81,
+        "cn_validation": "PASS",
+        "http_requests": 8
+      },
+      {
+        "case_id": "n19",
+        "prompt": "把那张卡加强一点。",
+        "status": "PASS",
+        "saved_mod_unchanged": true,
+        "quality_outcome": null,
+        "observed_intent_action": "clarify",
+        "observed_quality_outcome": "needs_clarification",
+        "http_requests": 1
+      },
+      {
+        "case_id": "n20",
+        "prompt": "先说说豌豆植物适合怎么配合，先不要修改。",
+        "status": "PASS",
+        "saved_mod_unchanged": true,
+        "quality_outcome": "reviewed_discussion",
+        "observed_intent_action": "discuss",
+        "observed_quality_outcome": "reviewed_discussion",
+        "http_requests": 7
+      },
+      {
+        "case_id": "n26",
+        "prompt": "让豌豆射手打出后播放那首我还没导入的音乐。",
+        "status": "PASS",
+        "saved_mod_unchanged": true,
+        "quality_outcome": null,
+        "observed_intent_action": "clarify",
+        "observed_quality_outcome": "needs_clarification",
+        "http_requests": 1
+      }
+    ],
+    "n10_internal_revision_required": true,
+    "all_first_attempt_claim": false,
+    "manual_plan_substitution": false,
+    "runtime_gameplay": "NOT_TESTED_BY_THIS_SUITE"
+  },
+  "known_failures_preserved": [
+    {
+      "source_workspace_relative": "pvzh-launcher/native-r24/evidence/history-initial-desktop-fixture-heap256-failure.json",
+      "receipt_sha256": "7302ca19cdb5245433e08ba6f94cc6c8ec20fd84408af589158790419056f414",
+      "status": "FAIL_PRESERVED",
+      "checks": null
+    },
+    {
+      "source_workspace_relative": "pvzh-launcher/native-r24/evidence/history-initial-android-fixture-heap256-failure.json",
+      "receipt_sha256": "7302ca19cdb5245433e08ba6f94cc6c8ec20fd84408af589158790419056f414",
+      "status": "FAIL_PRESERVED",
+      "checks": null
+    },
+    {
+      "source_workspace_relative": "pvzh-launcher/native-r24/evidence/novice-oracle-stock-csv-strict-parser-failure.json",
+      "receipt_sha256": "aeb7b1357e737f8fce8f40242ff5786c6bd197eb07cfdd9bc8f5adbf0c186f2b",
+      "status": "FAIL",
+      "checks": null
+    }
+  ],
+  "prior_r23_failure_note": "R23 RC2 actual review OOM and later RC4 scoped pass remain in chapter10 and its original summary; not erased by R24",
+  "audio_status": {
+    "music_original_engine": 18,
+    "original_mode_isolation": 10,
+    "status": "PASS_SCOPED",
+    "listening_verified": false,
+    "details": "../21.语义调试与技能扩展实战/09.本地背景音乐与共享生命周期/音频能力验收摘要.json"
+  },
+  "credentials_raw_sessions_game_assets_embedded": false,
+  "git_push_performed": false,
+  "tested_runtime_apk_sha256": "a045e44ab1c8d11ee5f94df4fad8b420a6c3a976fbb5994fd64c98d83d29abcc",
+  "final_release": {
+    "source_workspace_relative": "pvzh-launcher/native-r24/evidence/release-summary-r24.json",
+    "receipt_sha256": "08f761409742fc7e911f2decafeb403d590470e2f1db293563134093e1cc2e66",
+    "status": "PASS",
+    "revision": "r24-creation-rc5",
+    "apk_sha256": "a045e44ab1c8d11ee5f94df4fad8b420a6c3a976fbb5994fd64c98d83d29abcc",
+    "independent_apk_checks": 36,
+    "device_restore": {
+      "status": "PASS",
+      "checks": 134,
+      "old_workbench_files": 760,
+      "account_files": 65,
+      "resource_files": 2887,
+      "owned_test_mods_hidden": 10,
+      "owned_sessions_archived": 10,
+      "account_roots_cleared": false,
+      "audio_cache_disabled": true
+    },
+    "git_pushed": false,
+    "web_deployed": false
+  }
+}

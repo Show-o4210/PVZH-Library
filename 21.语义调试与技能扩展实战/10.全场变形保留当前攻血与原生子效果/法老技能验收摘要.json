@@ -1,0 +1,2199 @@
+{
+  "schema": 1,
+  "revision": "Android launcher R25 pharaoh RC5",
+  "date_local": "2026-10-24",
+  "status": "SCOPED_ORIGINAL_ENGINE_221_PASS",
+  "document_archive_only": true,
+  "new_device_or_api_calls": false,
+  "game": "PVZH 1.67.8 ARM64 / 11056 resources",
+  "registry_revision": "r25-capabilities-1",
+  "private_rule": {
+    "id": "pvzh.rule.transform_others_keep_current_stats",
+    "number": 1026,
+    "version": 1,
+    "runtime_supported": true,
+    "ai_supported": false,
+    "portable_public_python_recipe": false
+  },
+  "semantics": {
+    "source_guid": 201,
+    "source_cost_attack_health": [
+      6,
+      4,
+      6
+    ],
+    "armor": 1,
+    "plant_target_guid": 10,
+    "zombie_target_guid": 50,
+    "excluded_source_hero_hand_deck_environment": true,
+    "preserve": "each target current attack and current HP, owner and lane",
+    "destination_damage_history": 0,
+    "destination_other_traits": "target definition; old traits not retained",
+    "snapshot_is_atomic": true
+  },
+  "apk_sha256": "399d91a226545f59bda139a76bb081534e2b7866f1f2d47f0ec8345bbe579325",
+  "mod_zip_sha256": "4e4537b5612c4bb400d7f76299d81d1082cc9279282f4345db77152b8d0ab8aa",
+  "wav": {
+    "sha256": "798a0f0dc92db48958c8b5661af8f19a31cef48f79916d455b9d50c604b599f3",
+    "bytes": 21410756,
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits": 16,
+    "seconds": 111.513583,
+    "included": false
+  },
+  "offline_evidence": [
+    {
+      "source_workspace_relative": "pvzh-launcher/operations/pharaoh-music-20261024/evidence/static-pharaoh-independent.json",
+      "source_sha256": "ecf5dec8aeaff9dc90d25c8826fa3801e606968b515f972f99c85e69ffc0911b",
+      "status": "PASS",
+      "checks": 80
+    },
+    {
+      "source_workspace_relative": "pvzh-launcher/native-r25/evidence/pharaoh-transform-host.json",
+      "source_sha256": "ef5925379b7bb1cfb2e07d1b3080f461450ef0f3a0780ceada7a31ba83873026",
+      "status": "PASS",
+      "checks": 87
+    },
+    {
+      "source_workspace_relative": "pvzh-launcher/native-r25/evidence/release-integrity-r25-pharaoh-rc5-20261024T101757732923Z.json",
+      "source_sha256": "0e59682c8297343a9fab904ef34a8a9069a89e941cece912ada28fbf7f195b18",
+      "status": "PASS",
+      "checks": 39
+    }
+  ],
+  "runtime_suites": [
+    {
+      "suite": "rc5-basic",
+      "source_workspace_relative": "pvzh-launcher/operations/pharaoh-music-20261024/evidence/game/rc5-basic/result.json",
+      "source_sha256": "241075a7b9fcb7a72f414120146ccb1b42cff7719c3390b5e544b00aa45b690f",
+      "status": "PASS",
+      "transport_kind": "original_engine",
+      "checks": 54,
+      "passed": 54,
+      "apk_sha256": "399d91a226545f59bda139a76bb081534e2b7866f1f2d47f0ec8345bbe579325",
+      "candidate_sha256": "4e4537b5612c4bb400d7f76299d81d1082cc9279282f4345db77152b8d0ab8aa",
+      "touch_input_used": false,
+      "screenshots_used": false,
+      "visual_animation_verified": false,
+      "warm_restart_cleanup_verified": false,
+      "check_results": [
+        {
+          "name": "cold-process",
+          "pass": true
+        },
+        {
+          "name": "music-track-deployed",
+          "pass": true
+        },
+        {
+          "name": "preparation-give-adds-one",
+          "pass": true
+        },
+        {
+          "name": "setup-summoned-77-1",
+          "pass": true
+        },
+        {
+          "name": "setup-summoned-9-1",
+          "pass": true
+        },
+        {
+          "name": "setup-summoned-10-2",
+          "pass": true
+        },
+        {
+          "name": "setup-summoned-50-0",
+          "pass": true
+        },
+        {
+          "name": "setup-summoned-29-4",
+          "pass": true
+        },
+        {
+          "name": "setup-summoned-58-4",
+          "pass": true
+        },
+        {
+          "name": "fixture-contains-injured-unit",
+          "pass": true
+        },
+        {
+          "name": "fixture-zero-or-environment-buffed-wall",
+          "pass": true
+        },
+        {
+          "name": "both-teamup-plants-present",
+          "pass": true
+        },
+        {
+          "name": "unit-27-guid",
+          "pass": true
+        },
+        {
+          "name": "unit-27-current-stats",
+          "pass": true
+        },
+        {
+          "name": "unit-27-owner-lane",
+          "pass": true
+        },
+        {
+          "name": "unit-27-damage-history-reset",
+          "pass": true
+        },
+        {
+          "name": "unit-27-destination-traits",
+          "pass": true
+        },
+        {
+          "name": "unit-28-guid",
+          "pass": true
+        },
+        {
+          "name": "unit-28-current-stats",
+          "pass": true
+        },
+        {
+          "name": "unit-28-owner-lane",
+          "pass": true
+        },
+        {
+          "name": "unit-28-damage-history-reset",
+          "pass": true
+        },
+        {
+          "name": "unit-28-destination-traits",
+          "pass": true
+        },
+        {
+          "name": "unit-29-guid",
+          "pass": true
+        },
+        {
+          "name": "unit-29-current-stats",
+          "pass": true
+        },
+        {
+          "name": "unit-29-owner-lane",
+          "pass": true
+        },
+        {
+          "name": "unit-29-damage-history-reset",
+          "pass": true
+        },
+        {
+          "name": "unit-29-destination-traits",
+          "pass": true
+        },
+        {
+          "name": "unit-30-guid",
+          "pass": true
+        },
+        {
+          "name": "unit-30-current-stats",
+          "pass": true
+        },
+        {
+          "name": "unit-30-owner-lane",
+          "pass": true
+        },
+        {
+          "name": "unit-30-damage-history-reset",
+          "pass": true
+        },
+        {
+          "name": "unit-30-destination-traits",
+          "pass": true
+        },
+        {
+          "name": "unit-31-guid",
+          "pass": true
+        },
+        {
+          "name": "unit-31-current-stats",
+          "pass": true
+        },
+        {
+          "name": "unit-31-owner-lane",
+          "pass": true
+        },
+        {
+          "name": "unit-31-damage-history-reset",
+          "pass": true
+        },
+        {
+          "name": "unit-31-destination-traits",
+          "pass": true
+        },
+        {
+          "name": "unit-32-guid",
+          "pass": true
+        },
+        {
+          "name": "unit-32-current-stats",
+          "pass": true
+        },
+        {
+          "name": "unit-32-owner-lane",
+          "pass": true
+        },
+        {
+          "name": "unit-32-damage-history-reset",
+          "pass": true
+        },
+        {
+          "name": "unit-32-destination-traits",
+          "pass": true
+        },
+        {
+          "name": "pharaoh-keeps-4-6",
+          "pass": true
+        },
+        {
+          "name": "heroes-untouched",
+          "pass": true
+        },
+        {
+          "name": "other-hand-cards-untouched",
+          "pass": true
+        },
+        {
+          "name": "one-transform-batch-settled",
+          "pass": true
+        },
+        {
+          "name": "pharaoh-real-armor1",
+          "pass": true
+        },
+        {
+          "name": "later-buffs-not-pinned-by-transform",
+          "pass": true
+        },
+        {
+          "name": "later-real-lethal-damage-not-undone",
+          "pass": true
+        },
+        {
+          "name": "user-wav-slot-duration-progress",
+          "pass": true
+        },
+        {
+          "name": "original-bgm-ducked-without-preference-write",
+          "pass": true
+        },
+        {
+          "name": "system-media-volume-preserved",
+          "pass": true
+        },
+        {
+          "name": "same-process-survived",
+          "pass": true
+        },
+        {
+          "name": "no-current-process-crash",
+          "pass": true
+        }
+      ],
+      "selected_model_facts": [
+        {
+          "check": "unit-27-current-stats",
+          "expected": {
+            "guid": 10,
+            "attack": 0,
+            "health": 6,
+            "owner": 0,
+            "lanes": [
+              12
+            ]
+          },
+          "actual": {
+            "id": 27,
+            "guid": 10,
+            "attack": 0,
+            "health": 6,
+            "damage": 0,
+            "max_health": 6,
+            "cost": 1,
+            "owner": 0,
+            "lanes": [
+              12
+            ]
+          }
+        },
+        {
+          "check": "unit-28-current-stats",
+          "expected": {
+            "guid": 10,
+            "attack": 2,
+            "health": 4,
+            "owner": 0,
+            "lanes": [
+              12
+            ]
+          },
+          "actual": {
+            "id": 28,
+            "guid": 10,
+            "attack": 2,
+            "health": 4,
+            "damage": 0,
+            "max_health": 4,
+            "cost": 1,
+            "owner": 0,
+            "lanes": [
+              12
+            ]
+          }
+        },
+        {
+          "check": "unit-29-current-stats",
+          "expected": {
+            "guid": 10,
+            "attack": 7,
+            "health": 10,
+            "owner": 0,
+            "lanes": [
+              13
+            ]
+          },
+          "actual": {
+            "id": 29,
+            "guid": 10,
+            "attack": 7,
+            "health": 10,
+            "damage": 0,
+            "max_health": 10,
+            "cost": 1,
+            "owner": 0,
+            "lanes": [
+              13
+            ]
+          }
+        },
+        {
+          "check": "unit-30-current-stats",
+          "expected": {
+            "guid": 50,
+            "attack": 3,
+            "health": 5,
+            "owner": 5,
+            "lanes": [
+              11
+            ]
+          },
+          "actual": {
+            "id": 30,
+            "guid": 50,
+            "attack": 3,
+            "health": 5,
+            "damage": 0,
+            "max_health": 5,
+            "cost": 1,
+            "owner": 5,
+            "lanes": [
+              11
+            ]
+          }
+        },
+        {
+          "check": "unit-31-current-stats",
+          "expected": {
+            "guid": 10,
+            "attack": 2,
+            "health": 2,
+            "owner": 0,
+            "lanes": [
+              15
+            ]
+          },
+          "actual": {
+            "id": 31,
+            "guid": 10,
+            "attack": 2,
+            "health": 2,
+            "damage": 0,
+            "max_health": 2,
+            "cost": 1,
+            "owner": 0,
+            "lanes": [
+              15
+            ]
+          }
+        },
+        {
+          "check": "unit-32-current-stats",
+          "expected": {
+            "guid": 50,
+            "attack": 2,
+            "health": 1,
+            "owner": 5,
+            "lanes": [
+              15
+            ]
+          },
+          "actual": {
+            "id": 32,
+            "guid": 50,
+            "attack": 2,
+            "health": 1,
+            "damage": 0,
+            "max_health": 1,
+            "cost": 1,
+            "owner": 5,
+            "lanes": [
+              15
+            ]
+          }
+        },
+        {
+          "check": "pharaoh-keeps-4-6",
+          "actual": {
+            "id": 24,
+            "guid": 201,
+            "attack": 4,
+            "health": 6,
+            "damage": 0,
+            "max_health": 6,
+            "cost": 6,
+            "owner": 5,
+            "lanes": [
+              14
+            ]
+          }
+        },
+        {
+          "check": "pharaoh-real-armor1",
+          "actual": {
+            "id": 24,
+            "guid": 201,
+            "attack": 4,
+            "health": 5,
+            "damage": 1,
+            "max_health": 6,
+            "cost": 6,
+            "owner": 5,
+            "lanes": [
+              14
+            ]
+          }
+        },
+        {
+          "check": "later-buffs-not-pinned-by-transform",
+          "actual": {
+            "id": 28,
+            "guid": 10,
+            "attack": 3,
+            "health": 5,
+            "damage": 0,
+            "max_health": 5,
+            "cost": 1,
+            "owner": 0,
+            "lanes": [
+              12
+            ]
+          }
+        }
+      ],
+      "wav_sha256": "798a0f0dc92db48958c8b5661af8f19a31cef48f79916d455b9d50c604b599f3",
+      "transform_batch": {
+        "rule": 1026,
+        "started": 1,
+        "native_transformed": 6,
+        "restoration_batches_queued": 1,
+        "units_queued": 6,
+        "pending_batches": 0,
+        "pending_jobs": 0,
+        "completed_batches": 1,
+        "calibration_batches": 1,
+        "calibration_fields": 0,
+        "safety_repairs": 0,
+        "errors": 0,
+        "atomic_snapshot": true,
+        "subset_finder_bypassed": true,
+        "continuous_group_timing": "one native completion/boundary calibration, never a persistent stat override"
+      },
+      "music_samples": {
+        "before": {
+          "control": {
+            "phase": "playing",
+            "original_muted": true,
+            "original_music_preference": 100,
+            "system_volume_modified": false,
+            "original_settings_written": false
+          },
+          "player": {
+            "backend": "android-media-player",
+            "state": "playing",
+            "slot": 8952476,
+            "foreground": true,
+            "prepared": true,
+            "playing": true,
+            "backend_is_playing": true,
+            "position_ms": 726,
+            "duration_ms": 111514,
+            "track_gain": 1,
+            "requested_gain": 1,
+            "volume": 1,
+            "prepares": 1,
+            "plays": 1,
+            "errors": 0,
+            "stops": 4
+          },
+          "native": {
+            "music_preference": 100,
+            "rtpc": 0,
+            "read_result": 1
+          }
+        },
+        "after": {
+          "control": {
+            "phase": "playing",
+            "original_muted": true,
+            "original_music_preference": 100,
+            "system_volume_modified": false,
+            "original_settings_written": false
+          },
+          "player": {
+            "backend": "android-media-player",
+            "state": "playing",
+            "slot": 8952476,
+            "foreground": true,
+            "prepared": true,
+            "playing": true,
+            "backend_is_playing": true,
+            "position_ms": 1451,
+            "duration_ms": 111514,
+            "track_gain": 1,
+            "requested_gain": 1,
+            "volume": 1,
+            "prepares": 1,
+            "plays": 1,
+            "errors": 0,
+            "stops": 4
+          },
+          "native": {
+            "music_preference": 100,
+            "rtpc": 0,
+            "read_result": 1
+          }
+        }
+      },
+      "system_media_volume": {
+        "before": {
+          "volume": 0,
+          "maximum": 25
+        },
+        "after": {
+          "volume": 0,
+          "maximum": 25
+        }
+      }
+    },
+    {
+      "suite": "rc5-environment",
+      "source_workspace_relative": "pvzh-launcher/operations/pharaoh-music-20261024/evidence/game/rc5-environment/result.json",
+      "source_sha256": "4c35982dc981c70426edbe44fa7fc0b8b63009a2ce4b261ca868472a9b9d30a1",
+      "status": "PASS",
+      "transport_kind": "original_engine",
+      "checks": 78,
+      "passed": 78,
+      "apk_sha256": "399d91a226545f59bda139a76bb081534e2b7866f1f2d47f0ec8345bbe579325",
+      "candidate_sha256": "4e4537b5612c4bb400d7f76299d81d1082cc9279282f4345db77152b8d0ab8aa",
+      "touch_input_used": false,
+      "screenshots_used": false,
+      "visual_animation_verified": false,
+      "warm_restart_cleanup_verified": false,
+      "check_results": [
+        {
+          "name": "cold-process",
+          "pass": true
+        },
+        {
+          "name": "music-track-deployed",
+          "pass": true
+        },
+        {
+          "name": "preparation-give-adds-one",
+          "pass": true
+        },
+        {
+          "name": "preparation-give-adds-one",
+          "pass": true
+        },
+        {
+          "name": "preparation-give-adds-one",
+          "pass": true
+        },
+        {
+          "name": "preparation-give-adds-one",
+          "pass": true
+        },
+        {
+          "name": "setup-summoned-77-1",
+          "pass": true
+        },
+        {
+          "name": "setup-summoned-9-1",
+          "pass": true
+        },
+        {
+          "name": "setup-summoned-10-2",
+          "pass": true
+        },
+        {
+          "name": "setup-summoned-50-2",
+          "pass": true
+        },
+        {
+          "name": "setup-summoned-29-4",
+          "pass": true
+        },
+        {
+          "name": "setup-summoned-58-4",
+          "pass": true
+        },
+        {
+          "name": "setup-summoned-414-3",
+          "pass": true
+        },
+        {
+          "name": "setup-summoned-50-3",
+          "pass": true
+        },
+        {
+          "name": "setup-summoned-50-1",
+          "pass": true
+        },
+        {
+          "name": "fixture-contains-injured-unit",
+          "pass": true
+        },
+        {
+          "name": "fixture-zero-or-environment-buffed-wall",
+          "pass": true
+        },
+        {
+          "name": "both-teamup-plants-present",
+          "pass": true
+        },
+        {
+          "name": "unit-35-guid",
+          "pass": true
+        },
+        {
+          "name": "unit-35-current-stats",
+          "pass": true
+        },
+        {
+          "name": "unit-35-owner-lane",
+          "pass": true
+        },
+        {
+          "name": "unit-35-damage-history-reset",
+          "pass": true
+        },
+        {
+          "name": "unit-35-destination-traits",
+          "pass": true
+        },
+        {
+          "name": "unit-36-guid",
+          "pass": true
+        },
+        {
+          "name": "unit-36-current-stats",
+          "pass": true
+        },
+        {
+          "name": "unit-36-owner-lane",
+          "pass": true
+        },
+        {
+          "name": "unit-36-damage-history-reset",
+          "pass": true
+        },
+        {
+          "name": "unit-36-destination-traits",
+          "pass": true
+        },
+        {
+          "name": "unit-37-guid",
+          "pass": true
+        },
+        {
+          "name": "unit-37-current-stats",
+          "pass": true
+        },
+        {
+          "name": "unit-37-owner-lane",
+          "pass": true
+        },
+        {
+          "name": "unit-37-damage-history-reset",
+          "pass": true
+        },
+        {
+          "name": "unit-37-destination-traits",
+          "pass": true
+        },
+        {
+          "name": "unit-38-guid",
+          "pass": true
+        },
+        {
+          "name": "unit-38-current-stats",
+          "pass": true
+        },
+        {
+          "name": "unit-38-owner-lane",
+          "pass": true
+        },
+        {
+          "name": "unit-38-damage-history-reset",
+          "pass": true
+        },
+        {
+          "name": "unit-38-destination-traits",
+          "pass": true
+        },
+        {
+          "name": "unit-39-guid",
+          "pass": true
+        },
+        {
+          "name": "unit-39-current-stats",
+          "pass": true
+        },
+        {
+          "name": "unit-39-owner-lane",
+          "pass": true
+        },
+        {
+          "name": "unit-39-damage-history-reset",
+          "pass": true
+        },
+        {
+          "name": "unit-39-destination-traits",
+          "pass": true
+        },
+        {
+          "name": "unit-40-guid",
+          "pass": true
+        },
+        {
+          "name": "unit-40-current-stats",
+          "pass": true
+        },
+        {
+          "name": "unit-40-owner-lane",
+          "pass": true
+        },
+        {
+          "name": "unit-40-damage-history-reset",
+          "pass": true
+        },
+        {
+          "name": "unit-40-destination-traits",
+          "pass": true
+        },
+        {
+          "name": "unit-41-guid",
+          "pass": true
+        },
+        {
+          "name": "unit-41-current-stats",
+          "pass": true
+        },
+        {
+          "name": "unit-41-owner-lane",
+          "pass": true
+        },
+        {
+          "name": "unit-41-damage-history-reset",
+          "pass": true
+        },
+        {
+          "name": "unit-41-destination-traits",
+          "pass": true
+        },
+        {
+          "name": "unit-43-guid",
+          "pass": true
+        },
+        {
+          "name": "unit-43-current-stats",
+          "pass": true
+        },
+        {
+          "name": "unit-43-owner-lane",
+          "pass": true
+        },
+        {
+          "name": "unit-43-damage-history-reset",
+          "pass": true
+        },
+        {
+          "name": "unit-43-destination-traits",
+          "pass": true
+        },
+        {
+          "name": "unit-44-guid",
+          "pass": true
+        },
+        {
+          "name": "unit-44-current-stats",
+          "pass": true
+        },
+        {
+          "name": "unit-44-owner-lane",
+          "pass": true
+        },
+        {
+          "name": "unit-44-damage-history-reset",
+          "pass": true
+        },
+        {
+          "name": "unit-44-destination-traits",
+          "pass": true
+        },
+        {
+          "name": "pharaoh-keeps-4-6",
+          "pass": true
+        },
+        {
+          "name": "heroes-untouched",
+          "pass": true
+        },
+        {
+          "name": "other-hand-cards-untouched",
+          "pass": true
+        },
+        {
+          "name": "environments-remain",
+          "pass": true
+        },
+        {
+          "name": "grave-was-real-before-transform",
+          "pass": true
+        },
+        {
+          "name": "grave-transforms-to-visible-ordinary-zombie",
+          "pass": true
+        },
+        {
+          "name": "one-transform-batch-settled",
+          "pass": true
+        },
+        {
+          "name": "pharaoh-real-armor1",
+          "pass": true
+        },
+        {
+          "name": "later-buffs-not-pinned-by-transform",
+          "pass": true
+        },
+        {
+          "name": "later-real-lethal-damage-not-undone",
+          "pass": true
+        },
+        {
+          "name": "user-wav-slot-duration-progress",
+          "pass": true
+        },
+        {
+          "name": "original-bgm-ducked-without-preference-write",
+          "pass": true
+        },
+        {
+          "name": "system-media-volume-preserved",
+          "pass": true
+        },
+        {
+          "name": "same-process-survived",
+          "pass": true
+        },
+        {
+          "name": "no-current-process-crash",
+          "pass": true
+        }
+      ],
+      "selected_model_facts": [
+        {
+          "check": "unit-35-current-stats",
+          "expected": {
+            "guid": 10,
+            "attack": 5,
+            "health": 11,
+            "owner": 0,
+            "lanes": [
+              12
+            ]
+          },
+          "actual": {
+            "id": 35,
+            "guid": 10,
+            "attack": 5,
+            "health": 11,
+            "damage": 0,
+            "max_health": 11,
+            "cost": 1,
+            "owner": 0,
+            "lanes": [
+              12
+            ]
+          }
+        },
+        {
+          "check": "unit-36-current-stats",
+          "expected": {
+            "guid": 10,
+            "attack": 7,
+            "health": 9,
+            "owner": 0,
+            "lanes": [
+              12
+            ]
+          },
+          "actual": {
+            "id": 36,
+            "guid": 10,
+            "attack": 7,
+            "health": 9,
+            "damage": 0,
+            "max_health": 9,
+            "cost": 1,
+            "owner": 0,
+            "lanes": [
+              12
+            ]
+          }
+        },
+        {
+          "check": "unit-37-current-stats",
+          "expected": {
+            "guid": 10,
+            "attack": 7,
+            "health": 10,
+            "owner": 0,
+            "lanes": [
+              13
+            ]
+          },
+          "actual": {
+            "id": 37,
+            "guid": 10,
+            "attack": 7,
+            "health": 10,
+            "damage": 0,
+            "max_health": 10,
+            "cost": 1,
+            "owner": 0,
+            "lanes": [
+              13
+            ]
+          }
+        },
+        {
+          "check": "unit-38-current-stats",
+          "expected": {
+            "guid": 50,
+            "attack": 5,
+            "health": 5,
+            "owner": 5,
+            "lanes": [
+              13
+            ]
+          },
+          "actual": {
+            "id": 38,
+            "guid": 50,
+            "attack": 5,
+            "health": 5,
+            "damage": 0,
+            "max_health": 5,
+            "cost": 1,
+            "owner": 5,
+            "lanes": [
+              13
+            ]
+          }
+        },
+        {
+          "check": "unit-39-current-stats",
+          "expected": {
+            "guid": 10,
+            "attack": 2,
+            "health": 2,
+            "owner": 0,
+            "lanes": [
+              15
+            ]
+          },
+          "actual": {
+            "id": 39,
+            "guid": 10,
+            "attack": 2,
+            "health": 2,
+            "damage": 0,
+            "max_health": 2,
+            "cost": 1,
+            "owner": 0,
+            "lanes": [
+              15
+            ]
+          }
+        },
+        {
+          "check": "unit-40-current-stats",
+          "expected": {
+            "guid": 50,
+            "attack": 2,
+            "health": 1,
+            "owner": 5,
+            "lanes": [
+              15
+            ]
+          },
+          "actual": {
+            "id": 40,
+            "guid": 50,
+            "attack": 2,
+            "health": 1,
+            "damage": 0,
+            "max_health": 1,
+            "cost": 1,
+            "owner": 5,
+            "lanes": [
+              15
+            ]
+          }
+        },
+        {
+          "check": "unit-41-current-stats",
+          "expected": {
+            "guid": 10,
+            "attack": 4,
+            "health": 4,
+            "owner": 0,
+            "lanes": [
+              14
+            ]
+          },
+          "actual": {
+            "id": 41,
+            "guid": 10,
+            "attack": 4,
+            "health": 4,
+            "damage": 0,
+            "max_health": 4,
+            "cost": 1,
+            "owner": 0,
+            "lanes": [
+              14
+            ]
+          }
+        },
+        {
+          "check": "unit-43-current-stats",
+          "expected": {
+            "guid": 50,
+            "attack": 1,
+            "health": 4,
+            "owner": 5,
+            "lanes": [
+              14
+            ]
+          },
+          "actual": {
+            "id": 43,
+            "guid": 50,
+            "attack": 1,
+            "health": 4,
+            "damage": 0,
+            "max_health": 4,
+            "cost": 1,
+            "owner": 5,
+            "lanes": [
+              14
+            ]
+          }
+        },
+        {
+          "check": "unit-44-current-stats",
+          "expected": {
+            "guid": 50,
+            "attack": 1,
+            "health": 1,
+            "owner": 5,
+            "lanes": [
+              12
+            ]
+          },
+          "actual": {
+            "id": 44,
+            "guid": 50,
+            "attack": 1,
+            "health": 1,
+            "damage": 0,
+            "max_health": 1,
+            "cost": 1,
+            "owner": 5,
+            "lanes": [
+              12
+            ]
+          }
+        },
+        {
+          "check": "pharaoh-keeps-4-6",
+          "actual": {
+            "id": 30,
+            "guid": 201,
+            "attack": 4,
+            "health": 6,
+            "damage": 0,
+            "max_health": 6,
+            "cost": 6,
+            "owner": 5,
+            "lanes": [
+              11
+            ]
+          }
+        },
+        {
+          "check": "pharaoh-real-armor1",
+          "actual": {
+            "id": 30,
+            "guid": 201,
+            "attack": 4,
+            "health": 5,
+            "damage": 1,
+            "max_health": 6,
+            "cost": 6,
+            "owner": 5,
+            "lanes": [
+              11
+            ]
+          }
+        },
+        {
+          "check": "later-buffs-not-pinned-by-transform",
+          "actual": {
+            "id": 36,
+            "guid": 10,
+            "attack": 8,
+            "health": 10,
+            "damage": 0,
+            "max_health": 10,
+            "cost": 1,
+            "owner": 0,
+            "lanes": [
+              12
+            ]
+          }
+        }
+      ],
+      "wav_sha256": "798a0f0dc92db48958c8b5661af8f19a31cef48f79916d455b9d50c604b599f3",
+      "transform_batch": {
+        "rule": 1026,
+        "started": 1,
+        "native_transformed": 9,
+        "restoration_batches_queued": 1,
+        "units_queued": 9,
+        "pending_batches": 0,
+        "pending_jobs": 0,
+        "completed_batches": 1,
+        "calibration_batches": 1,
+        "calibration_fields": 6,
+        "safety_repairs": 0,
+        "errors": 0,
+        "atomic_snapshot": true,
+        "subset_finder_bypassed": true,
+        "continuous_group_timing": "one native completion/boundary calibration, never a persistent stat override"
+      },
+      "music_samples": {
+        "before": {
+          "control": {
+            "phase": "playing",
+            "original_muted": true,
+            "original_music_preference": 100,
+            "system_volume_modified": false,
+            "original_settings_written": false
+          },
+          "player": {
+            "backend": "android-media-player",
+            "state": "playing",
+            "slot": 8952476,
+            "foreground": true,
+            "prepared": true,
+            "playing": true,
+            "backend_is_playing": true,
+            "position_ms": 1151,
+            "duration_ms": 111514,
+            "track_gain": 1,
+            "requested_gain": 1,
+            "volume": 1,
+            "prepares": 1,
+            "plays": 1,
+            "errors": 0,
+            "stops": 4
+          },
+          "native": {
+            "music_preference": 100,
+            "rtpc": 0,
+            "read_result": 1
+          }
+        },
+        "after": {
+          "control": {
+            "phase": "playing",
+            "original_muted": true,
+            "original_music_preference": 100,
+            "system_volume_modified": false,
+            "original_settings_written": false
+          },
+          "player": {
+            "backend": "android-media-player",
+            "state": "playing",
+            "slot": 8952476,
+            "foreground": true,
+            "prepared": true,
+            "playing": true,
+            "backend_is_playing": true,
+            "position_ms": 1885,
+            "duration_ms": 111514,
+            "track_gain": 1,
+            "requested_gain": 1,
+            "volume": 1,
+            "prepares": 1,
+            "plays": 1,
+            "errors": 0,
+            "stops": 4
+          },
+          "native": {
+            "music_preference": 100,
+            "rtpc": 0,
+            "read_result": 1
+          }
+        }
+      },
+      "system_media_volume": {
+        "before": {
+          "volume": 0,
+          "maximum": 25
+        },
+        "after": {
+          "volume": 0,
+          "maximum": 25
+        }
+      }
+    },
+    {
+      "suite": "rc5-negative",
+      "source_workspace_relative": "pvzh-launcher/operations/pharaoh-music-20261024/evidence/game/rc5-negative/result.json",
+      "source_sha256": "d431aa28fcc69fac74391154e17dd7b0fbf26b3ecde54a2ad64dbf9168380e5e",
+      "status": "PASS",
+      "transport_kind": "original_engine",
+      "checks": 79,
+      "passed": 79,
+      "apk_sha256": "399d91a226545f59bda139a76bb081534e2b7866f1f2d47f0ec8345bbe579325",
+      "candidate_sha256": "4e4537b5612c4bb400d7f76299d81d1082cc9279282f4345db77152b8d0ab8aa",
+      "touch_input_used": false,
+      "screenshots_used": false,
+      "visual_animation_verified": false,
+      "warm_restart_cleanup_verified": false,
+      "check_results": [
+        {
+          "name": "cold-process",
+          "pass": true
+        },
+        {
+          "name": "music-track-deployed",
+          "pass": true
+        },
+        {
+          "name": "preparation-give-adds-one",
+          "pass": true
+        },
+        {
+          "name": "preparation-give-adds-one",
+          "pass": true
+        },
+        {
+          "name": "preparation-give-adds-one",
+          "pass": true
+        },
+        {
+          "name": "preparation-give-adds-one",
+          "pass": true
+        },
+        {
+          "name": "setup-summoned-77-1",
+          "pass": true
+        },
+        {
+          "name": "setup-summoned-9-1",
+          "pass": true
+        },
+        {
+          "name": "setup-summoned-9-2",
+          "pass": true
+        },
+        {
+          "name": "setup-summoned-52-3",
+          "pass": true
+        },
+        {
+          "name": "setup-summoned-29-4",
+          "pass": true
+        },
+        {
+          "name": "setup-summoned-58-4",
+          "pass": true
+        },
+        {
+          "name": "setup-summoned-414-3",
+          "pass": true
+        },
+        {
+          "name": "setup-summoned-50-2",
+          "pass": true
+        },
+        {
+          "name": "setup-summoned-50-1",
+          "pass": true
+        },
+        {
+          "name": "fixture-contains-injured-unit",
+          "pass": true
+        },
+        {
+          "name": "fixture-zero-or-environment-buffed-wall",
+          "pass": true
+        },
+        {
+          "name": "both-teamup-plants-present",
+          "pass": true
+        },
+        {
+          "name": "negative-health-collapse-counterexample-prepared",
+          "pass": true
+        },
+        {
+          "name": "unit-37-guid",
+          "pass": true
+        },
+        {
+          "name": "unit-37-current-stats",
+          "pass": true
+        },
+        {
+          "name": "unit-37-owner-lane",
+          "pass": true
+        },
+        {
+          "name": "unit-37-damage-history-reset",
+          "pass": true
+        },
+        {
+          "name": "unit-37-destination-traits",
+          "pass": true
+        },
+        {
+          "name": "unit-38-guid",
+          "pass": true
+        },
+        {
+          "name": "unit-38-current-stats",
+          "pass": true
+        },
+        {
+          "name": "unit-38-owner-lane",
+          "pass": true
+        },
+        {
+          "name": "unit-38-damage-history-reset",
+          "pass": true
+        },
+        {
+          "name": "unit-38-destination-traits",
+          "pass": true
+        },
+        {
+          "name": "unit-39-guid",
+          "pass": true
+        },
+        {
+          "name": "unit-39-current-stats",
+          "pass": true
+        },
+        {
+          "name": "unit-39-owner-lane",
+          "pass": true
+        },
+        {
+          "name": "unit-39-damage-history-reset",
+          "pass": true
+        },
+        {
+          "name": "unit-39-destination-traits",
+          "pass": true
+        },
+        {
+          "name": "unit-40-guid",
+          "pass": true
+        },
+        {
+          "name": "unit-40-current-stats",
+          "pass": true
+        },
+        {
+          "name": "unit-40-owner-lane",
+          "pass": true
+        },
+        {
+          "name": "unit-40-damage-history-reset",
+          "pass": true
+        },
+        {
+          "name": "unit-40-destination-traits",
+          "pass": true
+        },
+        {
+          "name": "unit-41-guid",
+          "pass": true
+        },
+        {
+          "name": "unit-41-current-stats",
+          "pass": true
+        },
+        {
+          "name": "unit-41-owner-lane",
+          "pass": true
+        },
+        {
+          "name": "unit-41-damage-history-reset",
+          "pass": true
+        },
+        {
+          "name": "unit-41-destination-traits",
+          "pass": true
+        },
+        {
+          "name": "unit-42-guid",
+          "pass": true
+        },
+        {
+          "name": "unit-42-current-stats",
+          "pass": true
+        },
+        {
+          "name": "unit-42-owner-lane",
+          "pass": true
+        },
+        {
+          "name": "unit-42-damage-history-reset",
+          "pass": true
+        },
+        {
+          "name": "unit-42-destination-traits",
+          "pass": true
+        },
+        {
+          "name": "unit-43-guid",
+          "pass": true
+        },
+        {
+          "name": "unit-43-current-stats",
+          "pass": true
+        },
+        {
+          "name": "unit-43-owner-lane",
+          "pass": true
+        },
+        {
+          "name": "unit-43-damage-history-reset",
+          "pass": true
+        },
+        {
+          "name": "unit-43-destination-traits",
+          "pass": true
+        },
+        {
+          "name": "unit-45-guid",
+          "pass": true
+        },
+        {
+          "name": "unit-45-current-stats",
+          "pass": true
+        },
+        {
+          "name": "unit-45-owner-lane",
+          "pass": true
+        },
+        {
+          "name": "unit-45-damage-history-reset",
+          "pass": true
+        },
+        {
+          "name": "unit-45-destination-traits",
+          "pass": true
+        },
+        {
+          "name": "unit-46-guid",
+          "pass": true
+        },
+        {
+          "name": "unit-46-current-stats",
+          "pass": true
+        },
+        {
+          "name": "unit-46-owner-lane",
+          "pass": true
+        },
+        {
+          "name": "unit-46-damage-history-reset",
+          "pass": true
+        },
+        {
+          "name": "unit-46-destination-traits",
+          "pass": true
+        },
+        {
+          "name": "pharaoh-keeps-4-6",
+          "pass": true
+        },
+        {
+          "name": "heroes-untouched",
+          "pass": true
+        },
+        {
+          "name": "other-hand-cards-untouched",
+          "pass": true
+        },
+        {
+          "name": "environments-remain",
+          "pass": true
+        },
+        {
+          "name": "grave-was-real-before-transform",
+          "pass": true
+        },
+        {
+          "name": "grave-transforms-to-visible-ordinary-zombie",
+          "pass": true
+        },
+        {
+          "name": "one-transform-batch-settled",
+          "pass": true
+        },
+        {
+          "name": "pharaoh-real-armor1",
+          "pass": true
+        },
+        {
+          "name": "later-buffs-not-pinned-by-transform",
+          "pass": true
+        },
+        {
+          "name": "later-real-lethal-damage-not-undone",
+          "pass": true
+        },
+        {
+          "name": "user-wav-slot-duration-progress",
+          "pass": true
+        },
+        {
+          "name": "original-bgm-ducked-without-preference-write",
+          "pass": true
+        },
+        {
+          "name": "system-media-volume-preserved",
+          "pass": true
+        },
+        {
+          "name": "same-process-survived",
+          "pass": true
+        },
+        {
+          "name": "no-current-process-crash",
+          "pass": true
+        }
+      ],
+      "selected_model_facts": [
+        {
+          "check": "unit-37-current-stats",
+          "expected": {
+            "guid": 10,
+            "attack": 5,
+            "health": 11,
+            "owner": 0,
+            "lanes": [
+              12
+            ]
+          },
+          "actual": {
+            "id": 37,
+            "guid": 10,
+            "attack": 5,
+            "health": 11,
+            "damage": 0,
+            "max_health": 11,
+            "cost": 1,
+            "owner": 0,
+            "lanes": [
+              12
+            ]
+          }
+        },
+        {
+          "check": "unit-38-current-stats",
+          "expected": {
+            "guid": 10,
+            "attack": 7,
+            "health": 9,
+            "owner": 0,
+            "lanes": [
+              12
+            ]
+          },
+          "actual": {
+            "id": 38,
+            "guid": 10,
+            "attack": 7,
+            "health": 9,
+            "damage": 0,
+            "max_health": 9,
+            "cost": 1,
+            "owner": 0,
+            "lanes": [
+              12
+            ]
+          }
+        },
+        {
+          "check": "unit-39-current-stats",
+          "expected": {
+            "guid": 10,
+            "attack": 6,
+            "health": 1,
+            "owner": 0,
+            "lanes": [
+              13
+            ]
+          },
+          "actual": {
+            "id": 39,
+            "guid": 10,
+            "attack": 6,
+            "health": 1,
+            "damage": 0,
+            "max_health": 1,
+            "cost": 1,
+            "owner": 0,
+            "lanes": [
+              13
+            ]
+          }
+        },
+        {
+          "check": "unit-40-current-stats",
+          "expected": {
+            "guid": 50,
+            "attack": 3,
+            "health": 8,
+            "owner": 5,
+            "lanes": [
+              14
+            ]
+          },
+          "actual": {
+            "id": 40,
+            "guid": 50,
+            "attack": 3,
+            "health": 8,
+            "damage": 0,
+            "max_health": 8,
+            "cost": 1,
+            "owner": 5,
+            "lanes": [
+              14
+            ]
+          }
+        },
+        {
+          "check": "unit-41-current-stats",
+          "expected": {
+            "guid": 10,
+            "attack": 2,
+            "health": 2,
+            "owner": 0,
+            "lanes": [
+              15
+            ]
+          },
+          "actual": {
+            "id": 41,
+            "guid": 10,
+            "attack": 2,
+            "health": 2,
+            "damage": 0,
+            "max_health": 2,
+            "cost": 1,
+            "owner": 0,
+            "lanes": [
+              15
+            ]
+          }
+        },
+        {
+          "check": "unit-42-current-stats",
+          "expected": {
+            "guid": 50,
+            "attack": 2,
+            "health": 1,
+            "owner": 5,
+            "lanes": [
+              15
+            ]
+          },
+          "actual": {
+            "id": 42,
+            "guid": 50,
+            "attack": 2,
+            "health": 1,
+            "damage": 0,
+            "max_health": 1,
+            "cost": 1,
+            "owner": 5,
+            "lanes": [
+              15
+            ]
+          }
+        },
+        {
+          "check": "unit-43-current-stats",
+          "expected": {
+            "guid": 10,
+            "attack": 4,
+            "health": 4,
+            "owner": 0,
+            "lanes": [
+              14
+            ]
+          },
+          "actual": {
+            "id": 43,
+            "guid": 10,
+            "attack": 4,
+            "health": 4,
+            "damage": 0,
+            "max_health": 4,
+            "cost": 1,
+            "owner": 0,
+            "lanes": [
+              14
+            ]
+          }
+        },
+        {
+          "check": "unit-45-current-stats",
+          "expected": {
+            "guid": 50,
+            "attack": 1,
+            "health": 1,
+            "owner": 5,
+            "lanes": [
+              13
+            ]
+          },
+          "actual": {
+            "id": 45,
+            "guid": 50,
+            "attack": 1,
+            "health": 1,
+            "damage": 0,
+            "max_health": 1,
+            "cost": 1,
+            "owner": 5,
+            "lanes": [
+              13
+            ]
+          }
+        },
+        {
+          "check": "unit-46-current-stats",
+          "expected": {
+            "guid": 50,
+            "attack": 1,
+            "health": 1,
+            "owner": 5,
+            "lanes": [
+              12
+            ]
+          },
+          "actual": {
+            "id": 46,
+            "guid": 50,
+            "attack": 1,
+            "health": 1,
+            "damage": 0,
+            "max_health": 1,
+            "cost": 1,
+            "owner": 5,
+            "lanes": [
+              12
+            ]
+          }
+        },
+        {
+          "check": "pharaoh-keeps-4-6",
+          "actual": {
+            "id": 32,
+            "guid": 201,
+            "attack": 4,
+            "health": 6,
+            "damage": 0,
+            "max_health": 6,
+            "cost": 6,
+            "owner": 5,
+            "lanes": [
+              11
+            ]
+          }
+        },
+        {
+          "check": "pharaoh-real-armor1",
+          "actual": {
+            "id": 32,
+            "guid": 201,
+            "attack": 4,
+            "health": 5,
+            "damage": 1,
+            "max_health": 6,
+            "cost": 6,
+            "owner": 5,
+            "lanes": [
+              11
+            ]
+          }
+        },
+        {
+          "check": "later-buffs-not-pinned-by-transform",
+          "actual": {
+            "id": 38,
+            "guid": 10,
+            "attack": 8,
+            "health": 10,
+            "damage": 0,
+            "max_health": 10,
+            "cost": 1,
+            "owner": 0,
+            "lanes": [
+              12
+            ]
+          }
+        }
+      ],
+      "wav_sha256": "798a0f0dc92db48958c8b5661af8f19a31cef48f79916d455b9d50c604b599f3",
+      "transform_batch": {
+        "rule": 1026,
+        "started": 1,
+        "native_transformed": 9,
+        "restoration_batches_queued": 1,
+        "units_queued": 9,
+        "pending_batches": 0,
+        "pending_jobs": 0,
+        "completed_batches": 1,
+        "calibration_batches": 1,
+        "calibration_fields": 6,
+        "safety_repairs": 1,
+        "errors": 0,
+        "atomic_snapshot": true,
+        "subset_finder_bypassed": true,
+        "continuous_group_timing": "one native completion/boundary calibration, never a persistent stat override"
+      },
+      "music_samples": {
+        "before": {
+          "control": {
+            "phase": "playing",
+            "original_muted": true,
+            "original_music_preference": 100,
+            "system_volume_modified": false,
+            "original_settings_written": false
+          },
+          "player": {
+            "backend": "android-media-player",
+            "state": "playing",
+            "slot": 8952476,
+            "foreground": true,
+            "prepared": true,
+            "playing": true,
+            "backend_is_playing": true,
+            "position_ms": 1109,
+            "duration_ms": 111514,
+            "track_gain": 1,
+            "requested_gain": 1,
+            "volume": 1,
+            "prepares": 1,
+            "plays": 1,
+            "errors": 0,
+            "stops": 4
+          },
+          "native": {
+            "music_preference": 100,
+            "rtpc": 0,
+            "read_result": 1
+          }
+        },
+        "after": {
+          "control": {
+            "phase": "playing",
+            "original_muted": true,
+            "original_music_preference": 100,
+            "system_volume_modified": false,
+            "original_settings_written": false
+          },
+          "player": {
+            "backend": "android-media-player",
+            "state": "playing",
+            "slot": 8952476,
+            "foreground": true,
+            "prepared": true,
+            "playing": true,
+            "backend_is_playing": true,
+            "position_ms": 1845,
+            "duration_ms": 111514,
+            "track_gain": 1,
+            "requested_gain": 1,
+            "volume": 1,
+            "prepares": 1,
+            "plays": 1,
+            "errors": 0,
+            "stops": 4
+          },
+          "native": {
+            "music_preference": 100,
+            "rtpc": 0,
+            "read_result": 1
+          }
+        }
+      },
+      "system_media_volume": {
+        "before": {
+          "volume": 0,
+          "maximum": 25
+        },
+        "after": {
+          "volume": 0,
+          "maximum": 25
+        }
+      }
+    },
+    {
+      "suite": "rc5-original",
+      "source_workspace_relative": "pvzh-launcher/operations/pharaoh-music-20261024/evidence/game/rc5-original/result.json",
+      "source_sha256": "ffc4addbcfd99c7f57685eb57556da348435dd9f9084a59ef49116c1655c357d",
+      "status": "PASS",
+      "transport_kind": "original_engine",
+      "checks": 10,
+      "passed": 10,
+      "apk_sha256": "399d91a226545f59bda139a76bb081534e2b7866f1f2d47f0ec8345bbe579325",
+      "candidate_sha256": "399d91a226545f59bda139a76bb081534e2b7866f1f2d47f0ec8345bbe579325",
+      "touch_input_used": false,
+      "screenshots_used": false,
+      "visual_animation_verified": false,
+      "warm_restart_cleanup_verified": false,
+      "check_results": [
+        {
+          "name": "fresh-original-process",
+          "pass": true
+        },
+        {
+          "name": "original-audio-registry-disabled",
+          "pass": true
+        },
+        {
+          "name": "original-permission-denied",
+          "pass": true
+        },
+        {
+          "name": "preparation-give-adds-one",
+          "pass": true
+        },
+        {
+          "name": "original-does-not-transform-plant",
+          "pass": true
+        },
+        {
+          "name": "new-music-inactive-original",
+          "pass": true
+        },
+        {
+          "name": "new-transform-inactive-original",
+          "pass": true
+        },
+        {
+          "name": "original-pharaoh-min-health-still-works",
+          "pass": true
+        },
+        {
+          "name": "same-process-survived",
+          "pass": true
+        },
+        {
+          "name": "no-process-crash",
+          "pass": true
+        }
+      ],
+      "selected_model_facts": [
+        {
+          "check": "original-pharaoh-min-health-still-works",
+          "actual": {
+            "id": 5,
+            "health": 1,
+            "damage": 99,
+            "max_health": 100
+          }
+        }
+      ],
+      "music_in_original": {
+        "control": {
+          "phase": "disabled",
+          "original_muted": false,
+          "original_music_preference": 100,
+          "system_volume_modified": false,
+          "original_settings_written": false
+        },
+        "player": {},
+        "native": {}
+      },
+      "transform_batch": {
+        "rule": 1026,
+        "started": 0,
+        "native_transformed": 0,
+        "restoration_batches_queued": 0,
+        "units_queued": 0,
+        "pending_batches": 0,
+        "pending_jobs": 0,
+        "completed_batches": 0,
+        "calibration_batches": 0,
+        "calibration_fields": 0,
+        "safety_repairs": 0,
+        "errors": 0,
+        "atomic_snapshot": true,
+        "subset_finder_bypassed": true,
+        "continuous_group_timing": "one native completion/boundary calibration, never a persistent stat override"
+      }
+    }
+  ],
+  "original_engine_checks_total": 221,
+  "history": [
+    {
+      "suite": "rc1-basic-v2",
+      "source_workspace_relative": "pvzh-launcher/operations/pharaoh-music-20261024/evidence/game/rc1-basic-v2/result.json",
+      "source_sha256": "d0e75c518f1c984b8bad0af2190c44eaca81d385e711e249bf38b8c7bdc02fde",
+      "status": "SEMANTIC_FAIL",
+      "checks": 13,
+      "passed": 12,
+      "failed_check_names": [
+        "unit-27-guid"
+      ],
+      "process_survived_failure": true,
+      "scope_note": "Inherited PlayTrigger descriptor validation silently cancelled the child effects."
+    },
+    {
+      "suite": "rc2",
+      "status": "NOT_TESTED",
+      "scope_note": "APK built only; no installation or original-engine result claimed.",
+      "source_workspace_relative": "pvzh-launcher/native-r25/docs/RELEASE-VALIDATION.md",
+      "source_sha256": "140c74f0c9f3e1739e0a1a5d349d2b471c6effdc2554e945fc02ccaf463fc501"
+    },
+    {
+      "suite": "rc3-basic",
+      "source_workspace_relative": "pvzh-launcher/operations/pharaoh-music-20261024/evidence/game/rc3-basic/result.json",
+      "source_sha256": "7d039f5023dabd5018144825d93b814030444347641a0165a3412a8b4eff9073",
+      "status": "SEMANTIC_FAIL",
+      "checks": 26,
+      "passed": 25,
+      "failed_check_names": [
+        "unit-30-current-stats"
+      ],
+      "process_survived_failure": true,
+      "scope_note": "Ordinary zombie GUID50 was excluded by the original NotCheats subset finder."
+    },
+    {
+      "suite": "rc4-basic",
+      "source_workspace_relative": "pvzh-launcher/operations/pharaoh-music-20261024/evidence/game/rc4-basic/result.json",
+      "source_sha256": "189abe8fe74fb16fbb8fd7e73d1418677a2a04286a6a0ef0b76b6faceaa8a743",
+      "status": "PASS",
+      "checks": 52,
+      "passed": 52,
+      "failed_check_names": [],
+      "process_survived_failure": null,
+      "scope_note": "Base scenario passed; this did not establish positive/negative environment behavior."
+    },
+    {
+      "suite": "rc4-environment",
+      "source_workspace_relative": "pvzh-launcher/operations/pharaoh-music-20261024/evidence/game/rc4-environment/result.json",
+      "source_sha256": "106af9671e622d5d8ef373f4f1d352a9c075d1f9dddac01f904d06cb054866a9",
+      "status": "TIMEOUT",
+      "checks": 4,
+      "passed": 4,
+      "failed_check_names": [],
+      "process_survived_failure": true,
+      "scope_note": "Fixture attempted an environment on heights; this harness attempt did not validate the skill."
+    },
+    {
+      "suite": "rc4-environment-v2",
+      "source_workspace_relative": "pvzh-launcher/operations/pharaoh-music-20261024/evidence/game/rc4-environment-v2/result.json",
+      "source_sha256": "886c9fbceeae73bcaf2dbcc632b7e951c23d64379b9bbccd9c56e4ad231048e6",
+      "status": "SEMANTIC_FAIL",
+      "checks": 20,
+      "passed": 19,
+      "failed_check_names": [
+        "unit-35-current-stats"
+      ],
+      "process_survived_failure": true,
+      "scope_note": "The legal environment fixture exposed late continuous +5/+5 applied twice."
+    }
+  ],
+  "restore_summary": {
+    "status": "PASS",
+    "checks": 76,
+    "old_workbench_files": 846,
+    "account_files": 65,
+    "resources": 2887,
+    "updated_mod2_kept": true,
+    "other_mods_unchanged": true,
+    "selection_order_kept": true,
+    "audio_cache_disabled": true,
+    "accounts_cleared": false
+  },
+  "source_release_summary": {
+    "source_workspace_relative": "pvzh-launcher/native-r25/evidence/release-summary-r25.json",
+    "source_sha256": "70cbe196d57acb7de35832c0128378c5078ded00bac56ab9ae76bd543daab152"
+  },
+  "limitations": {
+    "visual_animation_verified": false,
+    "listening_verified": false,
+    "recorded_waveform_verified": false,
+    "warm_restart_cleanup_verified": false,
+    "system_media_volume_was_zero": true,
+    "graphics_or_system_audio_quality_changed": false,
+    "free_ai_1026_recipe_opened": false,
+    "r26_validation_included": false,
+    "all_interactions_exhausted": false
+  },
+  "exclusions": [
+    "full runtime",
+    "APK",
+    "Bundle",
+    "WAV",
+    "account or workbench backup",
+    "full command/response/logcat",
+    "model pointers",
+    "request and transaction identifiers",
+    "API credentials"
+  ]
+}

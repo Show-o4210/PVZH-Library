@@ -1,8 +1,14 @@
 # Agent 入口
 
+- 2026-10-29手机启动器与工作台资料更新至R48 RC2，先读[第24章](24.启动器工作台与手机编辑/README.md)及[Agent22](agents/22-mobile-workbench-and-release-scope.md)。这是后续Android产品的资料与筛选证据，不改公开Python工具合同；不将手工全部组件能力当成AI已开放工具，也不将UI验收当成全部技能、关卡或模型成功率已测。资源全量检查当前为手动，R43后台自动检查属于历史版本；原始玩家JSON入口已移除。用户本轮已明确授权同步现有GitHub私有资料库；范围仍为文档／已有工具／筛选摘要，不纳入完整调试服务、APK、签名、API凭证或设备账户备份。
+
 开始处理卡牌技能、关卡和简体中文 Bundle 时，先读 [agents/README.md](agents/README.md)。
 
 初次基础制作可按 [独立示例](agents/08-basic-mod-walkthrough.md) 执行；维护与当前证据边界见 [agents/09-maintenance-and-evidence.md](agents/09-maintenance-and-evidence.md)。只克隆本仓库也能使用示例，不需要本机mod1/mod2目录。
+
+- 2026-10-26中午的新任务为R33实际AI工作台关卡编辑，先读[统一索引](09.关卡修改/INDEX.md)和[短操作／自动映射](09.关卡修改/07.AI工作台关卡短操作与自动卡牌映射.md)。前一轮一小时实验已经结束，不继承其截止或关机要求。范围仍为植物／僵尸任务1～200：精确读取当前项目，AI提交标量／引用／事件操作，程序构建，不整段重写关卡JSON。开局单位映射从当前Mod卡表与CN自动生成，不让模型猜GUID或维护映射表；Token收藏限制不套到关卡预置。生命、初始资源等只按真实int32类型限制，触及格挡表按当前用户要求总和100，未改原表保持历史值；这不等于宣称引擎所有非100表必崩。场景扩展先留说明，后续随卡牌一并整理。R33本机证据在`pvzh-launcher/native-r33`，实际API／设备未出收据前标PENDING；旧实验与冻结收据不回写。主0定点备份／测试已获授权，不要求新建Android用户。API凭证不进入文档与Git。
+
+- R33有限覆盖集最终结果：实际AI短操作／当前映射已接入，两个复杂NPC任务经同会话明确细化后，在交付原script正式植物002通过；首提案条件边界、多一份主牌、旧错误及诊断runtime与最终runtime分层保留，不宣传任意语句一次100%。固定NPC配方或唯一目标先读[动态难度／给牌前提](09.关卡修改/08.固定人机脚本与给牌前提.md)：原生DDA可随机删主牌，禁DDA后原Move1时钟有效，不要将旧失败推广成统一提前回合。额外队列与主牌增补分别说明，先前主阶段待机须明确可见；普通血量／阳光任务不顺便改DDA。
 
 - 基础任务仍按01–09处理TextAsset卡牌JSON、BoardAbility、关卡事件、中文本地化与部署。已授权的运行时技能扩展读 [10](agents/10-runtime-skills-workflow.md)，语义测试与证据读 [11](agents/11-semantic-testing-and-evidence.md)；详细归档见第21章。
 - 人类章节提供导航和背景；实际字段、类型字符串、枚举、资源名称必须从用户提供的原包或仓库工具代码核对，不把教学伪代码当作可直接导入的数据。
@@ -17,3 +23,28 @@
 
 <!-- R11-library:agent15 -->
 - 用户处理多Mod导入、玩家新卡拥有权、同号身份、显式复制、移除卡与正式玩家流程时，接着读[Agent15](agents/15-multimod-player-lifecycle.md)。安装内预约不是社区全局号段；本地身份不扩展服务器裸GUID协议。正式流程、离线替身、fixture和文档归档分别留证，保持原包／存档和已有工作树。
+
+<!-- R12-library:agent16 -->
+- 用户处理启动器全局实验开关、运行/AI能力分别登记、依赖提示或冷启动许可时，接着读[Agent16](agents/16-experimental-capabilities-and-launch.md)与第21章08。保存、冻结采用、实际Hook三层分开；R12运行23项、AI仅3个固定单位配方。原版Python公开合同不变；安全启动只有登记/状态前置，不能宣称自动救援已实现。
+
+<!-- R13-library:agent17 -->
+- 用户处理长期AI对话、会话切换、整份提案审批或对话内卡片时，接着读[Agent17](agents/17-conversation-authoring-and-approval.md)与[第22章05](22.自然语言原版制卡/05.会话式制卡与提案审批.md)。自动保存聊天不等于采纳Mod，候选分支与原来源SHA分别保留；取消、进程退出、过期、收据恢复和输入保护各留证。R13为Android后续工程，不改公开Python v1合同；未完成的设备最终验收明确标PENDING。
+
+<!-- R23-library:agent18 -->
+- 用户处理批量身材/费用、有限数据程序预演或大批候选审查时，接着读[Agent18](agents/18-batch-stats-and-typed-review.md)和[第22章10](22.自然语言原版制卡/10.批量属性与分类型审查.md)。按真实diff区分属性、CN与技能/结构；属性全量程序证据不免除技能全文义务。原0攻缺Attack只允许有原包依据的最小补全；账本重放使用真实编译父候选。R23设备结果独立登记，不从离线PASS外推。
+
+<!-- R24-library:continuous-and-music -->
+- 用户处理版本差异、回退候选、选择性bulk撤销、真实筛选目录或普通玩家回归时，读[Agent19](agents/19-version-history-and-regression.md)和[第22章11](22.自然语言原版制卡/11.版本历史与普通表达回归.md)。真实ZIP与索引、导入账本与重放证明、候选与保存分别核对；8条最终API通过不等于30定义全执行或战斗已验。
+- 用户处理已授权的Mod本地背景音乐时，读[Agent20](agents/20-local-music-capability.md)和[第21章09](21.语义调试与技能扩展实战/09.本地背景音乐与共享生命周期/README.md)。只使用登记曲目与当前许可，区分控制状态/真实播放器/RTPC/听验；RC3保护性拒绝、RC4恢复未过、RC5音乐/原版隔离分层通过及未听验状态保留，不从host PASS外推。
+
+<!-- R26-library:configurable-new-cards -->
+- 可配置新卡获取与手机Mod封面列表读[Agent15的R26后续](agents/15-multimod-player-lifecycle.md#r26-可配置获取后续)及[第23章06](23.卡牌身份与资源映射/06.可配置新卡获取与手机Mod列表.md)。区别当前进程补卡与真实落盘，检查冷启动前数量及差值；自动获取关闭不关闭身份/移除牌组保护，原版模式不发Mod新卡。
+
+<!-- R28-library:original-resource-names -->
+- 已采纳新GUID却未获取，或处理原版模板资源名校验时，读[第23章07](23.卡牌身份与资源映射/07.原版资源名校验与自动获取启动故障.md)与Agent14／15的R28后续。别名格式与原版资源名分开；可信模板精确映射保留空格/单引号，650定义按646有名资源与4个不可用null占位分组。先查资源初始化是否阻断补卡模块，未执行的原生资格检查不写FAIL，未完成的设备/冷重启不写PASS。
+
+<!-- R25-library:pharaoh-transform -->
+- 用户处理全场变形、保留当前攻血、子效果静默取消、指定GUID与NotCheats或连续Buff二次叠加时，读[Agent21](agents/21-pharaoh-transform-and-child-effects.md)与[第21章10](21.语义调试与技能扩展实战/10.全场变形保留当前攻血与原生子效果/README.md)。1026仅为匹配Android R25的私有运行能力，不能当AI自由配方；同批快照、子效果身份、真实System/模型、完成边界与负HP窗口分别核对。221实机检查不覆盖逐帧动画、听验、R26或全部交互，旧失败/未测保留。
+
+<!-- R29-library:mod-runtime-and-continuity -->
+- 维护Android R29 Mod内能力、默认隐藏说明和失败恢复时，读[Agent16后续](agents/16-experimental-capabilities-and-launch.md#r29-mod内偏好与健康恢复后续)及[第21章11](21.语义调试与技能扩展实战/11.Mod内能力与启动健康恢复/README.md)；新卡已有数量保护读[Agent15后续](agents/15-multimod-player-lifecycle.md#r29-已有数量连续性后续)及[第23章08](23.卡牌身份与资源映射/08.本地新卡连续性与同账户保护.md)。先选实际资源赢家，再算auto/on/off；本机偏好不随ZIP导出，AI许可与运行独立。缺键与显式0、同账户缓存路径、事务/PID与跨PID恢复边界必须保留。R29为阶段归档，不将主机检查、单次本地恢复或旧版本PASS拼成稳定／官方同步验收。

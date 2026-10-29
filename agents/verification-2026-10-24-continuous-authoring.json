@@ -1,0 +1,120 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "scope": "R24 new Library prose, filtered JSON, local links and receipt SHA only",
+  "new_content_files": {
+    "22.自然语言原版制卡/11.版本历史与普通表达回归.md": "1aaa33df0021d24f2d844a3bd55103f882cd316b04459823b954c6c3b5e5e565",
+    "22.自然语言原版制卡/连续创作验收摘要.json": "7497d7518151d4372a9085b8752b63b059a0ddcd6fbad9a9192479cc59e0d6fc",
+    "agents/19-version-history-and-regression.md": "fc8910cc4a1168e71a1910a29989f7da96745bcd8d63c64465fae962f4264893",
+    "agents/20-local-music-capability.md": "93f78b14194e89409286bffa2e37fdbbd9fcccc8f143626164989551462bf7be",
+    "21.语义调试与技能扩展实战/09.本地背景音乐与共享生命周期/README.md": "f46085294784667317b67800f2c42b5e550bf0ec19e4cdf1f8b2b103f88ba15b",
+    "21.语义调试与技能扩展实战/09.本地背景音乐与共享生命周期/音频能力验收摘要.json": "ed126fd7f20e38695c27ac761d89c7da9215428e237978243561a38c3bc27a4f"
+  },
+  "modified_routes": [
+    "AGENTS.md",
+    "agents/README.md",
+    "22.自然语言原版制卡/README.md",
+    "21.语义调试与技能扩展实战/README.md"
+  ],
+  "local_links": [
+    {
+      "from": "22.自然语言原版制卡/11.版本历史与普通表达回归.md",
+      "target": "10.批量属性与分类型审查.md",
+      "exists": true
+    },
+    {
+      "from": "22.自然语言原版制卡/11.版本历史与普通表达回归.md",
+      "target": "连续创作验收摘要.json",
+      "exists": true
+    },
+    {
+      "from": "22.自然语言原版制卡/11.版本历史与普通表达回归.md",
+      "target": "../21.语义调试与技能扩展实战/09.本地背景音乐与共享生命周期/README.md",
+      "exists": true
+    },
+    {
+      "from": "22.自然语言原版制卡/11.版本历史与普通表达回归.md",
+      "target": "../../pvzh-launcher/native-r24/docs/VERSION-HISTORY.md",
+      "exists": true
+    },
+    {
+      "from": "22.自然语言原版制卡/11.版本历史与普通表达回归.md",
+      "target": "../../pvzh-launcher/native-r24/docs/BATCH-FILTERS.md",
+      "exists": true
+    },
+    {
+      "from": "22.自然语言原版制卡/11.版本历史与普通表达回归.md",
+      "target": "../../pvzh-launcher/native-r24/docs/NOVICE-REGRESSION.md",
+      "exists": true
+    },
+    {
+      "from": "agents/19-version-history-and-regression.md",
+      "target": "../22.自然语言原版制卡/11.版本历史与普通表达回归.md",
+      "exists": true
+    },
+    {
+      "from": "agents/19-version-history-and-regression.md",
+      "target": "../22.自然语言原版制卡/连续创作验收摘要.json",
+      "exists": true
+    },
+    {
+      "from": "agents/19-version-history-and-regression.md",
+      "target": "18-batch-stats-and-typed-review.md",
+      "exists": true
+    },
+    {
+      "from": "agents/19-version-history-and-regression.md",
+      "target": "17-conversation-authoring-and-approval.md",
+      "exists": true
+    },
+    {
+      "from": "agents/19-version-history-and-regression.md",
+      "target": "20-local-music-capability.md",
+      "exists": true
+    },
+    {
+      "from": "agents/20-local-music-capability.md",
+      "target": "../21.语义调试与技能扩展实战/09.本地背景音乐与共享生命周期/README.md",
+      "exists": true
+    },
+    {
+      "from": "agents/20-local-music-capability.md",
+      "target": "../21.语义调试与技能扩展实战/09.本地背景音乐与共享生命周期/音频能力验收摘要.json",
+      "exists": true
+    },
+    {
+      "from": "agents/20-local-music-capability.md",
+      "target": "16-experimental-capabilities-and-launch.md",
+      "exists": true
+    },
+    {
+      "from": "agents/20-local-music-capability.md",
+      "target": "11-semantic-testing-and-evidence.md",
+      "exists": true
+    },
+    {
+      "from": "21.语义调试与技能扩展实战/09.本地背景音乐与共享生命周期/README.md",
+      "target": "音频能力验收摘要.json",
+      "exists": true
+    },
+    {
+      "from": "21.语义调试与技能扩展实战/09.本地背景音乐与共享生命周期/README.md",
+      "target": "../../../pvzh-launcher/native-r24/docs/AUDIO-API.md",
+      "exists": true
+    }
+  ],
+  "receipt_sha_checks": 28,
+  "raw_transcripts_or_credentials_included": false,
+  "game_assets_or_runtime_included": false,
+  "git_pushed": false,
+  "audio_runtime_state": "RC5_SCOPED_18_PLUS_ORIGINAL_V2_10_PASS",
+  "audio_listening_verified": false,
+  "failures_preserved": [
+    "R23 actual review OOM",
+    "R24 broad256 fixture OOM",
+    "CSV strict parser mistake",
+    "RC3 home-owner guard refusal",
+    "RC4 unconfirmed RTPC restore and stale background metrics",
+    "original isolation initial harness precondition error"
+  ]
+}

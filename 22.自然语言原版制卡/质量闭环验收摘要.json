@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "revision": "Android R17 quality RC6",
+  "status": "SCOPED_VALIDATION_WITH_KNOWN_LIMITS",
+  "date_local": "2026-10-23",
+  "source": "pvzh-launcher/native-r17",
+  "apk_sha256": "304f7bedc95bea1610c93cc6ff464a6453e67bf57f1980aeb7942d6087200ef0",
+  "runtime_hooks_changed": false,
+  "baseline_retained": "R16 research RC2",
+  "primary_tasks": 24,
+  "targeted_after_feedback_tasks": 4,
+  "api": {
+    "tasks": 28,
+    "requests": 292,
+    "prompt_tokens": 5701414,
+    "completion_tokens": 97425,
+    "elapsed_host_ms": 1255505
+  },
+  "provider_usage_complete": true,
+  "exact_novice_inputs": 28,
+  "extra_user_hints": 0,
+  "professional_control_group": "NOT_RUN",
+  "static_full_matches": {
+    "r16_novice": 3,
+    "r17_rc1_novice": 3,
+    "r17_rc2_novice": 4
+  },
+  "no_composite_success_rate": true,
+  "engine_scenes": [
+    {
+      "case": "RC2 self death draw",
+      "status": "SEMANTIC_FAIL",
+      "other_death": [
+        0,
+        0
+      ],
+      "self_death": [
+        0,
+        0
+      ]
+    },
+    {
+      "case": "RC2 first other plant health",
+      "status": "PASS_SCOPED",
+      "checks": 17
+    },
+    {
+      "case": "RC4 self death draw repaired",
+      "status": "PASS_SCOPED",
+      "checks": 12,
+      "self_death": [
+        2,
+        2
+      ],
+      "other_death": [
+        0,
+        0
+      ],
+      "self_bounce": [
+        1,
+        0
+      ]
+    },
+    {
+      "case": "RC5 random free plant tricks",
+      "status": "PASS_MECHANICS_RESOURCE_DEVIATION",
+      "checks": 18,
+      "resource_limitation": "Cornucopia instead of requested tree"
+    }
+  ],
+  "offline_checks_per_json_runtime": {
+    "candidate_facts": 28,
+    "quality": 55,
+    "service": 54,
+    "template_diagnostics": 19
+  },
+  "knowledge_entries": 24,
+  "ui_checks": 10,
+  "restore_checks": 26,
+  "original_mods": 4,
+  "test_mods_removed_from_active_list": 32,
+  "old_workbench_files_checked": 453,
+  "old_reading_preferences_preserved": 23,
+  "new_task_reading_preferences_retained": 28,
+  "new_guid_reservations_retained": 24,
+  "resources_verified": 2882,
+  "manifests_verified": 5,
+  "accounts_verified": 65,
+  "account_files_restored": 16,
+  "new_account_files_quarantined": 1,
+  "game_finally_stopped": true,
+  "api_broker_closed": true,
+  "known_limits": [
+    "resource selection/default keyword disclosure",
+    "token authoring expression absent",
+    "static model review does not prove original-engine behavior",
+    "registry diff and task-wide timeout incomplete",
+    "no complete natural game, animation, collection UI or provider compatibility claim"
+  ],
+  "history_failures_preserved": true,
+  "published_python_v1_upgraded": false,
+  "git_commit_or_push": false
+}

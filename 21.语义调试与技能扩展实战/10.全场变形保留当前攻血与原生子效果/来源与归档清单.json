@@ -1,0 +1,123 @@
+{
+  "schema": 1,
+  "archive_date_local": "2026-10-24",
+  "scope": "R25 pharaoh documents and selected evidence only; R26 not validated here",
+  "new_device_or_api_operations": false,
+  "source_files": {
+    "pvzh-launcher/native-r25/docs/PHARAOH.md": {
+      "sha256": "54b9edfeee7db49ae9c60279c3388d1192fc258b0fe35f1cf5c76feb3c03d960",
+      "bytes": 4242
+    },
+    "pvzh-launcher/native-r25/docs/RELEASE-VALIDATION.md": {
+      "sha256": "140c74f0c9f3e1739e0a1a5d349d2b471c6effdc2554e945fc02ccaf463fc501",
+      "bytes": 4278
+    },
+    "pvzh-launcher/native-r25/evidence/pharaoh-transform-host.json": {
+      "sha256": "ef5925379b7bb1cfb2e07d1b3080f461450ef0f3a0780ceada7a31ba83873026",
+      "bytes": 195
+    },
+    "pvzh-launcher/native-r25/evidence/release-integrity-r25-pharaoh-rc5-20261024T101757732923Z.json": {
+      "sha256": "0e59682c8297343a9fab904ef34a8a9069a89e941cece912ada28fbf7f195b18",
+      "bytes": 10131
+    },
+    "pvzh-launcher/native-r25/evidence/release-summary-r25.json": {
+      "sha256": "70cbe196d57acb7de35832c0128378c5078ded00bac56ab9ae76bd543daab152",
+      "bytes": 1785
+    },
+    "pvzh-launcher/operations/pharaoh-music-20261024/evidence/game/rc1-basic-v2/result.json": {
+      "sha256": "d0e75c518f1c984b8bad0af2190c44eaca81d385e711e249bf38b8c7bdc02fde",
+      "bytes": 14089
+    },
+    "pvzh-launcher/operations/pharaoh-music-20261024/evidence/game/rc3-basic/result.json": {
+      "sha256": "7d039f5023dabd5018144825d93b814030444347641a0165a3412a8b4eff9073",
+      "bytes": 24665
+    },
+    "pvzh-launcher/operations/pharaoh-music-20261024/evidence/game/rc4-basic/result.json": {
+      "sha256": "189abe8fe74fb16fbb8fd7e73d1418677a2a04286a6a0ef0b76b6faceaa8a743",
+      "bytes": 140133
+    },
+    "pvzh-launcher/operations/pharaoh-music-20261024/evidence/game/rc4-environment/result.json": {
+      "sha256": "106af9671e622d5d8ef373f4f1d352a9c075d1f9dddac01f904d06cb054866a9",
+      "bytes": 5334
+    },
+    "pvzh-launcher/operations/pharaoh-music-20261024/evidence/game/rc4-environment-v2/result.json": {
+      "sha256": "886c9fbceeae73bcaf2dbcc632b7e951c23d64379b9bbccd9c56e4ad231048e6",
+      "bytes": 19277
+    },
+    "pvzh-launcher/operations/pharaoh-music-20261024/evidence/game/rc5-basic/result.json": {
+      "sha256": "241075a7b9fcb7a72f414120146ccb1b42cff7719c3390b5e544b00aa45b690f",
+      "bytes": 141747
+    },
+    "pvzh-launcher/operations/pharaoh-music-20261024/evidence/game/rc5-environment/result.json": {
+      "sha256": "4c35982dc981c70426edbe44fa7fc0b8b63009a2ce4b261ca868472a9b9d30a1",
+      "bytes": 159107
+    },
+    "pvzh-launcher/operations/pharaoh-music-20261024/evidence/game/rc5-negative/result.json": {
+      "sha256": "d431aa28fcc69fac74391154e17dd7b0fbf26b3ecde54a2ad64dbf9168380e5e",
+      "bytes": 160521
+    },
+    "pvzh-launcher/operations/pharaoh-music-20261024/evidence/game/rc5-original/result.json": {
+      "sha256": "ffc4addbcfd99c7f57685eb57556da348435dd9f9084a59ef49116c1655c357d",
+      "bytes": 84052
+    },
+    "pvzh-launcher/operations/pharaoh-music-20261024/evidence/static-pharaoh-independent.json": {
+      "sha256": "ecf5dec8aeaff9dc90d25c8826fa3801e606968b515f972f99c85e69ffc0911b",
+      "bytes": 7294
+    }
+  },
+  "archived_files": {
+    "21.语义调试与技能扩展实战/10.全场变形保留当前攻血与原生子效果/README.md": {
+      "sha256": "ed2646819c3486839cd7a626e3a971d7df5340411588c8b0bddb80d91e52cdf4",
+      "bytes": 6926
+    },
+    "21.语义调试与技能扩展实战/10.全场变形保留当前攻血与原生子效果/R25法老实现记录.md": {
+      "sha256": "82ab3c6245d2488a2eb180647d014a6eab991a2603fdd571d1465e04651756b7",
+      "bytes": 4612
+    },
+    "21.语义调试与技能扩展实战/10.全场变形保留当前攻血与原生子效果/法老技能验收摘要.json": {
+      "sha256": "1fa50782258a1bdb9c2a83dc0b2a3b3cbdb53c63b4c831357dc98766e6afec72",
+      "bytes": 56843
+    },
+    "agents/21-pharaoh-transform-and-child-effects.md": {
+      "sha256": "86bf873bea74b7656b58212a12a8bc8c43b8d5e2f43d906fb21563e702cf3e52",
+      "bytes": 2940
+    }
+  },
+  "navigation_edit": "Only appended R25-library:pharaoh-transform marker sections; pre-existing dirty changes preserved",
+  "navigation_before_sha256": {
+    "21.语义调试与技能扩展实战/README.md": "035e07751daca1b6c15444a49c84d35a4f9313ba9ee35c7008d292372ae30e24",
+    "agents/README.md": "5949481b9aab2bec85f9307151c4f19736da98520cc48ff93a16ad264b6cf49e",
+    "AGENTS.md": "69c7bce1f7fbd047e4d834ee1ca5dce46f426b322a17f784c246331d5f4e42a2",
+    "README.md": "2ec6f9b9d164bfb520815536904228bd019c1ae0257a211749475f3edba3d187"
+  },
+  "navigation_after_sha256": {
+    "21.语义调试与技能扩展实战/README.md": "dd69d26be4b197b963ebf07e33e6878a79103f81bf7efdd89314afc2f068daa0",
+    "agents/README.md": "55ed3422b7a973ab985efeb83e161eaf22729f875c8ab45170da2fbe029efc35",
+    "AGENTS.md": "5a061aa9e56d8f85191a13daa205763cce0b97c5038e9e1222c40e41d13550ac",
+    "README.md": "be97cb32d7bc9db408376f0bf248d42e01567abbf835090fd08fbf00648e4850"
+  },
+  "excluded": [
+    "full runtime",
+    "APK",
+    "Bundle",
+    "WAV",
+    "raw logs and commands",
+    "account/Mod/device backups",
+    "API keys"
+  ],
+  "git_commit_or_push": false,
+  "archive_validation": {
+    "status": "PASS",
+    "kind": "read-only document checks, not new device/API validation",
+    "markdown_files": 229,
+    "chapters": 24,
+    "local_links_checked": 1000,
+    "broken_links": 0,
+    "external_links_not_verified": 56,
+    "source_sha_bindings": 15,
+    "archive_sha_bindings": 4,
+    "original_engine_source_checks": 221,
+    "sensitive_raw_fields_excluded": true,
+    "git_diff_check": "PASS with pre-existing LF/CRLF warnings only"
+  }
+}

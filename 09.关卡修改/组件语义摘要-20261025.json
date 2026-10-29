@@ -1,0 +1,194 @@
+{
+  "schema": 1,
+  "date": "2026-10-25",
+  "status": "STATIC_AUDIT_COMPLETE",
+  "runtime_validation": "NOT_TESTED",
+  "scope": "Filtered same-binary semantic facts only; no full runtime, binary, disassembly or device logs included.",
+  "source": {
+    "apk_sha256": "bcae340af2964ba7fd4979c1b2ea838c98f5434f74114793cfa8685e650c515b",
+    "binary_and_metadata_match_apk": true,
+    "sha256": {
+      "libil2cpp.so": "18178b2f35959bc3954378a9778cddd67aab8a7ef22579ea59d736521eec8c91",
+      "global-metadata.dat": "18c8b7199ed91b498c420465f9da46db6cd0eab6beb1567932c8b7bfd5ce72cf",
+      "dump.cs": "abba74f59b767709c8846e6a70eccf5d31263722605941cc6c3de6322e1df7c1",
+      "script.json": "8ce42dbe16e6650733f5fd4d1ca77add14243b852fa794ae8c5615e8e25f3e47"
+    },
+    "full_local_audit_sha256": "31d8bc8a2595d0578b6c61471dda207da85c7da11371265868d719ea574466cb"
+  },
+  "method": "ELF PT_LOAD mapping, direct ARM64 disassembly, ELF RELA/GOT resolution using script.json generic metadata names, matched dump.cs fields/enums. Indirect virtual calls are not treated as fully resolved without matching field/vtable context.",
+  "facts": [
+    {
+      "id": "move-top-existing-only",
+      "status": "STATIC_CONFIRMED",
+      "claim": "First matching CardPoolEntry is moved to index0; missing GUID returns without creation or draw.",
+      "methods": [
+        "0x21a99f4",
+        "0x21a9acc"
+      ],
+      "pending": [
+        "Actual draw ordering relative to start/shuffle/mulligan."
+      ]
+    },
+    {
+      "id": "move-top-triggers",
+      "status": "STATIC_CONFIRMED",
+      "claim": "Registers StartGameEffect and TurnStartEffect; component turn count must equal current Engine count.",
+      "methods": [
+        "0x21c5830",
+        "0x21c5ba0"
+      ],
+      "pending": [
+        "Effect ordering relative to ordinary draw systems."
+      ]
+    },
+    {
+      "id": "add-top-overflow-queue",
+      "status": "STATIC_CONFIRMED",
+      "claim": "Find faction player and deck, GetOrAdd CardPoolOverflow, append config CardIds. No TurnNumber field or direct draw in this initializer.",
+      "methods": [
+        "0x2191c88"
+      ],
+      "dump_lines": [
+        664655
+      ],
+      "pending": [
+        "CardPoolOverflow consumption timing and final draw order."
+      ]
+    },
+    {
+      "id": "script-turn-phase-grouping",
+      "status": "STATIC_CONFIRMED",
+      "claim": "Group by TurnNumber and PlayDuringSurprise; append Plays; later same-group config overwrites ContinuePlaying.",
+      "methods": [
+        "0x21ab2a4",
+        "0x21ab5d4",
+        "0x21ab6c8"
+      ],
+      "pending": [
+        "Formal task integration in each faction."
+      ]
+    },
+    {
+      "id": "script-executed-before-validation",
+      "status": "STATIC_CONFIRMED",
+      "claim": "Mark next ScriptedPlay Executed before finding matching valid plays; no valid play is not guaranteed to be retried.",
+      "methods": [
+        "0x2214f5c",
+        "0x21dfb78"
+      ],
+      "pending": [
+        "Missing hand, insufficient sun, remaining same-turn script behavior."
+      ]
+    },
+    {
+      "id": "script-preferred-lane-fallback",
+      "status": "STATIC_CONFIRMED",
+      "claim": "Prefer a valid play whose targets include requested lane; if no lane match, fall back to first valid play.",
+      "methods": [
+        "0x21dfe6c"
+      ],
+      "pending": [
+        "Blocked-terrain/occupied-lane actual behavior and targeted tricks."
+      ]
+    },
+    {
+      "id": "script-lane-omission",
+      "status": "STATIC_CONFIRMED",
+      "claim": "Config ctor does not set LaneIndex=-1; int default0 is copied unchanged to runtime ScriptedPlay. Omission cannot be treated as proven any-lane.",
+      "methods": [
+        "0x21f6634",
+        "0x21ab6c8"
+      ],
+      "pending": [
+        "Serializer settings and product any-lane policy should be checked against actual deserialized field."
+      ]
+    },
+    {
+      "id": "message-record-and-turn",
+      "status": "STATIC_CONFIRMED",
+      "claim": "TurnEventTrigger checks exact RecordType and HistoryProcessorModel.TurnCount. Record7 is ZombieMainPhaseStart, not a universal start-turn record.",
+      "methods": [
+        "0x1f58834",
+        "0x1f58b94",
+        "0x1f58ba4"
+      ],
+      "dump_lines": [
+        664461,
+        750043
+      ],
+      "pending": [
+        "History turn mapping and mid-game messages in formal tasks."
+      ]
+    },
+    {
+      "id": "message-yield-and-dismiss",
+      "status": "STATIC_CONFIRMED",
+      "claim": "CanYield returns !MustTapThrough; message view completion is separately signaled after hide.",
+      "methods": [
+        "0x1f3f55c",
+        "0x1f3f564",
+        "0x1f3f588",
+        "0x1f3fb30",
+        "0x1f3fe40"
+      ],
+      "pending": [
+        "Multiple messages ordering, timeout and tap close, resumption and CN layout."
+      ]
+    },
+    {
+      "id": "board-ability-independent-owner",
+      "status": "STATIC_CONFIRMED",
+      "claim": "Create one card-derived board entity per listed GUID, add Owner with default PlayerId=-1; does not copy skills onto each fighter.",
+      "methods": [
+        "0x2191ddc",
+        "0x2191e88",
+        "0x22712dc"
+      ],
+      "pending": [
+        "New rule instantiation, actual trigger targets and custom-card grant isolation."
+      ]
+    },
+    {
+      "id": "engine-turn-clock",
+      "status": "STATIC_CONFIRMED",
+      "claim": "TurnCounter starts with zero-valued int; TurnCountSystem increments on registered TurnEndEffect and EndMulliganEffect. History clock is separate.",
+      "methods": [
+        "0x21d2634",
+        "0x21d26f4",
+        "0x22736bc"
+      ],
+      "pending": [
+        "Map native counter to displayed first/second round and history snapshots."
+      ]
+    },
+    {
+      "id": "initializer-category-passes",
+      "status": "STATIC_CONFIRMED",
+      "claim": "GameEventInitializer invokes category passes in fixed order, not a single cross-type action timeline.",
+      "methods": [
+        "0x219edf0"
+      ],
+      "dump_lines": [
+        645786
+      ],
+      "order": [
+        "CardsInLane",
+        "ScriptedPlay",
+        "ForcedSuperblock",
+        "CreateLane",
+        "MoveCardToTopOfDeck",
+        "BoardAbility",
+        "ForceSuperpowerDraw",
+        "AddCardToTopOfDeck"
+      ],
+      "pending": [
+        "Actual effect/record execution order within a live formal match."
+      ]
+    }
+  ],
+  "limits": [
+    "RVA applies only to these source hashes.",
+    "dump methods have empty bodies; implementation facts require matching SO audit.",
+    "Static confirmation does not verify live phase/queue/display semantics."
+  ]
+}

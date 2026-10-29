@@ -1,0 +1,238 @@
+{
+  "schema": 1,
+  "revision": "Android R24 creation RC5",
+  "date_local": "2026-10-24",
+  "status": "SCOPED_RC5_MUSIC_AND_ORIGINAL_ISOLATION_PASS",
+  "capabilities": [
+    {
+      "id": "pvzh.rule.music_play",
+      "rule": 1024,
+      "params": [
+        "track_id",
+        "trigger=play|turn_start"
+      ]
+    },
+    {
+      "id": "pvzh.rule.music_restore",
+      "rule": 1025,
+      "params": [
+        "trigger=play|turn_start"
+      ]
+    }
+  ],
+  "registry_revision": "r24-capabilities-1",
+  "scope": "authorized current-Mod registered local tracks, original BGM transient RTPC plus Android MediaPlayer",
+  "permission_layers": [
+    "extensions_enabled",
+    "music_enabled",
+    "independent AI extension permission"
+  ],
+  "offline_evidence": [
+    {
+      "source_workspace_relative": "pvzh-launcher/native-r24/evidence/mod-audio-sdk-compile.json",
+      "receipt_sha256": "16d5f8ea482d77cc986d3536f1580ab9b55da84e7d6dd338243f0fe08caecc88",
+      "status": "PASS",
+      "checks": null
+    },
+    {
+      "source_workspace_relative": "pvzh-launcher/native-r24/evidence/mod-audio-protocol-checks.json",
+      "receipt_sha256": "3766bfb32d4ed2c50fb71aabbb5539eec4a97b1d020ef2931fb2797f69a0050e",
+      "status": "PASS",
+      "checks": 61
+    },
+    {
+      "source_workspace_relative": "pvzh-launcher/native-r24/evidence/mod-audio-protocol-android-checks.json",
+      "receipt_sha256": "e2571f85e1d489d24718adf8d2800e2b2466c8b0082de5370d8b99a9e37a5de0",
+      "status": "PASS",
+      "checks": 61
+    },
+    {
+      "source_workspace_relative": "pvzh-launcher/native-r24/evidence/mod-audio-runtime-checks.json",
+      "receipt_sha256": "66ec1c31620e43506279df01df2beb6144e8b08768f9382f0dd28495cc11af3a",
+      "status": "PASS",
+      "checks": 94
+    },
+    {
+      "source_workspace_relative": "pvzh-launcher/native-r24/evidence/mod-audio-compile-checks.json",
+      "receipt_sha256": "ea0fa899e6f6097bcaca57151173e53b54853aa526ae6cfcf2cfca1486a1a930",
+      "status": "PASS",
+      "checks": 687
+    },
+    {
+      "source_workspace_relative": "pvzh-launcher/native-r24/evidence/mod-audio-compile-android-checks.json",
+      "receipt_sha256": "d50e81bcbf97852f64292d8bcbb138407adfae499cb11786ea92f5cdabf622f3",
+      "status": "PASS",
+      "checks": 687
+    },
+    {
+      "source_workspace_relative": "pvzh-launcher/native-r24/evidence/mod-audio-wiring-checks.json",
+      "receipt_sha256": "76668c489283df45d8d770053bd95af49c7f26bb8a316278762d15904cd8c60a",
+      "status": "PASS",
+      "checks": 39
+    }
+  ],
+  "offline_scope": "host stub/model/native Bundle compiler checks; not real decode, RTPC control or audible output",
+  "rc3_device_attempt": {
+    "source_workspace_relative": "pvzh-launcher/native-r24/evidence/game/music-rc3/result.json",
+    "receipt_sha256": "9f048724d5ae7de878849977d3f07cad680eb40fef912aff2b66e3050911e96e",
+    "status": "SEMANTIC_FAIL",
+    "checks": 3,
+    "evidence_kind": "ORIGINAL_ENGINE_GUARD_REFUSAL",
+    "candidate_sha256": "e9077850b9d36a83ae997ef6849d4cf70ba1d5d90c15a63091dc17ae445ba97f",
+    "process_survived_failure": true,
+    "original_muted": false,
+    "installed": false,
+    "phase": "unavailable",
+    "actions": 0,
+    "last_error": "Error: Mod audio native signature mismatch: home",
+    "system_volume_modified": false,
+    "original_settings_written": false
+  },
+  "rc4_fix": "Reuse already-owned v6 GoingToHomeScreen callback; do not attach or validate original prologue twice. Keep other five native audio signature checks.",
+  "rc4_original_engine": {
+    "source_workspace_relative": "pvzh-launcher/native-r24/evidence/game/music-rc4/result.json",
+    "receipt_sha256": "8304ee847f4a0ea7580be78896376ab2da4e834508aa42a33bc6b3fdfd3528ee",
+    "status": "SEMANTIC_FAIL",
+    "candidate_sha256": "e9077850b9d36a83ae997ef6849d4cf70ba1d5d90c15a63091dc17ae445ba97f",
+    "assertion_count": 13,
+    "reported_pass_count": 12,
+    "failed_assertion": "original-music-restored",
+    "process_survived_failure": true,
+    "verified_scope": [
+      "module installed",
+      "legal play from unchanged AI candidate",
+      "music RTPC zero on playing",
+      "real MediaPlayer position0->705ms, duration12000ms",
+      "music preference100 preserved"
+    ],
+    "restore_failure_observation": {
+      "controller_phase": "idle",
+      "controller_claimed_original_muted": false,
+      "native_rtpc": 0,
+      "read_result": 1,
+      "music_preference": 100
+    },
+    "background_assertion_boundary": "control paused/unmuted flag passed, but sampled native RTPC remained0 and backend_is_playing could be pre-pause cached; not a verified physical pause/restore result"
+  },
+  "real_media_decode_and_position": {
+    "status": "PASS_SCOPED_RC5",
+    "before": 0,
+    "after": 798,
+    "duration": 12000
+  },
+  "audible_output": "NOT_VERIFIED; actual system media volume remained0 during the test",
+  "public_python_v1_changed": false,
+  "runtime_service_or_audio_assets_embedded": false,
+  "credentials_raw_sessions_embedded": false,
+  "rc5_original_engine": {
+    "source_workspace_relative": "pvzh-launcher/native-r24/evidence/game/music-rc5/result.json",
+    "receipt_sha256": "3c8de42c089eae83d549514fc04d46b7df4dca7a8d1ebdd2976d193a23ab37f1",
+    "status": "PASS",
+    "checks": 18,
+    "candidate_sha256": "e9077850b9d36a83ae997ef6849d4cf70ba1d5d90c15a63091dc17ae445ba97f",
+    "manual_skill_substitution": false,
+    "real_media_backend": true,
+    "real_rtpc": true,
+    "decoder_progress": {
+      "before": 0,
+      "after": 798,
+      "duration": 12000
+    },
+    "background_player": {
+      "state": "paused",
+      "backend_is_playing": false,
+      "foreground": false,
+      "fresh_sample_observed": true
+    },
+    "background_restore_scope": "request accepted/restore_pending retained; no claim that paused background physical RTPC was already restored",
+    "skill_restore_confirmed": {
+      "original_muted": false,
+      "restore_pending": false,
+      "restore_target": 100,
+      "restore_confirmed_at_present": true,
+      "actual_rtpc": 100,
+      "read_result": 1
+    },
+    "system_volume_and_game_settings": {
+      "before": [
+        0,
+        0,
+        25
+      ],
+      "after": [
+        0,
+        0,
+        25
+      ],
+      "game_music_preference": 100
+    },
+    "same_process_survived": true,
+    "current_process_crash_buffer_empty": true
+  },
+  "original_mode_isolation": {
+    "source_workspace_relative": "pvzh-launcher/native-r24/evidence/game/original-after-music-rc5-v2/result.json",
+    "receipt_sha256": "0915057816f8d0a123b8dc2b7e045fb5272678424e21bdd446f85d5e3093ce39",
+    "status": "PASS",
+    "checks": 10,
+    "source_apk_sha256": "a045e44ab1c8d11ee5f94df4fad8b420a6c3a976fbb5994fd64c98d83d29abcc",
+    "after_music_mod": true,
+    "active_registry": {
+      "enabled": false,
+      "original": true,
+      "track_count": 0
+    },
+    "native_music": {
+      "installed": false,
+      "allowed": false,
+      "active": false,
+      "actions": 0,
+      "original_muted": false
+    },
+    "original_peashooter": {
+      "guid": 10,
+      "cost": 1,
+      "attack": 1,
+      "health": 1
+    },
+    "legal_play_no_music_trigger": true,
+    "same_process_survived": true,
+    "crash_buffer_empty": true,
+    "listening_verified": false
+  },
+  "tested_runtime_apk_sha256": "a045e44ab1c8d11ee5f94df4fad8b420a6c3a976fbb5994fd64c98d83d29abcc",
+  "original_isolation_initial_harness_failure": {
+    "source_workspace_relative": "pvzh-launcher/native-r24/evidence/game/original-after-music-rc5/result.json",
+    "receipt_sha256": "ecb4cbdb21ef040045126087945026c405afd97b4565c92edb2afa91b8d0dfe3",
+    "status": "FRAMEWORK_ERROR",
+    "passed_before_error": 5,
+    "process_survived_failure": true,
+    "cause": "Host called card_info before a live PvE fixture existed; moved read after fixture and re-ran a fresh process; not a game crash"
+  },
+  "remaining_limits": [
+    "No waveform capture or speaker listening; system media volume stayed0",
+    "Paused background physical RTPC restore was pending/requested, not confirmed at that moment; actual target100 confirmed later by restore skill",
+    "Only the recorded legal-play recipes and lifecycle scenario exercised in original engine; other triggers/decoder failures have separate static/protocol evidence",
+    "Historical RC3 guard refusal, RC4 premature restore claim and initial original-harness error remain preserved"
+  ],
+  "final_release": {
+    "source_workspace_relative": "pvzh-launcher/native-r24/evidence/release-summary-r24.json",
+    "receipt_sha256": "08f761409742fc7e911f2decafeb403d590470e2f1db293563134093e1cc2e66",
+    "status": "PASS",
+    "revision": "r24-creation-rc5",
+    "apk_sha256": "a045e44ab1c8d11ee5f94df4fad8b420a6c3a976fbb5994fd64c98d83d29abcc",
+    "independent_apk_checks": 36,
+    "device_restore": {
+      "status": "PASS",
+      "checks": 134,
+      "old_workbench_files": 760,
+      "account_files": 65,
+      "resource_files": 2887,
+      "owned_test_mods_hidden": 10,
+      "owned_sessions_archived": 10,
+      "account_roots_cleared": false,
+      "audio_cache_disabled": true
+    },
+    "git_pushed": false,
+    "web_deployed": false
+  }
+}

@@ -1,0 +1,354 @@
+{
+  "schema": 1,
+  "status": "STATIC_CATALOG_REVIEWED",
+  "date": "2026-10-27",
+  "scope": "59 original BoardAbility definitions; structure/CN catalog only, no runtime validation",
+  "source": {
+    "sources": {
+      "cards/card_data": {
+        "path": "D:\\Codex2\\pvzh-mod\\pvzh-launcher\\native-r33\\build\\independent-fixtures\\cards\\card_data",
+        "sha256": "e0682de0135a77bcd15c73072dc3221c0e25b1ac694ebc86bd7965e1d56d57b7"
+      },
+      "loc/cn": {
+        "path": "D:\\Codex2\\pvzh-mod\\pvzh-launcher\\native-r33\\build\\independent-fixtures\\loc\\cn",
+        "sha256": "6195e2d7cd7aad12c96dc3f6ccc0947ebfe1b6ddb86714f376776ee3af7cd936"
+      },
+      "data_assets": {
+        "path": "D:\\Codex2\\pvzh-mod\\pvzh-launcher\\native-r33\\build\\independent-fixtures\\data_assets",
+        "sha256": "9d68d6f4c50caca3d1ff2ed723fddfb59d22ff0f3dfb852191c32b74766f4f71"
+      }
+    },
+    "index_sha256": "8b407ae4c1e83a6f3b27dd26401aecf8757235f68581cbe08172ae700f0ab500",
+    "index_count": 59,
+    "actual_board_count": 59,
+    "index_matches_board_components": true,
+    "all_level_text_assets": 1065,
+    "unique_guids_in_level_board_arrays": 46,
+    "matched_board_abilities_referenced": 45,
+    "unreferenced_board_abilities": [
+      355,
+      367,
+      368,
+      371,
+      379,
+      380,
+      384,
+      386,
+      389,
+      390,
+      565,
+      567,
+      570,
+      584
+    ],
+    "additional_non_board_card_references": [
+      591
+    ]
+  },
+  "counts": {
+    "definitions": 59,
+    "distinct_effect_graphs": 57,
+    "with_level_references": 45,
+    "without_level_references": 14,
+    "r34_registered": 14,
+    "unusable_component": 45,
+    "usable_true": 14
+  },
+  "group_counts": {
+    "打出卡牌时触发": 11,
+    "单位死亡后触发": 7,
+    "受到伤害及指定卡牌配套": 2,
+    "每回合战斗阶段结束": 4,
+    "持续作用的专用规则": 2,
+    "开局一次性配置": 10,
+    "每回合开始重复触发": 23
+  },
+  "coverage_exact": true,
+  "effect_duplicate_groups": [
+    [
+      377,
+      379
+    ],
+    [
+      582,
+      584
+    ]
+  ],
+  "source_inputs_unchanged": true,
+  "independent_review": {
+    "schema": 1,
+    "status": "PASS_WITH_WORDING_RECOMMENDATIONS",
+    "recorded_at": "2026-10-27T05:28:15.038517+00:00",
+    "scope": "Independent static original-card entity and compiled Chinese support review. No ADB/API/runtime or workspace modification. Assertions are data property checks, not gameplay scenarios.",
+    "input_sha256": {
+      "all.json": "997c8ab0c3f3fe1b718f6daa127882f2a4cba9c9477d7eee356cf06a3f60883b",
+      "level-notes.json": "2e46edd2257a8f46d535dac3844232e63cad808875801e5f6c306f1b8c20cd62",
+      "a-analysis.json": "c61c8ad0581c8a90680191c0f9ad43056f25a1dac2d4c9236d996059b4b12be7",
+      "b-analysis.json": "9c68655feb481399fbfd82fed4752049ecc445cad712dab27dd0c3190425a995",
+      "c-analysis.json": "0770646d69e1227a339a711d5c19e05953ef03096a4d2d800ea0d0acd31fb87d"
+    },
+    "checks": [
+      {
+        "name": "59 complete original entries",
+        "pass": true
+      },
+      {
+        "name": "No repeated analysis GUID",
+        "pass": true
+      },
+      {
+        "name": "Analysis exact GUID coverage",
+        "pass": true
+      },
+      {
+        "name": "All root factions All",
+        "pass": true
+      },
+      {
+        "name": "All indexed as BoardAbilityView and have marker",
+        "pass": true
+      },
+      {
+        "name": "All definitions set Board",
+        "pass": true
+      },
+      {
+        "name": "All BoardAbilityView per-card CN absent",
+        "pass": true
+      },
+      {
+        "name": "Duplicate 377 and379 entities exact",
+        "pass": true
+      },
+      {
+        "name": "Duplicate 582 and584 entities exact",
+        "pass": true
+      },
+      {
+        "name": "355 has InLaneQuery not InSameLaneQuery",
+        "pass": true
+      },
+      {
+        "name": "CombatEnd trigger 373",
+        "pass": true
+      },
+      {
+        "name": "CombatEnd trigger 375",
+        "pass": true
+      },
+      {
+        "name": "CombatEnd trigger 580",
+        "pass": true
+      },
+      {
+        "name": "CombatEnd trigger 583",
+        "pass": true
+      },
+      {
+        "name": "373 cost -1 Permanent, all hand only",
+        "pass": true
+      },
+      {
+        "name": "Permanent immediate GainSun1 376",
+        "pass": true
+      },
+      {
+        "name": "Permanent immediate GainSun1 394",
+        "pass": true
+      },
+      {
+        "name": "370 EndOfTurn buff1/1",
+        "pass": true
+      },
+      {
+        "name": "383 PlayTrigger permanent health1",
+        "pass": true
+      },
+      {
+        "name": "387/388 fixed lane0 and4",
+        "pass": true
+      },
+      {
+        "name": "395 exact card77+296 lane1",
+        "pass": true
+      },
+      {
+        "name": "397 exact card116+119 lane2",
+        "pass": true
+      },
+      {
+        "name": "565 continuous with FaceDown disjunct",
+        "pass": true
+      },
+      {
+        "name": "567 Guid450 only and costs+1",
+        "pass": true
+      },
+      {
+        "name": "570 Guid265 source and self destruction",
+        "pass": true
+      },
+      {
+        "name": "Combat end30 damage 580",
+        "pass": true
+      },
+      {
+        "name": "Combat end30 damage 583",
+        "pass": true
+      },
+      {
+        "name": "590 damage18 once not set-health",
+        "pass": true
+      },
+      {
+        "name": "644 once charge80",
+        "pass": true
+      },
+      {
+        "name": "45 catalog rules referenced14 unused",
+        "pass": true
+      },
+      {
+        "name": "Only extra BoardAbilities reference591",
+        "pass": true
+      },
+      {
+        "name": "Inputs unchanged during independent review",
+        "pass": true
+      },
+      {
+        "name": "Unusable45 and usable14 exact metadata partition",
+        "pass": true
+      },
+      {
+        "name": "All Board definitions nonfighter and nonenvironment",
+        "pass": true
+      }
+    ],
+    "assertions": 34,
+    "findings": [
+      {
+        "guid": 355,
+        "severity": "wording",
+        "recommendation": "Do not assert InLaneQuery means source same lane or requires specific lane context. Existing Library Agent07 combines InLaneQuery and InSameLaneQuery explicitly for same-lane; Agent05/06 uses InLaneQuery for units on board. Use extra in-lane filter and leave exact difference unverified."
+      },
+      {
+        "guid": [
+          373,
+          375,
+          580,
+          583
+        ],
+        "severity": "clarity",
+        "recommendation": "Prefer 每回合战斗阶段结束时 to 每次战斗结束; do not imply the whole match has already ended."
+      },
+      {
+        "guid": [
+          376,
+          394
+        ],
+        "severity": "boundary",
+        "recommendation": "Keep exact GainSun Amount1/DurationPermanent/ActivationTimeImmediate and standard-resource acceleration context. Avoid an untested exact resource formula for arbitrary modified resource setups."
+      },
+      {
+        "guid": [
+          565,
+          567
+        ],
+        "severity": "boundary",
+        "recommendation": "Continuous/ActiveTargets rules are not per-turn stacking triggers. Removal/re-entry/multiple-instance behavior not newly runtime-tested."
+      },
+      {
+        "guid": 570,
+        "severity": "boundary",
+        "recommendation": "Explain source GUID265 and self destruction; no guarantee about simultaneous multi-target damage event ordering or one-event exact scheduling."
+      }
+    ],
+    "blocking_data_errors_found": [],
+    "metadata_exceptions": {
+      "Unusable_marker_guids": [
+        354,
+        355,
+        356,
+        357,
+        358,
+        359,
+        360,
+        361,
+        362,
+        363,
+        364,
+        365,
+        366,
+        367,
+        368,
+        369,
+        370,
+        371,
+        372,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392,
+        393,
+        394,
+        395,
+        396,
+        397,
+        644
+      ],
+      "usable_true_guids": [
+        559,
+        561,
+        563,
+        565,
+        567,
+        570,
+        571,
+        580,
+        582,
+        583,
+        584,
+        590,
+        592,
+        593
+      ],
+      "Unusable_marker_count": 45,
+      "usable_true_count": 14,
+      "interpretation": "Do not infer collectible/deck/play eligibility from this flag alone. All59 are setBoard/factionAll/nonFighter/nonEnv and have BoardAbility marker."
+    },
+    "initial_review_failure": {
+      "record": "review-initial-unusable-assumption.json",
+      "cause": "Reviewer preconception incorrectly required all59 to contain Unusable. Actual original data45/14 partition is consistent; no product-data change or compiler failure."
+    }
+  },
+  "applied_editorial_corrections": [
+    "355 avoids same-lane/source-lane assertion",
+    "373/375/580/583 use round combat-phase end wording",
+    "376/394 preserve exact Permanent/Immediate fields without arbitrary resource formula",
+    "565/567 continuous not per-turn stacking",
+    "570 self-destruction and simultaneous-event timing qualified",
+    "Recurring TurnStart section explicitly distinguished from Continuous rules"
+  ],
+  "output_sha256": {
+    "09.原版场景能力目录.md": "9a91a96f1bb4bfe2cab9abe19ffd552e2392a1a0fe4d546f58302fc92e29afe5",
+    "原版场景能力目录-20261027.json": "989087387ad96941bb00fd6815f1ea4b1a5818f416939d041d0430d1800a2668"
+  },
+  "r34_code_sha256": "316c820e4c9f3b39964984910193c39a0a2987716b9fb055b576e860130deafa"
+}

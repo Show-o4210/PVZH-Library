@@ -1,0 +1,181 @@
+{
+  "schema": 1,
+  "date": "2026-10-25",
+  "status": "SOURCE_STRUCTURE_OBSERVED",
+  "scope": "Read-only census of pinned R30 stock resources; no device/API or gameplay claim from this census. Formal campaign lab gameplay remains PENDING until separate receipt.",
+  "sources": {
+    "apk_revision": "R30 RC1",
+    "apk_sha256": "bcae340af2964ba7fd4979c1b2ea838c98f5434f74114793cfa8685e650c515b",
+    "levels_bundle": {
+      "member": "assets/launcher/baselines/11064/data_assets_36",
+      "sha256": "9d68d6f4c50caca3d1ff2ed723fddfb59d22ff0f3dfb852191c32b74766f4f71"
+    },
+    "cards_bundle": {
+      "member": "assets/AssetBundles/cards/card_data",
+      "sha256": "e0682de0135a77bcd15c73072dc3221c0e25b1ac694ebc86bd7965e1d56d57b7"
+    },
+    "dump_reference": "PVZH 1.67.8 ARM64 shared dump; field definitions cross-checked separately, addresses are not cross-version contracts."
+  },
+  "census": {
+    "level_textassets": 1065,
+    "formal_campaign_levels": 400,
+    "formal_ids_exact_contiguous_001_to_200_per_side": true,
+    "superblock_sides": 2130,
+    "superblock_weight_sums": {
+      "0": 103,
+      "1": 1,
+      "100": 2026
+    },
+    "different_plant_zombie_backgrounds": 405,
+    "all_event_type_count": 17,
+    "board_ability_card_definitions": 59,
+    "board_ability_guids_used_in_levels": 46,
+    "r30_level_compiler_registered_rules": 14,
+    "formal_events": {
+      "MoveCardToTopOfDeckConfig": {
+        "events": 61,
+        "levels": 29,
+        "for_ai": 60,
+        "for_player": 1,
+        "turn_numbers": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "MessageEventConfig": {
+        "events": 268,
+        "levels": 207,
+        "trigger_types": [
+          1
+        ],
+        "turn_numbers": [
+          0
+        ],
+        "view_types": [
+          0,
+          2
+        ],
+        "must_tap_through_values": [
+          false,
+          true
+        ]
+      },
+      "AddCardToTopOfDeckConfig": {
+        "events": 0,
+        "levels": 0
+      },
+      "ScriptedTurnEventConfig": {
+        "events": 0,
+        "levels": 0
+      }
+    },
+    "all_scripted_turn_events": 85,
+    "all_scripted_turn_events_with_multiple_plays": 10
+  },
+  "counterexamples": {
+    "non100_superblock_samples": [
+      {
+        "id": "botd_week33_day2",
+        "side": "OpponentConfig",
+        "sum": 0,
+        "entries": [
+          {
+            "RngWeight": 0,
+            "ChargeAmount": 0
+          }
+        ],
+        "block_meter_max": 80
+      },
+      {
+        "id": "botd_week27_day6",
+        "side": "OpponentConfig",
+        "sum": 1,
+        "entries": [
+          {
+            "RngWeight": 1,
+            "ChargeAmount": 0
+          }
+        ],
+        "block_meter_max": 80
+      }
+    ],
+    "campaign_ai_deck": {
+      "referenced_by": "PVE_Soft_Node_Plant_001",
+      "deck_id": "Soft_PVE_Deck_Zombie_Impfinity_001",
+      "main_deck_size": 40,
+      "most_repeated_guid": 337,
+      "count": 10,
+      "lesson": "Do not blindly enforce player four-copy limits on campaign AI decks."
+    },
+    "board_ability_markers": {
+      "354": {
+        "usable": false,
+        "faction": "All",
+        "prefabName": "BoardAbilityView",
+        "root_components": [
+          "Unusable",
+          "Card",
+          "BoardAbility",
+          "SunCost",
+          "Rarity",
+          "EffectEntitiesDescriptor"
+        ]
+      },
+      "356": {
+        "usable": false,
+        "faction": "All",
+        "prefabName": "BoardAbilityView",
+        "root_components": [
+          "Unusable",
+          "Card",
+          "BoardAbility",
+          "SunCost",
+          "Rarity",
+          "EffectEntitiesDescriptor"
+        ]
+      },
+      "359": {
+        "usable": false,
+        "faction": "All",
+        "prefabName": "BoardAbilityView",
+        "root_components": [
+          "Unusable",
+          "Card",
+          "BoardAbility",
+          "SunCost",
+          "Rarity",
+          "EffectEntitiesDescriptor"
+        ]
+      },
+      "376": {
+        "usable": false,
+        "faction": "All",
+        "prefabName": "BoardAbilityView",
+        "root_components": [
+          "Unusable",
+          "Card",
+          "BoardAbility",
+          "SunCost",
+          "Rarity",
+          "EffectEntitiesDescriptor"
+        ]
+      }
+    }
+  },
+  "unverified": [
+    "formal-task scripted play phase/resource/hand/target and continuation behavior",
+    "turn-based message dismissal and queue continuation",
+    "move-to-top timing relative to mulligan and initial/normal draws",
+    "custom BoardAbility initialization, target faction and interactions",
+    "arbitrary non100 superblock safety; original counterexamples are not blanket permission"
+  ],
+  "historical_limits": [
+    "R29 formal next-turn scene settlement USER_SKIPPED",
+    "R10 fixture checks do not cover every formal mission entry or narrative"
+  ]
+}

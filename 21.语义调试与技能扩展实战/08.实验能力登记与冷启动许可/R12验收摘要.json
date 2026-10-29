@@ -1,0 +1,545 @@
+{
+  "schema": 1,
+  "date": "2026-10-20",
+  "status": "PASS_WITH_LIMITATIONS",
+  "scope": "Selected documentation and evidence fields only; Library generation does not call ADB/API/build or modify production. Original public Python v1 contract unchanged.",
+  "registry": {
+    "revision": "r12-capabilities-1",
+    "runtime_rules": 23,
+    "ai_recipes": [
+      {
+        "id": "pvzh.rule.after_attack_bounce",
+        "rule": 1006,
+        "parameters": {}
+      },
+      {
+        "id": "pvzh.rule.swap_current_health",
+        "rule": 1014,
+        "parameters": {}
+      },
+      {
+        "id": "pvzh.rule.after_attack_destroy_self",
+        "rule": 1019,
+        "parameters": {}
+      }
+    ],
+    "sha256": "d388af3b12e48425a46ec8bb64a32f0bc0d9a450d1ebe38638c1cce252646e08"
+  },
+  "candidates": {
+    "rc1": {
+      "revision": "r12-experiments-rc1",
+      "apk_sha256": "002c2d99da7c396aa1a176e322155e4fe40a461061e5136f467822e1c3a910a0"
+    },
+    "rc2": {
+      "revision": "r12-experiments-rc2",
+      "apk_sha256": "6b77dc3478c72e6a3c75223dc7be91db651e145f84b32ef85795532d718232cb",
+      "device_acceptance": "PASS_ON_OFF_ORIGINAL_AND_SELECTIVE_RESTORE"
+    }
+  },
+  "rc1_rc2_payload_comparison": {
+    "classes9_dex_equal": true,
+    "classes9_dex_sha256": "935f73c57c4ddb16d2ad809fa6a5aa7223f08cb62c6b4d78e88251fb64f6c124",
+    "all_asset_hashes_equal": true,
+    "gadget_script_changed": true,
+    "rc2_gadget_script_sha256": "77578e47348ed59a82195f5e6b3dcfbb6b2371349c346f66d2cca22498519941",
+    "meaning": "Build payload comparison only; not a substitute for RC2 native startup/gameplay."
+  },
+  "offline": {
+    "settings_and_transactions": {
+      "cases": 25,
+      "assertions": 95,
+      "status": "PASS",
+      "boundary": "Production Java with desktop Context/storage fixtures"
+    },
+    "runtime_policy": {
+      "checks": 39,
+      "status": "PASS"
+    },
+    "rc2_runtime_bootstrap_and_atomic_reports": {
+      "checks": 11,
+      "status": "PASS",
+      "boundary": "Production bootstrap VM and explicit native/file doubles; no device proof"
+    },
+    "extension_compiler": {
+      "checks": 40,
+      "status": "PASS"
+    }
+  },
+  "api": {
+    "status": "PASS",
+    "model": "deepseek-flash",
+    "successful_model_responses": 1,
+    "http_status": 200,
+    "total_tokens": 30234,
+    "transport": "Host transparent HTTP relay because device lacked network; Android local compiler, not Python compilation proxy",
+    "created_cards": 3,
+    "android_compile_commit_export": "PASS",
+    "boundary": "One live response; not all possible requests or 23 runtime rules"
+  },
+  "device_rc1_on": {
+    "status": "PASS",
+    "checks": 16,
+    "names": [
+      "valid-frozen-snapshot",
+      "enum-guard-installed",
+      "actual-extension-state",
+      "fixture-active",
+      "new-card-900007",
+      "new-card-900008",
+      "new-card-900009",
+      "swap-on-play-current-health",
+      "real-attack-damage-900007",
+      "extension-leaves-board-900007",
+      "bounce-hand-plus-one",
+      "real-attack-damage-900008",
+      "extension-leaves-board-900008",
+      "destroy-does-not-return",
+      "process-survived",
+      "no-native-crash"
+    ],
+    "scope": "Real IL2CPP headless fixture; original play and attack effects",
+    "visual_animation_verified": false,
+    "gameplay_touch_input": false,
+    "screenshots_used": false,
+    "boundary": "Original play and ExtraAttackEffect in explicit headless fixture; not natural formal-player match. Export still carries legacy mod2 runtime marker."
+  },
+  "device_rc1_off_first": {
+    "status": "FAIL",
+    "summary": "Error: abort was called before managed initialization completed; PID alive, no native crash observed; report JSON had mixed reported_at tail",
+    "source": "pvzh-launcher/native-r12/evidence/game-rc1-global-off/result.json",
+    "classification": "Runtime startup failure; no observed native crash"
+  },
+  "device_rc1_off_retry": {
+    "status": "PASS",
+    "checks": 14,
+    "names": [
+      "valid-frozen-snapshot",
+      "enum-guard-installed",
+      "actual-extension-state",
+      "fixture-active",
+      "new-card-900007",
+      "new-card-900008",
+      "new-card-900009",
+      "swap-disabled-keeps-health",
+      "real-attack-damage-900007",
+      "disabled-card-stays-on-board-900007",
+      "real-attack-damage-900008",
+      "disabled-card-stays-on-board-900008",
+      "process-survived",
+      "no-native-crash"
+    ],
+    "boundary": "Same disabled settings after full restart retry; does not erase first failure."
+  },
+  "final_report_source": "pvzh-launcher/native-r12/docs/RELEASE-VALIDATION.md",
+  "sources": [
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/assets/experiments/capabilities.json",
+      "bytes": 13683,
+      "sha256": "d388af3b12e48425a46ec8bb64a32f0bc0d9a450d1ebe38638c1cce252646e08"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/docs/CONTRACT.md",
+      "bytes": 4279,
+      "sha256": "d9b856bc45b166b8c29f72c8e5c187188f2498e3a58db53e39f2b4223783fe01"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/docs/settings.md",
+      "bytes": 5031,
+      "sha256": "e5febb313a99e2553bb9d417ae65849a871199437f1dcc36847e94f703c98c0e"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/docs/settings-validation.md",
+      "bytes": 3059,
+      "sha256": "1e6c57bd150eb716e9f547a76710f4f6803cc7823c4fee6f0ec5b265ff4359bf"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/docs/runtime-capabilities.md",
+      "bytes": 5309,
+      "sha256": "6d2e8a83a0a96913090aa90888896ac0d2417aba5aee4d1234c4818c4538e8d2"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/docs/runtime-startup-rc2.md",
+      "bytes": 2823,
+      "sha256": "94d67acef77753c5136ba2ecdb0370eb0ca643065a997d2425d6f7e7c387f491"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/docs/ai-extensions.md",
+      "bytes": 5445,
+      "sha256": "9bc150d061b6eb1feb8191974b22be75d78e96ad3ad23292cca45af5a87ea7c2"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/tests/check_capability_runtime.js",
+      "bytes": 13782,
+      "sha256": "dbf5df063354b2ca3ac7a5079183913b6ef6247595bf9250cf76b4b019b2a3ba"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/tests/check_capability_runtime_bootstrap.js",
+      "bytes": 8883,
+      "sha256": "71fc13fd5d9a44619b18395de77e59ce8c6c669deb0126150d260abba5a67bae"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/evidence/registry-check.json",
+      "bytes": 426,
+      "sha256": "e9e3003939a3da3ebbc6bcb1b8e42c051d202d515fe06113450be8e7df4b3f7e"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/evidence/experiments-offline.json",
+      "bytes": 3595,
+      "sha256": "74e23f847279506327ac7207a8ed884db7d9d375b52a4833ed7a5a001fd9713e"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/evidence/experiments-transactions-offline.json",
+      "bytes": 3971,
+      "sha256": "c77d19bfe198b06737e423885172ca5bc5f2018ee961cdc4ec9802f3700def2b"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/evidence/extension-compiler-checks.json",
+      "bytes": 6251,
+      "sha256": "1d8192f2e4b9b186de17e780b281e7de71c297c20216ee311449b742111b3c86"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/evidence/api-network-first-failure.json",
+      "bytes": 224,
+      "sha256": "39358135f85f891aa5a13bf3b03543b6a950af6d5960bafa0d66a44e17fdf7b6"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/evidence/api-acceptance-attempts.json",
+      "bytes": 3066,
+      "sha256": "4fee11a62e13a52447fce87e003031d8dca97caa06583ba14e5a6879c281130c"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/evidence/api-acceptance-result.json",
+      "bytes": 11993,
+      "sha256": "4083d5841e8016e190991176a4fab9c43edad8d5ee4fb14ba3a427ff75fed6f2"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/evidence/device-first-runtime-status.json",
+      "bytes": 7543,
+      "sha256": "519d4b4647da12d575eaa5d01059cc9f8f6f2c20d41a494f6a660a53bb3639e4"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/evidence/device-launch-mod.json",
+      "bytes": 73673,
+      "sha256": "ab44c586440f24d6fae273802cdaca30615bf542c53080bf60e85bedb6ffc496"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/evidence/device-export.json",
+      "bytes": 199,
+      "sha256": "0cc4d3707ee2d76ec944879318cc80d04d25fa350c60e61054774b359b3ec2d2"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/evidence/game-rc1-global-on/result.json",
+      "bytes": 2798,
+      "sha256": "4e0a3aaab8970ed3a4a482eafac7c449711039affef1208501b0d89534d1bf05"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/evidence/game-rc1-global-off/result.json",
+      "bytes": 772,
+      "sha256": "aa242e58dbdd21d287808405d472f043b17b905e9b916fc27148e9ca0c595402"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/evidence/game-rc1-global-off-retry/result.json",
+      "bytes": 2660,
+      "sha256": "42155e297a7015218638d349188d553d8f50da78615074dc623df155a7da3dfa"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/dist/r12-experiments-rc1.json",
+      "bytes": 24002,
+      "sha256": "317a360ef44ea9b176a2607b01cc4429121d84390def889399b33c9ed4d3d757"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/dist/r12-experiments-rc2.json",
+      "bytes": 24586,
+      "sha256": "b04ee588a5ff596437f2066a83b69ef6249b7a71474ae0e536b0cd9c3a8e6eaf"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/evidence/game-rc2-global-on/result.json",
+      "bytes": 6465,
+      "sha256": "1f603d0ef3b05bd62616d495160b456ca046a4c4c250afb8817a7c008abb1d0e"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/evidence/game-rc2-global-off/result.json",
+      "bytes": 6132,
+      "sha256": "3c7e078741cbd47fe2b1f0afc19143d82b41531a0405a8c18cf86a1cd03c7ea9"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/evidence/game-rc2-original/result.json",
+      "bytes": 2260,
+      "sha256": "56c5bd15f35cd8dbc1940c9f247e16530ed3b8d4367f6d68ba2ed7c6f6c0b525"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/evidence/game-rc2-original-pre-fixture/result.json",
+      "bytes": 1714,
+      "sha256": "02eb05ba915acd38087da4d9f4fd10ac46ba34f29a3dcae4986e92856d7a773b"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/evidence/device-rc2-on-bootstrap.json",
+      "bytes": 7684,
+      "sha256": "49602e9e094cb41560613f2bbcaf8897368dc3fa6ad38f170443f1e5e2949eca"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/evidence/device-rc2-report-publication.json",
+      "bytes": 19919,
+      "sha256": "78aae25d32e64cd0967fe370091426b86af99373d96fdf2497bf58b83ec55bf1"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/evidence/rc1-off-startup-failure.json",
+      "bytes": 314,
+      "sha256": "9b32f05d8f008ab55b0dc1348233b1c15709937403dd855b467c8b4fcabcb439"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/evidence/device-original-authoring.json",
+      "bytes": 15754,
+      "sha256": "25a743b4ff5c16022575c76499c806214551a99d4559d4558e2f8640901a3c7e"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/evidence/final-device-restore.json",
+      "bytes": 5642,
+      "sha256": "86b48e8df0d5e2859e8369de429bdd8df0391d40013366335b0c4f13efba30e2"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/README.md",
+      "bytes": 2186,
+      "sha256": "8ba62a93537521869ffad06ad1083df096d3e56897c262f7a4a3e301e1aac453"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/docs/DECISIONS.md",
+      "bytes": 7252,
+      "sha256": "44921525f293e6afe8c5f998e8fa81f2f9f01d6299625d05b93caccb4d91bbe6"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/docs/PLAYER-GUIDE.md",
+      "bytes": 5142,
+      "sha256": "9f6662343ca8a7e954f066804fc86bf4a3d5640ee5ef2f18e77c8b6b3f0f0d51"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/docs/RELEASE-VALIDATION.md",
+      "bytes": 7575,
+      "sha256": "082f880fd0fa54bc663f4db87cc950268f2da58a78620a08ce186aff471427b0"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/docs/settings-selective-restore.md",
+      "bytes": 4296,
+      "sha256": "b1cbc04d94f464753081536aca274538557566a0e71183ca26c19c831ccdc1ea"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/runtime/atomic-report.js",
+      "bytes": 1523,
+      "sha256": "0a9d56a7ef732eb0e8dc04ac56c3a12395fc711e1a1ba6df44906dde3d08b6c0"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/runtime/mod2/runtime.js",
+      "bytes": 52850,
+      "sha256": "85d5bc40c7cf89fb1263fd4bdf51835429eb776da9b1c3693b266a4408882b22"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/runtime/capability-state.js",
+      "bytes": 8352,
+      "sha256": "0b7eba1a1fca981aada58dcc53899b2586c720b903ac03dbf8aa7584ceb37134"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/evidence/final-release-audit.json",
+      "bytes": 1460,
+      "sha256": "a0a61f47f94f136ac1351bfa37ba2af8216df0a41f0973da54bab16d8e76c802"
+    },
+    {
+      "project_relative_path": "pvzh-launcher/native-r12/evidence/stage-cleanup.json",
+      "bytes": 1245,
+      "sha256": "8db837b73708bdd64c49928105ed0b206fe52d75f3cd919af5d00ef05c1b524c"
+    }
+  ],
+  "device_rc2_on": {
+    "status": "PASS",
+    "checks": 24,
+    "names": [
+      "valid-frozen-snapshot",
+      "enum-guard-installed",
+      "actual-extension-state",
+      "fixture-active",
+      "new-card-900007",
+      "native-localization-900007",
+      "new-unit-allowed-900007",
+      "new-card-900008",
+      "native-localization-900008",
+      "new-unit-allowed-900008",
+      "new-card-900009",
+      "native-localization-900009",
+      "new-unit-allowed-900009",
+      "swap-on-play-current-health",
+      "real-attack-damage-900007",
+      "extension-leaves-board-900007",
+      "bounce-hand-plus-one",
+      "real-attack-damage-900008",
+      "extension-leaves-board-900008",
+      "destroy-does-not-return",
+      "extension-error-count-zero",
+      "two-attacks-completed-without-pending",
+      "process-survived",
+      "no-native-crash"
+    ],
+    "scope": "Real IL2CPP headless fixture; original play and attack effects",
+    "visual_animation_verified": false,
+    "gameplay_touch_input": false,
+    "screenshots_used": false
+  },
+  "device_rc2_off": {
+    "status": "PASS",
+    "checks": 24,
+    "names": [
+      "managed-init-single-attempt",
+      "managed-init-on-unity-main",
+      "published-complete-current-process-report",
+      "valid-frozen-snapshot",
+      "enum-guard-installed",
+      "actual-extension-state",
+      "fixture-active",
+      "new-card-900007",
+      "native-localization-900007",
+      "new-unit-allowed-900007",
+      "new-card-900008",
+      "native-localization-900008",
+      "new-unit-allowed-900008",
+      "new-card-900009",
+      "native-localization-900009",
+      "new-unit-allowed-900009",
+      "swap-disabled-keeps-health",
+      "real-attack-damage-900007",
+      "disabled-card-stays-on-board-900007",
+      "real-attack-damage-900008",
+      "disabled-card-stays-on-board-900008",
+      "extension-error-count-zero",
+      "process-survived",
+      "no-native-crash"
+    ],
+    "scope": "Real IL2CPP headless fixture; original play and attack effects",
+    "visual_animation_verified": false,
+    "gameplay_touch_input": false,
+    "screenshots_used": false
+  },
+  "device_rc2_original": {
+    "status": "PASS",
+    "checks": 13,
+    "names": [
+      "managed-init-single-attempt",
+      "managed-init-on-unity-main",
+      "published-complete-current-process-report",
+      "valid-frozen-snapshot",
+      "enum-guard-installed",
+      "actual-extension-state",
+      "original-bean-stats",
+      "original-650-cards",
+      "original-effective-flags-off",
+      "original-saved-authoring-still-on",
+      "original-alias-adapter-idle",
+      "process-survived",
+      "no-native-crash"
+    ],
+    "scope": "Real IL2CPP headless fixture; original play and attack effects",
+    "visual_animation_verified": false,
+    "gameplay_touch_input": false,
+    "screenshots_used": false
+  },
+  "device_rc2_three_groups_total_checks": 61,
+  "device_rc2_bootstrap": {
+    "status": "PASS",
+    "thread_name": "UnityMain",
+    "managed_init_attempts": 1
+  },
+  "device_rc2_original_harness_first": {
+    "status": "FAIL",
+    "completed_checks_before_error": 6,
+    "error": "Error: Error: No unique live PvE context",
+    "classification": "Test harness omitted live PvE fixture; same process and unchanged APK passed after fixture creation",
+    "is_runtime_boot_failure": false,
+    "source": "pvzh-launcher/native-r12/evidence/game-rc2-original-pre-fixture/result.json"
+  },
+  "device_rc2_report_publication": {
+    "status": "PASS",
+    "samples": 12,
+    "all_complete_json": true,
+    "all_current_process": true,
+    "same_process_report_accepted": true,
+    "stale_same_transaction_old_pid_rejected": true
+  },
+  "original_runtime_mod_authoring": {
+    "status": "PASS",
+    "source": "Saved global permissions while running original mode",
+    "draft_committed": false,
+    "committed_mod_unchanged": true
+  },
+  "final_selective_restore": {
+    "status": "PASS",
+    "scope": "Selective R12 task-start restoration; anonymous counts only",
+    "account_roots_cleared": false,
+    "native_workbench_rolled_back": false,
+    "extra_resource_files_deleted": 0,
+    "manifests_expected_verified": 5,
+    "manifests_extra_files_retained": 0,
+    "resources_expected_verified": 2882,
+    "resources_extra_files_retained": 0,
+    "original_account_files_verified": 66,
+    "original_account_files_restored": 14,
+    "original_account_files_unchanged": 52,
+    "new_account_files_quarantined": 0,
+    "original_checkbox_count": 19,
+    "added_mods_retained_disabled": 1,
+    "guid_registry_modified_by_restore": false,
+    "specified_final_apk_sha256": "6b77dc3478c72e6a3c75223dc7be91db651e145f84b32ef85795532d718232cb",
+    "external_files_selectively_restored": 0,
+    "network_restoration_completed": true,
+    "game_process_finally_stopped": true,
+    "checks": 48,
+    "guid_ledger_byte_identical": true,
+    "final_saved_flags": {
+      "extensions_enabled": true,
+      "ai_extensions_enabled": false,
+      "six_lane_enabled": false,
+      "ai_takeover_enabled": false
+    }
+  },
+  "remaining_boundaries": [
+    {
+      "id": "visual-animation-and-all-rule-combinations",
+      "status": "NOT_EXHAUSTIVELY_VERIFIED"
+    },
+    {
+      "id": "automatic-safe-start-recovery",
+      "status": "NOT_IMPLEMENTED"
+    },
+    {
+      "id": "formal-natural-player-match",
+      "status": "NOT_REPEATED_IN_R12"
+    },
+    {
+      "id": "no-legacy-runtime-marker-device-path",
+      "status": "OFFLINE_COVERED_NOT_DEVICE_TESTED"
+    }
+  ],
+  "final_report_sha256": "082f880fd0fa54bc663f4db87cc950268f2da58a78620a08ce186aff471427b0",
+  "source_archive": {
+    "sha256": "465548861bb656a1234cdb0143716727c97951b0b4acff664adde491d2a2f5b2",
+    "included_in_library": false,
+    "source": "Root final source archive record; full ZIP remains outside Library",
+    "bytes": 1345161
+  },
+  "final_release_audit": {
+    "status": "PASS",
+    "production_inputs_match_apk": true,
+    "credential_stored": false,
+    "guid_ledger_rolled_back": false,
+    "library_git_pushed": false,
+    "source_git_committed": false,
+    "old_failure_evidence_retained": true,
+    "credential_broker_stopped": true,
+    "credential_reverse_port_removed": true
+  },
+  "stage_cleanup": {
+    "status": "PASS",
+    "scope": "Four exact unsigned/aligned R12 stage copies only",
+    "files_removed": 4,
+    "bytes_reclaimed": 3357208226,
+    "delivery_apks_retained": true,
+    "device_backups_retained": true,
+    "source_and_failed_payloads_retained": true
+  }
+}

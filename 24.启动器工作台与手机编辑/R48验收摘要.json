@@ -1,0 +1,148 @@
+{
+  "schema": 1,
+  "compiled_date": "2026-10-29",
+  "status": "FILTERED_DOCUMENTATION_ARCHIVE",
+  "scope": "Documentation and selected existing verification fields only; this archive does not rerun device, model API, or gameplay checks.",
+  "current_candidate": {
+    "revision": "r48-mobile-ui-rc2",
+    "apk_sha256": "9329c94b226895d0262c70b2a0dd91fc89e79b27caa04b19b2846b73182d893e",
+    "base_revision": "r47-wenyan-rc1",
+    "base_sha256": "3be5b4c2c0aac995497a3ace4e977fdf94e8ed09320e736bd4643478c9b00c14",
+    "effective_java_count": 108,
+    "changed_ui_sources": [
+      "NativeUi.java",
+      "NativeEditorUi.java",
+      "NativeManualCardEditorView.java",
+      "NativeManualSkillBoardView.java"
+    ],
+    "inherited_sources_unchanged": 104,
+    "changed_existing_payloads": [
+      "classes9.dex"
+    ],
+    "other_payloads_byte_equal": 4885,
+    "apk_members_same": true,
+    "game_runtime_changed": false,
+    "game_native_binary_changed": false,
+    "ai_modes_changed": false,
+    "campaign_changed": false,
+    "embedded_resources_changed": false
+  },
+  "source_records": [
+    {
+      "version": "r42",
+      "scope": "card_authoring_mode_routing",
+      "source_record": "pvzh-launcher/native-r42/dist/final-candidate.json",
+      "source_record_sha256": "9d5469ff12fb7c04c14fd7f8dff5c67b368a382121607b9479903bcd4a98c2ca",
+      "revision": "r42-modes-rc2",
+      "apk_sha256": "3265c87585215c0f98439f07f0d852971275fa58ceb0c93e823bc6529d9a1887"
+    },
+    {
+      "version": "r44",
+      "scope": "native_subtree_components",
+      "source_record": "pvzh-launcher/native-r44/dist/final-candidate.json",
+      "source_record_sha256": "cf021e1838453be045ebf2b886d2fea9a1b68dbead6a7a1b8234c2ba12b6d9ca",
+      "revision": "r44-components-rc2",
+      "apk_sha256": "ec3f46aa3cc55bdd5ddbbe9b75ab8aaf04a0b08ece0835fd0def9bb94ce4f748"
+    },
+    {
+      "version": "r45",
+      "scope": "simplified_player_editor_and_manual_resource_checks",
+      "source_record": "pvzh-launcher/native-r45/dist/final-candidate.json",
+      "source_record_sha256": "7a3c3dfc9533738f69c2210ba36af9b03e5beaee419760a1e66896e192c73ff4",
+      "revision": "r45-player-editor-rc1",
+      "apk_sha256": "3d08804b95a41903015c3e3226978ba7d2917569a01bb7395621d4c52219a123"
+    },
+    {
+      "version": "r46",
+      "scope": "interactive_mod_media",
+      "source_record": "pvzh-launcher/native-r46/dist/final-candidate.json",
+      "source_record_sha256": "1320fe0786652d96805137787df1a819f83ee8b5302abd0f4f7b42b32d40486f",
+      "revision": "r46-zhaoxiao-media-rc5",
+      "apk_sha256": "b0c42a6291f293ba18b99ece2407337b3e3c5cb2f33491774af1638a7f18cfd0"
+    },
+    {
+      "version": "r47",
+      "scope": "bundled_classical_chinese",
+      "source_record": "pvzh-launcher/native-r47/dist/final-candidate.json",
+      "source_record_sha256": "eda757a9a455abc35bc688e04a5e29d70dd0f5817a87ec3df6bf2d172e209a39",
+      "revision": "r47-wenyan-rc1",
+      "apk_sha256": "3be5b4c2c0aac995497a3ace4e977fdf94e8ed09320e736bd4643478c9b00c14"
+    },
+    {
+      "version": "r48",
+      "scope": "mobile_ui_friendliness",
+      "source_record": "pvzh-launcher/native-r48/dist/final-candidate.json",
+      "source_record_sha256": "398df2793983d97726d4434eed66b1d738d94578ae0039f0fc19e87303222e6a",
+      "revision": "r48-mobile-ui-rc2",
+      "apk_sha256": "9329c94b226895d0262c70b2a0dd91fc89e79b27caa04b19b2846b73182d893e"
+    }
+  ],
+  "r48_local_checks": {
+    "model_save_regression_assertions": 1567,
+    "independent_bundle_reads": 4,
+    "editor_source_compile_review_checks": 59,
+    "board_host_checks": 47,
+    "geometry_host_checks": 20,
+    "artifact_check_groups": 26,
+    "signature_and_16k_alignment": "PASS",
+    "looped_record_checks_are_not_function_test_counts": true
+  },
+  "r48_android_checks": {
+    "device_model": "Pixel6",
+    "normal_display": "PASS",
+    "stress_width_dp": 320,
+    "stress_font_scale": 1.3,
+    "stress_layout": "PASS",
+    "ordinary_input_tab_switch_undo_redo": "PASS",
+    "selected_tabs_libraries_categories": "PASS",
+    "default_interiors_scroll_location": "PASS",
+    "parameter_sections_switch_undo": "PASS",
+    "native_group_drag_undo": "PASS",
+    "normal_save_full_cold_reopen": "PASS",
+    "actual_saved_bundle_independent_readback": "PASS",
+    "actual_original_cards_exact": 650,
+    "actual_original_cn_keys_exact": 10783,
+    "actual_original_cn_records_fields_order_exact": 43131,
+    "all_device_font_ime_combinations_tested": false
+  },
+  "historical_evidence_boundaries": {
+    "r42_mode_host_assertions": 89,
+    "r42_real_model_authoring_requests": 0,
+    "r42_mode_ui_and_cold_persistence": "PASS",
+    "r44_component_families": 14,
+    "r44_component_model_assertions": 22430,
+    "r44_runtime_case": "One controlled original-engine legal play reduced opposing hero health from 50 to 47; not formal full-match coverage.",
+    "r45_manual_resource_check": "Actual official no_change; 2880 reused; 0 downloaded. Normal original-game entry did not repeat full scan.",
+    "r46_media_case": "Legal on-play icon, explicit browser click/return, original negative cases, local silent video visible playback/completion/close checked separately.",
+    "r47_translation": "10783 keys and Bundle checked offline; full-v2 raw bytes preserved; first-import-first default-off builtin.",
+    "r48_real_model_api_calls": 0,
+    "r48_formal_gameplay_tests": 0
+  },
+  "known_limits": [
+    "AI cannot freely compose every manual block or component; expert mode has the same open tool permissions.",
+    "Quick mode actual model cost reduction and arbitrary complex-skill success rate are not established.",
+    "Campaign quick/expert share the existing reviewed workflow; all 59 scenes, complete wins and balance are not comprehensively tested.",
+    "Manual complete official resource verification requires an explicit user action; ordinary startup does not hash every non-core bundle.",
+    "Interactive media authoring is not exposed to AI; arbitrary online videos, audio and remote-game edge cases were not fully tested.",
+    "Full classical-Chinese localization overrides gameplay-Mod custom text as a complete resource; no automatic text merging.",
+    "Temporary tab scroll retention belongs to the current opened card session, not durable cross-process drafts.",
+    "Large-tree display keeps 180-node/depth-10/list-40 budgets and layer focus without truncating saved card content."
+  ],
+  "excluded_data": [
+    "device_serial",
+    "android_uid",
+    "account_data",
+    "user_project_ids_or_names",
+    "conversation_content",
+    "backup_indexes_or_archives",
+    "private_signing_material",
+    "api_credentials",
+    "full_runtime_or_debug_server",
+    "apk_or_game_assets"
+  ],
+  "documentation_archive_operations": {
+    "device_calls": 0,
+    "real_model_api_calls": 0,
+    "product_source_edits": 0
+  }
+}

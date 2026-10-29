@@ -1,0 +1,23 @@
+# Credentials and local development data stay outside repository history.
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+**/private/
+**/device-backups/
+**/__pycache__/
+*.pyc
+
+# Built applications and extracted runtime binaries.
+*.apk
+*.aab
+*.idsig
+*.dex
+*.so
+/build/
+/dist/

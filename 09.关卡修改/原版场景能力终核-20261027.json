@@ -1,0 +1,1516 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "recorded_at": "2026-10-27T05:34:35.170839+00:00",
+  "scope": "Independent read-only final MD/JSON catalog audit, original complete-effect equality and label/count checks. No APK/ADB/API/runtime, no workspace modifications.",
+  "files_sha256": {
+    "09.原版场景能力目录.md": "9a91a96f1bb4bfe2cab9abe19ffd552e2392a1a0fe4d546f58302fc92e29afe5",
+    "原版场景能力目录-20261027.json": "989087387ad96941bb00fd6815f1ea4b1a5818f416939d041d0430d1800a2668",
+    "原版场景能力核对-20261027.json": "87825b95fbdbb26deda06050a56a3fb7b92646e97b8e2da2ca84008d174f90bb"
+  },
+  "assertions": 375,
+  "checks": [
+    {
+      "name": "Final JSON59 original GUIDs exact no duplicate",
+      "pass": true
+    },
+    {
+      "name": "MD table59 IDs exact no duplicate",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 354",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 354",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 354",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 354",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 354",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 354",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 355",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 355",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 355",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 355",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 355",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 355",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 356",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 356",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 356",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 356",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 356",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 356",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 357",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 357",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 357",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 357",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 357",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 357",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 358",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 358",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 358",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 358",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 358",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 358",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 359",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 359",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 359",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 359",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 359",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 359",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 360",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 360",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 360",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 360",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 360",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 360",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 361",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 361",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 361",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 361",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 361",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 361",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 362",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 362",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 362",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 362",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 362",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 362",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 363",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 363",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 363",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 363",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 363",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 363",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 364",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 364",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 364",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 364",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 364",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 364",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 365",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 365",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 365",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 365",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 365",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 365",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 366",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 366",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 366",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 366",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 366",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 366",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 367",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 367",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 367",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 367",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 367",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 367",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 368",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 368",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 368",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 368",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 368",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 368",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 369",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 369",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 369",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 369",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 369",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 369",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 370",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 370",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 370",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 370",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 370",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 370",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 371",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 371",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 371",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 371",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 371",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 371",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 372",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 372",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 372",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 372",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 372",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 372",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 373",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 373",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 373",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 373",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 373",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 373",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 374",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 374",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 374",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 374",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 374",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 374",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 375",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 375",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 375",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 375",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 375",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 375",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 376",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 376",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 376",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 376",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 376",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 376",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 377",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 377",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 377",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 377",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 377",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 377",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 378",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 378",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 378",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 378",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 378",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 378",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 379",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 379",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 379",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 379",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 379",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 379",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 380",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 380",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 380",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 380",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 380",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 380",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 381",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 381",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 381",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 381",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 381",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 381",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 382",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 382",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 382",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 382",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 382",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 382",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 383",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 383",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 383",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 383",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 383",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 383",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 384",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 384",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 384",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 384",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 384",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 384",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 385",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 385",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 385",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 385",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 385",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 385",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 386",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 386",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 386",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 386",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 386",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 386",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 387",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 387",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 387",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 387",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 387",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 387",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 388",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 388",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 388",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 388",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 388",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 388",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 389",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 389",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 389",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 389",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 389",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 389",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 390",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 390",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 390",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 390",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 390",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 390",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 391",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 391",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 391",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 391",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 391",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 391",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 392",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 392",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 392",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 392",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 392",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 392",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 393",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 393",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 393",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 393",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 393",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 393",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 394",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 394",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 394",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 394",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 394",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 394",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 395",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 395",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 395",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 395",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 395",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 395",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 396",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 396",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 396",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 396",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 396",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 396",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 397",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 397",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 397",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 397",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 397",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 397",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 559",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 559",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 559",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 559",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 559",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 559",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 561",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 561",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 561",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 561",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 561",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 561",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 563",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 563",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 563",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 563",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 563",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 563",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 565",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 565",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 565",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 565",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 565",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 565",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 567",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 567",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 567",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 567",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 567",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 567",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 570",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 570",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 570",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 570",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 570",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 570",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 571",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 571",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 571",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 571",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 571",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 571",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 580",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 580",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 580",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 580",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 580",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 580",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 582",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 582",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 582",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 582",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 582",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 582",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 583",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 583",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 583",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 583",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 583",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 583",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 584",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 584",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 584",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 584",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 584",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 584",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 590",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 590",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 590",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 590",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 590",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 590",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 592",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 592",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 592",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 592",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 592",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 592",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 593",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 593",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 593",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 593",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 593",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 593",
+      "pass": true
+    },
+    {
+      "name": "Original complete effect graph 644",
+      "pass": true
+    },
+    {
+      "name": "Original reference list 644",
+      "pass": true
+    },
+    {
+      "name": "Unusable metadata 644",
+      "pass": true
+    },
+    {
+      "name": "Root metadata actual values 644",
+      "pass": true
+    },
+    {
+      "name": "Static runtime state 644",
+      "pass": true
+    },
+    {
+      "name": "Table effect exactly JSON 644",
+      "pass": true
+    },
+    {
+      "name": "45 original referenced14 unused",
+      "pass": true
+    },
+    {
+      "name": "Distinct effect graphs57",
+      "pass": true
+    },
+    {
+      "name": "Duplicates exactly377379+582584",
+      "pass": true
+    },
+    {
+      "name": "Unusable45 usable14 counts",
+      "pass": true
+    },
+    {
+      "name": "No separate BoardAbility CN",
+      "pass": true
+    },
+    {
+      "name": "R34 only14 exact current registered IDs",
+      "pass": true
+    },
+    {
+      "name": "MD all14 R34 labels exact",
+      "pass": true
+    },
+    {
+      "name": "Additional reference591 separately recorded",
+      "pass": true
+    },
+    {
+      "name": "Repeat trigger vs Continuous classification",
+      "pass": true
+    },
+    {
+      "name": "Old confusing group name absent",
+      "pass": true
+    },
+    {
+      "name": "355 avoids same-source lane claim",
+      "pass": true
+    },
+    {
+      "name": "Combat phase end not match end",
+      "pass": true
+    },
+    {
+      "name": "Special-rule numeric distinctions retained",
+      "pass": true
+    },
+    {
+      "name": "Runtime scope explicitly static",
+      "pass": true
+    },
+    {
+      "name": "Receipt bound final document hashes",
+      "pass": true
+    },
+    {
+      "name": "Receipt bound current R34 code hash",
+      "pass": true
+    },
+    {
+      "name": "Independent review embedded final all PASS",
+      "pass": true
+    },
+    {
+      "name": "Document local machine links exist",
+      "pass": true
+    },
+    {
+      "name": "Final three files stable through review",
+      "pass": true
+    }
+  ],
+  "runtime_validation": "NOT_TESTED_THIS_TASK",
+  "recommendations": []
+}

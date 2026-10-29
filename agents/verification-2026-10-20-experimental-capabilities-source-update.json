@@ -1,0 +1,178 @@
+{
+  "schema": 1,
+  "status": "FAIL",
+  "scope": "Documentation-only links, frozen source hashes, selected JSON, credential pattern and whitespace. No new API, ADB, compilation, native execution, animation or external-link verification.",
+  "links": {
+    "markdown_files": 214,
+    "chapters": 24,
+    "missing_chapter_readmes": [],
+    "local_links_checked": 894,
+    "external_links_not_verified": 56,
+    "broken_local_links": [],
+    "result": "PASS"
+  },
+  "source_hashes": [
+    {
+      "source": "pvzh-launcher/native-r12/assets/experiments/capabilities.json",
+      "status": "PASS"
+    },
+    {
+      "source": "pvzh-launcher/native-r12/docs/CONTRACT.md",
+      "status": "PASS"
+    },
+    {
+      "source": "pvzh-launcher/native-r12/docs/settings.md",
+      "status": "PASS"
+    },
+    {
+      "source": "pvzh-launcher/native-r12/docs/settings-validation.md",
+      "status": "PASS"
+    },
+    {
+      "source": "pvzh-launcher/native-r12/docs/runtime-capabilities.md",
+      "status": "PASS"
+    },
+    {
+      "source": "pvzh-launcher/native-r12/docs/runtime-startup-rc2.md",
+      "status": "PASS"
+    },
+    {
+      "source": "pvzh-launcher/native-r12/docs/ai-extensions.md",
+      "status": "PASS"
+    },
+    {
+      "source": "pvzh-launcher/native-r12/tests/check_capability_runtime.js",
+      "status": "PASS"
+    },
+    {
+      "source": "pvzh-launcher/native-r12/tests/check_capability_runtime_bootstrap.js",
+      "status": "PASS"
+    },
+    {
+      "source": "pvzh-launcher/native-r12/evidence/registry-check.json",
+      "status": "PASS"
+    },
+    {
+      "source": "pvzh-launcher/native-r12/evidence/experiments-offline.json",
+      "status": "PASS"
+    },
+    {
+      "source": "pvzh-launcher/native-r12/evidence/experiments-transactions-offline.json",
+      "status": "PASS"
+    },
+    {
+      "source": "pvzh-launcher/native-r12/evidence/extension-compiler-checks.json",
+      "status": "PASS"
+    },
+    {
+      "source": "pvzh-launcher/native-r12/evidence/api-network-first-failure.json",
+      "status": "PASS"
+    },
+    {
+      "source": "pvzh-launcher/native-r12/evidence/api-acceptance-attempts.json",
+      "status": "PASS"
+    },
+    {
+      "source": "pvzh-launcher/native-r12/evidence/api-acceptance-result.json",
+      "status": "PASS"
+    },
+    {
+      "source": "pvzh-launcher/native-r12/evidence/device-first-runtime-status.json",
+      "status": "PASS"
+    },
+    {
+      "source": "pvzh-launcher/native-r12/evidence/device-launch-mod.json",
+      "status": "PASS"
+    },
+    {
+      "source": "pvzh-launcher/native-r12/evidence/device-export.json",
+      "status": "PASS"
+    },
+    {
+      "source": "pvzh-launcher/native-r12/evidence/game-rc1-global-on/result.json",
+      "status": "PASS"
+    },
+    {
+      "source": "pvzh-launcher/native-r12/evidence/game-rc1-global-off/result.json",
+      "status": "PASS"
+    },
+    {
+      "source": "pvzh-launcher/native-r12/evidence/game-rc1-global-off-retry/result.json",
+      "status": "PASS"
+    },
+    {
+      "source": "pvzh-launcher/native-r12/dist/r12-experiments-rc1.json",
+      "status": "PASS"
+    },
+    {
+      "source": "pvzh-launcher/native-r12/dist/r12-experiments-rc2.json",
+      "status": "FAIL"
+    },
+    {
+      "source": "pvzh-launcher/native-r12/evidence/game-rc2-global-on/result.json",
+      "status": "PASS"
+    },
+    {
+      "source": "pvzh-launcher/native-r12/evidence/game-rc2-global-off/result.json",
+      "status": "PASS"
+    },
+    {
+      "source": "pvzh-launcher/native-r12/evidence/game-rc2-original/result.json",
+      "status": "PASS"
+    },
+    {
+      "source": "pvzh-launcher/native-r12/evidence/game-rc2-original-pre-fixture/result.json",
+      "status": "PASS"
+    },
+    {
+      "source": "pvzh-launcher/native-r12/evidence/device-rc2-on-bootstrap.json",
+      "status": "PASS"
+    },
+    {
+      "source": "pvzh-launcher/native-r12/evidence/device-rc2-report-publication.json",
+      "status": "PASS"
+    },
+    {
+      "source": "pvzh-launcher/native-r12/evidence/rc1-off-startup-failure.json",
+      "status": "PASS"
+    },
+    {
+      "source": "pvzh-launcher/native-r12/evidence/device-original-authoring.json",
+      "status": "PASS"
+    },
+    {
+      "source": "pvzh-launcher/native-r12/evidence/final-device-restore.json",
+      "status": "PASS"
+    },
+    {
+      "source": "pvzh-launcher/native-r12/README.md",
+      "status": "PASS"
+    },
+    {
+      "source": "pvzh-launcher/native-r12/docs/DECISIONS.md",
+      "status": "PASS"
+    },
+    {
+      "source": "pvzh-launcher/native-r12/docs/PLAYER-GUIDE.md",
+      "status": "PASS"
+    },
+    {
+      "source": "pvzh-launcher/native-r12/docs/RELEASE-VALIDATION.md",
+      "status": "PASS"
+    },
+    {
+      "source": "pvzh-launcher/native-r12/docs/settings-selective-restore.md",
+      "status": "PASS"
+    }
+  ],
+  "summary_json": "PASS",
+  "key_pattern_findings": [],
+  "git_diff_check": "PASS",
+  "product_scope_status": "Root final RC2 on/off/original/authoring/restore evidence recorded with remaining visual, combination and safe-start boundaries.",
+  "preserved_failures": [
+    "RC1 actual runtime startup abort before managed initialization; no observed native crash",
+    "RC2 original test harness queried card_info before creating fixture; same-process retry passed"
+  ],
+  "final_report_sha256": "082f880fd0fa54bc663f4db87cc950268f2da58a78620a08ce186aff471427b0",
+  "explanation": "Build receipt source changed during final documentation audit; frozen APK/production code and final MD were not modified by this audit."
+}

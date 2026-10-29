@@ -1,0 +1,302 @@
+{
+  "schema": 1,
+  "recorded_on": "2026-10-21",
+  "product": "Android R14 original ECS composition",
+  "status": "TARGETED_VALIDATION_PASS_WITH_REMAINING_COVERAGE",
+  "public_python_v1_changed": false,
+  "library_runtime_or_game_assets_included": false,
+  "current_candidate": {
+    "revision": "r14-compose-rc5",
+    "apk_sha256": "7ede869d8c46ee01e9a2707c30c49ab249693e4f063557bf05d15b6d2271b196",
+    "feedback_mod_zip_sha256": "2830cea56d71f364074207bb99b98167dd45d6408ca72e7f8e8c724f6f4d41f3",
+    "engine_baseline_revision": "r14-compose-rc4",
+    "engine_baseline_apk_sha256": "ad86db85fb4c257443a7aafb52dd3996c420e0a33a6a2eee0972f403603d03c1",
+    "independent_feedback_mod_zip_sha256": "6776efa9edb3f10930143ece7518b440418ff647d6bcd2ce073f609fdc311d3d",
+    "independent_mod_contains_qa_levels": false
+  },
+  "offline": {
+    "graph_compiler": {
+      "status": "PASS",
+      "cases": 47,
+      "report_sha256": "94315c0c82742b51f7a8b5caa3e7956eb50dd5b5eaf69e2728fb095fe0af734d"
+    },
+    "source_entity_roundtrip": {
+      "status": "PASS",
+      "definitions": 588,
+      "first_partial_passed": 580,
+      "first_partial_uncovered": 8,
+      "historical_partial_preserved": true,
+      "scope": "Exact original ability-entity roundtrip; not transplantation or gameplay",
+      "report_sha256": "0860c5359dd4ccec73d8fe000edfca11ad47ec97f1bef4704dfa256728a8bfca"
+    },
+    "semantic_retrieval": {
+      "status": "PASS",
+      "cases": 6,
+      "feedback_context_chars": 42535,
+      "feedback_reference_guids": [
+        449,
+        542,
+        180,
+        501
+      ],
+      "report_sha256": "a332887e24c0bb0be5645864a2b8e7b73db05ed49a44b39723ddbbc59bc3bd24",
+      "reference_revision": "r14-native-reference-2",
+      "previous_reference_context_chars": 41548
+    },
+    "lab_substitutes": {
+      "status": "PASS",
+      "original_tests": 18,
+      "readiness_retry_tests": 23,
+      "scope": "Transport/state/assertion substitutes; not engine execution",
+      "report_sha256": "79c412e6f00faf662512199caeeffc260185a0aade3b1e69159b9f812cd3dc10",
+      "boot_phase_tests": 27,
+      "boot_phase_report_sha256": "035468ddb8a7eea4465f3c30b3fd973e99f88f7d3f4b3c059c68983c796428de"
+    },
+    "chat_service": {
+      "desktop_json_cases": 38,
+      "android_json_cases": 38,
+      "same_functional_suite": true,
+      "status": "PASS",
+      "scope": "Local service/compiler/HTTP with narrow fixtures; not external provider API"
+    },
+    "guid_allocation": {
+      "status": "PASS",
+      "checks": 34,
+      "report_sha256": "69876d8622bdcc44d45746f7471a42124514d2d38a85419415650f6d7395d0b0"
+    },
+    "guid_stream_scanner": {
+      "status": "PASS",
+      "cases": 36,
+      "synthetic_json_bytes": 91840001,
+      "heap_limit_bytes": 67108864,
+      "scanned_guids": 10000,
+      "scope": "Large JSON scanning only; not that large UnityFS bundle decompression",
+      "report_sha256": "9bc9d4bae5276df1d631db3aa5fdf732406cab865bccdf30d404b1be3b865c53"
+    },
+    "composition_project_flow": {
+      "status": "PASS",
+      "checks": 20,
+      "report_sha256": "eb35b048e36602a89c2c73a64becce2c0ea84acd63f9b983ebf504c4b582caf7"
+    }
+  },
+  "external_api": {
+    "status": "TARGETED_MULTI_TURN_FLOW_COMPLETED",
+    "production_android_client_used": true,
+    "original_model_output_not_replaced_with_handwritten_plan": true,
+    "first_proposal_approximation_preserved": true,
+    "later_set_cost_zero_and_source_filter_returned": true,
+    "duplicate_new_card_and_heap_failure_preserved": true,
+    "final_current_guid_revision_compiled_with_one_repair": true,
+    "accepted_only_in_isolated_qa_project": true,
+    "actual_24_case_benchmark": {
+      "status": "COMPLETED_WITH_INDEPENDENT_REVIEW",
+      "baseline": "RC4 reference-1 context",
+      "model": "deepseek-flash",
+      "requests": 24,
+      "automatic_retries": 0,
+      "model_proposals": 17,
+      "phone_compiled_proposals": 16,
+      "proposals_committed": 0,
+      "strict_chat_envelopes": 23,
+      "manual_reply_intent_matches_with_valid_envelope": 22,
+      "heuristic_response_class_matches": 19,
+      "semantic_success_rate_established": false,
+      "semantic_success_rate_note": "NOT_ESTABLISHED: compiled graphs and partial static matches are not runtime proof",
+      "review_verdict_counts": {
+        "STATIC_MATCH": 6,
+        "RUNTIME_SEMANTIC_FAIL": 1,
+        "RUNTIME_SCENE_PASS": 1,
+        "REVIEW_REQUIRED": 7,
+        "UNNECESSARY_CLARIFICATION": 1,
+        "STATIC_SCOPE_RISK": 1,
+        "COMPILER_REJECTED": 1,
+        "CORRECT_REJECTION": 3,
+        "FORMAT_ERROR_WITH_CORRECT_CLARIFICATION_INTENT": 1,
+        "CORRECT_CLARIFICATION": 2
+      },
+      "compiler_rejections": 1,
+      "unnecessary_clarifications": 1,
+      "format_failures": 1,
+      "original_report_sha256": "92cbb0c5881d194e84237de79f6cb3444fc399f996da0b93b1453b1dc9cf9f8d",
+      "independent_review_report_sha256": "b4225ff3a05bb2d8a589faa53b50e3b678e8afc250caa7d96e406afd36a41530",
+      "original_benchmark_cases_engine_tested": 2,
+      "original_benchmark_cases_engine_pass": 1,
+      "original_benchmark_cases_semantic_fail": 1,
+      "original_benchmark_cases_unexecuted": 22
+    }
+  },
+  "original_engine": {
+    "status": "TARGETED_PRIMARY_SCENE_PASS",
+    "checks": 21,
+    "transport_kind": "original_engine",
+    "cold_process": true,
+    "legal_play_used": true,
+    "feedback_card_guid": 900011,
+    "stats": {
+      "cost": 10,
+      "attack": 7,
+      "health": 5
+    },
+    "pre_generation_old_hand": 4,
+    "generated_cards_received": 6,
+    "final_hand": 10,
+    "observed_hand_limit": 10,
+    "verified_candidate_pool_size": 34,
+    "all_received_cards_match_pool": true,
+    "received_cards_cost": 0,
+    "old_hand_identity_and_cost_preserved": true,
+    "later_independent_generation": {
+      "source_guid": 141,
+      "created_guid": 326,
+      "created_cost": 1
+    },
+    "other_unit_play_did_not_refill": true,
+    "same_process_survived": true,
+    "current_process_crash_recorded": false,
+    "touch_input_used": false,
+    "screenshots_used": false,
+    "visual_animation_verified": false,
+    "full_match_verified": false,
+    "all_random_seeds_verified": false,
+    "report_reference": "native-r14/evidence/game-feedback-rc4-readiness-retry/result.json",
+    "report_sha256": "870c9cacbed8aa1dd0dc4ed0139c704051fa2aacf50e76e4ad9259e60c4ea279",
+    "scene_parameters": {
+      "source_level": "001",
+      "hand_limit": 10,
+      "initial_resources": 50,
+      "hero_health_each": 100,
+      "natural_draw": 0,
+      "default_debug_hand_limit_not_used": 30
+    }
+  },
+  "additional_engine_scenes": {
+    "empty_hand": {
+      "status": "PASS",
+      "checks": 17,
+      "pre_generation_old_hand": 0,
+      "generated_cards_received": 10,
+      "final_hand": 10,
+      "received_cards_cost": 0,
+      "same_card_table_sha256_as_primary": "b02b9480a9bf199aa4fd32a757a6ca71ac7f700e74c33cba10f4b3bf227056c4",
+      "scene_candidate_zip_sha256": "7b044c488939fe56e9367d6d5a18fb29062dde7ee6031a63710ab699a218f5ac",
+      "report_reference": "native-r14/evidence/game-feedback-rc4-empty-ready/result.json",
+      "report_sha256": "6bdbf372195694c9b6b2d0584c45b3d7b43d703c3021ba07c0c9096b92c5989c"
+    },
+    "near_full_hand": {
+      "status": "PASS",
+      "checks": 21,
+      "seed": 1339,
+      "pre_generation_old_hand": 9,
+      "generated_cards_received": 1,
+      "final_hand": 10,
+      "received_cards_cost": 0,
+      "same_card_table_sha256_as_primary": "b02b9480a9bf199aa4fd32a757a6ca71ac7f700e74c33cba10f4b3bf227056c4",
+      "scene_candidate_zip_sha256": "d39901f540ace701dc6b4b1503e53ca87eb45fb6c3aca8f8788e057eeb32539e",
+      "readiness_helper_misclassified_normal_player_cards_loading": true,
+      "original_readiness_failure_preserved": true,
+      "resumed_same_cold_start_before_fixture_creation": true,
+      "skill_result_observed": true,
+      "report_reference": "native-r14/evidence/game-feedback-rc4-near-full-ready/result.json",
+      "report_sha256": "d5dd573a11ac09181a128993b90eb6f1f58f652bc50f83af478320217b898d80"
+    }
+  },
+  "pending": [
+    "Continuous warm-restart cleanup and broader lifecycle coverage",
+    "Full 24-candidate runtime validation"
+  ],
+  "preservation": {
+    "earlier_failures_preserved": true,
+    "stored_mod2_resources_changed": false,
+    "test_card_merged_into_zhaoxiao": false,
+    "final_device_restore_status": "PASS",
+    "git_commit_or_push_performed_by_this_documentation_task": false
+  },
+  "common_card_runtime": {
+    "s02_original": {
+      "status": "SEMANTIC_FAIL",
+      "checks": 9,
+      "failed_check": "other-card-does-not-deal-again",
+      "unrelated_card_guid": 347,
+      "unexpected_repeated_damage": 3,
+      "scope": "Original API proposal, no substituted plan",
+      "report_reference": "native-r14/evidence/game-common-s02/result.json",
+      "report_sha256": "5c0115083be21ecf12d2b30a189a4c4a794e0855cf62e76f9b402f53af122b02"
+    },
+    "s03_original": {
+      "status": "PASS",
+      "checks": 10,
+      "draw_amount": 2,
+      "later_unrelated_347_did_not_draw_again": true,
+      "report_reference": "native-r14/evidence/game-common-s03/result.json",
+      "report_sha256": "4f151b40a53edf1a638b0aeba5a11035670cbc769dca585690e7623aa605a4e7"
+    },
+    "s02_reference2_repair": {
+      "status": "PASS",
+      "checks": 11,
+      "api_requests": 1,
+      "automatic_retries": 0,
+      "context_reference_revision": "r14-native-reference-2",
+      "unconfirmed_prior_reference1_attempt_excluded_from_rc5_acceptance": true,
+      "legal_self_play_dealt_three": true,
+      "own_hero_unchanged": true,
+      "later_unrelated_347_did_not_damage_again": true,
+      "plan_manually_substituted": false,
+      "committed_to_user_mod": false,
+      "api_report_reference": "native-r14/evidence/repair-s02-rc5.json",
+      "api_report_sha256": "da5099800e91891ac3e435fd76d5155bba76ec6534b839a577ac2805214d63e0",
+      "report_reference": "native-r14/evidence/game-common-s02-rc5-repair/result.json",
+      "report_sha256": "747b0c409113b22afce139ee7436b3c592d9bfb8379ec4f731bf7d0a5824dd73",
+      "scene_candidate_zip_sha256": "70269528215da306f0bd701227c03f1eca52c1c9b2d487e5e0a4bb4444c84729",
+      "model_plan_sha256": "b454fb20c8f76f1b4e202c7534cf04eb19f2fb1ca63f8770617f6eeaa292f300"
+    }
+  },
+  "reference_asset_update": {
+    "revision": "r14-native-reference-2",
+    "sha256": "2128678b6445c51d36262c277745f99034fefbf1e58c8bc90b5ee8f3efdd52ba",
+    "topics_added": [
+      "event_scope"
+    ],
+    "uses_actual_s02_failure_as_reference": true,
+    "hard_requirement_for_one_guard_component_added": false,
+    "java_dex_changed_from_rc4": false,
+    "original_24_case_baseline_preserved": true
+  },
+  "verified_engine_checks_summary": {
+    "feedback_card_three_scenes": 59,
+    "s03_draw": 10,
+    "s02_rc5_repair": 11,
+    "total_cross_scene_checks": 80,
+    "distinct_skill_count": false,
+    "original_s02_failure_preserved": true
+  },
+  "final_device_restore": {
+    "status": "PASS",
+    "checks": 23,
+    "apk_sha256": "7ede869d8c46ee01e9a2707c30c49ab249693e4f063557bf05d15b6d2271b196",
+    "original_mod_count": 3,
+    "original_mod_order_and_checkboxes_restored": true,
+    "original_loaded_mod2_restored": true,
+    "original_resource_files_verified": 2882,
+    "original_manifest_files_verified": 5,
+    "extra_resource_overwrites_after_formal_apply": 0,
+    "extra_manifest_overwrites_after_formal_apply": 0,
+    "original_account_files_bytes_and_attributes_verified": 65,
+    "changed_account_files_restored": 14,
+    "new_account_files_quarantined": 0,
+    "account_roots_cleared": false,
+    "old_workbench_files_checked": 163,
+    "old_drafts_and_conversations_unchanged": true,
+    "workbench_rolled_back": false,
+    "new_guid_reservations_retained": 3,
+    "qa_mods_removed_from_list": 1,
+    "qa_archives_and_history_preserved": true,
+    "preexisting_api_profiles_preserved": true,
+    "only_owned_session_profile_removed": true,
+    "network_restored": true,
+    "game_finally_stopped": true,
+    "owned_adb_mappings_removed": true,
+    "test_broker_exited": true,
+    "report_reference": "native-r14/evidence/final-device-restore.json",
+    "report_sha256": "7f813c74471edaa299d3158d78f67fd5999a048ee0d37da708088dc33e971b45"
+  }
+}

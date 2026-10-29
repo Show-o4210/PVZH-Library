@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "revision": "Android R16 RC2",
+  "date": "2026-10-22",
+  "scope": "same corrected corpus / different reading workflows; public Python v1 unchanged",
+  "apk_sha256": "aee4eb0b0ba832499cfb7c3d72554f88356a7b8e7787348773915e49fb8890ce",
+  "corpus_sha256": "8c373859872edd074d4e05ad15d8375782f691d08daf948877e5e868d2cc1e9b",
+  "semantic_chunks": 23,
+  "navigation_chars": 6874,
+  "primary_tasks": 16,
+  "independent_assertions": 74,
+  "static_intent_or_boundary_matches": {
+    "tools": 6,
+    "fixed": 2,
+    "per_mode_total": 8,
+    "not_game_success_rate": true
+  },
+  "accounting": {
+    "fixed": {
+      "tasks": 8,
+      "requests": 11,
+      "prompt_tokens": 194911,
+      "completion_tokens": 8497,
+      "elapsed_host_ms": 92507,
+      "tool_calls": 0,
+      "read_chars": 0,
+      "repair_tasks": 3,
+      "failed_tasks": 2,
+      "usage_incomplete_tasks": 0
+    },
+    "tools": {
+      "tasks": 8,
+      "requests": 37,
+      "prompt_tokens": 572087,
+      "completion_tokens": 13873,
+      "elapsed_host_ms": 148789,
+      "tool_calls": 48,
+      "read_chars": 513883,
+      "repair_tasks": 2,
+      "failed_tasks": 0,
+      "usage_incomplete_tasks": 0
+    }
+  },
+  "runtime": [
+    {
+      "case": "k01-pool-zero-tools",
+      "status": "PASS",
+      "checks": 18
+    },
+    {
+      "case": "k02-once-target-tools-land",
+      "status": "PASS",
+      "checks": 17
+    },
+    {
+      "case": "k03-death-draw-tools",
+      "status": "SEMANTIC_FAIL",
+      "checks": 9
+    }
+  ],
+  "runtime_notes": "Unedited AI skill; k03 other death draws2 and self death draws0, retained SEMANTIC_FAIL. k02 early host abort before start_test excluded. No screenshot/touch in game scenes; visuals not verified.",
+  "offline_checks": {
+    "knowledge": 29,
+    "settings": 35,
+    "tool_loop_desktop": 55,
+    "tool_loop_android_json": 55,
+    "chat_desktop": 50,
+    "chat_android_json": 50,
+    "registry_flow": 17,
+    "registry_pending": 18,
+    "composition_flow": 20
+  },
+  "android_ui": {
+    "status": "PASS",
+    "checks": 8
+  },
+  "legacy_anchors": {
+    "k01": "one-attempt compiled proposal; semantic/runtime unverified",
+    "k04": "two attempts failed envelope; not in primary totals"
+  },
+  "restore": {
+    "status": "PASS",
+    "original_mod_count": 4,
+    "original_resource_files_verified": 2882,
+    "original_manifest_files_verified": 5,
+    "original_account_files_verified": 65,
+    "qa_mods_removed_from_list": 26,
+    "new_guid_reservations_retained": 7,
+    "account_roots_cleared": false,
+    "workbench_rolled_back": false
+  },
+  "known_failures": [
+    "self death vs other death misread",
+    "token boundary not implemented despite prose",
+    "incorrect faction template in fixed proposal",
+    "compose auto CN incomplete",
+    "higher tools token/time cost"
+  ],
+  "source_workspace": "pvzh-launcher/native-r16; local evidence and APK are not Library repository dependencies",
+  "git_commit_or_push_performed": false
+}
