@@ -1,0 +1,503 @@
+{
+  "schema": 1,
+  "title": "启动器故障证据精简摘要",
+  "date": "2026-10-30",
+  "current_product_window": {
+    "public_version": "v1",
+    "internal_revision": "R51",
+    "retained_recent_revisions": "R42–R51",
+    "apk_sha256": "562f3792a28c75d685518ac1b6edcf1977f61e3e6792cc6b347dc8bdd01ccfc6",
+    "release_json_sha256": "00dbb405fcaa9f7bddd2cc07680be9d02501e18d3c3adca54ef6d5b348e70bd9"
+  },
+  "purpose": "保存无法进游戏、崩溃、卡死及明确报错的必要原因、处置和证据边界；不是旧全量日志备份，也不是新的设备操作合同。",
+  "retirement_policy": {
+    "user_decision": "旧155 APK精确恢复档与16底包一并退役，仅保留故障经验；仍先文档，不在本次执行删除。",
+    "dependency_rule": "退役前单独抽离R42–R51／v1仍需依赖；历史恢复组不要求永久保留。",
+    "historical_review_limits": "S01为用户最新决定之前的保留建议，只用于定位来源，不继承其中旧保留结论。"
+  },
+  "this_documentation_pass": {
+    "device_operations": 0,
+    "network_requests": 0,
+    "model_calls": 0,
+    "builds": 0,
+    "deletions": 0,
+    "git_mutations": 0,
+    "new_android_ui_tests": 0,
+    "new_engine_tests": 0,
+    "verification": "只读核对来源文字与小文件SHA，静态检查新MD链接／案例对应和JSON结构；既有测试不冒充本次重测。"
+  },
+  "source_fingerprint_note": "内容SHA仅识别本次实际读取的文档版本，不对全部正文或未来存续背书。库外旧来源只记录逻辑名称和指纹，必要结论已内嵌；不依赖外部绝对路径链接。",
+  "sources": [
+    {
+      "id": "S01",
+      "label": "旧工作区内容审阅，2026-10-30",
+      "content_sha256": "00a85416b84842d68a240bc2ab41e5b44c1e036287f0004e5ed1c189e7db6d50",
+      "bytes": 22739,
+      "origin_role": "历史产品／验收原稿；摘要自含必要结论，不以原目录永久存在为前提"
+    },
+    {
+      "id": "S02",
+      "label": "Library20：资源版本关系与热更新排查",
+      "content_sha256": "e765acf2bbc29cc8bcca49a39b4b3bba1a81468eed24e0e80d927e789beabfc3",
+      "bytes": 7960,
+      "library_path": "20.工程体验跃迁-资源门卫与教程跳过/07.资源版本关系与热更新排查.md"
+    },
+    {
+      "id": "S03",
+      "label": "Library20：官方资源自动同步与原版快照，历史R32策略",
+      "content_sha256": "08ffffd6dcca153b5ccb2c1d3024ec8c7e524e8ca9ab560930c4da0c41f9b215",
+      "bytes": 13810,
+      "library_path": "20.工程体验跃迁-资源门卫与教程跳过/08.官方资源自动同步与原版快照.md"
+    },
+    {
+      "id": "S04",
+      "label": "Library24：现行手动资源检查边界",
+      "content_sha256": "cc9a8566db35eb9d120d75adea9d2f3228cc17c5abbd91300f3a9c1ef665c691",
+      "bytes": 3745,
+      "library_path": "24.启动器工作台与手机编辑/03.资源检查与媒体文字包.md"
+    },
+    {
+      "id": "S05",
+      "label": "R45发布验收，RC1",
+      "content_sha256": "bfd79e7476ed168cd3121ef2ac8c6e53f5e17c2845f2f35362157ad8a5499b4a",
+      "bytes": 7455,
+      "origin_role": "历史产品／验收原稿；摘要自含必要结论，不以原目录永久存在为前提"
+    },
+    {
+      "id": "S06",
+      "label": "R46发布验收，RC5及保留失败",
+      "content_sha256": "7600b9eac9da7392e3ab398f20ccd335b99e9a9a39ce77ea7ee3b06fd57bf067",
+      "bytes": 9334,
+      "origin_role": "历史产品／验收原稿；摘要自含必要结论，不以原目录永久存在为前提"
+    },
+    {
+      "id": "S07",
+      "label": "R35发布验收，RC6及保留失败",
+      "content_sha256": "b361cbe623ea81100e4defb3d39201a02bdd7d7cb97cc33ddc8a29eb556fd5e1",
+      "bytes": 8065,
+      "origin_role": "历史产品／验收原稿；摘要自含必要结论，不以原目录永久存在为前提"
+    },
+    {
+      "id": "S08",
+      "label": "启动器正式v1／R51发布验收",
+      "content_sha256": "c0bb919e7ef55693b6e98e5f873085afcda21c22bdb8fa4162288351622be5ed",
+      "bytes": 5688,
+      "origin_role": "历史产品／验收原稿；摘要自含必要结论，不以原目录永久存在为前提"
+    },
+    {
+      "id": "S09",
+      "label": "启动器正式v1客户端发行身份合同",
+      "content_sha256": "0c75c6fc4f16e1d4bc2935759dfc7319a28a224e0d05928693f107a5383c65d9",
+      "bytes": 4245,
+      "origin_role": "历史产品／验收原稿；摘要自含必要结论，不以原目录永久存在为前提"
+    },
+    {
+      "id": "S10",
+      "label": "Library21：R12冷启动许可与初始化验证",
+      "content_sha256": "67e5e55f23d3568dd5086a9693771364ee7f35aacd389707bfa8743683a184e6",
+      "bytes": 8198,
+      "library_path": "21.语义调试与技能扩展实战/08.实验能力登记与冷启动许可/verification.md"
+    },
+    {
+      "id": "S11",
+      "label": "原生基础B1至B4历史失败与隔离",
+      "content_sha256": "8939756e83e1f6b7a6fd2781209f24d76f9ba1ec142aaf253297d5876a9d3c8f",
+      "bytes": 5751,
+      "origin_role": "历史产品／验收原稿；摘要自含必要结论，不以原目录永久存在为前提"
+    },
+    {
+      "id": "S12",
+      "label": "Library21：IL2CPP引用字段ABI",
+      "content_sha256": "bba5bc197d88b4d36834889ce73816a12d3e77f82ab80696d206bee19b6a7606",
+      "bytes": 9205,
+      "library_path": "21.语义调试与技能扩展实战/03.托管内存与效果所有权/il2cpp-reference-field-abi.md"
+    },
+    {
+      "id": "S13",
+      "label": "Library18：Android输入框滚动条崩溃",
+      "content_sha256": "f999f82f0e90a617a031ebb757b95399258179228d482d227638c2310a138505",
+      "bytes": 7568,
+      "library_path": "18.现代原生浮窗UI混合开发/03.Android高版本输入框滚动条空指针避坑.md"
+    },
+    {
+      "id": "S14",
+      "label": "Library21：Mod内能力与启动健康恢复",
+      "content_sha256": "10c5e809016026a18d586352e2cd9a95be8028b831254cf4a026a8aa2b48a05a",
+      "bytes": 11258,
+      "library_path": "21.语义调试与技能扩展实战/11.Mod内能力与启动健康恢复/README.md"
+    },
+    {
+      "id": "S15",
+      "label": "R29发布验收，RC4及BAL失败",
+      "content_sha256": "8fda5858f5f0bcb630b428147efebc934cd1b0a37c97cc1893b446af1ac70b53",
+      "bytes": 3861,
+      "origin_role": "历史产品／验收原稿；摘要自含必要结论，不以原目录永久存在为前提"
+    },
+    {
+      "id": "S16",
+      "label": "Library23：合法资源名被误拒与自动获取前置失败",
+      "content_sha256": "69f9efbf849ca5bfd1a4f643c5b069b3b87954aa96e6279f2b942e2f05915e9a",
+      "bytes": 10837,
+      "library_path": "23.卡牌身份与资源映射/07.原版资源名校验与自动获取启动故障.md"
+    },
+    {
+      "id": "S17",
+      "label": "Library21：音乐共享生命周期与恢复确认",
+      "content_sha256": "f46085294784667317b67800f2c42b5e550bf0ec19e4cdf1f8b2b103f88ba15b",
+      "bytes": 9254,
+      "library_path": "21.语义调试与技能扩展实战/09.本地背景音乐与共享生命周期/README.md"
+    },
+    {
+      "id": "S18",
+      "label": "R40服务商工具协议兼容记录",
+      "content_sha256": "81c619885dba20a12e93265f03652e90355b7baa99e1b6615d2f4e3f8cf8ae52",
+      "bytes": 3006,
+      "origin_role": "历史产品／验收原稿；摘要自含必要结论，不以原目录永久存在为前提"
+    },
+    {
+      "id": "S19",
+      "label": "R40发布验收，RC7及真实接口失败",
+      "content_sha256": "183115b18fd7d0bb72bea92fb75facefb5ac4766cfb687a072828da8aab0c69f",
+      "bytes": 20279,
+      "origin_role": "历史产品／验收原稿；摘要自含必要结论，不以原目录永久存在为前提"
+    },
+    {
+      "id": "S20",
+      "label": "R23发布验收，RC4及审查OOM",
+      "content_sha256": "f993b3afd4c5eb9ebdfe9f7d405e2089731e8ea2301ff440c0e370258107f0e7",
+      "bytes": 4653,
+      "origin_role": "历史产品／验收原稿；摘要自含必要结论，不以原目录永久存在为前提"
+    },
+    {
+      "id": "S21",
+      "label": "Library22：批量属性与分类型审查",
+      "content_sha256": "7885e2546266c04415227b7a0eb273f965028db864458123bea300a434871eac",
+      "bytes": 16281,
+      "library_path": "22.自然语言原版制卡/10.批量属性与分类型审查.md"
+    },
+    {
+      "id": "S22",
+      "label": "DeckShare历史：2026-09-24奖励HeroId定点修复",
+      "content_sha256": "6aae980766439e628654df22c686bf4367dc9d9fd166a1b06afce88e63e8ca51",
+      "bytes": 6856,
+      "origin_role": "历史产品／验收原稿；摘要自含必要结论，不以原目录永久存在为前提"
+    },
+    {
+      "id": "S23",
+      "label": "R48发布验收，RC2输入与窄屏回归",
+      "content_sha256": "69d11c9b4fff2c8d6f02a1b200c8167d1acad5fe1854758921ee81ab17f19293",
+      "bytes": 7787,
+      "origin_role": "历史产品／验收原稿；摘要自含必要结论，不以原目录永久存在为前提"
+    }
+  ],
+  "cases": [
+    {
+      "id": "F01",
+      "title": "资源清单路径与精确目标错误",
+      "cause_status": "已证实的历史路径错误；未来版本兼容未知",
+      "preserved_facts": [
+        "旧cn_8／data_assets_29不能替代11064活动loc/cn_9／data_assets_36。APK1.67.8／code294、AssetVersion1.67.13、Manifest11064、ABG11057和Bundle Version分别解释。",
+        "同族不同Version不是相同目标；活动Mod与原版SHA不同不直接等于损坏。官方清单的Size／Version与本机内容指纹职责不同。"
+      ],
+      "current_remedy": "以实际AssetPathsManifest定位精确族、版本、大小与依赖；当前采用手动官方检查／修复，保持原版快照与活动Mod分离。",
+      "existing_validation": "旧R31／R32有精确补缺和主界面验证；R45有手动检查no_change、2880复用、0下载及普通原版入口验证。",
+      "limits": [
+        "普通启动只核对固定7元数据／3核心目标与成功记录，非核心包不全扫。",
+        "旧R32自动默认开启不是当前策略。",
+        "未知未来APK／SO／结构仍需新验证。"
+      ],
+      "source_ids": [
+        "S02",
+        "S03",
+        "S04",
+        "S05"
+      ]
+    },
+    {
+      "id": "F02",
+      "title": "版本指针换行造成准备记录误拒",
+      "cause_status": "已证实",
+      "preserved_facts": [
+        "R46 RC4原游戏冷启把manifest_version的11064加换行形式写成无换行形式，旧精确字节比较误判身份变化，阻断发生在Unity释放前。",
+        "RC5只对有效正整数版本指针做语义等价及旧schema1兼容，其余六元数据精确SHA、核心与事务守卫保持。"
+      ],
+      "current_remedy": "解析并规范化版本指针；不放宽其他内容校验。",
+      "existing_validation": "RC4 FAIL保留；RC5实际冷启复用与生产记录回归通过。",
+      "limits": [
+        "不把任意JSON／数字或资源内容按近似值视为相同。"
+      ],
+      "source_ids": [
+        "S06"
+      ]
+    },
+    {
+      "id": "F03",
+      "title": "私有Deck资源缺全局查找映射",
+      "cause_status": "已证实；旧假说已纠正",
+      "preserved_facts": [
+        "R35 RC4候选Bundle与container回读正确，但正式关卡开局失败。",
+        "后续原生服务路径核对确认外层AssetPathsManifest没有新DataAssets/Decks映射；相同私有ID改为已有Deck_Citron_R3能开局，推翻只认账户ID的解释。"
+      ],
+      "current_remedy": "Bundle对象、container及全局路径一起登记；在同一部署事务派生活动JSON／bin，切回原版撤销，不写账户牌组。",
+      "existing_validation": "R35 RC6正式固定玩家40张开局及目标牌组回读通过。",
+      "limits": [
+        "此方案只证明已实现的私有Deck，不能代表任意新美术／Prefab资源注册。",
+        "旧客户端只接收data_assets仍可能缺少外层映射。"
+      ],
+      "source_ids": [
+        "S07"
+      ],
+      "historical_apk_sha256": "d80ce4778f3783b5298008440bf02798179949562138c05f7edfcdeb2ea2ed8e"
+    },
+    {
+      "id": "F04",
+      "title": "签名、损包、ABI和16KiB对齐",
+      "cause_status": "预防门禁；不声称每种均是已发生事故",
+      "preserved_facts": [
+        "构建成功不等于APK签名、ZIP／Bundle完整性、DEX类集合及原生加载合同通过。",
+        "正式v1保留Android包com.ea.gp.pvzheroes／1.67.8／294，展示发行身份v1／R51／100001另行生成。"
+      ],
+      "current_remedy": "核对实际APK SHA、ZIP／CRC、9 DEX无冲突、同证书v2、native16KiB、资源独立解析；ABI／签名不匹配时停止接入。",
+      "existing_validation": "正式v1实际APK审计通过上述签名、DEX、载荷和对齐检查。",
+      "limits": [
+        "产物审计不能代替新设备加载／Android UI。",
+        "旧RVA、字段布局和调用约定仅适用已绑定的原包／SO／架构。"
+      ],
+      "source_ids": [
+        "S08",
+        "S09"
+      ]
+    },
+    {
+      "id": "F05",
+      "title": "managed初始化时序与JNI异常",
+      "cause_status": "初始化改动已记录；全部abort／JNI唯一根因未证",
+      "preserved_facts": [
+        "R12旧方案在Gum线程固定等1500ms再managed初始化，存在进程存活但waiting-native及abort报告；后改为首次UnityMain单次初始化。",
+        "B2强行Dispatch主页曾发生ART JNI返回异常；B3保留原控制流后仍有JNI失败，不能把全部原因归为教程跳过。"
+      ],
+      "current_remedy": "原生bridge就绪后在Unity线程按一次状态机初始化，保留原入口与首个错误，不重复安装整套Hook。",
+      "existing_validation": "R12 RC2有分组设备初始化／原版隔离证据；B4暂停Java桥／UI后的专用接口冷启结果只限定当时方案。",
+      "limits": [
+        "B4不构成当前必须关闭UI的规则。",
+        "新增桥或Hook仍需当前版本冷启测试，重试PASS不撤销首次FAIL。"
+      ],
+      "source_ids": [
+        "S10",
+        "S11"
+      ]
+    },
+    {
+      "id": "F06",
+      "title": "只读语义接口前提未满足",
+      "cause_status": "已证实若干前提错误；不混作native crash",
+      "preserved_facts": [
+        "No unique live PvE context可来自尚未建立唯一模型；Unity暂停／资源busy也会使查询等待或被拒。",
+        "R45有busy期间testAction被守卫跳过及等待超时；FRAMEWORK_ERROR／托管异常和进程死亡不是同一证据层。"
+      ],
+      "current_remedy": "先核对app_ready、线程、模型代次与查询登记前提；暂停或busy保留拒绝，不发修改命令掩盖读取失败。",
+      "existing_validation": "历史补齐fixture后同进程查询通过；不替代真正AV／tombstone定位。",
+      "limits": [
+        "脚本名read_only不是零写入保证，临时observer／Hook须按实际影响识别。"
+      ],
+      "source_ids": [
+        "S05",
+        "S10",
+        "S11"
+      ]
+    },
+    {
+      "id": "F07",
+      "title": "托管引用字段写入ABI错误",
+      "cause_status": "匹配1.67.8 ARM64机器码已证实",
+      "preserved_facts": [
+        "旧pointer分支把包含对象指针的临时缓冲区地址当成托管对象写入引用字段；有写屏障也不能纠正错误参数层级。",
+        "空GroupId触发Int32.Parse是独立内容错误，不能与引用地址错误混为同因。"
+      ],
+      "current_remedy": "引用传真实托管对象指针并走匹配对象API／原写屏障；数值缓冲区、IntPtr和值类型各按ABI处理，同时维护所有权与保活。",
+      "existing_validation": "R14有二进制核对和限定原引擎回归。",
+      "limits": [
+        "未证明全部AssetGarbageCol／GC崩溃同因，也未逐写入全覆盖。",
+        "不在摘要中发布可直接套用的新RVA。"
+      ],
+      "source_ids": [
+        "S12"
+      ],
+      "native_elf_sha256": "18178b2f35959bc3954378a9778cddd67aab8a7ef22579ea59d736521eec8c91"
+    },
+    {
+      "id": "F08",
+      "title": "Android输入框Scrollbar空指针",
+      "cause_status": "故障堆栈已确认；主题机制限定对应案例",
+      "preserved_facts": [
+        "主线程ScrollBarDrawable.mutate空指针，经过View.onDrawScrollBars和TextView.onDraw；Unity全屏宿主的控件主题缺Drawable是对应机制解释。"
+      ],
+      "current_remedy": "复用合适主题上下文和统一UI工厂，关闭普通输入框不需要的水平／垂直滚动条，连同聚焦、IME和滚动验收。",
+      "existing_validation": "历史特定设备修复及R48正常输入、窄屏与字体放大真实UI验证。",
+      "limits": [
+        "旧文通杀全部Android措辞不视为兼容矩阵。",
+        "未测任意机型／主题。"
+      ],
+      "source_ids": [
+        "S13",
+        "S23"
+      ]
+    },
+    {
+      "id": "F09",
+      "title": "系统限制后台自动重开",
+      "cause_status": "记录环境下已证实，未修成普遍自动恢复",
+      "preserved_facts": [
+        "R29 RC3／RC4记录API37／target37，闹钟安排和旧PID退出后仍BAL_BLOCK；creator opt-in与保留任务未解除该结果。"
+      ],
+      "current_remedy": "提供桌面图标手动恢复路径；安排失败不得先退出，安排成功不写成界面已出现。",
+      "existing_validation": "RC4实测手动图标回启动器，设置与文件保持。",
+      "limits": [
+        "自动重开FAIL仍保留。",
+        "系统策略、版本变化后须重验，不保证所有Android自动返回。"
+      ],
+      "source_ids": [
+        "S14",
+        "S15"
+      ]
+    },
+    {
+      "id": "F10",
+      "title": "合法资源名被误拒阻断后续自动获取",
+      "cause_status": "已证实，与Token资格分开",
+      "preserved_facts": [
+        "R28旧正则误拒合法空格／单引号资源名，如Typical Beanstalk，card-assets初始化失败后player-cards模块不安装。",
+        "650定义中646有名资源、4个prefabName=null且usable=false占位；初次候选将占位送入资源名单也在安装前被拒。"
+      ],
+      "current_remedy": "按可信template_guid到prefabName精确绑定，别名格式与原版资源名分开验证；排除无资源占位，保留路径／控制字符守卫。Token仍遵守原生限制。",
+      "existing_validation": "R28 RC2代表卡自动获取与冷启；R29Token负例另留证。",
+      "limits": [
+        "首次cold重新补齐原因未解；有效联网对照不足。",
+        "拥有量显示4不等于证明零补差持久化；不通过删库存／手补掩盖。"
+      ],
+      "source_ids": [
+        "S15",
+        "S16"
+      ],
+      "historical_apk_sha256": "3b3cfd4822ea3d990aa05633aed78609f4308361e854156c44ee2714cecd5ea0"
+    },
+    {
+      "id": "F11",
+      "title": "能力Hook所有权与音乐异步恢复；Syndrome待证",
+      "cause_status": "前两项已证实；Syndrome唯一根因未证",
+      "preserved_facts": [
+        "R24 RC3主页地址已有v6 owner，重复按原始字节签名检查产生native signature mismatch: home保护拒绝，actions为0且进程存活。",
+        "RC4把AKSuccess当作恢复完成，实际RTPC仍0；RC5保持restore_pending直到后续新鲜帧确认。",
+        "Syndrome与再启用Mod2后不崩的相关性不能定因，整卡表赢家可能已改变。"
+      ],
+      "current_remedy": "共享唯一Hook owner，不移除签名守卫；异步音乐恢复等真实后端回读。核对实际资源赢家、声明、许可及初始化状态。",
+      "existing_validation": "RC5实际播放／恢复与原版隔离证据；未做扬声器听验。",
+      "limits": [
+        "后台缓存不是新鲜RTPC。",
+        "音乐／守卫通过不证明Syndrome已修复，也不证明安全模式可救任意损坏存档。"
+      ],
+      "source_ids": [
+        "S14",
+        "S16",
+        "S17"
+      ]
+    },
+    {
+      "id": "F12",
+      "title": "严格JSON、来源缓存和正式发行身份",
+      "cause_status": "合同门禁与v1旧常量修复已证；Android新UI未重测",
+      "preserved_facts": [
+        "类型、缺字段、重复键／非标准JSON或来源ZIP／index／profile变化应明确拒绝，不能用伪造默认值吞掉错误。",
+        "旧通知身份停在R36，v1改由唯一发行JSON生成v1／R51／stable／100001，默认开发构建不开放更新。",
+        "新端点为/api/pvzh-launcher/v2/manifest.json，wire仍schema1／stable；弹窗、Gate标签／按钮与缓存采用同一更新策略，旧接口保持兼容。"
+      ],
+      "current_remedy": "按字段、枚举、Int32、引用和实际来源验证，采用当前生成身份及唯一更新函数；有效旧公告回退不得重开development更新资格。",
+      "existing_validation": "实际生产Java host、loopback、HTTPS回读及实际v1 APK身份检查通过。",
+      "limits": [
+        "v1未重做真实Android弹窗／Handler／缓存I/O。",
+        "解析／网络失败不清空Mod或账户。"
+      ],
+      "source_ids": [
+        "S08",
+        "S09"
+      ]
+    },
+    {
+      "id": "F13",
+      "title": "DeepSeek思考模式工具历史缺字段HTTP400",
+      "cause_status": "R40 RC6真实接口已证实",
+      "preserved_facts": [
+        "内部候选编译后审查收到HTTP400缺reasoning_content，未发布候选或写Mod。",
+        "DNS未取得响应和请求ID含4033被分类成鉴权错误是不同故障，不等于Key失效。"
+      ],
+      "current_remedy": "仅在临时工具对话回传服务商实际字段，程序预读以有来源数据传入；不伪造推理／调用，不持久化推理正文，按明确状态与网络阶段分类。",
+      "existing_validation": "R40 RC7五条真实卡牌tools制作／续改路径不再被该400阻断。",
+      "limits": [
+        "不代表所有服务商、fixed／legacy、关卡或自定义路径兼容。",
+        "不承诺降耗或任意请求一次成功。"
+      ],
+      "source_ids": [
+        "S18",
+        "S19"
+      ]
+    },
+    {
+      "id": "F14",
+      "title": "本地批量审查整表复制OOM",
+      "cause_status": "R23 RC2热路径已证实",
+      "preserved_facts": [
+        "计划已正确生成与编译，审查重复整表复制耗尽256MiB堆；故障不应归因模型计划本身。",
+        "修复后128／256MiB真实数据热路径重放通过，但全反例fixture在128MiB仍OOM。"
+      ],
+      "current_remedy": "属性路径写时复制、流式指纹、只读共享、有界输出及阶段对象释放；不吞异常发布半成品，不借机开放写源或擅改堆设置。",
+      "existing_validation": "限定重放、真实模型和设备流程证据保留。",
+      "limits": [
+        "任意大Mod／复杂树／低内存设备未全面验证。"
+      ],
+      "source_ids": [
+        "S20",
+        "S21"
+      ],
+      "historical_apk_sha256": "9b247fb396a880a76bf5c5d0d9b159faf5993d7be148a5c36c700a0b8e3c7fb5"
+    },
+    {
+      "id": "F15",
+      "title": "HeroId别名写入真实存储导致奖励阻塞",
+      "cause_status": "2026-09-24同版案例已证实",
+      "preserved_facts": [
+        "奖励画面可点击却不能前进，MissingHeroDataException报告Brainfreeze；真实存储HeroId为BrainFreeze，分享层别名混入自定义牌组使奖励库存遍历失败。"
+      ],
+      "current_remedy": "仅迁移已确认别名：等原Provider就绪，经正确引用写屏障及原markModified／persist保存，不猜改未知ID、不删除PlayerData或绕过所有异常。",
+      "existing_validation": "历史原生异常定位与奖励正常完成、回到排位界面证据。",
+      "limits": [
+        "限已验证别名与对应构建，不外推任意账户、跨设备或未来版本。",
+        "摘要不含账户ID、牌组UUID或个人数据。"
+      ],
+      "source_ids": [
+        "S01",
+        "S22"
+      ],
+      "historical_test_apk_sha256": "c2fb39cc3388be64e0c9836dd5cceb521ae51dea03f68d3450ab0ade207ab7b8"
+    },
+    {
+      "id": "F16",
+      "title": "恢复索引错误、断连与清理依赖冲突",
+      "cause_status": "R45守卫中止已证；未发生误删的记录不改写为误删事故",
+      "preserved_facts": [
+        "R45错误备份索引键及ADB短断均在实际恢复／缓存删除前中止，不能报告为已丢玩家数据。",
+        "旧155份APK精确恢复原依赖SQLite、恢复脚本及16底包；当前用户已放弃这批旧版本逐字节恢复，旧保留建议不再构成永久规则。"
+      ],
+      "current_remedy": "恢复绑定本轮APK／索引／前后像，第三种内容或断连fail-stop，独立读回；清理精确归属文件。旧组退役前先抽离R42–R51／v1仍需依赖。",
+      "existing_validation": "历史限定恢复与完整读回各自记录；本次仅文档，不执行设备／恢复／删除。",
+      "limits": [
+        "旧授权、目标UID、恢复及关机命令不重放。",
+        "不清整目录账户／会话／Mod／手工工程，不声称任意事故可自动恢复。"
+      ],
+      "source_ids": [
+        "S01",
+        "S05"
+      ]
+    }
+  ],
+  "privacy": "仅保存筛选技术事实和公开产物指纹；无密钥、签名私钥、账户内容、UUID、设备备份或推理正文。"
+}

@@ -1,0 +1,928 @@
+{
+  "schema": 1,
+  "status": "GENERATED_FILTERED_DOCUMENTATION_SNAPSHOT",
+  "compiled_utc": "2026-10-30T15:57:54.987400+00:00",
+  "authority": "The only product authority is the actual APK assets/experiments/capabilities.json. This file is a read-only documentation projection; never edit it to grant support, AI access, or change protocol. Regenerate after product registry/implementation validation.",
+  "scope": {
+    "new_builds": 0,
+    "adb_or_device_calls": 0,
+    "network_requests": 0,
+    "real_model_calls": 0,
+    "git_mutations": 0,
+    "product_source_or_registry_changes": 0,
+    "full_runtime_or_game_resource_copied": false,
+    "private_or_account_data_included": false
+  },
+  "candidate": {
+    "workspace_relative_path": "pvzh-launcher/releases/v1/dist/PVZH_Launcher_v1-r51-rc1_arm64.apk",
+    "sha256": "562f3792a28c75d685518ac1b6edcf1977f61e3e6792cc6b347dc8bdd01ccfc6",
+    "whole_apk_sha256_freshly_verified_this_extraction": true,
+    "bytes": 858607916,
+    "revision": "v1-r51-rc1",
+    "status": "READY_FOR_USER_ACCEPTANCE_SERVER_LIVE",
+    "release_identity": {
+      "schema_version": 1,
+      "product": "pvzh-launcher",
+      "public_version": "v1",
+      "release_code": 100001,
+      "internal_revision": "R51",
+      "channel": "stable",
+      "release_date": "2026-10-30",
+      "title": "PVZH 启动器 v1 正式版"
+    },
+    "release_asset_member": "assets/launcher/release.json",
+    "release_source_and_asset_sha256": "00dbb405fcaa9f7bddd2cc07680be9d02501e18d3c3adca54ef6d5b348e70bd9",
+    "source_and_asset_bytes_equal": true,
+    "final_receipt": "pvzh-launcher/releases/v1/dist/final-candidate.json",
+    "final_receipt_sha256": "fb7b9b5872648f66eaffec12c79bf964604ff86c04e891b334a8a446e611e72c",
+    "source_archive_sha256": "a6ee3e2342c4071a8375f229998ee09ef4c44561a6e80a321aa0f081442d0bbd"
+  },
+  "registry_projection": {
+    "apk_member": "assets/experiments/capabilities.json",
+    "source_bytes": 15818,
+    "source_sha256": "dff066913e2553e1bb993efac8fe52e30e20d1c335ed022d853a7a9dc2bf7520",
+    "schema": 1,
+    "revision": "r25-capabilities-1",
+    "projection_fields": [
+      "id",
+      "version",
+      "rule",
+      "module",
+      "title",
+      "description",
+      "kind",
+      "runtime_supported",
+      "ai_supported",
+      "parameters",
+      "limitations"
+    ],
+    "modules": [
+      {
+        "id": "pvzh.extensions",
+        "version": 1,
+        "title": "扩展技能包",
+        "runtime_supported": true
+      },
+      {
+        "id": "pvzh.mod_audio",
+        "version": 1,
+        "title": "Mod音乐",
+        "runtime_supported": true
+      },
+      {
+        "id": "pvzh.interactive_media",
+        "version": 1,
+        "module": "pvzh.extensions",
+        "title": "交互媒体",
+        "description": "出牌后图标与点击超链接/视频",
+        "runtime_supported": true,
+        "ai_supported": false
+      }
+    ],
+    "rules": [
+      {
+        "id": "pvzh.rule.self_no_attack",
+        "version": 1,
+        "rule": 1001,
+        "module": "pvzh.extensions",
+        "title": "自己无法攻击",
+        "kind": "passive",
+        "runtime_supported": true,
+        "ai_supported": false,
+        "parameters": {},
+        "limitations": [
+          "只对实际带有此规则标记的卡生效",
+          "原Mod2特定语义已实现，不代表任意组合已验证",
+          "AI推演模型暂未同步扩展"
+        ]
+      },
+      {
+        "id": "pvzh.rule.lane_zombies_no_attack",
+        "version": 1,
+        "rule": 1002,
+        "module": "pvzh.extensions",
+        "title": "本线僵尸无法攻击",
+        "kind": "passive",
+        "runtime_supported": true,
+        "ai_supported": false,
+        "parameters": {},
+        "limitations": [
+          "只对实际带有此规则标记的卡生效",
+          "原Mod2特定语义已实现，不代表任意组合已验证",
+          "AI推演模型暂未同步扩展"
+        ]
+      },
+      {
+        "id": "pvzh.rule.lane_plants_no_attack",
+        "version": 1,
+        "rule": 1003,
+        "module": "pvzh.extensions",
+        "title": "本线植物无法攻击",
+        "kind": "passive",
+        "runtime_supported": true,
+        "ai_supported": false,
+        "parameters": {},
+        "limitations": [
+          "只对实际带有此规则标记的卡生效",
+          "原Mod2特定语义已实现，不代表任意组合已验证",
+          "AI推演模型暂未同步扩展"
+        ]
+      },
+      {
+        "id": "pvzh.rule.wounded_unlock",
+        "version": 1,
+        "rule": 1004,
+        "module": "pvzh.extensions",
+        "title": "受伤后解除攻击限制",
+        "kind": "passive",
+        "runtime_supported": true,
+        "ai_supported": false,
+        "parameters": {},
+        "limitations": [
+          "只对实际带有此规则标记的卡生效",
+          "原Mod2特定语义已实现，不代表任意组合已验证",
+          "AI推演模型暂未同步扩展"
+        ]
+      },
+      {
+        "id": "pvzh.rule.after_attack_adjacent_plants_damage",
+        "version": 1,
+        "rule": 1005,
+        "module": "pvzh.extensions",
+        "title": "攻击后伤害相邻植物",
+        "kind": "passive",
+        "runtime_supported": true,
+        "ai_supported": false,
+        "parameters": {},
+        "limitations": [
+          "只对实际带有此规则标记的卡生效",
+          "原Mod2特定语义已实现，不代表任意组合已验证",
+          "AI推演模型暂未同步扩展"
+        ]
+      },
+      {
+        "id": "pvzh.rule.after_attack_bounce",
+        "version": 1,
+        "rule": 1006,
+        "module": "pvzh.extensions",
+        "title": "攻击后弹射自身",
+        "kind": "passive",
+        "runtime_supported": true,
+        "ai_supported": true,
+        "parameters": {},
+        "limitations": [
+          "只对实际带有此规则标记的卡生效",
+          "原Mod2特定语义已实现，不代表任意组合已验证",
+          "AI推演模型暂未同步扩展"
+        ]
+      },
+      {
+        "id": "pvzh.rule.before_front_attack_self_damage",
+        "version": 1,
+        "rule": 1007,
+        "module": "pvzh.extensions",
+        "title": "前排战斗前伤害自身",
+        "kind": "passive",
+        "runtime_supported": true,
+        "ai_supported": false,
+        "parameters": {},
+        "limitations": [
+          "只对实际带有此规则标记的卡生效",
+          "原Mod2特定语义已实现，不代表任意组合已验证",
+          "AI推演模型暂未同步扩展"
+        ]
+      },
+      {
+        "id": "pvzh.rule.after_hero_attack_self_debuff",
+        "version": 1,
+        "rule": 1008,
+        "module": "pvzh.extensions",
+        "title": "攻击英雄后自身减益",
+        "kind": "passive",
+        "runtime_supported": true,
+        "ai_supported": false,
+        "parameters": {},
+        "limitations": [
+          "只对实际带有此规则标记的卡生效",
+          "原Mod2特定语义已实现，不代表任意组合已验证",
+          "AI推演模型暂未同步扩展"
+        ]
+      },
+      {
+        "id": "pvzh.rule.no_attack_gain",
+        "version": 1,
+        "rule": 1009,
+        "module": "pvzh.extensions",
+        "title": "无法获得力量增益",
+        "kind": "passive",
+        "runtime_supported": true,
+        "ai_supported": false,
+        "parameters": {},
+        "limitations": [
+          "只对实际带有此规则标记的卡生效",
+          "原Mod2特定语义已实现，不代表任意组合已验证",
+          "AI推演模型暂未同步扩展"
+        ]
+      },
+      {
+        "id": "pvzh.rule.zombie_damage_one",
+        "version": 1,
+        "rule": 1010,
+        "module": "pvzh.extensions",
+        "title": "僵尸伤害固定为1",
+        "kind": "passive",
+        "runtime_supported": true,
+        "ai_supported": false,
+        "parameters": {},
+        "limitations": [
+          "只对实际带有此规则标记的卡生效",
+          "原Mod2特定语义已实现，不代表任意组合已验证",
+          "AI推演模型暂未同步扩展"
+        ]
+      },
+      {
+        "id": "pvzh.rule.umbrella_single_random_redirect",
+        "version": 1,
+        "rule": 1011,
+        "module": "pvzh.extensions",
+        "title": "单次随机分担伤害",
+        "kind": "passive",
+        "runtime_supported": true,
+        "ai_supported": false,
+        "parameters": {},
+        "limitations": [
+          "只对实际带有此规则标记的卡生效",
+          "原Mod2特定语义已实现，不代表任意组合已验证",
+          "AI推演模型暂未同步扩展"
+        ]
+      },
+      {
+        "id": "pvzh.rule.next_turn_sun_loss",
+        "version": 1,
+        "rule": 1012,
+        "module": "pvzh.extensions",
+        "title": "下一回合资源减少",
+        "kind": "action",
+        "runtime_supported": true,
+        "ai_supported": false,
+        "parameters": {},
+        "limitations": [
+          "只对实际带有此规则标记的卡生效",
+          "原Mod2特定语义已实现，不代表任意组合已验证",
+          "AI推演模型暂未同步扩展"
+        ]
+      },
+      {
+        "id": "pvzh.rule.reveal_grave",
+        "version": 1,
+        "rule": 1013,
+        "module": "pvzh.extensions",
+        "title": "现身墓碑",
+        "kind": "action",
+        "runtime_supported": true,
+        "ai_supported": false,
+        "parameters": {},
+        "limitations": [
+          "只对实际带有此规则标记的卡生效",
+          "原Mod2特定语义已实现，不代表任意组合已验证",
+          "AI推演模型暂未同步扩展"
+        ]
+      },
+      {
+        "id": "pvzh.rule.swap_current_health",
+        "version": 1,
+        "rule": 1014,
+        "module": "pvzh.extensions",
+        "title": "打出时与己方英雄交换当前生命",
+        "kind": "action",
+        "runtime_supported": true,
+        "ai_supported": true,
+        "parameters": {},
+        "limitations": [
+          "只对实际带有此规则标记的卡生效",
+          "原Mod2特定语义已实现，不代表任意组合已验证",
+          "AI推演模型暂未同步扩展",
+          "AI首批固定己方英雄目标，源自R25 GUID202，不开放任意目标组合"
+        ]
+      },
+      {
+        "id": "pvzh.rule.after_any_attack_set_power_zero",
+        "version": 1,
+        "rule": 1015,
+        "module": "pvzh.extensions",
+        "title": "任一单位攻击后力量归零",
+        "kind": "passive",
+        "runtime_supported": true,
+        "ai_supported": false,
+        "parameters": {},
+        "limitations": [
+          "只对实际带有此规则标记的卡生效",
+          "原Mod2特定语义已实现，不代表任意组合已验证",
+          "AI推演模型暂未同步扩展"
+        ]
+      },
+      {
+        "id": "pvzh.rule.set_target_stats_zero",
+        "version": 1,
+        "rule": 1016,
+        "module": "pvzh.extensions",
+        "title": "弹射后设定属性为零",
+        "kind": "action",
+        "runtime_supported": true,
+        "ai_supported": false,
+        "parameters": {},
+        "limitations": [
+          "只对实际带有此规则标记的卡生效",
+          "原Mod2特定语义已实现，不代表任意组合已验证",
+          "AI推演模型暂未同步扩展"
+        ]
+      },
+      {
+        "id": "pvzh.rule.drain_current_sun",
+        "version": 1,
+        "rule": 1017,
+        "module": "pvzh.extensions",
+        "title": "消耗本回合剩余阳光",
+        "kind": "action",
+        "runtime_supported": true,
+        "ai_supported": false,
+        "parameters": {},
+        "limitations": [
+          "只对实际带有此规则标记的卡生效",
+          "原Mod2特定语义已实现，不代表任意组合已验证",
+          "AI推演模型暂未同步扩展"
+        ]
+      },
+      {
+        "id": "pvzh.rule.bounce_then_damage",
+        "version": 1,
+        "rule": 1018,
+        "module": "pvzh.extensions",
+        "title": "弹射墓碑后伤害同一实体",
+        "kind": "action",
+        "runtime_supported": true,
+        "ai_supported": false,
+        "parameters": {},
+        "limitations": [
+          "只对实际带有此规则标记的卡生效",
+          "原Mod2特定语义已实现，不代表任意组合已验证",
+          "AI推演模型暂未同步扩展"
+        ]
+      },
+      {
+        "id": "pvzh.rule.after_attack_destroy_self",
+        "version": 1,
+        "rule": 1019,
+        "module": "pvzh.extensions",
+        "title": "攻击后消灭自身",
+        "kind": "passive",
+        "runtime_supported": true,
+        "ai_supported": true,
+        "parameters": {},
+        "limitations": [
+          "只对实际带有此规则标记的卡生效",
+          "原Mod2特定语义已实现，不代表任意组合已验证",
+          "AI推演模型暂未同步扩展"
+        ]
+      },
+      {
+        "id": "pvzh.rule.after_attack_random_destroy",
+        "version": 1,
+        "rule": 1020,
+        "module": "pvzh.extensions",
+        "title": "攻击后随机消灭",
+        "kind": "passive",
+        "runtime_supported": true,
+        "ai_supported": false,
+        "parameters": {},
+        "limitations": [
+          "只对实际带有此规则标记的卡生效",
+          "原Mod2特定语义已实现，不代表任意组合已验证",
+          "AI推演模型暂未同步扩展"
+        ]
+      },
+      {
+        "id": "pvzh.rule.after_attack_create_plant_move",
+        "version": 1,
+        "rule": 1021,
+        "module": "pvzh.extensions",
+        "title": "攻击后召唤植物并移动",
+        "kind": "passive",
+        "runtime_supported": true,
+        "ai_supported": false,
+        "parameters": {},
+        "limitations": [
+          "只对实际带有此规则标记的卡生效",
+          "原Mod2特定语义已实现，不代表任意组合已验证",
+          "AI推演模型暂未同步扩展"
+        ]
+      },
+      {
+        "id": "pvzh.rule.no_attack_this_turn",
+        "version": 1,
+        "rule": 1022,
+        "module": "pvzh.extensions",
+        "title": "本回合禁止攻击",
+        "kind": "action",
+        "runtime_supported": true,
+        "ai_supported": false,
+        "parameters": {},
+        "limitations": [
+          "只对实际带有此规则标记的卡生效",
+          "原Mod2特定语义已实现，不代表任意组合已验证",
+          "AI推演模型暂未同步扩展"
+        ]
+      },
+      {
+        "id": "pvzh.rule.garg_kill_random_branch",
+        "version": 1,
+        "rule": 1023,
+        "module": "pvzh.extensions",
+        "title": "巨尸消灭植物后随机分支",
+        "kind": "action",
+        "runtime_supported": true,
+        "ai_supported": false,
+        "parameters": {},
+        "limitations": [
+          "只对实际带有此规则标记的卡生效",
+          "原Mod2特定语义已实现，不代表任意组合已验证",
+          "AI推演模型暂未同步扩展"
+        ]
+      },
+      {
+        "id": "pvzh.rule.music_play",
+        "version": 1,
+        "rule": 1024,
+        "module": "pvzh.mod_audio",
+        "title": "切换背景音乐",
+        "kind": "action",
+        "runtime_supported": true,
+        "ai_supported": true,
+        "parameters": {
+          "track_id": "current Mod registered track; required for play",
+          "trigger": "play or turn_start"
+        },
+        "limitations": [
+          "需开启音乐扩展和扩展技能；AI创作需额外开启AI许可",
+          "仅当前Mod登记的本地曲目；不接收路径或URL",
+          "准备成功才临时静音原BGM，音效与系统媒体音量保持"
+        ]
+      },
+      {
+        "id": "pvzh.rule.music_restore",
+        "version": 1,
+        "rule": 1025,
+        "module": "pvzh.mod_audio",
+        "title": "恢复原版背景音乐",
+        "kind": "action",
+        "runtime_supported": true,
+        "ai_supported": true,
+        "parameters": {
+          "trigger": "play or turn_start"
+        },
+        "limitations": [
+          "需开启音乐扩展和扩展技能；AI创作需额外开启AI许可",
+          "仅当前Mod登记的本地曲目；不接收路径或URL",
+          "准备成功才临时静音原BGM，音效与系统媒体音量保持"
+        ]
+      },
+      {
+        "id": "pvzh.rule.transform_others_keep_current_stats",
+        "version": 1,
+        "rule": 1026,
+        "module": "pvzh.extensions",
+        "title": "变形其他单位并保留当前攻血",
+        "kind": "action",
+        "runtime_supported": true,
+        "ai_supported": false,
+        "parameters": {},
+        "limitations": [
+          "一次快照所有其他场上单位；植物变豌豆射手10，僵尸变普通僵尸50",
+          "保留当前显示攻血；原技能及旧伤害履历不保留",
+          "原版入口禁用；需开启扩展技能",
+          "首版运行规则，尚未开放AI自由配方"
+        ]
+      }
+    ],
+    "counts": {
+      "modules": 3,
+      "rules": 26,
+      "runtime_supported_modules": 3,
+      "runtime_supported_rules": 26,
+      "ai_supported_rules": 5,
+      "ai_rule_numbers": [
+        1006,
+        1014,
+        1019,
+        1024,
+        1025
+      ]
+    },
+    "module_ai_missing_semantics": "pvzh.extensions and pvzh.mod_audio omit module-level ai_supported; show not separately registered, defer to rules. pvzh.interactive_media explicitly false. Do not fill missing values with true or false.",
+    "runtime_support_semantics": "Declared implemented contract, not active permission, successful Hook installation, or all-combination/device/gameplay verification."
+  },
+  "actual_apk_related_metadata": {
+    "builtins_member": "assets/launcher/builtins.json",
+    "builtins_sha256": "32c6db47720663c5dabbd6c6764f7e8c59e63c9fd00364b90d8b2f23eb7a39ac",
+    "builtins": [
+      {
+        "id": "classical-chinese-full-v2",
+        "title": "文言文中文包",
+        "asset": "launcher/wenyan.zip",
+        "sha256": "b0ac88aed9e1222c38d40f6699ddc227f8c2b127732890611d8f42075e3f921f",
+        "revision": "full-v2",
+        "initial_position": 0,
+        "actual_member_sha256": "b0ac88aed9e1222c38d40f6699ddc227f8c2b127732890611d8f42075e3f921f",
+        "actual_member_bytes": 199900,
+        "fresh_catalog_member_match": true
+      },
+      {
+        "id": "personal",
+        "title": "我的原版底稿",
+        "asset": "launcher/personal.zip",
+        "sha256": "b4c7d4ad5b92ed5700f60633d04dcaac40e4deac37036585ed6f3ee27285056f",
+        "actual_member_sha256": "b4c7d4ad5b92ed5700f60633d04dcaac40e4deac37036585ed6f3ee27285056f",
+        "actual_member_bytes": 239,
+        "fresh_catalog_member_match": true
+      },
+      {
+        "id": "mod2",
+        "title": "招笑版",
+        "asset": "launcher/zhaoxiao.zip",
+        "sha256": "f23a9ca33561616125977c3c067a112c79bce9f1b2fc81cb1865fd27fd7704b9",
+        "revision": "r46-zhaoxiao-media-rc1",
+        "actual_member_sha256": "f23a9ca33561616125977c3c067a112c79bce9f1b2fc81cb1865fd27fd7704b9",
+        "actual_member_bytes": 15063081,
+        "fresh_catalog_member_match": true
+      }
+    ],
+    "selected_payload_hashes": {
+      "classes9.dex": "b42c03d9089e4c165fff659880c555aa8f89f7d1730e54146d90f1a3e27c078e",
+      "lib/arm64-v8a/libpvzhgadget.script.so": "ffaa3766e683fd87ce73a77031f0cb07621262cf36db20fb6bc2eb38fbff78b2",
+      "assets/launcher/project.json": "4047221963982f27c6b50535f37eef2ab0f76fafdf436f4fef04e1697091603f"
+    },
+    "runtime_code_included": false
+  },
+  "current_source_binding": {
+    "java_count": 112,
+    "java_build_input_hashes_matched": 112,
+    "build_receipt": "pvzh-launcher/releases/v1/dist/v1-r51-rc1.json",
+    "build_receipt_sha256": "0e5c26ab5601453df09a40abc10ec8bff34fbaa05aa3464742f67324ea72c75a",
+    "selected_sources": [
+      {
+        "workspace_relative_path": "pvzh-launcher/releases/v1/android/java/com/pvzh/sharecode/ResourceGateActivityV2.java",
+        "sha256": "005cb8e3912087d4d83981c80d2bd5ffa2e92e68dfc5da5022415f02b35cbc7f",
+        "matches_frozen_build_input": true
+      },
+      {
+        "workspace_relative_path": "pvzh-launcher/releases/v1/android/java/com/pvzh/sharecode/LauncherStore.java",
+        "sha256": "f7e5074fcb6058caf89cfbcb95d72475bdfe9d77e6ff61ceb2f9f1673f4e1a51",
+        "matches_frozen_build_input": true
+      },
+      {
+        "workspace_relative_path": "pvzh-launcher/releases/v1/android/java/com/pvzh/sharecode/NativeBuiltins.java",
+        "sha256": "6afe5a9e797e68ae795aa84a709ec055320175f08a408e4123a9d9b168ed2b72",
+        "matches_frozen_build_input": true
+      },
+      {
+        "workspace_relative_path": "pvzh-launcher/releases/v1/android/java/com/pvzh/sharecode/NativeManualResourceReadiness.java",
+        "sha256": "cb4fa3db9d56e3a27e39e06799ca9eef3789feb3ff3bec7c885c86a0448b3a17",
+        "matches_frozen_build_input": true
+      },
+      {
+        "workspace_relative_path": "pvzh-launcher/releases/v1/android/java/com/pvzh/sharecode/NativeManualCardEditor.java",
+        "sha256": "27e294bee1e0cba81f42f632618e764b6d5d90c4ad7a11abcef679f2bd824097",
+        "matches_frozen_build_input": true
+      },
+      {
+        "workspace_relative_path": "pvzh-launcher/releases/v1/android/java/com/pvzh/sharecode/NativeManualCardEditorView.java",
+        "sha256": "2f4bdbb3a2030336c5cce2df1131715cc5e1f304f4c1da165f446c642949fc78",
+        "matches_frozen_build_input": true
+      },
+      {
+        "workspace_relative_path": "pvzh-launcher/releases/v1/android/java/com/pvzh/sharecode/NativeManualSkillBoardView.java",
+        "sha256": "75296a6dae82e4fd7e780d4cc7ef08b550c3b5467e1c6f925807c21fd8a741c3",
+        "matches_frozen_build_input": true
+      },
+      {
+        "workspace_relative_path": "pvzh-launcher/releases/v1/android/java/com/pvzh/sharecode/NativeManualSkillComponents.java",
+        "sha256": "27870c1706c3d375ba27ab953130d4660a5e4c7ef85f3f47b144529ba044662f",
+        "matches_frozen_build_input": true
+      },
+      {
+        "workspace_relative_path": "pvzh-launcher/releases/v1/android/java/com/pvzh/sharecode/NativeCardTemplates.java",
+        "sha256": "3e0b05d2a2553f59d8fadbfc33cb572de8585e94bd377670f58df44aa6f4cf2d",
+        "matches_frozen_build_input": true
+      },
+      {
+        "workspace_relative_path": "pvzh-launcher/releases/v1/android/java/com/pvzh/sharecode/NativeCardEditorOps.java",
+        "sha256": "1d82305c3a9d5d8f52e756f43f472e916ff39a3404d2c7c30a5184d2a80b3bf9",
+        "matches_frozen_build_input": true
+      },
+      {
+        "workspace_relative_path": "pvzh-launcher/releases/v1/android/java/com/pvzh/sharecode/NativeChat.java",
+        "sha256": "be0dc2b705f163300a1bedf975b85c50e837e94aafb6676ab7037d1142ff739a",
+        "matches_frozen_build_input": true
+      },
+      {
+        "workspace_relative_path": "pvzh-launcher/releases/v1/android/java/com/pvzh/sharecode/NativeToolLoop.java",
+        "sha256": "0248a6bfd89a306600673d0cae10f20c19b916e264498e3689be64a971a8f2bc",
+        "matches_frozen_build_input": true
+      },
+      {
+        "workspace_relative_path": "pvzh-launcher/releases/v1/android/java/com/pvzh/sharecode/NativeAuthoringModeData.java",
+        "sha256": "ac97712d28829d7a29bdaad0dc909e69d910857fea3b87728126d0c630745e67",
+        "matches_frozen_build_input": true
+      },
+      {
+        "workspace_relative_path": "pvzh-launcher/releases/v1/android/java/com/pvzh/sharecode/NativeCampaignTools.java",
+        "sha256": "1937261e089068cc24057140a44fbc8e46e5e7aba007d5dcc66eb21ac996907f",
+        "matches_frozen_build_input": true
+      },
+      {
+        "workspace_relative_path": "pvzh-launcher/releases/v1/android/java/com/pvzh/sharecode/NativeCampaignDeckTools.java",
+        "sha256": "f47f0a0c092df07917594fb1fc62d849d4db123f87ae675c8c5d816016576987",
+        "matches_frozen_build_input": true
+      },
+      {
+        "workspace_relative_path": "pvzh-launcher/releases/v1/android/java/com/pvzh/sharecode/NativeBoardAbilityCatalog.java",
+        "sha256": "7ce1239ae0769ee68ed55ad9867fb039f71085ec15156130b9e61a8f48510ad9",
+        "matches_frozen_build_input": true
+      },
+      {
+        "workspace_relative_path": "pvzh-launcher/releases/v1/android/java/com/pvzh/sharecode/NativeCapabilities.java",
+        "sha256": "22d124dedc3ff7dc35ae0e060c63e6876178ee394ef5adf17371f06f8e47f27c",
+        "matches_frozen_build_input": true
+      },
+      {
+        "workspace_relative_path": "pvzh-launcher/releases/v1/android/java/com/pvzh/sharecode/NativeCapabilityCatalog.java",
+        "sha256": "83f682ebffbce611c9f08e5aa31e17e34daa890dd4fa081aaba40e1dc56637a3",
+        "matches_frozen_build_input": true
+      },
+      {
+        "workspace_relative_path": "pvzh-launcher/releases/v1/android/java/com/pvzh/sharecode/NativeExtensionCompiler.java",
+        "sha256": "fa6258fe1df699e16e4f8eb2ee39a065ae476d86dc6f5af9e90a0332c0402a29",
+        "matches_frozen_build_input": true
+      },
+      {
+        "workspace_relative_path": "pvzh-launcher/releases/v1/android/java/com/pvzh/sharecode/NativeMediaAssets.java",
+        "sha256": "e77285103babbcabca53ed089e5d5c10a35c5808f6a345fc1f6b09afc78ddbf1",
+        "matches_frozen_build_input": true
+      },
+      {
+        "workspace_relative_path": "pvzh-launcher/releases/v1/android/java/com/pvzh/sharecode/NativeMediaRegistry.java",
+        "sha256": "38ea17e06dbb72c5f123964f3161ed72c6a26f616e1099e5cdc1e1ec8a4e92c8",
+        "matches_frozen_build_input": true
+      },
+      {
+        "workspace_relative_path": "pvzh-launcher/releases/v1/android/java/com/pvzh/sharecode/NativeModMedia.java",
+        "sha256": "d86158fcc57c850e0aad46200e0dc480ef472755433b9c402754086077abc449",
+        "matches_frozen_build_input": true
+      },
+      {
+        "workspace_relative_path": "pvzh-launcher/releases/v1/android/java/com/pvzh/sharecode/NativeModAudio.java",
+        "sha256": "264e43abc8f6458e5fadf4dfcea993d4fd92da28847a41504bc7f11140a8632b",
+        "matches_frozen_build_input": true
+      },
+      {
+        "workspace_relative_path": "pvzh-launcher/releases/v1/android/java/com/pvzh/sharecode/NativeReleaseIdentity.java",
+        "sha256": "6b8bb510405c46128718d34f50d0013acaf188ff3bb8ed886f571f55aea77dec",
+        "matches_frozen_build_input": true
+      },
+      {
+        "workspace_relative_path": "pvzh-launcher/releases/v1/android/java/com/pvzh/sharecode/NativeNoticeManifest.java",
+        "sha256": "08783c877466eb3b0cc9c347b3ca0fc392b26c245e872a9765328a3888550a05",
+        "matches_frozen_build_input": true
+      },
+      {
+        "workspace_relative_path": "pvzh-launcher/releases/v1/android/java/com/pvzh/sharecode/NativeLauncherNotices.java",
+        "sha256": "166d7bff21a890194f5c6c42ddb5fb07f9f7ff6d1d25e42f22935dabc028afe6",
+        "matches_frozen_build_input": true
+      },
+      {
+        "workspace_relative_path": "pvzh-launcher/releases/v1/android/java/com/pvzh/sharecode/NativeProjectManifest.java",
+        "sha256": "aa78704f16fa9e6cb1722589819fc9b818047eecb50c7d0f2084eba0e07bb39d",
+        "matches_frozen_build_input": true
+      },
+      {
+        "workspace_relative_path": "pvzh-launcher/releases/v1/android/java/com/pvzh/sharecode/NativeProjectInfo.java",
+        "sha256": "533a84b0ee991e669ba9624ba9697efe2b450c487f9bda6333f9db06c1859137",
+        "matches_frozen_build_input": true
+      },
+      {
+        "workspace_relative_path": "pvzh-launcher/releases/v1/android/java/com/pvzh/sharecode/NativePlayerCardOptions.java",
+        "sha256": "52ba59a9bfe311abc930856c81d91faf299cd7cec07aa2be57ea700ae3ae6755",
+        "matches_frozen_build_input": true
+      },
+      {
+        "workspace_relative_path": "pvzh-launcher/releases/v1/android/java/com/pvzh/sharecode/NativeModOptions.java",
+        "sha256": "cb8e7a16c350f52b76338ac6c512c3719acb24d455384fd42bf59e05d6a2a4da",
+        "matches_frozen_build_input": true
+      }
+    ]
+  },
+  "current_evidence_summary": {
+    "client_host_assertions": 215,
+    "real_loopback_gets": 57,
+    "independent_apk_groups": 37,
+    "default_development_actual_build_groups": 20,
+    "android_ui": "NOT_TESTED_ON_V1",
+    "android_handler_cache_io": "NOT_TESTED_ON_V1",
+    "engine_or_formal_game": "NOT_TESTED_ON_V1",
+    "real_ai_model": "NOT_TESTED_ON_V1",
+    "new_network_this_documentation": 0,
+    "last_project_verified_phone": "R48 RC2 historical; current phone not read",
+    "public_release": "Ready for user acceptance; no APK upload or repository visibility change implied"
+  },
+  "historical_evidence_selection": [
+    {
+      "version": "R35",
+      "area": "campaign",
+      "source_record": "pvzh-launcher/native-r35/dist/final-candidate.json",
+      "source_record_sha256": "6664e3677b1b8ae17662d7955a76bdd89774495936833bc379ce556ff17fb814",
+      "candidate_apk_sha256": "d80ce4778f3783b5298008440bf02798179949562138c05f7edfcdeb2ea2ed8e",
+      "selected_facts": {
+        "real_http_requests": 64,
+        "reported_tokens": 1753098,
+        "completed_candidate_paths": 5,
+        "verified": "Formal plant002 selected deck/hero/water lane/placement; normal play and representative scene/component observations.",
+        "not_covered": "All59 scene outcomes, full victory/defeat, complete damage semantics, fun/balance; exact NPC identity needs DDA prerequisite."
+      },
+      "scope": "HISTORICAL_ONLY_NOT_RERUN_ON_V1"
+    },
+    {
+      "version": "R40",
+      "area": "card_ai",
+      "source_record": "pvzh-launcher/native-r40/dist/final-candidate.json",
+      "source_record_sha256": "359a67b9fbb5ce5779ecf8f257d4c3181f31273eb010baa3c144f8a1d5b62896",
+      "candidate_apk_sha256": "63e5a176248727b6cfff43fd9a47e431df9a154568f34fd7861dec0cd6a4e68a",
+      "selected_facts": {
+        "real_http_attempts_all": 50,
+        "responses_with_usage_all": 48,
+        "reported_tokens_all": 868703,
+        "usage_complete": false,
+        "tokens_are_monetary_cost": false,
+        "completed_paths": 5,
+        "verified": "Selected real authoring/continued edits, UI acceptance/export and controlled extra draw2 native comparison.",
+        "not_covered": "Arbitrary complex skills/all templates; quick-mode savings or current v1 model success."
+      },
+      "scope": "HISTORICAL_ONLY_NOT_RERUN_ON_V1"
+    },
+    {
+      "version": "R42",
+      "area": "quick_expert",
+      "source_record": "pvzh-launcher/native-r42/dist/final-candidate.json",
+      "source_record_sha256": "9d5469ff12fb7c04c14fd7f8dff5c67b368a382121607b9479903bcd4a98c2ca",
+      "candidate_apk_sha256": "3265c87585215c0f98439f07f0d852971275fa58ceb0c93e823bc6529d9a1887",
+      "selected_facts": {
+        "host_assertions": 89,
+        "real_model_calls": 0,
+        "verified": "Mode UI switching/persistence and host/synthetic flow.",
+        "not_covered": "Real quick/expert savings or complex-skill success improvement."
+      },
+      "scope": "HISTORICAL_ONLY_NOT_RERUN_ON_V1"
+    },
+    {
+      "version": "R44",
+      "area": "manual_components",
+      "source_record": "pvzh-launcher/native-r44/dist/final-candidate.json",
+      "source_record_sha256": "cf021e1838453be045ebf2b886d2fea9a1b68dbead6a7a1b8234c2ba12b6d9ca",
+      "candidate_apk_sha256": "ec3f46aa3cc55bdd5ddbbe9b75ab8aaf04a0b08ece0835fd0def9bb94ce4f748",
+      "selected_facts": {
+        "families": 14,
+        "verified": "Host subtree recognition/roundtrip; one controlled legal play enemy hero50to47.",
+        "not_covered": "All component variants/formal full games."
+      },
+      "scope": "HISTORICAL_ONLY_NOT_RERUN_ON_V1"
+    },
+    {
+      "version": "R45",
+      "area": "manual_resources",
+      "source_record": "pvzh-launcher/native-r45/dist/final-candidate.json",
+      "source_record_sha256": "7a3c3dfc9533738f69c2210ba36af9b03e5beaee419760a1e66896e192c73ff4",
+      "candidate_apk_sha256": "3d08804b95a41903015c3e3226978ba7d2917569a01bb7395621d4c52219a123",
+      "selected_facts": {
+        "manual_reused_targets": 2880,
+        "manual_downloads": 0,
+        "verified": "Manual no-change scan; ordinary UI original launch without repeated FullGate scan.",
+        "not_covered": "Future official releases/all corruption/network conditions."
+      },
+      "scope": "HISTORICAL_ONLY_NOT_RERUN_ON_V1"
+    },
+    {
+      "version": "R46",
+      "area": "media",
+      "source_record": "pvzh-launcher/native-r46/dist/final-candidate.json",
+      "source_record_sha256": "1320fe0786652d96805137787df1a819f83ee8b5302abd0f4f7b42b32d40486f",
+      "candidate_apk_sha256": "b0c42a6291f293ba18b99ece2407337b3e3c5cb2f33491774af1638a7f18cfd0",
+      "selected_facts": {
+        "verified": "Legal native play495, icon, default Chrome target and return; visible muted local test video completion/close twice lifecycle; original495 and ordinary-card negatives.",
+        "not_covered": "Arbitrary remote videos, audio, codecs, full/remote games, every legal-play edge."
+      },
+      "scope": "HISTORICAL_ONLY_NOT_RERUN_ON_V1"
+    },
+    {
+      "version": "R47",
+      "area": "wenyan",
+      "source_record": "pvzh-launcher/native-r47/dist/final-candidate.json",
+      "source_record_sha256": "eda757a9a455abc35bc688e04a5e29d70dd0f5817a87ec3df6bf2d172e209a39",
+      "candidate_apk_sha256": "3be5b4c2c0aac995497a3ace4e977fdf94e8ed09320e736bd4643478c9b00c14",
+      "selected_facts": {
+        "chinese_keys": 10783,
+        "known_zhaoxiao_custom_descriptions_shadowed": 370,
+        "known_missing_custom_keys": [
+          "key111",
+          "key222"
+        ],
+        "verified": "Existing full-v2 bytes packaged; host actual Store priority/default-off/ordering/removal/custom guards.",
+        "not_covered": "All game-page typography; automatic merged translations."
+      },
+      "scope": "HISTORICAL_ONLY_NOT_RERUN_ON_V1"
+    },
+    {
+      "version": "R48",
+      "area": "mobile_ui",
+      "source_record": "pvzh-launcher/native-r48/dist/final-candidate.json",
+      "source_record_sha256": "398df2793983d97726d4434eed66b1d738d94578ae0039f0fc19e87303222e6a",
+      "candidate_apk_sha256": "9329c94b226895d0262c70b2a0dd91fc89e79b27caa04b19b2846b73182d893e",
+      "selected_facts": {
+        "host_regression_assertions": 1567,
+        "bundle_readbacks": 4,
+        "original_cards_preserved_in_sample": 650,
+        "old_chinese_keys_preserved_in_sample": 10783,
+        "verified": "Pixel6 ordinary UI;320dp/font1.3;selected states/input/tabs/drag/undo/save/cold reopen; independent saved Bundle readback.",
+        "not_covered": "v1 install;arbitrary devices/IME/landscape;formal games or new real model calls."
+      },
+      "scope": "HISTORICAL_ONLY_NOT_RERUN_ON_V1"
+    },
+    {
+      "version": "R49",
+      "area": "catalog",
+      "source_record": "pvzh-launcher/native-r49/dist/final-candidate.json",
+      "source_record_sha256": "add9be58b3ec11ebf6e010349b55d4dfc731613b211da2282819d2a218811d38",
+      "candidate_apk_sha256": "65c0d541f80b69e4a2149ae225319d2e35c5687979e59447d8654d588daba0b4",
+      "selected_facts": {
+        "host_assertions": 345,
+        "verified": "Dynamic3module/26rule/AI5 presentation including future rows and strict Boolean status; actual APK checks.",
+        "not_covered": "Real Android catalog UI this revision."
+      },
+      "scope": "HISTORICAL_ONLY_NOT_RERUN_ON_V1"
+    },
+    {
+      "version": "R50",
+      "area": "project_text",
+      "source_record": "pvzh-launcher/native-r50/dist/final-candidate.json",
+      "source_record_sha256": "c58e6cb329176a5766f3a8ad66fd32d3245dc7e370b0bc35e73b372374d2ee7d",
+      "candidate_apk_sha256": "51d18029ecdb7018db633e8a0f3ed382fe1bde805970b3408557001c81a76908",
+      "selected_facts": {
+        "domain_http_cases": 30,
+        "request_scope_cases": 8,
+        "verified": "Strict pure-text model, bounded transport, cancellation/saturation and real scope gates; server/production-JVM HTTPS had recorded passes.",
+        "not_covered": "Android Handler/View/cache IO or current network state."
+      },
+      "scope": "HISTORICAL_ONLY_NOT_RERUN_ON_V1"
+    },
+    {
+      "version": "R51",
+      "area": "about_and_artwork",
+      "source_record": "pvzh-launcher/native-r51/dist/final-candidate.json",
+      "source_record_sha256": "48e063abedfd88041eb7c0c30830b5321ae4d6e057aaa8fd43c6003796b6fa8c",
+      "candidate_apk_sha256": "13026f58108a407f0ae64614e4f40ae3312bb1e48877d80b553f28b7acccb9d4",
+      "selected_facts": {
+        "verified": "H07 separated from H03, actual artifact/static routing checks; project compiled class inheritance.",
+        "not_covered": "Android UI;generic independent-card artwork pipeline.",
+        "auto_assessment": "Existing output selected-chain verifier passed but full graph had79preload+22container missing references; no resource-write/import workflow executed."
+      },
+      "scope": "HISTORICAL_ONLY_NOT_RERUN_ON_V1"
+    }
+  ],
+  "current_policy_summary": {
+    "mod_priority": "First winning logical resource family; complete-file replacement, no automatic GUID/CN-key merge.",
+    "resource_checks": "User-triggered full official sync; ordinary launch readiness metadata/core checks only.",
+    "new_cards": "Collectible Mod cards, target1..999 difference only; no token collection, no inventory reduction; original mode does not issue Mod cards.",
+    "manual_editor": "Four main actions,14 native-subtree component families; unknown content preserved; raw JSON/project IO absent as player entry.",
+    "card_ai": "Quick/expert same tool privileges; four managed template combinations; narrow editor operations; finite native compiler/legacy compatibility not arbitrary component authoring.",
+    "campaign_ai": "Plant/zombie001..200; selected fields/decks/terrain/placements/events; reuse59 stock scenes; exact NPC scripts require DDA prerequisites.",
+    "extension_ai": "Five fixed registered recipes and selected-project permissions; no arbitrary runtime code.",
+    "media": "Runtime registered module under extensions, explicit user click, actual winning card source binding, AI false.",
+    "music": "Registered local Mod tracks;1024/1025 fixed AI recipe with runtime/music/AI permission.",
+    "release": "Stable explicit; default development disables formal upgrades across popup/page/cache; ordinary announcements preserved.",
+    "about": "H07 project text/GitHub/thanks;H03 original contacts;remote plain text cannot change trusted links or contacts."
+  },
+  "clone_local_references": [
+    "../01.手动卡牌与组件块.md",
+    "../02.AI模式与创作边界.md",
+    "../03.资源检查与媒体文字包.md",
+    "../R48验收摘要.json",
+    "../../09.关卡修改/INDEX.md",
+    "../../21.语义调试与技能扩展实战/09.本地背景音乐与共享生命周期/README.md",
+    "../../23.卡牌身份与资源映射/08.本地新卡连续性与同账户保护.md"
+  ],
+  "excluded": [
+    "Full APK/DEX/runtime or game Bundle bytes",
+    "Full Android engineering tree or debug service",
+    "Credentials,signing keys,account backups,personal sessions",
+    "Unfiltered model requests/responses",
+    "Claims of current v1 Android/game/model tests"
+  ]
+}
