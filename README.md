@@ -26,6 +26,7 @@ Android产品、公开Python工具、游戏原版能力是三个范围。手动�
 | Card Editor／幻影引擎 | [tools/card-editor](tools/card-editor/README.md) | Python桌面卡牌JSON、技能树与Bundle；不等于手机编辑器 |
 | Level Editor | [tools/level-editor](tools/level-editor/README.md) | Python关卡配置、事件与Bundle |
 | Audio Tool | [tools/audio-tool](tools/audio-tool/README.md) | 音频提取、转换和替换，外部工具按该项目说明准备 |
+| 纸片人资源工具 | [tools/auto-paper-doll](tools/auto-paper-doll/README.md) | Unity角色资源换皮实验原型；完整引用验证尚未通过 |
 | Local Inventory Mod | [mods/local-inventory](mods/local-inventory/README.md) | 独立静态补丁与本地卡库合同，不等于启动器runtime |
 | 自然语言原版制卡核心 | [tools/natural-card-author](tools/natural-card-author/README.md) | 受约束plan→原版组件／中文／Bundle；按自身v1合同判断 |
 
