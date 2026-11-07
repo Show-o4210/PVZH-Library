@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-31",
+  "updated_at": "2026-11-07",
   "generated_utc": "2026-10-30T16:01:11.187236+00:00",
   "product_context": {
     "public_version": "v1",
@@ -17,7 +17,16 @@
       "R50",
       "R51"
     ],
-    "older_android_records": "historical knowledge and fault background, not current implementation or authority"
+    "older_android_records": "historical knowledge and fault background, not current implementation or authority",
+    "development_supplement": {
+      "internal_revision": "r-2-04",
+      "candidate": "RC1",
+      "baseline": "r-2-03 RC2",
+      "channel": "development",
+      "entry": "24.启动器工作台与手机编辑/05.当前版本能力.md#r-2-04-development",
+      "troubleshooting": "24.启动器工作台与手机编辑/06.故障排查与避坑.md#r-2-04-排障",
+      "formal_v1_snapshot_unchanged": true
+    }
   },
   "coverage": {
     "eligible_markdown_count": 251,
