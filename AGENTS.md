@@ -1,6 +1,6 @@
 # Agent入口与维护规则
 
-先读[文档总索引](文档总索引.md)与[任务路由](agents/README.md)，只加载本次任务需要的资料。当前 Android 正式版为[正式 v3.1／r-2-22 RC1](Library-docs/24.启动器工作台与手机编辑/05.当前版本能力.md)，最新开发候选 r-2-29 RC2 的语言表见[启动器项目](pvzh-launcher/README.md)。教程集中在 [Library-docs](Library-docs/README.md)，故障先查[排障摘要](Library-docs/24.启动器工作台与手机编辑/06.故障排查与避坑.md)。本库不提供完整启动器工程或已部署的调试接口。
+先读[文档总索引](文档总索引.md)与[任务路由](agents/README.md)，只加载本次任务需要的资料。当前 Android 正式版为[正式 v3.1／r-2-22 RC1](Library-docs/24.启动器工作台与手机编辑/05.当前版本能力.md)，最新开发候选 r-2-30 RC1 的英文语言表见[启动器项目](pvzh-launcher/README.md)。教程集中在 [Library-docs](Library-docs/README.md)，故障先查[排障摘要](Library-docs/24.启动器工作台与手机编辑/06.故障排查与避坑.md)。本库不提供完整启动器工程或已部署的调试接口。
 
 ## 现行边界
 

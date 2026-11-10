@@ -2,7 +2,7 @@
 
 A Chinese-language knowledge base of documentation, tools, and practical experience for **Plants vs. Zombies Heroes (PVZH)** mod developers.
 
-The current stable launcher is **v3.1 (r-2-22 RC1)**. The latest development candidate, **r-2-29 RC2**, centralizes the Simplified Chinese UI text. The [capability guide](Library-docs/24.启动器工作台与手机编辑/05.当前版本能力.md) documents v3.1 and r-2-28 RC1 and separates device tests from original-engine results. This repository contains documentation, public tools, and curated evidence. References marked as workspace paths identify records in the full development workspace.
+The current stable launcher is **v3.1 (r-2-22 RC1)**. The latest development candidate, **r-2-30 RC1**, has a [draft English UI catalog](pvzh-launcher/i18n/en-US/). The [capability guide](Library-docs/24.启动器工作台与手机编辑/05.当前版本能力.md) documents v3.1 and r-2-28 RC1 and separates device tests from original-engine results. This repository contains documentation, public tools, and curated evidence. References marked as workspace paths identify records in the full development workspace.
 
 > **Language note:** This README is an English guide to the repository. Most documentation is currently written in Chinese; the links below lead to the original materials unless an English translation is explicitly provided.
 

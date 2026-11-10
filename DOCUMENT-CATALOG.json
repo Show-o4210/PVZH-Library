@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "updated_at": "2026-11-11",
-  "generated_utc": "2026-11-10T18:50:54.157450+00:00",
+  "generated_utc": "2026-11-10T19:34:34.236928+00:00",
   "product_context": {
     "public_version": "v3.1",
     "internal_revision": "r-2-22",
@@ -35,6 +35,15 @@
       "channel": "development",
       "entry": "pvzh-launcher/README.md",
       "catalog": "pvzh-launcher/i18n/zh-CN/"
+    },
+    "launcher_english_preview": {
+      "internal_revision": "r-2-30",
+      "candidate": "RC1",
+      "baseline": "r-2-29 RC2",
+      "channel": "development",
+      "entry": "pvzh-launcher/README.md",
+      "catalog": "pvzh-launcher/i18n/en-US/",
+      "translation_status": "draft"
     }
   },
   "coverage": {
@@ -357,8 +366,7 @@
         "R51",
         "v3.1",
         "r-2-22",
-        "r-2-28",
-        "r-2-29"
+        "r-2-30"
       ],
       "previously_without_inbound_md_link": true
     },
@@ -2661,7 +2669,7 @@
         "v3.1",
         "r-2-22",
         "r-2-28",
-        "r-2-29"
+        "r-2-30"
       ],
       "previously_without_inbound_md_link": false
     },
@@ -2681,7 +2689,7 @@
         "v3.1",
         "r-2-22",
         "r-2-28",
-        "r-2-29"
+        "r-2-30"
       ],
       "previously_without_inbound_md_link": false
     },
@@ -3281,10 +3289,10 @@
       "group": "pvzh-launcher",
       "scope": "recent_stage",
       "scope_label": "近期阶段",
-      "applicability": "r-2-29 RC2 启动器界面语言表与翻译协作入口",
+      "applicability": "r-2-29 RC2 简体中文基准、r-2-30 RC1 英文初稿及翻译协作入口",
       "revision_mentions": [
-        "r-2-28",
-        "r-2-29"
+        "r-2-29",
+        "r-2-30"
       ],
       "previously_without_inbound_md_link": false
     },
@@ -3372,7 +3380,8 @@
         "R42",
         "R48",
         "R51",
-        "r-2-29"
+        "r-2-28",
+        "r-2-30"
       ],
       "previously_without_inbound_md_link": false
     },
