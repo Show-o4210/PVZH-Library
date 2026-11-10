@@ -2,7 +2,7 @@
 
 A Chinese-language knowledge base of documentation, tools, and practical experience for **Plants vs. Zombies Heroes (PVZH)** mod developers.
 
-The current stable launcher is **v3.1 (r-2-22 RC1)**. The latest development candidate is **r-2-28 RC1**. The [capability guide](Library-docs/24.启动器工作台与手机编辑/05.当前版本能力.md) separates release scope, device tests, and original-engine results. This repository contains documentation, public tools, and curated evidence. References marked as workspace paths identify records in the full development workspace.
+The current stable launcher is **v3.1 (r-2-22 RC1)**. The latest development candidate, **r-2-29 RC2**, centralizes the Simplified Chinese UI text. The [capability guide](Library-docs/24.启动器工作台与手机编辑/05.当前版本能力.md) documents v3.1 and r-2-28 RC1 and separates device tests from original-engine results. This repository contains documentation, public tools, and curated evidence. References marked as workspace paths identify records in the full development workspace.
 
 > **Language note:** This README is an English guide to the repository. Most documentation is currently written in Chinese; the links below lead to the original materials unless an English translation is explicitly provided.
 
@@ -16,6 +16,7 @@ The current stable launcher is **v3.1 (r-2-22 RC1)**. The latest development can
 | Check stable and development capabilities and test coverage | [Current capabilities](Library-docs/24.启动器工作台与手机编辑/05.当前版本能力.md) |
 | Troubleshoot launch failures, crashes, errors, or features that do not work | [Troubleshooting and pitfalls](Library-docs/24.启动器工作台与手机编辑/06.故障排查与避坑.md) |
 | Learn about mobile card authoring, artwork, AI, and asset handling | [Chapter 24](Library-docs/24.启动器工作台与手机编辑/README.md) |
+| Learn about the launcher or help translate its interface | [PVZH Launcher](pvzh-launcher/README.md) |
 | Create your first mod | [Introduction](Library-docs/前言.md) → [Toolchain](Library-docs/01.工具链介绍/README.md) → [Standalone basic walkthrough](Library-docs/08-basic-mod-walkthrough.md) |
 | Use an AI agent to carry out tasks | [Agent entry rules](AGENTS.md) → [Task routing](agents/README.md) |
 | Look up original card, level, or localization data | [Card data](Library-docs/02.卡牌数据说明/README.md) · [Level index](Library-docs/09.关卡修改/INDEX.md) · [Localization](Library-docs/03.本地化说明/README.md) |
