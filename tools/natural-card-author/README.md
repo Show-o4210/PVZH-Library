@@ -47,7 +47,7 @@ python cli.py inspect --input 'C:/work/original'
 
 [knowledge.md](knowledge.md)是给模型的简明合同，[plan.schema.json](plan.schema.json)供UI或API做形状校验。最终判定仍在`core.py`，包括同阵营、目标／动作配对、引用存在、递归组件唯一性、原版枚举、属性显示同步、非目标卡／中文不变。规则1001及以上会被拒绝。
 
-API集成可直接导入`NativeCatalog`、`planner.messages/generate`、`write_card`，不需要运行shell。完整方法、能力边界与评测见[第22章](../../22.自然语言原版制卡/README.md)。
+API集成可直接导入`NativeCatalog`、`planner.messages/generate`、`write_card`，不需要运行shell。完整方法、能力边界与评测见[第22章](../../Library-docs/22.自然语言原版制卡/README.md)。
 
 ```powershell
 $env:PVZH_NATIVE_INPUT='C:/work/original'
@@ -66,4 +66,4 @@ python benchmark.py --input 'C:/work/original' --output 'C:/work/live-v1' --live
 
 默认是离线预期检查；replay只回放脱敏的历史模型计划，live才计费，32例最多8个四例批次。公开记录是校准过程中选定的结果，不是最新提示词在全新样本上的一次性成功率；历史误拒绝与回包／评测助手失败见第22章验收。
 
-本工具的PASS仅指需求对照、结构与回包检查，不代表战斗、AI预测、专属动画或所有组合已通过。现有游戏、APK、资源选择器和此前mod均不因本工具改变。后续用户另行授权的独立设备抽样见[第22章04](../../22.自然语言原版制卡/04.API卡牌独立真机抽测.md)，不改变旧构建报告的未测标识。
+本工具的PASS仅指需求对照、结构与回包检查，不代表战斗、AI预测、专属动画或所有组合已通过。现有游戏、APK、资源选择器和此前mod均不因本工具改变。后续用户另行授权的独立设备抽样见[第22章04](../../Library-docs/22.自然语言原版制卡/04.API卡牌独立真机抽测.md)，不改变旧构建报告的未测标识。

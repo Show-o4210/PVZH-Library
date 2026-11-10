@@ -1,36 +1,37 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-07",
-  "generated_utc": "2026-10-30T16:01:11.187236+00:00",
+  "updated_at": "2026-11-11",
+  "generated_utc": "2026-11-10T17:39:55.271123+00:00",
   "product_context": {
-    "public_version": "v1",
-    "internal_revision": "R51",
+    "public_version": "v3.1",
+    "internal_revision": "r-2-22",
+    "candidate": "RC1",
     "maintained_revision_window": [
-      "R42",
-      "R43",
-      "R44",
-      "R45",
-      "R46",
-      "R47",
-      "R48",
-      "R49",
-      "R50",
-      "R51"
+      "r-2-19",
+      "r-2-20",
+      "r-2-21",
+      "r-2-22",
+      "r-2-23",
+      "r-2-24",
+      "r-2-25",
+      "r-2-26",
+      "r-2-27",
+      "r-2-28"
     ],
     "older_android_records": "historical knowledge and fault background, not current implementation or authority",
+    "tutorial_index": "Library-docs/README.md",
     "development_supplement": {
-      "internal_revision": "r-2-04",
+      "internal_revision": "r-2-28",
       "candidate": "RC1",
-      "baseline": "r-2-03 RC2",
+      "baseline": "r-2-27 RC2",
       "channel": "development",
-      "entry": "24.启动器工作台与手机编辑/05.当前版本能力.md#r-2-04-development",
-      "troubleshooting": "24.启动器工作台与手机编辑/06.故障排查与避坑.md#r-2-04-排障",
-      "formal_v1_snapshot_unchanged": true
+      "entry": "Library-docs/24.启动器工作台与手机编辑/05.当前版本能力.md#2026-11-11-当前版本",
+      "troubleshooting": "Library-docs/24.启动器工作台与手机编辑/06.故障排查与避坑.md"
     }
   },
   "coverage": {
-    "eligible_markdown_count": 251,
-    "indexed_markdown_count": 251,
+    "eligible_markdown_count": 254,
+    "indexed_markdown_count": 254,
     "missing": [],
     "baseline_markdown_count": 248,
     "previously_without_inbound_md_link_count": 15,
@@ -45,10 +46,10 @@
       "tools/natural-card-author/AGENTS.md",
       "资源/旧参考/笔记/UUID-TEXTURE-AssetPathsManifest.md",
       "资源/旧参考/笔记/frida经验.md",
-      "资源/旧参考/笔记/md文档/PVZH-增加新资源办法 v2.md",
-      "资源/旧参考/笔记/md文档/PVZH-增加新资源办法 注解.md",
-      "资源/旧参考/笔记/md文档/Unity_2D_AssetBundle_Modding_Guide.md",
-      "资源/旧参考/笔记/md文档/视频接入教程.md",
+      "Library-docs/历史教程/PVZH-增加新资源办法 v2.md",
+      "Library-docs/历史教程/PVZH-增加新资源办法 注解.md",
+      "Library-docs/历史教程/Unity_2D_AssetBundle_Modding_Guide.md",
+      "Library-docs/历史教程/视频接入教程.md",
       "资源/旧参考/笔记/旧/技能库统计.md"
     ],
     "previous_inbound_definition": "No inbound local Markdown/HTML link from another eligible MD; self links excluded. Not a claim that filenames were impossible to discover.",
@@ -78,11 +79,11 @@
   "scope_definitions": {
     "current_product": {
       "label": "当前产品",
-      "meaning": "正式v1／内部R51的能力、故障与入口摘要；只代表文内列明的层级"
+      "meaning": "v3.1 正式版与 r-2-28 RC1 开发候选的能力、故障与入口；验收按文内版本和层级"
     },
     "recent_stage": {
       "label": "近期阶段",
-      "meaning": "R42–R48来源／界面参考，不是正式v1最终收据"
+      "meaning": "分版本的功能、来源和界面参考，适用范围以各节为准"
     },
     "tool_contract": {
       "label": "工具合同",
@@ -122,7 +123,7 @@
       "id": "root",
       "title": "导航、入门与许可",
       "anchor": "root",
-      "count": 7
+      "count": 10
     },
     {
       "id": "24.启动器工作台与手机编辑",
@@ -278,7 +279,7 @@
       "id": "agents",
       "title": "Agent任务指南",
       "anchor": "agents",
-      "count": 23
+      "count": 22
     },
     {
       "id": "agent_checks",
@@ -305,6 +306,12 @@
       "count": 1
     },
     {
+      "id": "tools/auto-paper-doll",
+      "title": "纸片人资源工具",
+      "anchor": "tools-auto-paper-doll",
+      "count": 1
+    },
+    {
       "id": "tools/natural-card-author",
       "title": "自然语言原版制卡公开核心",
       "anchor": "tools-natural-card-author",
@@ -318,14 +325,40 @@
     },
     {
       "id": "legacy_notes",
-      "title": "旧参考笔记",
+      "title": "历史教程与旧参考",
       "anchor": "legacy_notes",
       "count": 7
     }
   ],
   "documents": [
     {
-      "path": "00.游戏介绍/README.md",
+      "path": "AGENTS.md",
+      "title": "Agent入口与维护规则",
+      "group": "root",
+      "scope": "maintenance",
+      "scope_label": "维护导航",
+      "applicability": "当前导航、协作或许可入口；发布授权不从历史文档继承",
+      "revision_mentions": [
+        "R42",
+        "R51",
+        "v3.1",
+        "r-2-22",
+        "r-2-28"
+      ],
+      "previously_without_inbound_md_link": true
+    },
+    {
+      "path": "LICENSES.md",
+      "title": "许可证索引",
+      "group": "root",
+      "scope": "maintenance",
+      "scope_label": "维护导航",
+      "applicability": "当前导航、协作或许可入口；发布授权不从历史文档继承",
+      "revision_mentions": [],
+      "previously_without_inbound_md_link": false
+    },
+    {
+      "path": "Library-docs/00.游戏介绍/README.md",
       "title": "00. 游戏介绍",
       "group": "00.游戏介绍",
       "scope": "data_method",
@@ -335,7 +368,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "01.工具链介绍/01.社区专属工具集.md",
+      "path": "Library-docs/01.工具链介绍/01.社区专属工具集.md",
       "title": "01. 社区专属工具集（休切尔工具链）",
       "group": "01.工具链介绍",
       "scope": "data_method",
@@ -345,7 +378,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "01.工具链介绍/02.UABEA基础使用指南.md",
+      "path": "Library-docs/01.工具链介绍/02.UABEA基础使用指南.md",
       "title": "02. UABEA 基础使用指南",
       "group": "01.工具链介绍",
       "scope": "data_method",
@@ -355,7 +388,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "01.工具链介绍/README.md",
+      "path": "Library-docs/01.工具链介绍/README.md",
       "title": "01. 工具链介绍",
       "group": "01.工具链介绍",
       "scope": "data_method",
@@ -365,7 +398,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "02.卡牌数据说明/01.基础属性与元数据.md",
+      "path": "Library-docs/02.卡牌数据说明/01.基础属性与元数据.md",
       "title": "01. 基础属性与元数据",
       "group": "02.卡牌数据说明",
       "scope": "data_method",
@@ -375,7 +408,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "02.卡牌数据说明/02.底层JSON组件结构.md",
+      "path": "Library-docs/02.卡牌数据说明/02.底层JSON组件结构.md",
       "title": "02. 底层 JSON 组件结构",
       "group": "02.卡牌数据说明",
       "scope": "data_method",
@@ -391,7 +424,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "02.卡牌数据说明/03.技能逻辑树与EffectEntities.md",
+      "path": "Library-docs/02.卡牌数据说明/03.技能逻辑树与EffectEntities.md",
       "title": "03. 技能逻辑树与 EffectEntities",
       "group": "02.卡牌数据说明",
       "scope": "data_method",
@@ -401,7 +434,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "02.卡牌数据说明/04.Card-Editor与JSON映射指南.md",
+      "path": "Library-docs/02.卡牌数据说明/04.Card-Editor与JSON映射指南.md",
       "title": "04. Card-Editor 与 JSON 映射指南",
       "group": "02.卡牌数据说明",
       "scope": "data_method",
@@ -411,7 +444,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "02.卡牌数据说明/05.手动修改最佳实践与新建卡牌指南.md",
+      "path": "Library-docs/02.卡牌数据说明/05.手动修改最佳实践与新建卡牌指南.md",
       "title": "05. 手动修改最佳实践与新建卡牌指南",
       "group": "02.卡牌数据说明",
       "scope": "data_method",
@@ -423,7 +456,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "02.卡牌数据说明/06.技能效果JSON复制模板.md",
+      "path": "Library-docs/02.卡牌数据说明/06.技能效果JSON复制模板.md",
       "title": "06. 技能效果 JSON 复制模板 (Effects)",
       "group": "02.卡牌数据说明",
       "scope": "data_method",
@@ -433,7 +466,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "02.卡牌数据说明/07.检测与判定逻辑JSON复制模板.md",
+      "path": "Library-docs/02.卡牌数据说明/07.检测与判定逻辑JSON复制模板.md",
       "title": "07. 检测与判定逻辑 JSON 复制模板 (Queries & Filters)",
       "group": "02.卡牌数据说明",
       "scope": "data_method",
@@ -443,7 +476,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "02.卡牌数据说明/08.触发条件与时机JSON复制模板.md",
+      "path": "Library-docs/02.卡牌数据说明/08.触发条件与时机JSON复制模板.md",
       "title": "08. 触发条件与时机 JSON 复制模板 (Triggers)",
       "group": "02.卡牌数据说明",
       "scope": "data_method",
@@ -453,7 +486,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "02.卡牌数据说明/09.目标选择器JSON复制模板.md",
+      "path": "Library-docs/02.卡牌数据说明/09.目标选择器JSON复制模板.md",
       "title": "09. 目标选择器 JSON 复制模板 (Targets)",
       "group": "02.卡牌数据说明",
       "scope": "data_method",
@@ -463,7 +496,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "02.卡牌数据说明/README.md",
+      "path": "Library-docs/02.卡牌数据说明/README.md",
       "title": "02. 卡牌数据说明 (card_data)",
       "group": "02.卡牌数据说明",
       "scope": "data_method",
@@ -473,7 +506,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "03.本地化说明/01.文件结构与UABEA导出.md",
+      "path": "Library-docs/03.本地化说明/01.文件结构与UABEA导出.md",
       "title": "01. 文件结构与 UABEA 导出",
       "group": "03.本地化说明",
       "scope": "data_method",
@@ -483,7 +516,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "03.本地化说明/02.键名规范与后缀索引.md",
+      "path": "Library-docs/03.本地化说明/02.键名规范与后缀索引.md",
       "title": "02. 键名规范与后缀索引",
       "group": "03.本地化说明",
       "scope": "data_method",
@@ -495,7 +528,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "03.本地化说明/03.富文本与图标标记语法.md",
+      "path": "Library-docs/03.本地化说明/03.富文本与图标标记语法.md",
       "title": "03. 富文本与图标标记语法",
       "group": "03.本地化说明",
       "scope": "data_method",
@@ -505,7 +538,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "03.本地化说明/04.复用引用与批量翻译工作流.md",
+      "path": "Library-docs/03.本地化说明/04.复用引用与批量翻译工作流.md",
       "title": "04. 复用引用与批量翻译工作流",
       "group": "03.本地化说明",
       "scope": "data_method",
@@ -515,7 +548,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "03.本地化说明/05.文言中文包实战与验收.md",
+      "path": "Library-docs/03.本地化说明/05.文言中文包实战与验收.md",
       "title": "05. 文言中文包实战与验收",
       "group": "03.本地化说明",
       "scope": "data_method",
@@ -525,7 +558,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "03.本地化说明/README.md",
+      "path": "Library-docs/03.本地化说明/README.md",
       "title": "03. 本地化说明 (Localization)",
       "group": "03.本地化说明",
       "scope": "data_method",
@@ -535,7 +568,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "04.贴图简单修改/01.定位卡牌贴图AssetBundle.md",
+      "path": "Library-docs/04.贴图简单修改/01.定位卡牌贴图AssetBundle.md",
       "title": "01. 定位卡牌贴图 AssetBundle",
       "group": "04.贴图简单修改",
       "scope": "data_method",
@@ -545,7 +578,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "04.贴图简单修改/02.贴图Bundle解构与实例分析.md",
+      "path": "Library-docs/04.贴图简单修改/02.贴图Bundle解构与实例分析.md",
       "title": "02. 贴图 Bundle 解构与实例分析",
       "group": "04.贴图简单修改",
       "scope": "data_method",
@@ -555,7 +588,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "04.贴图简单修改/03.UABEA贴图导出与替换教程.md",
+      "path": "Library-docs/04.贴图简单修改/03.UABEA贴图导出与替换教程.md",
       "title": "03. UABEA 贴图导出与替换教程",
       "group": "04.贴图简单修改",
       "scope": "data_method",
@@ -565,7 +598,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "04.贴图简单修改/04.规格尺寸与避坑指南.md",
+      "path": "Library-docs/04.贴图简单修改/04.规格尺寸与避坑指南.md",
       "title": "04. 规格尺寸与避坑指南",
       "group": "04.贴图简单修改",
       "scope": "data_method",
@@ -575,7 +608,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "04.贴图简单修改/README.md",
+      "path": "Library-docs/04.贴图简单修改/README.md",
       "title": "04. 贴图简单修改",
       "group": "04.贴图简单修改",
       "scope": "data_method",
@@ -585,7 +618,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "05.贴图中级修改/01.A包与B包及指针重定向机制.md",
+      "path": "Library-docs/05.贴图中级修改/01.A包与B包及指针重定向机制.md",
       "title": "01. A包与B包及指针重定向机制",
       "group": "05.贴图中级修改",
       "scope": "data_method",
@@ -595,7 +628,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "05.贴图中级修改/02.三位一体结构与Dump安全扩容.md",
+      "path": "Library-docs/05.贴图中级修改/02.三位一体结构与Dump安全扩容.md",
       "title": "02. 三位一体结构与 Dump 安全扩容",
       "group": "05.贴图中级修改",
       "scope": "data_method",
@@ -605,7 +638,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "05.贴图中级修改/03.普通卡牌节点插入实战教程.md",
+      "path": "Library-docs/05.贴图中级修改/03.普通卡牌节点插入实战教程.md",
       "title": "03. 普通卡牌节点插入实战教程",
       "group": "05.贴图中级修改",
       "scope": "data_method",
@@ -615,7 +648,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "05.贴图中级修改/04.进阶异常排查与故障诊断.md",
+      "path": "Library-docs/05.贴图中级修改/04.进阶异常排查与故障诊断.md",
       "title": "04. 进阶异常排查与故障诊断",
       "group": "05.贴图中级修改",
       "scope": "data_method",
@@ -625,7 +658,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "05.贴图中级修改/README.md",
+      "path": "Library-docs/05.贴图中级修改/README.md",
       "title": "05. 贴图中级修改",
       "group": "05.贴图中级修改",
       "scope": "data_method",
@@ -635,7 +668,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "06.动画修改/01.Unity2D动画机制与核心组件.md",
+      "path": "Library-docs/06.动画修改/01.Unity2D动画机制与核心组件.md",
       "title": "01. Unity 2D 动画机制与核心组件",
       "group": "06.动画修改",
       "scope": "data_method",
@@ -645,7 +678,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "06.动画修改/02.耀斑花娘化Mod架构深度剖析.md",
+      "path": "Library-docs/06.动画修改/02.耀斑花娘化Mod架构深度剖析.md",
       "title": "02. 耀斑花娘化 Mod 架构深度剖析",
       "group": "06.动画修改",
       "scope": "data_method",
@@ -655,7 +688,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "06.动画修改/03.17组核心动作序列与重定向实战.md",
+      "path": "Library-docs/06.动画修改/03.17组核心动作序列与重定向实战.md",
       "title": "03. 17 组核心动作序列与重定向实战",
       "group": "06.动画修改",
       "scope": "data_method",
@@ -665,7 +698,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "06.动画修改/04.关键帧Dump与动画避坑指南.md",
+      "path": "Library-docs/06.动画修改/04.关键帧Dump与动画避坑指南.md",
       "title": "04. 关键帧 Dump 与动画避坑指南",
       "group": "06.动画修改",
       "scope": "data_method",
@@ -675,7 +708,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "06.动画修改/README.md",
+      "path": "Library-docs/06.动画修改/README.md",
       "title": "06. 动画修改",
       "group": "06.动画修改",
       "scope": "data_method",
@@ -685,7 +718,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "07.音频修改/01.音频双重存储路径解析.md",
+      "path": "Library-docs/07.音频修改/01.音频双重存储路径解析.md",
       "title": "01. 音频双重存储路径解析",
       "group": "07.音频修改",
       "scope": "data_method",
@@ -695,7 +728,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "07.音频修改/02.明文wem音频与Wwise软件替换.md",
+      "path": "Library-docs/07.音频修改/02.明文wem音频与Wwise软件替换.md",
       "title": "02. 明文 WEM 音频与 Wwise 软件替换",
       "group": "07.音频修改",
       "scope": "data_method",
@@ -705,7 +738,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "07.音频修改/03.AB包内BKHD SoundBank解构与手改警告.md",
+      "path": "Library-docs/07.音频修改/03.AB包内BKHD SoundBank解构与手改警告.md",
       "title": "03. AB 包内 BKHD SoundBank 解构与手改警告",
       "group": "07.音频修改",
       "scope": "data_method",
@@ -715,7 +748,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "07.音频修改/04.QuickBMS与社区工具自动化替换.md",
+      "path": "Library-docs/07.音频修改/04.QuickBMS与社区工具自动化替换.md",
       "title": "04. QuickBMS 与社区工具自动化替换",
       "group": "07.音频修改",
       "scope": "data_method",
@@ -725,7 +758,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "07.音频修改/05.背景音乐结构与完整提取.md",
+      "path": "Library-docs/07.音频修改/05.背景音乐结构与完整提取.md",
       "title": "05. 背景音乐结构与完整提取",
       "group": "07.音频修改",
       "scope": "data_method",
@@ -735,7 +768,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "07.音频修改/06.wwiser与vgmstream音乐编排导出.md",
+      "path": "Library-docs/07.音频修改/06.wwiser与vgmstream音乐编排导出.md",
       "title": "06. wwiser 与 vgmstream 音乐编排导出",
       "group": "07.音频修改",
       "scope": "data_method",
@@ -747,7 +780,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "07.音频修改/07.动态音频追踪与导出质量核对.md",
+      "path": "Library-docs/07.音频修改/07.动态音频追踪与导出质量核对.md",
       "title": "07. 动态音频追踪与导出质量核对",
       "group": "07.音频修改",
       "scope": "data_method",
@@ -757,7 +790,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "07.音频修改/README.md",
+      "path": "Library-docs/07.音频修改/README.md",
       "title": "07. 音频修改与背景音乐提取",
       "group": "07.音频修改",
       "scope": "data_method",
@@ -767,7 +800,17 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "08.加入新组件-视频/01.视频播放原理与Unity模板生成.md",
+      "path": "Library-docs/08-basic-mod-walkthrough.md",
+      "title": "08 · 从原包到可复查成品：独立基础示例",
+      "group": "root",
+      "scope": "agent_reference",
+      "scope_label": "任务方法",
+      "applicability": "基础制作／验收方法与案例，具体输入和版本按文内边界核对",
+      "revision_mentions": [],
+      "previously_without_inbound_md_link": false
+    },
+    {
+      "path": "Library-docs/08.加入新组件-视频/01.视频播放原理与Unity模板生成.md",
       "title": "01. 视频播放原理与 Unity 模板生成",
       "group": "08.加入新组件-视频",
       "scope": "data_method",
@@ -777,7 +820,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "08.加入新组件-视频/02.UABEA组件注入与PPtr链路重绑.md",
+      "path": "Library-docs/08.加入新组件-视频/02.UABEA组件注入与PPtr链路重绑.md",
       "title": "02. UABEA 组件注入与 PPtr 链路重绑",
       "group": "08.加入新组件-视频",
       "scope": "data_method",
@@ -787,7 +830,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "08.加入新组件-视频/03.网格FullRect化与声音处理避坑指南.md",
+      "path": "Library-docs/08.加入新组件-视频/03.网格FullRect化与声音处理避坑指南.md",
       "title": "03. 网格 FullRect 化与声音处理避坑指南",
       "group": "08.加入新组件-视频",
       "scope": "data_method",
@@ -797,7 +840,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "08.加入新组件-视频/04.英雄与普通卡牌视频挂载差异总结.md",
+      "path": "Library-docs/08.加入新组件-视频/04.英雄与普通卡牌视频挂载差异总结.md",
       "title": "PVZH 视频挂载：英雄 vs 普通卡牌 — 实战差异总结",
       "group": "08.加入新组件-视频",
       "scope": "data_method",
@@ -807,7 +850,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "08.加入新组件-视频/README.md",
+      "path": "Library-docs/08.加入新组件-视频/README.md",
       "title": "08. 加入新组件-视频 (视频卡牌接入)",
       "group": "08.加入新组件-视频",
       "scope": "data_method",
@@ -817,7 +860,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "09.关卡修改/01.关卡存储路径与中文映射查找.md",
+      "path": "Library-docs/09.关卡修改/01.关卡存储路径与中文映射查找.md",
       "title": "01. 关卡存储路径与中文映射查找",
       "group": "09.关卡修改",
       "scope": "data_method",
@@ -827,7 +870,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "09.关卡修改/02.关卡JSON数据结构详解.md",
+      "path": "Library-docs/09.关卡修改/02.关卡JSON数据结构详解.md",
       "title": "02. 关卡 JSON 数据结构详解",
       "group": "09.关卡修改",
       "scope": "data_method",
@@ -839,7 +882,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "09.关卡修改/03.剧情与解密发牌事件配置.md",
+      "path": "Library-docs/09.关卡修改/03.剧情与解密发牌事件配置.md",
       "title": "03. 剧情与解密发牌事件配置",
       "group": "09.关卡修改",
       "scope": "data_method",
@@ -849,7 +892,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "09.关卡修改/04.PVZH-Level-Editor工具使用指南.md",
+      "path": "Library-docs/09.关卡修改/04.PVZH-Level-Editor工具使用指南.md",
       "title": "04. PVZH-Level-Editor 工具使用指南",
       "group": "09.关卡修改",
       "scope": "data_method",
@@ -859,7 +902,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "09.关卡修改/05.资料纠错与按需调用规则.md",
+      "path": "Library-docs/09.关卡修改/05.资料纠错与按需调用规则.md",
       "title": "关卡资料纠错与按需调用规则",
       "group": "09.关卡修改",
       "scope": "data_method",
@@ -872,7 +915,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "09.关卡修改/06.组件语义与时序边界.md",
+      "path": "Library-docs/09.关卡修改/06.组件语义与时序边界.md",
       "title": "关卡组件语义与时序边界",
       "group": "09.关卡修改",
       "scope": "data_method",
@@ -884,7 +927,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "09.关卡修改/07.AI工作台关卡短操作与自动卡牌映射.md",
+      "path": "Library-docs/09.关卡修改/07.AI工作台关卡短操作与自动卡牌映射.md",
       "title": "AI工作台关卡短操作与自动卡牌映射",
       "group": "09.关卡修改",
       "scope": "historical_reference",
@@ -897,7 +940,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "09.关卡修改/08.固定人机脚本与给牌前提.md",
+      "path": "Library-docs/09.关卡修改/08.固定人机脚本与给牌前提.md",
       "title": "固定人机脚本与给牌前提",
       "group": "09.关卡修改",
       "scope": "historical_reference",
@@ -910,7 +953,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "09.关卡修改/09.原版场景能力目录.md",
+      "path": "Library-docs/09.关卡修改/09.原版场景能力目录.md",
       "title": "原版场景能力目录",
       "group": "09.关卡修改",
       "scope": "data_method",
@@ -922,7 +965,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "09.关卡修改/INDEX.md",
+      "path": "Library-docs/09.关卡修改/INDEX.md",
       "title": "关卡资料索引与使用边界",
       "group": "09.关卡修改",
       "scope": "data_method",
@@ -940,7 +983,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "09.关卡修改/README.md",
+      "path": "Library-docs/09.关卡修改/README.md",
       "title": "09. 关卡修改",
       "group": "09.关卡修改",
       "scope": "data_method",
@@ -952,7 +995,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "10.卡组与AI构筑修改/01.卡组存储位置与decks.json解析.md",
+      "path": "Library-docs/10.卡组与AI构筑修改/01.卡组存储位置与decks.json解析.md",
       "title": "01. 卡组存储位置与 decks.json 解析",
       "group": "10.卡组与AI构筑修改",
       "scope": "data_method",
@@ -965,7 +1008,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "10.卡组与AI构筑修改/02.卡组JSON数据结构与40张构筑规则.md",
+      "path": "Library-docs/10.卡组与AI构筑修改/02.卡组JSON数据结构与40张构筑规则.md",
       "title": "02. 卡组 JSON 数据结构与 40 张构筑规则",
       "group": "10.卡组与AI构筑修改",
       "scope": "data_method",
@@ -977,7 +1020,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "10.卡组与AI构筑修改/03.AI构筑逻辑与策略推荐卡组修改.md",
+      "path": "Library-docs/10.卡组与AI构筑修改/03.AI构筑逻辑与策略推荐卡组修改.md",
       "title": "03. AI 构筑逻辑与策略推荐卡组修改",
       "group": "10.卡组与AI构筑修改",
       "scope": "data_method",
@@ -989,7 +1032,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "10.卡组与AI构筑修改/04.全卡牌解锁与本地存档调试.md",
+      "path": "Library-docs/10.卡组与AI构筑修改/04.全卡牌解锁与本地存档调试.md",
       "title": "04. 全卡牌解锁与本地存档调试",
       "group": "10.卡组与AI构筑修改",
       "scope": "data_method",
@@ -999,7 +1042,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "10.卡组与AI构筑修改/README.md",
+      "path": "Library-docs/10.卡组与AI构筑修改/README.md",
       "title": "10. 卡组与 AI 构筑修改",
       "group": "10.卡组与AI构筑修改",
       "scope": "data_method",
@@ -1009,7 +1052,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "11.静态高级实战/01.从Frida避坑到全静态Patch方案选择.md",
+      "path": "Library-docs/11.静态高级实战/01.从Frida避坑到全静态Patch方案选择.md",
       "title": "01. 从 Frida 避坑到全静态 Patch 方案选择",
       "group": "11.静态高级实战",
       "scope": "historical_reference",
@@ -1019,7 +1062,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "11.静态高级实战/02.libil2cpp.so静态Patch原理与v3c汇编注入.md",
+      "path": "Library-docs/11.静态高级实战/02.libil2cpp.so静态Patch原理与v3c汇编注入.md",
       "title": "02. libil2cpp.so 静态 Patch 原理与 v3c 汇编注入",
       "group": "11.静态高级实战",
       "scope": "historical_reference",
@@ -1029,7 +1072,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "11.静态高级实战/03.inventory_extra.json本地卡库合并机制.md",
+      "path": "Library-docs/11.静态高级实战/03.inventory_extra.json本地卡库合并机制.md",
       "title": "03. inventory_extra.json 本地卡库合并机制",
       "group": "11.静态高级实战",
       "scope": "historical_reference",
@@ -1039,7 +1082,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "11.静态高级实战/04.自动化Patch构建与真机部署实战.md",
+      "path": "Library-docs/11.静态高级实战/04.自动化Patch构建与真机部署实战.md",
       "title": "04. 自动化 Patch 构建与真机部署实战",
       "group": "11.静态高级实战",
       "scope": "historical_reference",
@@ -1049,7 +1092,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "11.静态高级实战/README.md",
+      "path": "Library-docs/11.静态高级实战/README.md",
       "title": "11. 静态高级实战：libil2cpp.so 静态补丁与本地全卡牌解锁",
       "group": "11.静态高级实战",
       "scope": "historical_reference",
@@ -1059,7 +1102,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "12.静态高级实战2/01.从库存Merge到ModBase能力扩展架构.md",
+      "path": "Library-docs/12.静态高级实战2/01.从库存Merge到ModBase能力扩展架构.md",
       "title": "01. 从库存 Merge 到 Mod Base 能力扩展架构",
       "group": "12.静态高级实战2",
       "scope": "historical_reference",
@@ -1069,7 +1112,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "12.静态高级实战2/02.GrantAbility赋甲ProcessEffect特判与组件安全挂载.md",
+      "path": "Library-docs/12.静态高级实战2/02.GrantAbility赋甲ProcessEffect特判与组件安全挂载.md",
       "title": "02. GrantAbility 赋甲：ProcessEffect 特判与组件安全挂载",
       "group": "12.静态高级实战2",
       "scope": "historical_reference",
@@ -1079,7 +1122,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "12.静态高级实战2/03.装甲UI双轨History发报与Sprite映射.md",
+      "path": "Library-docs/12.静态高级实战2/03.装甲UI双轨History发报与Sprite映射.md",
       "title": "03. 装甲 UI 双轨：History 发报与 Sprite 映射",
       "group": "12.静态高级实战2",
       "scope": "historical_reference",
@@ -1089,7 +1132,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "12.静态高级实战2/04.多点静态补丁错误档案与扩展检查表.md",
+      "path": "Library-docs/12.静态高级实战2/04.多点静态补丁错误档案与扩展检查表.md",
       "title": "04. 多点静态补丁、错误档案与扩展检查表",
       "group": "12.静态高级实战2",
       "scope": "historical_reference",
@@ -1099,7 +1142,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "12.静态高级实战2/README.md",
+      "path": "Library-docs/12.静态高级实战2/README.md",
       "title": "12. 静态高级实战 2：Mod Base 能力扩展与 Grant 赋甲",
       "group": "12.静态高级实战2",
       "scope": "historical_reference",
@@ -1111,7 +1154,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "13.贴图资源拼接/01.从Unity部件到完整角色.md",
+      "path": "Library-docs/13.贴图资源拼接/01.从Unity部件到完整角色.md",
       "title": "01. 从 Unity 部件到完整角色",
       "group": "13.贴图资源拼接",
       "scope": "data_method",
@@ -1121,7 +1164,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "13.贴图资源拼接/02.批量拼接脚本使用指南.md",
+      "path": "Library-docs/13.贴图资源拼接/02.批量拼接脚本使用指南.md",
       "title": "02. 批量拼接脚本使用指南",
       "group": "13.贴图资源拼接",
       "scope": "data_method",
@@ -1131,7 +1174,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "13.贴图资源拼接/03.显隐规则与异常排查.md",
+      "path": "Library-docs/13.贴图资源拼接/03.显隐规则与异常排查.md",
       "title": "03. 显隐规则与异常排查",
       "group": "13.贴图资源拼接",
       "scope": "data_method",
@@ -1141,7 +1184,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "13.贴图资源拼接/README.md",
+      "path": "Library-docs/13.贴图资源拼接/README.md",
       "title": "13. 贴图资源拼接",
       "group": "13.贴图资源拼接",
       "scope": "data_method",
@@ -1151,7 +1194,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "14.动画资源提取/01.从idle首帧到完整动画.md",
+      "path": "Library-docs/14.动画资源提取/01.从idle首帧到完整动画.md",
       "title": "01. 从 idle 首帧到完整动画",
       "group": "14.动画资源提取",
       "scope": "data_method",
@@ -1161,7 +1204,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "14.动画资源提取/02.动画提取脚本使用指南.md",
+      "path": "Library-docs/14.动画资源提取/02.动画提取脚本使用指南.md",
       "title": "02. 动画提取脚本使用指南",
       "group": "14.动画资源提取",
       "scope": "data_method",
@@ -1171,7 +1214,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "14.动画资源提取/03.渲染质量与异常排查.md",
+      "path": "Library-docs/14.动画资源提取/03.渲染质量与异常排查.md",
       "title": "03. 渲染质量与异常排查",
       "group": "14.动画资源提取",
       "scope": "data_method",
@@ -1181,7 +1224,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "14.动画资源提取/README.md",
+      "path": "Library-docs/14.动画资源提取/README.md",
       "title": "14. 动画资源提取",
       "group": "14.动画资源提取",
       "scope": "data_method",
@@ -1191,7 +1234,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "15.动态运行时初探/01.动态分析与Frida环境搭建避坑.md",
+      "path": "Library-docs/15.动态运行时初探/01.动态分析与Frida环境搭建避坑.md",
       "title": "01. 动态分析与 Frida 环境搭建避坑",
       "group": "15.动态运行时初探",
       "scope": "historical_reference",
@@ -1201,7 +1244,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "15.动态运行时初探/02.IL2CPP符号表dump与内存查表实战.md",
+      "path": "Library-docs/15.动态运行时初探/02.IL2CPP符号表dump与内存查表实战.md",
       "title": "02. IL2CPP 符号表 dump 与内存查表实战",
       "group": "15.动态运行时初探",
       "scope": "historical_reference",
@@ -1211,7 +1254,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "15.动态运行时初探/03.Native与Java双轨Hook基础范式.md",
+      "path": "Library-docs/15.动态运行时初探/03.Native与Java双轨Hook基础范式.md",
       "title": "03. Native 与 Java 双轨 Hook 基础范式",
       "group": "15.动态运行时初探",
       "scope": "historical_reference",
@@ -1221,7 +1264,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "15.动态运行时初探/04.内存探索诊断与实时日志排查.md",
+      "path": "Library-docs/15.动态运行时初探/04.内存探索诊断与实时日志排查.md",
       "title": "04. 内存探索诊断与实时日志排查",
       "group": "15.动态运行时初探",
       "scope": "historical_reference",
@@ -1231,7 +1274,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "15.动态运行时初探/README.md",
+      "path": "Library-docs/15.动态运行时初探/README.md",
       "title": "15. 动态运行时初探：Frida 动态插桩与内存探索",
       "group": "15.动态运行时初探",
       "scope": "historical_reference",
@@ -1241,7 +1284,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "16.免Root移动端落地/01.从Frida-Server到Gadget免Root架构跃迁.md",
+      "path": "Library-docs/16.免Root移动端落地/01.从Frida-Server到Gadget免Root架构跃迁.md",
       "title": "01. 从 Frida-Server 到 Gadget 免 Root 架构跃迁",
       "group": "16.免Root移动端落地",
       "scope": "historical_reference",
@@ -1251,7 +1294,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "16.免Root移动端落地/02.Gadget与自研脚本编译构建流.md",
+      "path": "Library-docs/16.免Root移动端落地/02.Gadget与自研脚本编译构建流.md",
       "title": "02. Gadget 与自研脚本编译构建流",
       "group": "16.免Root移动端落地",
       "scope": "historical_reference",
@@ -1261,7 +1304,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "16.免Root移动端落地/03.APK解包注入与Unity入口劫持实战.md",
+      "path": "Library-docs/16.免Root移动端落地/03.APK解包注入与Unity入口劫持实战.md",
       "title": "03. APK 解包注入与 Unity 入口劫持实战",
       "group": "16.免Root移动端落地",
       "scope": "historical_reference",
@@ -1271,7 +1314,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "16.免Root移动端落地/04.签名持久化与无缝覆盖安装规范.md",
+      "path": "Library-docs/16.免Root移动端落地/04.签名持久化与无缝覆盖安装规范.md",
       "title": "04. 签名持久化与无缝覆盖安装规范",
       "group": "16.免Root移动端落地",
       "scope": "historical_reference",
@@ -1281,7 +1324,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "16.免Root移动端落地/README.md",
+      "path": "Library-docs/16.免Root移动端落地/README.md",
       "title": "16. 免 Root 移动端落地：Frida Gadget 嵌入与 APK 重打包",
       "group": "16.免Root移动端落地",
       "scope": "historical_reference",
@@ -1291,7 +1334,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "17.Unity引擎动态交互/README.md",
+      "path": "Library-docs/17.Unity引擎动态交互/README.md",
       "title": "17. Unity 引擎动态交互：主线程安全调度实战",
       "group": "17.Unity引擎动态交互",
       "scope": "historical_reference",
@@ -1303,7 +1346,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "18.现代原生浮窗UI混合开发/01.Unity顶层原生浮窗架构设计.md",
+      "path": "Library-docs/18.现代原生浮窗UI混合开发/01.Unity顶层原生浮窗架构设计.md",
       "title": "01. Unity 顶层原生浮窗架构设计",
       "group": "18.现代原生浮窗UI混合开发",
       "scope": "historical_reference",
@@ -1313,7 +1356,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "18.现代原生浮窗UI混合开发/02.模态对话框与Unity渲染挂起防死锁.md",
+      "path": "Library-docs/18.现代原生浮窗UI混合开发/02.模态对话框与Unity渲染挂起防死锁.md",
       "title": "02. 模态对话框与 Unity 渲染挂起防死锁",
       "group": "18.现代原生浮窗UI混合开发",
       "scope": "historical_reference",
@@ -1323,7 +1366,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "18.现代原生浮窗UI混合开发/03.Android高版本输入框滚动条空指针避坑.md",
+      "path": "Library-docs/18.现代原生浮窗UI混合开发/03.Android高版本输入框滚动条空指针避坑.md",
       "title": "03. Android 高版本输入框滚动条空指针避坑",
       "group": "18.现代原生浮窗UI混合开发",
       "scope": "historical_reference",
@@ -1333,7 +1376,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "18.现代原生浮窗UI混合开发/04.现代化多选项卡与统一状态条实战.md",
+      "path": "Library-docs/18.现代原生浮窗UI混合开发/04.现代化多选项卡与统一状态条实战.md",
       "title": "04. 现代化多选项卡与统一状态条实战",
       "group": "18.现代原生浮窗UI混合开发",
       "scope": "historical_reference",
@@ -1343,7 +1386,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "18.现代原生浮窗UI混合开发/README.md",
+      "path": "Library-docs/18.现代原生浮窗UI混合开发/README.md",
       "title": "18. 现代原生浮窗 UI 混合开发与避坑实录",
       "group": "18.现代原生浮窗UI混合开发",
       "scope": "historical_reference",
@@ -1353,7 +1396,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "19.良性Mod实战-离线卡组分享/01.离线卡组分享协议设计与Base64URL编码.md",
+      "path": "Library-docs/19.良性Mod实战-离线卡组分享/01.离线卡组分享协议设计与Base64URL编码.md",
       "title": "01. 离线卡组分享协议设计与 Base64URL 编码",
       "group": "19.良性Mod实战-离线卡组分享",
       "scope": "historical_reference",
@@ -1363,7 +1406,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "19.良性Mod实战-离线卡组分享/02.卡牌合法性校验与未拥有资产过滤.md",
+      "path": "Library-docs/19.良性Mod实战-离线卡组分享/02.卡牌合法性校验与未拥有资产过滤.md",
       "title": "02. 卡牌合法性校验与未拥有资产过滤",
       "group": "19.良性Mod实战-离线卡组分享",
       "scope": "historical_reference",
@@ -1373,7 +1416,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "19.良性Mod实战-离线卡组分享/03.原生Provider调度与持久化写入实战.md",
+      "path": "Library-docs/19.良性Mod实战-离线卡组分享/03.原生Provider调度与持久化写入实战.md",
       "title": "03. 原生 Provider 调度与持久化写入实战",
       "group": "19.良性Mod实战-离线卡组分享",
       "scope": "historical_reference",
@@ -1383,7 +1426,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "19.良性Mod实战-离线卡组分享/04.牌组双向导出与人性化清单生成.md",
+      "path": "Library-docs/19.良性Mod实战-离线卡组分享/04.牌组双向导出与人性化清单生成.md",
       "title": "04. 牌组双向导出与人性化清单生成",
       "group": "19.良性Mod实战-离线卡组分享",
       "scope": "historical_reference",
@@ -1393,7 +1436,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "19.良性Mod实战-离线卡组分享/README.md",
+      "path": "Library-docs/19.良性Mod实战-离线卡组分享/README.md",
       "title": "19. 良性 Mod 实战：离线卡组分享与编解码协议规范",
       "group": "19.良性Mod实战-离线卡组分享",
       "scope": "historical_reference",
@@ -1403,7 +1446,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "20.工程体验跃迁-资源门卫与教程跳过/01.从热更痛点到Pre-Unity资源门卫架构.md",
+      "path": "Library-docs/20.工程体验跃迁-资源门卫与教程跳过/01.从热更痛点到Pre-Unity资源门卫架构.md",
       "title": "01. 从热更痛点到 Pre-Unity 资源门卫架构",
       "group": "20.工程体验跃迁-资源门卫与教程跳过",
       "scope": "historical_reference",
@@ -1413,7 +1456,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "20.工程体验跃迁-资源门卫与教程跳过/02.内置2880个Bundle离线解包与极速校验.md",
+      "path": "Library-docs/20.工程体验跃迁-资源门卫与教程跳过/02.内置2880个Bundle离线解包与极速校验.md",
       "title": "02. 内置 2880 个 Bundle 离线解包与极速校验",
       "group": "20.工程体验跃迁-资源门卫与教程跳过",
       "scope": "historical_reference",
@@ -1423,7 +1466,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "20.工程体验跃迁-资源门卫与教程跳过/03.新手教程状态机逆向与强制战斗跳过.md",
+      "path": "Library-docs/20.工程体验跃迁-资源门卫与教程跳过/03.新手教程状态机逆向与强制战斗跳过.md",
       "title": "03. 新手教程状态机逆向与强制战斗跳过",
       "group": "20.工程体验跃迁-资源门卫与教程跳过",
       "scope": "historical_reference",
@@ -1433,7 +1476,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "20.工程体验跃迁-资源门卫与教程跳过/04.调试效能闭环与实机体验跃迁.md",
+      "path": "Library-docs/20.工程体验跃迁-资源门卫与教程跳过/04.调试效能闭环与实机体验跃迁.md",
       "title": "04. 调试效能闭环与实机体验跃迁",
       "group": "20.工程体验跃迁-资源门卫与教程跳过",
       "scope": "historical_reference",
@@ -1443,7 +1486,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "20.工程体验跃迁-资源门卫与教程跳过/05.必选资源切换实战/README.md",
+      "path": "Library-docs/20.工程体验跃迁-资源门卫与教程跳过/05.必选资源切换实战/README.md",
       "title": "05. 必选资源切换实战：原版与mod2",
       "group": "20.工程体验跃迁-资源门卫与教程跳过",
       "scope": "historical_reference",
@@ -1456,7 +1499,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "20.工程体验跃迁-资源门卫与教程跳过/05.必选资源切换实战/gate-acceptance.md",
+      "path": "Library-docs/20.工程体验跃迁-资源门卫与教程跳过/05.必选资源切换实战/gate-acceptance.md",
       "title": "必选资源界面的实机验收",
       "group": "20.工程体验跃迁-资源门卫与教程跳过",
       "scope": "historical_reference",
@@ -1468,7 +1511,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "20.工程体验跃迁-资源门卫与教程跳过/05.必选资源切换实战/packaging.md",
+      "path": "Library-docs/20.工程体验跃迁-资源门卫与教程跳过/05.必选资源切换实战/packaging.md",
       "title": "mod2 技能候选包的构建",
       "group": "20.工程体验跃迁-资源门卫与教程跳过",
       "scope": "historical_reference",
@@ -1480,7 +1523,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "20.工程体验跃迁-资源门卫与教程跳过/05.必选资源切换实战/resource-selector.md",
+      "path": "Library-docs/20.工程体验跃迁-资源门卫与教程跳过/05.必选资源切换实战/resource-selector.md",
       "title": "必选资源界面与原版 / mod2 切换",
       "group": "20.工程体验跃迁-资源门卫与教程跳过",
       "scope": "historical_reference",
@@ -1492,7 +1535,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "20.工程体验跃迁-资源门卫与教程跳过/06.多Mod资源映射与外国ZIP实测.md",
+      "path": "Library-docs/20.工程体验跃迁-资源门卫与教程跳过/06.多Mod资源映射与外国ZIP实测.md",
       "title": "06. 多 Mod 资源映射与外国 ZIP 实测",
       "group": "20.工程体验跃迁-资源门卫与教程跳过",
       "scope": "historical_reference",
@@ -1506,7 +1549,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "20.工程体验跃迁-资源门卫与教程跳过/07.资源版本关系与热更新排查.md",
+      "path": "Library-docs/20.工程体验跃迁-资源门卫与教程跳过/07.资源版本关系与热更新排查.md",
       "title": "资源版本关系与热更新排查",
       "group": "20.工程体验跃迁-资源门卫与教程跳过",
       "scope": "historical_reference",
@@ -1519,7 +1562,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "20.工程体验跃迁-资源门卫与教程跳过/08.官方资源自动同步与原版快照.md",
+      "path": "Library-docs/20.工程体验跃迁-资源门卫与教程跳过/08.官方资源自动同步与原版快照.md",
       "title": "官方资源自动同步与原版快照",
       "group": "20.工程体验跃迁-资源门卫与教程跳过",
       "scope": "historical_reference",
@@ -1532,7 +1575,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "20.工程体验跃迁-资源门卫与教程跳过/README.md",
+      "path": "Library-docs/20.工程体验跃迁-资源门卫与教程跳过/README.md",
       "title": "20. 工程体验跃迁：Pre-Unity 资源门卫与教程跳过实战",
       "group": "20.工程体验跃迁-资源门卫与教程跳过",
       "scope": "historical_reference",
@@ -1546,7 +1589,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/01.语义接口与测试流程.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/01.语义接口与测试流程.md",
       "title": "01. 语义接口与测试流程",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -1558,7 +1601,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/02.缓存契约与扩展规则/README.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/02.缓存契约与扩展规则/README.md",
       "title": "02.缓存契约与扩展规则",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -1570,7 +1613,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/02.缓存契约与扩展规则/action-rules.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/02.缓存契约与扩展规则/action-rules.md",
       "title": "一次性扩展动作",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -1587,7 +1630,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/02.缓存契约与扩展规则/actions-native-semantics.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/02.缓存契约与扩展规则/actions-native-semantics.md",
       "title": "换当前生命与下一回合阳光债务：原版结算核对",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -1599,7 +1642,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/02.缓存契约与扩展规则/attack-rules.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/02.缓存契约与扩展规则/attack-rules.md",
       "title": "mod2 攻击规则扩展",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -1617,7 +1660,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/02.缓存契约与扩展规则/card-data-and-history.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/02.缓存契约与扩展规则/card-data-and-history.md",
       "title": "card_data 双资源配置与原版特殊动画链",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -1635,7 +1678,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/02.缓存契约与扩展规则/coffee-grave-preserve.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/02.缓存契约与扩展规则/coffee-grave-preserve.md",
       "title": "咖啡僵尸墓碑保留修复",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -1650,7 +1693,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/02.缓存契约与扩展规则/stat-damage-rules.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/02.缓存契约与扩展规则/stat-damage-rules.md",
       "title": "力量与伤害扩展",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -1663,7 +1706,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/02.缓存契约与扩展规则/umbrella-rules.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/02.缓存契约与扩展规则/umbrella-rules.md",
       "title": "601 伞叶单次随机承伤",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -1675,7 +1718,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/03.托管内存与效果所有权/README.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/03.托管内存与效果所有权/README.md",
       "title": "03.托管内存与效果所有权",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -1685,7 +1728,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/03.托管内存与效果所有权/il2cpp-reference-field-abi.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/03.托管内存与效果所有权/il2cpp-reference-field-abi.md",
       "title": "IL2CPP 引用字段赋值 ABI 核对",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -1702,7 +1745,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/04.History与原版动画/README.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/04.History与原版动画/README.md",
       "title": "04.History与原版动画",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -1714,7 +1757,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/04.History与原版动画/history-observation.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/04.History与原版动画/history-observation.md",
       "title": "原版 History 的显式只读快照",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -1730,7 +1773,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/04.History与原版动画/reveal-animation-compatibility.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/04.History与原版动画/reveal-animation-compatibility.md",
       "title": "墓碑克星动画兼容回退",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -1746,7 +1789,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/04.History与原版动画/sun-animation-compatibility.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/04.History与原版动画/sun-animation-compatibility.md",
       "title": "106延期扣阳光的可见反馈",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -1761,7 +1804,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/04.History与原版动画/terminal-attack-metadata.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/04.History与原版动画/terminal-attack-metadata.md",
       "title": "终局中断与攻击 metadata（R19）",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -1773,7 +1816,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/05.实测与建局边界/README.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/05.实测与建局边界/README.md",
       "title": "05.实测与建局边界",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -1785,7 +1828,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/05.实测与建局边界/fixture-lifecycle-review.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/05.实测与建局边界/fixture-lifecycle-review.md",
       "title": "Fixture 生命周期只读复核",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -1799,7 +1842,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/05.实测与建局边界/static-acceptance.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/05.实测与建局边界/static-acceptance.md",
       "title": "第三版继承技能的语义抽样脚本",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -1811,7 +1854,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/05.实测与建局边界/static-skill-risk-review.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/05.实测与建局边界/static-skill-risk-review.md",
       "title": "mod2 第三版静态技能风险抽样",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -1827,7 +1870,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/05.实测与建局边界/static-test-coverage.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/05.实测与建局边界/static-test-coverage.md",
       "title": "继承静态技能抽样测试覆盖",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -1843,7 +1886,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/05.实测与建局边界/warm-fixture-followup.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/05.实测与建局边界/warm-fixture-followup.md",
       "title": "R19 连续温建局的只读补核",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -1855,7 +1898,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/06.R19实现与验收记录/01-work-log.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/06.R19实现与验收记录/01-work-log.md",
       "title": "mod2 技能整合工作记录",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -1872,7 +1915,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/06.R19实现与验收记录/02-verification.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/06.R19实现与验收记录/02-verification.md",
       "title": "R19 交付与验收总表",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -1884,7 +1927,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/06.R19实现与验收记录/README.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/06.R19实现与验收记录/README.md",
       "title": "06.R19实现与验收记录",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -1896,7 +1939,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/06.R19实现与验收记录/implementation-coverage.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/06.R19实现与验收记录/implementation-coverage.md",
       "title": "mod2 实现覆盖与验收边界",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -1915,7 +1958,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/06.R19实现与验收记录/工程资料索引.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/06.R19实现与验收记录/工程资料索引.md",
       "title": "工程资料与证据引用索引",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -1925,7 +1968,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/07.第四批组合动作与攻击后扩展/README.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/07.第四批组合动作与攻击后扩展/README.md",
       "title": "第四批：组合动作、攻击后扩展与期限状态",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -1937,7 +1980,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/07.第四批组合动作与攻击后扩展/implementation.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/07.第四批组合动作与攻击后扩展/implementation.md",
       "title": "从已有时机连接原版动作",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -1950,7 +1993,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/07.第四批组合动作与攻击后扩展/verification.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/07.第四批组合动作与攻击后扩展/verification.md",
       "title": "第四批验收范围（2026-10-18）",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -1964,7 +2007,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/08.实验能力登记与冷启动许可/README.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/08.实验能力登记与冷启动许可/README.md",
       "title": "实验能力登记与冷启动许可",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -1978,7 +2021,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/08.实验能力登记与冷启动许可/architecture.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/08.实验能力登记与冷启动许可/architecture.md",
       "title": "资源、保存设置、冻结输入与实际状态",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -1991,7 +2034,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/08.实验能力登记与冷启动许可/authoring.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/08.实验能力登记与冷启动许可/authoring.md",
       "title": "运行支持与AI固定配方分别登记",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -2003,7 +2046,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/08.实验能力登记与冷启动许可/verification.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/08.实验能力登记与冷启动许可/verification.md",
       "title": "R12验收范围、失败与后续补充",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -2019,7 +2062,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/09.本地背景音乐与共享生命周期/README.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/09.本地背景音乐与共享生命周期/README.md",
       "title": "09. 本地背景音乐与共享生命周期",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -2031,7 +2074,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/10.全场变形保留当前攻血与原生子效果/R25法老实现记录.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/10.全场变形保留当前攻血与原生子效果/R25法老实现记录.md",
       "title": "R25法老实现记录（原文归档）",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -2044,7 +2087,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/10.全场变形保留当前攻血与原生子效果/README.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/10.全场变形保留当前攻血与原生子效果/README.md",
       "title": "10. 全场变形保留当前攻血与原生子效果",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -2057,7 +2100,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/11.Mod内能力与启动健康恢复/README.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/11.Mod内能力与启动健康恢复/README.md",
       "title": "11 · Mod内能力与启动健康恢复",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -2071,7 +2114,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "21.语义调试与技能扩展实战/README.md",
+      "path": "Library-docs/21.语义调试与技能扩展实战/README.md",
       "title": "21. 语义调试与技能扩展实战",
       "group": "21.语义调试与技能扩展实战",
       "scope": "historical_reference",
@@ -2088,7 +2131,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "22.自然语言原版制卡/01.知识组织与制作流程.md",
+      "path": "Library-docs/22.自然语言原版制卡/01.知识组织与制作流程.md",
       "title": "从制作经验到可调用的知识",
       "group": "22.自然语言原版制卡",
       "scope": "historical_reference",
@@ -2098,7 +2141,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "22.自然语言原版制卡/02.能力边界与后续接入.md",
+      "path": "Library-docs/22.自然语言原版制卡/02.能力边界与后续接入.md",
       "title": "能力范围和面向玩家的下一步",
       "group": "22.自然语言原版制卡",
       "scope": "historical_reference",
@@ -2114,7 +2157,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "22.自然语言原版制卡/03.API实测与证据.md",
+      "path": "Library-docs/22.自然语言原版制卡/03.API实测与证据.md",
       "title": "DeepSeek实测与验收（2026-10-18）",
       "group": "22.自然语言原版制卡",
       "scope": "historical_reference",
@@ -2124,7 +2167,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "22.自然语言原版制卡/04.API卡牌独立真机抽测.md",
+      "path": "Library-docs/22.自然语言原版制卡/04.API卡牌独立真机抽测.md",
       "title": "API卡牌独立真机抽测（2026-10-18）",
       "group": "22.自然语言原版制卡",
       "scope": "historical_reference",
@@ -2136,7 +2179,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "22.自然语言原版制卡/05.会话式制卡与提案审批.md",
+      "path": "Library-docs/22.自然语言原版制卡/05.会话式制卡与提案审批.md",
       "title": "05. 会话式制卡、提案审批与持久化",
       "group": "22.自然语言原版制卡",
       "scope": "historical_reference",
@@ -2150,7 +2193,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "22.自然语言原版制卡/06.实验原版组合与最小验证.md",
+      "path": "Library-docs/22.自然语言原版制卡/06.实验原版组合与最小验证.md",
       "title": "实验原版组合、语义检索与最小验证",
       "group": "22.自然语言原版制卡",
       "scope": "historical_reference",
@@ -2163,7 +2206,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "22.自然语言原版制卡/07.项目登记簿与标签联动.md",
+      "path": "Library-docs/22.自然语言原版制卡/07.项目登记簿与标签联动.md",
       "title": "项目登记簿、标签与跨会话联动",
       "group": "22.自然语言原版制卡",
       "scope": "historical_reference",
@@ -2175,7 +2218,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "22.自然语言原版制卡/08.按需资料工具与同任务对照.md",
+      "path": "Library-docs/22.自然语言原版制卡/08.按需资料工具与同任务对照.md",
       "title": "按需资料工具与同任务对照",
       "group": "22.自然语言原版制卡",
       "scope": "historical_reference",
@@ -2189,7 +2232,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "22.自然语言原版制卡/09.独立审查与新手表达验收.md",
+      "path": "Library-docs/22.自然语言原版制卡/09.独立审查与新手表达验收.md",
       "title": "独立审查与新手表达验收",
       "group": "22.自然语言原版制卡",
       "scope": "historical_reference",
@@ -2202,7 +2245,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "22.自然语言原版制卡/10.批量属性与分类型审查.md",
+      "path": "Library-docs/22.自然语言原版制卡/10.批量属性与分类型审查.md",
       "title": "10. 批量属性、有限程序与分类型审查",
       "group": "22.自然语言原版制卡",
       "scope": "historical_reference",
@@ -2215,7 +2258,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "22.自然语言原版制卡/11.版本历史与普通表达回归.md",
+      "path": "Library-docs/22.自然语言原版制卡/11.版本历史与普通表达回归.md",
       "title": "11. 版本历史、真实筛选与普通表达回归",
       "group": "22.自然语言原版制卡",
       "scope": "historical_reference",
@@ -2232,7 +2275,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "22.自然语言原版制卡/README.md",
+      "path": "Library-docs/22.自然语言原版制卡/README.md",
       "title": "22. 自然语言原版制卡",
       "group": "22.自然语言原版制卡",
       "scope": "historical_reference",
@@ -2255,7 +2298,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "23.卡牌身份与资源映射/01.身份、文本与技能的关系.md",
+      "path": "Library-docs/23.卡牌身份与资源映射/01.身份、文本与技能的关系.md",
       "title": "01. 身份、文本与技能的关系",
       "group": "23.卡牌身份与资源映射",
       "scope": "historical_reference",
@@ -2267,7 +2310,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "23.卡牌身份与资源映射/02.Manifest、Bundle与内部资产.md",
+      "path": "Library-docs/23.卡牌身份与资源映射/02.Manifest、Bundle与内部资产.md",
       "title": "02. Manifest、Bundle与内部资产",
       "group": "23.卡牌身份与资源映射",
       "scope": "historical_reference",
@@ -2279,7 +2322,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "23.卡牌身份与资源映射/03.新增GUID与资源复用流程.md",
+      "path": "Library-docs/23.卡牌身份与资源映射/03.新增GUID与资源复用流程.md",
       "title": "03. 新增GUID与资源复用流程",
       "group": "23.卡牌身份与资源映射",
       "scope": "historical_reference",
@@ -2292,7 +2335,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "23.卡牌身份与资源映射/04.R9验收与失败边界.md",
+      "path": "Library-docs/23.卡牌身份与资源映射/04.R9验收与失败边界.md",
       "title": "04. R9验收与失败边界",
       "group": "23.卡牌身份与资源映射",
       "scope": "historical_reference",
@@ -2306,7 +2349,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "23.卡牌身份与资源映射/05.本地新卡身份与服务器裸GUID边界.md",
+      "path": "Library-docs/23.卡牌身份与资源映射/05.本地新卡身份与服务器裸GUID边界.md",
       "title": "05. 本地新卡身份、玩家拥有权与服务器裸 GUID 边界",
       "group": "23.卡牌身份与资源映射",
       "scope": "historical_reference",
@@ -2320,7 +2363,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "23.卡牌身份与资源映射/06.可配置新卡获取与手机Mod列表.md",
+      "path": "Library-docs/23.卡牌身份与资源映射/06.可配置新卡获取与手机Mod列表.md",
       "title": "06 · 可配置新卡获取与手机 Mod 列表",
       "group": "23.卡牌身份与资源映射",
       "scope": "historical_reference",
@@ -2333,7 +2376,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "23.卡牌身份与资源映射/07.原版资源名校验与自动获取启动故障.md",
+      "path": "Library-docs/23.卡牌身份与资源映射/07.原版资源名校验与自动获取启动故障.md",
       "title": "07 · 原版资源名校验与自动获取启动故障",
       "group": "23.卡牌身份与资源映射",
       "scope": "historical_reference",
@@ -2345,7 +2388,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "23.卡牌身份与资源映射/08.本地新卡连续性与同账户保护.md",
+      "path": "Library-docs/23.卡牌身份与资源映射/08.本地新卡连续性与同账户保护.md",
       "title": "08 · 本地新卡连续性与同账户保护",
       "group": "23.卡牌身份与资源映射",
       "scope": "historical_reference",
@@ -2359,7 +2402,7 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "23.卡牌身份与资源映射/README.md",
+      "path": "Library-docs/23.卡牌身份与资源映射/README.md",
       "title": "23. 卡牌身份与资源映射",
       "group": "23.卡牌身份与资源映射",
       "scope": "historical_reference",
@@ -2377,41 +2420,46 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "24.启动器工作台与手机编辑/01.手动卡牌与组件块.md",
+      "path": "Library-docs/24.启动器工作台与手机编辑/01.手动卡牌与组件块.md",
       "title": "手机手动卡牌与组件块",
       "group": "24.启动器工作台与手机编辑",
       "scope": "recent_stage",
       "scope_label": "近期阶段",
-      "applicability": "R42–R48来源／界面参考，不是正式v1最终收据",
+      "applicability": "分版本的功能、来源和界面参考，适用范围以各节为准",
       "revision_mentions": [
         "R44",
         "R45",
-        "R48"
+        "R48",
+        "v3.1",
+        "r-2-27",
+        "r-2-28"
       ],
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "24.启动器工作台与手机编辑/02.AI模式与创作边界.md",
+      "path": "Library-docs/24.启动器工作台与手机编辑/02.AI模式与创作边界.md",
       "title": "AI模式与创作边界",
       "group": "24.启动器工作台与手机编辑",
       "scope": "recent_stage",
       "scope_label": "近期阶段",
-      "applicability": "R42–R48来源／界面参考，不是正式v1最终收据",
+      "applicability": "分版本的功能、来源和界面参考，适用范围以各节为准",
       "revision_mentions": [
         "R35",
         "R40",
         "R42",
-        "R48"
+        "R48",
+        "r-2-27",
+        "r-2-28"
       ],
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "24.启动器工作台与手机编辑/03.资源检查与媒体文字包.md",
+      "path": "Library-docs/24.启动器工作台与手机编辑/03.资源检查与媒体文字包.md",
       "title": "资源检查、交互媒体与文字包",
       "group": "24.启动器工作台与手机编辑",
       "scope": "recent_stage",
       "scope_label": "近期阶段",
-      "applicability": "R42–R48来源／界面参考，不是正式v1最终收据",
+      "applicability": "分版本的功能、来源和界面参考，适用范围以各节为准",
       "revision_mentions": [
         "R43",
         "R45",
@@ -2422,27 +2470,29 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "24.启动器工作台与手机编辑/04.界面命名与定位.md",
+      "path": "Library-docs/24.启动器工作台与手机编辑/04.界面命名与定位.md",
       "title": "R48 参考界面命名目录",
       "group": "24.启动器工作台与手机编辑",
       "scope": "recent_stage",
       "scope_label": "近期阶段",
-      "applicability": "R42–R48来源／界面参考，不是正式v1最终收据",
+      "applicability": "分版本的功能、来源和界面参考，适用范围以各节为准",
       "revision_mentions": [
         "R45",
         "R46",
         "R47",
-        "R48"
+        "R48",
+        "r-2-27",
+        "r-2-28"
       ],
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "24.启动器工作台与手机编辑/05.当前版本能力.md",
+      "path": "Library-docs/24.启动器工作台与手机编辑/05.当前版本能力.md",
       "title": "当前版本能力：v1／内部 R51",
       "group": "24.启动器工作台与手机编辑",
       "scope": "current_product",
       "scope_label": "当前产品",
-      "applicability": "正式v1／内部R51的能力、故障与入口摘要；只代表文内列明的层级",
+      "applicability": "v3.1 正式版与 r-2-28 RC1 开发候选的能力、故障与入口；验收按文内版本和层级",
       "revision_mentions": [
         "R35",
         "R40",
@@ -2451,17 +2501,21 @@
         "R46",
         "R48",
         "R51",
-        "R52"
+        "R52",
+        "v3.1",
+        "r-2-22",
+        "r-2-27",
+        "r-2-28"
       ],
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "24.启动器工作台与手机编辑/06.故障排查与避坑.md",
+      "path": "Library-docs/24.启动器工作台与手机编辑/06.故障排查与避坑.md",
       "title": "故障排查与避坑",
       "group": "24.启动器工作台与手机编辑",
       "scope": "current_product",
       "scope_label": "当前产品",
-      "applicability": "正式v1／内部R51的能力、故障与入口摘要；只代表文内列明的层级",
+      "applicability": "v3.1 正式版与 r-2-28 RC1 开发候选的能力、故障与入口；验收按文内版本和层级",
       "revision_mentions": [
         "R12",
         "R14",
@@ -2478,17 +2532,20 @@
         "R45",
         "R46",
         "R48",
-        "R51"
+        "R51",
+        "v3.1",
+        "r-2-27",
+        "r-2-28"
       ],
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "24.启动器工作台与手机编辑/README.md",
+      "path": "Library-docs/24.启动器工作台与手机编辑/README.md",
       "title": "24 · 启动器工作台与手机编辑",
       "group": "24.启动器工作台与手机编辑",
       "scope": "current_product",
       "scope_label": "当前产品",
-      "applicability": "正式v1／内部R51的能力、故障与入口摘要；只代表文内列明的层级",
+      "applicability": "v3.1 正式版与 r-2-28 RC1 开发候选的能力、故障与入口；验收按文内版本和层级",
       "revision_mentions": [
         "R42",
         "R43",
@@ -2499,32 +2556,73 @@
         "R48",
         "R49",
         "R50",
-        "R51"
+        "R51",
+        "v3.1",
+        "r-2-22",
+        "r-2-27",
+        "r-2-28"
       ],
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "AGENTS.md",
-      "title": "Agent入口与维护规则",
-      "group": "root",
-      "scope": "maintenance",
-      "scope_label": "维护导航",
-      "applicability": "当前导航、协作或许可入口；发布授权不从历史文档继承",
-      "revision_mentions": [
-        "R42",
-        "R51"
-      ],
-      "previously_without_inbound_md_link": true
-    },
-    {
-      "path": "LICENSES.md",
-      "title": "许可证索引",
+      "path": "Library-docs/README.md",
+      "title": "PVZH 教程",
       "group": "root",
       "scope": "maintenance",
       "scope_label": "维护导航",
       "applicability": "当前导航、协作或许可入口；发布授权不从历史文档继承",
       "revision_mentions": [],
       "previously_without_inbound_md_link": false
+    },
+    {
+      "path": "Library-docs/前言.md",
+      "title": "PVZH 资料图书馆 - 前言",
+      "group": "root",
+      "scope": "data_method",
+      "scope_label": "原版方法",
+      "applicability": "原版结构与制作方法；实际字段、版本、输入仍需核对",
+      "revision_mentions": [],
+      "previously_without_inbound_md_link": false
+    },
+    {
+      "path": "Library-docs/历史教程/PVZH-增加新资源办法 v2.md",
+      "title": "Unity 游戏底层资源修改指南：资源替换与节点插入",
+      "group": "legacy_notes",
+      "scope": "legacy_note",
+      "scope_label": "旧参考",
+      "applicability": "保留结构与故障线索，优先与现行主题／实际输入交叉核对",
+      "revision_mentions": [],
+      "previously_without_inbound_md_link": true
+    },
+    {
+      "path": "Library-docs/历史教程/PVZH-增加新资源办法 注解.md",
+      "title": "Unity Modding 实战指南：Dump 文件字段解析与新节点挂载",
+      "group": "legacy_notes",
+      "scope": "legacy_note",
+      "scope_label": "旧参考",
+      "applicability": "保留结构与故障线索，优先与现行主题／实际输入交叉核对",
+      "revision_mentions": [],
+      "previously_without_inbound_md_link": true
+    },
+    {
+      "path": "Library-docs/历史教程/Unity_2D_AssetBundle_Modding_Guide.md",
+      "title": "Unity 2D AssetBundle Modding 技术指南：从“碎骨骼”到“纸片人”与“视频卡牌”的逆向实战",
+      "group": "legacy_notes",
+      "scope": "legacy_note",
+      "scope_label": "旧参考",
+      "applicability": "保留结构与故障线索，优先与现行主题／实际输入交叉核对",
+      "revision_mentions": [],
+      "previously_without_inbound_md_link": true
+    },
+    {
+      "path": "Library-docs/历史教程/视频接入教程.md",
+      "title": "Unity 2D AssetBundle 纯手动 Modding 指南（Unity Editor + UABEA 版）",
+      "group": "legacy_notes",
+      "scope": "legacy_note",
+      "scope_label": "旧参考",
+      "applicability": "保留结构与故障线索，优先与现行主题／实际输入交叉核对",
+      "revision_mentions": [],
+      "previously_without_inbound_md_link": true
     },
     {
       "path": "MIGRATION.md",
@@ -2534,6 +2632,20 @@
       "scope_label": "项目历史",
       "applicability": "迁移／计划／变更历史，非新的执行指令",
       "revision_mentions": [],
+      "previously_without_inbound_md_link": false
+    },
+    {
+      "path": "README.en.md",
+      "title": "PVZH Library",
+      "group": "root",
+      "scope": "maintenance",
+      "scope_label": "维护导航",
+      "applicability": "当前导航、协作或许可入口；发布授权不从历史文档继承",
+      "revision_mentions": [
+        "v3.1",
+        "r-2-22",
+        "r-2-28"
+      ],
       "previously_without_inbound_md_link": false
     },
     {
@@ -2548,7 +2660,10 @@
         "R19",
         "R42",
         "R48",
-        "R51"
+        "R51",
+        "v3.1",
+        "r-2-22",
+        "r-2-28"
       ],
       "previously_without_inbound_md_link": false
     },
@@ -2629,16 +2744,6 @@
       "revision_mentions": [
         "R19"
       ],
-      "previously_without_inbound_md_link": false
-    },
-    {
-      "path": "agents/08-basic-mod-walkthrough.md",
-      "title": "08 · 从原包到可复查成品：独立基础示例",
-      "group": "agents",
-      "scope": "agent_reference",
-      "scope_label": "任务方法",
-      "applicability": "基础制作／验收方法与案例，具体输入和版本按文内边界核对",
-      "revision_mentions": [],
       "previously_without_inbound_md_link": false
     },
     {
@@ -2833,7 +2938,7 @@
       "group": "agents",
       "scope": "current_product",
       "scope_label": "当前产品",
-      "applicability": "正式v1／内部R51的能力、故障与入口摘要；只代表文内列明的层级",
+      "applicability": "v3.1 正式版与 r-2-28 RC1 开发候选的能力、故障与入口；验收按文内版本和层级",
       "revision_mentions": [
         "R42",
         "R43",
@@ -2841,7 +2946,10 @@
         "R48",
         "R49",
         "R50",
-        "R51"
+        "R51",
+        "v3.1",
+        "r-2-22",
+        "r-2-28"
       ],
       "previously_without_inbound_md_link": false
     },
@@ -2856,7 +2964,10 @@
         "R25",
         "R42",
         "R48",
-        "R51"
+        "R51",
+        "v3.1",
+        "r-2-22",
+        "r-2-28"
       ],
       "previously_without_inbound_md_link": false
     },
@@ -3157,6 +3268,16 @@
       "previously_without_inbound_md_link": false
     },
     {
+      "path": "tools/auto-paper-doll/README.md",
+      "title": "纸片人资源工具",
+      "group": "tools/auto-paper-doll",
+      "scope": "tool_contract",
+      "scope_label": "工具合同",
+      "applicability": "所属公开工具的代码／schema／README合同，不能与Android产品互换",
+      "revision_mentions": [],
+      "previously_without_inbound_md_link": false
+    },
+    {
       "path": "tools/card-editor/README.md",
       "title": "PvZ Heroes Phantom Engine / 幻影引擎",
       "group": "tools/card-editor",
@@ -3207,16 +3328,6 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "前言.md",
-      "title": "PVZH 资料图书馆 - 前言",
-      "group": "root",
-      "scope": "data_method",
-      "scope_label": "原版方法",
-      "applicability": "原版结构与制作方法；实际字段、版本、输入仍需核对",
-      "revision_mentions": [],
-      "previously_without_inbound_md_link": false
-    },
-    {
       "path": "文档总索引.md",
       "title": "文档总索引",
       "group": "root",
@@ -3256,46 +3367,6 @@
     {
       "path": "资源/旧参考/笔记/frida经验.md",
       "title": "Frida 无法抓到游戏 so 的排查记录（x86_64 模拟器 + ARM64 游戏）",
-      "group": "legacy_notes",
-      "scope": "legacy_note",
-      "scope_label": "旧参考",
-      "applicability": "保留结构与故障线索，优先与现行主题／实际输入交叉核对",
-      "revision_mentions": [],
-      "previously_without_inbound_md_link": true
-    },
-    {
-      "path": "资源/旧参考/笔记/md文档/PVZH-增加新资源办法 v2.md",
-      "title": "Unity 游戏底层资源修改指南：资源替换与节点插入",
-      "group": "legacy_notes",
-      "scope": "legacy_note",
-      "scope_label": "旧参考",
-      "applicability": "保留结构与故障线索，优先与现行主题／实际输入交叉核对",
-      "revision_mentions": [],
-      "previously_without_inbound_md_link": true
-    },
-    {
-      "path": "资源/旧参考/笔记/md文档/PVZH-增加新资源办法 注解.md",
-      "title": "Unity Modding 实战指南：Dump 文件字段解析与新节点挂载",
-      "group": "legacy_notes",
-      "scope": "legacy_note",
-      "scope_label": "旧参考",
-      "applicability": "保留结构与故障线索，优先与现行主题／实际输入交叉核对",
-      "revision_mentions": [],
-      "previously_without_inbound_md_link": true
-    },
-    {
-      "path": "资源/旧参考/笔记/md文档/Unity_2D_AssetBundle_Modding_Guide.md",
-      "title": "Unity 2D AssetBundle Modding 技术指南：从“碎骨骼”到“纸片人”与“视频卡牌”的逆向实战",
-      "group": "legacy_notes",
-      "scope": "legacy_note",
-      "scope_label": "旧参考",
-      "applicability": "保留结构与故障线索，优先与现行主题／实际输入交叉核对",
-      "revision_mentions": [],
-      "previously_without_inbound_md_link": true
-    },
-    {
-      "path": "资源/旧参考/笔记/md文档/视频接入教程.md",
-      "title": "Unity 2D AssetBundle 纯手动 Modding 指南（Unity Editor + UABEA 版）",
       "group": "legacy_notes",
       "scope": "legacy_note",
       "scope_label": "旧参考",

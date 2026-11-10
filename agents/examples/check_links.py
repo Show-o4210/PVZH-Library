@@ -25,7 +25,10 @@ def check(root):
             checked += 1
             if not (path.parent/target).exists():
                 broken.append({'file': path.relative_to(root).as_posix(), 'target': target})
-    chapters = sorted(p for p in root.iterdir() if p.is_dir() and re.match(r'^\d{2}\.', p.name))
+    chapter_root = root / 'Library-docs'
+    if not chapter_root.is_dir():
+        chapter_root = root
+    chapters = sorted(p for p in chapter_root.iterdir() if p.is_dir() and re.match(r'^\d{2}\.', p.name))
     missing = [p.name for p in chapters if not (p/'README.md').exists()]
     return {'markdown_files': len(docs), 'chapters': len(chapters),
             'missing_chapter_readmes': missing, 'local_links_checked': checked,

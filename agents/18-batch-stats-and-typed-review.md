@@ -1,6 +1,6 @@
 # 18 · 批量属性、有限程序与分类型审查
 
-适用：自然语言批量改身材、费用等重复任务，或优化候选审查/上下文体积。先按[Agent13](13-natural-language-native-cards.md)定位实际产品合同，再参考[Agent17](17-conversation-authoring-and-approval.md)的候选分支与审批。详细经验与证据边界见[第22章10](../22.自然语言原版制卡/10.批量属性与分类型审查.md)和[筛选摘要](../22.自然语言原版制卡/批量属性验收摘要.json)。
+适用：自然语言批量改身材、费用等重复任务，或优化候选审查/上下文体积。先按[Agent13](13-natural-language-native-cards.md)定位实际产品合同，再参考[Agent17](17-conversation-authoring-and-approval.md)的候选分支与审批。详细经验与证据边界见[第22章10](../Library-docs/22.自然语言原版制卡/10.批量属性与分类型审查.md)和[筛选摘要](../Library-docs/22.自然语言原版制卡/批量属性验收摘要.json)。
 
 这是Android R23增量合同；公开Python v1没有自动获得bulk、沙箱或typed review。文档出现设备命令或接口不代表已部署或获准调用。
 

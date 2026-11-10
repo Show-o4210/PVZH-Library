@@ -1,8 +1,8 @@
 # 12 · 组合动作、攻击后与期限状态
 
-本页承接[运行时工作流](10-runtime-skills-workflow.md)和[语义测试](11-semantic-testing-and-evidence.md)，适用于用户已授权的Gadget扩展。详细案例见[第21章07](../21.语义调试与技能扩展实战/07.第四批组合动作与攻击后扩展/README.md)。
+本页承接[运行时工作流](10-runtime-skills-workflow.md)和[语义测试](11-semantic-testing-and-evidence.md)，适用于用户已授权的Gadget扩展。详细案例见[第21章07](../Library-docs/21.语义调试与技能扩展实战/07.第四批组合动作与攻击后扩展/README.md)。
 
-R25规则历史保持；后续需要全局开关、依赖和AI许可时，另读[Agent16](16-experimental-capabilities-and-launch.md)与[第21章08](../21.语义调试与技能扩展实战/08.实验能力登记与冷启动许可/README.md)。攻击后扩展可执行不等于任意攻击后程序已开放给模型。
+R25规则历史保持；后续需要全局开关、依赖和AI许可时，另读[Agent16](16-experimental-capabilities-and-launch.md)与[第21章08](../Library-docs/21.语义调试与技能扩展实战/08.实验能力登记与冷启动许可/README.md)。攻击后扩展可执行不等于任意攻击后程序已开放给模型。
 
 1. 先判断缺少的是时机、原版动作还是两者间的连接。已有SetStat／Destroy／Create／Move时，优先接入原版队列，避免直接写最终状态。
 2. 递归检查**每一个实体**的components类型唯一性，包含EffectEntitiesDescriptor中的技能实体。卡体检查通过不能代表所有技能实体合法。

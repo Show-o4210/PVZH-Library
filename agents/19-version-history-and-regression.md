@@ -1,6 +1,6 @@
 # 19. 连续创作、真实历史与普通表达验收
 
-用于Android R24后续的历史差异、整版回退、单次bulk撤销、单位筛选目录和普通玩家回归。先读[第22章11](../22.自然语言原版制卡/11.版本历史与普通表达回归.md)及[筛选摘要](../22.自然语言原版制卡/连续创作验收摘要.json)。批量属性与字段分类继承[Agent18](18-batch-stats-and-typed-review.md)，会话审批继承[Agent17](17-conversation-authoring-and-approval.md)。
+用于Android R24后续的历史差异、整版回退、单次bulk撤销、单位筛选目录和普通玩家回归。先读[第22章11](../Library-docs/22.自然语言原版制卡/11.版本历史与普通表达回归.md)及[筛选摘要](../Library-docs/22.自然语言原版制卡/连续创作验收摘要.json)。批量属性与字段分类继承[Agent18](18-batch-stats-and-typed-review.md)，会话审批继承[Agent17](17-conversation-authoring-and-approval.md)。
 
 ## 操作原则
 

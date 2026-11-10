@@ -1,6 +1,6 @@
 # 17 · 会话式制卡、提案审批与恢复
 
-适用：为自然语言制卡器增加长期聊天、会话切换、同意/拒绝、消息内真实卡片，或维护这些流程的状态一致性。先读[Agent13](13-natural-language-native-cards.md)了解原版编译边界，再按需读[Agent14](14-card-identity-and-assets.md)/[15](15-multimod-player-lifecycle.md)和[Agent16](16-experimental-capabilities-and-launch.md)。详细原理与证据见[第22章05](../22.自然语言原版制卡/05.会话式制卡与提案审批.md)。
+适用：为自然语言制卡器增加长期聊天、会话切换、同意/拒绝、消息内真实卡片，或维护这些流程的状态一致性。先读[Agent13](13-natural-language-native-cards.md)了解原版编译边界，再按需读[Agent14](14-card-identity-and-assets.md)/[15](15-multimod-player-lifecycle.md)和[Agent16](16-experimental-capabilities-and-launch.md)。详细原理与证据见[第22章05](../Library-docs/22.自然语言原版制卡/05.会话式制卡与提案审批.md)。
 
 本指南记录Android R13后续工程，不将new_cards、会话API或R12配方写成本库公开Python v1的现成功能。未经授权不因本页出现设备路径就调用ADB或安装APK。
 

@@ -2,7 +2,7 @@
 
 下文1–9和R12统计保留其历史语境。维护Android R29时先读本文末的[R29后续](#r29-mod内偏好与健康恢复后续)，采用每Mod auto/on/off、真实资源赢家和显式安全模式；不要把历史“新安装默认关闭”的全局执行策略直接套到R29。
 
-适用：用户明确要求把已有运行时扩展接入启动器/AI，或维护全局能力登记。普通原版制卡仍走[Agent13](13-natural-language-native-cards.md)，身份、文本与美术走[Agent14](14-card-identity-and-assets.md)/[15](15-multimod-player-lifecycle.md)。完整原理见[第21章08](../21.语义调试与技能扩展实战/08.实验能力登记与冷启动许可/README.md)。
+适用：用户明确要求把已有运行时扩展接入启动器/AI，或维护全局能力登记。普通原版制卡仍走[Agent13](13-natural-language-native-cards.md)，身份、文本与美术走[Agent14](14-card-identity-and-assets.md)/[15](15-multimod-player-lifecycle.md)。完整原理见[第21章08](../Library-docs/21.语义调试与技能扩展实战/08.实验能力登记与冷启动许可/README.md)。
 
 1. 核对用户当前范围、原包与目标二进制，保留已有工作树。分别记录运行支持、AI固定配方、动画与AI预测，不把其中一层的通过当成所有层通过。
 2. 核对唯一能力登记的revision、ID、版本、规则、参数和限制。R12运行登记23项，AI仅开放攻击后弹射1006、自毁1019、打出与己方英雄换当前生命1014；均为空参数固定单位配方。不能因runtime_supported为true就让模型自由编写私有树。
@@ -19,7 +19,7 @@
 <!-- R29-library:mod-runtime-and-health -->
 ## R29 Mod内偏好与健康恢复后续
 
-详细说明见[第21章11](../21.语义调试与技能扩展实战/11.Mod内能力与启动健康恢复/README.md)。本轮阶段归档不替代最终候选的真实AI、UI、安装升级或对局验收。
+详细说明见[第21章11](../Library-docs/21.语义调试与技能扩展实战/11.Mod内能力与启动健康恢复/README.md)。本轮阶段归档不替代最终候选的真实AI、UI、安装升级或对局验收。
 
 1. 先完成整文件资源优先级，再读实际赢家卡表及贡献资源Mod的声明；完全被遮蔽Mod不参与聚合。中文赢家的被遮蔽具体卡规则列为ignored，模块声明另算。未知／高版本依赖明确unavailable，不执行附件代码。
 2. 本机偏好`extensions/music/ai_extensions=auto/on/off`不随ZIP导出。共享模块on优先off，记录双方来源；safe_mode与原版入口覆盖关闭，不改存储偏好。六路／托管仍是独立玩法，不随技能依赖自动开。

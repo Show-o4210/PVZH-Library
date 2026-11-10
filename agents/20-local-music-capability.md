@@ -1,6 +1,6 @@
 # 20. 当前Mod本地背景音乐能力
 
-用于Android R24的已授权音乐技能。先读[第21章09](../21.语义调试与技能扩展实战/09.本地背景音乐与共享生命周期/README.md)和[筛选证据](../21.语义调试与技能扩展实战/09.本地背景音乐与共享生命周期/音频能力验收摘要.json)，再按[Agent16](16-experimental-capabilities-and-launch.md)区分登记/冻结/实际状态；语义证据按[Agent11](11-semantic-testing-and-evidence.md)。
+用于Android R24的已授权音乐技能。先读[第21章09](../Library-docs/21.语义调试与技能扩展实战/09.本地背景音乐与共享生命周期/README.md)和[筛选证据](../Library-docs/21.语义调试与技能扩展实战/09.本地背景音乐与共享生命周期/音频能力验收摘要.json)，再按[Agent16](16-experimental-capabilities-and-launch.md)区分登记/冻结/实际状态；语义证据按[Agent11](11-semantic-testing-and-evidence.md)。
 
 - 原BGM临时音乐RTPC静音＋当前Mod登记的MediaPlayer本地曲目；不改系统媒体音量/SFX/用户音乐期望值，不替换银行。
 - `audio/music.json`提供真实曲目来源、SHA、大小等；AI只引用已登记track_id，不接受URL、绝对路径或新Hook。原版/缺曲目/许可关闭不能宣称已生效。

@@ -4,7 +4,7 @@ PVZH-Library 是多许可证仓库。请按内容所在目录查看对应许可�
 
 | 范围 | 许可 | 声明 |
 | --- | --- | --- |
-| 原资料库中的原创教程、笔记、导航和文档示例（含 00～20 章节、前言与资源目录中的原创文字） | CC BY-NC-SA 4.0 | [根 LICENSE](LICENSE)、[中文使用条款](许可与使用条款.md)，作者：休切尔 / Show-o4210 |
+| 原资料库中的原创教程、笔记、导航和文档示例（含迁至 `Library-docs/` 的 00～20 章、前言与资源目录中的原创文字） | CC BY-NC-SA 4.0 | [根 LICENSE](LICENSE)、[中文使用条款](许可与使用条款.md)，作者：休切尔 / Show-o4210 |
 | `tools/card-editor/` 中的项目原创代码与随附文档 | MIT | [项目 LICENSE](tools/card-editor/LICENSE)，Copyright (c) 2026 Show-o4210 |
 | `tools/level-editor/` 中的项目原创代码与随附文档 | MIT | [项目 LICENSE](tools/level-editor/LICENSE)，Copyright (c) 2026 Show-o4210 |
 | `tools/audio-tool/` 中的项目原创代码与随附文档 | MIT | [项目 LICENSE](tools/audio-tool/LICENSE)，Copyright (c) 2026 Show-o4210 |

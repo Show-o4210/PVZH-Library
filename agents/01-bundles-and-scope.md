@@ -49,4 +49,4 @@ output_path.write_bytes(env.file.save(packer="lz4"))
 
 不要对 JSON 全局替换阵营字符串，不要“清洗”整份文本的引号或标点；只修改明确定位的结构。
 
-可直接运行的完整流程见 [08基础示例](08-basic-mod-walkthrough.md)。GUI编辑器适合人工编辑，但其兼容嗅探／清洗代码不等于精确增量写入；Agent构建应按唯一m_Name定位并验证非目标对象原始字节。
+可直接运行的完整流程见 [08基础示例](../Library-docs/08-basic-mod-walkthrough.md)。GUI编辑器适合人工编辑，但其兼容嗅探／清洗代码不等于精确增量写入；Agent构建应按唯一m_Name定位并验证非目标对象原始字节。

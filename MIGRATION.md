@@ -1,5 +1,11 @@
 # 项目迁移记录
 
+## 2026-11-11 教程目录调整
+
+00–24 章、前言、独立基础示例和四篇历史实操教程迁入 [Library-docs](Library-docs/README.md)。章内配套数据与脚本随章节移动，工具和 Mod 的构建及使用说明仍随各自项目维护。全库路径以[总索引](文档总索引.md)及[机器目录](DOCUMENT-CATALOG.json)为入口。
+
+## 2026-10-05 独立项目导入
+
 2026-10-05 将四个独立仓库的默认分支导入 PVZH-Library。各项目保持独立，未抽取公共模块或合并运行环境。
 
 | 原仓库 | 新目录 | 导入的原始提交 | 原始提交数 |
@@ -18,7 +24,7 @@ git log --format=fuller 378ab4a2e78ac30b92b9c30ab84c9a98a7a8da3e -- main.py
 git show 14976838c19041623186201126547a633455eaf7:native/merge_inventory_extra.c
 ```
 
-原资料章节保留原目录。涉及这四个项目的导航和源码链接已指向新位置。旧仓库保留为历史入口；Issue、Pull Request、Star 与 Release 不是 Git 对象，不随源码导入。后续维护集中在 PVZH-Library。
+本次导入时原资料章节沿用原目录。涉及四个项目的导航和源码链接指向导入后的位置。旧仓库保留为历史入口，Issue、Pull Request、Star 与 Release 各自留在原仓库。后续维护集中在 PVZH-Library。
 
 ## 音频工具完整包
 
