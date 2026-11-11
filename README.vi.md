@@ -1,8 +1,8 @@
-# Thư viện PVZH
+# PvZ Heroes Advanced Modding Library
 
-[简体中文 README](README.md) · [English README](README.en.md) · **Tiếng Việt (vi)**
+[English](README.en.md) [简体中文](README.md)| Tiếng Việt 
 
-Kho tư liệu, công cụ và kinh nghiệm bằng tiếng Trung dành cho các nhà phát triển mod của **Plants vs. Zombies Heroes (PVZH)**.
+PvZ Heroes Advanced Modding Library (Thư viện Modding Nâng cao PvZ Heroes) là kho tư liệu, công cụ và kinh nghiệm dành cho các nhà phát triển mod của **Plants vs. Zombies Heroes (PVZH)**.
 
 Phiên bản ổn định hiện tại trên điện thoại là **v3.1 (mốc tính năng r-2-22 RC1)**. [Bảng ngôn ngữ tiếng Việt của trình khởi chạy](pvzh-launcher/README.md) trong bản ứng viên phát triển **r-2-32 RC1** đã được mở để rà soát bản dịch. Các hướng dẫn về tính năng và khắc phục sự cố ghi nhận phạm vi kiểm chứng đến r-2-28 RC1. Kho này tập hợp các hướng dẫn bằng tiếng Trung, công cụ công khai và bằng chứng đã được chọn lọc. Các đường dẫn được đánh dấu là “không gian làm việc” (工作区) dùng để truy lại hồ sơ bàn giao trong không gian làm việc đầy đủ.
 
