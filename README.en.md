@@ -1,6 +1,6 @@
 # PvZ Heroes Advanced Modding Library
 
-[简体中文](README.md) | [Tiếng Việt](README.vi.md)
+English | [简体中文](README.md) | [Tiếng Việt](README.vi.md)
 
 A Chinese-language knowledge base of documentation, tools, and practical experience for **Plants vs. Zombies Heroes (PVZH)** mod developers.
 
@@ -8,7 +8,7 @@ The current stable version of **PvZH AM (Advanced Modding)** is **v3.1 (r-2-22 R
 
 > **Language note:** This README is an English guide to the repository. Most documentation is currently written in Chinese; the links below lead to the original materials unless an English translation is explicitly provided.
 
-[简体中文](README.md) | [Tiếng Việt](README.vi.md)
+English | [简体中文](README.md) | [Tiếng Việt](README.vi.md)
 
 ## Start here
 
