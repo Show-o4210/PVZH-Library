@@ -1,4 +1,4 @@
-# PVZH 启动器
+# PvZ Heroes Advanced Modding Library
 
 PVZH 启动器是《植物大战僵尸：英雄》的第三方 Android Mod 工作台。它提供 Mod 管理、卡牌和美术编辑，以及游戏资源准备等入口。手机操作和版本能力见[启动器工作台指南](../Library-docs/24.启动器工作台与手机编辑/README.md)。
 
