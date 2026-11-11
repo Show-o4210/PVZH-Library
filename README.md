@@ -1,6 +1,6 @@
 # PvZ Heroes Advanced Modding Library
 
-English | [简体中文](README.md) | [Tiếng Việt](README.vi.md)
+English | [简体中文](README_zh_CN.md) | [Tiếng Việt](README_vi_VN.md)
 
 PvZ Heroes Advanced Modding Library is a knowledge base of documentation, tools, and practical experience for **Plants vs. Zombies Heroes (PvZH)** mod developers.
 
