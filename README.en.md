@@ -2,7 +2,7 @@
 
 A Chinese-language knowledge base of documentation, tools, and practical experience for **Plants vs. Zombies Heroes (PVZH)** mod developers.
 
-The current stable version of **PvZH AM (Advanced Modding)** is **v3.1 (r-2-22 RC1)**. The [launcher project](pvzh-launcher/README.md) includes the English UI catalog and the **r-2-32 RC1** Vietnamese test build. The [capability guide](Library-docs/24.启动器工作台与手机编辑/05.当前版本能力.md) documents v3.1 and r-2-28 RC1 and separates device tests from original-engine results. This repository contains documentation, public tools, and curated evidence. References marked as workspace paths identify records in the full development workspace.
+The current stable version of **PvZH AM (Advanced Modding)** is **v3.1 (r-2-22 RC1)**. The [launcher project](pvzh-launcher/README.md) includes the English UI catalog and a draft Vietnamese catalog from **r-2-32 RC1**. The [capability guide](Library-docs/24.启动器工作台与手机编辑/05.当前版本能力.md) documents v3.1 and r-2-28 RC1 and separates device tests from original-engine results. This repository contains documentation, public tools, and curated evidence. References marked as workspace paths identify records in the full development workspace.
 
 > **Language note:** This README is an English guide to the repository. Most documentation is currently written in Chinese; the links below lead to the original materials unless an English translation is explicitly provided.
 
