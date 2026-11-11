@@ -1,0 +1,16 @@
+{
+  "backend.launcher_store.game_language.invalid_slot": "Game language unavailable: {0}. Choose again.",
+  "backend.launcher_store.game_language.invalid_bundle": "The {0} translation from {1} is unavailable because its bundle could not be read.",
+  "backend.launcher_store.game_language.missing_stock": "No verified original language resource: {0}. Prepare the game resources first.",
+  "backend.launcher_store.game_language.stale_plan": "The Mods, language resources, or launch settings changed. Choose a game language again.",
+  "backend.launcher_store.game_language.manifest_changed": "The game resource manifest changed. Prepare resources and confirm the language again.",
+  "shell.game_language.choose": "Choose Mod Game Language",
+  "shell.game_language.stock": "{0} · Original text",
+  "shell.game_language.mod": "{0} · Text from {1}",
+  "shell.game_language.stock_notice": "Mod gameplay stays active with original text. Some descriptions may differ from Mod effects, and new cards may lack names.",
+  "shell.game_language.english_fallback": "The game has no Vietnamese resources. It will start in English.",
+  "shell.game_language.follow": "Follow launcher ({0})",
+  "shell.game_language.remember": "Do not ask again for this Mod selection",
+  "shell.game_language.save_error": "Could not remember the language. You can choose again next time.",
+  "shell.game_language.unavailable": "No game language is available. Check the game resources."
+}

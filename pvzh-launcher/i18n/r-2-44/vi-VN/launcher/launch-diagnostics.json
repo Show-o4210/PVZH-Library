@@ -1,0 +1,23 @@
+{
+  "shell.danger_launch.title": "Khởi chạy có rủi ro",
+  "shell.danger_launch.one_shot": "Chỉ áp dụng lần này",
+  "shell.danger_launch.explanation": "Chỉ áp dụng cho lần khởi chạy này. Trình khởi chạy sẽ tải những phần dùng được của các Mod đã chọn. Tài nguyên không vượt qua kiểm tra có thể bị bỏ qua hoặc được thay bằng tài nguyên gốc đã xác minh. Các tính năng phụ thuộc cũng có thể bị tắt. Trò chơi có thể hoạt động bất thường hoặc bị văng. Hãy xem chi tiết bên dưới trước khi tiếp tục.",
+  "shell.danger_launch.blocked": "Không thể khởi chạy có rủi ro. Xem lý do bên dưới.",
+  "shell.danger_launch.selected": "Mod trong nhóm hiện tại: {0}",
+  "shell.danger_launch.confirm": "Xác nhận khởi chạy có rủi ro",
+  "shell.danger_launch.confirm_required": "Hãy xác nhận phương án khởi chạy có rủi ro lần này.",
+  "shell.danger_launch.no_issues": "Kết quả kiểm tra hiện tại cho thấy không có mục nào cần bỏ qua hoặc thay bằng bản gốc.",
+  "shell.danger_launch.issue_stock": "Dùng tài nguyên gốc",
+  "shell.danger_launch.issue_skip": "Bỏ qua",
+  "shell.danger_launch.issue_block": "Chặn khởi chạy",
+  "shell.launch_diagnostics.title": "Chẩn đoán khởi chạy",
+  "shell.launch_diagnostics.summary": "Kiểm tra tài nguyên và lỗi khởi chạy",
+  "shell.launch_diagnostics.view": "Xem chẩn đoán khởi chạy",
+  "shell.launch_diagnostics.checking": "Đang kiểm tra phương án khởi chạy…",
+  "shell.launch_diagnostics.preflight": "Kiểm tra nhóm Mod hiện tại",
+  "shell.launch_diagnostics.last_failure": "Lỗi khởi chạy gần nhất",
+  "shell.launch_diagnostics.no_failure": "Chưa ghi nhận lỗi khởi chạy.",
+  "shell.launch_diagnostics.failure_context": "{0} · {1}",
+  "shell.launch_diagnostics.last_danger": "Lần khởi chạy có rủi ro gần nhất",
+  "shell.launch_diagnostics.runtime": "Trạng thái khởi động trò chơi"
+}

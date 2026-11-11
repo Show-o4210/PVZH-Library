@@ -2,26 +2,30 @@
 
 PVZH 启动器是《植物大战僵尸：英雄》的第三方 Android Mod 工作台。它提供 Mod 管理、卡牌和美术编辑，以及游戏资源准备等入口。手机操作和版本能力见[启动器工作台指南](../Library-docs/24.启动器工作台与手机编辑/README.md)。
 
-这里公开项目简介和启动器语言表。完整客户端与 Hook 实现由独立工程维护。
+这里公开项目简介、界面词表和卡名。完整客户端与 Hook 实现由独立工程维护。
 
 ## 启动器本地化
 
-| 语言表 | 对应开发候选 | 状态 |
+**r-2-44 RC1** 是 development 测试候选。当前三语词表按同一版本维护。
+
+| 语言 | 词表 | 来源 |
 | --- | --- | --- |
-| [简体中文 `zh-CN`](i18n/zh-CN/) | r-2-29 RC2 | 翻译基准 |
-| [English `en-US`](i18n/en-US/) | r-2-30 RC1 | 英文初稿，待审校 |
-| [Tiếng Việt `vi-VN`](i18n/vi-VN/) | r-2-32 RC1 | 越南语初稿，待审校 |
+| 简体中文 | [zh-CN](i18n/r-2-44/zh-CN/) | RC1 生效词表与原版中文卡名 |
+| English | [en-US](i18n/r-2-44/en-US/) | RC1 生效词表与英文卡名 |
+| Tiếng Việt | [vi-VN](i18n/r-2-44/vi-VN/) | 基于 RC1，参考越南语 LawnStrings 审校文案和卡名 |
 
-语言表覆盖导航、设置、编辑器、AI 工作台、资源进度和错误提示。三种语言均补齐了 r-2-32 RC1 的 `language.json`。该版本支持首次选择语言、在设置中切换以及下次打开时恢复选择，运行时每种语言使用 5,190 个键。r-2-30 RC1 曾完成英文界面的 Android 功能抽查，r-2-32 RC1 的越南语已完成本机检查，等待 Android 实机反馈。
+每种语言包含 `launcher/` 的 5,706 个启动器词条、`floating-tools/` 的 417 个游戏内工具词条，以及 `card-names.json` 中按 GUID 索引的 579 个原版卡名。越南语修订用于后续构建，已核对键、占位符、游戏标记和卡名 GUID，等待构建与 Android 实机检查。
 
-欢迎通过 Issue 反馈文案问题，或用 Pull Request 提交翻译建议。请保留 JSON 键以及 `{0}`、`{1}` 等占位符，按目标语言调整它们的位置。游戏本体与 Mod 自带文本各自使用自己的资源。许可范围见[许可证索引](../LICENSES.md)。
+欢迎通过 Issue 或 Pull Request 反馈。请注明语言、文件名及 JSON 键或卡牌 GUID，并保留键、`{0}` 等占位符和游戏标记。游戏本体与 Mod 自带文本使用各自的资源。许可范围见[许可证索引](../LICENSES.md)。
+
+历史词表仍可查阅：[简体中文](i18n/zh-CN/) · [English](i18n/en-US/) · [Tiếng Việt](i18n/vi-VN/)。
 
 ## About PvZH AM
 
-PvZH AM (Advanced Modding) is a third-party Android Mod workbench for *Plants vs. Zombies Heroes*. The [English UI catalog](i18n/en-US/) is a draft from **r-2-30 RC1**, based on the [Simplified Chinese catalog](i18n/zh-CN/) from **r-2-29 RC2**. The English build passed Android smoke tests for key workflows. Terminology and wording are open for review.
+PvZH AM (Advanced Modding) is a third-party Android Mod workbench for *Plants vs. Zombies Heroes*. The **r-2-44 RC1** development catalogs cover the launcher, in-game floating tools, and stock card names in [Simplified Chinese](i18n/r-2-44/zh-CN/), [English](i18n/r-2-44/en-US/), and [Vietnamese](i18n/r-2-44/vi-VN/). The Vietnamese catalog includes wording and card-name revisions for a later build.
 
-Translation feedback is welcome via Issues or Pull Requests. Keep the JSON keys and numbered placeholders such as `{0}` when proposing changes.
+For translation feedback, include the locale, file, and JSON key or card GUID. Keep placeholders such as `{0}` and in-game markup intact.
 
 ## Góp ý bản dịch tiếng Việt
 
-Bản dịch tiếng Việt đang ở giai đoạn đầu. Bạn có thể xem các tệp JSON và góp ý nếu câu chữ khó hiểu hoặc thuật ngữ thiếu nhất quán. Khi góp ý, hãy gửi tên tệp, khóa JSON và cách diễn đạt đề xuất. [Bảng dịch tiếng Việt](i18n/vi-VN/) · [Gửi phản hồi trên GitHub](https://github.com/Show-o4210/PVZH-Library/issues/new)
+[Bộ dữ liệu tiếng Việt dựa trên r-2-44 RC1](i18n/r-2-44/vi-VN/) gồm văn bản trình khởi chạy, công cụ nổi trong trò chơi và tên thẻ gốc. Các chỉnh sửa dựa trên LawnStrings tiếng Việt và dành cho bản dựng sau. Khi góp ý, vui lòng gửi tên tệp, khóa JSON hoặc GUID của thẻ và cách diễn đạt đề xuất. [Gửi phản hồi trên GitHub](https://github.com/Show-o4210/PvZH-AML/issues/new)

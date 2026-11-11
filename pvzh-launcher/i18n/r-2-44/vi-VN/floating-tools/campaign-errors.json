@@ -1,0 +1,9 @@
+{
+  "overlay.campaign.label.user_service": "dịch vụ tiến độ trên thiết bị",
+  "overlay.campaign.label.user_record": "tiến độ người chơi trên thiết bị",
+  "overlay.campaign.label.user_delta": "dữ liệu tiến độ chờ lưu",
+  "overlay.campaign.error.progress_state_changed": "Tiến độ màn {0} đã thay đổi. Hãy mở lại mục Chọn màn.",
+  "overlay.campaign.error.progress_readback": "Không thể xác minh tiến độ màn {0}.",
+  "overlay.campaign.error.progress_recovery_uncertain": " Không thể xác minh hoặc hoàn tác một số thay đổi trong bộ nhớ. Hãy mở lại bản đồ và kiểm tra tiến độ.",
+  "overlay.campaign.error.progress_save_uncertain": " Không thể xác nhận kết quả lưu hoặc đọc lại. Hãy mở lại bản đồ và kiểm tra tiến độ."
+}

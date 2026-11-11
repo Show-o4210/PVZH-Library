@@ -1,0 +1,10 @@
+{
+  "shell.birth_month_auto.title": "自动确认出生年月",
+  "shell.birth_month_auto.hint": "首次进入游戏时填写并确认下方年月。请核对真实出生年月，EA 用户协议仍需在游戏内确认。",
+  "shell.birth_month_auto.date_title": "出生年月",
+  "shell.birth_month_auto.date_value": "{0} 年 {1} 月",
+  "shell.birth_month_auto.date_unset": "请选择出生年月",
+  "shell.birth_month_auto.year": "出生年份",
+  "shell.birth_month_auto.month": "出生月份",
+  "shell.birth_month_auto.date_invalid": "请输入 {0} 至 {1} 之间的年份和 1 至 12 之间的月份。"
+}

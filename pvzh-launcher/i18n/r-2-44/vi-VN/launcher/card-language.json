@@ -1,0 +1,15 @@
+{
+  "editor.card_locale.selector": "Ngôn ngữ văn bản thẻ",
+  "editor.card_locale.loading": "Đang đọc các tài nguyên ngôn ngữ có thể chỉnh sửa…",
+  "editor.card_locale.draft": "Hãy lưu bản nháp thẻ đang mở trước khi sửa văn bản ở ngôn ngữ khác.",
+  "editor.card_locale.stock": "Mod chưa có gói tài nguyên cho ngôn ngữ này. Khi bạn lưu thay đổi, trình chỉnh sửa sẽ tạo gói từ tài nguyên gốc đã xác minh.",
+  "editor.card_locale.mod": "Đang chỉnh sửa gói ngôn ngữ của Mod. Khi bạn lưu, chỉ văn bản thẻ ở ngôn ngữ này được cập nhật.",
+  "editor.card_locale.title": "Sửa văn bản thẻ · {0}",
+  "editor.card_locale.saved": "Đã lưu văn bản thẻ bằng ngôn ngữ {0}.",
+  "editor.card_locale.backend.pending_draft": "Hãy lưu hoặc bỏ bản nháp thẻ đang mở trước.",
+  "editor.card_locale.backend.unsupported_slot": "Không thể sửa tài nguyên ngôn ngữ: {0}.",
+  "editor.card_locale.backend.shared_prefab": "Thẻ #{0} dùng chung mã văn bản này với thẻ khác nên không thể lưu riêng.",
+  "editor.card_locale.backend.invalid_field": "Không thể ghi trường văn bản thẻ: {0}.",
+  "editor.card_locale.backend.stale_basis": "Mod hoặc nguồn văn bản đã thay đổi. Hãy mở lại trình chỉnh sửa ngôn ngữ.",
+  "editor.card_locale.backend.candidate_mismatch": "Không xác minh được tài nguyên ngôn ngữ sau khi đọc lại bản Mod mới. Mod gốc được giữ nguyên."
+}

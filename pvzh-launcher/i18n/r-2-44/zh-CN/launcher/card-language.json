@@ -1,0 +1,15 @@
+{
+  "editor.card_locale.selector": "卡牌文字语言",
+  "editor.card_locale.loading": "读取可编辑的语言资源…",
+  "editor.card_locale.draft": "请先保存已有卡牌草稿，再编辑其他语言的文字。",
+  "editor.card_locale.stock": "此 Mod 没有该语言包。保存有改动的文字时，将以已验证的原版资源为底稿添加这一语言。",
+  "editor.card_locale.mod": "正在编辑此 Mod 的语言包。保存只更新这个语言的卡牌文字。",
+  "editor.card_locale.title": "编辑卡牌文字 · {0}",
+  "editor.card_locale.saved": "已保存 {0} 的卡牌文字。",
+  "editor.card_locale.backend.pending_draft": "请先保存或放弃原有卡牌草稿。",
+  "editor.card_locale.backend.unsupported_slot": "无法编辑语言资源：{0}。",
+  "editor.card_locale.backend.shared_prefab": "卡牌 #{0} 共用此文字标识，无法单独保存。",
+  "editor.card_locale.backend.invalid_field": "卡牌文字字段不可写：{0}。",
+  "editor.card_locale.backend.stale_basis": "Mod 或语言底稿已变化。请重新打开语言编辑页。",
+  "editor.card_locale.backend.candidate_mismatch": "新候选未通过语言资源回读。原 Mod 仍保留。"
+}

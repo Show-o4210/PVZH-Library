@@ -1,0 +1,9 @@
+{
+  "overlay.campaign.label.user_service": "本机进度服务",
+  "overlay.campaign.label.user_record": "本机用户进度",
+  "overlay.campaign.label.user_delta": "待保存的进度数据",
+  "overlay.campaign.error.progress_state_changed": "第 {0} 关的进度已变化。请重新打开选关。",
+  "overlay.campaign.error.progress_readback": "无法核验第 {0} 关的进度。",
+  "overlay.campaign.error.progress_recovery_uncertain": " 部分内存中的变更无法核验或撤销。请重新进入地图并检查进度。",
+  "overlay.campaign.error.progress_save_uncertain": " 无法确认保存或回读结果。请重新进入地图并检查进度。"
+}

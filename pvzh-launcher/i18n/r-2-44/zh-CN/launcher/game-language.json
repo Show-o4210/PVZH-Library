@@ -1,0 +1,16 @@
+{
+  "backend.launcher_store.game_language.invalid_slot": "游戏语言不可用：{0}。请重新选择。",
+  "backend.launcher_store.game_language.invalid_bundle": "{1} 的 {0} 语言包无法读取，这份译文不可用。",
+  "backend.launcher_store.game_language.missing_stock": "找不到已验证的原版语言资源：{0}。请先准备游戏资源。",
+  "backend.launcher_store.game_language.stale_plan": "Mod、语言资源或启动设置已变化。请重新选择游戏语言。",
+  "backend.launcher_store.game_language.manifest_changed": "游戏资源清单已变化。请重新准备资源并确认语言。",
+  "shell.game_language.choose": "选择 Mod 启动语言",
+  "shell.game_language.stock": "{0} · 原版文字",
+  "shell.game_language.mod": "{0} · {1} 的文字",
+  "shell.game_language.stock_notice": "保留 Mod 玩法并使用原版文字。部分说明可能与 Mod 效果不同，新卡也可能缺少名称。",
+  "shell.game_language.english_fallback": "游戏暂无越南语资源，本次使用英语。",
+  "shell.game_language.follow": "跟随启动器（{0}）",
+  "shell.game_language.remember": "下次不再询问这组 Mod",
+  "shell.game_language.save_error": "未能记住语言选择。下次启动时可以重新选择。",
+  "shell.game_language.unavailable": "没有可用的游戏语言。请检查游戏资源。"
+}

@@ -1,0 +1,9 @@
+{
+  "overlay.campaign.label.user_service": "local progress service",
+  "overlay.campaign.label.user_record": "local player progress",
+  "overlay.campaign.label.user_delta": "pending progress data",
+  "overlay.campaign.error.progress_state_changed": "Stage {0} progress changed. Reopen stage selection.",
+  "overlay.campaign.error.progress_readback": "Could not verify stage {0} progress.",
+  "overlay.campaign.error.progress_recovery_uncertain": " Some in-memory changes could not be verified or reverted. Reopen the map and check progress.",
+  "overlay.campaign.error.progress_save_uncertain": " The save or its readback could not be confirmed. Reopen the map and check progress."
+}

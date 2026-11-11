@@ -1,0 +1,11 @@
+{
+  "language.first.title": "选择语言 / Choose language / Chọn ngôn ngữ",
+  "language.first.description": "稍后可在设置中更改语言。\nYou can change this later in Settings.\nBạn có thể đổi ngôn ngữ sau trong phần Cài đặt.",
+  "language.first.save_failed": "无法保存语言设置，请重试。\nCould not save your language choice. Try again.\nKhông thể lưu ngôn ngữ đã chọn. Vui lòng thử lại.",
+  "language.name.zh_cn": "简体中文",
+  "language.name.en_us": "English",
+  "language.name.vi_vn": "Tiếng Việt",
+  "language.settings.title": "Ngôn ngữ",
+  "language.settings.current": "Đang sử dụng",
+  "language.settings.save_failed": "Không thể lưu ngôn ngữ đã chọn. Vui lòng thử lại."
+}

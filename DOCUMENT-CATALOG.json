@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-11",
+  "updated_at": "2026-11-12",
   "generated_utc": "2026-11-10T19:34:34.236928+00:00",
   "product_context": {
     "public_version": "v3.1",
@@ -53,6 +53,22 @@
       "entry": "pvzh-launcher/README.md",
       "catalog": "pvzh-launcher/i18n/vi-VN/",
       "translation_status": "draft"
+    },
+    "launcher_localization_r_2_44": {
+      "internal_revision": "r-2-44",
+      "candidate": "RC1",
+      "baseline": "r-2-43 RC2",
+      "channel": "development",
+      "entry": "pvzh-launcher/README.md",
+      "catalogs": {
+        "zh-CN": "pvzh-launcher/i18n/r-2-44/zh-CN/",
+        "en-US": "pvzh-launcher/i18n/r-2-44/en-US/",
+        "vi-VN": "pvzh-launcher/i18n/r-2-44/vi-VN/"
+      },
+      "launcher_keys_per_locale": 5706,
+      "floating_tools_keys_per_locale": 417,
+      "card_names_per_locale": 579,
+      "vietnamese_translation_status": "reviewed for a future build"
     }
   },
   "coverage": {
@@ -3313,11 +3329,12 @@
       "group": "pvzh-launcher",
       "scope": "recent_stage",
       "scope_label": "近期阶段",
-      "applicability": "r-2-29 RC2 简体中文基准、r-2-30 RC1 英文初稿、r-2-32 RC1 越南语初稿及翻译协作入口",
+      "applicability": "r-2-44 RC1 中英越启动器、游戏内悬浮工具和卡名词表，包含越南语审校稿与旧版翻译入口",
       "revision_mentions": [
         "r-2-29",
         "r-2-30",
-        "r-2-32"
+        "r-2-32",
+        "r-2-44"
       ],
       "previously_without_inbound_md_link": false
     },

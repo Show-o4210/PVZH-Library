@@ -1,0 +1,13 @@
+{
+  "shell.ea_legal.title": "Văn bản pháp lý của EA",
+  "shell.ea_legal.terms": "Thỏa thuận người dùng của EA",
+  "shell.ea_legal.privacy": "Chính sách về quyền riêng tư và cookie của EA",
+  "shell.ea_legal.offline": "Đọc ngoại tuyến",
+  "shell.ea_legal.download_and_read": "Tải xuống và đọc",
+  "shell.ea_legal.explanation": "Tải các văn bản từ EA để đọc ngoại tuyến. Hãy xác nhận ngày sinh và thỏa thuận trên màn hình xác minh độ tuổi trong trò chơi.",
+  "shell.ea_legal.update": "Tải xuống hoặc cập nhật cả hai văn bản",
+  "shell.ea_legal.loading": "Đang đọc văn bản pháp lý của EA…",
+  "shell.ea_legal.load_failed": "Không thể đọc văn bản. Hãy kiểm tra kết nối hoặc mở bản gốc trên trang web của EA.",
+  "shell.ea_legal.updated": "Đã tải {0}/2 văn bản. Nếu tải xuống thất bại, các bản đã lưu vẫn được giữ nguyên.",
+  "shell.ea_legal.official": "Mở bản gốc trên trang EA"
+}

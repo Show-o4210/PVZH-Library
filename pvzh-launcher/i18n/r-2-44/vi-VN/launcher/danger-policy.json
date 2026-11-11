@@ -1,0 +1,11 @@
+{
+  "backend.danger.no_selection": "Hãy bật Mod cần chẩn đoán trong thư viện Mod.",
+  "backend.danger.safe_mode": "Đang bật khởi chạy an toàn. Hãy tắt chế độ này trước khi xác nhận khởi chạy có rủi ro.",
+  "backend.danger.missing_blob": "Thiếu tài nguyên của Mod này trong bộ nhớ cục bộ.",
+  "backend.danger.fingerprint": "Mã kiểm tra của tài nguyên Mod không khớp với mã đã lưu lúc nhập.",
+  "backend.danger.invalid_bundle": "Không nhận dạng được gói UnityFS gốc hoặc gói thiếu dữ liệu cần thiết.",
+  "backend.danger.missing_member": "Tệp được khai báo trong Mod nhưng không có trong ZIP: {0}",
+  "backend.danger.artwork_templates": "Dữ liệu thẻ được giữ lại và hình ảnh riêng dùng mẫu gốc đã xác minh trong lần chạy này.",
+  "backend.danger.confirmation_changed": "Mod, tài nguyên hoặc cài đặt đã thay đổi. Hãy xem lại và xác nhận khởi chạy có rủi ro.",
+  "backend.danger.blocked": "Một số mục vẫn không thể áp dụng an toàn. Hãy mở chẩn đoán khởi chạy để xem chi tiết."
+}

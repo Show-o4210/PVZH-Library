@@ -1,0 +1,7 @@
+{
+  "shell.community.support": "Support the project",
+  "shell.community.show_support.label": "Support is entirely voluntary and does not affect access to launcher features. This screen only displays the support image.",
+  "shell.community.show_support.accessibility": "Support image",
+  "shell.community.show_support.label_2": "Could not display the support image. Please try again later.",
+  "shell.community.support_close_accessibility": "Close support image"
+}

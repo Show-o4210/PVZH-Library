@@ -1,0 +1,4 @@
+{
+  "shell.birth_year_prefill.save_failed": "无法保存出生年份预填设置，请重试。",
+  "shell.birth_year_prefill.android_version": "此功能需要 Android 10 或更新版本。当前设备请在游戏内手动填写。"
+}

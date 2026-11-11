@@ -1,0 +1,16 @@
+{
+  "backend.launcher_store.game_language.invalid_slot": "Ngôn ngữ trò chơi không khả dụng: {0}. Hãy chọn lại.",
+  "backend.launcher_store.game_language.invalid_bundle": "Không thể dùng bản dịch {0} của {1} vì không đọc được gói tài nguyên ngôn ngữ.",
+  "backend.launcher_store.game_language.missing_stock": "Không tìm thấy tài nguyên ngôn ngữ gốc đã được xác minh cho {0}. Hãy chuẩn bị tài nguyên trò chơi trước.",
+  "backend.launcher_store.game_language.stale_plan": "Mod, tài nguyên ngôn ngữ hoặc cài đặt khởi chạy đã thay đổi. Hãy chọn lại ngôn ngữ trò chơi.",
+  "backend.launcher_store.game_language.manifest_changed": "Danh mục tài nguyên trò chơi đã thay đổi. Hãy chuẩn bị tài nguyên và xác nhận lại ngôn ngữ.",
+  "shell.game_language.choose": "Chọn ngôn ngữ khi chơi Mod",
+  "shell.game_language.stock": "{0} · Văn bản gốc",
+  "shell.game_language.mod": "{0} · Văn bản từ {1}",
+  "shell.game_language.stock_notice": "Mod vẫn có hiệu lực khi dùng văn bản gốc. Một số mô tả có thể khác với hiệu ứng của Mod và thẻ mới có thể chưa có tên.",
+  "shell.game_language.english_fallback": "Trò chơi chưa có tài nguyên tiếng Việt. Lần khởi chạy này sẽ dùng tiếng Anh.",
+  "shell.game_language.follow": "Theo ngôn ngữ của trình khởi chạy ({0})",
+  "shell.game_language.remember": "Không hỏi lại với nhóm Mod này",
+  "shell.game_language.save_error": "Không lưu được lựa chọn ngôn ngữ. Bạn có thể chọn lại vào lần khởi chạy sau.",
+  "shell.game_language.unavailable": "Không có ngôn ngữ trò chơi khả dụng. Hãy kiểm tra tài nguyên."
+}
