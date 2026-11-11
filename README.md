@@ -1,6 +1,6 @@
 # PVZH 图书馆
 
-[English README](README.en.md)
+[English README](README.en.md) · [Tiếng Việt (vi)](README.vi.md)
 
 一份面向《植物大战僵尸：英雄》Mod 开发者的中文资料、工具与经验库。
 

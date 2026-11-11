@@ -6,7 +6,7 @@ The current stable version of **PvZH AM (Advanced Modding)** is **v3.1 (r-2-22 R
 
 > **Language note:** This README is an English guide to the repository. Most documentation is currently written in Chinese; the links below lead to the original materials unless an English translation is explicitly provided.
 
-[简体中文 README](README.md)
+[简体中文 README](README.md) · [Tiếng Việt (vi)](README.vi.md)
 
 ## Start here
 
