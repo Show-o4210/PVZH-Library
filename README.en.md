@@ -1,4 +1,6 @@
-# PVZH Library
+# PVZ Heroes Advanced Modding Library
+
+[简体中文](README.md) | [Tiếng Việt](README.vi.md)
 
 A Chinese-language knowledge base of documentation, tools, and practical experience for **Plants vs. Zombies Heroes (PVZH)** mod developers.
 
