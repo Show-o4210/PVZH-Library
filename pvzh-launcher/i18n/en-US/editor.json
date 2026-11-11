@@ -1618,7 +1618,7 @@
   "editor.skill_help.block.destroy_card_trigger.placement": "Ability group trigger component. Its native registration source is DestroyCardEffect.",
   "editor.skill_help.block.destroy_card_trigger.usage": "Used in vanilla recipes that trigger on destroy actions.",
   "editor.skill_help.block.discard_from_play_trigger.examples": "Vanilla 1 Avocado is destroyed, dealing damage to the same lane zombie; 64 Come On creates a Food card under relevant destruction conditions.",
-  "editor.skill_help.block.discard_from_play_trigger.limits": "A general button for discarding a card from hand; registered separately from DestroyCardTrigger, cannot treat redeal, transformation, or all exit paths as the same event. Specific reasons and timing for destruction must retain original card conditions.",
+  "editor.skill_help.block.discard_from_play_trigger.limits": "This is not a general-purpose button for discarding cards from hand. It is registered separately from DestroyCardTrigger; returning to hand, transformation, and all ways of leaving play must not be treated as the same event. Preserve the original card's conditions regarding specific destruction causes and timing.",
   "editor.skill_help.block.discard_from_play_trigger.placement": "Skill group trigger component, natively registered source is DiscardFromPlayEffect.",
   "editor.skill_help.block.discard_from_play_trigger.usage": "Used for associated recipes after original destruction/exit.",
   "editor.skill_help.block.draw_card_effect.examples": "Vanilla cards 40 (Flourish) and 44 (Holo-Flora) use DrawAmount=2.",

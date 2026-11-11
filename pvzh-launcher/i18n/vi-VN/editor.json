@@ -1618,7 +1618,7 @@
   "editor.skill_help.block.destroy_card_trigger.placement": "Nhóm khả năng kích hoạt thành phần. Nguồn đăng ký bản địa của nó là DestroyCardEffect.",
   "editor.skill_help.block.destroy_card_trigger.usage": "Dùng trong các công thức va-ni để kích hoạt các hành động phá hủy.",
   "editor.skill_help.block.discard_from_play_trigger.examples": "Vanilla 1 Avocado bị phá hủy, gây thiệt hại cho cùng một làn đường zombie; 64 đến đây tạo ra một thẻ thực phẩm với điều kiện phá hủy thích hợp.",
-  "editor.skill_help.block.discard_from_play_trigger.limits": "Một nút chung để bỏ thẻ khỏi tay; việc đăng ký riêng từ DestroyCardTrigger, không thể xử lý sự nhận dạng lại, chuyển đổi, hoặc mọi lối thoát giống cùng một sự kiện. Lý do cụ thể và thời gian riêng cho sự hủy diệt phải giữ điều kiện gốc của thẻ.",
+  "editor.skill_help.block.discard_from_play_trigger.limits": "Đây không phải là nút dùng chung để loại bỏ thẻ khỏi tay. Trigger này được đăng ký tách biệt với DestroyCardTrigger; không được coi việc trả thẻ về tay, biến hình hay mọi cách rời sân là cùng một sự kiện. Phải giữ nguyên các điều kiện của thẻ gốc về nguyên nhân cụ thể khiến thẻ bị tiêu diệt và thời điểm.",
   "editor.skill_help.block.discard_from_play_trigger.placement": "Nhóm kỹ năng kích hoạt thành phần, nguồn gốc được đăng ký bản địa là DiscardFromPlayEffect.",
   "editor.skill_help.block.discard_from_play_trigger.usage": "Dùng cho các công thức tương ứng sau khi gốc destruction/exit.",
   "editor.skill_help.block.draw_card_effect.examples": "Vanilla card 40 (Floish) và 44 (Holo-Flora) sử dụng DrawAmount =2.",
