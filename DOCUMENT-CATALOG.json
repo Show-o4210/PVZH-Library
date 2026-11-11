@@ -44,6 +44,15 @@
       "entry": "pvzh-launcher/README.md",
       "catalog": "pvzh-launcher/i18n/en-US/",
       "translation_status": "draft"
+    },
+    "launcher_vietnamese_preview": {
+      "internal_revision": "r-2-32",
+      "candidate": "RC1",
+      "baseline": "r-2-31 RC1",
+      "channel": "development",
+      "entry": "pvzh-launcher/README.md",
+      "catalog": "pvzh-launcher/i18n/vi-VN/",
+      "translation_status": "draft"
     }
   },
   "coverage": {
@@ -3289,10 +3298,11 @@
       "group": "pvzh-launcher",
       "scope": "recent_stage",
       "scope_label": "近期阶段",
-      "applicability": "r-2-29 RC2 简体中文基准、r-2-30 RC1 英文初稿及翻译协作入口",
+      "applicability": "r-2-29 RC2 简体中文基准、r-2-30 RC1 英文初稿、r-2-32 RC1 越南语初稿及翻译协作入口",
       "revision_mentions": [
         "r-2-29",
-        "r-2-30"
+        "r-2-30",
+        "r-2-32"
       ],
       "previously_without_inbound_md_link": false
     },
