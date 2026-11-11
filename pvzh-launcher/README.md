@@ -15,8 +15,8 @@ PVZH 启动器是《植物大战僵尸：英雄》的第三方 Android Mod 工�
 
 欢迎通过 Issue 反馈文案问题，或用 Pull Request 提交翻译建议。请保留 JSON 键以及 `{0}`、`{1}` 等占位符，按目标语言调整它们的位置。游戏本体与 Mod 自带文本各自使用自己的资源。许可范围见[许可证索引](../LICENSES.md)。
 
-## About the launcher
+## About PvZH AM
 
-PVZH Launcher is a third-party Android Mod workbench for *Plants vs. Zombies Heroes*. The [English UI catalog](i18n/en-US/) is a draft from **r-2-30 RC1**, based on the [Simplified Chinese catalog](i18n/zh-CN/) from **r-2-29 RC2**. The English build passed Android smoke tests for key workflows. Terminology and wording are open for review.
+PvZH AM (Advanced Modding) is a third-party Android Mod workbench for *Plants vs. Zombies Heroes*. The [English UI catalog](i18n/en-US/) is a draft from **r-2-30 RC1**, based on the [Simplified Chinese catalog](i18n/zh-CN/) from **r-2-29 RC2**. The English build passed Android smoke tests for key workflows. Terminology and wording are open for review.
 
 Translation feedback is welcome via Issues or Pull Requests. Keep the JSON keys and numbered placeholders such as `{0}` when proposing changes.
