@@ -1,6 +1,6 @@
 # PvZ Heroes Advanced Modding Library
 
-[English](README.en.md) | 简体中文 | [Tiếng Việt](README.vi.md)
+[English](README.md) | 简体中文 | [Tiếng Việt](README_vi_VN.md)
 
 一份面向《植物大战僵尸：英雄》Mod 开发者的中文资料、工具与经验库。
 
