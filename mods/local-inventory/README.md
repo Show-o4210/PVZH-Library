@@ -1,4 +1,4 @@
-# PVZH Local Inventory Mod Base
+# PvZH AM: Local Inventory Mod Base
 
 本项目现位于 [PVZH-Library](../../README.md) 的 `mods/local-inventory/`，独立依赖与运行方式保留。
 
