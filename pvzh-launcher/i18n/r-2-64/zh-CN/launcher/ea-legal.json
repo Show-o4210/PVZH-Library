@@ -1,0 +1,13 @@
+{
+  "shell.ea_legal.title": "EA 协议",
+  "shell.ea_legal.terms": "EA 用户协议",
+  "shell.ea_legal.privacy": "EA 保密和 Cookie 协议",
+  "shell.ea_legal.offline": "离线阅读",
+  "shell.ea_legal.download_and_read": "下载并阅读",
+  "shell.ea_legal.explanation": "正文从 EA 官网下载，保存后可以离线阅读。首次进游戏时，请在 EA 的年龄页确认出生年月和协议。",
+  "shell.ea_legal.update": "下载或更新两份协议",
+  "shell.ea_legal.loading": "正在读取 EA 协议…",
+  "shell.ea_legal.load_failed": "无法读取 EA 协议。请检查网络后重试，或打开官网原文。",
+  "shell.ea_legal.updated": "下载成功 {0} / 2 份。下载失败时保留已有副本。",
+  "shell.ea_legal.official": "官网原文"
+}

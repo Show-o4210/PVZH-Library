@@ -1,0 +1,4 @@
+{
+  "shell.birth_year_prefill.save_failed": "Could not save the birth year autofill setting. Try again.",
+  "shell.birth_year_prefill.android_version": "This feature requires Android 10 or later. Enter your birth year manually on this device."
+}

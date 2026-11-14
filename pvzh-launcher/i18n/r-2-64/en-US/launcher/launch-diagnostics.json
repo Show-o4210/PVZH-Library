@@ -1,0 +1,23 @@
+{
+  "shell.danger_launch.title": "Dangerous launch",
+  "shell.danger_launch.one_shot": "For this launch only",
+  "shell.danger_launch.explanation": "Applies to this launch only. The launcher will load what it can from the selected Mods. It may use verified stock resources, skip resources that fail checks, or disable dependent features. The game may behave unexpectedly or crash. Review the details below before continuing.",
+  "shell.danger_launch.blocked": "Dangerous launch is blocked. See the reasons below.",
+  "shell.danger_launch.selected": "Mods in this combination: {0}",
+  "shell.danger_launch.confirm": "Confirm dangerous launch",
+  "shell.danger_launch.confirm_required": "Confirm the plan for this dangerous launch.",
+  "shell.danger_launch.no_issues": "The current checks found no items that need to be skipped or reverted.",
+  "shell.danger_launch.issue_stock": "Use stock resource",
+  "shell.danger_launch.issue_skip": "Skip",
+  "shell.danger_launch.issue_block": "Blocks launch",
+  "shell.launch_diagnostics.title": "Launch diagnostics",
+  "shell.launch_diagnostics.summary": "Inspect resources and launch failures",
+  "shell.launch_diagnostics.view": "View launch diagnostics",
+  "shell.launch_diagnostics.checking": "Checking the launch plan…",
+  "shell.launch_diagnostics.preflight": "Current combination checks",
+  "shell.launch_diagnostics.last_failure": "Most recent launch failure",
+  "shell.launch_diagnostics.no_failure": "No launch failures recorded.",
+  "shell.launch_diagnostics.failure_context": "{0} · {1}",
+  "shell.launch_diagnostics.last_danger": "Most recent dangerous launch",
+  "shell.launch_diagnostics.runtime": "Game engine startup status"
+}

@@ -1,0 +1,10 @@
+{
+  "shell.birth_month_auto.title": "Automatically confirm birth month",
+  "shell.birth_month_auto.hint": "Fills and confirms the date below on first launch. Use your real birth date and review the EA User Agreement in the game.",
+  "shell.birth_month_auto.date_title": "Birth year and month",
+  "shell.birth_month_auto.date_value": "{0}/{1}",
+  "shell.birth_month_auto.date_unset": "Choose a birth year and month",
+  "shell.birth_month_auto.year": "Birth year",
+  "shell.birth_month_auto.month": "Birth month",
+  "shell.birth_month_auto.date_invalid": "Enter a year from {0} to {1} and a month from 1 to 12."
+}

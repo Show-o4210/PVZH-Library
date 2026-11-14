@@ -1,0 +1,23 @@
+{
+  "shell.danger_launch.title": "危险启动",
+  "shell.danger_launch.one_shot": "仅本次有效",
+  "shell.danger_launch.explanation": "仅本次启动。启动器会尽量加载当前组合，出错的资源可能改用已核验的原版资源或被跳过，相关功能也可能停用。游戏可能异常或崩溃。请先核对以下处理结果。",
+  "shell.danger_launch.blocked": "危险启动无法继续。请查看下面的阻断原因。",
+  "shell.danger_launch.selected": "当前组合中的 Mod：{0}",
+  "shell.danger_launch.confirm": "确认危险启动",
+  "shell.danger_launch.confirm_required": "需要确认本次危险启动方案。",
+  "shell.danger_launch.no_issues": "当前启动检查未发现需跳过或回退的项目。",
+  "shell.danger_launch.issue_stock": "改用原版",
+  "shell.danger_launch.issue_skip": "跳过",
+  "shell.danger_launch.issue_block": "阻止启动",
+  "shell.launch_diagnostics.title": "启动诊断",
+  "shell.launch_diagnostics.summary": "检查资源与启动失败原因",
+  "shell.launch_diagnostics.view": "查看启动诊断",
+  "shell.launch_diagnostics.checking": "正在检查启动方案…",
+  "shell.launch_diagnostics.preflight": "当前组合检查",
+  "shell.launch_diagnostics.last_failure": "最近一次启动失败",
+  "shell.launch_diagnostics.no_failure": "暂无启动失败记录。",
+  "shell.launch_diagnostics.failure_context": "{0} · {1}",
+  "shell.launch_diagnostics.last_danger": "最近一次危险启动",
+  "shell.launch_diagnostics.runtime": "引擎启动状态"
+}

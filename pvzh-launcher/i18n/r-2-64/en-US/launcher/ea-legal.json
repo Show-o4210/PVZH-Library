@@ -1,0 +1,13 @@
+{
+  "shell.ea_legal.title": "EA legal documents",
+  "shell.ea_legal.terms": "EA User Agreement",
+  "shell.ea_legal.privacy": "EA Privacy and Cookie Policy",
+  "shell.ea_legal.offline": "Read offline",
+  "shell.ea_legal.download_and_read": "Download and read",
+  "shell.ea_legal.explanation": "Download documents from EA for offline reading. Confirm your date of birth and the agreement on EA's in-game age screen.",
+  "shell.ea_legal.update": "Download or refresh both documents",
+  "shell.ea_legal.loading": "Loading EA legal documents…",
+  "shell.ea_legal.load_failed": "Could not load this EA document. Check your connection or open the original on EA's website.",
+  "shell.ea_legal.updated": "{0} of 2 documents downloaded. Existing copies are kept if a download fails.",
+  "shell.ea_legal.official": "Open on EA"
+}

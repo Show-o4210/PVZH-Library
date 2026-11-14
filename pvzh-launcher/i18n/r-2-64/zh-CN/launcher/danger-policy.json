@@ -1,0 +1,11 @@
+{
+  "backend.danger.no_selection": "请先在 Mod 库启用要排查的 Mod。",
+  "backend.danger.safe_mode": "安全启动已开启。请先关闭，再确认本次危险启动。",
+  "backend.danger.missing_blob": "本地缺少此 Mod 的资源文件。",
+  "backend.danger.fingerprint": "此 Mod 资源与导入时记录的指纹不符。",
+  "backend.danger.invalid_bundle": "资源不是可识别的原生 UnityFS 文件，或缺少所需数据。",
+  "backend.danger.missing_member": "Mod 清单声明的文件在 ZIP 内不存在：{0}",
+  "backend.danger.artwork_templates": "本次保留卡牌数据，独立美术改用已验证的原版模板。",
+  "backend.danger.confirmation_changed": "Mod、资源或设置已变化。请重新检查并确认危险启动。",
+  "backend.danger.blocked": "当前仍有无法安全部署的项目。请查看启动诊断。"
+}

@@ -1,0 +1,11 @@
+{
+  "backend.danger.no_selection": "Enable the Mod you want to diagnose in the Mod library.",
+  "backend.danger.safe_mode": "Safe launch is on. Turn it off before confirming this danger launch.",
+  "backend.danger.missing_blob": "This Mod resource is missing from local storage.",
+  "backend.danger.fingerprint": "This Mod resource differs from its recorded import fingerprint.",
+  "backend.danger.invalid_bundle": "The resource is not a recognized native UnityFS bundle or lacks required data.",
+  "backend.danger.missing_member": "This file is listed in the Mod manifest but missing from the ZIP: {0}",
+  "backend.danger.artwork_templates": "Card data is kept and independent artwork uses verified stock templates for this launch.",
+  "backend.danger.confirmation_changed": "The Mods, resources, or settings changed. Review and confirm the danger launch again.",
+  "backend.danger.blocked": "Some items still cannot be deployed safely. Open launch diagnostics for details."
+}

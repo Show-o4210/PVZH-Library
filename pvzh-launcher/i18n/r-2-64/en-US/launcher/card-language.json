@@ -1,0 +1,15 @@
+{
+  "editor.card_locale.selector": "Card Text Language",
+  "editor.card_locale.loading": "Reading available language resources…",
+  "editor.card_locale.draft": "Save the existing card draft before editing text in another language.",
+  "editor.card_locale.stock": "This Mod has no bundle for this language. Saving changes will add it from a verified original bundle.",
+  "editor.card_locale.mod": "Editing this Mod's language bundle. Saving updates card text only in this language.",
+  "editor.card_locale.title": "Edit Card Text · {0}",
+  "editor.card_locale.saved": "Saved card text for {0}.",
+  "editor.card_locale.backend.pending_draft": "Save or discard the existing card draft first.",
+  "editor.card_locale.backend.unsupported_slot": "Cannot edit language resource: {0}.",
+  "editor.card_locale.backend.shared_prefab": "Card #{0} shares this text identifier. It cannot be saved separately.",
+  "editor.card_locale.backend.invalid_field": "Card text field cannot be written: {0}.",
+  "editor.card_locale.backend.stale_basis": "The Mod or language source changed. Open the language editor again.",
+  "editor.card_locale.backend.candidate_mismatch": "The candidate failed language resource read-back. The original Mod was retained."
+}

@@ -82,6 +82,24 @@
       "floating_tools_keys_per_locale": 417,
       "card_names_per_locale": 579,
       "vietnamese_translation_status": "reviewed for a future build"
+    },
+    "launcher_localization_r_2_64": {
+      "internal_revision": "r-2-64",
+      "candidate": "RC1",
+      "baseline": "r-2-63 RC1",
+      "channel": "development",
+      "entry": "pvzh-launcher/README.md",
+      "catalogs": {
+        "zh-CN": "pvzh-launcher/i18n/r-2-64/zh-CN/",
+        "en-US": "pvzh-launcher/i18n/r-2-64/en-US/",
+        "vi-VN": "pvzh-launcher/i18n/r-2-64/vi-VN/"
+      },
+      "launcher_keys_per_locale": 6119,
+      "floating_tools_keys_per_locale": 417,
+      "floating_runtime_keys_per_locale": 412,
+      "floating_shared_launcher_keys_per_locale": 5,
+      "card_names_per_locale": 579,
+      "apk_sha256": "ae418f274e8740351d0eb9411c1ad82fd6b3058426789320af9e428bf098fa9f"
     }
   },
   "coverage": {
@@ -3339,12 +3357,13 @@
       "group": "pvzh-launcher",
       "scope": "recent_stage",
       "scope_label": "近期阶段",
-      "applicability": "r-2-44 RC1 中英越启动器、游戏内悬浮工具和卡名词表，包含越南语审校稿与旧版翻译入口",
+      "applicability": "r-2-64 RC1 中英越启动器、游戏内悬浮工具和卡名词表，收录 r-2-44 社区审校稿及历史词表入口",
       "revision_mentions": [
         "r-2-29",
         "r-2-30",
         "r-2-32",
-        "r-2-44"
+        "r-2-44",
+        "r-2-64"
       ],
       "previously_without_inbound_md_link": false
     },

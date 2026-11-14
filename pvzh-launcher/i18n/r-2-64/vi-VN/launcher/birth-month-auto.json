@@ -1,0 +1,10 @@
+{
+  "shell.birth_month_auto.title": "Tự động xác nhận tháng năm sinh",
+  "shell.birth_month_auto.hint": "Điền và xác nhận tháng năm bên dưới khi vào trò chơi lần đầu. Hãy dùng tháng năm sinh thật và xác nhận Thỏa thuận người dùng EA trong trò chơi.",
+  "shell.birth_month_auto.date_title": "Tháng năm sinh",
+  "shell.birth_month_auto.date_value": "Năm {0}, tháng {1}",
+  "shell.birth_month_auto.date_unset": "Chọn tháng và năm sinh",
+  "shell.birth_month_auto.year": "Năm sinh",
+  "shell.birth_month_auto.month": "Tháng sinh",
+  "shell.birth_month_auto.date_invalid": "Nhập năm từ {0} đến {1} và tháng từ 1 đến 12."
+}

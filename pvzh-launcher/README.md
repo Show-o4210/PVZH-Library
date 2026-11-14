@@ -10,15 +10,17 @@ PVZH 启动器是《植物大战僵尸：英雄》的第三方 Android Mod 工�
 
 ## 启动器本地化
 
-以下三语词表以 development 候选 **r-2-44 RC1** 为底稿。
+以下词表对应当前开发基线 **r-2-64 RC1**，其直接基线为 r-2-63 RC1。
 
-| 语言 | 词表 | 来源 |
+| 语言 | r-2-64 RC1 | r-2-44 RC1 |
 | --- | --- | --- |
-| 简体中文 | [zh-CN](i18n/r-2-44/zh-CN/) | RC1 生效词表与原版中文卡名 |
-| English | [en-US](i18n/r-2-44/en-US/) | RC1 生效词表与英文卡名 |
-| Tiếng Việt | [vi-VN](i18n/r-2-44/vi-VN/) | 基于 RC1，参考越南语 LawnStrings 审校文案和卡名 |
+| 简体中文 | [zh-CN](i18n/r-2-64/zh-CN/) | [zh-CN](i18n/r-2-44/zh-CN/) |
+| English | [en-US](i18n/r-2-64/en-US/) | [en-US · 含社区修订](i18n/r-2-44/en-US/) |
+| Tiếng Việt | [vi-VN](i18n/r-2-64/vi-VN/) | [vi-VN · 含社区审校稿](i18n/r-2-44/vi-VN/) |
 
-每种语言包含 `launcher/` 的 5,706 个启动器词条、`floating-tools/` 的 417 个游戏内工具词条，以及 `card-names.json` 中按 GUID 索引的 579 个原版卡名。越南语修订用于后续构建，已核对键、占位符、游戏标记和卡名 GUID，等待构建与 Android 实机检查。
+R64 每种语言包含 `launcher/` 的 6,119 个启动器词条、`floating-tools/` 的 412 个悬浮工具词条和 5 个与启动器共用的社区入口词条，以及 `card-names.json` 中按 GUID 索引的 579 个原版卡名。启动器词条从冻结构建输入还原，并在候选 APK 的 DEX 字符串表核对。悬浮工具和卡名来自该 APK。
+
+R44 收录参考越南语 LawnStrings 整理的文案和卡名，以及后续英越社区修订。查阅社区译稿时请使用上表的 R44 链接。R64 目录对应已构建的开发包。
 
 欢迎通过 Issue 或 Pull Request 反馈。请注明语言、文件名及 JSON 键或卡牌 GUID，并保留键、`{0}` 等占位符和游戏标记。游戏本体与 Mod 自带文本使用各自的资源。许可范围见[许可证索引](../LICENSES.md)。
 
@@ -26,7 +28,7 @@ PVZH 启动器是《植物大战僵尸：英雄》的第三方 Android Mod 工�
 
 ## About PvZH AM
 
-PvZH AM (Advanced Modding) is a third-party Android Mod workbench for *Plants vs. Zombies Heroes*. The **r-2-44 RC1** development catalogs cover the launcher, in-game floating tools, and stock card names in [Simplified Chinese](i18n/r-2-44/zh-CN/), [English](i18n/r-2-44/en-US/), and [Vietnamese](i18n/r-2-44/vi-VN/). The Vietnamese catalog includes wording and card-name revisions for a later build.
+PvZH AM (Advanced Modding) is a third-party Android Mod workbench for *Plants vs. Zombies Heroes*. The **r-2-64 RC1** development catalogs cover the launcher, in-game floating tools, and stock card names in [Simplified Chinese](i18n/r-2-64/zh-CN/), [English](i18n/r-2-64/en-US/), and [Vietnamese](i18n/r-2-64/vi-VN/). The r-2-44 catalogs retain community edits in [English](i18n/r-2-44/en-US/) and reviewed wording and card names in [Vietnamese](i18n/r-2-44/vi-VN/).
 
 The [v4 guide](../Library-docs/24.启动器工作台与手机编辑/05.当前版本能力.md#v4) (in Chinese) covers the mobile level editor, card class and rarity, stock artwork restoration, and swipe navigation. See the [English changelog](releases/v4/changelog-en.json) for release details.
 
@@ -34,4 +36,4 @@ For translation feedback, include the locale, file, and JSON key or card GUID. K
 
 ## Góp ý bản dịch tiếng Việt
 
-[Bộ dữ liệu tiếng Việt dựa trên r-2-44 RC1](i18n/r-2-44/vi-VN/) gồm văn bản trình khởi chạy, công cụ nổi trong trò chơi và tên thẻ gốc. Các chỉnh sửa dựa trên LawnStrings tiếng Việt và dành cho bản dựng sau. Khi góp ý, vui lòng gửi tên tệp, khóa JSON hoặc GUID của thẻ và cách diễn đạt đề xuất. [Gửi phản hồi trên GitHub](https://github.com/Show-o4210/PvZH-AML/issues/new)
+[Bộ dữ liệu tiếng Việt của r-2-64 RC1](i18n/r-2-64/vi-VN/) gồm văn bản trình khởi chạy, công cụ nổi trong trò chơi và tên thẻ gốc trong bản dựng phát triển. [Bộ dữ liệu r-2-44 RC1](i18n/r-2-44/vi-VN/) lưu các chỉnh sửa của cộng đồng và tên thẻ đã rà soát theo LawnStrings tiếng Việt. Khi góp ý, vui lòng gửi tên tệp, khóa JSON hoặc GUID của thẻ và cách diễn đạt đề xuất. [Gửi phản hồi trên GitHub](https://github.com/Show-o4210/PvZH-AML/issues/new)
