@@ -8,6 +8,10 @@ PVZH 启动器是《植物大战僵尸：英雄》的第三方 Android Mod 工�
 
 [中文](releases/v4/changelog-zh.json) · [English](releases/v4/changelog-en.json)
 
+## 待接入翻译修正
+
+已知问题、建议文案与后续 agent 接入说明见[翻译修正交接包](translation-fixes/README.md)。这是待复核的交接资料，不表示实际构建已采纳。
+
 ## 启动器本地化
 
 以下词表对应当前开发基线 **r-2-64 RC1**，其直接基线为 r-2-63 RC1。
