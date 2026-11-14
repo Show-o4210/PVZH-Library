@@ -62,7 +62,7 @@
   "editor.skill_help.block.lane_combat_start_trigger.usage": "Used for triggers before single-lane combat.",
   "block.MoveTrigger.title": "🟢 Trigger: When moved",
   "editor.skill_help.block.move_trigger.examples": "Original 65 Deep Sea Zombie handles related gains for zombie entering lane; 186 Wrist Wrestling Zombie reacts to the appearance of plants on this lane.",
-  "editor.skill_help.block.move_trigger.limits": "The moved object, purpose lane, and self are different roles; cannot treat all newly created/drawn or failed moves as the same event. Front and back positions and other trigger groups need to be retained according to the original recipe.",
+  "editor.skill_help.block.move_trigger.limits": "The moved object, destination lane, and self are different roles; do not treat all card creation, card plays, or failed moves as the same event. Preserve the positions before and after movement and the other trigger groups from the original recipe.",
   "editor.skill_help.block.move_trigger.placement": "Skill group trigger component, native registration source is MoveCardToLanesEffect.",
   "editor.skill_help.block.move_trigger.usage": "Used for trigger recipes related to movement.",
   "block.PlayTrigger.title": "🟢 Trigger: When played",
