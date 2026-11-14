@@ -29,7 +29,7 @@
 
 ## 原版退出与销毁入口的静态证据
 
-本机二进制为 `D:\Codex\PVZH\dump\libil2cpp.so`，SHA-256：
+参考二进制在完整工作区为 `shared/il2cpp/1.67.8-arm64/libil2cpp.so`。其 SHA-256 如下。
 
 `18178b2f35959bc3954378a9778cddd67aab8a7ef22579ea59d736521eec8c91`
 

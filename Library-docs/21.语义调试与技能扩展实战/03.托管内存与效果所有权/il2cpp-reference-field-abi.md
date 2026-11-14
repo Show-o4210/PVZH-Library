@@ -23,7 +23,7 @@ api.fieldSet(obj, field(obj, name), numericBuffer);
 
 ## 二进制来源与地址
 
-参考 ELF：`D:\Codex\PVZH\dump\libil2cpp.so`，游戏版本 1.67.8 ARM64。
+参考 ELF 为完整工作区的 `shared/il2cpp/1.67.8-arm64/libil2cpp.so`，游戏版本 1.67.8 ARM64。
 
 SHA256：`18178B2F35959BC3954378A9778CDDD67AAB8A7EF22579EA59D736521EEC8C91`。
 

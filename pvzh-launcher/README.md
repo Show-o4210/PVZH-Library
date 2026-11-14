@@ -1,12 +1,16 @@
 # PvZ Heroes Advanced Modding Library
 
-PVZH 启动器是《植物大战僵尸：英雄》的第三方 Android Mod 工作台。它提供 Mod 管理、卡牌和美术编辑，以及游戏资源准备等入口。手机操作和版本能力见[启动器工作台指南](../Library-docs/24.启动器工作台与手机编辑/README.md)。
+PVZH 启动器是《植物大战僵尸：英雄》的第三方 Android Mod 工作台。它提供 Mod 管理、关卡、卡牌和美术编辑，以及游戏资源准备等入口。手机操作和版本能力见 [v4 功能与验收](../Library-docs/24.启动器工作台与手机编辑/05.当前版本能力.md#v4)。
 
 这里公开项目简介、界面词表和卡名。完整客户端与 Hook 实现由独立工程维护。
 
+## v4 更新日志
+
+[中文](releases/v4/changelog-zh.json) · [English](releases/v4/changelog-en.json)
+
 ## 启动器本地化
 
-**r-2-44 RC1** 是 development 测试候选。当前三语词表按同一版本维护。
+以下三语词表以 development 候选 **r-2-44 RC1** 为底稿。
 
 | 语言 | 词表 | 来源 |
 | --- | --- | --- |
@@ -23,6 +27,8 @@ PVZH 启动器是《植物大战僵尸：英雄》的第三方 Android Mod 工�
 ## About PvZH AM
 
 PvZH AM (Advanced Modding) is a third-party Android Mod workbench for *Plants vs. Zombies Heroes*. The **r-2-44 RC1** development catalogs cover the launcher, in-game floating tools, and stock card names in [Simplified Chinese](i18n/r-2-44/zh-CN/), [English](i18n/r-2-44/en-US/), and [Vietnamese](i18n/r-2-44/vi-VN/). The Vietnamese catalog includes wording and card-name revisions for a later build.
+
+The [v4 guide](../Library-docs/24.启动器工作台与手机编辑/05.当前版本能力.md#v4) (in Chinese) covers the mobile level editor, card class and rarity, stock artwork restoration, and swipe navigation. See the [English changelog](releases/v4/changelog-en.json) for release details.
 
 For translation feedback, include the locale, file, and JSON key or card GUID. Keep placeholders such as `{0}` and in-game markup intact.
 

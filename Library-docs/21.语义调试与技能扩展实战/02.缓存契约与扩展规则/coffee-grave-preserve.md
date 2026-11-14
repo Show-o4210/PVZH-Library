@@ -11,7 +11,7 @@
 
 R14 的 `evidence/r14-static-rest/coffee.json`、`commands.jsonl` 显示：咖啡正常打出后存在三个 `SurprisePhaseStartTrigger` 实体。弹回一个接收者、另一个接收者被 346 藏进墓碑后，对应授予实体逐个消失；剩余 `GrantedTriggeredAbilities` / `EffectEntities` 组件名称不能证明内部技能仍存在。正常揭墓后，墓碑接收者未自毁。该失败与 R15 首次保护失败均保留；修正后的 R16 真机用例已通过，见下文。
 
-静态证据来自与 B4 相同的 `D:/Codex/PVZH/dump/dump.cs`、`script.json` 和 `libil2cpp.so`：
+静态证据来自 B4 对应的 `dump.cs`、`script.json` 和 `libil2cpp.so`。完整工作区的共享资料目录为 `shared/il2cpp/1.67.8-arm64/`。
 
 | 原生位置 | 作用 |
 | --- | --- |

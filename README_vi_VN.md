@@ -4,7 +4,9 @@
 
 PvZ Heroes Advanced Modding Library (Thư viện Modding Nâng cao PvZ Heroes) là kho tư liệu, công cụ và kinh nghiệm dành cho các nhà phát triển mod của **Plants vs. Zombies Heroes (PVZH)**.
 
-Phiên bản ổn định hiện tại trên điện thoại là **v3.1 (mốc tính năng r-2-22 RC1)**. [Bộ dữ liệu bản địa hóa r-2-44 RC1](pvzh-launcher/README.md) gồm tiếng Trung giản thể, tiếng Anh và bản tiếng Việt đã được rà soát cho bản dựng sau. Các hướng dẫn về tính năng và khắc phục sự cố ghi nhận phạm vi kiểm chứng đến r-2-28 RC1. Kho này tập hợp các hướng dẫn bằng tiếng Trung, công cụ công khai và bằng chứng đã được chọn lọc. Các đường dẫn được đánh dấu là “không gian làm việc” (工作区) dùng để truy lại hồ sơ bàn giao trong không gian làm việc đầy đủ.
+[Các bộ dữ liệu bản địa hóa](pvzh-launcher/README.md) được lưu theo phiên bản và gồm tiếng Trung giản thể, tiếng Anh và tiếng Việt, trong đó có các bản tiếng Việt đã được rà soát. Các hướng dẫn về tính năng và khắc phục sự cố ghi rõ phạm vi kiểm thử của từng phiên bản. Kho này tập hợp các hướng dẫn bằng tiếng Trung, công cụ công khai và bằng chứng đã được chọn lọc. Các đường dẫn được đánh dấu là “không gian làm việc” (工作区) dùng để truy lại hồ sơ bàn giao trong không gian làm việc đầy đủ.
+
+[Nhật ký thay đổi của PvZH AM v4 (tiếng Anh)](pvzh-launcher/releases/v4/changelog-en.json)
 
 > **Lưu ý về ngôn ngữ:** README này là hướng dẫn bằng tiếng Việt cho kho mã. Phần lớn tài liệu hiện được viết bằng tiếng Trung; các liên kết bên dưới dẫn đến tài liệu gốc, trừ khi có ghi rõ bản dịch.
 
@@ -13,7 +15,7 @@ Phiên bản ổn định hiện tại trên điện thoại là **v3.1 (mốc t
 | Nhu cầu | Điểm bắt đầu nhanh nhất |
 | --- | --- |
 | Tìm bất kỳ tài liệu nào, bao gồm tài liệu tham khảo cũ, hướng dẫn nội bộ của công cụ và hồ sơ kiểm tra | [Mục lục tài liệu](文档总索引.md) · [Danh mục cho máy đọc](DOCUMENT-CATALOG.json) |
-| Xem phiên bản ổn định, bản ứng viên phát triển và phạm vi đã kiểm thử thực tế | [Tính năng của các phiên bản hiện tại](Library-docs/24.启动器工作台与手机编辑/05.当前版本能力.md) |
+| Xem phiên bản ổn định, bản ứng viên phát triển và phạm vi đã kiểm thử thực tế | [Tính năng và kiểm thử theo phiên bản](Library-docs/24.启动器工作台与手机编辑/05.当前版本能力.md) |
 | Xử lý lỗi không vào được trò chơi, văng ứng dụng, thông báo lỗi hoặc tính năng không hoạt động | [Khắc phục sự cố và các lỗi cần tránh](Library-docs/24.启动器工作台与手机编辑/06.故障排查与避坑.md) |
 | Tạo thẻ, chỉnh sửa hình ảnh, dùng AI và quản lý tài nguyên trên điện thoại | [Chương 24](Library-docs/24.启动器工作台与手机编辑/README.md) |
 | Tìm hiểu dự án trình khởi chạy hoặc tham gia dịch giao diện | [Trình khởi chạy PVZH](pvzh-launcher/README.md) |
@@ -71,7 +73,7 @@ Tài nguyên chính thức của trò chơi, dữ liệu xuất từ trò chơi 
 ```text
 Tác giả: 休切尔 (Show-o4210)
 Giấy phép: CC BY-NC-SA 4.0
-Kho chính thức: https://github.com/Show-o4210/PVZH-Library
+Kho chính thức: https://github.com/Show-o4210/PvZH-AML
 Trang cá nhân: https://github.com/Show-o4210
 ```
 

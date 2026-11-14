@@ -1,0 +1,111 @@
+[
+  {
+    "version": "v4",
+    "title": "Feature update",
+    "summary": "Edit missions, change card classes and rarities, and restore original artwork on your phone. The launcher also improves offline play, language support, and navigation.",
+    "sections": [
+      {
+        "title": "Mobile Level Editor",
+        "body": "Open Mod Library, select a Mod, and choose Level Editor. Search 200 Plant and 200 Zombie missions by faction, number, name, or native ID. Edit mission text, backgrounds and rules, heroes, starting health and resources, starting draws, blocks, and decks. Deck edits use a copy for the selected mission. Hero choices show their icons, with the empty choice at the top."
+      },
+      {
+        "title": "Lanes, events, and save review",
+        "body": "Edit terrain and starting units in all five lanes. Supported events include dialogue, queued extra cards, moves to the top of a deck, and scripted AI plays. Long-press an event to reorder it. Unrecognized native events can also be reordered and retain their original fields. Cancelling a level switch keeps the current draft. Review old and new values before saving a new Mod revision. It takes effect the next time you fully restart the selected Mod combination."
+      },
+      {
+        "title": "Card classes, rarity, and collection art",
+        "body": "In the card editor, open Card Identity on the Basic tab to change class and rarity. Ordinary collectible cards can use one class from their faction. Eligible native-style superpowers and derived cards that already use two classes can retain and edit two classes from the same faction. Choose Basic, Uncommon, Rare, Super-Rare, Legendary, or Event, with an original or custom Simplified Chinese label. Saving keeps the native rarity fields in sync and preserves the set and crafting or recycling prices. When an eligible original card lacks a collection thumbnail in its new class, it can use the verified original class atlas. Valid native thumbnails and custom artwork take priority."
+      },
+      {
+        "title": "Card editor display and feedback",
+        "body": "The toolbar, scroll area, and save controls stay in place during edits. Switching text tabs keeps the card preview visible, and selecting multiple cards updates the affected controls. The latest supported action gets a brief animated outline that settles into a fine gold border. Moving a skill group or block highlights its new position."
+      },
+      {
+        "title": "Artwork tools and saving large Mods",
+        "body": "Paper-doll artwork has separate adjustments for the battlefield, hand, and collection, with anchor and crop guides in the preview. Eligible independent custom cards can sync recolor settings across all three views. Artwork preview quality and the save memory limit can be set separately. Supported workflows read large Mods on demand and write ZIP entries individually. Individual native resources still have memory and format checks. Copying a card preserves indexed artwork alternatives in untouched resources."
+      },
+      {
+        "title": "Artwork compatibility and restoration",
+        "body": "Fixed an erroneous resource path check when preparing bundled assets. In Settings, open Game and Resources, then Official Resources, to restore eligible standalone textures, atlases, and card artwork caches to originals matching the active manifest. Mod ZIPs, enabled choices, and order are preserved. File fingerprints are logged, and an interrupted restore can be rolled back. Artwork compatibility handling recognizes a single Sprite and Texture2D sharing a path, resolves stale PathIDs against native assets, and can fall back to a matching original template after verifying its relevant views."
+      },
+      {
+        "title": "Offline play and launch recovery",
+        "body": "On Android 11 or later, the Offline Play switch applies to the original and Mod launch buttons on the Play tab, and to Launch Combination in the Mod Library. The separate game process uses the original offline flow and available local assets while your phone can stay connected. Settings offers startup diagnostics and lets you download the EA agreements for offline reading. Accept the agreements on the original game screen when prompted."
+      },
+      {
+        "title": "Launcher and game languages",
+        "body": "The launcher, skill block catalog, and in-game floating tools support Simplified Chinese, English, and Vietnamese. Recognized original cards show translated names and can be searched by name, GUID, or prefab. Card text can be edited separately for each available game language. The game starts in the launcher language, with English fallback when the active assets do not support Vietnamese. Project and Credits and the changelog use Chinese for Simplified Chinese and English for other launcher languages. The project page can use cached or bundled text in the same language if the service is unavailable."
+      },
+      {
+        "title": "Swipe navigation and shared styling",
+        "body": "Swipe left or right between the Play, Mod Library, and Settings home pages. The gesture works from below the header through the bottom tab bar, and moves to the neighboring tab. The selected tab marker stretches with your finger and gently springs back when released. Tapping a tab also animates the marker. The three home pages use a muted plant and zombie pattern. The launcher, editors, and floating tools share warm-gold primary actions, outlined secondary actions, and underlined tabs."
+      },
+      {
+        "title": "Mod Library, Settings, and community",
+        "body": "The Mod workspace opens the editors directly and gives revision history, runtime options, and file mappings their own entries. The standalone scene rule sample is under Add Mod. Settings uses distinct icons and opens Changelog, Project and Credits, and the support dialog directly. Join us on the Play tab links to QQ, Telegram, GitHub, and Bilibili."
+      },
+      {
+        "title": "In-game tools",
+        "body": "The in-game stage selector preserves existing losses when resetting wins for a mission. Supported fixed-lane damage extensions use the corresponding native damage and animation flow."
+      }
+    ]
+  },
+  {
+    "version": "v3.1",
+    "title": "Manual editing fixes",
+    "summary": "Improved card editing and saving for large Mods, and completed block deletion and cross-page reordering.",
+    "sections": [
+      {
+        "title": "Manual editing for large Mods",
+        "body": "The manual card editor reads card data and Simplified Chinese text on demand. Saving copies and verifies the other resources individually, so cards can be edited in larger asset packs. Individual resources still have size and memory limits."
+      },
+      {
+        "title": "Deleting and moving blocks",
+        "body": "The block menu scrolls, and blocks in the middle of a list can be deleted. Drag to reorder, or use Move to… and enter a sibling position to move across pages. Top-level blocks show their position. Nested blocks keep the compact layout."
+      },
+      {
+        "title": "Built-in comedy Mod",
+        "body": "Updated cards including Photosynthesis System and Solar Storm, and added 80 Shooter and Super Gatling Pea. Regular Super Brainz wears a black hoodie and a white AW mask on the battlefield."
+      }
+    ]
+  },
+  {
+    "version": "v3",
+    "title": "Feature overview",
+    "summary": "The first public changelog summarizes the main features in this release.",
+    "sections": [
+      {
+        "title": "Play and startup",
+        "body": "Launch the original game or the current Mod combination. Fully exit and restart to apply saved changes. If startup fails, check the last launch result and use safe startup."
+      },
+      {
+        "title": "Mod Library",
+        "body": "Create, copy, import, export and batch-share Mods, change their enablement and order, and inspect resource sources and conflicts. Compare saved revisions and generate recovery proposals. When Mods cover the same resource, the one listed first takes priority."
+      },
+      {
+        "title": "Card editing and new cards",
+        "body": "Edit costs, attack and health, Simplified Chinese descriptions, tribes and keywords on a phone. Build supported skills with skill groups, templates and blocks, with undo and redo. Clone original cards to make new cards and set the number granted for collectible custom cards."
+      },
+      {
+        "title": "Card artwork",
+        "body": "Replace supported card textures, use transparent PNGs for paper-doll artwork and adjust its size and position, or recolor supported cards. Preview the hand, collection and battlefield views before saving."
+      },
+      {
+        "title": "AI-assisted creation",
+        "body": "Configure a model to discuss cards, Simplified Chinese text and levels for a Mod, or generate a proposal. Make cards from original templates, adjust stats and combine supported triggers, conditions and effects. Review differences and refine a proposal before adopting it. The workspace flags effects that require verification."
+      },
+      {
+        "title": "Skills, scenarios and media",
+        "body": "Inspect Mod skill extensions and permissions, import a standalone scenario sample, and use registered music and click media for individual Mods. Some experimental game modes have separate switches. Availability depends on the Mod and launch settings."
+      },
+      {
+        "title": "Official resources and recovery",
+        "body": "Prepare built-in resources offline or check and sync official resources manually from Settings. Resources already downloaded by the game can be verified and saved for later startup and recovery."
+      },
+      {
+        "title": "Announcements and releases",
+        "body": "Read announcements, stable release notices, and author and contributor information. The About page also opens the public changelog."
+      }
+    ]
+  }
+]

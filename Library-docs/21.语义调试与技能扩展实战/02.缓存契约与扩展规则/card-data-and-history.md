@@ -79,7 +79,7 @@ Rev4 mod2 card_data SHA-256为 `964b20aa9b4933e348d5fab93fc7f242236e2a2d6a294bcf
 
 ## 原版特殊技能的动画入口
 
-本次只读核对资料库 [赋甲实现](../../12.静态高级实战2/02.GrantAbility赋甲ProcessEffect特判与组件安全挂载.md)、[History 与 Sprite 映射](../../12.静态高级实战2/03.装甲UI双轨History发报与Sprite映射.md)，以及当前 `D:/Codex/PVZH/dump/dump.cs`。进一步在 B4 APK 中的 ARM64 libil2cpp 原始字节上反汇编关键入口，库指纹为 `18178b2f35959bc3954378a9778cddd67aab8a7ef22579ea59d736521eec8c91`。以下 RVA 是本次库的地址，不沿用历史资料库快照地址。
+本次只读核对资料库 [赋甲实现](../../12.静态高级实战2/02.GrantAbility赋甲ProcessEffect特判与组件安全挂载.md)、[History 与 Sprite 映射](../../12.静态高级实战2/03.装甲UI双轨History发报与Sprite映射.md)，以及 B4 对应的 `dump.cs`。完整工作区的共享资料目录为 `shared/il2cpp/1.67.8-arm64/`。进一步在 B4 APK 中的 ARM64 libil2cpp 原始字节上反汇编关键入口，库指纹为 `18178b2f35959bc3954378a9778cddd67aab8a7ef22579ea59d736521eec8c91`。以下 RVA 仅适用于这份二进制。
 
 三条展示通道需要区别：
 

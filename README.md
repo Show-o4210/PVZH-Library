@@ -6,7 +6,9 @@ PvZ Heroes Advanced Modding Library is a knowledge base of documentation, tools,
 
 The library transition from Chinese to English is still in progress. Feel free to send us feedback or contributing! Join our [Telegram chat](https://t.me/PvZH_AM) for discussion.
 
-The current stable version of **PvZH AM (Advanced Modding)** is **v3.1 (r-2-22 RC1)**. The [launcher project](pvzh-launcher/README.md) includes **r-2-44 RC1** development catalogs for Simplified Chinese, English, and Vietnamese, with reviewed Vietnamese wording and card names. The [capability guide](Library-docs/24.启动器工作台与手机编辑/05.当前版本能力.md) documents v3.1 and r-2-28 RC1 and separates device tests from original-engine results. This repository contains documentation, public tools, and curated evidence. References marked as workspace paths identify records in the full development workspace.
+The [launcher project](pvzh-launcher/README.md) includes versioned catalogs for Simplified Chinese, English, and Vietnamese, with reviewed Vietnamese wording and card names. The [capability guide](Library-docs/24.启动器工作台与手机编辑/05.当前版本能力.md) records test coverage by version and separates device tests from original-engine results. This repository contains documentation, public tools, and curated evidence. References marked as workspace paths identify records in the full development workspace.
+
+[PvZH AM v4 changelog](pvzh-launcher/releases/v4/changelog-en.json)
 
 > **Language note:** This README is an English guide to the repository. Most documentation is currently written in Chinese; the links below lead to the original materials unless an English translation is explicitly provided.
 
@@ -17,7 +19,7 @@ English | [简体中文](README_zh_CN.md) | [Tiếng Việt](README_vi_VN.md)
 | If you want to... | Start with... |
 | --- | --- |
 | Find any document, including older references, tool internals, and test records | [Document index](文档总索引.md) · [Machine-readable catalog](DOCUMENT-CATALOG.json) |
-| Check stable and development capabilities and test coverage | [Current capabilities](Library-docs/24.启动器工作台与手机编辑/05.当前版本能力.md) |
+| Check stable and development capabilities and test coverage | [Capabilities by version](Library-docs/24.启动器工作台与手机编辑/05.当前版本能力.md) |
 | Troubleshoot launch failures, crashes, errors, or features that do not work | [Troubleshooting and pitfalls](Library-docs/24.启动器工作台与手机编辑/06.故障排查与避坑.md) |
 | Learn about mobile card authoring, artwork, AI, and asset handling | [Chapter 24](Library-docs/24.启动器工作台与手机编辑/README.md) |
 | Learn about PvZH AM or help translate its interface | [PvZH AM](pvzh-launcher/README.md) |
@@ -71,7 +73,7 @@ The [Library-docs tutorial index](Library-docs/README.md) collects the numbered 
 | [21. Semantic debugging and practical skill extensions](Library-docs/21.语义调试与技能扩展实战/README.md) | Coordinate-free testing, cache and Gadget contracts, effect ownership, history/animation, R19 validation, combined actions, global experimental capabilities, and cold-start permissions |
 | [22. Natural-language original-card authoring](Library-docs/22.自然语言原版制卡/README.md) | Original-game knowledge index, AI planning contract, deterministic compilation, DeepSeek evaluation, and future UI/Hook boundaries |
 | [23. Card identity and asset mapping](Library-docs/23.卡牌身份与资源映射/README.md) | GUID / prefabName / Chinese keys, manifests and Bundle assets, reuse of original assets for historical R9 cards, cumulative editing, and real-device evidence |
-| [24. PvZH AM workbench and mobile editing](Library-docs/24.启动器工作台与手机编辑/README.md) | v3.1 and r-2-28 RC1 capabilities, mobile authoring, artwork, and troubleshooting |
+| [24. PvZH AM workbench and mobile editing](Library-docs/24.启动器工作台与手机编辑/README.md) | Capabilities by version, mobile authoring, artwork, and troubleshooting |
 | [Assets](资源/) | Example files, indexes, older notes, and practical materials |
 | [Agent guide](agents/README.md) | Basic authoring, runtime skill workflows, semantic testing, evidence boundaries, device fallback, and standalone walkthrough |
 
@@ -102,7 +104,7 @@ Official game assets, exported game data, and third-party tools are **not** cove
 ```text
 Author: 休切尔 (Show-o4210)
 License: CC BY-NC-SA 4.0
-Official repository: https://github.com/Show-o4210/PVZH-Library
+Official repository: https://github.com/Show-o4210/PvZH-AML
 Homepage: https://github.com/Show-o4210
 ```
 

@@ -25,7 +25,7 @@
 
 ## 原版 Lose 链与停队列条件
 
-二进制依据为 `D:\Codex\PVZH\dump\libil2cpp.so`，SHA256 `18178B2F35959BC3954378A9778CDDD67AAB8A7EF22579EA59D736521EEC8C91`；类型与虚函数槽由同目录 `dump.cs` 核对。下面均为 RVA，不能直接当作文件偏移。
+二进制依据为完整工作区的 `shared/il2cpp/1.67.8-arm64/libil2cpp.so`，SHA256 `18178B2F35959BC3954378A9778CDDD67AAB8A7EF22579EA59D736521EEC8C91`。类型与虚函数槽由同目录 `dump.cs` 核对。下列地址均为 RVA，须按段映射换算文件偏移。
 
 1. `LoseByHealthSystem.ProcessEffect`（0x21D3038）查找失败玩家，调用 `LossProccessor.ProcessPotentialLoss`（0x21D3124）。后者从原版池取得 `LoseEffect`，在 0x21D31DC 写入失败玩家 ID，随后于 0x21D3260 使用 `EffectCollection` 接口槽 4，在 0x21D329C 调用 `AddToCurrentGroup(Effect[])`。这是当前伤害产生的原生响应效果。
 2. `EffectQueue.Shift`（0x224B810）先在 0x224B830 调用 `MergeResponseEffects`，再合并组响应，最后于 0x224B844 进入 `DoShift`。致死伤害的 Lose 响应因此在尚未结算的攻击后书签之前进入实际队列。

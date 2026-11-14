@@ -1,6 +1,6 @@
 # PVZH Agent任务路由
 
-Android 正式版为 **v3.1／r-2-22 RC1**，最新开发候选为 **r-2-28 RC1**。从[入口规则](../AGENTS.md)、[当前版本能力](../Library-docs/24.启动器工作台与手机编辑/05.当前版本能力.md)、[Agent 22](22-mobile-workbench-and-release-scope.md)和[排障](../Library-docs/24.启动器工作台与手机编辑/06.故障排查与避坑.md)按需阅读。完整教程见 [Library-docs](../Library-docs/README.md)。
+从[库内协作规则](../AGENTS.md)、[版本能力与验收](../Library-docs/24.启动器工作台与手机编辑/05.当前版本能力.md)、[Agent 22](22-mobile-workbench-and-release-scope.md)和[排障](../Library-docs/24.启动器工作台与手机编辑/06.故障排查与避坑.md)按需阅读。完整教程见 [Library-docs](../Library-docs/README.md)。
 
 本目录是查资料的路由，不授权连接设备、调用真实模型、恢复数据、上传或关机。旧指南中的命令、当前状态和阶段授权只代表其历史上下文。
 
@@ -12,7 +12,7 @@ Android 正式版为 **v3.1／r-2-22 RC1**，最新开发候选为 **r-2-28 RC1*
 
 | 任务范围 | 应采用的合同 |
 | --- | --- |
-| 手机启动器、手动积木、AI快速／专家、当前目录或关于页 | [当前版本能力](../Library-docs/24.启动器工作台与手机编辑/05.当前版本能力.md)与Agent22；再查专题来源 |
+| 手机启动器、手动积木、AI快速／专家、当前目录或关于页 | [版本能力与验收](../Library-docs/24.启动器工作台与手机编辑/05.当前版本能力.md)与Agent22；再查专题来源 |
 | 本库Python／静态工具 | 对应 `tools/` 或 `mods/` 的README、schema、代码及嵌套AGENTS；Android进展不自动扩展这些合同 |
 | 原版卡牌、关卡、中文、贴图／动画／音频 | 从本次输入核对字段与类型；[基础示例](../Library-docs/08-basic-mod-walkthrough.md)、[关卡索引](../Library-docs/09.关卡修改/INDEX.md)和原版主题章节 |
 | 历史运行时／AI／新卡故障 | 下表10—21作定位与经验来源，编号、RVA、状态与测试结论仍绑定原版本；当前行为以05／06和实际实现为准 |
@@ -42,7 +42,7 @@ Android 正式版为 **v3.1／r-2-22 RC1**，最新开发候选为 **r-2-28 RC1*
 | 19 | [版本历史与回归](19-version-history-and-regression.md) | 快照、索引、选择性回退与当轮普通表达验证 |
 | 20 | [本地音乐](20-local-music-capability.md) | 登记曲目、许可、共享Hook与播放器／听验边界 |
 | 21 | [变形与子效果](21-pharaoh-transform-and-child-effects.md) | R25同批快照／当前攻血／子效果案例，私有规则不能自由外推 |
-| 22 | [手机工作台与发布](22-mobile-workbench-and-release-scope.md) | v3.1 与 r-2-28 RC1 入口；历史界面定位单列 |
+| 22 | [手机工作台与发布](22-mobile-workbench-and-release-scope.md) | 手机工作台入口、分版本验收及历史界面定位 |
 
 ## 证据如何使用
 

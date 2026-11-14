@@ -1,8 +1,21 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-12",
+  "updated_at": "2026-11-14",
   "generated_utc": "2026-11-10T19:34:34.236928+00:00",
   "product_context": {
+    "scope": "Versioned references documented in this catalog. The maintained_revision_window records the window at catalog creation.",
+    "stable_v4": {
+      "public_version": "v4",
+      "internal_revision": "r-2-60",
+      "candidate": "RC17",
+      "channel": "stable",
+      "release_code": 100004,
+      "entry": "Library-docs/24.启动器工作台与手机编辑/05.当前版本能力.md#v4",
+      "changelogs": {
+        "zh-CN": "pvzh-launcher/releases/v4/changelog-zh.json",
+        "en-US": "pvzh-launcher/releases/v4/changelog-en.json"
+      }
+    },
     "public_version": "v3.1",
     "internal_revision": "r-2-22",
     "candidate": "RC1",
@@ -120,8 +133,8 @@
   },
   "scope_definitions": {
     "current_product": {
-      "label": "当前产品",
-      "meaning": "v3.1 正式版与 r-2-28 RC1 开发候选的能力、故障与入口；验收按文内版本和层级"
+      "label": "版本验收与排障",
+      "meaning": "分版本记录正式版和开发候选的能力、故障、操作入口及验收范围"
     },
     "recent_stage": {
       "label": "近期阶段",
@@ -2536,11 +2549,11 @@
     },
     {
       "path": "Library-docs/24.启动器工作台与手机编辑/05.当前版本能力.md",
-      "title": "当前版本能力：v1／内部 R51",
+      "title": "版本能力与验收",
       "group": "24.启动器工作台与手机编辑",
       "scope": "current_product",
-      "scope_label": "当前产品",
-      "applicability": "v3.1 正式版与 r-2-28 RC1 开发候选的能力、故障与入口；验收按文内版本和层级",
+      "scope_label": "版本验收与排障",
+      "applicability": "分版本记录正式版和开发候选的能力、故障、操作入口及验收范围",
       "revision_mentions": [
         "R35",
         "R40",
@@ -2562,8 +2575,8 @@
       "title": "故障排查与避坑",
       "group": "24.启动器工作台与手机编辑",
       "scope": "current_product",
-      "scope_label": "当前产品",
-      "applicability": "v3.1 正式版与 r-2-28 RC1 开发候选的能力、故障与入口；验收按文内版本和层级",
+      "scope_label": "版本验收与排障",
+      "applicability": "分版本记录正式版和开发候选的能力、故障、操作入口及验收范围",
       "revision_mentions": [
         "R12",
         "R14",
@@ -2592,8 +2605,8 @@
       "title": "24 · 启动器工作台与手机编辑",
       "group": "24.启动器工作台与手机编辑",
       "scope": "current_product",
-      "scope_label": "当前产品",
-      "applicability": "v3.1 正式版与 r-2-28 RC1 开发候选的能力、故障与入口；验收按文内版本和层级",
+      "scope_label": "版本验收与排障",
+      "applicability": "分版本记录正式版和开发候选的能力、故障、操作入口及验收范围",
       "revision_mentions": [
         "R42",
         "R43",
@@ -2684,23 +2697,8 @@
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "README.en.md",
-      "title": "PVZH Library",
-      "group": "root",
-      "scope": "maintenance",
-      "scope_label": "维护导航",
-      "applicability": "当前导航、协作或许可入口；发布授权不从历史文档继承",
-      "revision_mentions": [
-        "v3.1",
-        "r-2-22",
-        "r-2-28",
-        "r-2-30"
-      ],
-      "previously_without_inbound_md_link": false
-    },
-    {
       "path": "README.md",
-      "title": "PVZH 图书馆",
+      "title": "PvZ Heroes Advanced Modding Library",
       "group": "root",
       "scope": "maintenance",
       "scope_label": "维护导航",
@@ -2708,19 +2706,31 @@
       "revision_mentions": [
         "R9",
         "R19",
-        "R42",
-        "R48",
-        "R51",
         "v3.1",
         "r-2-22",
         "r-2-28",
-        "r-2-30"
+        "r-2-32"
       ],
       "previously_without_inbound_md_link": false
     },
     {
-      "path": "README.vi.md",
-      "title": "Thư viện PVZH",
+      "path": "README_zh_CN.md",
+      "title": "PvZ Heroes Advanced Modding Library",
+      "group": "root",
+      "scope": "maintenance",
+      "scope_label": "维护导航",
+      "applicability": "当前导航、协作或许可入口；发布授权不从历史文档继承",
+      "revision_mentions": [
+        "v3.1",
+        "r-2-22",
+        "r-2-28",
+        "r-2-32"
+      ],
+      "previously_without_inbound_md_link": false
+    },
+    {
+      "path": "README_vi_VN.md",
+      "title": "PvZ Heroes Advanced Modding Library",
       "group": "root",
       "scope": "maintenance",
       "scope_label": "维护导航",
@@ -3003,8 +3013,8 @@
       "title": "22 · 手机工作台、组件编辑与发布范围",
       "group": "agents",
       "scope": "current_product",
-      "scope_label": "当前产品",
-      "applicability": "v3.1 正式版与 r-2-28 RC1 开发候选的能力、故障与入口；验收按文内版本和层级",
+      "scope_label": "版本验收与排障",
+      "applicability": "分版本记录正式版和开发候选的能力、故障、操作入口及验收范围",
       "revision_mentions": [
         "R42",
         "R43",
