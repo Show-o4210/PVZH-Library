@@ -4,8 +4,10 @@
 
 ## 文件
 
-- [ISSUES.md](ISSUES.md)：39 条英／越文记录的索引及未定论项。
+- [ISSUES.md](ISSUES.md)：原有 39 条记录的索引及未定论项；另新增 ThePrimalPea 的 94 条中英越贡献记录。
 - [corrections.json](corrections.json)：逐条 JSON 键、原文、中文参考、建议文案、来源提交、R64 对照和应用状态。它是交接数据，不是可直接加载的翻译词表。
+- [CONTRIBUTORS.md](CONTRIBUTORS.md)：ThePrimalPea 的贡献署名、94 条 R64 修订及 18 个文档提交的来源与接入边界。
+- [contributor-commits.json](contributor-commits.json)：23 个贡献提交的完整机器清单。
 - 本 README：后续接入步骤与验收边界。
 
 ## 版本与状态
@@ -17,6 +19,10 @@
 3. 旧条件批次曾记录为 4 文件、22 个值，但其完整未提交 diff 在本工作区不可得；这里没有假称恢复了那个精确补丁。重建范围与旧批次不同，以逐条证据为准。
 4. R64 最初发布快照固定为 [`3b67408`](https://github.com/Show-o4210/PvZH-AML/commit/3b674087229d2547087d4aa6726aab80c49126b1)。后续 main 改过 R64 悬浮工具文案，所以不能把当前整目录自动等同于原候选 APK 的逐字快照。本包分别记录原始 R64 与整理时 R64 值。
 5. 本库不是完整 Android 工程。未在这里找到并验证当前构建的真实翻译源；**实际加载、构建产物及设备显示均未验证**。不得修改历史快照以伪装已经进入构建。
+
+## 贡献补充
+
+本包现共 **133 条**记录。新增 94 条由 **ThePrimalPea** 提交的中英越词条修订，已存在于当前 R64 仓库词表，是否进入实际构建仍待核验。详见[贡献来源与状态](CONTRIBUTORS.md)。其中协议前缀 `PVZH1` → `PvZH1` 单独标为需复核，不自动采纳。新增记录是贡献归档，不将所有风格调整都称作错误，也不重放已生效的仓库修改。
 
 ## 给后续 agent 的执行说明
 
@@ -42,3 +48,5 @@
 ## English summary
 
 This folder is a reviewable handoff, not a runtime language pack. It contains 18 corrections reconstructed from three already-published R44 community commits, plus 21 newly reconstructed condition-help proposals. The latter are not claimed to be the exact former uncommitted 22-value batch. Each record carries its source key, old/proposed text, Chinese reference and pinned R64 comparison. Locate the real build input, review conflicts and semantics, preserve placeholders/identifiers, and verify static checks, packaged output and actual UI separately before claiming adoption. Do not bulk-overwrite catalogs or rewrite historical provenance snapshots.
+
+Contributor addendum: 94 R64 catalog revisions by **ThePrimalPea** are now included with attribution and exact commit provenance (133 records total). They already exist in repository catalogs, not necessarily in an APK. Eighteen documentation commits are indexed separately. One protocol-prefix case change is explicitly flagged for review before any adoption.

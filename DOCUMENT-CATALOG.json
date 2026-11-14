@@ -103,8 +103,8 @@
     }
   },
   "coverage": {
-    "eligible_markdown_count": 258,
-    "indexed_markdown_count": 258,
+    "eligible_markdown_count": 259,
+    "indexed_markdown_count": 259,
     "missing": [],
     "baseline_markdown_count": 248,
     "previously_without_inbound_md_link_count": 15,
@@ -202,7 +202,7 @@
       "id": "pvzh-launcher",
       "title": "PVZH 启动器",
       "anchor": "pvzh-launcher",
-      "count": 3
+      "count": 4
     },
     {
       "id": "24.启动器工作台与手机编辑",
@@ -3387,6 +3387,19 @@
       "scope": "maintenance",
       "scope_label": "维护导航",
       "applicability": "R44 社区修正与重建条件建议的交接；待目标工程复核，不代表 APK 已采纳",
+      "revision_mentions": [
+        "r-2-44",
+        "r-2-64"
+      ],
+      "previously_without_inbound_md_link": false
+    },
+    {
+      "path": "pvzh-launcher/translation-fixes/CONTRIBUTORS.md",
+      "title": "ThePrimalPea 翻译贡献与接入状态",
+      "group": "pvzh-launcher",
+      "scope": "maintenance",
+      "scope_label": "维护导航",
+      "applicability": "贡献提交署名、R44/R64 词条状态与文档来源；实际 APK 采纳未验证",
       "revision_mentions": [
         "r-2-44",
         "r-2-64"

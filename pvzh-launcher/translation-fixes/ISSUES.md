@@ -44,6 +44,10 @@
 | FIX-038 | vi-VN | 条件说明重建建议，待复核 | `editor.skill_help.block.sun_counter_comparison_query.examples` |
 | FIX-039 | vi-VN | 条件说明重建建议，待复核 | `editor.skill_help.block.target_card_guid_query.examples` |
 
+## ThePrimalPea 已提交的 R64 修订
+
+新增 94 条贡献记录（FIX-040 至 FIX-133）见 [贡献来源与状态](CONTRIBUTORS.md) 和 [corrections.json](corrections.json)。均已在当前 R64 仓库词表；实际构建仍待核验。
+
 ## 尚未定论，不自动修改
 
 - `DrawCardFromSubsetTrigger` 的标题涉及 summon/draw 术语，尚不能仅凭名称确定应译成“召唤”还是“抽取”。应追踪完整实现、事件来源与界面语境，再决定。

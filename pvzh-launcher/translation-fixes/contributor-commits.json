@@ -1,0 +1,603 @@
+{
+  "schema_version": 1,
+  "reference_head": "36a4b02b6b592752540f4d1e33dc614ecb62809c",
+  "author_login": "ThePrimalPea",
+  "identity_verification": "GitHub commits API filtered by author=ThePrimalPea; returned author.login matches for all 23 commits.",
+  "commits": [
+    {
+      "commit": "1c455f9a4561973bec954c24615324f5c3a06f01",
+      "url": "https://github.com/Show-o4210/PvZH-AML/commit/1c455f9a4561973bec954c24615324f5c3a06f01",
+      "author_login": "ThePrimalPea",
+      "author_display_name": "The Primal Pea",
+      "subject": "Update CN README.md",
+      "files": [
+        "README.md"
+      ],
+      "classification": "documentation-or-navigation",
+      "runtime_entry_ids": [],
+      "file_changes": [
+        {
+          "path": "README.md",
+          "previous_path": null,
+          "change_type": "modified",
+          "patch": "@@ -1,6 +1,6 @@\n # PVZH 图书馆\n \n-[English README](README.en.md) · [Tiếng Việt (vi)](README.vi.md)\n+[English](README.en.md) · [Tiếng Việt](README.vi.md)\n \n 一份面向《植物大战僵尸：英雄》Mod 开发者的中文资料、工具与经验库。\n ",
+          "patch_note": "Historical documentation diff; not an executable migration patch.",
+          "current_path": "README_zh_CN.md",
+          "current_path_exists": true
+        }
+      ],
+      "application_status": "Already in documentation history; later wording may supersede intermediate revisions. Follow current paths, do not replay renames or apply to runtime catalogs."
+    },
+    {
+      "commit": "a02712db4e72c5d8584612a0cc4a47ec6db8dbb5",
+      "url": "https://github.com/Show-o4210/PvZH-AML/commit/a02712db4e72c5d8584612a0cc4a47ec6db8dbb5",
+      "author_login": "ThePrimalPea",
+      "author_display_name": "The Primal Pea",
+      "subject": "Update CN README.md",
+      "files": [
+        "README.md"
+      ],
+      "classification": "documentation-or-navigation",
+      "runtime_entry_ids": [],
+      "file_changes": [
+        {
+          "path": "README.md",
+          "previous_path": null,
+          "change_type": "modified",
+          "patch": "@@ -1,6 +1,6 @@\n # PVZH 图书馆\n \n-[English](README.en.md) · [Tiếng Việt](README.vi.md)\n+[English](README.en.md) | [Tiếng Việt](README.vi.md)\n \n 一份面向《植物大战僵尸：英雄》Mod 开发者的中文资料、工具与经验库。\n ",
+          "patch_note": "Historical documentation diff; not an executable migration patch.",
+          "current_path": "README_zh_CN.md",
+          "current_path_exists": true
+        }
+      ],
+      "application_status": "Already in documentation history; later wording may supersede intermediate revisions. Follow current paths, do not replay renames or apply to runtime catalogs."
+    },
+    {
+      "commit": "973cc8fe24507fe11fbe9ccc046f2996d063d3ec",
+      "url": "https://github.com/Show-o4210/PvZH-AML/commit/973cc8fe24507fe11fbe9ccc046f2996d063d3ec",
+      "author_login": "ThePrimalPea",
+      "author_display_name": "The Primal Pea",
+      "subject": "Update README.en.md",
+      "files": [
+        "README.en.md"
+      ],
+      "classification": "documentation-or-navigation",
+      "runtime_entry_ids": [],
+      "file_changes": [
+        {
+          "path": "README.en.md",
+          "previous_path": null,
+          "change_type": "modified",
+          "patch": "@@ -1,4 +1,6 @@\n-# PVZH Library\n+# PVZ Heroes Advanced Modding Library\n+\n+[简体中文](README.md) | [Tiếng Việt](README.vi.md)\n \n A Chinese-language knowledge base of documentation, tools, and practical experience for **Plants vs. Zombies Heroes (PVZH)** mod developers.\n ",
+          "patch_note": "Historical documentation diff; not an executable migration patch.",
+          "current_path": "README.md",
+          "current_path_exists": true
+        }
+      ],
+      "application_status": "Already in documentation history; later wording may supersede intermediate revisions. Follow current paths, do not replay renames or apply to runtime catalogs."
+    },
+    {
+      "commit": "8070d506ee0ec60dc8f100f82e6482f176d9a8a4",
+      "url": "https://github.com/Show-o4210/PvZH-AML/commit/8070d506ee0ec60dc8f100f82e6482f176d9a8a4",
+      "author_login": "ThePrimalPea",
+      "author_display_name": "The Primal Pea",
+      "subject": "Update README.en.md",
+      "files": [
+        "README.en.md"
+      ],
+      "classification": "documentation-or-navigation",
+      "runtime_entry_ids": [],
+      "file_changes": [
+        {
+          "path": "README.en.md",
+          "previous_path": null,
+          "change_type": "modified",
+          "patch": "@@ -1,4 +1,4 @@\n-# PVZ Heroes Advanced Modding Library\n+# PvZ Heroes Advanced Modding Library\n \n [简体中文](README.md) | [Tiếng Việt](README.vi.md)\n \n@@ -8,7 +8,7 @@ The current stable version of **PvZH AM (Advanced Modding)** is **v3.1 (r-2-22 R\n \n > **Language note:** This README is an English guide to the repository. Most documentation is currently written in Chinese; the links below lead to the original materials unless an English translation is explicitly provided.\n \n-[简体中文 README](README.md) · [Tiếng Việt (vi)](README.vi.md)\n+[简体中文](README.md) | [Tiếng Việt](README.vi.md)\n \n ## Start here\n ",
+          "patch_note": "Historical documentation diff; not an executable migration patch.",
+          "current_path": "README.md",
+          "current_path_exists": true
+        }
+      ],
+      "application_status": "Already in documentation history; later wording may supersede intermediate revisions. Follow current paths, do not replay renames or apply to runtime catalogs."
+    },
+    {
+      "commit": "b108b3a394f29b5a4a038df66e3656d2e5bbf64f",
+      "url": "https://github.com/Show-o4210/PvZH-AML/commit/b108b3a394f29b5a4a038df66e3656d2e5bbf64f",
+      "author_login": "ThePrimalPea",
+      "author_display_name": "The Primal Pea",
+      "subject": "Update README.en.md",
+      "files": [
+        "README.en.md"
+      ],
+      "classification": "documentation-or-navigation",
+      "runtime_entry_ids": [],
+      "file_changes": [
+        {
+          "path": "README.en.md",
+          "previous_path": null,
+          "change_type": "modified",
+          "patch": "@@ -1,14 +1,14 @@\n # PvZ Heroes Advanced Modding Library\n \n-[简体中文](README.md) | [Tiếng Việt](README.vi.md)\n+English | [简体中文](README.md) | [Tiếng Việt](README.vi.md)\n \n A Chinese-language knowledge base of documentation, tools, and practical experience for **Plants vs. Zombies Heroes (PVZH)** mod developers.\n \n The current stable version of **PvZH AM (Advanced Modding)** is **v3.1 (r-2-22 RC1)**. The [launcher project](pvzh-launcher/README.md) includes the English UI catalog and a draft Vietnamese catalog from **r-2-32 RC1**. The [capability guide](Library-docs/24.启动器工作台与手机编辑/05.当前版本能力.md) documents v3.1 and r-2-28 RC1 and separates device tests from original-engine results. This repository contains documentation, public tools, and curated evidence. References marked as workspace paths identify records in the full development workspace.\n \n > **Language note:** This README is an English guide to the repository. Most documentation is currently written in Chinese; the links below lead to the original materials unless an English translation is explicitly provided.\n \n-[简体中文](README.md) | [Tiếng Việt](README.vi.md)\n+English | [简体中文](README.md) | [Tiếng Việt](README.vi.md)\n \n ## Start here\n ",
+          "patch_note": "Historical documentation diff; not an executable migration patch.",
+          "current_path": "README.md",
+          "current_path_exists": true
+        }
+      ],
+      "application_status": "Already in documentation history; later wording may supersede intermediate revisions. Follow current paths, do not replay renames or apply to runtime catalogs."
+    },
+    {
+      "commit": "cd5e133d8e2869816fa91f92a8a1b6c4eab8c57a",
+      "url": "https://github.com/Show-o4210/PvZH-AML/commit/cd5e133d8e2869816fa91f92a8a1b6c4eab8c57a",
+      "author_login": "ThePrimalPea",
+      "author_display_name": "The Primal Pea",
+      "subject": "Update README_zh.md",
+      "files": [
+        "README.md"
+      ],
+      "classification": "documentation-or-navigation",
+      "runtime_entry_ids": [],
+      "file_changes": [
+        {
+          "path": "README.md",
+          "previous_path": null,
+          "change_type": "modified",
+          "patch": "@@ -1,6 +1,6 @@\n-# PVZH 图书馆\n+# PvZ Heroes Advanced Modding Library\n \n-[English](README.en.md) | [Tiếng Việt](README.vi.md)\n+[English](README.en.md) | 简体中文 | [Tiếng Việt](README.vi.md)\n \n 一份面向《植物大战僵尸：英雄》Mod 开发者的中文资料、工具与经验库。\n ",
+          "patch_note": "Historical documentation diff; not an executable migration patch.",
+          "current_path": "README_zh_CN.md",
+          "current_path_exists": true
+        }
+      ],
+      "application_status": "Already in documentation history; later wording may supersede intermediate revisions. Follow current paths, do not replay renames or apply to runtime catalogs."
+    },
+    {
+      "commit": "684df97a21c9c6bd5fb5dc90130e2e5b40b3e962",
+      "url": "https://github.com/Show-o4210/PvZH-AML/commit/684df97a21c9c6bd5fb5dc90130e2e5b40b3e962",
+      "author_login": "ThePrimalPea",
+      "author_display_name": "The Primal Pea",
+      "subject": "Update README.vi.md",
+      "files": [
+        "README.vi.md"
+      ],
+      "classification": "documentation-or-navigation",
+      "runtime_entry_ids": [],
+      "file_changes": [
+        {
+          "path": "README.vi.md",
+          "previous_path": null,
+          "change_type": "modified",
+          "patch": "@@ -1,8 +1,8 @@\n-# Thư viện PVZH\n+# PvZ Heroes Advanced Modding Library\n \n-[简体中文 README](README.md) · [English README](README.en.md) · **Tiếng Việt (vi)**\n+[English](README.en.md) [简体中文](README.md)| Tiếng Việt \n \n-Kho tư liệu, công cụ và kinh nghiệm bằng tiếng Trung dành cho các nhà phát triển mod của **Plants vs. Zombies Heroes (PVZH)**.\n+PvZ Heroes Advanced Modding Library (Thư viện Modding Nâng cao PvZ Heroes) là kho tư liệu, công cụ và kinh nghiệm dành cho các nhà phát triển mod của **Plants vs. Zombies Heroes (PVZH)**.\n \n Phiên bản ổn định hiện tại trên điện thoại là **v3.1 (mốc tính năng r-2-22 RC1)**. [Bảng ngôn ngữ tiếng Việt của trình khởi chạy](pvzh-launcher/README.md) trong bản ứng viên phát triển **r-2-32 RC1** đã được mở để rà soát bản dịch. Các hướng dẫn về tính năng và khắc phục sự cố ghi nhận phạm vi kiểm chứng đến r-2-28 RC1. Kho này tập hợp các hướng dẫn bằng tiếng Trung, công cụ công khai và bằng chứng đã được chọn lọc. Các đường dẫn được đánh dấu là “không gian làm việc” (工作区) dùng để truy lại hồ sơ bàn giao trong không gian làm việc đầy đủ.\n ",
+          "patch_note": "Historical documentation diff; not an executable migration patch.",
+          "current_path": "README_vi_VN.md",
+          "current_path_exists": true
+        }
+      ],
+      "application_status": "Already in documentation history; later wording may supersede intermediate revisions. Follow current paths, do not replay renames or apply to runtime catalogs."
+    },
+    {
+      "commit": "35e840e8b1885a7be7cf0f5cf3161f8fa2c7a00c",
+      "url": "https://github.com/Show-o4210/PvZH-AML/commit/35e840e8b1885a7be7cf0f5cf3161f8fa2c7a00c",
+      "author_login": "ThePrimalPea",
+      "author_display_name": "The Primal Pea",
+      "subject": "Update README.vi.md",
+      "files": [
+        "README.vi.md"
+      ],
+      "classification": "documentation-or-navigation",
+      "runtime_entry_ids": [],
+      "file_changes": [
+        {
+          "path": "README.vi.md",
+          "previous_path": null,
+          "change_type": "modified",
+          "patch": "@@ -1,6 +1,6 @@\n # PvZ Heroes Advanced Modding Library\n \n-[English](README.en.md) [简体中文](README.md)| Tiếng Việt \n+[English](README.en.md) | [简体中文](README.md) | Tiếng Việt \n \n PvZ Heroes Advanced Modding Library (Thư viện Modding Nâng cao PvZ Heroes) là kho tư liệu, công cụ và kinh nghiệm dành cho các nhà phát triển mod của **Plants vs. Zombies Heroes (PVZH)**.\n ",
+          "patch_note": "Historical documentation diff; not an executable migration patch.",
+          "current_path": "README_vi_VN.md",
+          "current_path_exists": true
+        }
+      ],
+      "application_status": "Already in documentation history; later wording may supersede intermediate revisions. Follow current paths, do not replay renames or apply to runtime catalogs."
+    },
+    {
+      "commit": "e6a6bfc8f9f3fa7e7b0d434d39f23df76e4ff36d",
+      "url": "https://github.com/Show-o4210/PvZH-AML/commit/e6a6bfc8f9f3fa7e7b0d434d39f23df76e4ff36d",
+      "author_login": "ThePrimalPea",
+      "author_display_name": "The Primal Pea",
+      "subject": "Update README.en.md",
+      "files": [
+        "README.en.md"
+      ],
+      "classification": "documentation-or-navigation",
+      "runtime_entry_ids": [],
+      "file_changes": [
+        {
+          "path": "README.en.md",
+          "previous_path": null,
+          "change_type": "modified",
+          "patch": "@@ -2,7 +2,7 @@\n \n English | [简体中文](README.md) | [Tiếng Việt](README.vi.md)\n \n-A Chinese-language knowledge base of documentation, tools, and practical experience for **Plants vs. Zombies Heroes (PVZH)** mod developers.\n+PvZ Heroes Advanced Modding Library is a knowledge base of documentation, tools, and practical experience for **Plants vs. Zombies Heroes (PvZH)** mod developers.\n \n The current stable version of **PvZH AM (Advanced Modding)** is **v3.1 (r-2-22 RC1)**. The [launcher project](pvzh-launcher/README.md) includes the English UI catalog and a draft Vietnamese catalog from **r-2-32 RC1**. The [capability guide](Library-docs/24.启动器工作台与手机编辑/05.当前版本能力.md) documents v3.1 and r-2-28 RC1 and separates device tests from original-engine results. This repository contains documentation, public tools, and curated evidence. References marked as workspace paths identify records in the full development workspace.\n ",
+          "patch_note": "Historical documentation diff; not an executable migration patch.",
+          "current_path": "README.md",
+          "current_path_exists": true
+        }
+      ],
+      "application_status": "Already in documentation history; later wording may supersede intermediate revisions. Follow current paths, do not replay renames or apply to runtime catalogs."
+    },
+    {
+      "commit": "91d4f731f97618646168436fbb1ee2022e3de48d",
+      "url": "https://github.com/Show-o4210/PvZH-AML/commit/91d4f731f97618646168436fbb1ee2022e3de48d",
+      "author_login": "ThePrimalPea",
+      "author_display_name": "The Primal Pea",
+      "subject": "Update README.md",
+      "files": [
+        "pvzh-launcher/README.md"
+      ],
+      "classification": "documentation-or-navigation",
+      "runtime_entry_ids": [],
+      "file_changes": [
+        {
+          "path": "pvzh-launcher/README.md",
+          "previous_path": null,
+          "change_type": "modified",
+          "patch": "@@ -1,4 +1,4 @@\n-# PVZH 启动器\n+# PvZ Heroes Advanced Modding Library\n \n PVZH 启动器是《植物大战僵尸：英雄》的第三方 Android Mod 工作台。它提供 Mod 管理、卡牌和美术编辑，以及游戏资源准备等入口。手机操作和版本能力见[启动器工作台指南](../Library-docs/24.启动器工作台与手机编辑/README.md)。\n ",
+          "patch_note": "Historical documentation diff; not an executable migration patch.",
+          "current_path": "pvzh-launcher/README.md",
+          "current_path_exists": true
+        }
+      ],
+      "application_status": "Already in documentation history; later wording may supersede intermediate revisions. Follow current paths, do not replay renames or apply to runtime catalogs."
+    },
+    {
+      "commit": "d6d2416128018740ad9ca7be5fc6e13eccfe7119",
+      "url": "https://github.com/Show-o4210/PvZH-AML/commit/d6d2416128018740ad9ca7be5fc6e13eccfe7119",
+      "author_login": "ThePrimalPea",
+      "author_display_name": "The Primal Pea",
+      "subject": "Update README.en.md",
+      "files": [
+        "README.en.md"
+      ],
+      "classification": "documentation-or-navigation",
+      "runtime_entry_ids": [],
+      "file_changes": [
+        {
+          "path": "README.en.md",
+          "previous_path": null,
+          "change_type": "modified",
+          "patch": "@@ -4,6 +4,8 @@ English | [简体中文](README.md) | [Tiếng Việt](README.vi.md)\n \n PvZ Heroes Advanced Modding Library is a knowledge base of documentation, tools, and practical experience for **Plants vs. Zombies Heroes (PvZH)** mod developers.\n \n+The library transition from Chinese to English is still in progress. Feel free to send us feedback or contributing! Join our [Telegram chat](https://t.me/PvZH_AM) for discussion.\n+\n The current stable version of **PvZH AM (Advanced Modding)** is **v3.1 (r-2-22 RC1)**. The [launcher project](pvzh-launcher/README.md) includes the English UI catalog and a draft Vietnamese catalog from **r-2-32 RC1**. The [capability guide](Library-docs/24.启动器工作台与手机编辑/05.当前版本能力.md) documents v3.1 and r-2-28 RC1 and separates device tests from original-engine results. This repository contains documentation, public tools, and curated evidence. References marked as workspace paths identify records in the full development workspace.\n \n > **Language note:** This README is an English guide to the repository. Most documentation is currently written in Chinese; the links below lead to the original materials unless an English translation is explicitly provided.",
+          "patch_note": "Historical documentation diff; not an executable migration patch.",
+          "current_path": "README.md",
+          "current_path_exists": true
+        }
+      ],
+      "application_status": "Already in documentation history; later wording may supersede intermediate revisions. Follow current paths, do not replay renames or apply to runtime catalogs."
+    },
+    {
+      "commit": "9a17cbf256d3514c2b5ff7102bedacef4e9dafda",
+      "url": "https://github.com/Show-o4210/PvZH-AML/commit/9a17cbf256d3514c2b5ff7102bedacef4e9dafda",
+      "author_login": "ThePrimalPea",
+      "author_display_name": "The Primal Pea",
+      "subject": "Rename README.md to README_zh_CN.md",
+      "files": [
+        "README.md",
+        "README_zh_CN.md"
+      ],
+      "classification": "documentation-or-navigation",
+      "runtime_entry_ids": [],
+      "file_changes": [
+        {
+          "path": "README_zh_CN.md",
+          "previous_path": "README.md",
+          "change_type": "renamed",
+          "patch": null,
+          "patch_note": "No text patch returned; rename metadata retained.",
+          "current_path": "README_zh_CN.md",
+          "current_path_exists": true
+        }
+      ],
+      "application_status": "Already in documentation history; later wording may supersede intermediate revisions. Follow current paths, do not replay renames or apply to runtime catalogs."
+    },
+    {
+      "commit": "7f73dd31bb50d651a65f40092aff10e9ec3dfdf9",
+      "url": "https://github.com/Show-o4210/PvZH-AML/commit/7f73dd31bb50d651a65f40092aff10e9ec3dfdf9",
+      "author_login": "ThePrimalPea",
+      "author_display_name": "The Primal Pea",
+      "subject": "Update and rename README.en.md to README.md",
+      "files": [
+        "README.en.md",
+        "README.md"
+      ],
+      "classification": "documentation-or-navigation",
+      "runtime_entry_ids": [],
+      "file_changes": [
+        {
+          "path": "README.md",
+          "previous_path": "README.en.md",
+          "change_type": "renamed",
+          "patch": "@@ -1,6 +1,6 @@\n # PvZ Heroes Advanced Modding Library\n \n-English | [简体中文](README.md) | [Tiếng Việt](README.vi.md)\n+English | [简体中文](README_zh_CN.md) | [Tiếng Việt](README_vi_VN.md)\n \n PvZ Heroes Advanced Modding Library is a knowledge base of documentation, tools, and practical experience for **Plants vs. Zombies Heroes (PvZH)** mod developers.\n ",
+          "patch_note": "Historical documentation diff; not an executable migration patch.",
+          "current_path": "README.md",
+          "current_path_exists": true
+        }
+      ],
+      "application_status": "Already in documentation history; later wording may supersede intermediate revisions. Follow current paths, do not replay renames or apply to runtime catalogs."
+    },
+    {
+      "commit": "b69531d484de09bed357552d0ab1107dbacf0cf0",
+      "url": "https://github.com/Show-o4210/PvZH-AML/commit/b69531d484de09bed357552d0ab1107dbacf0cf0",
+      "author_login": "ThePrimalPea",
+      "author_display_name": "The Primal Pea",
+      "subject": "Update README_zh_CN.md",
+      "files": [
+        "README_zh_CN.md"
+      ],
+      "classification": "documentation-or-navigation",
+      "runtime_entry_ids": [],
+      "file_changes": [
+        {
+          "path": "README_zh_CN.md",
+          "previous_path": null,
+          "change_type": "modified",
+          "patch": "@@ -1,6 +1,6 @@\n # PvZ Heroes Advanced Modding Library\n \n-[English](README.en.md) | 简体中文 | [Tiếng Việt](README.vi.md)\n+[English](README.md) | 简体中文 | [Tiếng Việt](README_vi_VN.md)\n \n 一份面向《植物大战僵尸：英雄》Mod 开发者的中文资料、工具与经验库。\n ",
+          "patch_note": "Historical documentation diff; not an executable migration patch.",
+          "current_path": "README_zh_CN.md",
+          "current_path_exists": true
+        }
+      ],
+      "application_status": "Already in documentation history; later wording may supersede intermediate revisions. Follow current paths, do not replay renames or apply to runtime catalogs."
+    },
+    {
+      "commit": "49519aa3dfe84608f3d3e3a2d9b68c19615e197f",
+      "url": "https://github.com/Show-o4210/PvZH-AML/commit/49519aa3dfe84608f3d3e3a2d9b68c19615e197f",
+      "author_login": "ThePrimalPea",
+      "author_display_name": "The Primal Pea",
+      "subject": "Update and rename README.vi.md to README.vi_VN.md",
+      "files": [
+        "README.vi.md",
+        "README.vi_VN.md"
+      ],
+      "classification": "documentation-or-navigation",
+      "runtime_entry_ids": [],
+      "file_changes": [
+        {
+          "path": "README.vi_VN.md",
+          "previous_path": "README.vi.md",
+          "change_type": "renamed",
+          "patch": "@@ -1,6 +1,6 @@\n # PvZ Heroes Advanced Modding Library\n \n-[English](README.en.md) | [简体中文](README.md) | Tiếng Việt \n+[English](README.md) | [简体中文](README_zh_CN.md) | Tiếng Việt \n \n PvZ Heroes Advanced Modding Library (Thư viện Modding Nâng cao PvZ Heroes) là kho tư liệu, công cụ và kinh nghiệm dành cho các nhà phát triển mod của **Plants vs. Zombies Heroes (PVZH)**.\n ",
+          "patch_note": "Historical documentation diff; not an executable migration patch.",
+          "current_path": "README_vi_VN.md",
+          "current_path_exists": true
+        }
+      ],
+      "application_status": "Already in documentation history; later wording may supersede intermediate revisions. Follow current paths, do not replay renames or apply to runtime catalogs."
+    },
+    {
+      "commit": "cd5df705252a9922e2c7aa6e9f3329dc2960bc62",
+      "url": "https://github.com/Show-o4210/PvZH-AML/commit/cd5df705252a9922e2c7aa6e9f3329dc2960bc62",
+      "author_login": "ThePrimalPea",
+      "author_display_name": "The Primal Pea",
+      "subject": "Update README.md",
+      "files": [
+        "README.md"
+      ],
+      "classification": "documentation-or-navigation",
+      "runtime_entry_ids": [],
+      "file_changes": [
+        {
+          "path": "README.md",
+          "previous_path": null,
+          "change_type": "modified",
+          "patch": "@@ -10,7 +10,7 @@ The current stable version of **PvZH AM (Advanced Modding)** is **v3.1 (r-2-22 R\n \n > **Language note:** This README is an English guide to the repository. Most documentation is currently written in Chinese; the links below lead to the original materials unless an English translation is explicitly provided.\n \n-English | [简体中文](README.md) | [Tiếng Việt](README.vi.md)\n+English | [简体中文](README_zh_CN.md) | [Tiếng Việt](README_vi_VN.md)\n \n ## Start here\n ",
+          "patch_note": "Historical documentation diff; not an executable migration patch.",
+          "current_path": "README.md",
+          "current_path_exists": true
+        }
+      ],
+      "application_status": "Already in documentation history; later wording may supersede intermediate revisions. Follow current paths, do not replay renames or apply to runtime catalogs."
+    },
+    {
+      "commit": "e218fa20f2abf45cea80e667fd2a1bbb09a00242",
+      "url": "https://github.com/Show-o4210/PvZH-AML/commit/e218fa20f2abf45cea80e667fd2a1bbb09a00242",
+      "author_login": "ThePrimalPea",
+      "author_display_name": "The Primal Pea",
+      "subject": "Rename README.vi_VN.md to README_vi_VN.md",
+      "files": [
+        "README.vi_VN.md",
+        "README_vi_VN.md"
+      ],
+      "classification": "documentation-or-navigation",
+      "runtime_entry_ids": [],
+      "file_changes": [
+        {
+          "path": "README_vi_VN.md",
+          "previous_path": "README.vi_VN.md",
+          "change_type": "renamed",
+          "patch": null,
+          "patch_note": "No text patch returned; rename metadata retained.",
+          "current_path": "README_vi_VN.md",
+          "current_path_exists": true
+        }
+      ],
+      "application_status": "Already in documentation history; later wording may supersede intermediate revisions. Follow current paths, do not replay renames or apply to runtime catalogs."
+    },
+    {
+      "commit": "2f4695e8d91e82eb19b154b0ac9563696035e283",
+      "url": "https://github.com/Show-o4210/PvZH-AML/commit/2f4695e8d91e82eb19b154b0ac9563696035e283",
+      "author_login": "ThePrimalPea",
+      "author_display_name": "The Primal Pea",
+      "subject": "Update README.md",
+      "files": [
+        "mods/local-inventory/README.md"
+      ],
+      "classification": "documentation-or-navigation",
+      "runtime_entry_ids": [],
+      "file_changes": [
+        {
+          "path": "mods/local-inventory/README.md",
+          "previous_path": null,
+          "change_type": "modified",
+          "patch": "@@ -1,4 +1,4 @@\n-# PVZH Local Inventory Mod Base\n+# PvZH AM: Local Inventory Mod Base\n \n 本项目现位于 [PVZH-Library](../../README.md) 的 `mods/local-inventory/`，独立依赖与运行方式保留。\n ",
+          "patch_note": "Historical documentation diff; not an executable migration patch.",
+          "current_path": "mods/local-inventory/README.md",
+          "current_path_exists": true
+        }
+      ],
+      "application_status": "Already in documentation history; later wording may supersede intermediate revisions. Follow current paths, do not replay renames or apply to runtime catalogs."
+    },
+    {
+      "commit": "911cb19f443bf9e739f5f9884dd9876208b57308",
+      "url": "https://github.com/Show-o4210/PvZH-AML/commit/911cb19f443bf9e739f5f9884dd9876208b57308",
+      "author_login": "ThePrimalPea",
+      "author_display_name": "The Primal Pea",
+      "subject": "Update floating-deck.json",
+      "files": [
+        "pvzh-launcher/i18n/r-2-64/vi-VN/floating-tools/floating-deck.json"
+      ],
+      "classification": "runtime-catalog",
+      "runtime_entry_ids": [
+        "FIX-040",
+        "FIX-041",
+        "FIX-042",
+        "FIX-043",
+        "FIX-044",
+        "FIX-045",
+        "FIX-046",
+        "FIX-047",
+        "FIX-048",
+        "FIX-049",
+        "FIX-050",
+        "FIX-051",
+        "FIX-052",
+        "FIX-053",
+        "FIX-054",
+        "FIX-055",
+        "FIX-056",
+        "FIX-057",
+        "FIX-058",
+        "FIX-059",
+        "FIX-060",
+        "FIX-061",
+        "FIX-062",
+        "FIX-063",
+        "FIX-064",
+        "FIX-065",
+        "FIX-066",
+        "FIX-067",
+        "FIX-068",
+        "FIX-069",
+        "FIX-070",
+        "FIX-071",
+        "FIX-072",
+        "FIX-073",
+        "FIX-074",
+        "FIX-075",
+        "FIX-076",
+        "FIX-077",
+        "FIX-078",
+        "FIX-079",
+        "FIX-080",
+        "FIX-081",
+        "FIX-082",
+        "FIX-083",
+        "FIX-084",
+        "FIX-085",
+        "FIX-086",
+        "FIX-087",
+        "FIX-088",
+        "FIX-089",
+        "FIX-090"
+      ]
+    },
+    {
+      "commit": "9575dc69f56a32483e7d02a80c9cb0991ca448a5",
+      "url": "https://github.com/Show-o4210/PvZH-AML/commit/9575dc69f56a32483e7d02a80c9cb0991ca448a5",
+      "author_login": "ThePrimalPea",
+      "author_display_name": "The Primal Pea",
+      "subject": "Update floating-resources.json",
+      "files": [
+        "pvzh-launcher/i18n/r-2-64/vi-VN/floating-tools/floating-resources.json"
+      ],
+      "classification": "runtime-catalog",
+      "runtime_entry_ids": [
+        "FIX-091",
+        "FIX-092",
+        "FIX-093",
+        "FIX-094",
+        "FIX-095",
+        "FIX-096",
+        "FIX-097",
+        "FIX-098",
+        "FIX-099",
+        "FIX-100",
+        "FIX-101",
+        "FIX-102",
+        "FIX-103",
+        "FIX-104",
+        "FIX-105",
+        "FIX-106",
+        "FIX-107",
+        "FIX-108",
+        "FIX-109",
+        "FIX-110",
+        "FIX-111",
+        "FIX-112",
+        "FIX-113",
+        "FIX-114",
+        "FIX-115",
+        "FIX-116",
+        "FIX-117"
+      ]
+    },
+    {
+      "commit": "b7aa33194629022199a5addc762ce0d0bb031b34",
+      "url": "https://github.com/Show-o4210/PvZH-AML/commit/b7aa33194629022199a5addc762ce0d0bb031b34",
+      "author_login": "ThePrimalPea",
+      "author_display_name": "The Primal Pea",
+      "subject": "Update floating-resources.json",
+      "files": [
+        "pvzh-launcher/i18n/r-2-64/en-US/floating-tools/floating-resources.json"
+      ],
+      "classification": "runtime-catalog",
+      "runtime_entry_ids": [
+        "FIX-118",
+        "FIX-119",
+        "FIX-120",
+        "FIX-121",
+        "FIX-122",
+        "FIX-123",
+        "FIX-124"
+      ]
+    },
+    {
+      "commit": "28bc01ed3e0291139762befb596d27380732abfa",
+      "url": "https://github.com/Show-o4210/PvZH-AML/commit/28bc01ed3e0291139762befb596d27380732abfa",
+      "author_login": "ThePrimalPea",
+      "author_display_name": "The Primal Pea",
+      "subject": "Update floating-resources.json",
+      "files": [
+        "pvzh-launcher/i18n/r-2-64/en-US/floating-tools/floating-resources.json"
+      ],
+      "classification": "runtime-catalog",
+      "runtime_entry_ids": [
+        "FIX-125",
+        "FIX-126",
+        "FIX-127",
+        "FIX-128",
+        "FIX-129",
+        "FIX-130",
+        "FIX-131"
+      ]
+    },
+    {
+      "commit": "1c862f164328b232da9ca7d74f52b7475b1f39aa",
+      "url": "https://github.com/Show-o4210/PvZH-AML/commit/1c862f164328b232da9ca7d74f52b7475b1f39aa",
+      "author_login": "ThePrimalPea",
+      "author_display_name": "The Primal Pea",
+      "subject": "Update floating-resources.json",
+      "files": [
+        "pvzh-launcher/i18n/r-2-64/zh-CN/floating-tools/floating-resources.json"
+      ],
+      "classification": "runtime-catalog",
+      "runtime_entry_ids": [
+        "FIX-132",
+        "FIX-133"
+      ]
+    }
+  ]
+}
