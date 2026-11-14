@@ -18,6 +18,7 @@ Scope: this root license applies to the original Library materials. Original
 code and accompanying documentation in tools/card-editor/, tools/level-editor/,
 tools/audio-tool/, and mods/local-inventory/ retain their directory-local MIT
 licenses and copyright notices. See LICENSES.md for the directory mapping.
+The AM Java source in pvzh-launcher/source-preview/ is outside this scope.
 Third-party materials remain subject to their respective rights and licenses.
 
 You are free to:

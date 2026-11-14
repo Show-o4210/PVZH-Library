@@ -103,8 +103,8 @@
     }
   },
   "coverage": {
-    "eligible_markdown_count": 259,
-    "indexed_markdown_count": 259,
+    "eligible_markdown_count": 260,
+    "indexed_markdown_count": 260,
     "missing": [],
     "baseline_markdown_count": 248,
     "previously_without_inbound_md_link_count": 15,
@@ -202,7 +202,7 @@
       "id": "pvzh-launcher",
       "title": "PVZH 启动器",
       "anchor": "pvzh-launcher",
-      "count": 4
+      "count": 5
     },
     {
       "id": "24.启动器工作台与手机编辑",
@@ -3364,6 +3364,18 @@
         "r-2-32",
         "r-2-44",
         "r-2-64"
+      ],
+      "previously_without_inbound_md_link": false
+    },
+    {
+      "path": "pvzh-launcher/source-preview/r73-rc1/README.md",
+      "title": "R73 RC1 源码预览",
+      "group": "pvzh-launcher",
+      "scope": "recent_stage",
+      "scope_label": "近期阶段",
+      "applicability": "R73 RC1 的 7 个离线美术和编辑器辅助模块及非官方 Mod 声明",
+      "revision_mentions": [
+        "r-2-73"
       ],
       "previously_without_inbound_md_link": false
     },

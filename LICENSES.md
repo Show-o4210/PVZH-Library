@@ -12,4 +12,6 @@ PVZH-Library 是多许可证仓库。请按内容所在目录查看对应许可�
 
 四份 MIT LICENSE 原样保留。根目录的非商业与相同方式共享条款不扩展到以上 MIT 项目。
 
+[`pvzh-launcher/source-preview/`](pvzh-launcher/source-preview/r73-rc1/README.md) 中的 AM Java 源码位于现有 CC BY-NC-SA 与 MIT 许可范围之外。该源码供公开查阅，通用使用、修改和再分发许可待 AM 团队决定。
+
 游戏程序、APK、素材、导出数据、商标以及第三方工具和依赖，仍由各自权利人及许可约束；目录中的 MIT 或 CC 声明不构成对这些第三方内容的授权。音频完整包中的外部工具也应遵守各自许可。
