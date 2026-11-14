@@ -18,9 +18,11 @@
 
 R44 对照：49 条已同文，45 条值不同，0 条无对应键。R44 只是版本对照，不是要求回写旧版本。
 
-### 必须人工复核的一项
+### 已确认：必须保留自定义文件头 PVZH1
 
-`overlay.deck.import.description`（vi-VN，`911cb19`）把编码前缀 `PVZH1` 写成 `PvZH1`。本包保留作者原文作证据，并标记 `requires-protocol-prefix-review`，**不要自动采用该大小写变化**。应以解析器认可的协议标记为准；其他提示仍使用 `PVZH1`。这不是已经证实的运行 bug，也不能因为品牌写法是 PvZH 就改协议名。
+`overlay.deck.import.description`（vi-VN，`911cb19`，FIX-045）把 `PVZH1` 写成 `PvZH1`。项目维护者已确认：**`PVZH1` 是自定义文件头，必须精确保留这个大小写，不得作为文案／品牌修正替换成 `PvZH1`。** 此前“待复核”的状态已改为 `owner-confirmed-preserve-exact-file-header`。
+
+`contributor_text`、当前仓库对照等证据字段保留原样；`suggested_text` 只将该文件头恢复成 `PVZH1`，其余越南语文案完全保留。`contributor-commits.json` 同步记录这项采纳限制。此次只更新交接资料，没有修改实际词表或解析器，也没有测试解析器大小写行为。
 
 越南语 `bộ bài`/`bộ thẻ`、Plant/Cây 等用词仍有邻近条目不一致，后续按项目术语表统一，不把未修改的相邻字符串冒认为该作者修订。
 
@@ -51,4 +53,4 @@ R44 对照：49 条已同文，45 条值不同，0 条无对应键。R44 只是�
 
 ## 采纳方法
 
-按主 [README](README.md) 执行。`contributor_text` 是作者原文，`suggested_text` 在此类条目中仅为供复核的候选，不代表无条件采纳。`review_status` 的协议警告优先于自动迁移；对实际生效源做逐键比对、冲突检查和分层验收。记录采用或未采用原因，并继续保留作者归属。
+按主 [README](README.md) 执行。`contributor_text` 是作者原文，`suggested_text` 在此类条目中仅为供复核的候选，不代表无条件采纳。FIX-045 的文件头约束是已确认的硬性边界，不再是可选的大小写风格；`suggested_text` 在此条只纠正文件头，其他作者文案保留。该约束优先于自动迁移；对实际生效源做逐键比对、冲突检查和分层验收。记录采用或未采用原因，并继续保留作者归属。

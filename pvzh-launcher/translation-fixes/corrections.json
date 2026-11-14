@@ -907,7 +907,7 @@
       "chinese_reference": "可粘贴 PVZH1 码、纯载荷或完整牌组文本。缺卡会跳过；不兼容卡或单卡超过 4 张会拒绝。",
       "old_text": "Dán mã PVZH1, dữ liệu thô hoặc toàn bộ văn bản bộ bài. Thẻ chưa sở hữu sẽ được bỏ qua. Thẻ không tương thích hoặc có hơn 4 bản sao sẽ bị từ chối.",
       "contributor_text": "Dán mã PvZH1, dữ liệu thô hoặc toàn bộ văn bản bộ thẻ. Thẻ chưa sở hữu sẽ được bỏ qua. Thẻ không tương thích hoặc có hơn 4 bản sao sẽ bị từ chối.",
-      "suggested_text": "Dán mã PvZH1, dữ liệu thô hoặc toàn bộ văn bản bộ thẻ. Thẻ chưa sở hữu sẽ được bỏ qua. Thẻ không tương thích hoặc có hơn 4 bản sao sẽ bị từ chối.",
+      "suggested_text": "Dán mã PVZH1, dữ liệu thô hoặc toàn bộ văn bản bộ thẻ. Thẻ chưa sở hữu sẽ được bỏ qua. Thẻ không tương thích hoặc có hơn 4 bản sao sẽ bị từ chối.",
       "current_reference_text": "Dán mã PvZH1, dữ liệu thô hoặc toàn bộ văn bản bộ thẻ. Thẻ chưa sở hữu sẽ được bỏ qua. Thẻ không tương thích hoặc có hơn 4 bản sao sẽ bị từ chối.",
       "r44_reference_file": "pvzh-launcher/i18n/r-2-44/vi-VN/floating-tools/floating-deck.json",
       "r44_current_text": "Dán mã PVZH1, dữ liệu mã thô hoặc toàn bộ nội dung bộ thẻ. Thẻ chưa sở hữu sẽ bị bỏ qua. Không chấp nhận thẻ không tương thích hoặc quá 4 bản sao của cùng một thẻ.",
@@ -915,11 +915,20 @@
       "r64_reference_file": "pvzh-launcher/i18n/r-2-64/vi-VN/floating-tools/floating-deck.json",
       "r64_frozen_text": "Dán mã PVZH1, dữ liệu thô hoặc toàn bộ văn bản bộ bài. Thẻ chưa sở hữu sẽ được bỏ qua. Thẻ không tương thích hoặc có hơn 4 bản sao sẽ bị từ chối.",
       "r64_current_text": "Dán mã PvZH1, dữ liệu thô hoặc toàn bộ văn bản bộ thẻ. Thẻ chưa sở hữu sẽ được bỏ qua. Thẻ không tương thích hoặc có hơn 4 bản sao sẽ bị từ chối.",
-      "application_status": "Already present in current R64 repository catalog; build/APK adoption unverified",
+      "application_status": "Contributor wording exists in current R64 repository catalog, but its file-header case change is rejected. Handoff suggested_text restores PVZH1 only; runtime catalogs/build unchanged by this documentation update.",
       "r44_status": "different-from-contributor",
-      "review_status": "requires-protocol-prefix-review",
+      "review_status": "owner-confirmed-preserve-exact-file-header",
       "evidence": "Exact value change from ThePrimalPea commit. This records a contributor revision, not necessarily an objective translation error.",
-      "review_requirement": "Do not auto-apply: contributor text changes protocol marker PVZH1 to PvZH1. Confirm parser case sensitivity; preserve canonical PVZH1 unless implementation explicitly accepts the mixed-case form. Other strings still show PVZH1."
+      "review_requirement": "Owner confirmed PVZH1 is a custom file header, not branding or translatable prose. Preserve exact uppercase PVZH1. Never replace it with PvZH1 as a translation correction. Apply only this token correction to the contributor candidate and retain all other Vietnamese wording; do not change protocol implementation or infer parser case sensitivity.",
+      "protocol_constraint": {
+        "literal": "PVZH1",
+        "case_sensitive_spelling_required": true,
+        "disallowed_translation_replacement": "PvZH1",
+        "decision": "reject-case-change-preserve-other-contributor-wording",
+        "confirmed_by": "repository owner",
+        "confirmed_on": "2026-11-14",
+        "scope": "Custom file-header literal in documentation/localization examples; parser behavior has not been tested."
+      }
     },
     {
       "id": "FIX-046",

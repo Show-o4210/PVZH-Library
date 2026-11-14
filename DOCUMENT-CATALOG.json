@@ -3399,7 +3399,7 @@
       "group": "pvzh-launcher",
       "scope": "maintenance",
       "scope_label": "维护导航",
-      "applicability": "贡献提交署名、R44/R64 词条状态与文档来源；实际 APK 采纳未验证",
+      "applicability": "贡献提交署名、R44/R64 词条状态与文档来源；PVZH1 文件头必须精确保留；实际 APK 采纳未验证",
       "revision_mentions": [
         "r-2-44",
         "r-2-64"

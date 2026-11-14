@@ -22,7 +22,7 @@
 
 ## 贡献补充
 
-本包现共 **133 条**记录。新增 94 条由 **ThePrimalPea** 提交的中英越词条修订，已存在于当前 R64 仓库词表，是否进入实际构建仍待核验。详见[贡献来源与状态](CONTRIBUTORS.md)。其中协议前缀 `PVZH1` → `PvZH1` 单独标为需复核，不自动采纳。新增记录是贡献归档，不将所有风格调整都称作错误，也不重放已生效的仓库修改。
+本包现共 **133 条**记录。新增 94 条由 **ThePrimalPea** 提交的中英越词条修订，已存在于当前 R64 仓库词表，是否进入实际构建仍待核验。详见[贡献来源与状态](CONTRIBUTORS.md)。维护者已确认 `PVZH1` 是自定义文件头，必须精确保留，禁止按翻译／品牌风格替换成 `PvZH1`；FIX-045 的建议值仅恢复该文件头，其余越南语保持不变。新增记录是贡献归档，不将所有风格调整都称作错误，也不重放已生效的仓库修改。
 
 ## 给后续 agent 的执行说明
 
@@ -49,4 +49,4 @@
 
 This folder is a reviewable handoff, not a runtime language pack. It contains 18 corrections reconstructed from three already-published R44 community commits, plus 21 newly reconstructed condition-help proposals. The latter are not claimed to be the exact former uncommitted 22-value batch. Each record carries its source key, old/proposed text, Chinese reference and pinned R64 comparison. Locate the real build input, review conflicts and semantics, preserve placeholders/identifiers, and verify static checks, packaged output and actual UI separately before claiming adoption. Do not bulk-overwrite catalogs or rewrite historical provenance snapshots.
 
-Contributor addendum: 94 R64 catalog revisions by **ThePrimalPea** are now included with attribution and exact commit provenance (133 records total). They already exist in repository catalogs, not necessarily in an APK. Eighteen documentation commits are indexed separately. One protocol-prefix case change is explicitly flagged for review before any adoption.
+Contributor addendum: 94 R64 catalog revisions by **ThePrimalPea** are now included with attribution and exact commit provenance (133 records total). They already exist in repository catalogs, not necessarily in an APK. Eighteen documentation commits are indexed separately. The owner confirmed that `PVZH1` is a custom file header and must retain that exact spelling. The change to `PvZH1` is rejected, not merely awaiting review. FIX-045 preserves the contributor evidence and all other Vietnamese wording, while its suggested text restores only `PVZH1`. Runtime catalogs and parser behavior remain unmodified and untested.

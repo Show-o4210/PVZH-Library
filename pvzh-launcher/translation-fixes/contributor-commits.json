@@ -502,6 +502,16 @@
         "FIX-088",
         "FIX-089",
         "FIX-090"
+      ],
+      "adoption_constraints": [
+        {
+          "entry_id": "FIX-045",
+          "key": "overlay.deck.import.description",
+          "decision": "reject-file-header-case-change",
+          "preserve_exact_literal": "PVZH1",
+          "rejected_literal": "PvZH1",
+          "reason": "Owner confirmed PVZH1 is a custom file header. Keep other Vietnamese wording; source commit remains archived unchanged."
+        }
       ]
     },
     {
