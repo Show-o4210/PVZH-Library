@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "candidate": "r-2-73-rc1",
+  "channel": "development",
+  "direct_baseline": "r-2-72-rc1",
+  "source_commit": "82c7fb9497c137ed57c5eb2c10aa412b7646a3d1",
+  "verification": {
+    "static": "pass",
+    "host_language_lookup": "pass",
+    "signed_apk_dex": "pass",
+    "android_ui": "not_run"
+  },
+  "entries": [
+    {
+      "id": "FIX-001",
+      "locale": "en-US",
+      "key": "editor.skill_help.block.discard_from_play_trigger.limits",
+      "status": "applied",
+      "text": "This is not a general-purpose button for discarding cards from hand. It is registered separately from DestroyCardTrigger; returning to hand, transformation, and all ways of leaving play must not be treated as the same event. Preserve the original card's conditions regarding specific destruction causes and timing."
+    },
+    {
+      "id": "FIX-002",
+      "locale": "vi-VN",
+      "key": "editor.skill_help.block.discard_from_play_trigger.limits",
+      "status": "applied",
+      "text": "Đây không phải là nút dùng chung để loại bỏ thẻ khỏi tay. Trigger này được đăng ký tách biệt với DestroyCardTrigger; không được coi việc trả thẻ về tay, biến hình hay mọi cách rời sân là cùng một sự kiện. Phải giữ nguyên các điều kiện của thẻ gốc về nguyên nhân cụ thể khiến thẻ bị tiêu diệt và thời điểm."
+    },
+    {
+      "id": "FIX-003",
+      "locale": "en-US",
+      "key": "editor.skill_help.block.move_trigger.limits",
+      "status": "applied",
+      "text": "The moved object, destination lane, and self are different roles; do not treat all card creation, card plays, or failed moves as the same event. Preserve the positions before and after movement and the other trigger groups from the original recipe."
+    },
+    {
+      "id": "FIX-004",
+      "locale": "vi-VN",
+      "key": "editor.skill_help.block.destroy_card_trigger.examples",
+      "status": "applied",
+      "text": "Thẻ gốc 491 (Zombie khổng lồ siêu tân tinh) loại bỏ các Cây cùng loại sau khi một Gargantuar tiêu diệt một Cây; thẻ 514 (Nhiệm vụ cuối cùng) tiếp tục gây sát thương sau khi tiêu diệt."
+    },
+    {
+      "id": "FIX-005",
+      "locale": "vi-VN",
+      "key": "editor.skill_help.block.draw_card_from_subset_trigger.limits",
+      "status": "applied",
+      "text": "Tương ứng với cơ chế tạo thẻ / Gọi ra (conjure), không phải rút thẻ từ bộ bài hiện có hay triệu hồi thẻ ra sân. Cùng một hiệu ứng cũng đăng ký DrawCardTrigger; không được vì vậy mà cho rằng hai dấu hiệu loại trừ lẫn nhau hoặc mọi cách kết hợp đều chỉ kích hoạt một lần."
+    },
+    {
+      "id": "FIX-006",
+      "locale": "vi-VN",
+      "key": "editor.skill_help.block.draw_card_from_subset_trigger.usage",
+      "status": "applied",
+      "text": "Dùng cho các công thức kích hoạt liên quan đến việc tạo thẻ vào tay từ một tập hợp thẻ."
+    },
+    {
+      "id": "FIX-007",
+      "locale": "vi-VN",
+      "key": "editor.skill_help.block.enter_board_trigger.examples",
+      "status": "applied",
+      "text": "Các nhóm kỹ năng hoàn chỉnh của thẻ gốc 252 (Kẻ đào mộ đãng trí) và 595 (Kẻ phá bia mộ) sử dụng dấu hiệu này."
+    },
+    {
+      "id": "FIX-008",
+      "locale": "vi-VN",
+      "key": "editor.skill_help.block.heal_trigger.examples",
+      "status": "applied",
+      "text": "Thẻ gốc 153 (Bác sĩ ớt) tăng chỉ số khi Cây hoặc Anh Hùng được hồi máu; thẻ 471 (Atisô trái tim) sử dụng lượng hồi máu trong công thức gây sát thương."
+    },
+    {
+      "id": "FIX-009",
+      "locale": "vi-VN",
+      "key": "editor.skill_help.block.lane_combat_end_trigger.examples",
+      "status": "applied",
+      "text": "Thẻ gốc 437 (Việt quất điện) gây sát thương sau khi giao chiến kết thúc trong làn của nó; mẫu khả năng tấn công kép 562 cũng sử dụng dấu hiệu này."
+    },
+    {
+      "id": "FIX-010",
+      "locale": "vi-VN",
+      "key": "editor.skill_help.block.lane_combat_start_trigger.usage",
+      "status": "applied",
+      "text": "Dùng cho các công thức kích hoạt trước khi giao chiến trong một làn."
+    },
+    {
+      "id": "FIX-011",
+      "locale": "vi-VN",
+      "key": "editor.skill_help.block.move_trigger.limits",
+      "status": "applied",
+      "text": "Đối tượng được di chuyển, làn đích và bản thân là các vai trò khác nhau; không được coi mọi trường hợp tạo thẻ, đánh thẻ hoặc di chuyển thất bại là cùng một sự kiện. Phải giữ nguyên vị trí trước và sau khi di chuyển cùng các nhóm kích hoạt khác theo công thức gốc."
+    },
+    {
+      "id": "FIX-012",
+      "locale": "vi-VN",
+      "key": "editor.skill_help.block.return_to_hand_trigger.examples",
+      "status": "applied",
+      "text": "Thẻ gốc 607 (Đậu thạch) nhận +1/+1 khi một thẻ được trả về tay."
+    },
+    {
+      "id": "FIX-013",
+      "locale": "vi-VN",
+      "key": "editor.skill_help.block.slowed_trigger.examples",
+      "status": "applied",
+      "text": "Thẻ gốc 131 (Hoa giọt tuyết) tăng chỉ số khi Zombie bị đóng băng; thẻ 134 (Bí đè mùa đông) xử lý Zombie hoặc Bia Mộ bị đóng băng."
+    },
+    {
+      "id": "FIX-014",
+      "locale": "vi-VN",
+      "key": "editor.skill_help.block.copy_card_effect_descriptor.examples",
+      "status": "applied",
+      "text": "566 (Thiên đường lê đôi) tạo bản sao có khả năng Team-Up dựa trên loại thẻ Cây được đánh; nhóm kỹ năng khi đánh thẻ của 651 (Củ cải raptor đồng đội) sử dụng cấu trúc tương tự để tạo bản sao."
+    },
+    {
+      "id": "FIX-015",
+      "locale": "vi-VN",
+      "key": "editor.skill_help.block.create_card_effect.examples",
+      "status": "applied",
+      "text": "82 (Hoa anh túc bung nở) tạo CardGuid=281 trong mỗi làn mục tiêu; 95 (Bowling hạt óc chó) tạo thẻ 77 trong làn mục tiêu."
+    },
+    {
+      "id": "FIX-016",
+      "locale": "vi-VN",
+      "key": "editor.skill_help.block.create_card_in_deck_effect.examples",
+      "status": "applied",
+      "text": "333 (Gieo đậu thần kỳ) thêm năm thẻ 345 vào bộ bài; 447 (Đậu mặt trăng) thêm hai thẻ 345 vào bộ bài."
+    },
+    {
+      "id": "FIX-017",
+      "locale": "vi-VN",
+      "key": "editor.skill_help.block.modify_sun_cost_effect.examples",
+      "status": "applied",
+      "text": "181 (Zombie ảo thuật gia) sử dụng Permanent -1; hiệu ứng giảm chi phí bổ sung của 180 (Nhà hóa học điên) sử dụng EndOfTurn -1; nhóm kỹ năng gốc của 534 (Cầu thủ phòng ngự cánh) là ví dụ về việc tăng chi phí bằng giá trị dương."
+    },
+    {
+      "id": "FIX-018",
+      "locale": "vi-VN",
+      "key": "editor.skill_help.block.return_to_hand_effect.examples",
+      "status": "applied",
+      "text": "Các công thức gốc của 127 (Đậu nhảy) và 129 (Đậu lò xo) trả Zombie từ sân về tay."
+    },
+    {
+      "id": "FIX-019",
+      "locale": "en-US",
+      "key": "editor.skill_help.block.has_environment_component.examples",
+      "status": "applied",
+      "text": "43 real queries, including card 339, use this fixed type."
+    },
+    {
+      "id": "FIX-020",
+      "locale": "en-US",
+      "key": "editor.skill_help.block.has_face_down_component.examples",
+      "status": "applied",
+      "text": "9 original queries, including card 87; card 476 first checks the same lane, then uses the face-down state to help determine the lane."
+    },
+    {
+      "id": "FIX-021",
+      "locale": "en-US",
+      "key": "editor.skill_help.block.has_highground_terrain_component.examples",
+      "status": "applied",
+      "text": "13 original queries, including card 96, use the high ground component; retain their positions in the complete original queries."
+    },
+    {
+      "id": "FIX-022",
+      "locale": "vi-VN",
+      "key": "editor.skill_help.block.attack_comparison_query.examples",
+      "status": "applied",
+      "text": "Thẻ gốc 26 dùng điều kiện sức tấn công ≤4; thẻ 92 dùng điều kiện sức tấn công ≤0."
+    },
+    {
+      "id": "FIX-023",
+      "locale": "vi-VN",
+      "key": "editor.skill_help.block.block_meter_value_query.examples",
+      "status": "applied",
+      "text": "Thẻ 458 có ngưỡng gốc là 10; thẻ 630 có các nhánh 10/20; thẻ 685 có ngưỡng gốc là 10."
+    },
+    {
+      "id": "FIX-024",
+      "locale": "vi-VN",
+      "key": "editor.skill_help.block.has_environment_component.examples",
+      "status": "applied",
+      "text": "Tổng cộng 43 truy vấn thực tế, bao gồm truy vấn của thẻ 339, sử dụng kiểu cố định này."
+    },
+    {
+      "id": "FIX-025",
+      "locale": "vi-VN",
+      "key": "editor.skill_help.block.has_face_down_component.examples",
+      "status": "applied",
+      "text": "Có 9 truy vấn gốc, bao gồm truy vấn của thẻ 87; thẻ 476 kiểm tra cùng làn trước, rồi dùng trạng thái úp để hỗ trợ xác định làn."
+    },
+    {
+      "id": "FIX-026",
+      "locale": "vi-VN",
+      "key": "editor.skill_help.block.has_highground_terrain_component.examples",
+      "status": "applied",
+      "text": "Có 13 truy vấn gốc, bao gồm truy vấn của thẻ 96, sử dụng thành phần địa hình cao; giữ nguyên vị trí của chúng trong các truy vấn gốc đầy đủ."
+    },
+    {
+      "id": "FIX-027",
+      "locale": "vi-VN",
+      "key": "editor.skill_help.block.has_zombies_component.examples",
+      "status": "applied",
+      "text": "Có 385 vị trí thực tế; giữ nguyên các nhóm gốc cụ thể, không đồng nhất 'phe Zombie' với 'đơn vị Zombie trên sân'."
+    },
+    {
+      "id": "FIX-028",
+      "locale": "vi-VN",
+      "key": "editor.skill_help.block.in_adjacent_lane_query.examples",
+      "status": "applied",
+      "text": "Thẻ gốc 66 (Zombot 1000) và thẻ 79 lọc đối tượng ở các làn liền kề."
+    },
+    {
+      "id": "FIX-029",
+      "locale": "vi-VN",
+      "key": "editor.skill_help.block.in_hand_query.examples",
+      "status": "applied",
+      "text": "Các công thức của thẻ gốc 123 và 181 kích hoạt khi thẻ ở trên tay."
+    },
+    {
+      "id": "FIX-030",
+      "locale": "vi-VN",
+      "key": "editor.skill_help.block.in_lane_query.examples",
+      "status": "applied",
+      "text": "Bộ lọc khu vực trong công thức của thẻ gốc 109 và 134."
+    },
+    {
+      "id": "FIX-031",
+      "locale": "vi-VN",
+      "key": "editor.skill_help.block.is_active_query.examples",
+      "status": "applied",
+      "text": "Thẻ gốc 188 và 639 sử dụng điều kiện này trong các cây con đầy đủ để lọc hoặc đếm."
+    },
+    {
+      "id": "FIX-032",
+      "locale": "vi-VN",
+      "key": "editor.skill_help.block.killed_by_query.examples",
+      "status": "applied",
+      "text": "Các thẻ gốc như 64, 255 và 490 sử dụng truy vấn này; các điều kiện con bao gồm kiểm tra bản thân hoặc chủng loại."
+    },
+    {
+      "id": "FIX-033",
+      "locale": "vi-VN",
+      "key": "editor.skill_help.block.lane_with_matching_fighter_query.examples",
+      "status": "applied",
+      "text": "Các thẻ gốc 188, 218, 476 và 639."
+    },
+    {
+      "id": "FIX-034",
+      "locale": "vi-VN",
+      "key": "editor.skill_help.block.persists_after_transform.examples",
+      "status": "applied",
+      "text": "Thẻ 440 đánh dấu nhóm gốc chứa các bộ mô tả biến hình và +1/+1; thẻ 637 đánh dấu nhóm biến hình ở cuối lượt của mình. Mỗi thẻ gốc chỉ có nhóm này, nên không có ví dụ gốc chứng minh rằng đánh dấu một nhóm sẽ tự động giữ các nhóm phụ liên quan."
+    },
+    {
+      "id": "FIX-035",
+      "locale": "vi-VN",
+      "key": "editor.skill_help.block.primary_target_filter.examples",
+      "status": "applied",
+      "text": "Thẻ gốc 3 chọn mục tiêu thủ công; 136 chọn ngẫu nhiên 1 mục tiêu; 262 chọn sức tấn công cao nhất, 263 chọn máu thấp nhất; 102 xử lý cả làn mục tiêu và các đối tượng bổ sung; 661 và 677 chỉ tác động lên các đối tượng bổ sung."
+    },
+    {
+      "id": "FIX-036",
+      "locale": "vi-VN",
+      "key": "editor.skill_help.block.source_query.examples",
+      "status": "applied",
+      "text": "Thẻ gốc 163 dùng nguồn sát thương để xác định Zombie cần tiêu diệt; thẻ 174 tăng chỉ số cho Nhà Khoa Học gây sát thương."
+    },
+    {
+      "id": "FIX-037",
+      "locale": "vi-VN",
+      "key": "editor.skill_help.block.subset_query.examples",
+      "status": "applied",
+      "text": "Thẻ 199 kiểm tra nhãn knightofthelivingdead, 214 kiểm tra yetilunchbox, 262 kiểm tra goat; tài liệu liệt kê đủ 16 nhãn thực tế và nguồn khớp/không khớp với loại thẻ gốc. Không coi mọi nhãn cũ trong gói gốc là tập thẻ hợp lệ."
+    },
+    {
+      "id": "FIX-038",
+      "locale": "vi-VN",
+      "key": "editor.skill_help.block.sun_counter_comparison_query.examples",
+      "status": "applied",
+      "text": "Các thẻ 124, 148, 300 và 467 đều so sánh >=6; văn bản gốc đều liên quan đến lượng Mặt Trời nhận được trong lượt này."
+    },
+    {
+      "id": "FIX-039",
+      "locale": "vi-VN",
+      "key": "editor.skill_help.block.target_card_guid_query.examples",
+      "status": "applied",
+      "text": "Công thức của thẻ gốc 491 và 616 dùng để khớp các bản sao cùng loại với mục tiêu."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # 翻译问题清单 / Correction index
 
-逐条原文、中文依据、建议文案、R64 原始及当前值见 [corrections.json](corrections.json)。下表编号稳定；回填后记录实际目标路径、提交、构建与验收结果。
+逐条原文、中文依据、建议文案、R64 原始及当前值见 [corrections.json](corrections.json)。表中类型记录交接时的来源与状态。FIX-001 至 FIX-039 的开发版采纳与验证见 [R73 RC1 编辑器采纳记录](README.md#r73-rc1-编辑器采纳记录)。
 
 | ID | 语言 | 类型 | 键 |
 | --- | --- | --- | --- |

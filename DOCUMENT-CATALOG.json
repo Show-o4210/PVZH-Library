@@ -3373,10 +3373,11 @@
       "group": "pvzh-launcher",
       "scope": "maintenance",
       "scope_label": "维护导航",
-      "applicability": "R44 社区修正与重建条件建议的交接；待目标工程复核，不代表 APK 已采纳",
+      "applicability": "R44 社区修正与重建条件建议的交接；FIX-001 至 FIX-039 见 R73 RC1 编辑器采纳记录",
       "revision_mentions": [
         "r-2-44",
-        "r-2-64"
+        "r-2-64",
+        "r-2-73"
       ],
       "previously_without_inbound_md_link": false
     },
@@ -3386,10 +3387,11 @@
       "group": "pvzh-launcher",
       "scope": "maintenance",
       "scope_label": "维护导航",
-      "applicability": "R44 社区修正与重建条件建议的交接；待目标工程复核，不代表 APK 已采纳",
+      "applicability": "R44 社区修正、条件建议和 R73 RC1 编辑器采纳；签名 APK DEX 核对通过，设备 UI 未验",
       "revision_mentions": [
         "r-2-44",
-        "r-2-64"
+        "r-2-64",
+        "r-2-73"
       ],
       "previously_without_inbound_md_link": false
     },

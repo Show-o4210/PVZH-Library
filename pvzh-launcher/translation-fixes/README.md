@@ -1,6 +1,12 @@
 # 翻译修正交接包 / Translation correction handoff
 
-本目录把已发现的翻译问题、建议文案和版本证据集中存放，供完整开发工程拉取后由维护者或 agent 复核、接入。**本次仅新增交接资料和导航，不修改任何生效词表，不构建 APK。**
+本目录保存翻译问题、建议文案和版本证据。原交接记录保留历史对照，开发版采纳结果见下文。
+
+## R73 RC1 编辑器采纳记录
+
+R73 RC1（development，直接基线 R72 RC1）采用 [82c7fb9](https://github.com/Show-o4210/PvZH-AML/commit/82c7fb9497c137ed57c5eb2c10aa412b7646a3d1) 的 FIX-001 至 FIX-039。英文 5 条、越南语 34 条均已在签名 APK 的 DEX 中核对。比较符号、查询计数和代表性卡牌编号对照原版数据复核。FIX-004、007–009、012–018、028 中出现的越南语卡名按版本卡名表统一。请继续通过原条目追溯译文来源。
+
+静态检查、本机语言加载和签名产物检查已通过。设备界面验收待补。 [逐键采纳记录](adopted-r73-editor.json)
 
 ## 文件
 
@@ -14,11 +20,11 @@
 
 整理基线：[`1c862f1`](https://github.com/Show-o4210/PvZH-AML/commit/1c862f164328b232da9ca7d74f52b7475b1f39aa)，2026-11-14。每个条目保留完整来源 SHA。
 
-1. **18 条已提交社区修正**：来自 [`e50a7bb`](https://github.com/Show-o4210/PvZH-AML/commit/e50a7bbe82790cb269681444f0b0e173a63ad23a)、[`dcf1bb2`](https://github.com/Show-o4210/PvZH-AML/commit/dcf1bb2acc1761a47d9ef5462d0111c65af133bf)、[`8a66ff4`](https://github.com/Show-o4210/PvZH-AML/commit/8a66ff429da1d13a168ca9ea73904d20f2733d85)。这些修改已在 R44 社区稿及对应历史词表，**不等于实际开发工程或 APK 已采纳**。
-2. **21 条条件说明建议**：本次重新比对 R44/R64 与中文词表重建，主要涉及丢失的比较符号、卡牌编号、统计数量、标识符与语义。它们仅在本目录，不修改原词表。中文是翻译参照，不替代原版数据与当前实现。越南语文风仍建议由熟练贡献者审校。
+1. **18 条已提交社区修正**：来自 [`e50a7bb`](https://github.com/Show-o4210/PvZH-AML/commit/e50a7bbe82790cb269681444f0b0e173a63ad23a)、[`dcf1bb2`](https://github.com/Show-o4210/PvZH-AML/commit/dcf1bb2acc1761a47d9ef5462d0111c65af133bf)、[`8a66ff4`](https://github.com/Show-o4210/PvZH-AML/commit/8a66ff429da1d13a168ca9ea73904d20f2733d85)。修正最初进入 R44 社区稿及对应历史词表。
+2. **21 条条件说明建议**：交接时比对 R44/R64 与中文词表重建，主要涉及比较符号、卡牌编号、统计数量、标识符与语义。中文是翻译参照。越南语文风仍可由熟练贡献者审校。
 3. 旧条件批次曾记录为 4 文件、22 个值，但其完整未提交 diff 在本工作区不可得；这里没有假称恢复了那个精确补丁。重建范围与旧批次不同，以逐条证据为准。
 4. R64 最初发布快照固定为 [`3b67408`](https://github.com/Show-o4210/PvZH-AML/commit/3b674087229d2547087d4aa6726aab80c49126b1)。后续 main 改过 R64 悬浮工具文案，所以不能把当前整目录自动等同于原候选 APK 的逐字快照。本包分别记录原始 R64 与整理时 R64 值。
-5. 本库不是完整 Android 工程。未在这里找到并验证当前构建的真实翻译源；**实际加载、构建产物及设备显示均未验证**。不得修改历史快照以伪装已经进入构建。
+5. 本库保存公开翻译资料与历史证据。目标工程的采纳和验证范围按对应候选记录。
 
 ## 贡献补充
 
@@ -47,6 +53,6 @@
 
 ## English summary
 
-This folder is a reviewable handoff, not a runtime language pack. It contains 18 corrections reconstructed from three already-published R44 community commits, plus 21 newly reconstructed condition-help proposals. The latter are not claimed to be the exact former uncommitted 22-value batch. Each record carries its source key, old/proposed text, Chinese reference and pinned R64 comparison. Locate the real build input, review conflicts and semantics, preserve placeholders/identifiers, and verify static checks, packaged output and actual UI separately before claiming adoption. Do not bulk-overwrite catalogs or rewrite historical provenance snapshots.
+R73 RC1 adopted FIX-001 through FIX-039 for the editor. The signed APK's DEX contains all 5 English and 34 Vietnamese corrections. Stock card data was used to verify comparison operators, query counts and representative card IDs. Vietnamese card names follow the versioned catalog. Device UI verification is pending. The original records retain their source keys, proposed translations, Chinese references and pinned R64 comparisons.
 
 Contributor addendum: 94 R64 catalog revisions by **ThePrimalPea** are now included with attribution and exact commit provenance (133 records total). They already exist in repository catalogs, not necessarily in an APK. Eighteen documentation commits are indexed separately. The owner confirmed that `PVZH1` is a custom file header and must retain that exact spelling. The change to `PvZH1` is rejected, not merely awaiting review. FIX-045 preserves the contributor evidence and all other Vietnamese wording, while its suggested text restores only `PVZH1`. Runtime catalogs and parser behavior remain unmodified and untested.
